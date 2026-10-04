@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kinoprogramm Leipzig</title>
+    <meta name="description" content="Das Wochenprogramm aller Leipziger Kinos auf einen Blick – ohne Werbung." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>Kinoprogramm Leipzig</h1>
+        <p class="meta" id="meta">Lade Programm …</p>
+      </div>
+    </header>
+
+    <div class="daybar">
+      <div class="wrap">
+        <nav class="days" id="days" aria-label="Tag auswählen"></nav>
+      </div>
+    </div>
+
+    <div class="wrap controls">
+      <div class="toolbar">
+        <div class="segmented" role="group" aria-label="Ansicht">
+          <button type="button" data-view="kino" aria-pressed="true">Nach Kino</button>
+          <button type="button" data-view="film" aria-pressed="false">Nach Film</button>
+        </div>
+        <label class="search">
+          <span class="visually-hidden">Film suchen</span>
+          <input type="search" id="search" placeholder="Film suchen …" autocomplete="off" />
+        </label>
+        <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+          Alle Kinos
+        </button>
+      </div>
+      <div class="filter-panel" id="filter-panel" hidden>
+        <div class="filter-actions">
+          <button type="button" data-select="all">Alle</button>
+          <button type="button" data-select="none">Keine</button>
+        </div>
+        <div class="filter-list" id="filter-list"></div>
+      </div>
+    </div>
+
+    <main class="wrap" id="program" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <details>
+          <summary>Datenquellen &amp; Status</summary>
+          <ul class="sources" id="sources"></ul>
+        </details>
+        <p>
+          Die Daten kommen direkt von den Kinos und werden täglich um 18 Uhr aktualisiert. Angaben ohne Gewähr – maßgeblich ist
+          das Programm des jeweiligen Kinos.
+        </p>
+      </div>
+    </footer>
+
+    <noscript><p class="wrap">Bitte JavaScript aktivieren, um das Programm zu sehen.</p></noscript>
+  </body>
+</html>

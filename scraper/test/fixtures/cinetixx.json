@@ -1,0 +1,66 @@
+[
+ {
+  "id": 3600001907,
+  "title": "EVERYTIME (OmeU)",
+  "language": "OmeU, Originalversion",
+  "is3D": false,
+  "shows": [
+   {
+    "id": 3662477640,
+    "cinemaId": 1898834974,
+    "cinemaName": "Schaubühne Lindenfels",
+    "auditoriumName": "Ballsaal",
+    "displayDateTime": "2026-10-04T12:30:00",
+    "language": "OmeU, Originalversion",
+    "showName": "EVERYTIME",
+    "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3662477640&bgswitch=false&resize=false"
+   }
+  ]
+ },
+ {
+  "id": 3647392625,
+  "title": " HEART OF LIGHT – ELEVEN SONGS FOR FIJI (OmU)",
+  "language": "OmU, Originalversion",
+  "is3D": false,
+  "shows": [
+   {
+    "id": 3647613293,
+    "cinemaId": 1898834974,
+    "cinemaName": "Schaubühne Lindenfels",
+    "auditoriumName": "Grüner Salon",
+    "displayDateTime": "2026-10-12T20:45:00",
+    "language": "OmU, Originalversion",
+    "showName": " HEART OF LIGHT – ELEVEN SONGS FOR FIJI",
+    "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647613293&bgswitch=false&resize=false"
+   }
+  ]
+ },
+ {
+  "id": 3641066569,
+  "title": "BIBI BLOCKSBERG – DIE TOTAL VERHEXTE ZEITREISE",
+  "language": "D, Deutsch",
+  "is3D": false,
+  "shows": [
+   {
+    "id": 3641068188,
+    "cinemaId": 1898834974,
+    "cinemaName": "Schaubühne Lindenfels",
+    "auditoriumName": "Grüner Salon",
+    "displayDateTime": "2026-10-11T14:00:00",
+    "language": "D, Deutsch",
+    "showName": "BIBI BLOCKSBERG – DIE TOTAL VERHEXTE ZEITREISE",
+    "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3641068188&bgswitch=false&resize=false"
+   },
+   {
+    "id": 3641068843,
+    "cinemaId": 1898834974,
+    "cinemaName": "Schaubühne Lindenfels",
+    "auditoriumName": "Grüner Salon",
+    "displayDateTime": "2026-10-18T16:00:00",
+    "language": "D, Deutsch",
+    "showName": "BIBI BLOCKSBERG – DIE TOTAL VERHEXTE ZEITREISE",
+    "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3641068843&bgswitch=false&resize=false"
+   }
+  ]
+ }
+]

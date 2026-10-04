@@ -1,0 +1,63 @@
+name: Kinoprogramm aktualisieren
+
+on:
+  schedule:
+    # Täglich um 18:00 Uhr deutscher Zeit (Sommer- und Winterzeit)
+    - cron: '0 18 * * *'
+      timezone: 'Europe/Berlin'
+    # Zusätzlich donnerstags früh: Dann beginnt die neue Kinowoche, und Cineplex/UCI
+    # (über kinoprogramm-leipzig.de) stehen erst ab diesem Tag im Programm.
+    - cron: '0 7 * * 4'
+      timezone: 'Europe/Berlin'
+  # Manuell starten: Actions → "Kinoprogramm aktualisieren" → "Run workflow"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-program
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Abhängigkeiten installieren
+        working-directory: scraper
+        run: npm ci
+
+      - name: Programm abrufen
+        id: scrape
+        working-directory: scraper
+        run: node src/index.js
+
+      - name: Änderungen committen
+        run: |
+          if git diff --quiet -- public/data/program.json; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/program.json
+          git commit -m "Kinoprogramm aktualisiert ($(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M'))"
+          git pull --rebase
+          git push
+
+      # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert, aber der Lauf wird rot
+      # markiert (und GitHub schickt eine Mail), wenn bei einem Kino etwas nicht stimmt.
+      - name: Probleme melden
+        if: steps.scrape.outputs.problems != '0'
+        run: |
+          echo "::error::Bei ${{ steps.scrape.outputs.problems }} Kino(s) gab es Probleme – Details in der Zusammenfassung dieses Laufs."
+          exit 1

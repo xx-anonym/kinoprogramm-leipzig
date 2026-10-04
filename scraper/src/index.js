@@ -1,0 +1,281 @@
+// Sammelt das Programm aller Kinos und schreibt public/data/program.json.
+//
+//   node src/index.js            # Daten holen und schreiben
+//   node src/index.js --dry-run  # nur holen und Zusammenfassung ausgeben
+
+import { readFile, writeFile, mkdir, appendFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { CINEMAS } from './cinemas.js';
+import { addDays, berlinDate } from './lib/dates.js';
+import { chooseDisplayTitles, filmKey, parseTitle, pickVersion } from './lib/normalize.js';
+import { cinestar } from './sources/cinestar.js';
+import { cinetixx } from './sources/cinetixx.js';
+import { passage } from './sources/passage.js';
+import { schauburg } from './sources/schauburg.js';
+import { kinotickets } from './sources/kinotickets.js';
+import { cineprog } from './sources/cineprog.js';
+import { ical } from './sources/ical.js';
+import { fetchKinoprogrammLeipzig } from './sources/kinoprogrammLeipzig.js';
+
+const OUT_FILE = fileURLToPath(new URL('../../public/data/program.json', import.meta.url));
+
+/** Heute + 7 Tage, damit die Seite auch am Folgetag noch eine volle Woche zeigt. */
+export const DAYS = 8;
+
+export const SOURCES = { cinestar, cinetixx, passage, schauburg, kinotickets, cineprog, ical };
+
+const SOURCE_LABELS = {
+  cinestar: 'cinestar.de',
+  cinetixx: 'cinetixx.de',
+  passage: 'passage-kinos.de',
+  schauburg: 'schauburg-leipzig.de',
+  kinotickets: 'kinotickets.express',
+  cineprog: 'kinoleipzig.com',
+  ical: 'cineding-leipzig.de',
+  'kinoprogramm-leipzig': 'kinoprogramm-leipzig.de',
+};
+
+const errorMessage = (err) => String(err?.message ?? err).slice(0, 300);
+
+/** Bereinigt die Rohdaten einer Quelle: Titel/Fassung trennen, Zeitraum filtern. */
+function normalizeShows(rawShows, cinemaId, days) {
+  const first = days[0];
+  const last = days[days.length - 1];
+  const result = [];
+  for (const raw of rawShows) {
+    if (!raw?.date || !raw?.time || raw.date < first || raw.date > last) continue;
+    const parsed = parseTitle(raw.title);
+    if (!parsed.title) continue;
+    result.push({
+      cinema: cinemaId,
+      date: raw.date,
+      time: raw.time,
+      title: parsed.title,
+      version: pickVersion(raw.version, parsed.version),
+      extras: [...new Set([...(raw.extras ?? []), ...parsed.extras])],
+      screen: raw.screen || null,
+      url: /^https?:\/\//i.test(raw.url ?? '') ? raw.url : null,
+    });
+  }
+  return result;
+}
+
+/** Vorstellungen eines Kinos aus dem letzten Lauf (falls heute alle Quellen ausfallen). */
+function previousShows(previous, cinemaId, days) {
+  if (!previous?.shows) return [];
+  const films = previous.films ?? {};
+  return normalizeShows(
+    previous.shows
+      .filter((s) => s.cinema === cinemaId)
+      .map((s) => ({ ...s, title: films[s.film]?.title ?? s.film })),
+    cinemaId,
+    days,
+  );
+}
+
+/**
+ * Holt alle Kinos. Reihenfolge pro Kino: eigene Quelle → kinoprogramm-leipzig.de → Daten vom Vortag.
+ * Abhängigkeiten sind injizierbar, damit sich das in Tests ohne Netz prüfen lässt.
+ */
+export async function collect({
+  today,
+  cinemas = CINEMAS,
+  sources = SOURCES,
+  fetchKpl = fetchKinoprogrammLeipzig,
+  previous = null,
+  now = new Date(),
+}) {
+  const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
+  const context = { today };
+
+  const kplPromise = fetchKpl(context).then(
+    (data) => ({ data }),
+    (error) => ({ error }),
+  );
+
+  const results = await Promise.all(
+    cinemas.map(async (cinema) => {
+      const type = cinema.source.type;
+      const base = {
+        id: cinema.id,
+        name: cinema.name,
+        address: cinema.address,
+        website: cinema.website,
+        source: SOURCE_LABELS[type] ?? type,
+      };
+
+      let directError = null;
+      if (type !== 'kinoprogramm-leipzig') {
+        try {
+          const fetcher = sources[type];
+          if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
+          const shows = normalizeShows(await fetcher(cinema.source, context), cinema.id, days);
+          return { cinema: { ...base, status: 'ok' }, shows };
+        } catch (err) {
+          directError = err;
+        }
+      }
+
+      const kpl = await kplPromise;
+      if (!kpl.error) {
+        const shows = normalizeShows(kpl.data[cinema.kplId]?.shows ?? [], cinema.id, days);
+        if (!directError) return { cinema: { ...base, status: 'ok' }, shows };
+        return {
+          cinema: {
+            ...base,
+            status: 'fallback',
+            source: SOURCE_LABELS['kinoprogramm-leipzig'],
+            message: `${base.source}: ${errorMessage(directError)}`,
+          },
+          shows,
+        };
+      }
+
+      const message = [directError && `${base.source}: ${errorMessage(directError)}`, `kinoprogramm-leipzig.de: ${errorMessage(kpl.error)}`]
+        .filter(Boolean)
+        .join(' | ');
+      const old = previousShows(previous, cinema.id, days);
+      return { cinema: { ...base, status: old.length ? 'stale' : 'error', message }, shows: old };
+    }),
+  );
+
+  // Zusätzliche Spielorte, die nur auf kinoprogramm-leipzig.de stehen (z. B. Sommerkinos)
+  const kpl = await kplPromise;
+  if (!kpl.error) {
+    const known = new Set(cinemas.map((c) => c.kplId));
+    for (const [kplId, entry] of Object.entries(kpl.data)) {
+      if (known.has(kplId)) continue;
+      const id = `kpl-${kplId}`;
+      const shows = normalizeShows(entry.shows, id, days);
+      if (!shows.length) continue;
+      results.push({
+        cinema: {
+          id,
+          name: entry.name,
+          address: entry.address,
+          website: `https://www.kinoprogramm-leipzig.de/kino/${kplId}`,
+          source: SOURCE_LABELS['kinoprogramm-leipzig'],
+          status: 'ok',
+        },
+        shows,
+      });
+    }
+  }
+
+  // Filmtitel über alle Kinos vereinheitlichen
+  const allShows = results.flatMap((r) => r.shows);
+  const displayTitles = chooseDisplayTitles(allShows.map((s) => s.title));
+  const films = {};
+  const seen = new Set();
+  const shows = [];
+  const cinemaOrder = new Map(results.map((r, i) => [r.cinema.id, i]));
+  for (const s of allShows) {
+    const film = filmKey(s.title);
+    const dedupeKey = [s.cinema, s.date, s.time, film, s.version ?? ''].join('|');
+    if (seen.has(dedupeKey)) continue;
+    seen.add(dedupeKey);
+    films[film] ??= { title: displayTitles.get(film) };
+    const show = { cinema: s.cinema, film, date: s.date, time: s.time };
+    if (s.version) show.version = s.version;
+    if (s.extras.length) show.extras = s.extras;
+    if (s.screen) show.screen = s.screen;
+    if (s.url) show.url = s.url;
+    shows.push(show);
+  }
+  shows.sort(
+    (a, b) =>
+      a.date.localeCompare(b.date) ||
+      a.time.localeCompare(b.time) ||
+      cinemaOrder.get(a.cinema) - cinemaOrder.get(b.cinema) ||
+      films[a.film].title.localeCompare(films[b.film].title, 'de'),
+  );
+
+  const counts = {};
+  for (const s of shows) counts[s.cinema] = (counts[s.cinema] ?? 0) + 1;
+  const cinemaList = results.map((r) => ({ ...r.cinema, shows: counts[r.cinema.id] ?? 0 }));
+
+  return {
+    generatedAt: now.toISOString(),
+    days,
+    cinemas: cinemaList,
+    films: Object.fromEntries(Object.entries(films).sort(([, a], [, b]) => a.title.localeCompare(b.title, 'de'))),
+    shows,
+  };
+}
+
+/** JSON mit einer Zeile pro Vorstellung – kompakt und mit gut lesbaren Git-Diffs. */
+export function formatProgram(data) {
+  const list = (items) => items.map((item) => `    ${JSON.stringify(item)}`).join(',\n');
+  const films = Object.entries(data.films)
+    .map(([key, film]) => `    ${JSON.stringify(key)}: ${JSON.stringify(film)}`)
+    .join(',\n');
+  return [
+    '{',
+    `  "generatedAt": ${JSON.stringify(data.generatedAt)},`,
+    `  "days": ${JSON.stringify(data.days)},`,
+    `  "cinemas": [\n${list(data.cinemas)}\n  ],`,
+    `  "films": {\n${films}\n  },`,
+    `  "shows": [\n${list(data.shows)}\n  ]`,
+    '}',
+    '',
+  ].join('\n');
+}
+
+async function readPrevious() {
+  try {
+    return JSON.parse(await readFile(OUT_FILE, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+async function main() {
+  const dryRun = process.argv.includes('--dry-run');
+  const today = berlinDate();
+  const data = await collect({ today, previous: await readPrevious() });
+
+  const rows = data.cinemas.map((c) => ({
+    Kino: c.name,
+    Quelle: c.source,
+    Status: c.status,
+    Vorstellungen: c.shows,
+    Hinweis: c.message ?? '',
+  }));
+  console.table(rows);
+  console.log(`${data.shows.length} Vorstellungen, ${Object.keys(data.films).length} Filme (${data.days[0]} bis ${data.days.at(-1)})`);
+
+  const problems = data.cinemas.filter((c) => c.status !== 'ok');
+
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const md = [
+      `### Kinoprogramm ${data.days[0]} bis ${data.days.at(-1)}`,
+      '',
+      '| Kino | Quelle | Status | Vorstellungen | Hinweis |',
+      '| --- | --- | --- | ---: | --- |',
+      ...rows.map((r) => `| ${r.Kino} | ${r.Quelle} | ${r.Status} | ${r.Vorstellungen} | ${r.Hinweis.replace(/\|/g, '/')} |`),
+      '',
+    ].join('\n');
+    await appendFile(process.env.GITHUB_STEP_SUMMARY, md);
+  }
+  if (process.env.GITHUB_OUTPUT) {
+    await appendFile(process.env.GITHUB_OUTPUT, `problems=${problems.length}\n`);
+  }
+
+  if (data.shows.length === 0) {
+    throw new Error('Keine einzige Vorstellung gefunden – alte Daten bleiben unverändert.');
+  }
+  if (dryRun) return;
+
+  await mkdir(dirname(OUT_FILE), { recursive: true });
+  await writeFile(OUT_FILE, formatProgram(data));
+  console.log(`Geschrieben: ${OUT_FILE}`);
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

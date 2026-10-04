@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//wp-events-plugin.com//7.4.3//EN
+TZID:Europe/Berlin
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VEVENT
+UID:1241@cineding-leipzig.de
+DTSTART;TZID=Europe/Berlin:20261008T190000
+DTEND;TZID=Europe/Berlin:20261008T190000
+DTSTAMP:20260922T202035Z
+URL:https://www.cineding-leipzig.de/veranstaltungen/everytime-2/
+SUMMARY:EVERYTIME
+DESCRIPTION:Das letzte Foto\, das Jessie gemacht hat\, zeigt die Sonne übe
+ r Berlin.
+CATEGORIES:Reguläres Programm
+END:VEVENT
+BEGIN:VEVENT
+UID:1250@cineding-leipzig.de
+DTSTART;TZID=Europe/Berlin:20261010T190000
+URL:https://www.cineding-leipzig.de/veranstaltungen/anstatt-baeumen/
+SUMMARY:ANSTATT BÄUMEN (OmU) + Filmgespräch mit Regisseur Philipp Hartman
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:1300@cineding-leipzig.de
+DTSTART:20261231T200000Z
+SUMMARY:Silvester\, Sekt & Kurzfilme
+END:VEVENT
+END:VCALENDAR

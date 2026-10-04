@@ -1,0 +1,83 @@
+[
+ {
+  "_type": "movie",
+  "id": 226596,
+  "cinema": 33,
+  "title": "Digger",
+  "detailLink": "/kino-leipzig/film/digger",
+  "showtimes": [
+   {
+    "id": 4047804,
+    "datetime": "2026-10-07 19:50 CEST",
+    "systemId": "183757",
+    "attributes": [
+     "2D",
+     "Flmzlg0100",
+     "LANG_DE",
+     "FSK_12",
+     "BarrierFree",
+     "Wheelchair"
+    ]
+   },
+   {
+    "id": 4047917,
+    "datetime": "2026-10-05 13:30 CEST",
+    "systemId": "183691",
+    "attributes": [
+     "2D",
+     "Flmzlg0100",
+     "IMAX",
+     "LANG_DE",
+     "Recliner",
+     "FSK_12",
+     "Wheelchair"
+    ]
+   },
+   {
+    "id": 4047919,
+    "datetime": "2026-10-05 19:50 CEST",
+    "systemId": "183822",
+    "attributes": [
+     "2D",
+     "AUDIO_OV",
+     "Flmzlg0100",
+     "IMAX",
+     "LANG_EN",
+     "Recliner",
+     "OV",
+     "FSK_12",
+     "Wheelchair"
+    ]
+   }
+  ]
+ },
+ {
+  "_type": "event",
+  "id": 218915,
+  "cinema": 33,
+  "title": "Live aus der MET: Wagner: Parsifal",
+  "detailLink": "/kino-leipzig/veranstaltung-live-aus-der-met-wagner-parsifal",
+  "showtimes": [
+   {
+    "id": 3907541,
+    "datetime": "2027-06-05 18:00 CEST",
+    "systemId": "177949",
+    "attributes": [
+     "2D",
+     "Alt ConEFF",
+     "AUDIO_OmU",
+     "LANG_DE",
+     "SoVo",
+     "OV",
+     "OMU",
+     "SUBS",
+     "LANG_ALL",
+     "FSK_6",
+     "BarrierFree",
+     "Wheelchair",
+     "ET_SONDERVORSTELLUNG"
+    ]
+   }
+  ]
+ }
+]

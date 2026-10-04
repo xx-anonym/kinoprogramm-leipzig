@@ -1,0 +1,29 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - 'scraper/**'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'scraper/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - working-directory: scraper
+        run: npm ci
+
+      - working-directory: scraper
+        run: npm test
