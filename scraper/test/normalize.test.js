@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { chooseDisplayTitles, filmKey, parseTitle, versionFromText } from '../src/lib/normalize.js';
+import { chooseDisplayTitles, filmKey, parseTitle, splitEvent, versionFromText } from '../src/lib/normalize.js';
 import { addDays, inferYear, parseGermanDate, parseTime } from '../src/lib/dates.js';
 
 test('parseTitle trennt Fassung und 3D vom Titel', () => {
@@ -35,6 +35,30 @@ test('filmKey fasst unterschiedliche Schreibweisen zusammen', () => {
   assert.equal(filmKey('Arnie & Barney – Retten das Wasser'), filmKey('Arnie & Barney retten das Wasser'));
   assert.equal(filmKey('FRAU WINKLER VERLÄSST DAS HAUS'), filmKey('Frau Winkler verlässt das Haus'));
   assert.notEqual(filmKey('Digger'), filmKey('Diggers'));
+});
+
+test('splitEvent trennt Veranstaltungs-Zusätze vom Filmtitel', () => {
+  const cases = [
+    ['„Literatur trifft Film": DIE BLECHTROMMEL', 'DIE BLECHTROMMEL', 'Literatur trifft Film'],
+    ['„Special Screening zu Beginn der Herbstferien": MIRA', 'MIRA', 'Special Screening zu Beginn der Herbstferien'],
+    ['Premiere: ALTE LIEBE', 'ALTE LIEBE', 'Premiere'],
+    ['Zusatz-Premiere: HEIMSUCHUNG - EINE JAHRHUNDERTGESCHICHTE', 'HEIMSUCHUNG - EINE JAHRHUNDERTGESCHICHTE', 'Zusatz-Premiere'],
+    ['Pans Labyrinth - Best of Cinema', 'Pans Labyrinth', 'Best of Cinema'],
+    ['ANSTATT BÄUMEN + Filmgespräch mit Regisseur Philipp Hartmann', 'ANSTATT BÄUMEN', '+ Filmgespräch mit Regisseur Philipp Hartmann'],
+    ['Reihe Zeitlos: HARD BOILED', 'HARD BOILED', 'Reihe Zeitlos'],
+    // unverändert: echte Titel mit Doppelpunkt, Sneaks, Doppelvorstellungen
+    ['Avengers: Endgame', 'Avengers: Endgame', null],
+    ['CineSneak OV: The original surprise preview', 'CineSneak OV: The original surprise preview', null],
+    ['Horror-Doppel mit Donis: Backrooms + Obsession', 'Horror-Doppel mit Donis: Backrooms + Obsession', null],
+  ];
+  for (const [raw, title, label] of cases) assert.deepEqual(splitEvent(raw), { title, label }, raw);
+});
+
+test('filmKey ignoriert führende Artikel und Apostrophe', () => {
+  assert.equal(filmKey('DER SPAZIERGANG NACH SYRAKUS'), filmKey('Spaziergang nach Syrakus'));
+  assert.equal(filmKey("Pan's Labyrinth"), filmKey('Pans Labyrinth'));
+  assert.equal(filmKey('The Invite'), filmKey('Invite'));
+  assert.notEqual(filmKey('Dieter'), filmKey('ter'), 'nur ganze Wörter');
 });
 
 test('chooseDisplayTitles bevorzugt normale Schreibweise vor Versalien', () => {

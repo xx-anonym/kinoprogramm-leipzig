@@ -241,6 +241,11 @@
     return false;
   }
 
+  // Knopf im Fußbereich (z. B. auf dem Handy, wo es kein Strg+Ü gibt)
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-wheel-open]')) toggle();
+  });
+
   document.addEventListener('keydown', (e) => {
     if (isShortcut(e)) {
       e.preventDefault();

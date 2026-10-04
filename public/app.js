@@ -117,7 +117,7 @@ function visibleShows() {
   return data.shows.filter((s) => {
     if (s.date !== day || hidden.has(s.cinema) || !matchesTime(s, now)) return false;
     if (!tokens.length) return true;
-    const haystack = fold(`${data.films[s.film]?.title ?? ''} ${s.version ?? ''} ${(s.extras || []).join(' ')}`);
+    const haystack = fold(`${data.films[s.film]?.title ?? ''} ${s.version ?? ''} ${(s.extras || []).join(' ')} ${s.label ?? ''}`);
     return tokens.every((t) => haystack.includes(t));
   });
 }
@@ -178,7 +178,12 @@ function timeChip(show, now) {
     .filter(Boolean)
     .map((b) => `<span class="badge" title="${escapeHtml(VERSION_LABEL[b] || b)}">${escapeHtml(b)}</span>`)
     .join('');
+  // Sonderveranstaltung, z. B. "Premiere" oder "+ Filmgespräch mit …"
+  const label = show.label
+    ? `<span class="badge badge-event" title="${escapeHtml(show.label)}">${escapeHtml(show.label.length > 24 ? `${show.label.slice(0, 23).trimEnd()}…` : show.label)}</span>`
+    : '';
   const tip = [
+    show.label,
     end && `Ende ca. ${end} (${duration} Min. Film + ca. ${AD_MINUTES} Min. Werbung)`,
     show.screen,
     VERSION_LABEL[show.version],
@@ -186,7 +191,7 @@ function timeChip(show, now) {
     .filter(Boolean)
     .join(' · ');
   const cls = `time${past ? ' past' : ''}`;
-  const inner = `<span>${show.time}${end ? `<span class="end">–${end}</span>` : ''}</span>${badges}`;
+  const inner = `<span>${show.time}${end ? `<span class="end">–${end}</span>` : ''}</span>${badges}${label}`;
   if (show.url) {
     return `<a class="${cls}" href="${escapeHtml(show.url)}" target="_blank" rel="noopener" title="${escapeHtml(tip || 'Tickets & Infos')}">${inner}</a>`;
   }
@@ -482,3 +487,8 @@ window.kinoprogramm = {
 };
 
 init();
+
+// Offline-Fähigkeit und "Zum Home-Bildschirm" (siehe sw.js)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}

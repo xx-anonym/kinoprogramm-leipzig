@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 import { CINEMAS } from './cinemas.js';
 import { addDays, berlinDate } from './lib/dates.js';
-import { chooseDisplayTitles, filmKey, parseTitle, pickVersion } from './lib/normalize.js';
+import { chooseDisplayTitles, filmKey, parseTitle, pickVersion, splitEvent } from './lib/normalize.js';
 import { cinestar } from './sources/cinestar.js';
 import { cinetixx } from './sources/cinetixx.js';
 import { passage } from './sources/passage.js';
@@ -46,11 +46,14 @@ function normalizeShows(rawShows, cinemaId, days) {
     if (!raw?.date || !raw?.time || raw.date < first || raw.date > last) continue;
     const parsed = parseTitle(raw.title);
     if (!parsed.title) continue;
+    // "Premiere: ALTE LIEBE" → Film "ALTE LIEBE" mit Etikett "Premiere"
+    const event = splitEvent(parsed.title);
     result.push({
       cinema: cinemaId,
       date: raw.date,
       time: raw.time,
-      title: parsed.title,
+      title: event.title,
+      label: raw.label || event.label,
       version: pickVersion(raw.version, parsed.version),
       extras: [...new Set([...(raw.extras ?? []), ...parsed.extras])],
       screen: raw.screen || null,
@@ -154,6 +157,7 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
     const show = { cinema: s.cinema, film, date: s.date, time: s.time };
     if (s.version) show.version = s.version;
     if (s.extras.length) show.extras = s.extras;
+    if (s.label) show.label = s.label;
     if (s.screen) show.screen = s.screen;
     if (s.url) show.url = s.url;
     shows.push(show);

@@ -116,6 +116,42 @@ test('findet eine Quelle plötzlich nichts mehr, gilt das als Fehler und die alt
   assert.equal(quiet.shows.length, 0);
 });
 
+test('Sonderveranstaltungen landen beim selben Film und behalten ihr Etikett', async () => {
+  const previous = { films: {}, shows: [] };
+  const data = await collect({
+    today: TODAY,
+    cinemas: cinemas.slice(0, 1).concat(cinemas[2]),
+    sources: {
+      direct: async () => [
+        { date: TODAY, time: '18:00', title: 'Premiere: ALTE LIEBE (OmU)' },
+        { date: TODAY, time: '20:00', title: 'Pans Labyrinth - Best of Cinema' },
+      ],
+      other: async () => [
+        { date: TODAY, time: '17:00', title: 'Alte Liebe' },
+        { date: TODAY, time: '21:00', title: "Pan's Labyrinth" },
+        { date: TODAY, time: '19:00', title: 'DER SPAZIERGANG NACH SYRAKUS' },
+        { date: TODAY, time: '22:00', title: 'Spaziergang nach Syrakus' },
+      ],
+    },
+    previous,
+  });
+  assert.deepEqual(Object.keys(data.films).sort(), ['alteliebe', 'panslabyrinth', 'spaziergangnachsyrakus']);
+  assert.equal(data.films.alteliebe.title, 'Alte Liebe');
+  const premiere = data.shows.find((s) => s.film === 'alteliebe' && s.cinema === 'a');
+  assert.deepEqual([premiere.label, premiere.version], ['Premiere', 'OmU']);
+  assert.equal(data.shows.find((s) => s.film === 'panslabyrinth' && s.cinema === 'a').label, 'Best of Cinema');
+
+  // Etikett überlebt die Übernahme aus dem Vortag
+  const again = await collect({
+    today: TODAY,
+    cinemas: cinemas.slice(0, 1),
+    sources: { direct: async () => [] },
+    previous: data,
+  });
+  assert.equal(again.cinemas[0].status, 'stale');
+  assert.equal(again.shows.find((s) => s.film === 'alteliebe').label, 'Premiere');
+});
+
 test('formatProgram erzeugt gültiges JSON mit einer Zeile pro Vorstellung', async () => {
   const data = await collect({ today: TODAY, cinemas, sources });
   const text = formatProgram(data);

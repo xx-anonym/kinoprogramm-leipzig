@@ -72,14 +72,53 @@ export function parseTitle(raw) {
   return { title, version: pickVersion(...versions), extras: [...extras] };
 }
 
-/** Schlüssel zum Zusammenführen gleicher Filme ("Coyote vs. ACME" == "Coyote vs Acme"). */
+// Veranstaltungs-Vorsätze vor dem Doppelpunkt, z. B. "Premiere: ALTE LIEBE" oder "Reihe Zeitlos: HARD BOILED".
+// Sneak-Previews bleiben unangetastet – dort ist der Vorsatz der eigentliche Titel.
+const EVENT_PREFIX =
+  /\b(premiere|special|spezial|cinespecial|screening|reihe|preview|kurzfilm|ladies night|trifft film|klassiker|halloween)\b/i;
+const QUOTE = /["„“”‚‘’«»]/;
+const QUOTES = new RegExp(QUOTE.source, 'g');
+const EVENT_SUFFIX = /\s+[-–]\s+(Best of Cinema)\s*$/i;
+const TALK_SUFFIX = /\s+\+\s+((?:Film|Publikums)?gespräch|Q&A|Einführung|Diskussion|Vortrag|Gäste?|Regisseur)(.*)$/i;
+
+/**
+ * Trennt den eigentlichen Filmtitel von Veranstaltungs-Zusätzen:
+ * „Literatur trifft Film": DIE BLECHTROMMEL → { title: 'DIE BLECHTROMMEL', label: 'Literatur trifft Film' }
+ * Pans Labyrinth - Best of Cinema → { title: 'Pans Labyrinth', label: 'Best of Cinema' }
+ * ANSTATT BÄUMEN + Filmgespräch mit … → { title: 'ANSTATT BÄUMEN', label: '+ Filmgespräch mit …' }
+ */
+export function splitEvent(raw) {
+  let title = String(raw ?? '').trim();
+  const labels = [];
+  const prefix = /^(.+?):\s+(.+)$/.exec(title);
+  if (prefix && (QUOTE.test(prefix[1]) || EVENT_PREFIX.test(prefix[1]))) {
+    labels.push(prefix[1].replace(QUOTES, '').trim());
+    title = prefix[2];
+  }
+  const suffix = EVENT_SUFFIX.exec(title);
+  if (suffix) {
+    labels.push(suffix[1]);
+    title = title.slice(0, suffix.index);
+  }
+  const talk = TALK_SUFFIX.exec(title);
+  if (talk) {
+    labels.push(`+ ${talk[1]}${talk[2]}`.trim());
+    title = title.slice(0, talk.index);
+  }
+  title = title.replace(QUOTES, '').trim();
+  if (!title) return { title: String(raw ?? '').trim(), label: null };
+  return { title, label: labels.join(' · ') || null };
+}
+
+/** Schlüssel zum Zusammenführen gleicher Filme ("Coyote vs. ACME" == "Coyote vs Acme", "Der Spaziergang …" == "Spaziergang …"). */
 export function filmKey(title) {
   return String(title)
     .toLowerCase()
     .replace(/ß/g, 'ss')
     .normalize('NFKD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/[\u0300-\u036f]/g, '')
     .replace(/\(\s*(19|20)\d{2}\s*\)\s*$/, '')
+    .replace(/^\s*(der|die|das|the)\s+/, '')
     .replace(/&/g, 'und')
     .replace(/[^a-z0-9]+/g, '');
 }

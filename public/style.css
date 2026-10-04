@@ -437,6 +437,15 @@ a.time:hover {
   line-height: 1.5;
 }
 
+.badge-event {
+  background: none;
+  color: inherit;
+  border: 1px solid currentColor;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0.85;
+}
+
 .empty {
   padding: 40px 16px;
   text-align: center;
@@ -463,6 +472,30 @@ a.time:hover {
 .site-footer summary {
   cursor: pointer;
   color: var(--text);
+}
+
+.footer-tools {
+  margin: 12px 0;
+}
+
+.link-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.link-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (hover: none) {
+  .kbd-hint {
+    display: none;
+  }
 }
 
 .sources {

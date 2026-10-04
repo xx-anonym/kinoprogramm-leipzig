@@ -10,7 +10,11 @@ kostenlos bei Vercel.
   Browser gemerkt; Suche nach Titel oder Fassung (z. B. „omu“)
 - Uhrzeiten mit geschätzter Endzeit (Filmlänge + ca. 20 Min. Werbung), verlinkt direkt auf die
   Ticketbuchung bzw. die Filmseite des Kinos
-- Hell/Dunkel je nach Systemeinstellung, optimiert fürs Handy
+- Gleiche Filme werden kinoübergreifend zusammengeführt; Sonderveranstaltungen („Premiere“,
+  „Best of Cinema“, „+ Filmgespräch …“) erscheinen als Etikett an der Uhrzeit
+- Glücksrad (Knopf unten auf der Seite oder Strg+Ü / ⌘+Ü)
+- Hell/Dunkel je nach Systemeinstellung, optimiert fürs Handy; lässt sich als App auf den
+  Home-Bildschirm legen und zeigt offline das zuletzt geladene Programm
 
 ## Kinos und Datenquellen
 
