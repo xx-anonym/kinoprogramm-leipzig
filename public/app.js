@@ -109,6 +109,11 @@ const byTitle = (a, b) => state.data.films[a].title.localeCompare(state.data.fil
 
 // ---------- Darstellung ----------
 
+function trailerLink(title) {
+  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} trailer deutsch`)}`;
+  return `<a class="trailer" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Trailer auf YouTube suchen">Trailer</a>`;
+}
+
 function timeChip(show, now) {
   const past = show.date === now.date && show.time < now.time;
   const badges = [show.version, ...(show.extras || [])]
@@ -135,7 +140,7 @@ function renderByCinema(shows, now) {
         .sort(byTitle)
         .map(
           (film) => `<li class="row">
-            <p class="row-title"><button type="button" data-film="${escapeHtml(film)}" title="Wo läuft der Film noch?">${escapeHtml(data.films[film].title)}</button></p>
+            <p class="row-title"><button type="button" data-film="${escapeHtml(film)}" title="Wo läuft der Film noch?">${escapeHtml(data.films[film].title)}</button> ${trailerLink(data.films[film].title)}</p>
             <div class="times">${byFilm.get(film).map((s) => timeChip(s, now)).join('')}</div>
           </li>`,
         )
@@ -174,6 +179,7 @@ function renderByFilm(shows, now) {
         <div class="card-head">
           <h2>${escapeHtml(data.films[film].title)}</h2>
           <span class="sub">${count === 1 ? '1 Kino' : `${count} Kinos`}</span>
+          ${trailerLink(data.films[film].title)}
         </div>
         <ul class="rows">${rows}</ul>
       </section>`;

@@ -337,6 +337,32 @@ main {
   text-decoration: underline;
 }
 
+.trailer {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+
+.trailer::before {
+  content: '';
+  border-style: solid;
+  border-width: 4px 0 4px 7px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+.trailer:hover,
+.trailer:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .times {
   display: flex;
   flex-wrap: wrap;
