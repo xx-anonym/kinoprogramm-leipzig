@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-04T22:12:48.231Z",
+  "generatedAt": "2026-10-04T22:13:25.208Z",
   "days": ["2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoprogramm-leipzig.de","status":"ok","shows":71},
-    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoprogramm-leipzig.de","status":"ok","shows":67},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoprogramm-leipzig.de","status":"stale","message":"kinoprogramm-leipzig.de: HTTP 403 für https://www.kinoprogramm-leipzig.de/programm/woche","shows":71},
+    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoprogramm-leipzig.de","status":"stale","message":"kinoprogramm-leipzig.de: HTTP 403 für https://www.kinoprogramm-leipzig.de/programm/woche","shows":67},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":75},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":62},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":66},
