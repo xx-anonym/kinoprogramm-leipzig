@@ -6,7 +6,6 @@ const STORAGE_KEY = 'kinoprogramm-leipzig:v1';
 const VERSION_LABEL = { OmU: 'Original mit Untertiteln', OmeU: 'Original mit englischen Untertiteln', OV: 'Originalfassung' };
 const STATUS_LABEL = {
   ok: 'aktuell',
-  fallback: 'Ersatzquelle',
   stale: 'Quelle nicht erreichbar – Daten vom letzten erfolgreichen Abruf',
   error: 'Quelle nicht erreichbar',
 };

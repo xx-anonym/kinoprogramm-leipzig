@@ -1,0 +1,55 @@
+{
+ "data": {
+  "shows": {
+   "data": [
+    {
+     "name": "Coyote vs. Acme",
+     "beginning": "2026-10-05T14:30:00+02:00",
+     "deeplink": "https://tickets.cineplex.de/checkout/356/A5CBFB00023FWBXJYB",
+     "audioLanguage": null,
+     "subtitleLanguage": null,
+     "flags": [],
+     "movie": {
+      "title": "Coyote vs. ACME"
+     }
+    },
+    {
+     "name": "Verity - Dunkle Geheimnisse",
+     "beginning": "2026-10-05T17:00:00+02:00",
+     "deeplink": "https://tickets.cineplex.de/checkout/356/7CCBFB00023FWBXJYB",
+     "audioLanguage": null,
+     "subtitleLanguage": null,
+     "flags": [
+      {
+       "code": "dbox",
+       "category": "TECHNOLOGY"
+      }
+     ],
+     "movie": {
+      "title": "Verity - Dunkle Geheimnisse"
+     }
+    },
+    {
+     "name": "Avengers: Doomsday",
+     "beginning": "2026-12-16T16:30:00+01:00",
+     "deeplink": "https://tickets.cineplex.de/checkout/356/51BAFB00023FWBXJYB",
+     "audioLanguage": null,
+     "subtitleLanguage": null,
+     "flags": [
+      {
+       "code": "3d",
+       "category": "TECHNOLOGY"
+      },
+      {
+       "code": "dbox",
+       "category": "TECHNOLOGY"
+      }
+     ],
+     "movie": {
+      "title": "Avengers: Doomsday"
+     }
+    }
+   ]
+  }
+ }
+}

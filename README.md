@@ -13,32 +13,30 @@ kostenlos bei Vercel.
 ## Kinos und Datenquellen
 
 Abgedeckt sind alle Kinos, die auf kinoprogramm-leipzig.de ein regelmäßiges Programm haben. Die Daten
-kommen – wo möglich – direkt von den Kinos:
+kommen direkt von den Kinos bzw. ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 
 | Kino | Quelle |
 | --- | --- |
+| Cineplex Leipzig | Ticketportal kinoheld ¹ |
+| UCI Nova Eventis | Ticketportal kinoheld ¹ |
 | CineStar Petersbogen | JSON-API von cinestar.de |
 | Regina Palast | Programmdaten auf kinoleipzig.com |
 | Passage Kinos | Terminliste auf passage-kinos.de |
-| CT Lichtspiele Taucha | Ticketshop kinotickets.express |
+| CT Lichtspiele Taucha | Ticketshop kinotickets.express ² |
 | Schauburg | Wochenprogramm auf schauburg-leipzig.de |
 | Kinobar Prager Frühling | Ticketsystem Cinetixx |
 | Luru Kino in der Spinnerei | Ticketsystem Cinetixx |
 | Schaubühne Lindenfels | Ticketsystem Cinetixx |
 | Cineding | iCal-Kalender von cineding-leipzig.de |
-| Cineplex Leipzig | kinoprogramm-leipzig.de ¹ |
-| UCI Nova Eventis | kinoprogramm-leipzig.de ¹ |
 
-¹ cineplex.de und uci-kinowelt.de blockieren automatische Abrufe (Cloudflare). Für diese beiden Kinos
-dient deshalb kinoprogramm-leipzig.de als Quelle.
+¹ cineplex.de und uci-kinowelt.de blockieren automatische Abrufe (Cloudflare); kinoheld führt das
+Programm beider Kinos inklusive Links zu deren Ticketshops.
+² Die robots.txt von kinoheld (API) und kinotickets.express untersagt automatische Zugriffe. Der
+Scraper ruft dort nur einmal täglich je Kino eine einzige Seite ab. Wer darauf verzichten möchte,
+entfernt die drei Kinos in `scraper/src/cinemas.js`.
 
-kinoprogramm-leipzig.de wird außerdem als **Ersatzquelle** genutzt:
-
-- Fällt die eigene Quelle eines Kinos aus, kommen dessen Daten für diesen Tag von dort.
-- Spielorte, die nur gelegentlich auftauchen (Sommerkinos, Open Air usw.), werden automatisch ergänzt.
-- Ist gar nichts erreichbar, bleiben die Vorstellungen vom letzten erfolgreichen Abruf stehen.
-
-Welche Quelle gerade genutzt wird, steht unten auf der Seite unter „Datenquellen & Status“.
+Fällt eine Quelle aus, bleiben die Vorstellungen dieses Kinos vom letzten erfolgreichen Abruf stehen.
+Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen aktuell sind.
 
 ## Aufbau
 
@@ -51,8 +49,7 @@ scraper/                Node.js-Skript, das die Daten sammelt
   src/sources/          Ein Modul pro Quelle
   test/                 Tests mit echten Ausschnitten der Kino-Webseiten
 .github/workflows/
-  update.yml            Täglich 18:00 Uhr (+ donnerstags 7:00 Uhr zum Start der neuen Kinowoche):
-                        Daten holen, committen → Vercel veröffentlicht automatisch
+  update.yml            Täglich 18:00 Uhr: Daten holen, committen → Vercel veröffentlicht automatisch
   test.yml              Tests bei Änderungen am Scraper
 vercel.json             Vercel liefert den Ordner public/ aus
 ```
@@ -79,8 +76,8 @@ möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unte
 ## Wenn ein Kino fehlt oder falsche Daten zeigt
 
 - Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail. Die Seite wird
-  trotzdem aktualisiert (mit Ersatzdaten). In der Zusammenfassung des Laufs steht, welches Kino
-  betroffen ist und warum.
+  trotzdem aktualisiert; das betroffene Kino behält seine Daten vom letzten erfolgreichen Abruf. In
+  der Zusammenfassung des Laufs steht, welches Kino betroffen ist und warum.
 - Meist hat das Kino seine Webseite umgebaut. Dann muss das passende Modul in `scraper/src/sources/`
   angepasst werden.
 
@@ -100,8 +97,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 ## Ein Kino hinzufügen
 
 1. In `scraper/src/cinemas.js` einen Eintrag ergänzen.
-2. Nutzt das Kino ein bekanntes System (Cinetixx, kinotickets.express, cineprog/kinoheld, iCal), reicht
-   die passende `source`-Angabe. Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
+2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, kinotickets.express, cineprog, iCal),
+   reicht die passende `source`-Angabe. Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
    `scraper/src/index.js` unter `SOURCES` eintragen.
 
 Angaben ohne Gewähr – maßgeblich ist das Programm des jeweiligen Kinos.

@@ -5,16 +5,19 @@ const USER_AGENT =
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function request(url, { accept, retries = 2, timeoutMs = 30_000 } = {}) {
+async function request(url, { accept, retries = 2, timeoutMs = 30_000, method = 'GET', headers = {}, body } = {}) {
   let lastError;
   for (let attempt = 0; attempt <= retries; attempt++) {
     if (attempt > 0) await sleep(2000 * 2 ** (attempt - 1));
     try {
       const res = await fetch(url, {
+        method,
+        body,
         headers: {
           'User-Agent': USER_AGENT,
           Accept: accept,
           'Accept-Language': 'de-DE,de;q=0.9',
+          ...headers,
         },
         redirect: 'follow',
         signal: AbortSignal.timeout(timeoutMs),

@@ -425,7 +425,6 @@ a.time:hover {
   background: #2f9e44;
 }
 
-.status.fallback,
 .status.stale {
   background: #e8a317;
 }

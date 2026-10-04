@@ -10,7 +10,7 @@ import { parseSchauburg } from '../src/sources/schauburg.js';
 import { parseKinotickets } from '../src/sources/kinotickets.js';
 import { parseCineprog } from '../src/sources/cineprog.js';
 import { parseIcal } from '../src/sources/ical.js';
-import { parseKinoprogrammLeipzig } from '../src/sources/kinoprogrammLeipzig.js';
+import { parseKinoheld } from '../src/sources/kinoheld.js';
 
 const fixture = (name) => readFileSync(new URL(`./fixtures/${name}`, import.meta.url), 'utf8');
 
@@ -124,16 +124,51 @@ test('iCal (Cineding): gefaltete Zeilen, Escapes und UTC-Zeiten', () => {
   ]);
 });
 
-test('kinoprogramm-leipzig.de: Kinos, Tage und Fassungs-Badges', () => {
-  const cinemas = parseKinoprogrammLeipzig(fixture('kinoprogramm-leipzig.html'), '2026-10-04');
-  assert.deepEqual(Object.keys(cinemas).sort(), ['43', '52']);
-  assert.equal(cinemas['43'].name, 'Cineding');
-  assert.equal(cinemas['43'].address, 'Karl-Heine-Str. 83 04229 Leipzig - Plagwitz');
-  assert.deepEqual(
-    cinemas['43'].shows.map((s) => `${s.date} ${s.time} ${s.title}`),
-    ['2026-10-01 19:00 Hiddensee', '2026-10-01 21:15 Staatsschutz', '2026-10-02 19:00 Hiddensee', '2026-10-02 21:15 Staatsschutz'],
-  );
-  const cinestar = cinemas['52'].shows;
-  assert.deepEqual(cinestar.find((s) => s.title === 'Avengers: Endgame').extras, ['3D']);
-  assert.equal(cinestar.find((s) => s.title === 'LINKIN PARK: UNSHATTER').version, 'OmU');
+test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
+  const shows = parseKinoheld(JSON.parse(fixture('kinoheld.json')));
+  assert.deepEqual(shows, [
+    {
+      date: '2026-10-05',
+      time: '14:30',
+      title: 'Coyote vs. Acme',
+      version: null,
+      extras: [],
+      url: 'https://tickets.cineplex.de/checkout/356/A5CBFB00023FWBXJYB',
+    },
+    {
+      date: '2026-10-05',
+      time: '17:00',
+      title: 'Verity - Dunkle Geheimnisse',
+      version: null,
+      extras: [],
+      url: 'https://tickets.cineplex.de/checkout/356/7CCBFB00023FWBXJYB',
+    },
+    // Winterzeit: Offset +01:00, die Uhrzeit bleibt Ortszeit
+    {
+      date: '2026-12-16',
+      time: '16:30',
+      title: 'Avengers: Doomsday',
+      version: null,
+      extras: ['3D'],
+      url: 'https://tickets.cineplex.de/checkout/356/51BAFB00023FWBXJYB',
+    },
+  ]);
+});
+
+test('kinoheld: Fassung aus Ton- und Untertitelsprache', () => {
+  const show = (audio, subtitles) => ({
+    name: 'Film',
+    beginning: '2026-10-05T20:00:00+02:00',
+    audioLanguage: audio ? { isocode: audio } : null,
+    subtitleLanguage: subtitles ? { isocode: subtitles } : null,
+    flags: [],
+  });
+  const versions = parseKinoheld({
+    data: { shows: { data: [show('en', 'de'), show('ko', 'en'), show('en', null), show('de', null), show(null, null)] } },
+  }).map((s) => s.version);
+  assert.deepEqual(versions, ['OmU', 'OmeU', 'OV', null, null]);
+});
+
+test('kinoheld: Fehlermeldungen der API werden weitergereicht', () => {
+  assert.throws(() => parseKinoheld({ errors: [{ message: 'The limit may not be greater than 500.' }] }), /limit/);
 });

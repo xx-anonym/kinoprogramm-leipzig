@@ -17,14 +17,14 @@ import { schauburg } from './sources/schauburg.js';
 import { kinotickets } from './sources/kinotickets.js';
 import { cineprog } from './sources/cineprog.js';
 import { ical } from './sources/ical.js';
-import { fetchKinoprogrammLeipzig } from './sources/kinoprogrammLeipzig.js';
+import { kinoheld } from './sources/kinoheld.js';
 
 const OUT_FILE = fileURLToPath(new URL('../../public/data/program.json', import.meta.url));
 
 /** Heute + 7 Tage, damit die Seite auch am Folgetag noch eine volle Woche zeigt. */
 export const DAYS = 8;
 
-export const SOURCES = { cinestar, cinetixx, passage, schauburg, kinotickets, cineprog, ical };
+export const SOURCES = { cinestar, cinetixx, passage, schauburg, kinotickets, cineprog, ical, kinoheld };
 
 const SOURCE_LABELS = {
   cinestar: 'cinestar.de',
@@ -34,7 +34,7 @@ const SOURCE_LABELS = {
   kinotickets: 'kinotickets.express',
   cineprog: 'kinoleipzig.com',
   ical: 'cineding-leipzig.de',
-  'kinoprogramm-leipzig': 'kinoprogramm-leipzig.de',
+  kinoheld: 'kinoheld.de',
 };
 
 const errorMessage = (err) => String(err?.message ?? err).slice(0, 300);
@@ -76,24 +76,12 @@ function previousShows(previous, cinemaId, days) {
 }
 
 /**
- * Holt alle Kinos. Reihenfolge pro Kino: eigene Quelle → kinoprogramm-leipzig.de → Daten vom Vortag.
+ * Holt alle Kinos. Fällt die Quelle eines Kinos aus, bleiben dessen Vorstellungen vom letzten Lauf stehen.
  * Abhängigkeiten sind injizierbar, damit sich das in Tests ohne Netz prüfen lässt.
  */
-export async function collect({
-  today,
-  cinemas = CINEMAS,
-  sources = SOURCES,
-  fetchKpl = fetchKinoprogrammLeipzig,
-  previous = null,
-  now = new Date(),
-}) {
+export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, previous = null, now = new Date() }) {
   const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
   const context = { today };
-
-  const kplPromise = fetchKpl(context).then(
-    (data) => ({ data }),
-    (error) => ({ error }),
-  );
 
   const results = await Promise.all(
     cinemas.map(async (cinema) => {
@@ -105,64 +93,17 @@ export async function collect({
         website: cinema.website,
         source: SOURCE_LABELS[type] ?? type,
       };
-
-      let directError = null;
-      if (type !== 'kinoprogramm-leipzig') {
-        try {
-          const fetcher = sources[type];
-          if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
-          const shows = normalizeShows(await fetcher(cinema.source, context), cinema.id, days);
-          return { cinema: { ...base, status: 'ok' }, shows };
-        } catch (err) {
-          directError = err;
-        }
+      try {
+        const fetcher = sources[type];
+        if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
+        const shows = normalizeShows(await fetcher(cinema.source, context), cinema.id, days);
+        return { cinema: { ...base, status: 'ok' }, shows };
+      } catch (err) {
+        const old = previousShows(previous, cinema.id, days);
+        return { cinema: { ...base, status: old.length ? 'stale' : 'error', message: errorMessage(err) }, shows: old };
       }
-
-      const kpl = await kplPromise;
-      if (!kpl.error) {
-        const shows = normalizeShows(kpl.data[cinema.kplId]?.shows ?? [], cinema.id, days);
-        if (!directError) return { cinema: { ...base, status: 'ok' }, shows };
-        return {
-          cinema: {
-            ...base,
-            status: 'fallback',
-            source: SOURCE_LABELS['kinoprogramm-leipzig'],
-            message: `${base.source}: ${errorMessage(directError)}`,
-          },
-          shows,
-        };
-      }
-
-      const message = [directError && `${base.source}: ${errorMessage(directError)}`, `kinoprogramm-leipzig.de: ${errorMessage(kpl.error)}`]
-        .filter(Boolean)
-        .join(' | ');
-      const old = previousShows(previous, cinema.id, days);
-      return { cinema: { ...base, status: old.length ? 'stale' : 'error', message }, shows: old };
     }),
   );
-
-  // Zusätzliche Spielorte, die nur auf kinoprogramm-leipzig.de stehen (z. B. Sommerkinos)
-  const kpl = await kplPromise;
-  if (!kpl.error) {
-    const known = new Set(cinemas.map((c) => c.kplId));
-    for (const [kplId, entry] of Object.entries(kpl.data)) {
-      if (known.has(kplId)) continue;
-      const id = `kpl-${kplId}`;
-      const shows = normalizeShows(entry.shows, id, days);
-      if (!shows.length) continue;
-      results.push({
-        cinema: {
-          id,
-          name: entry.name,
-          address: entry.address,
-          website: `https://www.kinoprogramm-leipzig.de/kino/${kplId}`,
-          source: SOURCE_LABELS['kinoprogramm-leipzig'],
-          status: 'ok',
-        },
-        shows,
-      });
-    }
-  }
 
   // Filmtitel über alle Kinos vereinheitlichen
   const allShows = results.flatMap((r) => r.shows);

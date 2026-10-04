@@ -1,6 +1,5 @@
-// Alle Kinos, die auf kinoprogramm-leipzig.de regelmäßig ein Programm haben.
-// `kplId` ist die Kino-Nummer auf kinoprogramm-leipzig.de (für Ersatzdaten).
-// Weitere Spielorte von dort (Sommerkinos usw.) werden automatisch ergänzt.
+// Alle Kinos, die auf kinoprogramm-leipzig.de regelmäßig ein Programm haben –
+// die Daten kommen aber direkt von den Kinos bzw. ihren Ticketsystemen.
 
 export const CINEMAS = [
   {
@@ -8,25 +7,22 @@ export const CINEMAS = [
     name: 'Cineplex Leipzig',
     address: 'Ludwigsburger Str. 13, 04209 Leipzig-Grünau',
     website: 'https://www.cineplex.de/leipzig/',
-    kplId: '1',
-    // cineplex.de blockiert automatische Abrufe (Cloudflare)
-    source: { type: 'kinoprogramm-leipzig' },
+    // cineplex.de blockiert automatische Abrufe (Cloudflare) – Programm über kinoheld
+    source: { type: 'kinoheld', cinemaId: '312' },
   },
   {
     id: 'uci',
     name: 'UCI Nova Eventis',
     address: 'Merseburger Str. 17a, Günthersdorf (Nova Eventis)',
     website: 'https://www.uci-kinowelt.de/programm/leipzig/',
-    kplId: '2',
-    // uci-kinowelt.de blockiert automatische Abrufe (Cloudflare)
-    source: { type: 'kinoprogramm-leipzig' },
+    // uci-kinowelt.de blockiert automatische Abrufe (Cloudflare) – Programm über kinoheld
+    source: { type: 'kinoheld', cinemaId: '1235' },
   },
   {
     id: 'cinestar',
     name: 'CineStar Petersbogen',
     address: 'Petersstraße 44, 04109 Leipzig',
     website: 'https://www.cinestar.de/kino-leipzig',
-    kplId: '52',
     source: { type: 'cinestar', cinemaId: 33 },
   },
   {
@@ -34,7 +30,6 @@ export const CINEMAS = [
     name: 'Regina Palast',
     address: 'Dresdner Straße 56, 04317 Leipzig',
     website: 'https://www.kinoleipzig.com/',
-    kplId: '5',
     source: { type: 'cineprog', url: 'https://www.kinoleipzig.com/programm?filter=all' },
   },
   {
@@ -42,7 +37,6 @@ export const CINEMAS = [
     name: 'Passage Kinos',
     address: 'Hainstraße 19a, 04109 Leipzig',
     website: 'https://www.passage-kinos.de/',
-    kplId: '37',
     source: { type: 'passage' },
   },
   {
@@ -50,7 +44,6 @@ export const CINEMAS = [
     name: 'CT Lichtspiele Taucha',
     address: 'Karl-Große-Str. 2, 04425 Taucha',
     website: 'https://kinotaucha.de/',
-    kplId: '9',
     source: { type: 'kinotickets', slug: 'taucha-ct-lichtspiele' },
   },
   {
@@ -58,7 +51,6 @@ export const CINEMAS = [
     name: 'Schauburg',
     address: 'Antonienstraße 21, 04229 Leipzig',
     website: 'https://www.schauburg-leipzig.de/',
-    kplId: '4',
     source: { type: 'schauburg' },
   },
   {
@@ -66,7 +58,6 @@ export const CINEMAS = [
     name: 'Kinobar Prager Frühling',
     address: 'Bernhard-Göring-Str. 152, 04277 Leipzig',
     website: 'https://www.kinobar-leipzig.de/',
-    kplId: '21',
     source: { type: 'cinetixx', cinemaId: '1627481494' },
   },
   {
@@ -74,7 +65,6 @@ export const CINEMAS = [
     name: 'Luru Kino in der Spinnerei',
     address: 'Spinnereistr. 7, 04179 Leipzig',
     website: 'https://www.luru-kino.de/',
-    kplId: '38',
     source: { type: 'cinetixx', cinemaId: '2348716262' },
   },
   {
@@ -82,7 +72,6 @@ export const CINEMAS = [
     name: 'Schaubühne Lindenfels',
     address: 'Karl-Heine-Str. 50, 04229 Leipzig',
     website: 'https://www.schaubuehne.com/',
-    kplId: '10',
     source: { type: 'cinetixx', cinemaId: '1898834974' },
   },
   {
@@ -90,7 +79,6 @@ export const CINEMAS = [
     name: 'Cineding',
     address: 'Karl-Heine-Str. 83, 04229 Leipzig',
     website: 'https://www.cineding-leipzig.de/',
-    kplId: '43',
     source: { type: 'ical', url: 'https://www.cineding-leipzig.de/events.ics' },
   },
 ];

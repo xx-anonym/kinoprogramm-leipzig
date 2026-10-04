@@ -5,10 +5,6 @@ on:
     # Täglich um 18:00 Uhr deutscher Zeit (Sommer- und Winterzeit)
     - cron: '0 18 * * *'
       timezone: 'Europe/Berlin'
-    # Zusätzlich donnerstags früh: Dann beginnt die neue Kinowoche, und Cineplex/UCI
-    # (über kinoprogramm-leipzig.de) stehen erst ab diesem Tag im Programm.
-    - cron: '0 7 * * 4'
-      timezone: 'Europe/Berlin'
   # Manuell starten: Actions → "Kinoprogramm aktualisieren" → "Run workflow"
   workflow_dispatch:
 
@@ -54,8 +50,8 @@ jobs:
           git pull --rebase
           git push
 
-      # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert, aber der Lauf wird rot
-      # markiert (und GitHub schickt eine Mail), wenn bei einem Kino etwas nicht stimmt.
+      # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert (ausgefallene Kinos behalten
+      # ihre Daten vom Vortag), aber der Lauf wird rot markiert und GitHub schickt eine Mail.
       - name: Probleme melden
         if: steps.scrape.outputs.problems != '0'
         run: |
