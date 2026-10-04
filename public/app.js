@@ -109,8 +109,28 @@ const byTitle = (a, b) => state.data.films[a].title.localeCompare(state.data.fil
 
 // ---------- Darstellung ----------
 
+// Vorsätze wie „Literatur trifft Film": oder Premiere: gehören nicht zum Filmtitel
+const EVENT_PREFIX =
+  /\b(premiere|special|spezial|screening|reihe|preview|sneak|kurzfilm|ladies night|trifft film|klassiker|cinespecial|halloween|filmgespräch)\b/i;
+const QUOTE = /["„“”‚‘’«»]/;
+const QUOTES = new RegExp(QUOTE.source, 'g');
+
+/** Suchbegriff für den Trailer: nur der eigentliche Filmtitel, ohne Anführungszeichen. */
+function trailerQuery(title) {
+  let t = String(title);
+  const m = /^(.+?):\s+(.+)$/.exec(t);
+  if (m && (QUOTE.test(m[1]) || EVENT_PREFIX.test(m[1]))) t = m[2];
+  t = t
+    .replace(/\s+\+\s+.*$/, '') // "+ Filmgespräch mit …"
+    .replace(/\s*\([^)]*\)/g, '') // Zusätze in Klammern
+    .replace(QUOTES, '') // Anführungszeichen erzwingen bei YouTube exakte Treffer
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return `${t || title} trailer deutsch`;
+}
+
 function trailerLink(title) {
-  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} trailer deutsch`)}`;
+  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(trailerQuery(title))}`;
   return `<a class="trailer" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Trailer auf YouTube suchen">Trailer</a>`;
 }
 
