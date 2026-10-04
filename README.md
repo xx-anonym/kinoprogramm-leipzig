@@ -12,6 +12,8 @@ kostenlos bei Vercel.
   Ticketbuchung bzw. die Filmseite des Kinos
 - Gleiche Filme werden kinoübergreifend zusammengeführt; Sonderveranstaltungen („Premiere“,
   „Best of Cinema“, „+ Filmgespräch …“) erscheinen als Etikett an der Uhrzeit
+- Merkliste: Stern hinter jeder Vorstellung antippen, die gemerkten Vorstellungen stehen gesammelt
+  hinter dem Stern-Symbol oben rechts (wird im Browser gespeichert, vergangene Tage verschwinden)
 - Glücksrad (Knopf unten auf der Seite oder Strg+Ü / ⌘+Ü)
 - Hell/Dunkel je nach Systemeinstellung, optimiert fürs Handy; lässt sich als App auf den
   Home-Bildschirm legen und zeigt offline das zuletzt geladene Programm

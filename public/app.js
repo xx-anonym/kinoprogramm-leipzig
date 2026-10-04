@@ -3,6 +3,9 @@
 const TZ = 'Europe/Berlin';
 const DAYS_SHOWN = 7;
 const STORAGE_KEY = 'kinoprogramm-leipzig:v1';
+const BOOKMARK_KEY = 'kinoprogramm-leipzig:merkliste';
+const STAR_SVG =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z"/></svg>';
 // Geschätzte Werbung/Trailer vor dem Film – für die Endzeit
 const AD_MINUTES = 20;
 const TIME_OPTIONS = Array.from({ length: 14 }, (_, i) => `${String(10 + i).padStart(2, '0')}:00`);
@@ -162,18 +165,16 @@ function trailerLink(title) {
 }
 
 /** Geschätztes Ende: Beginn + Filmlänge + Werbung. */
-function endTime(show) {
-  const duration = state.data.films[show.film]?.duration;
+function endTime(show, duration = state.data.films[show.film]?.duration) {
   if (!duration) return null;
   const [h, m] = show.time.split(':').map(Number);
   const total = (h * 60 + m + duration + AD_MINUTES) % (24 * 60);
   return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
 }
 
-function timeChip(show, now) {
+function timeChip(show, now, duration = state.data.films[show.film]?.duration) {
   const past = show.date === now.date && show.time < now.time;
-  const end = endTime(show);
-  const duration = state.data.films[show.film]?.duration;
+  const end = endTime(show, duration);
   const badges = [show.version, ...(show.extras || [])]
     .filter(Boolean)
     .map((b) => `<span class="badge" title="${escapeHtml(VERSION_LABEL[b] || b)}">${escapeHtml(b)}</span>`)
@@ -198,6 +199,121 @@ function timeChip(show, now) {
   return `<span class="${cls}"${tip ? ` title="${escapeHtml(tip)}"` : ''}>${inner}</span>`;
 }
 
+// ---------- Merkliste ----------
+
+let bookmarks = new Map(); // id → Momentaufnahme der Vorstellung (bleibt lesbar, auch wenn sie aus dem Programm fällt)
+
+const showId = (s) => `${s.cinema}|${s.date}|${s.time}|${s.film}`;
+
+function loadBookmarks() {
+  try {
+    const list = JSON.parse(localStorage.getItem(BOOKMARK_KEY) || '[]');
+    const today = berlinNow().date;
+    // Vergangene Tage fliegen automatisch raus
+    bookmarks = new Map(list.filter((b) => b?.id && b.date >= today).map((b) => [b.id, b]));
+  } catch {
+    bookmarks = new Map();
+  }
+}
+
+function saveBookmarks() {
+  try {
+    localStorage.setItem(BOOKMARK_KEY, JSON.stringify([...bookmarks.values()]));
+  } catch {
+    /* z. B. privater Modus */
+  }
+}
+
+function toggleBookmark(id) {
+  if (bookmarks.has(id)) {
+    bookmarks.delete(id);
+  } else {
+    const show = state.data.shows.find((s) => showId(s) === id);
+    if (!show) return;
+    const film = state.data.films[show.film];
+    bookmarks.set(id, {
+      id,
+      cinema: show.cinema,
+      cinemaName: state.data.cinemas.find((c) => c.id === show.cinema)?.name ?? show.cinema,
+      film: show.film,
+      title: film?.title ?? show.film,
+      duration: film?.duration ?? null,
+      date: show.date,
+      time: show.time,
+      version: show.version ?? null,
+      extras: show.extras ?? [],
+      label: show.label ?? null,
+      url: show.url ?? null,
+    });
+  }
+  saveBookmarks();
+  // Alle Sterne dieser Vorstellung (Programm und Merkliste) aktualisieren
+  document.querySelectorAll(`[data-star="${CSS.escape(id)}"]`).forEach((btn) => setStar(btn, bookmarks.has(id)));
+  renderBookmarkToggle();
+}
+
+function setStar(btn, on) {
+  btn.setAttribute('aria-pressed', String(on));
+  btn.title = on ? 'Gemerkt – klicken zum Entfernen' : 'Merken';
+}
+
+function starButton(show, title) {
+  const id = showId(show);
+  const on = bookmarks.has(id);
+  return `<button type="button" class="star" data-star="${escapeHtml(id)}" aria-pressed="${on}" aria-label="${escapeHtml(`${title}, ${show.time} merken`)}" title="${on ? 'Gemerkt – klicken zum Entfernen' : 'Merken'}">${STAR_SVG}</button>`;
+}
+
+/** Uhrzeit mit Merken-Stern dahinter. */
+function showItem(show, now) {
+  return `<span class="show">${timeChip(show, now)}${starButton(show, state.data.films[show.film]?.title ?? '')}</span>`;
+}
+
+function renderBookmarkToggle() {
+  const count = bookmarks.size;
+  const btn = $('#bm-toggle');
+  btn.classList.toggle('has-items', count > 0);
+  btn.setAttribute('aria-label', count ? `Merkliste (${count})` : 'Merkliste');
+  const badge = $('#bm-count');
+  badge.textContent = String(count);
+  badge.hidden = count === 0;
+}
+
+function renderBookmarks() {
+  const body = $('#merkliste-body');
+  const list = [...bookmarks.values()].sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
+  if (!list.length) {
+    body.innerHTML = `<p class="empty">Noch nichts gemerkt. Tippe bei einer Vorstellung auf den Stern, um sie hier zu sammeln.</p>`;
+    return;
+  }
+  const now = berlinNow();
+  const known = new Set(state.data ? state.data.shows.map(showId) : []);
+  const covered = new Set(state.data?.days ?? []);
+  const sections = [...groupBy(list, (b) => b.date)].map(([date, items]) => {
+    const label = dayLabel(date, now.date);
+    const heading = label === 'Heute' || label === 'Morgen' ? `${label}, ${weekday(date)} ${shortDate(date)}` : `${label} ${shortDate(date)}`;
+    const rows = items
+      .map((b) => {
+        // Liegt der Tag im geladenen Programm, die Vorstellung fehlt aber: vermutlich abgesagt/verschoben
+        const missing = covered.has(b.date) && !known.has(b.id);
+        return `<li class="row${missing ? ' missing' : ''}">
+          <div>
+            <p class="row-title">${escapeHtml(b.title)}</p>
+            <span class="sub">${escapeHtml(b.cinemaName)}${missing ? ' · nicht mehr im Programm' : ''}</span>
+          </div>
+          <div class="times"><span class="show">${timeChip(b, now, b.duration)}${starButton(b, b.title)}</span></div>
+        </li>`;
+      })
+      .join('');
+    return `<section class="bm-day"><h3>${heading}</h3><ul class="rows">${rows}</ul></section>`;
+  });
+  body.innerHTML = `${sections.join('')}<p class="bm-actions"><button type="button" data-bm-clear>Alle entfernen</button></p>`;
+}
+
+function openBookmarks() {
+  renderBookmarks();
+  $('#merkliste').showModal();
+}
+
 function renderByCinema(shows, now) {
   const { data } = state;
   const byCinema = groupBy(shows, (s) => s.cinema);
@@ -210,7 +326,7 @@ function renderByCinema(shows, now) {
         .map(
           (film) => `<li class="row">
             <p class="row-title"><button type="button" data-film="${escapeHtml(film)}" title="Wo läuft der Film noch?">${escapeHtml(data.films[film].title)}</button> ${trailerLink(data.films[film].title)}</p>
-            <div class="times">${byFilm.get(film).map((s) => timeChip(s, now)).join('')}</div>
+            <div class="times">${byFilm.get(film).map((s) => showItem(s, now)).join('')}</div>
           </li>`,
         )
         .join('');
@@ -239,7 +355,7 @@ function renderByFilm(shows, now) {
         .map(
           (cinema) => `<li class="row">
             <p class="row-title">${escapeHtml(cinemaName.get(cinema))}</p>
-            <div class="times">${byCinema.get(cinema).map((s) => timeChip(s, now)).join('')}</div>
+            <div class="times">${byCinema.get(cinema).map((s) => showItem(s, now)).join('')}</div>
           </li>`,
         )
         .join('');
@@ -359,6 +475,30 @@ function render() {
 // ---------- Ereignisse ----------
 
 function bindEvents() {
+  // Merkliste
+  $('#bm-toggle').addEventListener('click', openBookmarks);
+  const dialog = $('#merkliste');
+  dialog.addEventListener('click', (e) => {
+    if (e.target === dialog || e.target.closest('[data-close]')) {
+      dialog.close();
+      return;
+    }
+    const star = e.target.closest('[data-star]');
+    if (star) {
+      toggleBookmark(star.dataset.star);
+      renderBookmarks();
+      return;
+    }
+    if (e.target.closest('[data-bm-clear]') && confirm('Alle gemerkten Vorstellungen entfernen?')) {
+      const ids = [...bookmarks.keys()];
+      bookmarks.clear();
+      saveBookmarks();
+      ids.forEach((id) => document.querySelectorAll(`[data-star="${CSS.escape(id)}"]`).forEach((btn) => setStar(btn, false)));
+      renderBookmarkToggle();
+      renderBookmarks();
+    }
+  });
+
   for (const [id, key] of [
     ['#time-from', 'from'],
     ['#time-until', 'until'],
@@ -420,6 +560,11 @@ function bindEvents() {
   });
 
   $('#program').addEventListener('click', (e) => {
+    const star = e.target.closest('[data-star]');
+    if (star) {
+      toggleBookmark(star.dataset.star);
+      return;
+    }
     const filmBtn = e.target.closest('[data-film]');
     if (filmBtn) {
       // "Wo läuft der Film noch?" – zur Filmansicht mit diesem Titel wechseln
@@ -447,6 +592,8 @@ function bindEvents() {
 
 async function init() {
   loadSettings();
+  loadBookmarks();
+  renderBookmarkToggle();
   state.today = berlinNow().date;
   state.day = state.today;
   bindEvents();
