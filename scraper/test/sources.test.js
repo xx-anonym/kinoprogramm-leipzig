@@ -64,7 +64,8 @@ test('Cinetixx: Vorstellungen anderer Spielstätten werden ignoriert', () => {
 
 test('Passage Kinos: Datum, Saal und OmU-Symbol', () => {
   const shows = parsePassage(fixture('passage.html'));
-  assert.deepEqual(shows, [
+  assert.match(shows[0].description, /Pawlikowski/);
+  assert.deepEqual(shows.map(({ description, ...rest }) => rest), [
     { date: '2026-10-05', time: '13:30', title: 'Vaterland', version: null, screen: 'Casino', url: 'https://www.passage-kinos.de/vaterland' },
     {
       date: '2026-10-05',
@@ -120,7 +121,8 @@ test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine,
 
 test('iCal (Cineding): gefaltete Zeilen, Escapes und UTC-Zeiten', () => {
   const shows = parseIcal(fixture('cineding.ics'));
-  assert.deepEqual(shows, [
+  assert.equal(shows[0].description, 'Das letzte Foto, das Jessie gemacht hat, zeigt die Sonne über Berlin.');
+  assert.deepEqual(shows.map(({ description, ...rest }) => rest), [
     // Ende = Beginn → Länge unbekannt
     { date: '2026-10-08', time: '19:00', title: 'EVERYTIME', url: 'https://www.cineding-leipzig.de/veranstaltungen/everytime-2/', duration: null },
     {
@@ -137,7 +139,7 @@ test('iCal (Cineding): gefaltete Zeilen, Escapes und UTC-Zeiten', () => {
 
 test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
   const shows = parseKinoheld(JSON.parse(fixture('kinoheld.json')));
-  assert.deepEqual(shows, [
+  assert.deepEqual(shows.map(({ description, ...rest }) => rest), [
     {
       date: '2026-10-05',
       time: '14:30',

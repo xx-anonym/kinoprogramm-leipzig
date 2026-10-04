@@ -136,6 +136,7 @@ test('Sonderveranstaltungen landen beim selben Film und behalten ihr Etikett', a
     previous,
   });
   assert.deepEqual(Object.keys(data.films).sort(), ['alteliebe', 'panslabyrinth', 'spaziergangnachsyrakus']);
+  assert.equal(data.films.spaziergangnachsyrakus.title, 'Spaziergang nach Syrakus');
   assert.equal(data.films.alteliebe.title, 'Alte Liebe');
   const premiere = data.shows.find((s) => s.film === 'alteliebe' && s.cinema === 'a');
   assert.deepEqual([premiere.label, premiere.version], ['Premiere', 'OmU']);
@@ -150,6 +151,23 @@ test('Sonderveranstaltungen landen beim selben Film und behalten ihr Etikett', a
   });
   assert.equal(again.cinemas[0].status, 'stale');
   assert.equal(again.shows.find((s) => s.film === 'alteliebe').label, 'Premiere');
+});
+
+test('Titel nur in Versalien werden mit Hilfe der Beschreibungen normal geschrieben', async () => {
+  const data = await collect({
+    today: TODAY,
+    cinemas: cinemas.slice(0, 1),
+    sources: {
+      direct: async () => [
+        { date: TODAY, time: '18:00', title: 'WAS HABEN WIR GELACHT', description: 'Fünf Frauen erzählen, worüber wir damals gelacht haben.' },
+        { date: TODAY, time: '20:00', title: 'THE INVITE (OmU)' },
+      ],
+    },
+  });
+  assert.deepEqual(
+    Object.values(data.films).map((f) => f.title),
+    ['The Invite', 'Was haben wir gelacht'],
+  );
 });
 
 test('formatProgram erzeugt gültiges JSON mit einer Zeile pro Vorstellung', async () => {

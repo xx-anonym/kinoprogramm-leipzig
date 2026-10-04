@@ -35,7 +35,13 @@ export function parseIcal(text) {
     if (line === 'BEGIN:VEVENT') event = {};
     else if (line === 'END:VEVENT') {
       if (event?.start && event.summary) {
-        shows.push({ ...event.start, title: event.summary, url: event.url ?? null, duration: durationOf(event.start, event.end) });
+        shows.push({
+          ...event.start,
+          title: event.summary,
+          url: event.url ?? null,
+          duration: durationOf(event.start, event.end),
+          description: event.description ?? null,
+        });
       }
       event = null;
     } else if (event) {
@@ -46,6 +52,7 @@ export function parseIcal(text) {
       if (name === 'DTSTART') event.start = parseDateTime(value);
       else if (name === 'DTEND') event.end = parseDateTime(value);
       else if (name === 'SUMMARY') event.summary = unescapeText(value);
+      else if (name === 'DESCRIPTION') event.description = unescapeText(value);
       else if (name === 'URL') event.url = value.trim();
     }
   }

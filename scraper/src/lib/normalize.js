@@ -148,3 +148,87 @@ export function chooseDisplayTitles(titles) {
   }
   return display;
 }
+
+// ---------- Versalien-Titel ("ALTE LIEBE") in normale Schreibweise bringen ----------
+
+const WORD = /[A-Za-zÀ-ÖØ-öø-ÿ]+(?:['’][A-Za-zÀ-ÖØ-öø-ÿ]+)?/g;
+
+// Häufige deutsche Wörter, die klein geschrieben werden – Grundstock, ergänzt durch die Beschreibungstexte
+const GERMAN_LOWER = new Set(
+  `und oder aber doch denn sondern für von vom mit ohne im in ins am an ans auf aus bei beim nach über unter vor
+  hinter neben zwischen zu zum zur durch gegen um bis seit während wegen trotz anstatt statt der die das den dem des
+  ein eine einer einem einen eines kein keine keiner wie als ist sind war waren wird werden wurde sein bin bist hat
+  haben hatte hatten habe kann können muss müssen will wollen soll darf wir ich du er sie es ihr uns euch mich dich
+  sich mir dir ihm ihn ihnen mein meine dein deine sein seine unser unsere nicht noch nur so auch schon immer nie
+  nichts alles alle viele vielen wenig was wer wen wem wo wann warum wohin woher dass ob wenn weil damit man mal hier
+  dort jetzt sehr ganz gar zurück weg los ab zusammen allein wieder einfach anders fast bald normal neu neue neuen
+  alt alte alten gut gute guten schlecht groß große großen klein kleine kleinen lang lange kurz schön schöne wild
+  frei ewig jung junge jungen letzte letzten erste ersten halb voll leer schwarz weiß rot blau grün hell dunkel heiß
+  kalt laut leise wahr falsch echt fremd fern nah weit hoch tief offen geheim verrückt verloren`.split(/\s+/),
+);
+
+const ENGLISH_SMALL = new Set('a an and as at but by for in nor of on or the to up vs via'.split(' '));
+const ENGLISH_MARKERS = new Set(
+  "the of and a to for at on with is are you your my me we our all it its this that from by don't i'm can't love".split(' '),
+);
+const GERMAN_MARKERS = new Set(
+  'der die das und für von vom mit im ins zum zur ein eine wie was wir ist nicht auf aus bei nach über unter vor zu ich du'.split(' '),
+);
+const ACRONYMS = new Set('DDR BRD USA UK EU NSU RAF MET UFA DEFA ARD ZDF MDR FBI CIA KGB NYC LGBTQ DJ TV OV OMU'.split(' '));
+const ROMAN = /^(?=[IVXLC])M*(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$/;
+
+/**
+ * Zählt in normal geschriebenen Texten, wie oft ein Wort klein bzw. groß vorkommt.
+ * Satzanfänge und Wörter in Versalien zählen nicht, weil sie nichts über die Schreibweise verraten.
+ */
+export function buildCaseDictionary(texts) {
+  const dict = new Map();
+  for (const text of texts) {
+    if (!text) continue;
+    for (const sentence of String(text).split(/[.!?…:;]\s+|\n+|\s[–—-]\s/)) {
+      const clean = sentence.replace(/^[\s"„“”‚‘’«»(]+/, '');
+      [...clean.matchAll(WORD)].forEach((match, i) => {
+        const word = match[0];
+        // Satzanfang, VERSALIEN und zweite Glieder von Bindestrichwörtern ("Coming-out") sagen nichts aus
+        if (i === 0 || word === word.toUpperCase() || clean[match.index - 1] === '-') return;
+        const key = word.toLocaleLowerCase('de');
+        const entry = dict.get(key) ?? { lower: 0, upper: 0 };
+        if (word[0] === word[0].toLocaleLowerCase('de')) entry.lower++;
+        else entry.upper++;
+        dict.set(key, entry);
+      });
+    }
+  }
+  return dict;
+}
+
+const capitalize = (word) => word.charAt(0).toLocaleUpperCase('de') + word.slice(1).toLocaleLowerCase('de');
+
+/**
+ * Bringt einen Titel in Versalien in normale Schreibweise:
+ * englische Titel in englischer Großschreibung ("The Beauty of Ballroom"),
+ * deutsche nach dem Wörterbuch aus den Beschreibungstexten ("Was haben wir gelacht").
+ */
+export function smartCase(title, dict = new Map()) {
+  if (!isAllCaps(title)) return title;
+  const words = (title.match(WORD) ?? []).map((w) => w.toLowerCase());
+  const english = words.filter((w) => ENGLISH_MARKERS.has(w)).length > words.filter((w) => GERMAN_MARKERS.has(w)).length;
+
+  let first = true;
+  return title.replace(new RegExp(`(${WORD.source})|([^A-Za-zÀ-ÖØ-öø-ÿ]+)`, 'g'), (token, word, gap) => {
+    if (gap) {
+      // Nach Doppelpunkt oder Gedankenstrich beginnt ein neuer Titelteil
+      if (/[:–—]|\s-\s/.test(gap)) first = true;
+      return gap;
+    }
+    const start = first;
+    first = false;
+    if (ACRONYMS.has(word) || (ROMAN.test(word) && word !== 'I' && word.length <= 4 && !start)) return word;
+    const lower = word.toLocaleLowerCase('de');
+    if (start) return capitalize(word);
+    if (english) return ENGLISH_SMALL.has(lower) ? lower : capitalize(word);
+    const entry = dict.get(lower);
+    if (entry && entry.lower !== entry.upper) return entry.lower > entry.upper ? lower : capitalize(word);
+    return GERMAN_LOWER.has(lower) ? lower : capitalize(word);
+  });
+}

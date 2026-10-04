@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 import { CINEMAS } from './cinemas.js';
 import { addDays, berlinDate } from './lib/dates.js';
-import { chooseDisplayTitles, filmKey, parseTitle, pickVersion, splitEvent } from './lib/normalize.js';
+import { buildCaseDictionary, chooseDisplayTitles, filmKey, parseTitle, pickVersion, smartCase, splitEvent } from './lib/normalize.js';
 import { cinestar } from './sources/cinestar.js';
 import { cinetixx } from './sources/cinetixx.js';
 import { passage } from './sources/passage.js';
@@ -59,6 +59,7 @@ function normalizeShows(rawShows, cinemaId, days) {
       screen: raw.screen || null,
       url: /^https?:\/\//i.test(raw.url ?? '') ? raw.url : null,
       duration: raw.duration >= 20 && raw.duration <= 720 ? Math.round(raw.duration) : null,
+      description: typeof raw.description === 'string' ? raw.description : null, // nur für die Schreibweise
     });
   }
   return result;
@@ -141,6 +142,8 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
   const allShows = results.flatMap((r) => r.shows);
   const displayTitles = chooseDisplayTitles(allShows.map((s) => s.title));
   const durations = filmDurations(allShows);
+  // Wörterbuch aus Beschreibungen und Titeln, um Titel in VERSALIEN normal zu schreiben
+  const caseDictionary = buildCaseDictionary(new Set([...allShows.map((s) => s.description), ...allShows.map((s) => s.title)]));
   const films = {};
   const seen = new Set();
   const shows = [];
@@ -151,7 +154,7 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
     if (seen.has(dedupeKey)) continue;
     seen.add(dedupeKey);
     if (!films[film]) {
-      films[film] = { title: displayTitles.get(film) };
+      films[film] = { title: smartCase(displayTitles.get(film), caseDictionary) };
       if (durations.has(film)) films[film].duration = durations.get(film);
     }
     const show = { cinema: s.cinema, film, date: s.date, time: s.time };

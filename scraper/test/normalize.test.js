@@ -1,7 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { chooseDisplayTitles, filmKey, parseTitle, splitEvent, versionFromText } from '../src/lib/normalize.js';
+import {
+  buildCaseDictionary,
+  chooseDisplayTitles,
+  filmKey,
+  parseTitle,
+  smartCase,
+  splitEvent,
+  versionFromText,
+} from '../src/lib/normalize.js';
 import { addDays, inferYear, parseGermanDate, parseTime } from '../src/lib/dates.js';
 
 test('parseTitle trennt Fassung und 3D vom Titel', () => {
@@ -65,6 +73,33 @@ test('chooseDisplayTitles bevorzugt normale Schreibweise vor Versalien', () => {
   const titles = chooseDisplayTitles(['ALTE LIEBE', 'ALTE LIEBE', 'Alte Liebe', 'HOPPERS']);
   assert.equal(titles.get(filmKey('Alte Liebe')), 'Alte Liebe');
   assert.equal(titles.get(filmKey('HOPPERS')), 'HOPPERS');
+});
+
+test('smartCase schreibt Titel in Versalien normal', () => {
+  const dict = buildCaseDictionary([
+    'Seit seiner Pensionierung pflegt Harry die alte Liebe zum Garten.',
+    'Am Ende haben wir viel gelacht.',
+    'Die Siedlung wurde für viele gebaut.',
+    'WAS HABEN WIR GELACHT erzählt die Geschichte.', // Versalien zählen nicht
+    'Mit 30 hatte sie ihr Coming-out.', // zweites Glied eines Bindestrichworts zählt nicht
+  ]);
+  const cases = [
+    ['ALTE LIEBE', 'Alte Liebe'],
+    ['WAS HABEN WIR GELACHT', 'Was haben wir gelacht'],
+    ['GRÜNAU 50 – GEBAUT FÜR VIELE', 'Grünau 50 – Gebaut für viele'],
+    ['CHIHIROS REISE INS ZAUBERLAND', 'Chihiros Reise ins Zauberland'],
+    ['FÜR IMMER 16', 'Für immer 16'],
+    ['THE BEAUTY OF BALLROOM', 'The Beauty of Ballroom'],
+    ['ALL YOU NEED IS KILL', 'All You Need Is Kill'],
+    ["OASIS: DON'T LOOK BACK IN ANGER", "Oasis: Don't Look Back in Anger"],
+    ['HEART OF LIGHT – ELEVEN SONGS FOR FIJI', 'Heart of Light – Eleven Songs for Fiji'],
+    ['DIE DDR UND ICH', 'Die DDR und ich'],
+    ['ROCKY II', 'Rocky II'],
+    ['KURZFILMPROGRAMM ZUM COMING OUT DAY', 'Kurzfilmprogramm zum Coming Out Day'],
+    ['VERFLUCHT NORMAL', 'Verflucht normal'],
+    ['Alte Liebe', 'Alte Liebe'], // schon normal geschrieben → unverändert
+  ];
+  for (const [raw, expected] of cases) assert.equal(smartCase(raw, dict), expected, raw);
 });
 
 test('Datumshilfen inkl. Jahreswechsel', () => {

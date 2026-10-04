@@ -27,6 +27,7 @@ export function parsePassage(html) {
       .text()
       .trim();
     const omu = $row.find('[data-tooltip="Original mit Untertiteln"]').length > 0;
+    const description = link.siblings('span').first().text().replace(/\s+/g, ' ').trim();
     shows.push({
       date: `${m[3]}-${m[2]}-${m[1]}`,
       time: `${m[4]}:${m[5]}`,
@@ -34,6 +35,7 @@ export function parsePassage(html) {
       version: omu ? 'OmU' : null,
       screen: screen || null,
       url: href ? new URL(href, BASE).href : null,
+      description: description || null,
     });
   });
   return shows;
