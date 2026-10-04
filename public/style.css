@@ -459,6 +459,222 @@ a.time:hover {
   background: #e03131;
 }
 
+/* Glücksrad (Strg+Ü) */
+.wheel-dialog {
+  width: min(860px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.wheel-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.wheel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wheel-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.wheel-close {
+  border: 0;
+  background: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0 4px;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.wheel-close:hover {
+  color: var(--text);
+}
+
+.wheel-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 20px;
+  padding: 16px;
+}
+
+.wheel-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheel-pointer {
+  position: relative;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin-bottom: -14px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 24px solid var(--text);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.wheel-rotor {
+  width: min(400px, 100%);
+  aspect-ratio: 1;
+  /* Gedreht ragen die Ecken des Quadrats über das Rad hinaus – nur die Kreisfläche ist klickbar */
+  pointer-events: none;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.15, 0.7, 0.1, 1);
+}
+
+.wheel-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.wheel-svg path,
+.wheel-svg circle {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.wheel-svg text {
+  fill: #fff;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.wheel-segment path,
+.wheel-segment circle {
+  stroke: var(--surface);
+  stroke-width: 0.8;
+  transition: opacity 0.3s;
+}
+
+.wheel-segment.dim {
+  opacity: 0.35;
+}
+
+.wheel-hub {
+  fill: var(--surface);
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.wheel-empty {
+  fill: var(--surface-2);
+  stroke: var(--border);
+  stroke-dasharray: 4 3;
+}
+
+.wheel-svg .wheel-hint {
+  fill: var(--muted);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.wheel-result,
+.wheel-spin {
+  position: relative;
+  z-index: 1;
+}
+
+.wheel-result {
+  min-height: 1.6em;
+  margin: 12px 0 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.wheel-result span {
+  color: var(--muted);
+}
+
+.wheel-spin {
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 700;
+  padding: 9px 28px;
+  cursor: pointer;
+}
+
+.wheel-spin:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.wheel-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wheel-editor label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.wheel-editor textarea {
+  flex: 1;
+  min-height: 200px;
+  resize: vertical;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 8px 10px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.wheel-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.wheel-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.wheel-editor-actions button {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .wheel-body {
+    grid-template-columns: 1fr;
+  }
+
+  .wheel-editor textarea {
+    flex: none;
+    min-height: 0;
+    height: 9em;
+  }
+}
+
 @media (max-width: 560px) {
   .row {
     grid-template-columns: 1fr;

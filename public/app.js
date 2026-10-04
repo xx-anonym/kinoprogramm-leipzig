@@ -391,4 +391,13 @@ async function init() {
   render();
 }
 
+// Für das Glücksrad (wheel.js): Titel der gerade angezeigten Filme
+window.kinoprogramm = {
+  visibleFilmTitles() {
+    if (!state.data) return [];
+    const titles = new Set(visibleShows().map((s) => state.data.films[s.film].title));
+    return [...titles].sort((a, b) => a.localeCompare(b, 'de', { sensitivity: 'base' }));
+  },
+};
+
 init();
