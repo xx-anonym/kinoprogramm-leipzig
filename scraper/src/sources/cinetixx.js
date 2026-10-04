@@ -19,6 +19,7 @@ export function parseCinetixx(events, cinemaId) {
         version,
         extras: ev.is3D ? ['3D'] : [],
         screen: s.auditoriumName || null,
+        duration: Number(ev.duration) || null,
         url: s._UrlBooking ? String(s._UrlBooking).replace(/^http:/, 'https:') : null,
       });
     }

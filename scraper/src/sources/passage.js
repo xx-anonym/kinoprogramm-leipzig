@@ -1,6 +1,7 @@
 // Passage Kinos: Terminliste auf passage-kinos.de/termine.
 import * as cheerio from 'cheerio';
 import { fetchText } from '../lib/http.js';
+import { mapLimit } from '../lib/pool.js';
 
 const BASE = 'https://www.passage-kinos.de/';
 
@@ -38,6 +39,25 @@ export function parsePassage(html) {
   return shows;
 }
 
-export async function passage() {
-  return parsePassage(await fetchText(`${BASE}termine`));
+/** Filmseite: "… FSK ab 0 Länge 82 Min. …" → 82 */
+export function parsePassageDuration(html) {
+  const text = cheerio.load(html)('body').text().replace(/\s+/g, ' ');
+  const m = /Länge\s*:?\s*(\d{2,3})\s*Min/i.exec(text);
+  return m ? Number(m[1]) : null;
+}
+
+export async function passage(_config, { days = [] } = {}) {
+  const shows = parsePassage(await fetchText(`${BASE}termine`));
+  // Die Filmlänge steht nur auf den Filmseiten – nur für Filme im angezeigten Zeitraum abrufen.
+  const urls = [...new Set(shows.filter((s) => days.includes(s.date) && s.url).map((s) => s.url))];
+  const durations = new Map();
+  await mapLimit(urls, 3, async (url) => {
+    try {
+      const duration = parsePassageDuration(await fetchText(url, { retries: 1 }));
+      if (duration) durations.set(url, duration);
+    } catch {
+      /* Filmlänge ist optional */
+    }
+  });
+  return shows.map((s) => ({ ...s, duration: durations.get(s.url) ?? null }));
 }

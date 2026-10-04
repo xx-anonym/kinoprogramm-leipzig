@@ -215,8 +215,7 @@
       return;
     }
     btn.hidden = false;
-    const filter = films.shownCinemas < films.totalCinemas ? ` (${films.shownCinemas} von ${films.totalCinemas} Kinos)` : '';
-    btn.textContent = `Filme von ${films.label} einfügen${filter}`;
+    btn.textContent = `Filme von ${films.label} einfügen${films.note ? ` (${films.note})` : ''}`;
     btn.disabled = films.titles.length === 0;
     btn.title = films.titles.length ? `${films.titles.length} Filme` : 'An diesem Tag sind keine Vorstellungen bekannt';
   }

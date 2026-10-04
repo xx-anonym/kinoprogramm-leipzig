@@ -27,7 +27,8 @@ export function parseSchauburg(html, referenceDate) {
       const title = (link.length ? link : $item.find('.title h2').first()).text().replace(/\s+/g, ' ').trim();
       if (!date || !time || !title) return;
       const href = link.attr('href');
-      shows.push({ date, time, title, url: href ? new URL(href, BASE).href : null });
+      const duration = Number(/Laufzeit:\s*(\d+)/.exec($item.find('p.meta').text())?.[1]) || null;
+      shows.push({ date, time, title, duration, url: href ? new URL(href, BASE).href : null });
     });
   return shows;
 }

@@ -6,8 +6,10 @@ kostenlos bei Vercel.
 
 - Tagesauswahl für die nächsten 7 Tage
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
-- Kinos ein-/ausblenden (wird im Browser gemerkt), Suche nach Titel oder Fassung (z. B. „omu“)
-- Uhrzeiten verlinken direkt auf die Ticketbuchung bzw. die Filmseite des Kinos
+- Kinos ein-/ausblenden und Beginn eingrenzen („ab 18:00“, „bis 20:00“, „ab jetzt“) – wird im
+  Browser gemerkt; Suche nach Titel oder Fassung (z. B. „omu“)
+- Uhrzeiten mit geschätzter Endzeit (Filmlänge + ca. 20 Min. Werbung), verlinkt direkt auf die
+  Ticketbuchung bzw. die Filmseite des Kinos
 - Hell/Dunkel je nach Systemeinstellung, optimiert fürs Handy
 
 ## Kinos und Datenquellen
@@ -35,7 +37,9 @@ Programm beider Kinos inklusive Links zu deren Ticketshops.
 täglich je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
 `scraper/src/cinemas.js`.
 
-Fällt eine Quelle aus, bleiben die Vorstellungen dieses Kinos vom letzten erfolgreichen Abruf stehen.
+Fällt eine Quelle aus – oder findet sie plötzlich gar keine Vorstellungen mehr, obwohl am Vortag
+noch welche angekündigt waren (meist ein Umbau der Kino-Webseite) –, bleiben die Vorstellungen dieses
+Kinos vom letzten erfolgreichen Abruf stehen.
 Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen aktuell sind.
 
 ## Aufbau

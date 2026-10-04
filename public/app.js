@@ -3,6 +3,9 @@
 const TZ = 'Europe/Berlin';
 const DAYS_SHOWN = 7;
 const STORAGE_KEY = 'kinoprogramm-leipzig:v1';
+// Geschätzte Werbung/Trailer vor dem Film – für die Endzeit
+const AD_MINUTES = 20;
+const TIME_OPTIONS = Array.from({ length: 14 }, (_, i) => `${String(10 + i).padStart(2, '0')}:00`);
 const VERSION_LABEL = { OmU: 'Original mit Untertiteln', OmeU: 'Original mit englischen Untertiteln', OV: 'Originalfassung' };
 const STATUS_LABEL = {
   ok: 'aktuell',
@@ -18,6 +21,8 @@ const state = {
   view: 'kino',
   query: '',
   hidden: new Set(),
+  from: '', // '' | 'now' | 'HH:MM' – Beginn frühestens
+  until: '', // '' | 'HH:MM' – Beginn spätestens
 };
 
 // ---------- Hilfsfunktionen ----------
@@ -69,6 +74,8 @@ function loadSettings() {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
     if (saved.view === 'kino' || saved.view === 'film') state.view = saved.view;
     if (Array.isArray(saved.hidden)) state.hidden = new Set(saved.hidden);
+    if (saved.from === 'now' || TIME_OPTIONS.includes(saved.from)) state.from = saved.from;
+    if (TIME_OPTIONS.includes(saved.until)) state.until = saved.until;
   } catch {
     /* Einstellungen sind optional */
   }
@@ -76,7 +83,10 @@ function loadSettings() {
 
 function saveSettings() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ view: state.view, hidden: [...state.hidden] }));
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ view: state.view, hidden: [...state.hidden], from: state.from, until: state.until }),
+    );
   } catch {
     /* z. B. privater Modus */
   }
@@ -84,11 +94,28 @@ function saveSettings() {
 
 // ---------- Daten aufbereiten ----------
 
+/** Uhrzeit-Filter: Beginn ab … bis … ("ab jetzt" blendet heute Vergangenes aus). */
+function matchesTime(show, now = berlinNow()) {
+  const { from, until } = state;
+  if (from === 'now' && show.date === now.date && show.time < now.time) return false;
+  if (from && from !== 'now' && show.time < from) return false;
+  if (until && show.time > until) return false;
+  return true;
+}
+
+function timeFilterLabel() {
+  const parts = [];
+  if (state.from) parts.push(state.from === 'now' ? 'ab jetzt' : `ab ${state.from}`);
+  if (state.until) parts.push(`bis ${state.until}`);
+  return parts.join(' ');
+}
+
 function visibleShows() {
   const { data, day, query, hidden } = state;
   const tokens = fold(query).split(/\s+/).filter(Boolean);
+  const now = berlinNow();
   return data.shows.filter((s) => {
-    if (s.date !== day || hidden.has(s.cinema)) return false;
+    if (s.date !== day || hidden.has(s.cinema) || !matchesTime(s, now)) return false;
     if (!tokens.length) return true;
     const haystack = fold(`${data.films[s.film]?.title ?? ''} ${s.version ?? ''} ${(s.extras || []).join(' ')}`);
     return tokens.every((t) => haystack.includes(t));
@@ -134,15 +161,32 @@ function trailerLink(title) {
   return `<a class="trailer" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Trailer auf YouTube suchen">Trailer</a>`;
 }
 
+/** Geschätztes Ende: Beginn + Filmlänge + Werbung. */
+function endTime(show) {
+  const duration = state.data.films[show.film]?.duration;
+  if (!duration) return null;
+  const [h, m] = show.time.split(':').map(Number);
+  const total = (h * 60 + m + duration + AD_MINUTES) % (24 * 60);
+  return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
+}
+
 function timeChip(show, now) {
   const past = show.date === now.date && show.time < now.time;
+  const end = endTime(show);
+  const duration = state.data.films[show.film]?.duration;
   const badges = [show.version, ...(show.extras || [])]
     .filter(Boolean)
     .map((b) => `<span class="badge" title="${escapeHtml(VERSION_LABEL[b] || b)}">${escapeHtml(b)}</span>`)
     .join('');
-  const tip = [show.screen, VERSION_LABEL[show.version]].filter(Boolean).join(' · ');
+  const tip = [
+    end && `Ende ca. ${end} (${duration} Min. Film + ca. ${AD_MINUTES} Min. Werbung)`,
+    show.screen,
+    VERSION_LABEL[show.version],
+  ]
+    .filter(Boolean)
+    .join(' · ');
   const cls = `time${past ? ' past' : ''}`;
-  const inner = `${show.time}${badges}`;
+  const inner = `<span>${show.time}${end ? `<span class="end">–${end}</span>` : ''}</span>${badges}`;
   if (show.url) {
     return `<a class="${cls}" href="${escapeHtml(show.url)}" target="_blank" rel="noopener" title="${escapeHtml(tip || 'Tickets & Infos')}">${inner}</a>`;
   }
@@ -220,7 +264,8 @@ function renderDays(today) {
 function renderFilterPanel() {
   const { data, day, hidden } = state;
   const counts = {};
-  for (const s of data.shows) if (s.date === day) counts[s.cinema] = (counts[s.cinema] || 0) + 1;
+  const now = berlinNow();
+  for (const s of data.shows) if (s.date === day && matchesTime(s, now)) counts[s.cinema] = (counts[s.cinema] || 0) + 1;
   $('#filter-list').innerHTML = data.cinemas
     .map(
       (c) => `<label>
@@ -243,7 +288,7 @@ function renderProgram() {
   const shows = visibleShows();
   const main = $('#program');
   if (!shows.length) {
-    const filtered = state.query || state.hidden.size;
+    const filtered = state.query || state.hidden.size || state.from || state.until;
     main.innerHTML = `<div class="empty">
       <p>${filtered ? 'Keine passenden Vorstellungen an diesem Tag.' : 'Für diesen Tag sind noch keine Vorstellungen bekannt.'}</p>
       ${filtered ? '<button type="button" data-reset>Filter zurücksetzen</button>' : ''}
@@ -251,6 +296,17 @@ function renderProgram() {
     return;
   }
   main.innerHTML = state.view === 'film' ? renderByFilm(shows, now) : renderByCinema(shows, now);
+}
+
+function renderTimeFilter() {
+  const option = (value, label, selected) => `<option value="${value}"${value === selected ? ' selected' : ''}>${label}</option>`;
+  $('#time-from').innerHTML = [
+    option('', 'beliebig', state.from),
+    option('now', 'jetzt', state.from),
+    ...TIME_OPTIONS.map((t) => option(t, t, state.from)),
+  ].join('');
+  $('#time-until').innerHTML = [option('', 'beliebig', state.until), ...TIME_OPTIONS.map((t) => option(t, t, state.until))].join('');
+  $('.timefilter').classList.toggle('active', Boolean(state.from || state.until));
 }
 
 function renderViewToggle() {
@@ -290,6 +346,7 @@ function render() {
   if (!state.data) return;
   renderDays(state.today);
   renderViewToggle();
+  renderTimeFilter();
   renderFilterPanel();
   renderProgram();
 }
@@ -297,6 +354,17 @@ function render() {
 // ---------- Ereignisse ----------
 
 function bindEvents() {
+  for (const [id, key] of [
+    ['#time-from', 'from'],
+    ['#time-until', 'until'],
+  ]) {
+    $(id).addEventListener('change', (e) => {
+      state[key] = e.target.value;
+      saveSettings();
+      render();
+    });
+  }
+
   $('#days').addEventListener('click', (e) => {
     const btn = e.target.closest('[data-day]');
     if (!btn) return;
@@ -361,6 +429,8 @@ function bindEvents() {
     if (e.target.closest('[data-reset]')) {
       state.query = '';
       state.hidden = new Set();
+      state.from = '';
+      state.until = '';
       $('#search').value = '';
       saveSettings();
       render();
@@ -396,13 +466,17 @@ window.kinoprogramm = {
   dayFilms() {
     if (!state.data) return null;
     const { data, day, hidden, today } = state;
-    const titles = new Set(data.shows.filter((s) => s.date === day && !hidden.has(s.cinema)).map((s) => data.films[s.film].title));
+    const now = berlinNow();
+    const titles = new Set(
+      data.shows.filter((s) => s.date === day && !hidden.has(s.cinema) && matchesTime(s, now)).map((s) => data.films[s.film].title),
+    );
     const label = day === today ? 'heute' : day === addDays(today, 1) ? 'morgen' : `${weekday(day)}, ${shortDate(day)}`;
+    const shownCinemas = data.cinemas.filter((c) => !hidden.has(c.id)).length;
+    const notes = [timeFilterLabel(), shownCinemas < data.cinemas.length ? `${shownCinemas} von ${data.cinemas.length} Kinos` : ''];
     return {
       label,
       titles: [...titles].sort((a, b) => a.localeCompare(b, 'de', { sensitivity: 'base' })),
-      shownCinemas: data.cinemas.filter((c) => !hidden.has(c.id)).length,
-      totalCinemas: data.cinemas.length,
+      note: notes.filter(Boolean).join(', '),
     };
   },
 };

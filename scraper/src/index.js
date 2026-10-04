@@ -55,6 +55,7 @@ function normalizeShows(rawShows, cinemaId, days) {
       extras: [...new Set([...(raw.extras ?? []), ...parsed.extras])],
       screen: raw.screen || null,
       url: /^https?:\/\//i.test(raw.url ?? '') ? raw.url : null,
+      duration: raw.duration >= 20 && raw.duration <= 720 ? Math.round(raw.duration) : null,
     });
   }
   return result;
@@ -67,10 +68,28 @@ function previousShows(previous, cinemaId, days) {
   return normalizeShows(
     previous.shows
       .filter((s) => s.cinema === cinemaId)
-      .map((s) => ({ ...s, title: films[s.film]?.title ?? s.film })),
+      .map((s) => ({ ...s, title: films[s.film]?.title ?? s.film, duration: films[s.film]?.duration })),
     cinemaId,
     days,
   );
+}
+
+/** Häufigste Filmlänge eines Films über alle Kinos (bei Gleichstand die längere). */
+function filmDurations(shows) {
+  const counts = new Map();
+  for (const s of shows) {
+    if (!s.duration) continue;
+    const key = filmKey(s.title);
+    if (!counts.has(key)) counts.set(key, new Map());
+    const perFilm = counts.get(key);
+    perFilm.set(s.duration, (perFilm.get(s.duration) ?? 0) + 1);
+  }
+  const result = new Map();
+  for (const [key, perFilm] of counts) {
+    const [best] = [...perFilm.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0]);
+    result.set(key, best[0]);
+  }
+  return result;
 }
 
 /**
@@ -79,7 +98,7 @@ function previousShows(previous, cinemaId, days) {
  */
 export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, previous = null, now = new Date() }) {
   const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
-  const context = { today };
+  const context = { today, days };
 
   const results = await Promise.all(
     cinemas.map(async (cinema) => {
@@ -94,7 +113,19 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
       try {
         const fetcher = sources[type];
         if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
-        const shows = normalizeShows(await fetcher(cinema.source, context), cinema.id, days);
+        const raw = await fetcher(cinema.source, context);
+        const shows = normalizeShows(raw, cinema.id, days);
+        // Gar nichts gefunden, obwohl gestern noch Vorstellungen angekündigt waren? Dann hat sich
+        // vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm schlagen.
+        if (raw.length === 0) {
+          const old = previousShows(previous, cinema.id, days);
+          if (old.length) {
+            return {
+              cinema: { ...base, status: 'stale', message: 'Keine Vorstellungen gefunden – hat sich die Webseite des Kinos geändert?' },
+              shows: old,
+            };
+          }
+        }
         return { cinema: { ...base, status: 'ok' }, shows };
       } catch (err) {
         const old = previousShows(previous, cinema.id, days);
@@ -106,6 +137,7 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
   // Filmtitel über alle Kinos vereinheitlichen
   const allShows = results.flatMap((r) => r.shows);
   const displayTitles = chooseDisplayTitles(allShows.map((s) => s.title));
+  const durations = filmDurations(allShows);
   const films = {};
   const seen = new Set();
   const shows = [];
@@ -115,7 +147,10 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
     const dedupeKey = [s.cinema, s.date, s.time, film, s.version ?? ''].join('|');
     if (seen.has(dedupeKey)) continue;
     seen.add(dedupeKey);
-    films[film] ??= { title: displayTitles.get(film) };
+    if (!films[film]) {
+      films[film] = { title: displayTitles.get(film) };
+      if (durations.has(film)) films[film].duration = durations.get(film);
+    }
     const show = { cinema: s.cinema, film, date: s.date, time: s.time };
     if (s.version) show.version = s.version;
     if (s.extras.length) show.extras = s.extras;

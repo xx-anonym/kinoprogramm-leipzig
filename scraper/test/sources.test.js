@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 
 import { parseCinestar } from '../src/sources/cinestar.js';
 import { parseCinetixx } from '../src/sources/cinetixx.js';
-import { parsePassage } from '../src/sources/passage.js';
+import { parsePassage, parsePassageDuration } from '../src/sources/passage.js';
 import { parseSchauburg } from '../src/sources/schauburg.js';
 import { parseCineprog } from '../src/sources/cineprog.js';
 import { parseIcal } from '../src/sources/ical.js';
@@ -25,10 +25,19 @@ test('CineStar: Ortszeit, OV/OmU, IMAX und Ticketlink', () => {
     version: null,
     extras: [],
     url: 'https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183757',
+    duration: null,
   });
   assert.deepEqual(shows[2].extras, ['IMAX']);
   assert.equal(shows[2].version, 'OV');
   assert.equal(shows[3].version, 'OmU');
+});
+
+test('CineStar: Filmlänge aus den abgerufenen Details', () => {
+  const shows = parseCinestar(JSON.parse(fixture('cinestar.json')), { durations: new Map([[226596, 129]]) });
+  assert.deepEqual(
+    shows.map((s) => s.duration),
+    [129, 129, 129, null],
+  );
 });
 
 test('CineStar: ohne Ticketlink wird die Filmseite verlinkt', () => {
@@ -43,6 +52,7 @@ test('Cinetixx: Fassung aus dem Sprachfeld, Saal und https-Buchungslink', () => 
   assert.equal(shows[0].time, '12:30');
   assert.equal(shows[0].version, 'OmeU');
   assert.equal(shows[0].screen, 'Ballsaal');
+  assert.equal(shows[0].duration, 123);
   assert.match(shows[0].url, /^https:\/\/booking\.cinetixx\.de\//);
   assert.equal(shows[1].version, 'OmU');
   assert.equal(shows[2].version, null);
@@ -68,6 +78,11 @@ test('Passage Kinos: Datum, Saal und OmU-Symbol', () => {
   ]);
 });
 
+test('Passage Kinos: Filmlänge von der Filmseite', () => {
+  assert.equal(parsePassageDuration(fixture('passage-film.html')), 82);
+  assert.equal(parsePassageDuration('<p>Keine Angabe</p>'), null);
+});
+
 test('Schauburg: Datum und Uhrzeit gelten für Folgeeinträge mit', () => {
   const shows = parseSchauburg(fixture('schauburg.html'), '2026-10-04');
   assert.deepEqual(
@@ -80,6 +95,11 @@ test('Schauburg: Datum und Uhrzeit gelten für Folgeeinträge mit', () => {
     ],
   );
   assert.equal(shows[0].url, 'https://www.schauburg-leipzig.de/filmdetails/shaun-das-schaf-spuk-im-kuerbisfeld');
+  assert.deepEqual(
+    shows.map((s) => s.duration),
+    [90, 80, 95, shows[3].duration],
+  );
+  assert.ok(shows[3].duration > 0);
 });
 
 test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine, OV', () => {
@@ -91,6 +111,9 @@ test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine,
   );
   const verity = shows.find((s) => s.title === 'Verity');
   assert.equal(verity.version, 'OV');
+  assert.equal(verity.duration, 117);
+  assert.equal(shows.find((s) => s.title === 'Digger').duration, 129);
+  assert.equal(shows.find((s) => s.title === 'Sneak Preview').duration, null, 'Sneak: Länge unbekannt');
   assert.match(verity.url, /^https:\/\/www\.kinoheld\.de\//);
   assert.equal(shows.find((s) => s.title === 'Sneak Preview').date, '2026-10-06');
 });
@@ -98,15 +121,17 @@ test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine,
 test('iCal (Cineding): gefaltete Zeilen, Escapes und UTC-Zeiten', () => {
   const shows = parseIcal(fixture('cineding.ics'));
   assert.deepEqual(shows, [
-    { date: '2026-10-08', time: '19:00', title: 'EVERYTIME', url: 'https://www.cineding-leipzig.de/veranstaltungen/everytime-2/' },
+    // Ende = Beginn → Länge unbekannt
+    { date: '2026-10-08', time: '19:00', title: 'EVERYTIME', url: 'https://www.cineding-leipzig.de/veranstaltungen/everytime-2/', duration: null },
     {
       date: '2026-10-10',
       time: '19:00',
       title: 'ANSTATT BÄUMEN (OmU) + Filmgespräch mit Regisseur Philipp Hartmann',
       url: 'https://www.cineding-leipzig.de/veranstaltungen/anstatt-baeumen/',
+      duration: null,
     },
     // 20:00 UTC = 21:00 Winterzeit in Leipzig
-    { date: '2026-12-31', time: '21:00', title: 'Silvester, Sekt & Kurzfilme', url: null },
+    { date: '2026-12-31', time: '21:00', title: 'Silvester, Sekt & Kurzfilme', url: null, duration: 90 },
   ]);
 });
 
@@ -120,6 +145,7 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       version: null,
       extras: [],
       url: 'https://tickets.cineplex.de/checkout/356/A5CBFB00023FWBXJYB',
+      duration: 101,
     },
     {
       date: '2026-10-05',
@@ -128,6 +154,7 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       version: null,
       extras: [],
       url: 'https://tickets.cineplex.de/checkout/356/7CCBFB00023FWBXJYB',
+      duration: 114,
     },
     // Winterzeit: Offset +01:00, die Uhrzeit bleibt Ortszeit
     {
@@ -137,6 +164,7 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       version: null,
       extras: ['3D'],
       url: 'https://tickets.cineplex.de/checkout/356/51BAFB00023FWBXJYB',
+      duration: 165,
     },
   ]);
 });

@@ -35,6 +35,11 @@
           <span class="visually-hidden">Film suchen</span>
           <input type="search" id="search" placeholder="Film suchen …" autocomplete="off" />
         </label>
+        <div class="timefilter" role="group" aria-label="Beginn der Vorstellung">
+          <span>Beginn</span>
+          <label>ab <select id="time-from"></select></label>
+          <label>bis <select id="time-until"></select></label>
+        </div>
         <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
           Alle Kinos
         </button>
@@ -57,8 +62,8 @@
           <ul class="sources" id="sources"></ul>
         </details>
         <p>
-          Die Daten kommen direkt von den Kinos und werden täglich um 18 Uhr aktualisiert. Angaben ohne Gewähr – maßgeblich ist
-          das Programm des jeweiligen Kinos.
+          Die Daten kommen direkt von den Kinos und werden täglich um 18 Uhr aktualisiert. Endzeiten sind geschätzt: Filmlänge
+          plus ca. 20 Minuten Werbung. Angaben ohne Gewähr – maßgeblich ist das Programm des jeweiligen Kinos.
         </p>
       </div>
     </footer>

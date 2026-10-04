@@ -10,7 +10,8 @@
      "subtitleLanguage": null,
      "flags": [],
      "movie": {
-      "title": "Coyote vs. ACME"
+      "title": "Coyote vs. ACME",
+      "duration": 101
      }
     },
     {
@@ -26,7 +27,8 @@
       }
      ],
      "movie": {
-      "title": "Verity - Dunkle Geheimnisse"
+      "title": "Verity - Dunkle Geheimnisse",
+      "duration": 114
      }
     },
     {
@@ -46,7 +48,8 @@
       }
      ],
      "movie": {
-      "title": "Avengers: Doomsday"
+      "title": "Avengers: Doomsday",
+      "duration": 165
      }
     }
    ]

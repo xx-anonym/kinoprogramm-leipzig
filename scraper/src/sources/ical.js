@@ -20,6 +20,13 @@ function parseDateTime(value) {
   return { date: `${y}-${mo}-${d}`, time: `${h}:${mi}` };
 }
 
+/** Dauer in Minuten aus Beginn und Ende (Cineding trägt oft Ende = Beginn ein → unbekannt). */
+function durationOf(start, end) {
+  if (!start || !end) return null;
+  const minutes = (Date.parse(`${end.date}T${end.time}:00Z`) - Date.parse(`${start.date}T${start.time}:00Z`)) / 60000;
+  return minutes >= 30 && minutes <= 400 ? minutes : null;
+}
+
 export function parseIcal(text) {
   const lines = text.replace(/\r?\n[ \t]/g, '').split(/\r?\n/);
   const shows = [];
@@ -28,7 +35,7 @@ export function parseIcal(text) {
     if (line === 'BEGIN:VEVENT') event = {};
     else if (line === 'END:VEVENT') {
       if (event?.start && event.summary) {
-        shows.push({ ...event.start, title: event.summary, url: event.url ?? null });
+        shows.push({ ...event.start, title: event.summary, url: event.url ?? null, duration: durationOf(event.start, event.end) });
       }
       event = null;
     } else if (event) {
@@ -37,6 +44,7 @@ export function parseIcal(text) {
       const name = line.slice(0, idx).split(';')[0].toUpperCase();
       const value = line.slice(idx + 1);
       if (name === 'DTSTART') event.start = parseDateTime(value);
+      else if (name === 'DTEND') event.end = parseDateTime(value);
       else if (name === 'SUMMARY') event.summary = unescapeText(value);
       else if (name === 'URL') event.url = value.trim();
     }

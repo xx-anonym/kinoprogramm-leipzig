@@ -74,6 +74,48 @@ test('fällt eine Quelle aus, bleiben die Vorstellungen vom letzten Lauf erhalte
   assert.deepEqual(data.shows, [{ cinema: 'b', film: 'alteliebe', date: TODAY, time: '20:00', version: 'OmU' }]);
 });
 
+test('Filmlänge gilt kinoübergreifend – die häufigste Angabe gewinnt', async () => {
+  const data = await collect({
+    today: TODAY,
+    cinemas: [cinemas[0], cinemas[2], { ...cinemas[1], source: { type: 'third' } }],
+    sources: {
+      direct: async () => [
+        { date: TODAY, time: '17:00', title: 'Digger', duration: 129 },
+        { date: TODAY, time: '20:00', title: 'Vaterland' }, // Länge hier unbekannt
+      ],
+      other: async () => [
+        { date: TODAY, time: '18:00', title: 'DIGGER', duration: 130 },
+        { date: TODAY, time: '19:00', title: 'Vaterland', duration: 82 },
+      ],
+      third: async () => [
+        { date: TODAY, time: '21:00', title: 'Digger', duration: 129 },
+        { date: TODAY, time: '22:00', title: 'Kurz', duration: 3 }, // unplausibel → ignoriert
+      ],
+    },
+  });
+  assert.equal(data.films.digger.duration, 129);
+  assert.equal(data.films.vaterland.duration, 82);
+  assert.equal(data.films.kurz.duration, undefined);
+});
+
+test('findet eine Quelle plötzlich nichts mehr, gilt das als Fehler und die alten Daten bleiben', async () => {
+  const previous = {
+    films: { alteliebe: { title: 'Alte Liebe', duration: 112 } },
+    shows: [{ cinema: 'a', film: 'alteliebe', date: TODAY, time: '20:00' }],
+  };
+  const empty = { direct: async () => [] };
+  const data = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous });
+  assert.equal(data.cinemas[0].status, 'stale');
+  assert.match(data.cinemas[0].message, /Keine Vorstellungen gefunden/);
+  assert.deepEqual(data.shows, [{ cinema: 'a', film: 'alteliebe', date: TODAY, time: '20:00' }]);
+  assert.equal(data.films.alteliebe.duration, 112);
+
+  // Ohne angekündigte Vorstellungen (z. B. Sommerpause) ist "nichts gefunden" in Ordnung
+  const quiet = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous: { films: {}, shows: [] } });
+  assert.equal(quiet.cinemas[0].status, 'ok');
+  assert.equal(quiet.shows.length, 0);
+});
+
 test('formatProgram erzeugt gültiges JSON mit einer Zeile pro Vorstellung', async () => {
   const data = await collect({ today: TODAY, cinemas, sources });
   const text = formatProgram(data);

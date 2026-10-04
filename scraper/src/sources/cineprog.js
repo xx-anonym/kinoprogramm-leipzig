@@ -34,6 +34,7 @@ export function parseCineprog(html) {
     const version =
       isSet(facts.OmitU) || isSet(showFacts.OmitU) ? 'OmU' : isSet(facts.OrigVersion) || isSet(showFacts.OrigVersion) ? 'OV' : null;
     const extras = isSet(showFacts.DreiD) ? ['3D'] : [];
+    const duration = Number(facts.laufzeit) || null;
     const termine = film.vorstellungen?.termine ?? {};
     for (const entry of Object.values(termine)) {
       for (const t of [].concat(entry)) {
@@ -44,6 +45,7 @@ export function parseCineprog(html) {
           title,
           version,
           extras,
+          duration,
           screen: typeof t.saal_bezeichnung === 'string' ? t.saal_bezeichnung : null,
           url: typeof t.link_fixticket === 'string' && t.link_fixticket.startsWith('http') ? t.link_fixticket : null,
         });

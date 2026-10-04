@@ -15,7 +15,8 @@
     "showName": "EVERYTIME",
     "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3662477640&bgswitch=false&resize=false"
    }
-  ]
+  ],
+  "duration": 123
  },
  {
   "id": 3647392625,
@@ -33,7 +34,8 @@
     "showName": " HEART OF LIGHT – ELEVEN SONGS FOR FIJI",
     "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647613293&bgswitch=false&resize=false"
    }
-  ]
+  ],
+  "duration": 174
  },
  {
   "id": 3641066569,
@@ -61,6 +63,7 @@
     "showName": "BIBI BLOCKSBERG – DIE TOTAL VERHEXTE ZEITREISE",
     "_UrlBooking": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3641068843&bgswitch=false&resize=false"
    }
-  ]
+  ],
+  "duration": 90
  }
 ]
