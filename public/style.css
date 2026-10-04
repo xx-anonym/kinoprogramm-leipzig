@@ -663,6 +663,11 @@ a.time:hover {
   font-size: 0.9rem;
 }
 
+.wheel-editor-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 @media (max-width: 700px) {
   .wheel-body {
     grid-template-columns: 1fr;

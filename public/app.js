@@ -391,12 +391,19 @@ async function init() {
   render();
 }
 
-// Für das Glücksrad (wheel.js): Titel der gerade angezeigten Filme
+// Für das Glücksrad (wheel.js): alle Filme des ausgewählten Tages (Kino-Auswahl gilt, die Suche nicht)
 window.kinoprogramm = {
-  visibleFilmTitles() {
-    if (!state.data) return [];
-    const titles = new Set(visibleShows().map((s) => state.data.films[s.film].title));
-    return [...titles].sort((a, b) => a.localeCompare(b, 'de', { sensitivity: 'base' }));
+  dayFilms() {
+    if (!state.data) return null;
+    const { data, day, hidden, today } = state;
+    const titles = new Set(data.shows.filter((s) => s.date === day && !hidden.has(s.cinema)).map((s) => data.films[s.film].title));
+    const label = day === today ? 'heute' : day === addDays(today, 1) ? 'morgen' : `${weekday(day)}, ${shortDate(day)}`;
+    return {
+      label,
+      titles: [...titles].sort((a, b) => a.localeCompare(b, 'de', { sensitivity: 'base' })),
+      shownCinemas: data.cinemas.filter((c) => !hidden.has(c.id)).length,
+      totalCinemas: data.cinemas.length,
+    };
   },
 };
 

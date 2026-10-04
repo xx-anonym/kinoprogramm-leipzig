@@ -87,7 +87,10 @@
               return `<path d="M0 0 L${x0.toFixed(3)} ${y0.toFixed(3)} A${R} ${R} 0 ${seg > 180 ? 1 : 0} 1 ${x1.toFixed(3)} ${y1.toFixed(3)}Z" fill="${color}"></path>`;
             })();
       const mid = a0 + seg / 2;
-      const text = `<text transform="rotate(${(mid - 90).toFixed(3)}) translate(${R - 8} 0)" text-anchor="end" dominant-baseline="middle" font-size="${fontSize}">${escapeHtml(shorten(label, maxChars))}</text>`;
+      // Auf der linken Radhälfte um 180° drehen, damit nichts auf dem Kopf steht
+      const flip = mid > 180;
+      const transform = flip ? `rotate(${(mid + 90).toFixed(3)}) translate(${-(R - 8)} 0)` : `rotate(${(mid - 90).toFixed(3)}) translate(${R - 8} 0)`;
+      const text = `<text transform="${transform}" text-anchor="${flip ? 'start' : 'end'}" dominant-baseline="middle" font-size="${fontSize}">${escapeHtml(shorten(label, maxChars))}</text>`;
       return `<g class="wheel-segment" data-index="${i}">${shape}${text}</g>`;
     });
     svg.innerHTML = `${parts.join('')}<circle r="9" class="wheel-hub"></circle>`;
@@ -176,7 +179,7 @@
           <textarea id="wheel-entries" rows="10" spellcheck="false" placeholder="z. B.&#10;Pizza&#10;Kino&#10;Spaziergang"></textarea>
           <div class="wheel-editor-actions">
             <span class="wheel-count"></span>
-            <button type="button" data-wheel-films>Filme des Tages einfügen</button>
+            <button type="button" data-wheel-films>Filme einfügen</button>
           </div>
         </div>
       </div>`;
@@ -191,8 +194,8 @@
     dialog.querySelector('[data-wheel-spin-area]').addEventListener('click', spin);
     dialog.querySelector('[data-wheel-close]').addEventListener('click', () => dialog.close());
     dialog.querySelector('[data-wheel-films]').addEventListener('click', () => {
-      const titles = window.kinoprogramm?.visibleFilmTitles?.() ?? [];
-      if (titles.length) setEntriesText(titles.join('\n'));
+      const films = window.kinoprogramm?.dayFilms?.();
+      if (films?.titles.length) setEntriesText(films.titles.join('\n'));
     });
     // Klick auf den abgedunkelten Hintergrund schließt
     dialog.addEventListener('click', (e) => {
@@ -203,12 +206,28 @@
     onInput();
   }
 
+  /** Knopf nennt den gerade ausgewählten Tag – das Rad verdeckt die Tagesauswahl. */
+  function updateFilmsButton() {
+    const btn = dialog.querySelector('[data-wheel-films]');
+    const films = window.kinoprogramm?.dayFilms?.();
+    if (!films) {
+      btn.hidden = true;
+      return;
+    }
+    btn.hidden = false;
+    const filter = films.shownCinemas < films.totalCinemas ? ` (${films.shownCinemas} von ${films.totalCinemas} Kinos)` : '';
+    btn.textContent = `Filme von ${films.label} einfügen${filter}`;
+    btn.disabled = films.titles.length === 0;
+    btn.title = films.titles.length ? `${films.titles.length} Filme` : 'An diesem Tag sind keine Vorstellungen bekannt';
+  }
+
   function toggle() {
     if (!dialog) build();
     if (dialog.open) {
       dialog.close();
       return;
     }
+    updateFilmsButton();
     dialog.showModal();
     (entries.length >= 2 ? dialog.querySelector('[data-wheel-spin]') : dialog.querySelector('textarea')).focus();
   }
