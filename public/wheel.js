@@ -213,9 +213,18 @@
     (entries.length >= 2 ? dialog.querySelector('[data-wheel-spin]') : dialog.querySelector('textarea')).focus();
   }
 
+  /** Strg+Ü – auf dem Mac auch cmd+Ü bzw. control+Ü. "BracketLeft" ist die physische Ü-Taste. */
+  function isShortcut(e) {
+    if (e.altKey) return false;
+    const ue = e.key === 'ü' || e.key === 'Ü';
+    if (e.ctrlKey && !e.metaKey) return ue || e.code === 'BracketLeft';
+    // cmd+[ ist auf US-Tastaturen "Zurück" – das bleibt dem Browser
+    if (e.metaKey && !e.ctrlKey) return ue || (e.code === 'BracketLeft' && e.key !== '[');
+    return false;
+  }
+
   document.addEventListener('keydown', (e) => {
-    // Strg+Ü (deutsche Tastatur; "BracketLeft" ist die Taste Ü)
-    if (e.ctrlKey && !e.altKey && !e.metaKey && (e.key === 'ü' || e.key === 'Ü' || e.code === 'BracketLeft')) {
+    if (isShortcut(e)) {
       e.preventDefault();
       toggle();
     }
