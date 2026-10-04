@@ -14,7 +14,6 @@ import { cinestar } from './sources/cinestar.js';
 import { cinetixx } from './sources/cinetixx.js';
 import { passage } from './sources/passage.js';
 import { schauburg } from './sources/schauburg.js';
-import { kinotickets } from './sources/kinotickets.js';
 import { cineprog } from './sources/cineprog.js';
 import { ical } from './sources/ical.js';
 import { kinoheld } from './sources/kinoheld.js';
@@ -24,14 +23,13 @@ const OUT_FILE = fileURLToPath(new URL('../../public/data/program.json', import.
 /** Heute + 7 Tage, damit die Seite auch am Folgetag noch eine volle Woche zeigt. */
 export const DAYS = 8;
 
-export const SOURCES = { cinestar, cinetixx, passage, schauburg, kinotickets, cineprog, ical, kinoheld };
+export const SOURCES = { cinestar, cinetixx, passage, schauburg, cineprog, ical, kinoheld };
 
 const SOURCE_LABELS = {
   cinestar: 'cinestar.de',
   cinetixx: 'cinetixx.de',
   passage: 'passage-kinos.de',
   schauburg: 'schauburg-leipzig.de',
-  kinotickets: 'kinotickets.express',
   cineprog: 'kinoleipzig.com',
   ical: 'cineding-leipzig.de',
   kinoheld: 'kinoheld.de',

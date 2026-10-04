@@ -1,4 +1,4 @@
-// Alle Kinos, die auf kinoprogramm-leipzig.de regelmäßig ein Programm haben –
+// Die Kinos, die auf kinoprogramm-leipzig.de regelmäßig ein Programm haben (ohne Taucha) –
 // die Daten kommen aber direkt von den Kinos bzw. ihren Ticketsystemen.
 
 export const CINEMAS = [
@@ -38,13 +38,6 @@ export const CINEMAS = [
     address: 'Hainstraße 19a, 04109 Leipzig',
     website: 'https://www.passage-kinos.de/',
     source: { type: 'passage' },
-  },
-  {
-    id: 'taucha',
-    name: 'CT Lichtspiele Taucha',
-    address: 'Karl-Große-Str. 2, 04425 Taucha',
-    website: 'https://kinotaucha.de/',
-    source: { type: 'kinotickets', slug: 'taucha-ct-lichtspiele' },
   },
   {
     id: 'schauburg',

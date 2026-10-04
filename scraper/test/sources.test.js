@@ -7,7 +7,6 @@ import { parseCinestar } from '../src/sources/cinestar.js';
 import { parseCinetixx } from '../src/sources/cinetixx.js';
 import { parsePassage } from '../src/sources/passage.js';
 import { parseSchauburg } from '../src/sources/schauburg.js';
-import { parseKinotickets } from '../src/sources/kinotickets.js';
 import { parseCineprog } from '../src/sources/cineprog.js';
 import { parseIcal } from '../src/sources/ical.js';
 import { parseKinoheld } from '../src/sources/kinoheld.js';
@@ -81,19 +80,6 @@ test('Schauburg: Datum und Uhrzeit gelten für Folgeeinträge mit', () => {
     ],
   );
   assert.equal(shows[0].url, 'https://www.schauburg-leipzig.de/filmdetails/shaun-das-schaf-spuk-im-kuerbisfeld');
-});
-
-test('kinotickets.express (Taucha): Tage und Buchungslinks', () => {
-  const shows = parseKinotickets(fixture('kinotickets.html'), '2026-10-04');
-  assert.deepEqual(
-    shows.map((s) => [s.date, s.time, s.title]),
-    [
-      ['2026-10-05', '15:00', 'Bibi Blocksberg - Die total verhexte Zeitreise'],
-      ['2026-10-06', '15:00', 'Bibi Blocksberg - Die total verhexte Zeitreise'],
-      ['2026-10-07', '15:00', 'Bibi Blocksberg - Die total verhexte Zeitreise'],
-    ],
-  );
-  assert.equal(shows[0].url, 'https://kinotickets.express/taucha-ct-lichtspiele/booking/22268');
 });
 
 test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine, OV', () => {

@@ -12,17 +12,17 @@ kostenlos bei Vercel.
 
 ## Kinos und Datenquellen
 
-Abgedeckt sind alle Kinos, die auf kinoprogramm-leipzig.de ein regelmäßiges Programm haben. Die Daten
-kommen direkt von den Kinos bzw. ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
+Abgedeckt sind die Kinos, die auf kinoprogramm-leipzig.de ein regelmäßiges Programm haben – ohne die
+CT Lichtspiele Taucha, weil Taucha nicht zu Leipzig gehört. Die Daten kommen direkt von den Kinos bzw.
+ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 
 | Kino | Quelle |
 | --- | --- |
-| Cineplex Leipzig | Ticketportal kinoheld ¹ |
-| UCI Nova Eventis | Ticketportal kinoheld ¹ |
+| Cineplex Leipzig | Ticketportal kinoheld ¹ ² |
+| UCI Nova Eventis | Ticketportal kinoheld ¹ ² |
 | CineStar Petersbogen | JSON-API von cinestar.de |
 | Regina Palast | Programmdaten auf kinoleipzig.com |
 | Passage Kinos | Terminliste auf passage-kinos.de |
-| CT Lichtspiele Taucha | Ticketshop kinotickets.express ² |
 | Schauburg | Wochenprogramm auf schauburg-leipzig.de |
 | Kinobar Prager Frühling | Ticketsystem Cinetixx |
 | Luru Kino in der Spinnerei | Ticketsystem Cinetixx |
@@ -31,9 +31,9 @@ kommen direkt von den Kinos bzw. ihren Ticketsystemen – kinoprogramm-leipzig.d
 
 ¹ cineplex.de und uci-kinowelt.de blockieren automatische Abrufe (Cloudflare); kinoheld führt das
 Programm beider Kinos inklusive Links zu deren Ticketshops.
-² Die robots.txt von kinoheld (API) und kinotickets.express untersagt automatische Zugriffe. Der
-Scraper ruft dort nur einmal täglich je Kino eine einzige Seite ab. Wer darauf verzichten möchte,
-entfernt die drei Kinos in `scraper/src/cinemas.js`.
+² Die robots.txt der kinoheld-API untersagt automatische Zugriffe. Der Scraper ruft dort nur einmal
+täglich je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
+`scraper/src/cinemas.js`.
 
 Fällt eine Quelle aus, bleiben die Vorstellungen dieses Kinos vom letzten erfolgreichen Abruf stehen.
 Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen aktuell sind.
@@ -97,7 +97,7 @@ python3 -m http.server 8000   # → http://localhost:8000
 ## Ein Kino hinzufügen
 
 1. In `scraper/src/cinemas.js` einen Eintrag ergänzen.
-2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, kinotickets.express, cineprog, iCal),
+2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, cineprog, iCal),
    reicht die passende `source`-Angabe. Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
    `scraper/src/index.js` unter `SOURCES` eintragen.
 
