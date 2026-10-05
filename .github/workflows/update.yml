@@ -2,9 +2,11 @@ name: Kinoprogramm aktualisieren
 
 on:
   schedule:
-    # Täglich um 18:00 Uhr deutscher Zeit (Sommer- und Winterzeit)
-    - cron: '0 18 * * *'
-      timezone: 'Europe/Berlin'
+    # Ziel: täglich kurz nach 18 Uhr deutscher Zeit. GitHub startet geplante Läufe oft verspätet
+    # oder lässt sie bei hoher Last ganz ausfallen. Deshalb gibt es mehrere Termine (in UTC, damit
+    # Sommer- und Winterzeit abgedeckt sind): 16:07–18:37 UTC alle 30 Minuten. Der Job "check"
+    # lässt davon nur den ersten Lauf ab 18 Uhr deutscher Zeit arbeiten, die übrigen enden sofort.
+    - cron: '7,37 16-18 * * *'
   # Manuell starten: Actions → "Kinoprogramm aktualisieren" → "Run workflow"
   workflow_dispatch:
 
@@ -16,11 +18,48 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      # Immer den aktuellen Stand des Branches holen – nicht den vom Zeitpunkt des Auslösens –,
+      # damit ein wartender Ersatzlauf den Commit des vorherigen Laufs sieht.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+          sparse-checkout: public/data
+      - name: Schon aktualisiert?
+        id: check
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          run=true
+          if [ "$EVENT" = schedule ]; then
+            now=$(TZ=Europe/Berlin date '+%F %-H')
+            generated=$(jq -r '.generatedAt // empty' public/data/program.json 2>/dev/null || true)
+            last=""
+            if [ -n "$generated" ]; then last=$(TZ=Europe/Berlin date -d "$generated" '+%F %-H'); fi
+            if [ "${now#* }" -lt 18 ]; then
+              echo "In Leipzig ist es erst $(TZ=Europe/Berlin date +%H:%M) Uhr – nichts zu tun."
+              run=false
+            elif [ "${last% *}" = "${now% *}" ] && [ "${last#* }" -ge 18 ]; then
+              echo "Heute schon um $(TZ=Europe/Berlin date -d "$generated" +%H:%M) Uhr aktualisiert – nichts zu tun."
+              run=false
+            fi
+          fi
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
   update:
+    needs: check
+    if: needs.check.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-node@v5
         with:

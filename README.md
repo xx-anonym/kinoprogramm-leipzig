@@ -80,6 +80,10 @@ vercel.json             Vercel liefert den Ordner public/ aus
      lässt er sich jederzeit manuell starten.
    - Falls der Workflow nicht pushen darf: Settings → Actions → General → Workflow permissions →
      „Read and write permissions“.
+   - GitHub startet geplante Läufe oft verspätet oder lässt sie bei hoher Last ganz ausfallen. Der
+     Workflow ist deshalb zwischen 18 und 21 Uhr alle 30 Minuten eingeplant; nur der erste Lauf ab
+     18 Uhr holt Daten, die übrigen sehen am Zeitstempel in `program.json`, dass es heute schon
+     erledigt ist, und enden nach wenigen Sekunden.
 
 Geplante Workflows laufen immer auf dem Standard-Branch des Repositorys. Wer den Branch umbenennen
 möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unter Settings → Branches.
