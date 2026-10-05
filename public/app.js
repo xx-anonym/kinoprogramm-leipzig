@@ -314,6 +314,13 @@ function openBookmarks() {
   $('#merkliste').showModal();
 }
 
+/** Adresse als Link: öffnet in Google Maps die Route zum Kino. */
+function addressLink(cinema) {
+  if (!cinema.address) return '';
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${cinema.name}, ${cinema.address}`)}`;
+  return `<a class="sub address" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Route in Google Maps">${escapeHtml(cinema.address)}</a>`;
+}
+
 function renderByCinema(shows, now) {
   const { data } = state;
   const byCinema = groupBy(shows, (s) => s.cinema);
@@ -333,7 +340,7 @@ function renderByCinema(shows, now) {
       return `<section class="card">
         <div class="card-head">
           <h2><a href="${escapeHtml(c.website)}" target="_blank" rel="noopener">${escapeHtml(c.name)}</a></h2>
-          <span class="sub">${escapeHtml(c.address || '')}</span>
+          ${addressLink(c)}
         </div>
         <ul class="rows">${rows}</ul>
       </section>`;

@@ -8,6 +8,7 @@ kostenlos bei Vercel.
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
 - Kinos ein-/ausblenden und Beginn eingrenzen („ab 18:00“, „bis 20:00“, „ab jetzt“) – wird im
   Browser gemerkt; Suche nach Titel oder Fassung (z. B. „omu“)
+- Kino-Adressen öffnen die Route in Google Maps
 - Uhrzeiten mit geschätzter Endzeit (Filmlänge + ca. 20 Min. Werbung), verlinkt direkt auf die
   Ticketbuchung bzw. die Filmseite des Kinos
 - Gleiche Filme werden kinoübergreifend zusammengeführt; Sonderveranstaltungen („Premiere“,
