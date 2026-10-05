@@ -104,16 +104,22 @@ test('findet eine Quelle plötzlich nichts mehr, gilt das als Fehler und die alt
     shows: [{ cinema: 'a', film: 'alteliebe', date: TODAY, time: '20:00' }],
   };
   const empty = { direct: async () => [] };
-  const data = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous });
+  const noon = new Date(`${TODAY}T10:00:00Z`); // 12:00 Uhr in Leipzig
+  const data = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous, now: noon });
   assert.equal(data.cinemas[0].status, 'stale');
   assert.match(data.cinemas[0].message, /Keine Vorstellungen gefunden/);
   assert.deepEqual(data.shows, [{ cinema: 'a', film: 'alteliebe', date: TODAY, time: '20:00' }]);
   assert.equal(data.films.alteliebe.duration, 112);
 
   // Ohne angekündigte Vorstellungen (z. B. Sommerpause) ist "nichts gefunden" in Ordnung
-  const quiet = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous: { films: {}, shows: [] } });
+  const quiet = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous: { films: {}, shows: [] }, now: noon });
   assert.equal(quiet.cinemas[0].status, 'ok');
   assert.equal(quiet.shows.length, 0);
+
+  // Abends nach der letzten Vorstellung des Tages liefern manche Quellen nichts mehr – das ist kein Fehler
+  const late = new Date(`${TODAY}T19:30:00Z`); // 21:30 Uhr in Leipzig
+  const evening = await collect({ today: TODAY, cinemas: cinemas.slice(0, 1), sources: empty, previous, now: late });
+  assert.equal(evening.cinemas[0].status, 'ok');
 });
 
 test('Sonderveranstaltungen landen beim selben Film und behalten ihr Etikett', async () => {
@@ -148,6 +154,7 @@ test('Sonderveranstaltungen landen beim selben Film und behalten ihr Etikett', a
     cinemas: cinemas.slice(0, 1),
     sources: { direct: async () => [] },
     previous: data,
+    now: new Date(`${TODAY}T10:00:00Z`),
   });
   assert.equal(again.cinemas[0].status, 'stale');
   assert.equal(again.shows.find((s) => s.film === 'alteliebe').label, 'Premiere');

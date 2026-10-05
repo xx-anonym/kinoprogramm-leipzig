@@ -1,8 +1,8 @@
 # Kinoprogramm Leipzig
 
 Das Wochenprogramm aller Leipziger Kinos auf einer schlichten Seite – ohne Werbung, ohne Schnickschnack.
-Die Daten werden **täglich um 18:00 Uhr** automatisch aktualisiert (GitHub Actions) und die Seite liegt
-kostenlos bei Vercel.
+Die Daten werden **stündlich** automatisch aktualisiert (GitHub Actions) und die Seite liegt kostenlos
+bei Vercel.
 
 - Tagesauswahl für die nächsten 7 Tage
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
@@ -40,13 +40,13 @@ ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 
 ¹ cineplex.de und uci-kinowelt.de blockieren automatische Abrufe (Cloudflare); kinoheld führt das
 Programm beider Kinos inklusive Links zu deren Ticketshops.
-² Die robots.txt der kinoheld-API untersagt automatische Zugriffe. Der Scraper ruft dort nur einmal
-täglich je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
+² Die robots.txt der kinoheld-API untersagt automatische Zugriffe. Der Scraper ruft dort einmal pro
+Stunde je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
 `scraper/src/cinemas.js`.
 
-Fällt eine Quelle aus – oder findet sie plötzlich gar keine Vorstellungen mehr, obwohl am Vortag
-noch welche angekündigt waren (meist ein Umbau der Kino-Webseite) –, bleiben die Vorstellungen dieses
-Kinos vom letzten erfolgreichen Abruf stehen.
+Fällt eine Quelle aus – oder findet sie plötzlich gar keine Vorstellungen mehr, obwohl beim letzten
+Abruf noch kommende angekündigt waren (meist ein Umbau der Kino-Webseite) –, bleiben die
+Vorstellungen dieses Kinos vom letzten erfolgreichen Abruf stehen.
 Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen aktuell sind.
 
 ## Aufbau
@@ -54,13 +54,13 @@ Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen akt
 ```
 public/                 Die Webseite (statisch, kein Build nötig)
   index.html, app.js, style.css
-  data/program.json     Das Programm – wird täglich neu geschrieben
+  data/program.json     Das Programm – wird stündlich neu geschrieben
 scraper/                Node.js-Skript, das die Daten sammelt
   src/cinemas.js        Liste der Kinos und ihrer Quellen
   src/sources/          Ein Modul pro Quelle
   test/                 Tests mit echten Ausschnitten der Kino-Webseiten
 .github/workflows/
-  update.yml            Täglich 18:00 Uhr: Daten holen, committen → Vercel veröffentlicht automatisch
+  update.yml            Stündlich: Daten holen, committen → Vercel veröffentlicht automatisch
   test.yml              Tests bei Änderungen am Scraper
 vercel.json             Vercel liefert den Ordner public/ aus
 ```
@@ -73,24 +73,26 @@ vercel.json             Vercel liefert den Ordner public/ aus
    - Einstellungen so lassen, wie Vercel sie aus `vercel.json` übernimmt (Framework „Other“,
      Output Directory `public`, kein Build-Befehl) → „Deploy“.
    - Fertig: Die Seite ist unter `https://<projektname>.vercel.app` erreichbar. Jeder Commit auf dem
-     Standard-Branch – also auch die tägliche Aktualisierung – wird automatisch veröffentlicht.
+     Standard-Branch – also auch die stündliche Aktualisierung – wird automatisch veröffentlicht.
 
 2. **GitHub Actions prüfen**
    - Unter „Actions“ sollte der Workflow „Kinoprogramm aktualisieren“ erscheinen. Über „Run workflow“
      lässt er sich jederzeit manuell starten.
    - Falls der Workflow nicht pushen darf: Settings → Actions → General → Workflow permissions →
      „Read and write permissions“.
-   - GitHub startet geplante Läufe oft verspätet oder lässt sie bei hoher Last ganz ausfallen. Der
-     Workflow ist deshalb zwischen 18 und 21 Uhr alle 30 Minuten eingeplant; nur der erste Lauf ab
-     18 Uhr holt Daten, die übrigen sehen am Zeitstempel in `program.json`, dass es heute schon
-     erledigt ist, und enden nach wenigen Sekunden.
+   - Der Workflow läuft stündlich (jeweils um :23). GitHub startet geplante Läufe manchmal verspätet
+     oder lässt einzelne ausfallen – dann holt der nächste Lauf alles nach.
+   - Geplante Läufe gehören der Person, die die `cron`-Zeile in `update.yml` zuletzt geändert hat.
+     Stammt dieser Commit von einer Adresse ohne GitHub-Konto, startet GitHub sie womöglich gar nicht.
+     Abhilfe: die Zeile einmal direkt auf github.com bearbeiten.
 
 Geplante Workflows laufen immer auf dem Standard-Branch des Repositorys. Wer den Branch umbenennen
 möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unter Settings → Branches.
 
 ## Wenn ein Kino fehlt oder falsche Daten zeigt
 
-- Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail. Die Seite wird
+- Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail – beim ersten
+  Auftreten und danach einmal täglich gegen 18 Uhr, solange das Problem besteht. Die Seite wird
   trotzdem aktualisiert; das betroffene Kino behält seine Daten vom letzten erfolgreichen Abruf. In
   der Zusammenfassung des Laufs steht, welches Kino betroffen ist und warum.
 - Meist hat das Kino seine Webseite umgebaut. Dann muss das passende Modul in `scraper/src/sources/`

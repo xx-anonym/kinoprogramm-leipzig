@@ -8,7 +8,7 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { CINEMAS } from './cinemas.js';
-import { addDays, berlinDate } from './lib/dates.js';
+import { addDays, berlinDate, berlinTime } from './lib/dates.js';
 import { buildCaseDictionary, chooseDisplayTitles, filmKey, parseTitle, pickVersion, smartCase, splitEvent } from './lib/normalize.js';
 import { cinestar } from './sources/cinestar.js';
 import { cinetixx } from './sources/cinetixx.js';
@@ -103,6 +103,7 @@ function filmDurations(shows) {
 export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, previous = null, now = new Date() }) {
   const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
   const context = { today, days };
+  const nowTime = berlinTime(now);
 
   const results = await Promise.all(
     cinemas.map(async (cinema) => {
@@ -119,11 +120,12 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
         if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
         const raw = await fetcher(cinema.source, context);
         const shows = normalizeShows(raw, cinema.id, days);
-        // Gar nichts gefunden, obwohl gestern noch Vorstellungen angekündigt waren? Dann hat sich
-        // vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm schlagen.
+        // Gar nichts gefunden, obwohl beim letzten Abruf noch kommende Vorstellungen angekündigt waren?
+        // Dann hat sich vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm
+        // schlagen. (Waren nur noch heutige, schon begonnene übrig, ist "nichts" dagegen normal.)
         if (raw.length === 0) {
           const old = previousShows(previous, cinema.id, days);
-          if (old.length) {
+          if (old.some((s) => s.date > today || (s.date === today && s.time > nowTime))) {
             return {
               cinema: { ...base, status: 'stale', message: 'Keine Vorstellungen gefunden – hat sich die Webseite des Kinos geändert?' },
               shows: old,
@@ -214,8 +216,9 @@ async function readPrevious() {
 
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
-  const today = berlinDate();
-  const data = await collect({ today, previous: await readPrevious() });
+  const now = new Date();
+  const previous = await readPrevious();
+  const data = await collect({ today: berlinDate(now), previous, now });
 
   const rows = data.cinemas.map((c) => ({
     Kino: c.name,
@@ -228,6 +231,11 @@ async function main() {
   console.log(`${data.shows.length} Vorstellungen, ${Object.keys(data.films).length} Filme (${data.days[0]} bis ${data.days.at(-1)})`);
 
   const problems = data.cinemas.filter((c) => c.status !== 'ok');
+  // Der Workflow läuft stündlich. Damit nicht jede Stunde eine Mail kommt, schlägt er nur Alarm, wenn
+  // ein Problem neu ist – und, solange es besteht, einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
+  const previousStatus = new Map((previous?.cinemas ?? []).map((c) => [c.id, c.status]));
+  const newProblems = problems.filter((c) => (previousStatus.get(c.id) ?? 'ok') === 'ok');
+  const alert = newProblems.length > 0 || (problems.length > 0 && berlinTime(now).startsWith('18:'));
 
   if (process.env.GITHUB_STEP_SUMMARY) {
     const md = [
@@ -241,7 +249,7 @@ async function main() {
     await appendFile(process.env.GITHUB_STEP_SUMMARY, md);
   }
   if (process.env.GITHUB_OUTPUT) {
-    await appendFile(process.env.GITHUB_OUTPUT, `problems=${problems.length}\n`);
+    await appendFile(process.env.GITHUB_OUTPUT, `problems=${problems.length}\nalert=${alert}\n`);
   }
 
   if (data.shows.length === 0) {
