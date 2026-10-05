@@ -4,9 +4,9 @@ on:
   schedule:
     # Ziel: täglich kurz nach 18 Uhr deutscher Zeit. GitHub startet geplante Läufe oft verspätet
     # oder lässt sie bei hoher Last ganz ausfallen. Deshalb gibt es mehrere Termine (in UTC, damit
-    # Sommer- und Winterzeit abgedeckt sind): 16:07–18:37 UTC alle 30 Minuten. Der Job "check"
+    # Sommer- und Winterzeit abgedeckt sind): 16:05–18:35 UTC alle 30 Minuten. Der Job "check"
     # lässt davon nur den ersten Lauf ab 18 Uhr deutscher Zeit arbeiten, die übrigen enden sofort.
-    - cron: '7,37 16-18 * * *'
+    - cron: '5,35 16-18 * * *'
   # Manuell starten: Actions → "Kinoprogramm aktualisieren" → "Run workflow"
   workflow_dispatch:
 
