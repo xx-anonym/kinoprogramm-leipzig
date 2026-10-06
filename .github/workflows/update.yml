@@ -56,8 +56,8 @@ jobs:
           git push
 
       # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert (ausgefallene Kinos behalten
-      # ihre letzten Daten), aber der Lauf wird rot markiert und GitHub schickt eine Mail – nur wenn
-      # ein Problem auch beim nächsten Lauf noch besteht und danach einmal täglich gegen 18 Uhr.
+      # ihre letzten Daten), aber der Lauf wird rot markiert und GitHub schickt eine Mail – erst wenn
+      # ein Problem rund zwei Stunden besteht und danach einmal täglich gegen 18 Uhr.
       - name: Probleme melden
         if: steps.scrape.outputs.alert == 'true'
         run: |
