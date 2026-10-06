@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { collect, formatProgram } from '../src/index.js';
+import { collect, formatProgram, shouldAlert } from '../src/index.js';
 
 const TODAY = '2026-10-05';
 
@@ -183,4 +183,46 @@ test('formatProgram erzeugt gültiges JSON mit einer Zeile pro Vorstellung', asy
   assert.deepEqual(JSON.parse(text), data);
   const showLines = text.split('\n').filter((l) => l.includes('"cinema":'));
   assert.equal(showLines.length, data.shows.length);
+});
+
+test('Mail erst, wenn ein Problem auch im nächsten Lauf noch besteht – und nicht jede Stunde', async () => {
+  const broken = {
+    broken: async () => {
+      throw new Error('fetch failed', { cause: { code: 'ETIMEDOUT' } });
+    },
+  };
+  const hour = 36e5;
+  const run = (previous, now) => collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: broken, previous, now });
+  const problems = (data) => data.cinemas.filter((c) => c.status !== 'ok');
+
+  const t0 = new Date(`${TODAY}T08:23:00Z`); // 10:23 Uhr in Leipzig
+  const before = {
+    generatedAt: new Date(t0 - hour).toISOString(),
+    cinemas: [{ id: 'b', status: 'ok' }],
+    films: { alteliebe: { title: 'Alte Liebe' } },
+    shows: [{ cinema: 'b', film: 'alteliebe', date: TODAY, time: '20:00' }],
+  };
+
+  const first = await run(before, t0);
+  assert.equal(first.cinemas[0].status, 'stale');
+  assert.equal(first.cinemas[0].message, 'fetch failed (ETIMEDOUT)');
+  assert.equal(first.cinemas[0].since, t0.toISOString());
+  assert.equal(shouldAlert(problems(first), before.generatedAt, t0), false, 'einzelner Aussetzer');
+
+  const t1 = new Date(t0.getTime() + hour);
+  const second = await run(first, t1);
+  assert.equal(second.cinemas[0].since, t0.toISOString(), 'Beginn des Problems bleibt erhalten');
+  assert.equal(shouldAlert(problems(second), first.generatedAt, t1), true, 'besteht weiter → Mail');
+
+  const t2 = new Date(t1.getTime() + hour);
+  const third = await run(second, t2);
+  assert.equal(shouldAlert(problems(third), second.generatedAt, t2), false, 'keine Mail jede Stunde');
+
+  const evening = new Date(`${TODAY}T16:23:00Z`); // 18:23 Uhr: tägliche Erinnerung
+  assert.equal(shouldAlert(problems(await run(third, evening)), third.generatedAt, evening), true);
+
+  // Wieder in Ordnung → kein "seit"
+  const fixed = await collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: { broken: async () => [{ date: TODAY, time: '20:00', title: 'Alte Liebe' }] }, previous: third, now: t2 });
+  assert.equal(fixed.cinemas[0].status, 'ok');
+  assert.equal(fixed.cinemas[0].since, undefined);
 });

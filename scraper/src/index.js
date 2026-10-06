@@ -35,7 +35,13 @@ const SOURCE_LABELS = {
   kinoheld: 'kinoheld.de',
 };
 
-const errorMessage = (err) => String(err?.message ?? err).slice(0, 300);
+const errorMessage = (err) => {
+  const cause = err?.cause?.code ?? err?.cause?.message; // "fetch failed" allein sagt wenig
+  return String(err?.message ?? err).concat(cause ? ` (${cause})` : '').slice(0, 300);
+};
+
+/** Erst wenn ein Problem so lange besteht, gibt es eine Mail – ein einzelner Aussetzer reicht nicht. */
+export const ALERT_AFTER_MS = 45 * 60 * 1000;
 
 /** Bereinigt die Rohdaten einer Quelle: Titel/Fassung trennen, Zeitraum filtern. */
 function normalizeShows(rawShows, cinemaId, days) {
@@ -177,7 +183,17 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
 
   const counts = {};
   for (const s of shows) counts[s.cinema] = (counts[s.cinema] ?? 0) + 1;
-  const cinemaList = results.map((r) => ({ ...r.cinema, shows: counts[r.cinema.id] ?? 0 }));
+  // Seit wann besteht ein Problem? Wird von Lauf zu Lauf weitergereicht, bis das Kino wieder ok ist.
+  const previousCinemas = new Map((previous?.cinemas ?? []).map((c) => [c.id, c]));
+  const cinemaList = results.map((r) => {
+    const cinema = { ...r.cinema, shows: counts[r.cinema.id] ?? 0 };
+    if (cinema.status !== 'ok') {
+      const before = previousCinemas.get(cinema.id);
+      cinema.since =
+        before && before.status !== 'ok' ? (before.since ?? previous.generatedAt ?? now.toISOString()) : now.toISOString();
+    }
+    return cinema;
+  });
 
   return {
     generatedAt: now.toISOString(),
@@ -206,6 +222,19 @@ export function formatProgram(data) {
   ].join('\n');
 }
 
+/**
+ * Soll der Lauf rot werden (und GitHub eine Mail schicken)? Der Workflow läuft stündlich, deshalb nicht
+ * bei jedem Problem: erst wenn eines seit ALERT_AFTER_MS besteht (also auch der nächste Lauf es noch
+ * sieht) – und danach, solange es anhält, einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
+ */
+export function shouldAlert(problems, previousAt, now) {
+  const lasting = (c, at) => at - new Date(c.since ?? now) >= ALERT_AFTER_MS;
+  const before = previousAt ? new Date(previousAt) : null;
+  const persistent = problems.filter((c) => lasting(c, now));
+  const newlyPersistent = persistent.filter((c) => !(before && lasting(c, before)));
+  return newlyPersistent.length > 0 || (persistent.length > 0 && berlinTime(now).startsWith('18:'));
+}
+
 async function readPrevious() {
   try {
     return JSON.parse(await readFile(OUT_FILE, 'utf8'));
@@ -231,11 +260,7 @@ async function main() {
   console.log(`${data.shows.length} Vorstellungen, ${Object.keys(data.films).length} Filme (${data.days[0]} bis ${data.days.at(-1)})`);
 
   const problems = data.cinemas.filter((c) => c.status !== 'ok');
-  // Der Workflow läuft stündlich. Damit nicht jede Stunde eine Mail kommt, schlägt er nur Alarm, wenn
-  // ein Problem neu ist – und, solange es besteht, einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
-  const previousStatus = new Map((previous?.cinemas ?? []).map((c) => [c.id, c.status]));
-  const newProblems = problems.filter((c) => (previousStatus.get(c.id) ?? 'ok') === 'ok');
-  const alert = newProblems.length > 0 || (problems.length > 0 && berlinTime(now).startsWith('18:'));
+  const alert = shouldAlert(problems, previous?.generatedAt, now);
 
   if (process.env.GITHUB_STEP_SUMMARY) {
     const md = [

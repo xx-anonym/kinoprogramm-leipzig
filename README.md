@@ -91,8 +91,9 @@ möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unte
 
 ## Wenn ein Kino fehlt oder falsche Daten zeigt
 
-- Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail – beim ersten
-  Auftreten und danach einmal täglich gegen 18 Uhr, solange das Problem besteht. Die Seite wird
+- Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail – sobald ein
+  Problem auch beim nächsten Lauf noch besteht (ein einzelner Aussetzer einer Kino-Webseite löst
+  keine Mail aus) und danach einmal täglich gegen 18 Uhr, solange es anhält. Die Seite wird
   trotzdem aktualisiert; das betroffene Kino behält seine Daten vom letzten erfolgreichen Abruf. In
   der Zusammenfassung des Laufs steht, welches Kino betroffen ist und warum.
 - Meist hat das Kino seine Webseite umgebaut. Dann muss das passende Modul in `scraper/src/sources/`
