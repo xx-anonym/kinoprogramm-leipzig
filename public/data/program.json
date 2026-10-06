@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-06T10:26:33.617Z",
+  "generatedAt": "2026-10-06T11:01:04.719Z",
   "days": ["2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":259},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":193},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":238},
-    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":180},
+    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":180,"since":"2026-10-06T11:01:04.719Z"},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":168},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":61},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":29},
