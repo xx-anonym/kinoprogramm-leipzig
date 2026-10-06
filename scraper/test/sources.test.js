@@ -8,6 +8,7 @@ import { parseCinetixx } from '../src/sources/cinetixx.js';
 import { parsePassage, parsePassageDuration } from '../src/sources/passage.js';
 import { parseSchauburg } from '../src/sources/schauburg.js';
 import { parseCineprog } from '../src/sources/cineprog.js';
+import { parseKinozeit } from '../src/sources/kinozeit.js';
 import { parseIcal } from '../src/sources/ical.js';
 import { parseKinoheld } from '../src/sources/kinoheld.js';
 
@@ -187,4 +188,21 @@ test('kinoheld: Fassung aus Ton- und Untertitelsprache', () => {
 
 test('kinoheld: Fehlermeldungen der API werden weitergereicht', () => {
   assert.throws(() => parseKinoheld({ errors: [{ message: 'The limit may not be greater than 500.' }] }), /limit/);
+});
+
+test('kino-zeit: Programm aus den strukturierten Daten (JSON-LD)', () => {
+  const shows = parseKinozeit(fixture('kinozeit.html'));
+  assert.equal(shows.length, 5);
+  assert.deepEqual(
+    shows.map((s) => [s.date, s.time, s.title]),
+    [
+      ['2026-10-06', '16:45', 'Adams Acht'],
+      ['2026-10-11', '20:10', 'The Social Reckoning (OF)'],
+      ['2026-10-09', '19:30', 'Forgotten Island 3D'],
+      ['2026-10-07', '19:30', 'Avengers: Endgame Extended'],
+      ['2026-10-08', '14:00', 'Minions & Monster'],
+    ],
+  );
+  assert.match(shows[3].description, /Infinity War die Hälfte/, 'HTML-Entitäten werden aufgelöst');
+  assert.throws(() => parseKinozeit('<html></html>'), /kein Kinoprogramm/);
 });

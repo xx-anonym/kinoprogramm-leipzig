@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { collect, formatProgram, shouldAlert } from '../src/index.js';
+import { collect, formatProgram, mergeByDay, shouldAlert } from '../src/index.js';
 
 const TODAY = '2026-10-05';
 
@@ -225,4 +225,44 @@ test('Mail erst, wenn ein Problem auch im nächsten Lauf noch besteht – und ni
   const fixed = await collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: { broken: async () => [{ date: TODAY, time: '20:00', title: 'Alte Liebe' }] }, previous: third, now: t2 });
   assert.equal(fixed.cinemas[0].status, 'ok');
   assert.equal(fixed.cinemas[0].since, undefined);
+});
+
+test('Ergänzungsquelle füllt Tage, die der Hauptquelle noch fehlen', async () => {
+  const main = [
+    { date: '2026-10-06', time: '17:00', title: 'Digger', url: 'https://tickets.example/1' },
+    { date: '2026-10-06', time: '20:00', title: 'Hope', url: 'https://tickets.example/2' },
+    { date: '2026-10-08', time: '22:00', title: 'Überraschungspremiere', url: 'https://tickets.example/3' },
+  ];
+  const extra = [
+    { date: '2026-10-06', time: '17:00', title: 'Digger' },
+    { date: '2026-10-06', time: '20:00', title: 'Hope' },
+    { date: '2026-10-08', time: '15:00', title: 'Digger' },
+    { date: '2026-10-08', time: '18:00', title: 'Hope' },
+  ];
+  // 06.10.: Gleichstand → Hauptquelle (mit Links); 08.10.: Ergänzung kennt mehr → Ergänzung
+  assert.deepEqual(
+    mergeByDay(main, extra).map((s) => [s.date, s.time, Boolean(s.url)]),
+    [
+      ['2026-10-06', '17:00', true],
+      ['2026-10-06', '20:00', true],
+      ['2026-10-08', '15:00', false],
+      ['2026-10-08', '18:00', false],
+    ],
+  );
+
+  // Über collect: Quelle in der Kinoliste, Ausfall der Ergänzung ist kein Fehler
+  const cinema = { ...cinemas[0], source: { type: 'direct', supplement: { type: 'extra' } } };
+  const failing = await collect({
+    today: TODAY,
+    cinemas: [cinema],
+    sources: {
+      direct: async () => [{ date: TODAY, time: '20:00', title: 'Hope' }],
+      extra: async () => {
+        throw new Error('HTTP 503');
+      },
+    },
+  });
+  assert.equal(failing.cinemas[0].status, 'ok');
+  assert.equal(failing.cinemas[0].source, 'direct + extra');
+  assert.equal(failing.shows.length, 1);
 });

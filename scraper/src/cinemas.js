@@ -15,8 +15,13 @@ export const CINEMAS = [
     name: 'UCI Nova Eventis',
     address: 'Merseburger Str. 17a, Günthersdorf (Nova Eventis)',
     website: 'https://www.uci-kinowelt.de/programm/leipzig/',
-    // uci-kinowelt.de blockiert automatische Abrufe (Cloudflare) – Programm über kinoheld
-    source: { type: 'kinoheld', cinemaId: '1235' },
+    // uci-kinowelt.de blockiert automatische Abrufe (Cloudflare) – Programm über kinoheld. Das bekommt die
+    // neue Woche aber oft erst Tage später; bis dahin ergänzt kino-zeit.de die fehlenden Tage.
+    source: {
+      type: 'kinoheld',
+      cinemaId: '1235',
+      supplement: { type: 'kinozeit', url: 'https://www.kino-zeit.de/kinoprogramm/guenthersdorf/uci-kinowelt-nova-eventis-guenthersdorf' },
+    },
   },
   {
     id: 'cinestar',

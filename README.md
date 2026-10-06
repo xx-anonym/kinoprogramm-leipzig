@@ -28,7 +28,7 @@ ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 | Kino | Quelle |
 | --- | --- |
 | Cineplex Leipzig | Ticketportal kinoheld ¹ ² |
-| UCI Nova Eventis | Ticketportal kinoheld ¹ ² |
+| UCI Nova Eventis | Ticketportal kinoheld ¹ ², ergänzt um kino-zeit.de ³ |
 | CineStar Petersbogen | JSON-API von cinestar.de |
 | Regina Palast | Programmdaten auf kinoleipzig.com |
 | Passage Kinos | Terminliste auf passage-kinos.de |
@@ -43,6 +43,8 @@ Programm beider Kinos inklusive Links zu deren Ticketshops.
 ² Die robots.txt der kinoheld-API untersagt automatische Zugriffe. Der Scraper ruft dort einmal pro
 Stunde je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
 `scraper/src/cinemas.js`.
+³ kinoheld bekommt die neue UCI-Woche oft erst Tage nach uci-kinowelt.de. Für jeden Tag zählt deshalb
+die Quelle mit mehr Vorstellungen; Tage aus kino-zeit.de haben keinen Ticket-Link.
 
 Fällt eine Quelle aus – oder findet sie plötzlich gar keine Vorstellungen mehr, obwohl beim letzten
 Abruf noch kommende angekündigt waren (meist ein Umbau der Kino-Webseite) –, bleiben die
@@ -115,8 +117,9 @@ python3 -m http.server 8000   # → http://localhost:8000
 ## Ein Kino hinzufügen
 
 1. In `scraper/src/cinemas.js` einen Eintrag ergänzen.
-2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, cineprog, iCal),
-   reicht die passende `source`-Angabe. Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
+2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, cineprog, iCal, kino-zeit.de),
+   reicht die passende `source`-Angabe. Mit `supplement` lässt sich eine zweite Quelle angeben, die
+   Tage ergänzt, die der ersten noch fehlen (siehe UCI). Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
    `scraper/src/index.js` unter `SOURCES` eintragen.
 
 Angaben ohne Gewähr – maßgeblich ist das Programm des jeweiligen Kinos.

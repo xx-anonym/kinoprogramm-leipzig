@@ -17,13 +17,14 @@ import { schauburg } from './sources/schauburg.js';
 import { cineprog } from './sources/cineprog.js';
 import { ical } from './sources/ical.js';
 import { kinoheld } from './sources/kinoheld.js';
+import { kinozeit } from './sources/kinozeit.js';
 
 const OUT_FILE = fileURLToPath(new URL('../../public/data/program.json', import.meta.url));
 
 /** Heute + 7 Tage, damit die Seite auch am Folgetag noch eine volle Woche zeigt. */
 export const DAYS = 8;
 
-export const SOURCES = { cinestar, cinetixx, passage, schauburg, cineprog, ical, kinoheld };
+export const SOURCES = { cinestar, cinetixx, passage, schauburg, cineprog, ical, kinoheld, kinozeit };
 
 const SOURCE_LABELS = {
   cinestar: 'cinestar.de',
@@ -33,6 +34,7 @@ const SOURCE_LABELS = {
   cineprog: 'kinoleipzig.com',
   ical: 'cineding-leipzig.de',
   kinoheld: 'kinoheld.de',
+  kinozeit: 'kino-zeit.de',
 };
 
 const errorMessage = (err) => {
@@ -69,6 +71,42 @@ function normalizeShows(rawShows, cinemaId, days) {
     });
   }
   return result;
+}
+
+/**
+ * Führt Haupt- und Ergänzungsquelle tageweise zusammen: Je Tag zählt die Quelle mit mehr Vorstellungen,
+ * bei Gleichstand die Hauptquelle (sie hat meist Ticket-Links). So kommt z. B. eine neue Kinowoche, die
+ * die Hauptquelle noch nicht kennt, schon aus der Ergänzung – ohne doppelte Vorstellungen.
+ */
+export function mergeByDay(primary, supplement) {
+  const perDay = (list) => list.reduce((m, s) => m.set(s?.date, (m.get(s?.date) ?? 0) + 1), new Map());
+  const a = perDay(primary);
+  const b = perDay(supplement);
+  return [
+    ...primary.filter((s) => (a.get(s?.date) ?? 0) >= (b.get(s?.date) ?? 0)),
+    ...supplement.filter((s) => (b.get(s?.date) ?? 0) > (a.get(s?.date) ?? 0)),
+  ];
+}
+
+/** Holt die Rohdaten eines Kinos – ggf. aus Haupt- und Ergänzungsquelle (`supplement`). */
+async function fetchRaw(config, context, sources) {
+  const fetchOne = (c) => {
+    const fetcher = sources[c.type];
+    if (!fetcher) throw new Error(`Unbekannte Quelle "${c.type}"`);
+    return fetcher(c, context);
+  };
+  if (!config.supplement) return fetchOne(config);
+  const [main, extra] = await Promise.allSettled([fetchOne(config), fetchOne(config.supplement)]);
+  if (main.status === 'rejected' && extra.status === 'rejected') throw main.reason;
+  if (extra.status === 'rejected') {
+    console.warn(`Ergänzungsquelle ${config.supplement.type} fehlgeschlagen: ${errorMessage(extra.reason)}`);
+    return main.value;
+  }
+  if (main.status === 'rejected') {
+    console.warn(`Hauptquelle ${config.type} fehlgeschlagen, nutze ${config.supplement.type}: ${errorMessage(main.reason)}`);
+    return extra.value;
+  }
+  return mergeByDay(main.value, extra.value);
 }
 
 /** Vorstellungen eines Kinos aus dem letzten Lauf (falls heute alle Quellen ausfallen). */
@@ -113,18 +151,16 @@ export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, pre
 
   const results = await Promise.all(
     cinemas.map(async (cinema) => {
-      const type = cinema.source.type;
+      const label = (c) => SOURCE_LABELS[c.type] ?? c.type;
       const base = {
         id: cinema.id,
         name: cinema.name,
         address: cinema.address,
         website: cinema.website,
-        source: SOURCE_LABELS[type] ?? type,
+        source: [cinema.source, cinema.source.supplement].filter(Boolean).map(label).join(' + '),
       };
       try {
-        const fetcher = sources[type];
-        if (!fetcher) throw new Error(`Unbekannte Quelle "${type}"`);
-        const raw = await fetcher(cinema.source, context);
+        const raw = await fetchRaw(cinema.source, context, sources);
         const shows = normalizeShows(raw, cinema.id, days);
         // Gar nichts gefunden, obwohl beim letzten Abruf noch kommende Vorstellungen angekündigt waren?
         // Dann hat sich vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm
