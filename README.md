@@ -1,8 +1,8 @@
 # Kinoprogramm Leipzig
 
 Das Wochenprogramm aller Leipziger Kinos auf einer schlichten Seite – ohne Werbung, ohne Schnickschnack.
-Die Daten werden **stündlich** automatisch aktualisiert (GitHub Actions) und die Seite liegt kostenlos
-bei Vercel.
+Die Daten werden **stündlich** automatisch aktualisiert (GitHub Actions, angestoßen von cron-job.org)
+und die Seite liegt kostenlos bei Vercel.
 
 - Tagesauswahl für die nächsten 7 Tage
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
@@ -82,11 +82,30 @@ vercel.json             Vercel liefert den Ordner public/ aus
      lässt er sich jederzeit manuell starten.
    - Falls der Workflow nicht pushen darf: Settings → Actions → General → Workflow permissions →
      „Read and write permissions“.
-   - Der Workflow läuft stündlich (jeweils um :23). GitHub startet geplante Läufe manchmal verspätet
-     oder lässt einzelne ausfallen – dann holt der nächste Lauf alles nach.
-   - Geplante Läufe gehören der Person, die die `cron`-Zeile in `update.yml` zuletzt geändert hat.
-     Stammt dieser Commit von einer Adresse ohne GitHub-Konto, startet GitHub sie womöglich gar nicht.
-     Abhilfe: die Zeile einmal direkt auf github.com bearbeiten.
+
+3. **Stündlich anstoßen mit cron-job.org**
+
+   GitHubs eigener Zeitplan ist unzuverlässig: Geplante Läufe kommen oft stark verspätet oder gar
+   nicht. Er bleibt in `update.yml` nur als Reserve alle 3 Stunden. Den stündlichen Takt gibt der
+   kostenlose Dienst [cron-job.org](https://cron-job.org) vor:
+
+   - **Schlüssel anlegen:** GitHub → Settings → Developer settings → Fine-grained personal access
+     tokens → „Generate new token“. Nur dieses Repository, Berechtigung **Actions: Read and write**,
+     Ablauf so lang wie möglich (GitHub schickt vor dem Ablauf eine Mail – dann neuen Schlüssel
+     anlegen und bei cron-job.org austauschen).
+   - **Cronjob anlegen:** URL
+     `https://api.github.com/repos/<besitzer>/<repo>/actions/workflows/update.yml/dispatches`,
+     Zeitplan stündlich, Methode `POST`, Request-Body `{"ref":"<Standard-Branch>"}` und diese Header:
+
+     | Header | Wert |
+     | --- | --- |
+     | `Authorization` | `Bearer <Schlüssel>` |
+     | `Accept` | `application/vnd.github+json` |
+     | `X-GitHub-Api-Version` | `2026-03-10` |
+     | `Content-Type` | `application/json` |
+
+     Benachrichtigung bei Fehlschlägen einschalten. Ein Testlauf sollte mit Status 200 oder 204 enden
+     und unter „Actions“ einen neuen Lauf starten.
 
 Geplante Workflows laufen immer auf dem Standard-Branch des Repositorys. Wer den Branch umbenennen
 möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unter Settings → Branches.
