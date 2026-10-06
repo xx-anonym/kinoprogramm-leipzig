@@ -42,8 +42,11 @@ const errorMessage = (err) => {
   return String(err?.message ?? err).concat(cause ? ` (${cause})` : '').slice(0, 300);
 };
 
-/** Erst wenn ein Problem so lange besteht, gibt es eine Mail – ein einzelner Aussetzer reicht nicht. */
-export const ALERT_AFTER_MS = 45 * 60 * 1000;
+/**
+ * Erst wenn ein Problem so lange besteht (bei stündlichen Läufen: drei Läufe in Folge), gibt es eine Mail.
+ * Kurze Aussetzer einer Kino-Webseite kommen öfter vor; die alten Daten bleiben ja so lange stehen.
+ */
+export const ALERT_AFTER_MS = 110 * 60 * 1000;
 
 /** Bereinigt die Rohdaten einer Quelle: Titel/Fassung trennen, Zeitraum filtern. */
 function normalizeShows(rawShows, cinemaId, days) {
@@ -260,8 +263,8 @@ export function formatProgram(data) {
 
 /**
  * Soll der Lauf rot werden (und GitHub eine Mail schicken)? Der Workflow läuft stündlich, deshalb nicht
- * bei jedem Problem: erst wenn eines seit ALERT_AFTER_MS besteht (also auch der nächste Lauf es noch
- * sieht) – und danach, solange es anhält, einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
+ * bei jedem Problem: erst wenn eines seit ALERT_AFTER_MS besteht – und danach, solange es anhält,
+ * einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
  */
 export function shouldAlert(problems, previousAt, now) {
   const lasting = (c, at) => at - new Date(c.since ?? now) >= ALERT_AFTER_MS;

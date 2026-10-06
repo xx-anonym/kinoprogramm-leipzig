@@ -5,10 +5,13 @@ const USER_AGENT =
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function request(url, { accept, retries = 2, timeoutMs = 30_000, method = 'GET', headers = {}, body } = {}) {
+async function request(
+  url,
+  { accept, retries = 2, retryDelayMs = 2000, timeoutMs = 30_000, method = 'GET', headers = {}, body } = {},
+) {
   let lastError;
   for (let attempt = 0; attempt <= retries; attempt++) {
-    if (attempt > 0) await sleep(2000 * 2 ** (attempt - 1));
+    if (attempt > 0) await sleep(retryDelayMs * 2 ** (attempt - 1));
     try {
       const res = await fetch(url, {
         method,

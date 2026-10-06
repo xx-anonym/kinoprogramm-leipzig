@@ -58,5 +58,7 @@ export function parseCineprog(html) {
 }
 
 export async function cineprog({ url }) {
-  return parseCineprog(await fetchText(url));
+  // kinoleipzig.com nimmt Verbindungen von GitHubs Servern ab und zu nicht an (Connect-Timeout) –
+  // deshalb mehr Geduld: bis zu 3 Wiederholungen nach 10, 20 und 40 Sekunden.
+  return parseCineprog(await fetchText(url, { retries: 3, retryDelayMs: 10_000 }));
 }

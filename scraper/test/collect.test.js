@@ -185,7 +185,7 @@ test('formatProgram erzeugt gültiges JSON mit einer Zeile pro Vorstellung', asy
   assert.equal(showLines.length, data.shows.length);
 });
 
-test('Mail erst, wenn ein Problem auch im nächsten Lauf noch besteht – und nicht jede Stunde', async () => {
+test('Mail erst, wenn ein Problem drei Läufe in Folge besteht – und nicht jede Stunde', async () => {
   const broken = {
     broken: async () => {
       throw new Error('fetch failed', { cause: { code: 'ETIMEDOUT' } });
@@ -212,14 +212,18 @@ test('Mail erst, wenn ein Problem auch im nächsten Lauf noch besteht – und ni
   const t1 = new Date(t0.getTime() + hour);
   const second = await run(first, t1);
   assert.equal(second.cinemas[0].since, t0.toISOString(), 'Beginn des Problems bleibt erhalten');
-  assert.equal(shouldAlert(problems(second), first.generatedAt, t1), true, 'besteht weiter → Mail');
+  assert.equal(shouldAlert(problems(second), first.generatedAt, t1), false, 'zwei Aussetzer in Folge');
 
   const t2 = new Date(t1.getTime() + hour);
   const third = await run(second, t2);
-  assert.equal(shouldAlert(problems(third), second.generatedAt, t2), false, 'keine Mail jede Stunde');
+  assert.equal(shouldAlert(problems(third), second.generatedAt, t2), true, 'besteht seit zwei Stunden → Mail');
 
-  const evening = new Date(`${TODAY}T16:23:00Z`); // 18:23 Uhr: tägliche Erinnerung
-  assert.equal(shouldAlert(problems(await run(third, evening)), third.generatedAt, evening), true);
+  const t3 = new Date(t2.getTime() + hour);
+  const fourth = await run(third, t3);
+  assert.equal(shouldAlert(problems(fourth), third.generatedAt, t3), false, 'keine Mail jede Stunde');
+
+  const evening = new Date(`${TODAY}T16:00:30Z`); // 18:00 Uhr: tägliche Erinnerung
+  assert.equal(shouldAlert(problems(await run(fourth, evening)), fourth.generatedAt, evening), true);
 
   // Wieder in Ordnung → kein "seit"
   const fixed = await collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: { broken: async () => [{ date: TODAY, time: '20:00', title: 'Alte Liebe' }] }, previous: third, now: t2 });
