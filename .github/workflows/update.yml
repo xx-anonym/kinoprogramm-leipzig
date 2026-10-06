@@ -1,10 +1,11 @@
 name: Kinoprogramm aktualisieren
 
 on:
+  # Angestoßen wird das Update stündlich zur vollen Stunde von cron-job.org über die GitHub-API
+  # (workflow_dispatch, Einrichtung siehe README). GitHubs eigener Zeitplan ist unzuverlässig – geplante
+  # Läufe kommen oft stark verspätet oder gar nicht – und dient nur als Reserve alle 3 Stunden.
   schedule:
-    # Stündlich zur Minute 23 – nicht zur vollen Stunde, da startet GitHub geplante Läufe oft verspätet
-    # oder lässt sie bei hoher Last ganz ausfallen. Fällt mal ein Lauf aus, holt der nächste alles nach.
-    - cron: '23 * * * *'
+    - cron: '23 */3 * * *'
   # Manuell starten: Actions → "Kinoprogramm aktualisieren" → "Run workflow"
   workflow_dispatch:
 
@@ -56,7 +57,7 @@ jobs:
 
       # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert (ausgefallene Kinos behalten
       # ihre letzten Daten), aber der Lauf wird rot markiert und GitHub schickt eine Mail – nur wenn
-      # ein Problem neu auftritt und danach einmal täglich gegen 18 Uhr, nicht jede Stunde.
+      # ein Problem auch beim nächsten Lauf noch besteht und danach einmal täglich gegen 18 Uhr.
       - name: Probleme melden
         if: steps.scrape.outputs.alert == 'true'
         run: |
