@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T04:01:01.772Z",
+  "generatedAt": "2026-10-07T05:01:07.109Z",
   "days": ["2026-10-07","2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":271},
@@ -86,7 +86,7 @@
     "savingspoonie": {"title":"Saving Spoonie","duration":88},
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80},
     "sneakpreview": {"title":"Sneak Preview"},
-    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":90},
+    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":100},
     "spaweekend": {"title":"Spa Weekend","duration":100},
     "spaziergangnachsyrakus": {"title":"Spaziergang nach Syrakus","duration":97},
     "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":146},
