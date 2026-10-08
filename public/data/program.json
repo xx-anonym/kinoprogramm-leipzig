@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:00:56.053Z",
+  "generatedAt": "2026-10-08T10:45:07.531Z",
   "days": ["2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":248},
@@ -10,7 +10,7 @@
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":52},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":18},
-    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":29},
+    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
   ],
   "films": {
@@ -74,6 +74,7 @@
     "naza": {"title":"Naza","duration":80},
     "nightofthelivingdeadcinestarexklusive35mmfassung": {"title":"Night of the Living Dead (CineStar exklusive 35mm Fassung)","duration":95},
     "ninasescarlata": {"title":"Niñas Escarlata","duration":70},
+    "ninxsdaslebenglitzert": {"title":"Niñxs - Das Leben Glitzert","duration":88},
     "nostalghia": {"title":"Nostalghia","duration":126},
     "obsessiondusollstmichlieben": {"title":"Obsession - Du sollst mich lieben","duration":109},
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":83},
@@ -115,6 +116,7 @@
   "shows": [
     {"cinema":"passage","film":"adamsacht","date":"2026-10-08","time":"13:30","screen":"Universum","url":"https://www.passage-kinos.de/adams-acht"},
     {"cinema":"passage","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-08","time":"13:30","screen":"Filmeck","url":"https://www.passage-kinos.de/bibi-blocksberg-%E2%80%93-die-total-verhexte-zeitreise"},
+    {"cinema":"schaubuehne","film":"ninxsdaslebenglitzert","date":"2026-10-08","time":"13:30","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3677295731&bgswitch=false&resize=false"},
     {"cinema":"cinestar","film":"coyotevsacme","date":"2026-10-08","time":"13:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183914"},
     {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-08","time":"13:45","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183915"},
     {"cinema":"passage","film":"forgottenisland","date":"2026-10-08","time":"13:45","screen":"Casino","url":"https://www.passage-kinos.de/forgotten-island"},
