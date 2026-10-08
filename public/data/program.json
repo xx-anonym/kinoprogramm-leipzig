@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08T11:00:55.897Z",
+  "generatedAt": "2026-10-08T12:00:58.123Z",
   "days": ["2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":248},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":201},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":222},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":220},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":169},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":155},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":151},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":52},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":18},
@@ -14,7 +14,7 @@
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
   ],
   "films": {
-    "adamsacht": {"title":"Adams Acht","duration":124},
+    "adamsacht": {"title":"Adams Acht","duration":120},
     "allyouneediskill": {"title":"All You Need Is Kill","duration":86},
     "alteliebe": {"title":"Alte Liebe","duration":110},
     "alwayslalisa": {"title":"Always Lalisa","duration":100},
@@ -114,13 +114,7 @@
     "watchingpeoplewatchingbirds": {"title":"Watching People watching Birds","duration":93}
   },
   "shows": [
-    {"cinema":"passage","film":"adamsacht","date":"2026-10-08","time":"13:30","screen":"Universum","url":"https://www.passage-kinos.de/adams-acht"},
-    {"cinema":"passage","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-08","time":"13:30","screen":"Filmeck","url":"https://www.passage-kinos.de/bibi-blocksberg-%E2%80%93-die-total-verhexte-zeitreise"},
     {"cinema":"schaubuehne","film":"ninxsdaslebenglitzert","date":"2026-10-08","time":"13:30","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3677295731&bgswitch=false&resize=false"},
-    {"cinema":"cinestar","film":"coyotevsacme","date":"2026-10-08","time":"13:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183914"},
-    {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-08","time":"13:45","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183915"},
-    {"cinema":"passage","film":"forgottenisland","date":"2026-10-08","time":"13:45","screen":"Casino","url":"https://www.passage-kinos.de/forgotten-island"},
-    {"cinema":"passage","film":"shaundasschafspukimkurbisfeld","date":"2026-10-08","time":"13:45","screen":"Wintergarten","url":"https://www.passage-kinos.de/shaun-das-schaf-spuk-im-kuerbisfeld"},
     {"cinema":"uci","film":"minionsundmonster","date":"2026-10-08","time":"14:00"},
     {"cinema":"uci","film":"veritydunklegeheimnisse","date":"2026-10-08","time":"14:00"},
     {"cinema":"uci","film":"emilunddiedetektive","date":"2026-10-08","time":"14:10"},
