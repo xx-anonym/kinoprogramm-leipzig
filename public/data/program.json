@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-08T19:00:55.796Z",
+  "generatedAt": "2026-10-08T20:00:52.165Z",
   "days": ["2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":224,"since":"2026-10-08T19:00:55.796Z"},
-    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":200},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":224},
+    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":201},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":199},
-    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":169},
+    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":169,"since":"2026-10-08T20:00:52.165Z"},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":136},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":52},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":18},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":30},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "adamsacht": {"title":"Adams Acht","duration":120},
@@ -33,6 +33,7 @@
     "corpusdelicti": {"title":"Corpus Delicti","duration":103},
     "coyotevsacme": {"title":"Coyote Vs. Acme","duration":103},
     "dankeopa": {"title":"Danke Opa","duration":20},
+    "dingmitfedern": {"title":"Das Ding mit Federn","duration":99},
     "getraumteabenteuer": {"title":"Das Geträumte Abenteuer","duration":164},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105},
     "riesengebirge": {"title":"Das Riesengebirge","duration":91},
@@ -61,7 +62,7 @@
     "kurzfilmprogrammzumcomingoutday": {"title":"Kurzfilmprogramm zum Coming Out Day","duration":70},
     "lavoieroyale": {"title":"La Voie Royale","duration":107},
     "lalkathedoll": {"title":"Lalka (The Doll)","duration":162},
-    "lluevesobrebabelrainsoverbabel": {"title":"Llueve Sobre Babel / Rains over Babel","duration":111},
+    "lluevesobrebabelrainsoverbabel": {"title":"Llueve Sobre Babel / Rains Over Babel","duration":111},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":101},
     "minionsundmonster": {"title":"Minions & Monster","duration":90},
     "mira": {"title":"Mira","duration":85},
@@ -175,7 +176,6 @@
     {"cinema":"regina","film":"hope","date":"2026-10-08","time":"21:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105430"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-10-08","time":"21:00","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3675464325&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"beautyofballroom","date":"2026-10-08","time":"21:00","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647615613&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"furimmer16","date":"2026-10-08","time":"21:15","url":"https://www.cineding-leipzig.de/veranstaltungen/fuer-immer-16-2026-10-08/"},
     {"cinema":"cinestar","film":"hope","date":"2026-10-08","time":"21:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184096"},
     {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-08","time":"22:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183900"},
     {"cinema":"cinestar","film":"socialreckoning","date":"2026-10-08","time":"22:35","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184105"},
@@ -1172,6 +1172,7 @@
     {"cinema":"kinobar","film":"vaterland","date":"2026-10-15","time":"19:00","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3669732199&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"politicasfamiliares","date":"2026-10-15","time":"19:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3666661928&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"becomingkim","date":"2026-10-15","time":"19:00","url":"https://www.cineding-leipzig.de/veranstaltungen/becoming-kim-2026-10-15/"},
+    {"cinema":"uci","film":"dingmitfedern","date":"2026-10-15","time":"20:00","url":"https://www.uci-kinowelt.de/kino-buchung/performanceId/26E33000023TRMZCFD/siteId/57/974662"},
     {"cinema":"schaubuehne","film":"flimmerkiste20","date":"2026-10-15","time":"20:30","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3657303447&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"lluevesobrebabelrainsoverbabel","date":"2026-10-15","time":"21:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3666662049&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"strangeriver","date":"2026-10-15","time":"21:00","version":"OmU","url":"https://www.cineding-leipzig.de/veranstaltungen/strange-river-omu-2026-10-15/"}
