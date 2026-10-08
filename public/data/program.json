@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-08T16:01:04.321Z",
+  "generatedAt": "2026-10-08T17:01:00.368Z",
   "days": ["2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":232},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":201},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":207},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":169},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":144},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":141},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":52},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":18},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":30},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
   ],
   "films": {
     "adamsacht": {"title":"Adams Acht","duration":120},
@@ -44,7 +44,6 @@
     "einekrankheitwieeingedicht": {"title":"Eine Krankheit wie ein Gedicht","duration":87},
     "eisernewildnisheartofthebeast": {"title":"Eiserne Wildnis - Heart of the Beast","duration":101},
     "emilunddiedetektive": {"title":"Emil und die Detektive","duration":100},
-    "everytime": {"title":"Everytime"},
     "flimmerkiste20": {"title":"Flimmerkiste 2.0","duration":90},
     "forgottenisland": {"title":"Forgotten Island","duration":109},
     "frauwinklerverlasstdashaus": {"title":"Frau Winkler verlässt das Haus","duration":107},
@@ -153,14 +152,10 @@
     {"cinema":"regina","film":"eisernewildnisheartofthebeast","date":"2026-10-08","time":"17:30","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105388"},
     {"cinema":"kinobar","film":"spaziergangnachsyrakus","date":"2026-10-08","time":"17:30","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3664218773&bgswitch=false&resize=false"},
     {"cinema":"schauburg","film":"vaterland","date":"2026-10-08","time":"17:45","url":"https://www.schauburg-leipzig.de/filmdetails/vaterland"},
-    {"cinema":"passage","film":"frauwinklerverlasstdashaus","date":"2026-10-08","time":"18:30","screen":"Casino","url":"https://www.passage-kinos.de/frau-winkler-verlaesst-das-haus"},
-    {"cinema":"passage","film":"lugenubermeinemutter","date":"2026-10-08","time":"18:30","screen":"Universum","url":"https://www.passage-kinos.de/luegen-ueber-meine-mutter"},
-    {"cinema":"passage","film":"vaterland","date":"2026-10-08","time":"18:30","screen":"Filmeck","url":"https://www.passage-kinos.de/vaterland"},
     {"cinema":"schaubuehne","film":"barbaraforever","date":"2026-10-08","time":"18:30","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647952199&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"gentlemonster","date":"2026-10-08","time":"18:45","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647615076&bgswitch=false&resize=false"},
     {"cinema":"cinestar","film":"odyssee","date":"2026-10-08","time":"19:00","version":"OV","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184120"},
     {"cinema":"regina","film":"spaweekend","date":"2026-10-08","time":"19:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105504"},
-    {"cinema":"cineding","film":"everytime","date":"2026-10-08","time":"19:00","url":"https://www.cineding-leipzig.de/veranstaltungen/everytime-2/"},
     {"cinema":"uci","film":"lugenubermeinemutter","date":"2026-10-08","time":"19:15"},
     {"cinema":"cinestar","film":"residentevil","date":"2026-10-08","time":"19:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183903"},
     {"cinema":"uci","film":"spidermanbrandnewday","date":"2026-10-08","time":"19:20"},
