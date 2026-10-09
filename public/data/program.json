@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-09T19:00:56.028Z",
+  "generatedAt": "2026-10-09T20:00:54.022Z",
   "days": ["2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":202},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":201},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":171},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":170},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":169},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":152},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":117},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":43},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":17},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":28},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "adamsacht": {"title":"Adams Acht","duration":120},
@@ -175,14 +175,11 @@
     {"cinema":"regina","film":"socialreckoning","date":"2026-10-09","time":"20:00","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105394"},
     {"cinema":"schauburg","film":"primetime","date":"2026-10-09","time":"20:00","url":"https://www.schauburg-leipzig.de/filmdetails/primetime"},
     {"cinema":"uci","film":"residentevil","date":"2026-10-09","time":"20:10"},
-    {"cinema":"cinestar","film":"spidermanbrandnewday","date":"2026-10-09","time":"20:10","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183946"},
     {"cinema":"regina","film":"digger","date":"2026-10-09","time":"21:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105507"},
     {"cinema":"regina","film":"hope","date":"2026-10-09","time":"21:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105431"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-10-09","time":"21:00","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3675464393&bgswitch=false&resize=false"},
     {"cinema":"kinobar","film":"allyouneediskill","date":"2026-10-09","time":"21:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3661055596&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"furimmer16","date":"2026-10-09","time":"21:15","url":"https://www.cineding-leipzig.de/veranstaltungen/fuer-immer-16-2026-10-09/"},
     {"cinema":"schaubuehne","film":"jimqueen","date":"2026-10-09","time":"21:30","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3673671969&bgswitch=false&resize=false"},
-    {"cinema":"cineplex","film":"hope","date":"2026-10-09","time":"21:45","url":"https://tickets.cineplex.de/checkout/356/88FEFB00023FWBXJYB"},
     {"cinema":"cinestar","film":"hope","date":"2026-10-09","time":"21:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184097"},
     {"cinema":"cineplex","film":"veritydunklegeheimnisse","date":"2026-10-09","time":"22:15","url":"https://tickets.cineplex.de/checkout/356/24FEFB00023FWBXJYB"},
     {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-09","time":"22:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183935"},
