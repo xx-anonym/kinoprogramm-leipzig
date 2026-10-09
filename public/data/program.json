@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-09T09:01:04.743Z",
+  "generatedAt": "2026-10-09T10:01:03.286Z",
   "days": ["2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":225},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":171},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":192},
-    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":152},
+    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":152,"since":"2026-10-09T10:01:03.286Z"},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":136},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":43},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":30},
@@ -64,7 +64,7 @@
     "kurzfilmprogrammzumcomingoutday": {"title":"Kurzfilmprogramm zum Coming Out Day","duration":70},
     "lavoieroyale": {"title":"La Voie Royale","duration":107},
     "lalkathedoll": {"title":"Lalka (The Doll)","duration":162},
-    "lluevesobrebabelrainsoverbabel": {"title":"Llueve Sobre Babel / Rains over Babel","duration":111},
+    "lluevesobrebabelrainsoverbabel": {"title":"Llueve Sobre Babel / Rains Over Babel","duration":111},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":101},
     "minionsundmonster": {"title":"Minions & Monster","duration":90},
     "mira": {"title":"Mira","duration":85},
