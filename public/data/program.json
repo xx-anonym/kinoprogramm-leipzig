@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10T08:00:49.742Z",
+  "generatedAt": "2026-10-10T09:00:53.517Z",
   "days": ["2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":196},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":188},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":141},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":164},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":135},
@@ -116,18 +116,10 @@
     "wirdiewolfs": {"title":"Wir, die Wolfs","duration":98}
   },
   "shows": [
-    {"cinema":"cineplex","film":"arnieundbarneyrettendaswasser","date":"2026-10-10","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/640FFB00023FWBXJYB"},
-    {"cinema":"cineplex","film":"pawpatrolderdinofilm","date":"2026-10-10","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/47FEFB00023FWBXJYB"},
-    {"cinema":"cineplex","film":"peterchensmondfahrt","date":"2026-10-10","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/7F0FFB00023FWBXJYB"},
-    {"cinema":"cineplex","film":"shaundasschafspukimkurbisfeld","date":"2026-10-10","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/79FEFB00023FWBXJYB"},
     {"cinema":"regina","film":"emilunddiedetektive","date":"2026-10-10","time":"10:30","screen":"Kino 6","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105549"},
     {"cinema":"regina","film":"minionsundmonster","date":"2026-10-10","time":"10:30","screen":"Kino 3","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105437"},
     {"cinema":"regina","film":"pawpatrolderdinofilm","date":"2026-10-10","time":"10:30","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105475"},
-    {"cinema":"cineplex","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-10","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/D6FEFB00023FWBXJYB"},
-    {"cinema":"cineplex","film":"emilunddiedetektive","date":"2026-10-10","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/44FEFB00023FWBXJYB"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-10-10","time":"10:45","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105413"},
-    {"cinema":"cineplex","film":"adamsacht","date":"2026-10-10","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/E11FFB00023FWBXJYB"},
-    {"cinema":"cineplex","film":"forgottenisland","date":"2026-10-10","time":"11:00","extras":["3D"],"url":"https://tickets.cineplex.de/checkout/356/090FFB00023FWBXJYB"},
     {"cinema":"cinestar","film":"queenbudapest","date":"2026-10-10","time":"11:00","version":"OmU","extras":["IMAX"],"label":"CineSpecial","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=182429"},
     {"cinema":"regina","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-10","time":"11:00","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105362"},
     {"cinema":"cinestar","film":"minionsundmonster","date":"2026-10-10","time":"11:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183967"},
