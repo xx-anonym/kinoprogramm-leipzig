@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T04:00:57.053Z",
+  "generatedAt": "2026-10-10T05:00:56.968Z",
   "days": ["2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":196},
@@ -11,7 +11,7 @@
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":28},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":14},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":31},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"stale","message":"fetch failed (ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR)","shows":8,"since":"2026-10-10T05:00:56.968Z"}
   ],
   "films": {
     "adamsacht": {"title":"Adams Acht","duration":120},
@@ -93,7 +93,7 @@
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80},
     "sivasparachile": {"title":"Si Vas Para Chile","duration":70},
     "sneakpreview": {"title":"Sneak Preview"},
-    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":90},
+    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":100},
     "spaweekend": {"title":"Spa Weekend","duration":100},
     "spaziergangnachsyrakus": {"title":"Spaziergang nach Syrakus","duration":97},
     "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":146},
