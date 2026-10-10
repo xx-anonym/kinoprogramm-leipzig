@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10T19:00:54.133Z",
+  "generatedAt": "2026-10-10T20:00:52.863Z",
   "days": ["2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":159},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":158},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":141},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":133},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":135},
@@ -11,7 +11,7 @@
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":28},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":14},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":31},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "adamsacht": {"title":"Adams Acht","duration":120},
@@ -45,7 +45,6 @@
     "flimmerkiste20": {"title":"Flimmerkiste 2.0","duration":90},
     "forgottenisland": {"title":"Forgotten Island","duration":109},
     "frauwinklerverlasstdashaus": {"title":"Frau Winkler verlässt das Haus","duration":107},
-    "furimmer16": {"title":"Für immer 16"},
     "gentlemonster": {"title":"Gentle Monster","duration":115},
     "grunau50gebautfurviele": {"title":"Grünau 50 – Gebaut für viele","duration":80},
     "heartoflightelevensongsforfiji": {"title":"Heart of Light – Eleven Songs for Fiji","duration":174},
@@ -194,8 +193,6 @@
     {"cinema":"regina","film":"digger","date":"2026-10-10","time":"21:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105508"},
     {"cinema":"regina","film":"hope","date":"2026-10-10","time":"21:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105432"},
     {"cinema":"schaubuehne","film":"getraumteabenteuer","date":"2026-10-10","time":"21:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647610280&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"furimmer16","date":"2026-10-10","time":"21:15","url":"https://www.cineding-leipzig.de/veranstaltungen/fuer-immer-16-2026-10-10/"},
-    {"cinema":"cineplex","film":"hope","date":"2026-10-10","time":"21:45","url":"https://tickets.cineplex.de/checkout/356/750FFB00023FWBXJYB"},
     {"cinema":"cinestar","film":"hope","date":"2026-10-10","time":"21:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184098"},
     {"cinema":"cineplex","film":"veritydunklegeheimnisse","date":"2026-10-10","time":"22:15","url":"https://tickets.cineplex.de/checkout/356/450FFB00023FWBXJYB"},
     {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-10","time":"22:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183980"},
