@@ -608,6 +608,8 @@ async function init() {
     const res = await fetch('data/program.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.data = await res.json();
+    // Kinos alphabetisch – für die Ansicht nach Kino, die Kinoauswahl und die Reihenfolge der Kinos je Film
+    state.data.cinemas.sort((a, b) => a.name.localeCompare(b.name, 'de', { numeric: true }));
   } catch (err) {
     $('#meta').textContent = 'Das Programm konnte nicht geladen werden. Bitte später erneut versuchen.';
     console.error(err);
