@@ -369,6 +369,13 @@
    "rating": 6.8,
    "votes": 11403
   },
+  "hopeimax": {
+   "id": null,
+   "title": "Hope (Imax)",
+   "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-11"
+  },
   "hoppers": {
    "id": "tt26443616",
    "title": "Hoppers",
@@ -759,6 +766,13 @@
    "seen": "2026-10-11",
    "rating": 7.6,
    "votes": 96552
+  },
+  "residentevilimax": {
+   "id": null,
+   "title": "Resident Evil (Imax)",
+   "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-11"
   },
   "riesengebirge": {
    "id": null,
