@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-11T16:45:31.357Z",
+ "ratingsUpdated": "2026-10-11T23:00:57.518Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -415,6 +415,13 @@
    "rating": 6.9,
    "votes": 20
   },
+  "indenfangendesteufels": {
+   "id": "tt0049904",
+   "title": "In den Fängen des Teufels",
+   "seen": "2026-10-11",
+   "rating": 6.3,
+   "votes": 618
+  },
   "insidiousoutofthefurther": {
    "id": "tt32393988",
    "title": "Insidious: Out of the Further",
@@ -655,6 +662,20 @@
    "rating": 7.2,
    "votes": 39
   },
+  "misanthropenationaltheatrelive2026": {
+   "id": null,
+   "title": "The Misanthrope (National Theatre live 2026)",
+   "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-11"
+  },
+  "moscasfliegenundanderegaste": {
+   "id": "tt35854741",
+   "title": "Moscas - Fliegen und andere Gäste",
+   "seen": "2026-10-11",
+   "rating": 7.4,
+   "votes": 682
+  },
   "nanoplastik": {
    "id": null,
    "title": "Nanoplastik",
@@ -675,6 +696,13 @@
    "seen": "2026-10-11",
    "rating": 9.1,
    "votes": 40
+  },
+  "ninxsdaslebenglitzert": {
+   "id": "tt28727524",
+   "title": "Niñxs - Das Leben Glitzert",
+   "seen": "2026-10-11",
+   "rating": 7.8,
+   "votes": 49
   },
   "nostalghia": {
    "id": "tt0086022",
@@ -724,6 +752,13 @@
    "seen": "2026-10-11",
    "rating": 6.1,
    "votes": 2769
+  },
+  "perfektegeheimniscinestrickeninstade": {
+   "id": null,
+   "title": "Das perfekte Geheimnis - CineStricken in Stade",
+   "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-11"
   },
   "politicasfamiliares": {
    "id": "tt38039344",
@@ -866,6 +901,12 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview",
+   "seen": "2026-10-11"
+  },
+  "sneakpreview1026": {
+   "id": null,
+   "skip": true,
+   "title": "Sneak Preview 10/26",
    "seen": "2026-10-11"
   },
   "sneakpreviewfsk18": {
@@ -1145,6 +1186,13 @@
    "rating": 7.9,
    "votes": 9
   },
+  "zauberhafteschwestern": {
+   "id": "tt0120791",
+   "title": "Zauberhafte Schwestern",
+   "seen": "2026-10-11",
+   "rating": 6.4,
+   "votes": 124967
+  },
   "zeiseshortfilmslam": {
    "id": null,
    "skip": true,
@@ -1157,6 +1205,13 @@
    "seen": "2026-10-11",
    "rating": 5.9,
    "votes": 26
+  },
+  "zwischengebauden": {
+   "id": null,
+   "title": "Zwischen Gebäuden",
+   "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-11"
   }
  }
 }

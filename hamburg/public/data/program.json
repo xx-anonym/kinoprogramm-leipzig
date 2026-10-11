@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T22:00:59.956Z",
+  "generatedAt": "2026-10-11T23:02:32.703Z",
   "days": ["2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":8},
@@ -86,7 +86,7 @@
     "horrorsneak": {"title":"Horror Sneak"},
     "horrorsneakpreview": {"title":"Horror Sneak Preview","duration":100},
     "ichsterbekommstdu": {"title":"Ich Sterbe, Kommst du?","duration":96,"year":2025},
-    "indenfangendesteufels": {"title":"In den Fängen des Teufels","duration":95,"original":"THE UNGUARDED MOMENT"},
+    "indenfangendesteufels": {"title":"In den Fängen des Teufels","duration":95,"original":"THE UNGUARDED MOMENT","imdb":{"id":"tt0049904","rating":6.3,"votes":618}},
     "insidiousoutofthefurther": {"title":"Insidious: Out of the Further","duration":106,"year":2026,"imdb":{"id":"tt32393988","rating":6.1,"votes":21222}},
     "jailer2": {"title":"Jailer 2","duration":160,"original":"ஜெயிலர் 2"},
     "jedermannundich": {"title":"Jedermann und Ich"},
@@ -113,7 +113,7 @@
     "metoperamacbeth": {"title":"MET Opera: Macbeth","duration":350,"original":"MET Opera 2025/26: I Puritani - Bellini","year":2026},
     "minionsundmonsters": {"title":"Minions & Monsters","duration":90,"imdb":{"id":"tt32890033","rating":6.3,"votes":34551}},
     "minionsundmonster": {"title":"Minions + Monster","duration":90,"original":"Minions 3","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":34551}},
-    "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":99,"original":"Moscas","year":2026},
+    "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":99,"original":"Moscas","year":2026,"imdb":{"id":"tt35854741","rating":7.4,"votes":682}},
     "nanoplastik": {"title":"Nanoplastik"},
     "naza": {"title":"Naza","duration":80,"year":2026,"imdb":{"id":"tt44766123","rating":7.9,"votes":3379}},
     "obsessiondusollstmichlieben": {"title":"Obsession - Du sollst mich lieben","duration":108,"original":"Obsession","year":2026,"imdb":{"id":"tt37287335","rating":7.8,"votes":395652}},
@@ -162,7 +162,7 @@
     "watchingpeoplewatchingbirds": {"title":"Watching People Watching Birds","duration":92,"year":2026},
     "wenndiegondelntrauertragen": {"title":"Wenn die Gondeln Trauer tragen","duration":110,"original":"Don't Look Now","imdb":{"id":"tt0069995","rating":7.1,"votes":69547}},
     "whalefall": {"title":"Whalefall","duration":98},
-    "zauberhafteschwestern": {"title":"Zauberhafte Schwestern","duration":104,"original":"PRACTICAL MAGIC"},
+    "zauberhafteschwestern": {"title":"Zauberhafte Schwestern","duration":104,"original":"PRACTICAL MAGIC","imdb":{"id":"tt0120791","rating":6.4,"votes":124967}},
     "zeiseshortfilmslam": {"title":"Zeise Shortfilm Slam","original":"Shortfilm Slam"},
     "zustandundgelande": {"title":"Zustand und Gelände","imdb":{"id":"tt11573800","rating":5.9,"votes":26}},
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}

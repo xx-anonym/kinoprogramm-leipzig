@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T22:00:55.158Z",
+  "generatedAt": "2026-10-11T23:02:26.144Z",
   "days": ["2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":116},
@@ -62,7 +62,7 @@
     "minionsundmonster": {"title":"Minions & Monster","duration":90,"original":"Minions 3","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":34551}},
     "mira": {"title":"Mira","duration":85,"imdb":{"id":"tt38453860","rating":7.2,"votes":39}},
     "ninasescarlata": {"title":"Niñas Escarlata","duration":70,"imdb":{"id":"tt31110228","rating":9.1,"votes":40}},
-    "ninxsdaslebenglitzert": {"title":"Niñxs - Das Leben Glitzert","duration":88},
+    "ninxsdaslebenglitzert": {"title":"Niñxs - Das Leben Glitzert","duration":88,"imdb":{"id":"tt28727524","rating":7.8,"votes":49}},
     "nostalghia": {"title":"Nostalghia","duration":126,"imdb":{"id":"tt0086022","rating":7.9,"votes":33750}},
     "ontheroad": {"title":"On the Road","duration":93,"imdb":{"id":"tt37660509","rating":7.2,"votes":1475}},
     "pariswasawoman": {"title":"Paris was a Woman","duration":75,"imdb":{"id":"tt0114093","rating":7.2,"votes":194}},
