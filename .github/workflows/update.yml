@@ -37,6 +37,14 @@ jobs:
         working-directory: scraper
         run: npm ci
 
+      # IMDb-Bewertungen: ordnet neue Filme zu (lädt dann die großen IMDb-Dateien) und frischt die
+      # Bewertungen einmal am Tag auf. Darf das Update nicht aufhalten – notfalls bleibt der alte Stand.
+      - name: IMDb-Bewertungen
+        continue-on-error: true
+        timeout-minutes: 8
+        working-directory: scraper
+        run: node --max-old-space-size=4096 src/imdb.js
+
       # Beide Städte laufen unabhängig: Scheitert eine, wird die andere trotzdem aktualisiert.
       - name: Programm Leipzig
         id: leipzig
@@ -58,6 +66,7 @@ jobs:
       - name: Änderungen committen
         run: |
           git add public/data/program.json hamburg/public
+          if [ -f scraper/data/imdb.json ]; then git add scraper/data/imdb.json; fi
           if git diff --cached --quiet; then
             echo "Keine Änderungen."
             exit 0
