@@ -1,4 +1,4 @@
-// iCalendar-Feed (Cineding, WordPress "Events Manager").
+// iCalendar-Feed (Cineding in Leipzig, Alabama in Hamburg).
 import { fetchText } from '../lib/http.js';
 import { berlinDate, berlinTime } from '../lib/dates.js';
 
@@ -27,7 +27,8 @@ function durationOf(start, end) {
   return minutes >= 30 && minutes <= 400 ? minutes : null;
 }
 
-export function parseIcal(text) {
+/** `titleSuffix`: Zusatz, den manche Kalender an jeden Titel hängen ("Film | Alabama Kino"). */
+export function parseIcal(text, { titleSuffix } = {}) {
   const lines = text.replace(/\r?\n[ \t]/g, '').split(/\r?\n/);
   const shows = [];
   let event = null;
@@ -35,9 +36,11 @@ export function parseIcal(text) {
     if (line === 'BEGIN:VEVENT') event = {};
     else if (line === 'END:VEVENT') {
       if (event?.start && event.summary) {
+        const title =
+          titleSuffix && event.summary.endsWith(titleSuffix) ? event.summary.slice(0, -titleSuffix.length).trim() : event.summary;
         shows.push({
           ...event.start,
-          title: event.summary,
+          title,
           url: event.url ?? null,
           duration: durationOf(event.start, event.end),
           description: event.description ?? null,
@@ -59,6 +62,6 @@ export function parseIcal(text) {
   return shows;
 }
 
-export async function ical({ url }) {
-  return parseIcal(await fetchText(url, { accept: 'text/calendar' }));
+export async function ical({ url, titleSuffix }) {
+  return parseIcal(await fetchText(url, { accept: 'text/calendar' }), { titleSuffix });
 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kinoprogramm Hamburg</title>
+    <meta name="description" content="Das Wochenprogramm der Kinos in Hamburg und Umgebung auf einen Blick – ohne Werbung." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kino Hamburg" />
+    <meta name="theme-color" content="#f6f5f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131211" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script src="wheel.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>Kinoprogramm Hamburg</h1>
+        <p class="meta" id="meta">Lade Programm …</p>
+      </div>
+    </header>
+
+    <div class="daybar">
+      <div class="wrap daybar-row">
+        <nav class="days" id="days" aria-label="Tag auswählen"></nav>
+        <button type="button" class="bm-toggle" id="bm-toggle" aria-label="Merkliste" title="Merkliste">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z" /></svg>
+          <span class="bm-count" id="bm-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="wrap controls">
+      <div class="toolbar">
+        <div class="segmented" role="group" aria-label="Ansicht">
+          <button type="button" data-view="kino" aria-pressed="true">Nach Kino</button>
+          <button type="button" data-view="film" aria-pressed="false">Nach Film</button>
+        </div>
+        <label class="search">
+          <span class="visually-hidden">Film suchen</span>
+          <input type="search" id="search" placeholder="Film suchen …" autocomplete="off" />
+        </label>
+        <div class="timefilter" role="group" aria-label="Beginn der Vorstellung">
+          <span>Beginn</span>
+          <label>ab <select id="time-from"></select></label>
+          <label>bis <select id="time-until"></select></label>
+        </div>
+        <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+          Alle Kinos
+        </button>
+      </div>
+      <div class="filter-panel" id="filter-panel" hidden>
+        <div class="filter-actions">
+          <button type="button" data-select="all">Alle</button>
+          <button type="button" data-select="none">Keine</button>
+        </div>
+        <div class="filter-list" id="filter-list"></div>
+      </div>
+    </div>
+
+    <main class="wrap" id="program" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <details>
+          <summary>Datenquellen &amp; Status</summary>
+          <ul class="sources" id="sources"></ul>
+        </details>
+        <p class="footer-tools">
+          <button type="button" class="link-button" data-wheel-open>Glücksrad</button>
+          <span class="kbd-hint">– auch mit Strg+Ü bzw. ⌘+Ü</span>
+        </p>
+        <p>
+          Die Daten kommen direkt von den Kinos und werden stündlich aktualisiert. Endzeiten sind geschätzt: Filmlänge
+          plus ca. 20 Minuten Werbung. Angaben ohne Gewähr – maßgeblich ist das Programm des jeweiligen Kinos.
+        </p>
+      </div>
+    </footer>
+
+    <dialog class="list-dialog" id="merkliste" aria-labelledby="merkliste-title">
+      <div class="dialog-head">
+        <h2 id="merkliste-title">Merkliste</h2>
+        <button type="button" class="dialog-close" data-close aria-label="Schließen">×</button>
+      </div>
+      <div class="merkliste-body" id="merkliste-body"></div>
+    </dialog>
+
+    <noscript><p class="wrap">Bitte JavaScript aktivieren, um das Programm zu sehen.</p></noscript>
+  </body>
+</html>

@@ -24,6 +24,13 @@ test('parseTitle trennt Fassung und 3D vom Titel', () => {
     ['Emil und die Detektive (2026)', 'Emil und die Detektive', null, []],
     ['Avatar 3D', 'Avatar', null, ['3D']],
     ['Ivanov', 'Ivanov', null, []],
+    // Hamburger Quellen
+    ['ALTE LIEBE D, ab 6', 'ALTE LIEBE', null, []],
+    ['BAD APPLES, ab 16', 'BAD APPLES', null, []],
+    ['Die Tribute von Panem - Catching Fire (Wa: 2026)', 'Die Tribute von Panem - Catching Fire', null, []],
+    ['SNEAK PREVIEW am 12.10.26', 'SNEAK PREVIEW', null, []],
+    ['Spaziergang nach Syrakus, Der', 'Der Spaziergang nach Syrakus', null, []],
+    ['Minions &amp; Monster', 'Minions & Monster', null, []],
   ];
   for (const [raw, title, version, extras] of cases) {
     assert.deepEqual(parseTitle(raw), { title, version, extras }, raw);
@@ -41,6 +48,7 @@ test('versionFromText versteht die Schreibweisen der Ticketsysteme', () => {
 test('filmKey fasst unterschiedliche Schreibweisen zusammen', () => {
   assert.equal(filmKey('Coyote vs. ACME'), filmKey('Coyote vs Acme'));
   assert.equal(filmKey('Arnie & Barney – Retten das Wasser'), filmKey('Arnie & Barney retten das Wasser'));
+  assert.equal(filmKey('Minions + Monster'), filmKey('Minions & Monster'));
   assert.equal(filmKey('FRAU WINKLER VERLÄSST DAS HAUS'), filmKey('Frau Winkler verlässt das Haus'));
   assert.notEqual(filmKey('Digger'), filmKey('Diggers'));
 });
@@ -54,6 +62,10 @@ test('splitEvent trennt Veranstaltungs-Zusätze vom Filmtitel', () => {
     ['Pans Labyrinth - Best of Cinema', 'Pans Labyrinth', 'Best of Cinema'],
     ['ANSTATT BÄUMEN + Filmgespräch mit Regisseur Philipp Hartmann', 'ANSTATT BÄUMEN', '+ Filmgespräch mit Regisseur Philipp Hartmann'],
     ['Reihe Zeitlos: HARD BOILED', 'HARD BOILED', 'Reihe Zeitlos'],
+    ["Pan's Labyrinth (Best of Cinemas)", "Pan's Labyrinth", 'Best of Cinema'],
+    ['Kaffeeklatsch – Vaterland', 'Vaterland', 'Kaffeeklatsch'],
+    ['Matinée – Spaziergang nach Syrakus', 'Spaziergang nach Syrakus', 'Matinée'],
+    ['Halloween - Die Nacht des Grauens', 'Halloween - Die Nacht des Grauens', null],
     // unverändert: echte Titel mit Doppelpunkt, Sneaks, Doppelvorstellungen
     ['Avengers: Endgame', 'Avengers: Endgame', null],
     ['CineSneak OV: The original surprise preview', 'CineSneak OV: The original surprise preview', null],

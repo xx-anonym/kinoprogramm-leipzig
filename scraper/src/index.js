@@ -1,14 +1,16 @@
-// Sammelt das Programm aller Kinos und schreibt public/data/program.json.
+// Sammelt das Programm aller Kinos einer Stadt und schreibt es in die Webseite der Stadt.
 //
-//   node src/index.js            # Daten holen und schreiben
-//   node src/index.js --dry-run  # nur holen und Zusammenfassung ausgeben
+//   node src/index.js                   # Leipzig: Daten holen und public/data/program.json schreiben
+//   node src/index.js --city hamburg    # Hamburg: hamburg/public/data/program.json
+//   node src/index.js --dry-run         # nur holen und Zusammenfassung ausgeben
 
 import { readFile, writeFile, mkdir, appendFile } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { CINEMAS } from './cinemas.js';
+import { CITIES } from './cities/index.js';
 import { addDays, berlinDate, berlinTime } from './lib/dates.js';
+import { mapLimit } from './lib/pool.js';
 import { buildCaseDictionary, chooseDisplayTitles, filmKey, parseTitle, pickVersion, smartCase, splitEvent } from './lib/normalize.js';
 import { cinestar } from './sources/cinestar.js';
 import { cinetixx } from './sources/cinetixx.js';
@@ -18,8 +20,6 @@ import { cineprog } from './sources/cineprog.js';
 import { ical } from './sources/ical.js';
 import { kinoheld } from './sources/kinoheld.js';
 import { kinozeit } from './sources/kinozeit.js';
-
-const OUT_FILE = fileURLToPath(new URL('../../public/data/program.json', import.meta.url));
 
 /** Heute + 7 Tage, damit die Seite auch am Folgetag noch eine volle Woche zeigt. */
 export const DAYS = 8;
@@ -81,13 +81,15 @@ function normalizeShows(rawShows, cinemaId, days) {
  * bei Gleichstand die Hauptquelle (sie hat meist Ticket-Links). So kommt z. B. eine neue Kinowoche, die
  * die Hauptquelle noch nicht kennt, schon aus der Ergänzung – ohne doppelte Vorstellungen.
  */
-export function mergeByDay(primary, supplement) {
-  const perDay = (list) => list.reduce((m, s) => m.set(s?.date, (m.get(s?.date) ?? 0) + 1), new Map());
+export function mergeByDay(primary, supplement, { today, nowTime } = {}) {
+  // Heute zählen nur Vorstellungen, die noch kommen: kinoheld lässt begonnene weg, kino-zeit.de nicht.
+  const upcoming = (s) => !today || s?.date > today || (s?.date === today && s?.time >= nowTime);
+  const perDay = (list) => list.filter(upcoming).reduce((m, s) => m.set(s.date, (m.get(s.date) ?? 0) + 1), new Map());
   const a = perDay(primary);
   const b = perDay(supplement);
   return [
     ...primary.filter((s) => (a.get(s?.date) ?? 0) >= (b.get(s?.date) ?? 0)),
-    ...supplement.filter((s) => (b.get(s?.date) ?? 0) > (a.get(s?.date) ?? 0)),
+    ...supplement.filter((s) => upcoming(s) && (b.get(s?.date) ?? 0) > (a.get(s?.date) ?? 0)),
   ];
 }
 
@@ -109,7 +111,7 @@ async function fetchRaw(config, context, sources) {
     console.warn(`Hauptquelle ${config.type} fehlgeschlagen, nutze ${config.supplement.type}: ${errorMessage(main.reason)}`);
     return extra.value;
   }
-  return mergeByDay(main.value, extra.value);
+  return mergeByDay(main.value, extra.value, context);
 }
 
 /** Vorstellungen eines Kinos aus dem letzten Lauf (falls heute alle Quellen ausfallen). */
@@ -147,43 +149,49 @@ function filmDurations(shows) {
  * Holt alle Kinos. Fällt die Quelle eines Kinos aus, bleiben dessen Vorstellungen vom letzten Lauf stehen.
  * Abhängigkeiten sind injizierbar, damit sich das in Tests ohne Netz prüfen lässt.
  */
-export async function collect({ today, cinemas = CINEMAS, sources = SOURCES, previous = null, now = new Date() }) {
+export async function collect({
+  today,
+  cinemas = CITIES.leipzig.cinemas,
+  sources = SOURCES,
+  previous = null,
+  now = new Date(),
+}) {
   const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
-  const context = { today, days };
   const nowTime = berlinTime(now);
+  const context = { today, days, nowTime };
 
-  const results = await Promise.all(
-    cinemas.map(async (cinema) => {
-      const label = (c) => SOURCE_LABELS[c.type] ?? c.type;
-      const base = {
-        id: cinema.id,
-        name: cinema.name,
-        address: cinema.address,
-        website: cinema.website,
-        source: [cinema.source, cinema.source.supplement].filter(Boolean).map(label).join(' + '),
-      };
-      try {
-        const raw = await fetchRaw(cinema.source, context, sources);
-        const shows = normalizeShows(raw, cinema.id, days);
-        // Gar nichts gefunden, obwohl beim letzten Abruf noch kommende Vorstellungen angekündigt waren?
-        // Dann hat sich vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm
-        // schlagen. (Waren nur noch heutige, schon begonnene übrig, ist "nichts" dagegen normal.)
-        if (raw.length === 0) {
-          const old = previousShows(previous, cinema.id, days);
-          if (old.some((s) => s.date > today || (s.date === today && s.time > nowTime))) {
-            return {
-              cinema: { ...base, status: 'stale', message: 'Keine Vorstellungen gefunden – hat sich die Webseite des Kinos geändert?' },
-              shows: old,
-            };
-          }
-        }
-        return { cinema: { ...base, status: 'ok' }, shows };
-      } catch (err) {
+  // Höchstens 6 Kinos gleichzeitig – schont die Server (Hamburg hat über 30 Kinos, die meisten bei kinoheld)
+  const results = await mapLimit(cinemas, 6, async (cinema) => {
+    // Quellen mit eigener Adresse (iCal, cineprog, kino-zeit.de) heißen nach ihrer Webseite
+    const label = (c) => (c.url ? new URL(c.url).hostname.replace(/^www\./, '') : (SOURCE_LABELS[c.type] ?? c.type));
+    const base = {
+      id: cinema.id,
+      name: cinema.name,
+      address: cinema.address,
+      website: cinema.website,
+      source: [cinema.source, cinema.source.supplement].filter(Boolean).map(label).join(' + '),
+    };
+    try {
+      const raw = await fetchRaw(cinema.source, context, sources);
+      const shows = normalizeShows(raw, cinema.id, days);
+      // Gar nichts gefunden, obwohl beim letzten Abruf noch kommende Vorstellungen angekündigt waren?
+      // Dann hat sich vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm
+      // schlagen. (Waren nur noch heutige, schon begonnene übrig, ist "nichts" dagegen normal.)
+      if (raw.length === 0) {
         const old = previousShows(previous, cinema.id, days);
-        return { cinema: { ...base, status: old.length ? 'stale' : 'error', message: errorMessage(err) }, shows: old };
+        if (old.some((s) => s.date > today || (s.date === today && s.time > nowTime))) {
+          return {
+            cinema: { ...base, status: 'stale', message: 'Keine Vorstellungen gefunden – hat sich die Webseite des Kinos geändert?' },
+            shows: old,
+          };
+        }
       }
-    }),
-  );
+      return { cinema: { ...base, status: 'ok' }, shows };
+    } catch (err) {
+      const old = previousShows(previous, cinema.id, days);
+      return { cinema: { ...base, status: old.length ? 'stale' : 'error', message: errorMessage(err) }, shows: old };
+    }
+  });
 
   // Filmtitel über alle Kinos vereinheitlichen
   const allShows = results.flatMap((r) => r.shows);
@@ -274,19 +282,25 @@ export function shouldAlert(problems, previousAt, now) {
   return newlyPersistent.length > 0 || (persistent.length > 0 && berlinTime(now).startsWith('18:'));
 }
 
-async function readPrevious() {
+async function readPrevious(file) {
   try {
-    return JSON.parse(await readFile(OUT_FILE, 'utf8'));
+    return JSON.parse(await readFile(file, 'utf8'));
   } catch {
     return null;
   }
 }
 
 async function main() {
-  const dryRun = process.argv.includes('--dry-run');
+  const args = process.argv.slice(2);
+  const dryRun = args.includes('--dry-run');
+  const cityId = args.includes('--city') ? args[args.indexOf('--city') + 1] : 'leipzig';
+  const city = CITIES[cityId];
+  if (!city) throw new Error(`Unbekannte Stadt "${cityId}" – möglich: ${Object.keys(CITIES).join(', ')}`);
+  const outFile = join(city.siteDir, 'data', 'program.json');
+
   const now = new Date();
-  const previous = await readPrevious();
-  const data = await collect({ today: berlinDate(now), previous, now });
+  const previous = await readPrevious(outFile);
+  const data = await collect({ today: berlinDate(now), cinemas: city.cinemas, previous, now });
 
   const rows = data.cinemas.map((c) => ({
     Kino: c.name,
@@ -303,7 +317,7 @@ async function main() {
 
   if (process.env.GITHUB_STEP_SUMMARY) {
     const md = [
-      `### Kinoprogramm ${data.days[0]} bis ${data.days.at(-1)}`,
+      `### Kinoprogramm ${city.name} ${data.days[0]} bis ${data.days.at(-1)}`,
       '',
       '| Kino | Quelle | Status | Vorstellungen | Hinweis |',
       '| --- | --- | --- | ---: | --- |',
@@ -321,9 +335,9 @@ async function main() {
   }
   if (dryRun) return;
 
-  await mkdir(dirname(OUT_FILE), { recursive: true });
-  await writeFile(OUT_FILE, formatProgram(data));
-  console.log(`Geschrieben: ${OUT_FILE}`);
+  await mkdir(dirname(outFile), { recursive: true });
+  await writeFile(outFile, formatProgram(data));
+  console.log(`Geschrieben: ${outFile}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {

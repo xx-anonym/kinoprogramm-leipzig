@@ -31,15 +31,29 @@ const TRAILING_TAG = /\s*(?:[-–|]\s*|\bin\s+)?\b(OmU|OmdU|OmeU|OmengU|OV|3D)\s
 // z. B. "Digger (in OmdU) im engl. Original m.d. Untertitel!"
 const TRAILING_ORIGINAL = /\s+im\s+(?:[a-zäöü]+\.?\s+)?Original\b[^()]*$/i;
 const TRAILING_YEAR = /\s*\(\s*(?:19|20)\d{2}\s*\)\s*$/;
+// Altersfreigabe am Ende, oft mit Sprachkürzel davor: "ALTE LIEBE D, ab 6", "BAD APPLES, ab 16"
+const TRAILING_RATING = /(?:\s+(?:D|DF))?\s*,?\s*(?:FSK\s*)?ab\s*\d{1,2}(?:\s*J(?:ahren|\.)?)?\s*$/i;
+// Wiederaufführung "(WA)" / "(Wa: 2026)" und Datum im Titel "SNEAK PREVIEW am 12.10.26"
+const TRAILING_REISSUE = /\s*\(\s*WA(?:\s*:?\s*(?:19|20)\d{2})?\s*\)\s*$/i;
+const TRAILING_DATE = /\s+am\s+\d{1,2}\.\d{1,2}\.(?:\d{2}|\d{4})?\s*$/i;
+// Bibliotheksschreibweise "Spaziergang nach Syrakus, Der" → "Der Spaziergang nach Syrakus"
+const TRAILING_ARTICLE = /^(.+),\s*(Der|Die|Das|The)$/;
+const ENTITIES = { amp: '&', quot: '"', apos: "'", nbsp: ' ', lt: '<', gt: '>' };
+const decodeEntities = (text) =>
+  text.replace(/&(#\d+|[a-z]+);/gi, (m, e) => (e[0] === '#' ? String.fromCharCode(Number(e.slice(1))) : (ENTITIES[e.toLowerCase()] ?? m)));
 
 /**
  * Zerlegt einen Titel wie "GENTLE MONSTER (OmeU)" oder "Digger in OmdU"
  * in Titel, Fassung und Zusatzmerkmale (3D).
  */
 export function parseTitle(raw) {
-  let title = String(raw ?? '')
+  let title = decodeEntities(String(raw ?? ''))
     .replace(/\s+/g, ' ')
-    .trim();
+    .trim()
+    .replace(TRAILING_RATING, '')
+    .replace(TRAILING_REISSUE, '')
+    .replace(TRAILING_DATE, '')
+    .replace(TRAILING_ARTICLE, '$2 $1');
   const versions = [];
   const extras = new Set();
 
@@ -78,7 +92,10 @@ const EVENT_PREFIX =
   /\b(premiere|special|spezial|cinespecial|screening|reihe|preview|kurzfilm|ladies night|trifft film|klassiker|halloween)\b/i;
 const QUOTE = /["„“”‚‘’«»]/;
 const QUOTES = new RegExp(QUOTE.source, 'g');
-const EVENT_SUFFIX = /\s+[-–]\s+(Best of Cinema)\s*$/i;
+const EVENT_SUFFIX = /\s+(?:[-–]\s+(Best of Cinemas?)|\((Best of Cinemas?)\))\s*$/i;
+// Reihen, die mit Gedankenstrich vor dem Titel stehen: "Kaffeeklatsch – Vaterland", "Matinée – …"
+// (bewusst eine kurze Liste: "Halloween – Die Nacht des Grauens" ist ein Filmtitel)
+const DASH_EVENT_PREFIX = /^(Kaffeeklatsch|Matin[eé]e|Frühstückskino|Seniorenkino|Kinderkino)\s+[-–]\s+(.+)$/i;
 const TALK_SUFFIX = /\s+\+\s+((?:Film|Publikums)?gespräch|Q&A|Einführung|Diskussion|Vortrag|Gäste?|Regisseur)(.*)$/i;
 
 /**
@@ -91,13 +108,17 @@ export function splitEvent(raw) {
   let title = String(raw ?? '').trim();
   const labels = [];
   const prefix = /^(.+?):\s+(.+)$/.exec(title);
+  const dashPrefix = DASH_EVENT_PREFIX.exec(title);
   if (prefix && (QUOTE.test(prefix[1]) || EVENT_PREFIX.test(prefix[1]))) {
     labels.push(prefix[1].replace(QUOTES, '').trim());
     title = prefix[2];
+  } else if (dashPrefix) {
+    labels.push(dashPrefix[1]);
+    title = dashPrefix[2];
   }
   const suffix = EVENT_SUFFIX.exec(title);
   if (suffix) {
-    labels.push(suffix[1]);
+    labels.push('Best of Cinema');
     title = title.slice(0, suffix.index);
   }
   const talk = TALK_SUFFIX.exec(title);
@@ -119,7 +140,7 @@ export function filmKey(title) {
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/\(\s*(19|20)\d{2}\s*\)\s*$/, '')
     .replace(/^\s*(der|die|das|the)\s+/, '')
-    .replace(/&/g, 'und')
+    .replace(/&|\s\+\s/g, 'und')
     .replace(/[^a-z0-9]+/g, '');
 }
 

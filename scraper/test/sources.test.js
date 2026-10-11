@@ -206,3 +206,33 @@ test('kino-zeit: Programm aus den strukturierten Daten (JSON-LD)', () => {
   assert.match(shows[3].description, /Infinity War die Hälfte/, 'HTML-Entitäten werden aufgelöst');
   assert.throws(() => parseKinozeit('<html></html>'), /kein Kinoprogramm/);
 });
+
+test('kinoheld: ohne Deeplink führt der Link auf die Vorstellung bei kinoheld', () => {
+  const response = {
+    data: {
+      cinema: { urlSlug: 'abaton-kino-hamburg', city: { urlSlug: 'hamburg' } },
+      shows: {
+        data: [
+          { name: 'Alte Liebe', beginning: '2026-10-11T18:40:00+02:00', urlSlug: '587925', deeplink: null, flags: [] },
+          { name: 'Hope', beginning: '2026-10-11T20:00:00+02:00', urlSlug: '587926', deeplink: 'https://tickets.example/1', flags: [] },
+        ],
+      },
+    },
+  };
+  const [own, external] = parseKinoheld(response);
+  assert.equal(own.url, 'https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/587925');
+  assert.equal(external.url, 'https://tickets.example/1', 'vorhandener Deeplink hat Vorrang');
+});
+
+test('iCal: Kinoname am Titelende wird entfernt', () => {
+  const text = [
+    'BEGIN:VCALENDAR',
+    'BEGIN:VEVENT',
+    'DTSTART;TZID=Europe/Berlin:20261012T200000',
+    'SUMMARY:Typ-F – Der Film | Alabama Kino',
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ].join('\r\n');
+  assert.equal(parseIcal(text, { titleSuffix: ' | Alabama Kino' })[0].title, 'Typ-F – Der Film');
+  assert.equal(parseIcal(text)[0].title, 'Typ-F – Der Film | Alabama Kino');
+});

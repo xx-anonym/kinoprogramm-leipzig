@@ -4,10 +4,16 @@ on:
   push:
     paths:
       - 'scraper/**'
+      - 'public/**'
+      - 'hamburg/**'
       - '.github/workflows/**'
+      - '!public/data/**'
+      - '!hamburg/public/data/**'
   pull_request:
     paths:
       - 'scraper/**'
+      - 'public/**'
+      - 'hamburg/**'
 
 jobs:
   test:

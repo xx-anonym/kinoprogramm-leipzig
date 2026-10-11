@@ -270,3 +270,15 @@ test('Ergänzungsquelle füllt Tage, die der Hauptquelle noch fehlen', async () 
   assert.equal(failing.cinemas[0].source, 'direct + extra');
   assert.equal(failing.shows.length, 1);
 });
+
+test('Tageweises Zusammenführen zählt heute nur kommende Vorstellungen', () => {
+  // kinoheld (Haupt) lässt begonnene Vorstellungen weg, kino-zeit.de (Ergänzung) nicht
+  const main = [{ date: TODAY, time: '20:00', title: 'Hope', url: 'https://tickets.example/2' }];
+  const extra = [
+    { date: TODAY, time: '14:00', title: 'Digger' },
+    { date: TODAY, time: '17:00', title: 'Digger' },
+    { date: TODAY, time: '20:00', title: 'Hope' },
+  ];
+  const merged = mergeByDay(main, extra, { today: TODAY, nowTime: '18:30' });
+  assert.deepEqual(merged, main, 'Gleichstand bei den kommenden → Hauptquelle mit Ticket-Link');
+});

@@ -1,8 +1,13 @@
-# Kinoprogramm Leipzig
+# Kinoprogramm Leipzig & Hamburg
 
-Das Wochenprogramm aller Leipziger Kinos auf einer schlichten Seite – ohne Werbung, ohne Schnickschnack.
+Das Wochenprogramm aller Kinos einer Stadt auf einer schlichten Seite – ohne Werbung, ohne
+Schnickschnack. Zwei Seiten, gleicher Aufbau, gemeinsamer Code:
+
+- **Leipzig:** https://kinoprogramm-leipzig.vercel.app
+- **Hamburg und Umgebung:** https://kinoprogramm-hamburg.vercel.app
+
 Die Daten werden **stündlich** automatisch aktualisiert (GitHub Actions, angestoßen von cron-job.org)
-und die Seite liegt kostenlos bei Vercel.
+und die Seiten liegen kostenlos bei Vercel.
 
 - Tagesauswahl für die nächsten 7 Tage
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
@@ -20,6 +25,8 @@ und die Seite liegt kostenlos bei Vercel.
   Home-Bildschirm legen und zeigt offline das zuletzt geladene Programm
 
 ## Kinos und Datenquellen
+
+### Leipzig
 
 Abgedeckt sind die Kinos, die auf kinoprogramm-leipzig.de ein regelmäßiges Programm haben – ohne die
 CT Lichtspiele Taucha, weil Taucha nicht zu Leipzig gehört. Die Daten kommen direkt von den Kinos bzw.
@@ -41,10 +48,26 @@ ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 ¹ cineplex.de und uci-kinowelt.de blockieren automatische Abrufe (Cloudflare); kinoheld führt das
 Programm beider Kinos inklusive Links zu deren Ticketshops.
 ² Die robots.txt der kinoheld-API untersagt automatische Zugriffe. Der Scraper ruft dort einmal pro
-Stunde je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die beiden Kinos in
-`scraper/src/cinemas.js`.
+Stunde je Kino eine einzige Abfrage ab. Wer darauf verzichten möchte, entfernt die Kinos in
+`scraper/src/cities/leipzig.js` bzw. `hamburg.js`.
 ³ kinoheld bekommt die neue UCI-Woche oft erst Tage nach uci-kinowelt.de. Für jeden Tag zählt deshalb
 die Quelle mit mehr Vorstellungen; Tage aus kino-zeit.de haben keinen Ticket-Link.
+
+### Hamburg und Umgebung
+
+37 Kinos: 26 in Hamburg und 11 im Umland bis etwa 30 km (Bargteheide, Buchholz, Buxtehude, Elmshorn,
+Geesthacht, Neu Wulmstorf, Norderstedt, Quickborn, Stade, Uetersen, Winsen). Grundlage war die Liste
+„Hamburg und Umgebung“ auf kinoprogramm.com, ergänzt um weitere Kinos aus kinoheld. Die vollständige
+Liste mit Adressen steht in `scraper/src/cities/hamburg.js`.
+
+| Quelle | Kinos |
+| --- | --- |
+| Ticketportal kinoheld ² | 31 Kinos – fast alle Hamburger Programmkinos verkaufen direkt darüber, CinemaxX, UCI, Kinopolis, Astor, Cineplex Elmshorn u. a. sind dort mit Programm und Link zum eigenen Ticketshop gelistet |
+| Ticketsystem Cinetixx | Beluga Kino (Quickborn), Burg Kino Uetersen |
+| JSON-API von cinestar.de | CineStar Stade |
+| Programmdaten (cineprog) | City Kino Buxtehude |
+| iCal-Kalender | Alabama Kino |
+| kino-zeit.de ³ | Ergänzung für UCI Mundsburg und UCI Smart City Wandsbek |
 
 Fällt eine Quelle aus – oder findet sie plötzlich gar keine Vorstellungen mehr, obwohl beim letzten
 Abruf noch kommende angekündigt waren (meist ein Umbau der Kino-Webseite) –, bleiben die
@@ -54,18 +77,26 @@ Unten auf der Seite steht unter „Datenquellen & Status“, ob alle Quellen akt
 ## Aufbau
 
 ```
-public/                 Die Webseite (statisch, kein Build nötig)
+public/                 Leipziger Webseite (statisch, kein Build nötig) – zugleich Vorlage für Hamburg
   index.html, app.js, style.css
   data/program.json     Das Programm – wird stündlich neu geschrieben
+hamburg/public/         Hamburger Webseite: aus public/ erzeugt (nur Stadtname getauscht), eigenes Programm
 scraper/                Node.js-Skript, das die Daten sammelt
-  src/cinemas.js        Liste der Kinos und ihrer Quellen
+  src/cities/           Je Stadt die Liste der Kinos und ihrer Quellen
   src/sources/          Ein Modul pro Quelle
+  src/sites.js          Erzeugt hamburg/public/ aus public/
   test/                 Tests mit echten Ausschnitten der Kino-Webseiten
 .github/workflows/
-  update.yml            Stündlich: Daten holen, committen → Vercel veröffentlicht automatisch
-  test.yml              Tests bei Änderungen am Scraper
-vercel.json             Vercel liefert den Ordner public/ aus
+  update.yml            Stündlich: Daten beider Städte holen, committen → Vercel veröffentlicht
+  test.yml              Tests bei Änderungen am Scraper oder an den Seiten
+vercel.json             Vercel-Projekt Leipzig: liefert public/ aus
+hamburg/vercel.json     Vercel-Projekt Hamburg (Root Directory „hamburg“): liefert hamburg/public/ aus
 ```
+
+Änderungen an Aussehen und Funktionen der Seite immer in `public/` machen und danach
+`npm run sites` (im Ordner `scraper`) ausführen – oder abwarten: Der stündliche Lauf erzeugt die
+Hamburger Seite ebenfalls neu. Ein Test schlägt an, wenn beide auseinanderlaufen.
+Jedes Vercel-Projekt baut nur neu, wenn sich sein Ordner geändert hat (`ignoreCommand`).
 
 ## Einrichtung (einmalig)
 
@@ -76,6 +107,8 @@ vercel.json             Vercel liefert den Ordner public/ aus
      Output Directory `public`, kein Build-Befehl) → „Deploy“.
    - Fertig: Die Seite ist unter `https://<projektname>.vercel.app` erreichbar. Jeder Commit auf dem
      Standard-Branch – also auch die stündliche Aktualisierung – wird automatisch veröffentlicht.
+   - Für Hamburg ein zweites Projekt aus demselben Repository anlegen und als **Root Directory**
+     `hamburg` eintragen; den Rest übernimmt `hamburg/vercel.json`.
 
 2. **GitHub Actions prüfen**
    - Unter „Actions“ sollte der Workflow „Kinoprogramm aktualisieren“ erscheinen. Über „Run workflow“
@@ -126,19 +159,31 @@ möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unte
 cd scraper
 npm ci
 npm test              # Tests (ohne Netzwerk)
-npm run scrape        # Programm abrufen und public/data/program.json schreiben
-node src/index.js --dry-run   # nur abrufen und Übersicht anzeigen
+npm run scrape            # Leipzig abrufen und public/data/program.json schreiben
+npm run scrape:hamburg    # Hamburg abrufen und hamburg/public/data/program.json schreiben
+node src/index.js --city hamburg --dry-run   # nur abrufen und Übersicht anzeigen
+npm run sites             # hamburg/public/ aus public/ neu erzeugen
 
-cd ../public
+cd ../public              # bzw. ../hamburg/public
 python3 -m http.server 8000   # → http://localhost:8000
 ```
 
 ## Ein Kino hinzufügen
 
-1. In `scraper/src/cinemas.js` einen Eintrag ergänzen.
-2. Nutzt das Kino ein bekanntes System (Cinetixx, kinoheld, cineprog, iCal, kino-zeit.de),
-   reicht die passende `source`-Angabe. Mit `supplement` lässt sich eine zweite Quelle angeben, die
-   Tage ergänzt, die der ersten noch fehlen (siehe UCI). Sonst ein neues Modul in `scraper/src/sources/` schreiben und in
-   `scraper/src/index.js` unter `SOURCES` eintragen.
+1. In `scraper/src/cities/leipzig.js` bzw. `hamburg.js` einen Eintrag ergänzen.
+2. Nutzt das Kino ein bekanntes System (kinoheld, Cinetixx, CineStar, cineprog, iCal, kino-zeit.de),
+   reicht die passende `source`-Angabe – die kinoheld-Nummer eines Kinos verrät die kinoheld-API
+   (Abfrage `cinemas(search: "…")`). Mit `supplement` lässt sich eine zweite Quelle angeben, die
+   Tage ergänzt, die der ersten noch fehlen (siehe UCI). Sonst ein neues Modul in
+   `scraper/src/sources/` schreiben und in `scraper/src/index.js` unter `SOURCES` eintragen.
+
+## Eine weitere Stadt
+
+1. `scraper/src/cities/<stadt>.js` mit den Kinos anlegen und in `scraper/src/cities/index.js`
+   eintragen (Name und Ordner der Seite, z. B. `<stadt>/public`).
+2. In `scraper/src/sites.js` unter `SITE_TEXTS` die Ersetzungen für Stadtname und Beschreibung
+   ergänzen, dann `npm run sites` und `npm run scrape -- --city <stadt>`.
+3. `<stadt>/vercel.json` wie bei Hamburg anlegen, in `update.yml` einen Schritt für die Stadt
+   ergänzen und bei Vercel ein Projekt mit Root Directory `<stadt>` anlegen.
 
 Angaben ohne Gewähr – maßgeblich ist das Programm des jeweiligen Kinos.

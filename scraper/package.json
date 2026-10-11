@@ -1,14 +1,16 @@
 {
-  "name": "kinoprogramm-leipzig-scraper",
+  "name": "kinoprogramm-scraper",
   "version": "1.0.0",
   "private": true,
-  "description": "Sammelt das Wochenprogramm der Leipziger Kinos direkt von den Kinos.",
+  "description": "Sammelt das Wochenprogramm der Kinos in Leipzig und Hamburg direkt von den Kinos.",
   "type": "module",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "scrape": "node src/index.js",
+    "scrape:hamburg": "node src/index.js --city hamburg",
+    "sites": "node src/sites.js",
     "test": "node --test"
   },
   "dependencies": {
