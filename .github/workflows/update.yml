@@ -19,7 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       # Aktuellen Stand des Branches holen (nicht den vom Zeitpunkt des Auslösens), falls ein Lauf auf
       # den vorherigen warten musste.
@@ -37,29 +37,44 @@ jobs:
         working-directory: scraper
         run: npm ci
 
-      - name: Programm abrufen
-        id: scrape
+      # Beide Städte laufen unabhängig: Scheitert eine, wird die andere trotzdem aktualisiert.
+      - name: Programm Leipzig
+        id: leipzig
+        continue-on-error: true
         working-directory: scraper
-        run: node src/index.js
+        run: node src/index.js --city leipzig
+
+      - name: Programm Hamburg
+        id: hamburg
+        continue-on-error: true
+        working-directory: scraper
+        run: node src/index.js --city hamburg
+
+      # Die Hamburger Seite entsteht aus der Leipziger (public/) – hält beide auf demselben Stand
+      - name: Hamburger Seite erzeugen
+        working-directory: scraper
+        run: node src/sites.js
 
       - name: Änderungen committen
         run: |
-          if git diff --quiet -- public/data/program.json; then
+          git add public/data/program.json hamburg/public
+          if git diff --cached --quiet; then
             echo "Keine Änderungen."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/program.json
           git commit -m "Kinoprogramm aktualisiert ($(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M'))"
           git pull --rebase
           git push
 
-      # Läuft erst nach dem Commit: Die Seite wird trotzdem aktualisiert (ausgefallene Kinos behalten
+      # Läuft erst nach dem Commit: Die Seiten werden trotzdem aktualisiert (ausgefallene Kinos behalten
       # ihre letzten Daten), aber der Lauf wird rot markiert und GitHub schickt eine Mail – erst wenn
       # ein Problem rund zwei Stunden besteht und danach einmal täglich gegen 18 Uhr.
       - name: Probleme melden
-        if: steps.scrape.outputs.alert == 'true'
+        if: >-
+          steps.leipzig.outcome == 'failure' || steps.hamburg.outcome == 'failure' ||
+          steps.leipzig.outputs.alert == 'true' || steps.hamburg.outputs.alert == 'true'
         run: |
-          echo "::error::Bei ${{ steps.scrape.outputs.problems }} Kino(s) gab es Probleme – Details in der Zusammenfassung dieses Laufs."
+          echo "::error::Leipzig: ${{ steps.leipzig.outcome }}, ${{ steps.leipzig.outputs.problems || '?' }} Kino(s) mit Problemen – Hamburg: ${{ steps.hamburg.outcome }}, ${{ steps.hamburg.outputs.problems || '?' }} Kino(s) mit Problemen. Details in der Zusammenfassung dieses Laufs."
           exit 1
