@@ -26,7 +26,12 @@ const state = {
   hidden: new Set(),
   from: '', // '' | 'now' | 'HH:MM' – Beginn frühestens
   until: '', // '' | 'HH:MM' – Beginn spätestens
+  plz: '', // Umkreis-Filter: Postleitzahl …
+  radius: 0, // … und Radius in km (0 = beliebig)
+  center: null, // [Breite, Länge] der Postleitzahl, sobald bekannt
+  outside: new Set(), // Kinos außerhalb des Umkreises
 };
+const RADIUS_OPTIONS = [5, 10, 15, 20, 25, 30, 50];
 
 // ---------- Hilfsfunktionen ----------
 
@@ -79,6 +84,8 @@ function loadSettings() {
     if (Array.isArray(saved.hidden)) state.hidden = new Set(saved.hidden);
     if (saved.from === 'now' || TIME_OPTIONS.includes(saved.from)) state.from = saved.from;
     if (TIME_OPTIONS.includes(saved.until)) state.until = saved.until;
+    if (/^\d{5}$/.test(saved.plz ?? '')) state.plz = saved.plz;
+    if (RADIUS_OPTIONS.includes(saved.radius)) state.radius = saved.radius;
   } catch {
     /* Einstellungen sind optional */
   }
@@ -88,7 +95,14 @@ function saveSettings() {
   try {
     localStorage.setItem(
       STORAGE_KEY,
-      JSON.stringify({ view: state.view, hidden: [...state.hidden], from: state.from, until: state.until }),
+      JSON.stringify({
+        view: state.view,
+        hidden: [...state.hidden],
+        from: state.from,
+        until: state.until,
+        plz: state.plz,
+        radius: state.radius,
+      }),
     );
   } catch {
     /* z. B. privater Modus */
@@ -113,12 +127,61 @@ function timeFilterLabel() {
   return parts.join(' ');
 }
 
+// ---------- Umkreis ----------
+
+let plzTable = null; // plz.json wird erst geladen, wenn jemand eine Postleitzahl eingibt
+
+/** Luftlinie in km zwischen zwei Punkten [Breite, Länge]. */
+function distanceKm([lat1, lon1], [lat2, lon2]) {
+  const rad = Math.PI / 180;
+  const a =
+    Math.sin(((lat2 - lat1) * rad) / 2) ** 2 + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(((lon2 - lon1) * rad) / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.sqrt(a));
+}
+
+function cinemaDistance(cinema) {
+  return state.center && cinema?.location ? distanceKm(state.center, cinema.location) : null;
+}
+
+const formatKm = (km) => `${km < 10 ? km.toLocaleString('de-DE', { maximumFractionDigits: 1 }) : Math.round(km)} km`;
+
+/** Postleitzahl → Mittelpunkt; danach die Kinos außerhalb des Radius bestimmen. */
+async function updateRadius() {
+  state.center = null;
+  if (/^\d{5}$/.test(state.plz)) {
+    try {
+      plzTable ??= await (await fetch('plz.json')).json();
+      state.center = plzTable[state.plz] ?? null;
+    } catch {
+      plzTable = null; // später erneut versuchen (z. B. offline)
+    }
+  }
+  const outside = new Set();
+  if (state.center && state.radius && state.data) {
+    for (const c of state.data.cinemas) {
+      const km = cinemaDistance(c);
+      if (km != null && km > state.radius) outside.add(c.id);
+    }
+  }
+  state.outside = outside;
+}
+
+/** Kino ausgeblendet – von Hand oder weil es außerhalb des Umkreises liegt. */
+const isExcluded = (cinemaId) => state.hidden.has(cinemaId) || state.outside.has(cinemaId);
+
+function radiusNote() {
+  if (!state.plz) return '';
+  if (!/^\d{5}$/.test(state.plz)) return '';
+  if (!state.center) return plzTable ? 'PLZ nicht gefunden' : '';
+  return state.radius ? 'Luftlinie' : 'Entfernung (Luftlinie) steht bei den Kinos';
+}
+
 function visibleShows() {
-  const { data, day, query, hidden } = state;
+  const { data, day, query } = state;
   const tokens = fold(query).split(/\s+/).filter(Boolean);
   const now = berlinNow();
   return data.shows.filter((s) => {
-    if (s.date !== day || hidden.has(s.cinema) || !matchesTime(s, now)) return false;
+    if (s.date !== day || isExcluded(s.cinema) || !matchesTime(s, now)) return false;
     if (!tokens.length) return true;
     const haystack = fold(`${data.films[s.film]?.title ?? ''} ${s.version ?? ''} ${(s.extras || []).join(' ')} ${s.label ?? ''}`);
     return tokens.every((t) => haystack.includes(t));
@@ -328,7 +391,9 @@ function openBookmarks() {
 function addressLink(cinema) {
   if (!cinema.address) return '';
   const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${cinema.name}, ${cinema.address}`)}`;
-  return `<a class="sub address" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Route in Google Maps">${escapeHtml(cinema.address)}</a>`;
+  const km = cinemaDistance(cinema);
+  const distance = km == null ? '' : ` <span class="sub" title="Luftlinie ab ${escapeHtml(state.plz)}">${formatKm(km)}</span>`;
+  return `<a class="sub address" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Route in Google Maps">${escapeHtml(cinema.address)}</a>${distance}`;
 }
 
 function renderByCinema(shows, now) {
@@ -405,16 +470,22 @@ function renderFilterPanel() {
   const now = berlinNow();
   for (const s of data.shows) if (s.date === day && matchesTime(s, now)) counts[s.cinema] = (counts[s.cinema] || 0) + 1;
   $('#filter-list').innerHTML = data.cinemas
-    .map(
-      (c) => `<label>
+    .map((c) => {
+      const km = cinemaDistance(c);
+      const outside = state.outside.has(c.id);
+      return `<label${outside ? ` class="outside" title="Weiter als ${state.radius} km entfernt"` : ''}>
         <input type="checkbox" data-cinema="${escapeHtml(c.id)}" ${hidden.has(c.id) ? '' : 'checked'} />
         <span>${escapeHtml(c.name)}</span>
+        ${km == null ? '' : `<span class="dist">${formatKm(km)}</span>`}
         <span class="count">${counts[c.id] || 0}</span>
-      </label>`,
-    )
+      </label>`;
+    })
     .join('');
+  $('#radius-plz').value = state.plz;
+  $('#radius-km').value = String(state.radius);
+  $('#radius-note').textContent = radiusNote();
   const total = data.cinemas.length;
-  const shown = data.cinemas.filter((c) => !hidden.has(c.id)).length;
+  const shown = data.cinemas.filter((c) => !isExcluded(c.id)).length;
   const toggle = $('#filter-toggle');
   toggle.textContent = shown === total ? 'Alle Kinos' : `${shown} von ${total} Kinos`;
   toggle.classList.toggle('active', shown !== total);
@@ -426,7 +497,7 @@ function renderProgram() {
   const shows = visibleShows();
   const main = $('#program');
   if (!shows.length) {
-    const filtered = state.query || state.hidden.size || state.from || state.until;
+    const filtered = state.query || state.hidden.size || state.outside.size || state.from || state.until;
     main.innerHTML = `<div class="empty">
       <p>${filtered ? 'Keine passenden Vorstellungen an diesem Tag.' : 'Für diesen Tag sind noch keine Vorstellungen bekannt.'}</p>
       ${filtered ? '<button type="button" data-reset>Filter zurücksetzen</button>' : ''}
@@ -567,6 +638,25 @@ function bindEvents() {
     renderProgram();
   });
 
+  // Umkreis: neu berechnen, sobald die PLZ vollständig (oder leer) ist bzw. der Radius sich ändert
+  const applyRadius = async () => {
+    await updateRadius();
+    saveSettings();
+    renderFilterPanel();
+    renderProgram();
+  };
+  $('#radius-plz').addEventListener('input', (e) => {
+    const plz = e.target.value.replace(/\D/g, '').slice(0, 5);
+    if (e.target.value !== plz) e.target.value = plz;
+    if (plz.length !== 5 && plz.length !== 0) return;
+    state.plz = plz;
+    applyRadius();
+  });
+  $('#radius-km').addEventListener('change', (e) => {
+    state.radius = Number(e.target.value) || 0;
+    applyRadius();
+  });
+
   document.querySelector('.filter-actions').addEventListener('click', (e) => {
     const mode = e.target.dataset.select;
     if (!mode) return;
@@ -598,6 +688,8 @@ function bindEvents() {
       state.hidden = new Set();
       state.from = '';
       state.until = '';
+      state.radius = 0;
+      state.outside = new Set();
       $('#search').value = '';
       saveSettings();
       render();
@@ -628,6 +720,7 @@ async function init() {
   // Ausgeblendete Kinos, die es nicht mehr gibt, vergessen
   const ids = new Set(state.data.cinemas.map((c) => c.id));
   state.hidden = new Set([...state.hidden].filter((id) => ids.has(id)));
+  if (state.plz) await updateRadius();
   renderMeta();
   render();
 }
@@ -636,13 +729,13 @@ async function init() {
 window.kinoprogramm = {
   dayFilms() {
     if (!state.data) return null;
-    const { data, day, hidden, today } = state;
+    const { data, day, today } = state;
     const now = berlinNow();
     const titles = new Set(
-      data.shows.filter((s) => s.date === day && !hidden.has(s.cinema) && matchesTime(s, now)).map((s) => data.films[s.film].title),
+      data.shows.filter((s) => s.date === day && !isExcluded(s.cinema) && matchesTime(s, now)).map((s) => data.films[s.film].title),
     );
     const label = day === today ? 'heute' : day === addDays(today, 1) ? 'morgen' : `${weekday(day)}, ${shortDate(day)}`;
-    const shownCinemas = data.cinemas.filter((c) => !hidden.has(c.id)).length;
+    const shownCinemas = data.cinemas.filter((c) => !isExcluded(c.id)).length;
     const notes = [timeFilterLabel(), shownCinemas < data.cinemas.length ? `${shownCinemas} von ${data.cinemas.length} Kinos` : ''];
     return {
       label,

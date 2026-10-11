@@ -13,6 +13,8 @@ und die Seiten liegen kostenlos bei Vercel.
 - Ansicht **nach Kino** oder **nach Film** („Wo läuft der Film noch?“ per Klick auf den Titel)
 - Kinos ein-/ausblenden und Beginn eingrenzen („ab 18:00“, „bis 20:00“, „ab jetzt“) – wird im
   Browser gemerkt; Suche nach Titel oder Fassung (z. B. „omu“)
+- Umkreis-Filter: Postleitzahl und Radius eingeben (z. B. „22523“, „15 km“) – Kinos weiter weg
+  werden ausgeblendet, die Entfernung (Luftlinie) steht bei jedem Kino
 - Kino-Adressen öffnen die Route in Google Maps
 - Uhrzeiten mit geschätzter Endzeit (Filmlänge + ca. 20 Min. Werbung), verlinkt direkt auf die
   Ticketbuchung bzw. die Filmseite des Kinos
@@ -88,6 +90,7 @@ scraper/                Node.js-Skript, das die Daten sammelt
   src/sources/          Ein Modul pro Quelle
   src/sites.js          Erzeugt hamburg/public/ aus public/
   src/imdb.js           Ordnet die Filme IMDb zu und holt die Bewertungen
+  src/plz.js            Erzeugt public/plz.json (Postleitzahlen → Koordinaten, für den Umkreis)
   data/imdb.json        Zwischenspeicher: IMDb-Nummer und Bewertung je Film
   test/                 Tests mit echten Ausschnitten der Kino-Webseiten
 .github/workflows/
@@ -116,6 +119,15 @@ Used with permission.“ (steht auch unten auf der Seite).
 - Die Bewertungen selbst (eine kleine Datei) werden einmal am Tag aufgefrischt.
 - Eine falsche Zuordnung lässt sich in `scraper/data/imdb.json` korrigieren: beim Film die `id`
   durch die richtige IMDb-Nummer (`tt…`) ersetzen oder `"id": null, "skip": true` eintragen.
+
+## Umkreis-Filter
+
+Jedes Kino hat in `scraper/src/cities/*.js` seine Koordinaten (`location`, aus kinoheld bzw.
+OpenStreetMap). Die Seite rechnet die Luftlinie zur eingegebenen Postleitzahl aus; deren
+Koordinaten stehen in `public/plz.json` – alle Postleitzahlen bis 80 km um die Kinos der Städte,
+aus den [GeoNames-Postleitzahlen](https://download.geonames.org/export/zip/) (CC BY 4.0). Die Datei
+wird erst geladen, wenn jemand eine Postleitzahl eingibt. Neu erzeugen (nur nötig, wenn eine Stadt
+dazukommt): `DE.zip` herunterladen, entpacken, `node src/plz.js DE.txt` und `npm run sites`.
 
 ## Einrichtung (einmalig)
 
@@ -198,8 +210,9 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 ## Eine weitere Stadt
 
-1. `scraper/src/cities/<stadt>.js` mit den Kinos anlegen und in `scraper/src/cities/index.js`
-   eintragen (Name und Ordner der Seite, z. B. `<stadt>/public`).
+1. `scraper/src/cities/<stadt>.js` mit den Kinos (samt Koordinaten) anlegen und in
+   `scraper/src/cities/index.js` eintragen (Name und Ordner der Seite, z. B. `<stadt>/public`);
+   `public/plz.json` mit `node src/plz.js DE.txt` um die Postleitzahlen der Stadt erweitern.
 2. In `scraper/src/sites.js` unter `SITE_TEXTS` die Ersetzungen für Stadtname und Beschreibung
    ergänzen, dann `npm run sites` und `npm run scrape -- --city <stadt>`.
 3. `<stadt>/vercel.json` wie bei Hamburg anlegen, in `update.yml` einen Schritt für die Stadt

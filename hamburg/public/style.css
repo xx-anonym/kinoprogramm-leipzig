@@ -268,6 +268,37 @@ select {
   border-radius: var(--radius);
 }
 
+.radius {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.radius input,
+.radius select {
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.radius input {
+  width: 4.6em;
+  margin-left: 4px;
+}
+
+.radius-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .filter-actions {
   display: flex;
   gap: 8px;
@@ -301,6 +332,21 @@ select {
   margin-left: auto;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.filter-list .dist {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.filter-list .dist + .count {
+  margin-left: 8px;
+}
+
+.filter-list label.outside {
+  opacity: 0.45;
 }
 
 /* Programm */

@@ -54,6 +54,22 @@
         </button>
       </div>
       <div class="filter-panel" id="filter-panel" hidden>
+        <div class="radius">
+          <label>Umkreis um
+            <input type="text" id="radius-plz" inputmode="numeric" maxlength="5" placeholder="PLZ" autocomplete="postal-code" />
+          </label>
+          <select id="radius-km" aria-label="Radius">
+            <option value="0">beliebig</option>
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+            <option value="15">15 km</option>
+            <option value="20">20 km</option>
+            <option value="25">25 km</option>
+            <option value="30">30 km</option>
+            <option value="50">50 km</option>
+          </select>
+          <span class="radius-note" id="radius-note"></span>
+        </div>
         <div class="filter-actions">
           <button type="button" data-select="all">Alle</button>
           <button type="button" data-select="none">Keine</button>
@@ -80,7 +96,8 @@
         </p>
         <p class="credits">
           Bewertungen: Information courtesy of IMDb (<a href="https://www.imdb.com" target="_blank" rel="noopener">www.imdb.com</a>).
-          Used with permission.
+          Used with permission. Postleitzahlen für den Umkreis:
+          <a href="https://www.geonames.org" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0).
         </p>
       </div>
     </footer>

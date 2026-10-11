@@ -176,6 +176,7 @@ export async function collect({
       id: cinema.id,
       name: cinema.name,
       address: cinema.address,
+      ...(cinema.location ? { location: cinema.location } : {}), // [Breite, Länge] – für den Umkreis-Filter
       website: cinema.website,
       source: [cinema.source, cinema.source.supplement].filter(Boolean).map(label).join(' + '),
     };
