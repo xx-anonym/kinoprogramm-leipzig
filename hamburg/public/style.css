@@ -391,7 +391,8 @@ main {
   text-decoration: underline;
 }
 
-.trailer {
+.trailer,
+.rating {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -412,7 +413,9 @@ main {
 }
 
 .trailer:hover,
-.trailer:focus-visible {
+.trailer:focus-visible,
+.rating:hover,
+.rating:focus-visible {
   color: var(--accent);
   text-decoration: underline;
 }

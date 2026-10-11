@@ -18,6 +18,8 @@ und die Seiten liegen kostenlos bei Vercel.
   Ticketbuchung bzw. die Filmseite des Kinos
 - Gleiche Filme werden kinoübergreifend zusammengeführt; Sonderveranstaltungen („Premiere“,
   „Best of Cinema“, „+ Filmgespräch …“) erscheinen als Etikett an der Uhrzeit
+- IMDb-Bewertung neben dem Filmtitel („IMDb 7,4“, verlinkt auf IMDb) – nur bei sicherer Zuordnung
+  und ab 25 Stimmen
 - Merkliste: Stern hinter jeder Vorstellung antippen, die gemerkten Vorstellungen stehen gesammelt
   hinter dem Stern-Symbol oben rechts (wird im Browser gespeichert, vergangene Tage verschwinden)
 - Glücksrad (Knopf unten auf der Seite oder Strg+Ü / ⌘+Ü)
@@ -85,6 +87,8 @@ scraper/                Node.js-Skript, das die Daten sammelt
   src/cities/           Je Stadt die Liste der Kinos und ihrer Quellen
   src/sources/          Ein Modul pro Quelle
   src/sites.js          Erzeugt hamburg/public/ aus public/
+  src/imdb.js           Ordnet die Filme IMDb zu und holt die Bewertungen
+  data/imdb.json        Zwischenspeicher: IMDb-Nummer und Bewertung je Film
   test/                 Tests mit echten Ausschnitten der Kino-Webseiten
 .github/workflows/
   update.yml            Stündlich: Daten beider Städte holen, committen → Vercel veröffentlicht
@@ -97,6 +101,21 @@ hamburg/vercel.json     Vercel-Projekt Hamburg (Root Directory „hamburg“): l
 `npm run sites` (im Ordner `scraper`) ausführen – oder abwarten: Der stündliche Lauf erzeugt die
 Hamburger Seite ebenfalls neu. Ein Test schlägt an, wenn beide auseinanderlaufen.
 Jedes Vercel-Projekt baut nur neu, wenn sich sein Ordner geändert hat (`ignoreCommand`).
+
+## IMDb-Bewertungen
+
+Quelle sind die [offiziellen IMDb-Datensätze](https://developer.imdb.com/non-commercial-datasets/)
+für persönliche, nicht-kommerzielle Nutzung – „Information courtesy of IMDb (https://www.imdb.com).
+Used with permission.“ (steht auch unten auf der Seite).
+
+- `src/imdb.js` läuft zu Beginn jedes stündlichen Laufs. Nur wenn neue Filme im Programm sind, lädt es
+  die großen Dateien (rund 750 MB: alle Titel und die deutschen Verleihtitel) und sucht dort nach
+  genau gleichem Titel – deutscher Titel, Originaltitel (von kinoheld) –, passend zu Jahr und Laufzeit.
+  Im Zweifel bekommt ein Film keine Bewertung. Veranstaltungen (Sneak, Oper, Kurzfilmabende …) werden
+  übersprungen, nicht gefundene Filme eine Woche später erneut gesucht.
+- Die Bewertungen selbst (eine kleine Datei) werden einmal am Tag aufgefrischt.
+- Eine falsche Zuordnung lässt sich in `scraper/data/imdb.json` korrigieren: beim Film die `id`
+  durch die richtige IMDb-Nummer (`tt…`) ersetzen oder `"id": null, "skip": true` eintragen.
 
 ## Einrichtung (einmalig)
 

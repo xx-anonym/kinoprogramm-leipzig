@@ -9,6 +9,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { CITIES } from './cities/index.js';
+import { ratingsForProgram, readCache } from './imdb.js';
 import { addDays, berlinDate, berlinTime } from './lib/dates.js';
 import { mapLimit } from './lib/pool.js';
 import { buildCaseDictionary, chooseDisplayTitles, filmKey, parseTitle, pickVersion, smartCase, splitEvent } from './lib/normalize.js';
@@ -71,6 +72,9 @@ function normalizeShows(rawShows, cinemaId, days) {
       url: /^https?:\/\//i.test(raw.url ?? '') ? raw.url : null,
       duration: raw.duration >= 20 && raw.duration <= 720 ? Math.round(raw.duration) : null,
       description: typeof raw.description === 'string' ? raw.description : null, // nur für die Schreibweise
+      // Hinweise für die Zuordnung zu IMDb (bisher nur von kinoheld)
+      originalTitle: typeof raw.originalTitle === 'string' && raw.originalTitle.trim() ? raw.originalTitle.trim().slice(0, 200) : null,
+      year: raw.year >= 1900 && raw.year <= 2100 ? raw.year : null,
     });
   }
   return result;
@@ -121,25 +125,28 @@ function previousShows(previous, cinemaId, days) {
   return normalizeShows(
     previous.shows
       .filter((s) => s.cinema === cinemaId)
-      .map((s) => ({ ...s, title: films[s.film]?.title ?? s.film, duration: films[s.film]?.duration })),
+      .map((s) => {
+        const film = films[s.film] ?? {};
+        return { ...s, title: film.title ?? s.film, duration: film.duration, originalTitle: film.original, year: film.year };
+      }),
     cinemaId,
     days,
   );
 }
 
-/** Häufigste Filmlänge eines Films über alle Kinos (bei Gleichstand die längere). */
-function filmDurations(shows) {
+/** Häufigster Wert eines Feldes je Film über alle Kinos (bei Gleichstand der größere bzw. spätere). */
+function mostCommon(shows, field) {
   const counts = new Map();
   for (const s of shows) {
-    if (!s.duration) continue;
+    if (!s[field]) continue;
     const key = filmKey(s.title);
     if (!counts.has(key)) counts.set(key, new Map());
     const perFilm = counts.get(key);
-    perFilm.set(s.duration, (perFilm.get(s.duration) ?? 0) + 1);
+    perFilm.set(s[field], (perFilm.get(s[field]) ?? 0) + 1);
   }
   const result = new Map();
   for (const [key, perFilm] of counts) {
-    const [best] = [...perFilm.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0]);
+    const [best] = [...perFilm.entries()].sort((a, b) => b[1] - a[1] || (b[0] > a[0] ? 1 : b[0] < a[0] ? -1 : 0));
     result.set(key, best[0]);
   }
   return result;
@@ -155,6 +162,7 @@ export async function collect({
   sources = SOURCES,
   previous = null,
   now = new Date(),
+  ratings = new Map(), // IMDb-Bewertungen je Film (aus scraper/data/imdb.json)
 }) {
   const days = Array.from({ length: DAYS }, (_, i) => addDays(today, i));
   const nowTime = berlinTime(now);
@@ -196,7 +204,9 @@ export async function collect({
   // Filmtitel über alle Kinos vereinheitlichen
   const allShows = results.flatMap((r) => r.shows);
   const displayTitles = chooseDisplayTitles(allShows.map((s) => s.title));
-  const durations = filmDurations(allShows);
+  const durations = mostCommon(allShows, 'duration');
+  const originals = mostCommon(allShows, 'originalTitle');
+  const years = mostCommon(allShows, 'year');
   // Wörterbuch aus Beschreibungen und Titeln, um Titel in VERSALIEN normal zu schreiben
   const caseDictionary = buildCaseDictionary(new Set([...allShows.map((s) => s.description), ...allShows.map((s) => s.title)]));
   const films = {};
@@ -211,6 +221,10 @@ export async function collect({
     if (!films[film]) {
       films[film] = { title: smartCase(displayTitles.get(film), caseDictionary) };
       if (durations.has(film)) films[film].duration = durations.get(film);
+      // Originaltitel und Jahr helfen bei der Zuordnung zu IMDb (src/imdb.js)
+      if (originals.has(film) && filmKey(originals.get(film)) !== film) films[film].original = originals.get(film);
+      if (years.has(film)) films[film].year = years.get(film);
+      if (ratings.has(film)) films[film].imdb = ratings.get(film);
     }
     const show = { cinema: s.cinema, film, date: s.date, time: s.time };
     if (s.version) show.version = s.version;
@@ -300,7 +314,8 @@ async function main() {
 
   const now = new Date();
   const previous = await readPrevious(outFile);
-  const data = await collect({ today: berlinDate(now), cinemas: city.cinemas, previous, now });
+  const ratings = ratingsForProgram(await readCache());
+  const data = await collect({ today: berlinDate(now), cinemas: city.cinemas, previous, now, ratings });
 
   const rows = data.cinemas.map((c) => ({
     Kino: c.name,

@@ -11,7 +11,9 @@
      "flags": [],
      "movie": {
       "title": "Coyote vs. ACME",
-      "duration": 101
+      "duration": 101,
+      "titleOriginal": "Coyote vs. Acme",
+      "productionYear": 2026
      }
     },
     {
@@ -28,7 +30,9 @@
      ],
      "movie": {
       "title": "Verity - Dunkle Geheimnisse",
-      "duration": 114
+      "duration": 114,
+      "titleOriginal": "Verity",
+      "productionYear": 2026
      }
     },
     {

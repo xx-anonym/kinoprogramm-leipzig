@@ -17,7 +17,7 @@ const QUERY = `query Shows($cinemaId: ID) {
       audioLanguage { isocode }
       subtitleLanguage { isocode }
       flags { code category }
-      movie { title duration shortDescription }
+      movie { title titleOriginal productionYear duration shortDescription }
     }
   }
 }`;
@@ -63,6 +63,8 @@ export function parseKinoheld(response) {
       extras: codes.includes('3d') ? ['3D'] : [],
       url: show.deeplink || (showPage && show.urlSlug ? showPage(show.urlSlug) : null),
       duration: Number(show.movie?.duration) || null,
+      originalTitle: show.movie?.titleOriginal?.trim() || null,
+      year: Number(show.movie?.productionYear) || null,
       description: show.movie?.shortDescription || null,
     });
   }

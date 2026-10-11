@@ -149,6 +149,8 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       extras: [],
       url: 'https://tickets.cineplex.de/checkout/356/A5CBFB00023FWBXJYB',
       duration: 101,
+      originalTitle: 'Coyote vs. Acme',
+      year: 2026,
     },
     {
       date: '2026-10-05',
@@ -158,6 +160,8 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       extras: [],
       url: 'https://tickets.cineplex.de/checkout/356/7CCBFB00023FWBXJYB',
       duration: 114,
+      originalTitle: 'Verity',
+      year: 2026,
     },
     // Winterzeit: Offset +01:00, die Uhrzeit bleibt Ortszeit
     {
@@ -168,6 +172,8 @@ test('kinoheld (Cineplex, UCI): Ortszeit, 3D und Ticketlink', () => {
       extras: ['3D'],
       url: 'https://tickets.cineplex.de/checkout/356/51BAFB00023FWBXJYB',
       duration: 165,
+      originalTitle: null,
+      year: null,
     },
   ]);
 });

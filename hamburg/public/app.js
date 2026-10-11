@@ -159,6 +159,16 @@ function trailerQuery(title) {
   return `${t || title} trailer deutsch`;
 }
 
+/** IMDb-Bewertung als kleiner Link neben dem Titel (nur wenn der Scraper eine sichere Zuordnung hat). */
+function ratingLink(film) {
+  const imdb = film?.imdb;
+  if (!imdb?.id || !imdb.rating) return '';
+  const rating = imdb.rating.toLocaleString('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const votes = (imdb.votes ?? 0).toLocaleString('de-DE');
+  const url = `https://www.imdb.com/title/${encodeURIComponent(imdb.id)}/`;
+  return `<a class="rating" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="IMDb-Bewertung ${rating} von 10 (${votes} Stimmen)">IMDb ${rating}</a>`;
+}
+
 function trailerLink(title) {
   const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(trailerQuery(title))}`;
   return `<a class="trailer" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="Trailer auf YouTube suchen">Trailer</a>`;
@@ -332,7 +342,7 @@ function renderByCinema(shows, now) {
         .sort(byTitle)
         .map(
           (film) => `<li class="row">
-            <p class="row-title"><button type="button" data-film="${escapeHtml(film)}" title="Wo läuft der Film noch?">${escapeHtml(data.films[film].title)}</button> ${trailerLink(data.films[film].title)}</p>
+            <p class="row-title"><button type="button" data-film="${escapeHtml(film)}" title="Wo läuft der Film noch?">${escapeHtml(data.films[film].title)}</button> ${ratingLink(data.films[film])}${trailerLink(data.films[film].title)}</p>
             <div class="times">${byFilm.get(film).map((s) => showItem(s, now)).join('')}</div>
           </li>`,
         )
@@ -371,7 +381,7 @@ function renderByFilm(shows, now) {
         <div class="card-head">
           <h2>${escapeHtml(data.films[film].title)}</h2>
           <span class="sub">${count === 1 ? '1 Kino' : `${count} Kinos`}</span>
-          ${trailerLink(data.films[film].title)}
+          ${ratingLink(data.films[film])}${trailerLink(data.films[film].title)}
         </div>
         <ul class="rows">${rows}</ul>
       </section>`;
