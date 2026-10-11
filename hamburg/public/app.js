@@ -164,6 +164,20 @@ async function updateRadius() {
     }
   }
   state.outside = outside;
+  sortCinemas();
+}
+
+/** Kinos alphabetisch – oder nach Entfernung, sobald eine bekannte Postleitzahl eingegeben ist. */
+function sortCinemas() {
+  if (!state.data) return;
+  const byName = (a, b) => a.name.localeCompare(b.name, 'de', { numeric: true });
+  state.data.cinemas.sort((a, b) => {
+    if (state.center) {
+      const diff = (cinemaDistance(a) ?? Infinity) - (cinemaDistance(b) ?? Infinity);
+      if (diff) return diff;
+    }
+    return byName(a, b);
+  });
 }
 
 /** Kino ausgeblendet – von Hand oder weil es außerhalb des Umkreises liegt. */
@@ -173,7 +187,7 @@ function radiusNote() {
   if (!state.plz) return '';
   if (!/^\d{5}$/.test(state.plz)) return '';
   if (!state.center) return plzTable ? 'PLZ nicht gefunden' : '';
-  return state.radius ? 'Luftlinie' : 'Entfernung (Luftlinie) steht bei den Kinos';
+  return state.radius ? 'Luftlinie, nach Entfernung sortiert' : 'Kinos nach Entfernung sortiert (Luftlinie)';
 }
 
 function visibleShows() {
@@ -710,8 +724,8 @@ async function init() {
     const res = await fetch('data/program.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.data = await res.json();
-    // Kinos alphabetisch – für die Ansicht nach Kino, die Kinoauswahl und die Reihenfolge der Kinos je Film
-    state.data.cinemas.sort((a, b) => a.name.localeCompare(b.name, 'de', { numeric: true }));
+    // Reihenfolge der Kinos für die Ansicht nach Kino, die Kinoauswahl und die Kinos je Film
+    sortCinemas();
   } catch (err) {
     $('#meta').textContent = 'Das Programm konnte nicht geladen werden. Bitte später erneut versuchen.';
     console.error(err);

@@ -14,7 +14,8 @@ und die Seiten liegen kostenlos bei Vercel.
 - Kinos ein-/ausblenden und Beginn eingrenzen („ab 18:00“, „bis 20:00“, „ab jetzt“) – wird im
   Browser gemerkt; Suche nach Titel oder Fassung (z. B. „omu“)
 - Umkreis-Filter: Postleitzahl und Radius eingeben (z. B. „22523“, „15 km“) – Kinos weiter weg
-  werden ausgeblendet, die Entfernung (Luftlinie) steht bei jedem Kino
+  werden ausgeblendet, die übrigen nach Entfernung (Luftlinie) sortiert; ohne Postleitzahl
+  stehen die Kinos alphabetisch
 - Kino-Adressen öffnen die Route in Google Maps
 - Uhrzeiten mit geschätzter Endzeit (Filmlänge + ca. 20 Min. Werbung), verlinkt direkt auf die
   Ticketbuchung bzw. die Filmseite des Kinos
