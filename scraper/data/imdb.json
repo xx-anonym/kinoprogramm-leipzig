@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-12T15:00:56.522Z",
+ "ratingsUpdated": "2026-10-12T18:01:00.287Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -182,6 +182,13 @@
    "title": "CineSneak - Die Überraschungspreview",
    "seen": "2026-10-12"
   },
+  "clubdertotendichter": {
+   "id": "tt0097165",
+   "title": "Der Club der toten Dichter",
+   "seen": "2026-10-12",
+   "rating": 8.1,
+   "votes": 672240
+  },
   "cocolebendigeralsdasleben": {
    "id": "tt2380307",
    "title": "Coco - Lebendiger als das Leben!",
@@ -202,6 +209,13 @@
    "seen": "2026-10-12",
    "rating": 7.3,
    "votes": 42235
+  },
+  "dancingqueen": {
+   "id": "tt20424066",
+   "title": "Dancing Queen",
+   "seen": "2026-10-12",
+   "rating": 6.2,
+   "votes": 293
   },
   "denkdidochwatannersuttheaterveranstaltung": {
    "id": null,
@@ -305,6 +319,13 @@
    "seen": "2026-10-12",
    "rating": 6.7,
    "votes": 522
+  },
+  "geschlossenevorstellung": {
+   "id": null,
+   "title": "Geschlossene Vorstellung",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
   },
   "getraumteabenteuer": {
    "id": "tt21188986",
@@ -676,6 +697,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "mittagsstunde": {
+   "id": "tt21148858",
+   "title": "Mittagsstunde",
+   "seen": "2026-10-12",
+   "rating": 6.9,
+   "votes": 523
+  },
   "monstermia": {
    "id": "tt38807889",
    "title": "Monster Mia",
@@ -884,6 +912,13 @@
    "skip": true,
    "title": "SAVOY Sneak-Preview",
    "seen": "2026-10-12"
+  },
+  "schonstemadchenderwelt": {
+   "id": "tt7776838",
+   "title": "Das schönste Mädchen der Welt",
+   "seen": "2026-10-12",
+   "rating": 7.2,
+   "votes": 2498
   },
   "schwarzehauser": {
    "id": null,
