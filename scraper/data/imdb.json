@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-12T18:01:00.287Z",
+ "ratingsUpdated": "2026-10-12T23:00:54.111Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -126,6 +126,13 @@
    "seen": "2026-10-12",
    "rating": 6.6,
    "votes": 30
+  },
+  "bladerunnerfinalcut": {
+   "id": "tt0083658",
+   "title": "Blade Runner - Final Cut",
+   "seen": "2026-10-12",
+   "rating": 8.1,
+   "votes": 893639
   },
   "brunoderjungekreisky": {
    "id": "tt36472663",
@@ -258,6 +265,13 @@
    "rating": 7.8,
    "votes": 776262
   },
+  "eichemeinzuhause": {
+   "id": "tt10368758",
+   "title": "Die Eiche - Mein Zuhause",
+   "seen": "2026-10-12",
+   "rating": 7.5,
+   "votes": 917
+  },
   "einekrankheitwieeingedicht": {
    "id": "tt39295633",
    "title": "Eine Krankheit wie ein Gedicht",
@@ -272,6 +286,13 @@
    "rating": 7.2,
    "votes": 23992
   },
+  "elio": {
+   "id": "tt4900148",
+   "title": "Elio",
+   "seen": "2026-10-12",
+   "rating": 6.6,
+   "votes": 48840
+  },
   "emilunddiedetektive": {
    "id": "tt39381622",
    "title": "Emil und die Detektive",
@@ -284,6 +305,20 @@
    "skip": true,
    "title": "Enhypen Vr Concert: Destiny",
    "seen": "2026-10-12"
+  },
+  "enjoconflagration": {
+   "id": null,
+   "title": "Enjô - Conflagration",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
+  },
+  "europapassage": {
+   "id": "tt23471494",
+   "title": "Europa Passage",
+   "seen": "2026-10-12",
+   "rating": 5.9,
+   "votes": 36
   },
   "flimmerkiste20": {
    "id": null,
@@ -305,6 +340,13 @@
    "seen": "2026-10-12",
    "rating": 7.1,
    "votes": 36
+  },
+  "frostohneeisundschnee": {
+   "id": null,
+   "title": "Frost ohne Eis und Schnee",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
   },
   "gabrieletergitpreisfurmutigenlokaljournalismus": {
    "id": null,
@@ -340,6 +382,13 @@
    "seen": "2026-10-12",
    "rating": 6.8,
    "votes": 209
+  },
+  "grosseskinoderpateteili": {
+   "id": null,
+   "title": "Grosses Kino: Der Pate - Teil I",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
   },
   "grunau50gebautfurviele": {
    "id": null,
@@ -506,6 +555,13 @@
    "rating": 6.8,
    "votes": 37
   },
+  "karla": {
+   "id": "tt37021896",
+   "title": "Karla",
+   "seen": "2026-10-12",
+   "rating": 7.2,
+   "votes": 218
+  },
   "kitkatclubkinksofberlin": {
    "id": "tt40445453",
    "title": "KitKatClub: Kinks of Berlin",
@@ -532,6 +588,13 @@
    "checked": "2026-10-11",
    "attempts": 1,
    "seen": "2026-10-12"
+  },
+  "lacasa": {
+   "id": "tt37366525",
+   "title": "La casa",
+   "seen": "2026-10-12",
+   "rating": 7.4,
+   "votes": 5
   },
   "ladybird": {
    "id": "tt4925292",
@@ -567,6 +630,13 @@
    "checked": "2026-10-11",
    "attempts": 1,
    "seen": "2026-10-12"
+  },
+  "liebhaberinnen": {
+   "id": "tt17678558",
+   "title": "Liebhaberinnen",
+   "seen": "2026-10-12",
+   "rating": 6.4,
+   "votes": 21
   },
   "linkinparkunshatter": {
    "id": "tt43442522",
@@ -753,6 +823,13 @@
    "rating": 7.9,
    "votes": 33755
   },
+  "nurfureinentag": {
+   "id": "tt35453969",
+   "title": "Nur für einen Tag",
+   "seen": "2026-10-12",
+   "rating": 6.2,
+   "votes": 1646
+  },
   "obsessiondusollstmichlieben": {
    "id": "tt37287335",
    "title": "Obsession - Du sollst mich lieben",
@@ -927,6 +1004,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "sechswochenamt": {
+   "id": "tt37022391",
+   "title": "Sechswochenamt",
+   "seen": "2026-10-12",
+   "rating": 7.2,
+   "votes": 48
+  },
   "semillasbisderregenfallt": {
    "id": "tt10460810",
    "title": "Semillas - Bis der Regen Fällt",
@@ -1003,6 +1087,13 @@
    "id": null,
    "title": "Songs of Hope and Despair",
    "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-12"
+  },
+  "sovdkinohamnet": {
+   "id": null,
+   "title": "SoVD Kino: HAMNET",
+   "checked": "2026-10-12",
    "attempts": 1,
    "seen": "2026-10-12"
   },
@@ -1221,6 +1312,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "verschwindendesjosefmengele": {
+   "id": "tt22852560",
+   "title": "Das Verschwinden des Josef Mengele",
+   "seen": "2026-10-12",
+   "rating": 6.9,
+   "votes": 2103
+  },
   "voicesinmyhead": {
    "id": "tt24248436",
    "title": "Voices In My Head",
@@ -1290,6 +1388,13 @@
    "seen": "2026-10-12",
    "rating": 7.9,
    "votes": 9
+  },
+  "witches": {
+   "id": "tt0100944",
+   "title": "The Witches",
+   "seen": "2026-10-12",
+   "rating": 6.8,
+   "votes": 60238
   },
   "zauberhafteschwestern": {
    "id": "tt0120791",
