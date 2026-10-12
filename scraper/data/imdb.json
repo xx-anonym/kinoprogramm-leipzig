@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-12T11:00:57.209Z",
+ "ratingsUpdated": "2026-10-12T13:00:56.904Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -628,6 +628,13 @@
    "seen": "2026-10-12",
    "rating": 9.3,
    "votes": 60
+  },
+  "meinfreunddiegiraffe": {
+   "id": "tt5992202",
+   "title": "Mein Freund, die Giraffe",
+   "seen": "2026-10-12",
+   "rating": 6.5,
+   "votes": 374
   },
   "metopera202627macbethgiuseppeverdi": {
    "id": null,
