@@ -1034,6 +1034,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "streetfightermxp2ddeutschmxp2d": {
+   "id": null,
+   "title": "Street Fighter (MXP 2D) (Deutsch/MXP 2D)",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
+  },
   "substance": {
    "id": "tt17526714",
    "title": "The Substance",
@@ -1172,6 +1179,13 @@
    "rating": 6,
    "votes": 14117
   },
+  "veritydunklegeheimnissemxp2ddeutschmxp2d": {
+   "id": null,
+   "title": "Verity - Dunkle Geheimnisse (MXP 2D) (Deutsch/MXP 2D)",
+   "checked": "2026-10-12",
+   "attempts": 1,
+   "seen": "2026-10-12"
+  },
   "voicesinmyhead": {
    "id": "tt24248436",
    "title": "Voices In My Head",
@@ -1218,6 +1232,13 @@
    "id": null,
    "title": "Whalefall",
    "checked": "2026-10-11",
+   "attempts": 1,
+   "seen": "2026-10-12"
+  },
+  "whalefallmxp2ddeutschmxp2d": {
+   "id": null,
+   "title": "Whalefall (MXP 2D) (Deutsch/MXP 2D)",
+   "checked": "2026-10-12",
    "attempts": 1,
    "seen": "2026-10-12"
   },
