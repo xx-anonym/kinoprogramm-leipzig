@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-12T14:00:55.422Z",
+ "ratingsUpdated": "2026-10-12T15:00:56.522Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -816,6 +816,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "regenmeister": {
+   "id": "tt34250056",
+   "title": "Der Regenmeister",
+   "seen": "2026-10-12",
+   "rating": 4.9,
+   "votes": 626
+  },
   "residentevil": {
    "id": "tt35538033",
    "title": "Resident Evil",
@@ -1134,6 +1141,13 @@
   "vaiana": {
    "id": "tt27419466",
    "title": "Vaiana",
+   "seen": "2026-10-12",
+   "rating": 5.8,
+   "votes": 19274
+  },
+  "vaianaliveaction": {
+   "id": "tt27419466",
+   "title": "Vaiana - Live Action",
    "seen": "2026-10-12",
    "rating": 5.8,
    "votes": 19274
