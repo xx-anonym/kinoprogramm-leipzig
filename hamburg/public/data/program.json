@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T07:01:07.583Z",
+  "generatedAt": "2026-10-12T08:01:11.509Z",
   "days": ["2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":8},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":48},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":47},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":23},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":73},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":113},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":49},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":47},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":7},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":19},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":36},
@@ -97,7 +97,6 @@
     "kitkatclubkinksofberlin": {"title":"KitKatClub: Kinks of Berlin","duration":100,"year":2025,"imdb":{"id":"tt40445453","rating":5.8,"votes":74}},
     "kunstkinobreathingearthsusumushingustraum": {"title":"KunstKino: BREATHING EARTH - SUSUMU SHINGUS TRAUM","duration":90},
     "kuzmaerschreckendheiter": {"title":"Kuzma: Erschreckend Heiter | КУЗЬМА: СТРАШНО ВЕСЕЛИЙ","duration":132,"original":"Кузьма: Страшно веселий"},
-    "ladybird": {"title":"Lady Bird","duration":95,"year":2018,"imdb":{"id":"tt4925292","rating":7.4,"votes":370020}},
     "lalka": {"title":"Lalka","duration":162,"imdb":{"id":"tt37082105","rating":7.8,"votes":755}},
     "lectureonbirdsongtrilogie": {"title":"Lecture on Birdsong Trilogie"},
     "linkinparkunshatter": {"title":"Linkin Park: Unshatter","duration":110,"year":2026,"imdb":{"id":"tt43442522","rating":8.6,"votes":899}},
@@ -168,9 +167,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"abaton","film":"ladybird","date":"2026-10-12","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/587950"},
-    {"cinema":"zeise","film":"almanyawillkommenindeutschland","date":"2026-10-12","time":"10:00","url":"https://www.zeise.de/show/465845/booking"},
-    {"cinema":"zeise","film":"emilunddiedetektive","date":"2026-10-12","time":"10:00","url":"https://www.zeise.de/show/464675/booking"},
     {"cinema":"cinemaxx-dammtor","film":"minionsundmonster","date":"2026-10-12","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001340/38904"},
     {"cinema":"kinopolis","film":"minionsundmonster","date":"2026-10-12","time":"13:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/C1160000023HXECDQG"},
     {"cinema":"city-buxtehude","film":"coyotevsacme","date":"2026-10-12","time":"13:00","screen":"City 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3673277956&bgswitch=false&resize=false"},
