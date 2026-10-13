@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T07:02:33.632Z",
+  "generatedAt": "2026-10-13T08:01:11.747Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":122},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":121},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":18},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":2},
@@ -125,7 +125,7 @@
     "macbethverdimet202627": {"title":"Macbeth - Verdi (MET 2026/27)","original":"MET 2026/27 Giuseppe Verdi: Macbeth","year":2026},
     "marsupilami": {"title":"Marsupilami","duration":99,"year":2025,"imdb":{"id":"tt33029380","rating":6.3,"votes":2101}},
     "materiaprimanewenergyoldpowers": {"title":"Materia Prima - New Energy - Old Powers","duration":89,"original":"Materia Prima"},
-    "matloobaelian": {"title":"Matloob Aelian","imdb":{"id":"tt43698551","rating":3.9,"votes":38}},
+    "matloobaelian": {"title":"Matloob Aelian","duration":92,"original":"Matloob Aaeleyan","year":2026,"imdb":{"id":"tt43698551","rating":3.9,"votes":38}},
     "meetingthebuddha": {"title":"Meeting the Buddha","duration":144,"year":2026,"imdb":{"id":"tt40249136","rating":9.3,"votes":60}},
     "meinfreunddiegiraffe": {"title":"Mein Freund, die Giraffe","duration":74,"original":"Dikkertje Dap","imdb":{"id":"tt5992202","rating":6.5,"votes":374}},
     "metopera202627macbethgiuseppeverdi": {"title":"Met Opera 2026-27: Macbeth - Giuseppe Verdi","duration":210,"original":"The Metropolitan Opera 2026/27: Macbeth"},
@@ -200,7 +200,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"abaton","film":"washabenwirgelacht","date":"2026-10-13","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/587988"},
     {"cinema":"abaton","film":"diesesbescheuerteherz","date":"2026-10-13","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/587987"},
     {"cinema":"zeise","film":"toystory5","date":"2026-10-13","time":"10:30","url":"https://www.zeise.de/show/465061/booking"},
     {"cinema":"cinestar-stade","film":"vaiana","date":"2026-10-13","time":"11:30","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116480"},
