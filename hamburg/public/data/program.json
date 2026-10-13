@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T00:01:56.709Z",
+  "generatedAt": "2026-10-13T01:01:11.920Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
@@ -139,7 +139,7 @@
     "primetime": {"title":"Primetime","duration":111,"year":2026,"imdb":{"id":"tt34206385","rating":7.1,"votes":16630}},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.6,"votes":98742}},
     "runner": {"title":"Runner","duration":98,"imdb":{"id":"tt31349844","rating":6.3,"votes":12605}},
-    "sacrifice": {"title":"Sacrifice","duration":101,"year":2025,"imdb":{"id":"tt32268992","rating":5.1,"votes":1895}},
+    "sacrifice": {"title":"Sacrifice","duration":103,"year":2026,"imdb":{"id":"tt32268992","rating":5.1,"votes":1895}},
     "sanshothebailiff": {"title":"Sansho the Bailiff","imdb":{"id":"tt0047445","rating":8.3,"votes":20219}},
     "sarahsschlussel": {"title":"Sarahs Schlüssel","duration":102,"original":"Elle s'appelait Sarah","year":2010,"imdb":{"id":"tt1668200","rating":7.5,"votes":18820}},
     "savoysneakpreview": {"title":"SAVOY Sneak-Preview","duration":90,"original":"Sneak Preview Ansbach"},
