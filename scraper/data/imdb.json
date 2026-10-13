@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-13T07:00:53.526Z",
+ "ratingsUpdated": "2026-10-13T23:00:57.261Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -71,6 +71,13 @@
    "rating": 7.6,
    "votes": 185
   },
+  "amadeo": {
+   "id": "tt11143850",
+   "title": "Amadeo",
+   "seen": "2026-10-13",
+   "rating": 5.6,
+   "votes": 171
+  },
   "andereseite": {
    "id": "tt42373658",
    "title": "Die andere Seite",
@@ -98,6 +105,13 @@
    "seen": "2026-10-13",
    "rating": 7.3,
    "votes": 103
+  },
+  "aussenabgekuhltdochvollerglutiminnern": {
+   "id": null,
+   "title": "AUßEN ABGEKÜHLT DOCH VOLLER GLUT IM INNERN",
+   "checked": "2026-10-13",
+   "attempts": 1,
+   "seen": "2026-10-13"
   },
   "badapples": {
    "id": "tt29714073",
@@ -203,6 +217,13 @@
    "title": "CineSneak - Die Überraschungspreview",
    "seen": "2026-10-13"
   },
+  "clayface": {
+   "id": null,
+   "title": "Clayface",
+   "checked": "2026-10-13",
+   "attempts": 1,
+   "seen": "2026-10-13"
+  },
   "clubdertotendichter": {
    "id": "tt0097165",
    "title": "Der Club der toten Dichter",
@@ -300,6 +321,13 @@
    "rating": 7.8,
    "votes": 9
   },
+  "einfastperfekterantrag": {
+   "id": "tt39291213",
+   "title": "Ein fast perfekter Antrag",
+   "seen": "2026-10-13",
+   "rating": 5.8,
+   "votes": 161
+  },
   "eisernewildnisheartofthebeast": {
    "id": "tt7526136",
    "title": "Eiserne Wildnis - Heart of the Beast",
@@ -320,6 +348,13 @@
    "seen": "2026-10-13",
    "rating": 7.4,
    "votes": 44
+  },
+  "empathierebellioneineliveshowvonmarkusmauthe": {
+   "id": null,
+   "title": "Die Empathie-Rebellion - eine Live-Show von Markus Mauthe",
+   "checked": "2026-10-13",
+   "attempts": 1,
+   "seen": "2026-10-13"
   },
   "enhypenvrconcertdestiny": {
    "id": null,
@@ -404,6 +439,13 @@
    "rating": 6.8,
    "votes": 210
   },
+  "girlfriends": {
+   "id": "tt0077613",
+   "title": "Girlfriends",
+   "seen": "2026-10-13",
+   "rating": 7.2,
+   "votes": 3723
+  },
   "grosseskinoderpateteili": {
    "id": null,
    "title": "Grosses Kino: Der Pate - Teil I",
@@ -445,6 +487,13 @@
    "seen": "2026-10-13",
    "rating": 7.7,
    "votes": 11655
+  },
+  "herrzwillingundfrauzuckermann": {
+   "id": "tt0202390",
+   "title": "Herr Zwilling und Frau Zuckermann",
+   "seen": "2026-10-13",
+   "rating": 8,
+   "votes": 145
   },
   "hiddensee": {
    "id": "tt43549602",
@@ -942,6 +991,26 @@
    "attempts": 1,
    "seen": "2026-10-13"
   },
+  "perfekteurlaub": {
+   "id": null,
+   "title": "Der perfekte Urlaub",
+   "checked": "2026-10-13",
+   "attempts": 1,
+   "seen": "2026-10-13"
+  },
+  "perfekteurlaubcineladypreview": {
+   "id": null,
+   "skip": true,
+   "title": "Der perfekte Urlaub - CineLady Preview",
+   "seen": "2026-10-13"
+  },
+  "perfekteurlaubproseccovorpremierecateringab1930uhr": {
+   "id": null,
+   "title": "DER PERFEKTE URLAUB - Prosecco Vorpremiere (Catering ab 19:30 Uhr)",
+   "checked": "2026-10-13",
+   "attempts": 1,
+   "seen": "2026-10-13"
+  },
   "peterchensmondfahrt": {
    "id": "tt14534992",
    "title": "Peterchens Mondfahrt",
@@ -1026,6 +1095,13 @@
    "rating": 6.5,
    "votes": 13
   },
+  "roheunddasgekochte": {
+   "id": "tt2199315",
+   "title": "Das Rohe und das Gekochte",
+   "seen": "2026-10-13",
+   "rating": 6,
+   "votes": 49
+  },
   "runner": {
    "id": "tt31349844",
    "title": "Runner",
@@ -1066,6 +1142,13 @@
    "seen": "2026-10-13",
    "rating": 7.2,
    "votes": 2499
+  },
+  "schuledermagischentiere4": {
+   "id": "tt35286242",
+   "title": "Die Schule der magischen Tiere 4",
+   "seen": "2026-10-13",
+   "rating": 5.7,
+   "votes": 382
   },
   "schwarzehauser": {
    "id": null,
@@ -1479,6 +1562,20 @@
    "seen": "2026-10-13",
    "rating": 6.8,
    "votes": 60255
+  },
+  "wunderweltenbaum": {
+   "id": "tt7734244",
+   "title": "Der Wunderweltenbaum",
+   "seen": "2026-10-13",
+   "rating": 6.2,
+   "votes": 6260
+  },
+  "yukuunddieblumedeshimalaya": {
+   "id": "tt19713112",
+   "title": "Yuku und die Blume des Himalaya",
+   "seen": "2026-10-13",
+   "rating": 6.7,
+   "votes": 202
   },
   "zauberhafteschwestern": {
    "id": "tt0120791",
