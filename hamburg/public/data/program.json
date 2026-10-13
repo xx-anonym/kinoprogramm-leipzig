@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T08:01:11.747Z",
+  "generatedAt": "2026-10-13T09:02:50.692Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":121},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":120},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":18},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":2},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":48},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":220},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":276},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":98},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":97},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":9},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":94},
@@ -76,7 +76,6 @@
     "odyssee": {"title":"Die Odyssee","duration":172,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":526880}},
     "tributevonpanemcatchingfire": {"title":"Die Tribute von Panem - Catching Fire","duration":146,"original":"The Hunger Games: Catching Fire","year":2013,"imdb":{"id":"tt1951264","rating":7.5,"votes":785052}},
     "tributevonpanemthehungergames": {"title":"Die Tribute von Panem - The Hunger Games","duration":142,"original":"The Hunger Games","year":2012,"imdb":{"id":"tt1392170","rating":7.2,"votes":1097873}},
-    "diesesbescheuerteherz": {"title":"Dieses bescheuerte Herz","duration":106,"year":2017,"imdb":{"id":"tt6175820","rating":6.9,"votes":4296}},
     "digger": {"title":"Digger","duration":129,"year":2026,"imdb":{"id":"tt31450459","rating":7.5,"votes":31342}},
     "drishyam3theconclusion": {"title":"Drishyam 3 - The Conclusion","original":"दृश्यम् 3 (hindi)","year":2026,"imdb":{"id":"tt14113634","rating":6.6,"votes":6081}},
     "drive": {"title":"Drive","duration":100,"imdb":{"id":"tt0780504","rating":7.8,"votes":776349}},
@@ -162,7 +161,7 @@
     "sovdkinohamnet": {"title":"SoVD Kino: HAMNET","duration":126},
     "soy": {"title":"Soy","imdb":{"id":"tt42886802","rating":8.8,"votes":246}},
     "spaweekend": {"title":"Spa Weekend","duration":98,"year":2026,"imdb":{"id":"tt33305867","rating":5.1,"votes":2821}},
-    "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":146,"original":"Spider-Man 4","year":2026,"imdb":{"id":"tt22084616","rating":7.9,"votes":344361}},
+    "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":150,"year":2026,"imdb":{"id":"tt22084616","rating":7.9,"votes":344361}},
     "staatsschutz": {"title":"Staatsschutz","duration":113,"year":2026,"imdb":{"id":"tt39213126","rating":7.3,"votes":451}},
     "starkefrauenfragensiedrruthenglisch": {"title":"Starke Frauen: FRAGEN SIE DR. RUTH - englisch","duration":100},
     "steckerlfischfiasko": {"title":"Steckerlfischfiasko","duration":99,"imdb":{"id":"tt38884015","rating":6.6,"votes":413}},
@@ -200,8 +199,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"abaton","film":"diesesbescheuerteherz","date":"2026-10-13","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/587987"},
-    {"cinema":"zeise","film":"toystory5","date":"2026-10-13","time":"10:30","url":"https://www.zeise.de/show/465061/booking"},
     {"cinema":"cinestar-stade","film":"vaiana","date":"2026-10-13","time":"11:30","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116480"},
     {"cinema":"cinestar-stade","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-13","time":"11:40","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116482"},
     {"cinema":"cinestar-stade","film":"shaundasschafspukimkurbisfeld","date":"2026-10-13","time":"12:00","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116478"},
