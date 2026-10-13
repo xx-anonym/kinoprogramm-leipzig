@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T01:01:00.708Z",
+  "generatedAt": "2026-10-13T02:00:56.657Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":79},
@@ -19,7 +19,7 @@
     "almamula": {"title":"Almamula","duration":96,"imdb":{"id":"tt11488252","rating":5.8,"votes":402}},
     "alteliebe": {"title":"Alte Liebe","duration":110,"imdb":{"id":"tt44112686","rating":7.4,"votes":26}},
     "alwayslalisa": {"title":"Always Lalisa","duration":100,"year":2026,"imdb":{"id":"tt37108970","rating":7.4,"votes":158}},
-    "arcoeinefantastischereisedurchdiezeiten": {"title":"Arco - Eine Fantastische Reise durch die Zeiten","duration":89,"imdb":{"id":"tt14883538","rating":7.2,"votes":9505}},
+    "arco": {"title":"Arco","duration":89,"imdb":{"id":"tt14883538","rating":7.2,"votes":9505}},
     "arnieundbarneyrettendaswasser": {"title":"Arnie & Barney - Retten das Wasser","duration":75,"original":"Arnie & Barney","year":2034,"imdb":{"id":"tt38582706","rating":7.3,"votes":103}},
     "badapples": {"title":"Bad Apples","duration":101,"imdb":{"id":"tt29714073","rating":7.1,"votes":2279}},
     "barbaraforever": {"title":"Barbara Forever","duration":102,"imdb":{"id":"tt39150008","rating":7.4,"votes":105}},
@@ -705,7 +705,7 @@
     {"cinema":"regina","film":"hope","date":"2026-10-16","time":"21:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107748"},
     {"cinema":"regina","film":"veritydunklegeheimnisse","date":"2026-10-16","time":"21:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107150"},
     {"cinema":"passage","film":"digger","date":"2026-10-16","time":"21:00","version":"OmU","screen":"Casino","url":"https://www.passage-kinos.de/digger"},
-    {"cinema":"schaubuehne","film":"getraumteabenteuer","date":"2026-10-16","time":"21:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3675142018&bgswitch=false&resize=false"},
+    {"cinema":"schaubuehne","film":"getraumteabenteuer","date":"2026-10-16","time":"21:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3675142018&bgswitch=false&resize=false"},
     {"cinema":"passage","film":"primetime","date":"2026-10-16","time":"21:15","version":"OmU","screen":"Universum","url":"https://www.passage-kinos.de/primetime"},
     {"cinema":"kinobar","film":"allyouneediskill","date":"2026-10-16","time":"21:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3669732534&bgswitch=false&resize=false"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-10-16","time":"21:15","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3681645510&bgswitch=false&resize=false"},
@@ -785,7 +785,7 @@
     {"cinema":"passage","film":"shaundasschafspukimkurbisfeld","date":"2026-10-17","time":"16:30","screen":"Wintergarten","url":"https://www.passage-kinos.de/shaun-das-schaf-spuk-im-kuerbisfeld"},
     {"cinema":"schauburg","film":"emilunddiedetektive","date":"2026-10-17","time":"16:30","url":"https://www.schauburg-leipzig.de/filmdetails/emil-und-die-detektive"},
     {"cinema":"kinobar","film":"pariswasawoman","date":"2026-10-17","time":"16:30","version":"OmU","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3669732589&bgswitch=false&resize=false"},
-    {"cinema":"schaubuehne","film":"arcoeinefantastischereisedurchdiezeiten","date":"2026-10-17","time":"16:30","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3654424858&bgswitch=false&resize=false"},
+    {"cinema":"schaubuehne","film":"arco","date":"2026-10-17","time":"16:30","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3654424858&bgswitch=false&resize=false"},
     {"cinema":"uci","film":"eisernewildnisheartofthebeast","date":"2026-10-17","time":"16:40"},
     {"cinema":"cinestar","film":"streetfighter","date":"2026-10-17","time":"16:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184195"},
     {"cinema":"schauburg","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-17","time":"16:45","url":"https://www.schauburg-leipzig.de/filmdetails/heimsuchung-eine-jahrhundertgeschichte"},
