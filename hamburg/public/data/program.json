@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T10:02:15.007Z",
+  "generatedAt": "2026-10-13T10:48:10.496Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":12},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":77},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":199},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":149},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":147},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":160},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":78}
   ],
@@ -199,8 +199,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"cinestar-stade","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-13","time":"11:40","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116482"},
-    {"cinema":"cinestar-stade","film":"shaundasschafspukimkurbisfeld","date":"2026-10-13","time":"12:00","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116478"},
     {"cinema":"cinestar-stade","film":"pawpatrolderdinofilm","date":"2026-10-13","time":"12:20","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116475"},
     {"cinema":"cinestar-stade","film":"emilunddiedetektive","date":"2026-10-13","time":"12:30","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116474"},
     {"cinema":"city-buxtehude","film":"emilunddiedetektive","date":"2026-10-13","time":"12:45","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3670936406&bgswitch=false&resize=false"},
