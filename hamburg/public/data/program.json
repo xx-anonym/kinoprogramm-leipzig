@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T23:02:14.478Z",
+  "generatedAt": "2026-10-13T00:01:56.709Z",
   "days": ["2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
@@ -57,7 +57,7 @@
     "corpusdelicti": {"title":"Corpus Delicti","duration":103,"year":2026,"imdb":{"id":"tt37804242","rating":5.9,"votes":166}},
     "coyotevsacme": {"title":"Coyote vs. Acme","duration":103,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":42235}},
     "dancingqueen": {"title":"Dancing Queen","duration":92,"year":2024,"imdb":{"id":"tt20424066","rating":6.2,"votes":293}},
-    "dingmitdenfedern": {"title":"Das Ding mit den Federn","duration":99,"original":"The Thing with Feathers"},
+    "dingmitdenfedern": {"title":"Das Ding mit den Federn","duration":99,"original":"The Thing with Feathers","imdb":{"id":"tt27773954","rating":5.6,"votes":3093}},
     "dingmitfedern": {"title":"Das Ding mit Federn","duration":99,"original":"The Thing with Feathers","imdb":{"id":"tt27773954","rating":5.6,"votes":3093}},
     "getraumteabenteuer": {"title":"Das Geträumte Abenteuer","duration":164,"year":2026,"imdb":{"id":"tt21188986","rating":6.5,"votes":253}},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":209}},
