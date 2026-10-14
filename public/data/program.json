@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:29:58.976Z",
+  "generatedAt": "2026-10-14T20:01:06.575Z",
   "days": ["2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":275},
@@ -7,7 +7,7 @@
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":235},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":236},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":174},
-    {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":61},
+    {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":58},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":25},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":22},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":34},
@@ -138,10 +138,7 @@
     {"cinema":"regina","film":"lugenubermeinemutter","date":"2026-10-14","time":"18:00","screen":"Kino 5","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105539"},
     {"cinema":"kinobar","film":"therapiefurwikinger","date":"2026-10-14","time":"18:00","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3664231402&bgswitch=false&resize=false"},
     {"cinema":"regina","film":"residentevil","date":"2026-10-14","time":"19:00","version":"OV","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105502"},
-    {"cinema":"schauburg","film":"digger","date":"2026-10-14","time":"19:00","version":"OmU","url":"https://www.schauburg-leipzig.de/filmdetails/digger-in-omdu"},
-    {"cinema":"schauburg","film":"primetime","date":"2026-10-14","time":"19:15","version":"OmU","url":"https://www.schauburg-leipzig.de/filmdetails/primetime-in-omdu"},
     {"cinema":"regina","film":"veritydunklegeheimnisse","date":"2026-10-14","time":"19:30","screen":"Kino 6","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105525"},
-    {"cinema":"schauburg","film":"alteliebe","date":"2026-10-14","time":"19:30","url":"https://www.schauburg-leipzig.de/filmdetails/alte-liebe"},
     {"cinema":"schaubuehne","film":"ninasescarlata","date":"2026-10-14","time":"19:30","version":"OmeU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3684150681&bgswitch=false&resize=false"},
     {"cinema":"regina","film":"alteliebe","date":"2026-10-14","time":"19:45","screen":"Kino 3","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105465"},
     {"cinema":"regina","film":"socialreckoning","date":"2026-10-14","time":"20:00","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1105398"},
