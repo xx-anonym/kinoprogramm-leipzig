@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T11:43:56.233Z",
+  "generatedAt": "2026-10-15T12:01:04.999Z",
   "days": ["2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":263},
-    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":214},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":262},
+    {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":212},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":232},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":217},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":169},
@@ -134,9 +134,6 @@
     {"cinema":"regina","film":"minionsundmonster","date":"2026-10-15","time":"13:00","screen":"Kino 5","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107240"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-10-15","time":"13:00","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107087"},
     {"cinema":"cinestar","film":"gewisseetwas","date":"2026-10-15","time":"13:45","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184409"},
-    {"cinema":"cineplex","film":"pawpatrolderdinofilm","date":"2026-10-15","time":"14:00","url":"https://tickets.cineplex.de/checkout/356/60920C00023FWBXJYB"},
-    {"cinema":"uci","film":"streetfighter","date":"2026-10-15","time":"14:00","url":"https://buchung.uci-kinowelt.de/?perf_id=73143000023TRMZCFD&site_id=57"},
-    {"cinema":"uci","film":"veritydunklegeheimnisse","date":"2026-10-15","time":"14:00","url":"https://buchung.uci-kinowelt.de/?perf_id=1B143000023TRMZCFD&site_id=57"},
     {"cinema":"cinestar","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-15","time":"14:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184319"},
     {"cinema":"cinestar","film":"monstermia","date":"2026-10-15","time":"14:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184313"},
     {"cinema":"regina","film":"forgottenisland","date":"2026-10-15","time":"14:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107125"},
