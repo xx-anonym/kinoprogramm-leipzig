@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T01:01:02.448Z",
+  "generatedAt": "2026-10-15T02:01:00.974Z",
   "days": ["2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
@@ -34,7 +34,7 @@
     {"id":"cineplex-elmshorn","name":"Cineplex Elmshorn","address":"Kurt-Wagener-Straße 2, 25337 Elmshorn","location":[53.7461,9.6963],"website":"https://www.cineplex.de/elmshorn/","source":"kinoheld.de","status":"ok","shows":152},
     {"id":"kts-geesthacht","name":"Kleines Theater Schillerstraße","address":"Schillerstraße 33, 21502 Geesthacht","location":[53.4332,10.3725],"website":"https://www.kts-geesthacht.de/","source":"kinoheld.de","status":"ok","shows":46},
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":11},
-    {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":69},
+    {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":70},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":177},
     {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":133},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":142},
@@ -216,6 +216,7 @@
     {"cinema":"abaton","film":"schonstemadchenderwelt","date":"2026-10-15","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588599"},
     {"cinema":"zeise","film":"alteliebe","date":"2026-10-15","time":"10:00","url":"https://www.zeise.de/show/467680/booking"},
     {"cinema":"zeise","film":"tschick","date":"2026-10-15","time":"10:00","url":"https://www.zeise.de/show/465064/booking"},
+    {"cinema":"spectrum","film":"toystory5","date":"2026-10-15","time":"10:00","url":"https://www.kinoheld.de/kino/norderstedt/spectrum-kino-center-norderstedt/vorstellung/82856"},
     {"cinema":"abaton","film":"clubdertotendichter","date":"2026-10-15","time":"12:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588593"},
     {"cinema":"abaton","film":"callmequeen","date":"2026-10-15","time":"12:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588600"},
     {"cinema":"beluga","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-15","time":"12:45","screen":"Kino 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3679615297&bgswitch=false&resize=false"},
