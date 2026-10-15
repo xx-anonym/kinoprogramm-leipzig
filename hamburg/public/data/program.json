@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T09:02:51.148Z",
+  "generatedAt": "2026-10-15T10:01:05.825Z",
   "days": ["2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":105},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":104},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":58},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -72,7 +72,6 @@
     "roheunddasgekochte": {"title":"Das Rohe und das Gekochte","duration":83,"imdb":{"id":"tt2199315","rating":6,"votes":49}},
     "verschwindendesjosefmengele": {"title":"Das Verschwinden des Josef Mengele","duration":135,"imdb":{"id":"tt22852560","rating":6.9,"votes":2108}},
     "denkdidochwatannersuttheaterveranstaltung": {"title":"Denk Di doch Wat Anners Ut Theaterveranstaltung"},
-    "clubdertotendichter": {"title":"Der Club der toten Dichter","duration":128,"original":"Dead Poets Society","imdb":{"id":"tt0097165","rating":8.1,"votes":672477}},
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":100,"year":2026},
     "perfekteurlaubcineladypreview": {"title":"Der perfekte Urlaub - CineLady Preview","duration":120},
     "perfekteurlaubproseccovorpremierecateringab1930uhr": {"title":"DER PERFEKTE URLAUB - Prosecco Vorpremiere (Catering ab 19:30 Uhr)","duration":117},
@@ -153,7 +152,7 @@
     "primetime": {"title":"Primetime","duration":111,"year":2026,"imdb":{"id":"tt34206385","rating":7.1,"votes":17705}},
     "queenbudapest": {"title":"Queen: Budapest","duration":91,"original":"Hungarian Rhapsody – Queen Live In Budapest","year":2026,"imdb":{"id":"tt0093427","rating":8.6,"votes":1499}},
     "ranabaali": {"title":"Ranabaali","original":"రణబాలి"},
-    "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない"},
+    "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.6,"votes":101943}},
     "runner": {"title":"Runner","duration":98,"imdb":{"id":"tt31349844","rating":6.3,"votes":13283}},
     "sacrifice": {"title":"Sacrifice","duration":103,"year":2026,"imdb":{"id":"tt32268992","rating":5.1,"votes":1966}},
@@ -205,7 +204,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"abaton","film":"clubdertotendichter","date":"2026-10-15","time":"12:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588593"},
     {"cinema":"abaton","film":"callmequeen","date":"2026-10-15","time":"12:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588600"},
     {"cinema":"beluga","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-15","time":"12:45","screen":"Kino 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3679615297&bgswitch=false&resize=false"},
     {"cinema":"cinemaxx-dammtor","film":"gewisseetwas","date":"2026-10-15","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001523/39245"},
