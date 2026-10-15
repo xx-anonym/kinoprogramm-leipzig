@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T08:01:02.154Z",
+  "generatedAt": "2026-10-15T09:02:51.148Z",
   "days": ["2026-10-15","2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
@@ -167,7 +167,7 @@
     "sneakpreview": {"title":"Sneak Preview","duration":90,"year":2038},
     "sneakpreview1026": {"title":"Sneak Preview 10/26","duration":110},
     "sovdkinohamnet": {"title":"SoVD Kino: HAMNET","duration":126},
-    "soy": {"title":"Soy","imdb":{"id":"tt42886802","rating":8.9,"votes":327}},
+    "soy": {"title":"Soy","duration":97,"year":2026,"imdb":{"id":"tt42886802","rating":8.9,"votes":327}},
     "spaweekend": {"title":"Spa Weekend","duration":98,"imdb":{"id":"tt33305867","rating":5.1,"votes":2844}},
     "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":150,"year":2026,"imdb":{"id":"tt22084616","rating":7.9,"votes":346508}},
     "staatsschutz": {"title":"Staatsschutz","duration":113,"year":2026,"imdb":{"id":"tt39213126","rating":7.3,"votes":457}},
