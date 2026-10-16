@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T08:01:04.112Z",
+  "generatedAt": "2026-10-16T09:03:02.532Z",
   "days": ["2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":23},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":94},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":93},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":38},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":174},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":224},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":82},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":81},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":9},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":71},
@@ -65,7 +65,7 @@
     "clayface": {"title":"Clayface","duration":108,"year":2026},
     "corpusdelicti": {"title":"Corpus Delicti","duration":103,"year":2026,"imdb":{"id":"tt37804242","rating":5.8,"votes":194}},
     "coyotevsacme": {"title":"Coyote vs. ACME","duration":103,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":43694}},
-    "dingmitdenfedern": {"title":"Das Ding mit den Federn","duration":99,"original":"The Thing with Feathers","imdb":{"id":"tt27773954","rating":5.6,"votes":3110}},
+    "dingmitdenfedern": {"title":"Das Ding mit den Federn","duration":99,"original":"The Thing with Feathers","year":2026,"imdb":{"id":"tt27773954","rating":5.6,"votes":3110}},
     "getraumteabenteuer": {"title":"Das Geträumte Abenteuer","duration":164,"year":2026,"imdb":{"id":"tt21188986","rating":6.5,"votes":265}},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":212}},
     "perfektegeheimniscinestrickeninstade": {"title":"Das perfekte Geheimnis - CineStricken in Stade"},
@@ -138,7 +138,6 @@
     "metoperamacbeth": {"title":"MET Opera: Macbeth","duration":350,"original":"The Metropolitan Opera 2026/27: Macbeth","year":2026},
     "minionsundmonster": {"title":"Minions & Monster","duration":90,"original":"Minions & Monsters","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":34931}},
     "minionsundmonsters": {"title":"Minions & Monsters","duration":90,"imdb":{"id":"tt32890033","rating":6.3,"votes":34931}},
-    "mittagsstunde": {"title":"Mittagsstunde","duration":97,"imdb":{"id":"tt21148858","rating":7,"votes":525}},
     "monstermia": {"title":"Monster Mia","duration":81,"year":2026,"imdb":{"id":"tt38807889","rating":7.6,"votes":47}},
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":99,"original":"Moscas","year":2026,"imdb":{"id":"tt35854741","rating":7.4,"votes":716}},
     "naza": {"title":"Naza","duration":80,"year":2026,"imdb":{"id":"tt44766123","rating":8.1,"votes":4212}},
@@ -203,8 +202,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"abaton","film":"mittagsstunde","date":"2026-10-16","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588641"},
-    {"cinema":"zeise","film":"emilunddiedetektive","date":"2026-10-16","time":"10:30","url":"https://www.zeise.de/show/468269/booking"},
     {"cinema":"abaton","film":"callmequeen","date":"2026-10-16","time":"12:50","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588643"},
     {"cinema":"cinemaxx-dammtor","film":"gewisseetwas","date":"2026-10-16","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001523/39487"},
     {"cinema":"kinopolis","film":"minionsundmonster","date":"2026-10-16","time":"13:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/D5260000023HXECDQG"},
