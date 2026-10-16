@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T06:01:10.836Z",
+  "generatedAt": "2026-10-16T07:01:06.264Z",
   "days": ["2026-10-16","2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":23},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":94},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":95},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":38},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":174},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":224},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":83},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":82},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":9},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":71},
@@ -45,7 +45,6 @@
     "adamsacht": {"title":"Adams Acht","duration":120,"year":2026,"imdb":{"id":"tt8758494","rating":7,"votes":147}},
     "akira": {"title":"Akira","duration":124,"year":1988,"imdb":{"id":"tt0094625","rating":8,"votes":233156}},
     "allesfurdiekatzneunlebensindnichtgenug": {"title":"Alles für die Katz - Neun Leben sind nicht genug","duration":87,"original":"10 Lives","year":2023,"imdb":{"id":"tt7959138","rating":6,"votes":2716}},
-    "allesstehtkopf2": {"title":"Alles steht Kopf 2","duration":96,"original":"Inside Out 2","year":2024,"imdb":{"id":"tt22022452","rating":7.5,"votes":262132}},
     "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":35}},
     "alwayslalisa": {"title":"Always Lalisa","duration":100,"year":2026,"imdb":{"id":"tt37108970","rating":7.8,"votes":320}},
     "amadeo": {"title":"Amadeo","duration":98,"imdb":{"id":"tt11143850","rating":5.6,"votes":171}},
@@ -152,6 +151,7 @@
     "pressure": {"title":"Pressure","duration":101,"year":2026,"imdb":{"id":"tt32547691","rating":7.3,"votes":39066}},
     "primetime": {"title":"Primetime","duration":111,"year":2026,"imdb":{"id":"tt34206385","rating":7.1,"votes":18339}},
     "queenbudapest": {"title":"Queen: Budapest","duration":91,"original":"Hungarian Rhapsody – Queen Live In Budapest","year":2026,"imdb":{"id":"tt0093427","rating":8.6,"votes":1505}},
+    "quir": {"title":"Quir","duration":105,"imdb":{"id":"tt33111867","rating":8,"votes":36}},
     "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.6,"votes":104019}},
     "runner": {"title":"Runner","duration":98,"imdb":{"id":"tt31349844","rating":6.3,"votes":13777}},
@@ -203,7 +203,6 @@
     "zwischengebauden": {"title":"Zwischen Gebäuden","duration":72}
   },
   "shows": [
-    {"cinema":"zeise","film":"allesstehtkopf2","date":"2026-10-16","time":"09:00","url":"https://www.zeise.de/show/468350/booking"},
     {"cinema":"abaton","film":"odyssee","date":"2026-10-16","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588655"},
     {"cinema":"abaton","film":"mittagsstunde","date":"2026-10-16","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588641"},
     {"cinema":"zeise","film":"emilunddiedetektive","date":"2026-10-16","time":"10:30","url":"https://www.zeise.de/show/468269/booking"},
@@ -2848,6 +2847,7 @@
     {"cinema":"magazin","film":"frauwinklerverlasstdashaus","date":"2026-10-22","time":"18:30","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"metropolis","film":"billundtedsverrucktereisedurchdiezeit","date":"2026-10-22","time":"18:30","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3654369953"},
     {"cinema":"3001","film":"desconectados2reconectados","date":"2026-10-22","time":"19:00","version":"OmeU","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/12941"},
+    {"cinema":"abaton","film":"quir","date":"2026-10-22","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589590"},
     {"cinema":"kinopolis","film":"perfekteurlaub","date":"2026-10-22","time":"19:30","url":"https://www.kinopolis.de/hh/programm/vorstellung/33D50000023HXECDQG"},
     {"cinema":"koralle","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-22","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/395072"},
     {"cinema":"cinema-paradiso","film":"cheriichkommedieerfindungderlust","date":"2026-10-22","time":"19:30","url":"http://www.kino-bargteheide.de/"},
