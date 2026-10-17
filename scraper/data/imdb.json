@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-16T23:00:53.550Z",
+ "ratingsUpdated": "2026-10-17T05:00:57.064Z",
  "films": {
   "adamsacht": {
    "id": "tt8758494",
@@ -785,6 +785,13 @@
    "checked": "2026-10-16",
    "attempts": 1,
    "seen": "2026-10-17"
+  },
+  "kengursevracakuci": {
+   "id": "tt43589731",
+   "title": "Kengur se vraca kuci",
+   "seen": "2026-10-17",
+   "rating": 2.3,
+   "votes": 179
   },
   "kirschblutenhanami": {
    "id": "tt0910559",
