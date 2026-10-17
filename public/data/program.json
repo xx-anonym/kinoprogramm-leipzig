@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-17T04:00:56.247Z",
+  "generatedAt": "2026-10-17T04:41:20.438Z",
   "days": ["2026-10-17","2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":196},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":160},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":178},
-    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":156,"since":"2026-10-17T04:00:56.247Z"},
+    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":156},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":130},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":37},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":29},
@@ -49,7 +49,7 @@
     "eisernewildnisheartofthebeast": {"title":"Eiserne Wildnis - Heart of the Beast","duration":101,"original":"Heart of the Beast","year":2026,"imdb":{"id":"tt7526136","rating":7.2,"votes":26481}},
     "elio": {"title":"Elio","duration":98,"imdb":{"id":"tt4900148","rating":6.6,"votes":48897}},
     "emilunddiedetektive": {"title":"Emil und die Detektive","duration":100,"year":2026,"imdb":{"id":"tt39381622","rating":7.5,"votes":47}},
-    "fallenangelsbynoelcoward": {"title":"Fallen Angels by Noël Coward","duration":95,"original":"Mad About the Boy: The Noël Coward Story","imdb":{"id":"tt42921285","rating":8.3,"votes":29}},
+    "fallenangelsbynoelcoward": {"title":"Fallen Angels by Noël Coward","duration":97,"original":"Fallen Angels","imdb":{"id":"tt42921285","rating":8.3,"votes":29}},
     "forgottenisland": {"title":"Forgotten Island","duration":109,"year":2026,"imdb":{"id":"tt36583977","rating":7.7,"votes":6195}},
     "frauwinklerverlasstdashaus": {"title":"Frau Winkler verlässt das Haus","duration":107,"year":2026,"imdb":{"id":"tt39400348","rating":7,"votes":42}},
     "gentlemonster": {"title":"Gentle Monster","duration":115,"imdb":{"id":"tt37020296","rating":6.7,"votes":569}},
