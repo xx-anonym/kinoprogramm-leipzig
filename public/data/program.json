@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T22:00:54.172Z",
+  "generatedAt": "2026-10-18T23:02:16.362Z",
   "days": ["2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":118},
@@ -30,7 +30,7 @@
     "chopineinesonateinparis": {"title":"Chopin - Eine Sonate in Paris","duration":115,"imdb":{"id":"tt33305572","rating":6.3,"votes":989}},
     "cinesneakdieuberraschungspreview": {"title":"CineSneak - Die Überraschungspreview"},
     "clayface": {"title":"Clayface","duration":108,"year":2026},
-    "climax": {"title":"Climax","duration":95},
+    "climax": {"title":"Climax","duration":95,"imdb":{"id":"tt8359848","rating":6.9,"votes":91608}},
     "corpusdelicti": {"title":"Corpus Delicti","duration":103,"year":2026,"imdb":{"id":"tt37804242","rating":5.8,"votes":203}},
     "coyotevsacme": {"title":"Coyote vs. Acme","duration":101,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":44352}},
     "dingmitfedern": {"title":"Das Ding mit Federn","duration":99,"original":"The Thing with Feathers","year":2026,"imdb":{"id":"tt27773954","rating":5.6,"votes":3126}},

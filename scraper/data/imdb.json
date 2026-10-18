@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-18T20:54:40.499Z",
+ "ratingsUpdated": "2026-10-18T23:00:52.727Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -140,6 +140,13 @@
    "seen": "2026-10-18",
    "rating": 7.4,
    "votes": 107
+  },
+  "barbarian": {
+   "id": "tt15791034",
+   "title": "Barbarian",
+   "seen": "2026-10-18",
+   "rating": 7,
+   "votes": 277443
   },
   "beautyofballroom": {
    "id": "tt27827068",
@@ -300,6 +307,13 @@
    "checked": "2026-10-13",
    "attempts": 1,
    "seen": "2026-10-18"
+  },
+  "climax": {
+   "id": "tt8359848",
+   "title": "Climax",
+   "seen": "2026-10-18",
+   "rating": 6.9,
+   "votes": 91608
   },
   "clubdertotendichter": {
    "id": "tt0097165",
@@ -537,12 +551,26 @@
    "rating": 7.7,
    "votes": 6508
   },
+  "fraueninberlin": {
+   "id": null,
+   "title": "Frauen in Berlin",
+   "checked": "2026-10-18",
+   "attempts": 1,
+   "seen": "2026-10-18"
+  },
   "frauwinklerverlasstdashaus": {
    "id": "tt39400348",
    "title": "Frau Winkler verlässt das Haus",
    "seen": "2026-10-18",
    "rating": 7,
    "votes": 42
+  },
+  "freeatheart": {
+   "id": "tt40204609",
+   "title": "Free at Heart",
+   "seen": "2026-10-18",
+   "rating": 7,
+   "votes": 232
   },
   "frostohneeisundschnee": {
    "id": null,
@@ -571,6 +599,13 @@
    "seen": "2026-10-18",
    "rating": 6.7,
    "votes": 589
+  },
+  "geschichtenauszwolfundeinemjahr": {
+   "id": null,
+   "title": "Geschichten aus Zwölf und einem Jahr",
+   "checked": "2026-10-18",
+   "attempts": 1,
+   "seen": "2026-10-18"
   },
   "geschlossenevorstellung": {
    "id": null,
@@ -662,6 +697,13 @@
    "seen": "2026-10-18",
    "rating": 6.2,
    "votes": 27
+  },
+  "hirschfeldunbekannterbekannter": {
+   "id": "tt39302964",
+   "title": "Hirschfeld - Unbekannter Bekannter",
+   "seen": "2026-10-18",
+   "rating": 8.3,
+   "votes": 7
   },
   "hope": {
    "id": "tt27369017",
@@ -796,7 +838,7 @@
   "jimqueen": {
    "id": "tt36955518",
    "title": "Jim Queen",
-   "seen": "2026-10-17",
+   "seen": "2026-10-18",
    "rating": 7.7,
    "votes": 1449
   },
@@ -999,6 +1041,13 @@
    "seen": "2026-10-18",
    "rating": 6.7,
    "votes": 40
+  },
+  "lookcharlotterampling": {
+   "id": "tt0331559",
+   "title": "The Look - Charlotte Rampling",
+   "seen": "2026-10-18",
+   "rating": 7.2,
+   "votes": 67
   },
   "losdomingosglaube": {
    "id": "tt35513027",
@@ -1239,6 +1288,13 @@
    "id": null,
    "title": "Ostpreussen - Entschwundene Welt",
    "checked": "2026-10-16",
+   "attempts": 1,
+   "seen": "2026-10-18"
+  },
+  "oyoyo": {
+   "id": null,
+   "title": "Oyoyo",
+   "checked": "2026-10-18",
    "attempts": 1,
    "seen": "2026-10-18"
   },
@@ -1498,6 +1554,13 @@
    "rating": 7.2,
    "votes": 49
   },
+  "segeljungsmitnullahnungumdiewelt": {
+   "id": "tt39378705",
+   "title": "Segeljungs – Mit Null Ahnung um die Welt",
+   "seen": "2026-10-18",
+   "rating": 8.4,
+   "votes": 20
+  },
   "semillasbisderregenfallt": {
    "id": "tt10460810",
    "title": "Semillas - Bis der Regen Fällt",
@@ -1511,6 +1574,13 @@
    "seen": "2026-10-16",
    "rating": 7.3,
    "votes": 2959
+  },
+  "seventeenworldtournew": {
+   "id": null,
+   "title": "Seventeen World Tour 'New_'",
+   "checked": "2026-10-18",
+   "attempts": 1,
+   "seen": "2026-10-18"
   },
   "shaundasschafspukimkurbisfeld": {
    "id": "tt36841161",
