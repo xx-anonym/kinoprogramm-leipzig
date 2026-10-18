@@ -712,7 +712,7 @@
   "hotspotnowhereinthefuture": {
    "id": "tt14119302",
    "title": "Hot Spot: Nowhere in the Future",
-   "seen": "2026-10-15",
+   "seen": "2026-10-18",
    "rating": 3.8,
    "votes": 845
   },
@@ -1219,7 +1219,7 @@
    "title": "Die Odyssee (Imax)",
    "checked": "2026-10-14",
    "attempts": 1,
-   "seen": "2026-10-15"
+   "seen": "2026-10-18"
   },
   "ohlala2neuetestsneueschaos": {
    "id": "tt36933402",
@@ -1281,6 +1281,13 @@
    "id": null,
    "skip": true,
    "title": "Der perfekte Urlaub - CineLady Preview",
+   "seen": "2026-10-18"
+  },
+  "perfekteurlaubimax": {
+   "id": null,
+   "title": "Der perfekte Urlaub (Imax)",
+   "checked": "2026-10-18",
+   "attempts": 1,
    "seen": "2026-10-18"
   },
   "perfekteurlaubproseccovorpremierecateringab1930uhr": {
@@ -1687,7 +1694,7 @@
    "title": "Street Fighter (Imax)",
    "checked": "2026-10-14",
    "attempts": 1,
-   "seen": "2026-10-15"
+   "seen": "2026-10-18"
   },
   "streetfightermxp2ddeutschmxp2d": {
    "id": null,
