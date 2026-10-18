@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T15:59:59.674Z",
+  "generatedAt": "2026-10-18T16:02:52.820Z",
   "days": ["2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":15},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":10},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":31},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":105},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":73},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":71},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":85},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":32}
   ],
@@ -247,11 +247,9 @@
     {"cinema":"beluga","film":"forgottenisland","date":"2026-10-18","time":"17:00","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3678947681&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-18","time":"17:00","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3678947627&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"adamsacht","date":"2026-10-18","time":"17:00","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3679502600&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"emilunddiedetektive","date":"2026-10-18","time":"17:10","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116781"},
     {"cinema":"beluga","film":"alteliebe","date":"2026-10-18","time":"17:15","screen":"Kino 7","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3678947725&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"frauwinklerverlasstdashaus","date":"2026-10-18","time":"17:15","screen":"Kino 6 - Arthouse","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3678947699&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"veritydunklegeheimnisse","date":"2026-10-18","time":"17:15","screen":"Kino 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3678947651&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"veritydunklegeheimnisse","date":"2026-10-18","time":"17:25","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=116775"},
     {"cinema":"beluga","film":"tributevonpanemcatchingfire","date":"2026-10-18","time":"17:30","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3658272573&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"frauwinklerverlasstdashaus","date":"2026-10-18","time":"17:30","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3679502502&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"veritydunklegeheimnisse","date":"2026-10-18","time":"17:30","screen":"Stübchen","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3679514122&bgswitch=false&resize=false"},
