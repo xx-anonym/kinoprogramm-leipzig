@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T02:02:46.179Z",
+  "generatedAt": "2026-10-18T03:01:07.561Z",
   "days": ["2026-10-18","2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
