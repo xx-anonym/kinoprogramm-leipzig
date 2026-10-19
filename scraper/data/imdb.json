@@ -29,6 +29,13 @@
    "rating": 8,
    "votes": 233265
   },
+  "aligwhoizi": {
+   "id": null,
+   "title": "Ali G: Who Iz I?",
+   "checked": "2026-10-19",
+   "attempts": 1,
+   "seen": "2026-10-19"
+  },
   "allesfurdiekatzneunlebensindnichtgenug": {
    "id": "tt7959138",
    "title": "Alles für die Katz - Neun Leben sind nicht genug",
@@ -670,6 +677,13 @@
    "attempts": 2,
    "seen": "2026-10-19"
   },
+  "gupiundderkonigdernichtlachenkann": {
+   "id": null,
+   "title": "Gupi und der König, der nicht lachen kann",
+   "checked": "2026-10-19",
+   "attempts": 1,
+   "seen": "2026-10-19"
+  },
   "halloweendienachtdesgrauens": {
    "id": "tt0077651",
    "title": "Halloween - Die Nacht des Grauens",
@@ -1107,7 +1121,7 @@
   "marsupilami": {
    "id": "tt33029380",
    "title": "Marsupilami",
-   "seen": "2026-10-18",
+   "seen": "2026-10-19",
    "rating": 6.3,
    "votes": 2202
   },
