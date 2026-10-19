@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T05:00:59.911Z",
+  "generatedAt": "2026-10-19T06:00:57.594Z",
   "days": ["2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":13},
@@ -56,7 +56,7 @@
     "bladerunnerfinalcut": {"title":"Blade Runner - Final Cut","duration":163,"original":"Blade Runner 2049","year":2017,"imdb":{"id":"tt0083658","rating":8.1,"votes":894194}},
     "bladerunner2049": {"title":"Blade Runner 2049","duration":163,"year":2017,"imdb":{"id":"tt1856101","rating":8,"votes":772662}},
     "brunoderjungekreisky": {"title":"Bruno: Der junge Kreisky","duration":91,"original":"Der junge Graf","year":1935,"imdb":{"id":"tt36472663","rating":6.6,"votes":55}},
-    "btsworldtourariranginbuenosairesliveviewing": {"title":"Bts World Tour 'Arirang' in Buenos Aires: Live Viewing","duration":180,"original":"BTS WORLD TOUR [ARIRANG] in Busan","year":2026,"imdb":{"id":"tt39950835","rating":8.7,"votes":85}},
+    "btsworldtourariranginbuenosairesliveviewing": {"title":"Bts World Tour 'Arirang' in Buenos Aires: Live Viewing","duration":195,"original":"BTS WORLD TOUR [ARIRANG] in Busan","year":2026,"imdb":{"id":"tt39950835","rating":8.7,"votes":85}},
     "callmequeen": {"title":"Call Me Queen","duration":105,"year":2026},
     "camouflage": {"title":"Camouflage","duration":102,"original":"Камуфляж","imdb":{"id":"tt37970935","rating":7.4,"votes":31}},
     "charade": {"title":"Charade","duration":113,"original":"七月初七","imdb":{"id":"tt0056923","rating":7.8,"votes":95078}},
