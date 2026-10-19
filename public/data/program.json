@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T04:00:55.503Z",
+  "generatedAt": "2026-10-19T04:55:05.205Z",
   "days": ["2026-10-19","2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":118},
@@ -24,8 +24,8 @@
     "barbaraforever": {"title":"Barbara Forever","duration":102,"imdb":{"id":"tt39150008","rating":7.4,"votes":107}},
     "bibiblocksbergdietotalverhextezeitreise": {"title":"Bibi Blocksberg - Die total verhexte Zeitreise","duration":90,"year":2026,"imdb":{"id":"tt42205677","rating":6.6,"votes":32}},
     "biermann": {"title":"Biermann","duration":120},
-    "btstourariranginbuenosairesliveviewing": {"title":"BTS Tour Arirang in Buenos Aires: Live Viewing","duration":195,"original":"BTS WORLD TOUR 'ARIRANG' IN BUENOS AIRES: LIVE VIEWING","year":2026},
-    "btsworldtourariranginbuenosairesliveviewing": {"title":"Bts World Tour 'Arirang' in Buenos Aires: Live Viewing","duration":195,"original":"BTS World Tour 'Arirang' in Japan: Live Viewing","year":2026,"imdb":{"id":"tt39950835","rating":8.7,"votes":85}},
+    "btstourariranginbuenosairesliveviewing": {"title":"BTS Tour Arirang in Buenos Aires: Live Viewing","duration":180,"original":"BTS WORLD TOUR [ARIRANG] in Busan","year":2026},
+    "btsworldtourariranginbuenosairesliveviewing": {"title":"Bts World Tour 'Arirang' in Buenos Aires: Live Viewing","duration":195,"year":2026,"imdb":{"id":"tt39950835","rating":8.7,"votes":85}},
     "checkertobi3dieheimlicheherrscherindererde": {"title":"Checker Tobi 3 – Die Heimliche Herrscherin der Erde","duration":93,"imdb":{"id":"tt39104671","rating":6.8,"votes":215}},
     "chopineinesonateinparis": {"title":"Chopin - Eine Sonate in Paris","duration":115,"imdb":{"id":"tt33305572","rating":6.3,"votes":989}},
     "cinesneakdieuberraschungspreview": {"title":"CineSneak - Die Überraschungspreview"},
