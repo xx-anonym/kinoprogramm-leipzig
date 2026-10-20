@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T08:01:03.961Z",
+  "generatedAt": "2026-10-20T08:42:44.465Z",
   "days": ["2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -15,7 +15,7 @@
     {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":24},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":96},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":52},
-    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":369},
+    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":367},
     {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":76},
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":0},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":43},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":201},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":276},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":115},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":113},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":8},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":52},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":84},
@@ -228,10 +228,6 @@
     "zauberhafteschwestern2": {"title":"Zauberhafte Schwestern 2","duration":130,"original":"Practical Magic 2","year":2026,"imdb":{"id":"tt32588798","rating":6.1,"votes":15133}}
   },
   "shows": [
-    {"cinema":"zeise","film":"shaundasschafspukimkurbisfeld","date":"2026-10-20","time":"10:15","url":"https://www.zeise.de/show/469494/booking"},
-    {"cinema":"kinopolis","film":"zauberhafteschwestern2","date":"2026-10-20","time":"10:30","url":"https://www.kinopolis.de/hh/programm/vorstellung/D4360000023HXECDQG"},
-    {"cinema":"zeise","film":"emilunddiedetektive","date":"2026-10-20","time":"10:30","url":"https://www.zeise.de/show/469518/booking"},
-    {"cinema":"kinopolis","film":"emilunddiedetektive","date":"2026-10-20","time":"10:40","url":"https://www.kinopolis.de/hh/programm/vorstellung/A2260000023HXECDQG"},
     {"cinema":"kinopolis","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-20","time":"10:45","url":"https://www.kinopolis.de/hh/programm/vorstellung/B5260000023HXECDQG"},
     {"cinema":"zeise","film":"vaterland","date":"2026-10-20","time":"10:45","url":"https://www.zeise.de/show/469581/booking"},
     {"cinema":"cinemaxx-dammtor","film":"forgottenisland","date":"2026-10-20","time":"11:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001643/39645"},
