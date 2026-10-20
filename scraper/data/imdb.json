@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-20T01:00:54.567Z",
+ "ratingsUpdated": "2026-10-20T06:00:54.729Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -25,7 +25,7 @@
   "akira": {
    "id": "tt0094625",
    "title": "Akira",
-   "seen": "2026-10-18",
+   "seen": "2026-10-20",
    "rating": 8,
    "votes": 233265
   },
@@ -642,6 +642,13 @@
    "attempts": 1,
    "seen": "2026-10-12"
   },
+  "gamesaufderleinwand4stundenbigscreen": {
+   "id": null,
+   "title": "Games auf der Leinwand: 4 Stunden - Big Screen",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
   "geheimnisdergestohlenenmaske": {
    "id": null,
    "title": "Das Geheimnis der gestohlenen Maske",
@@ -716,6 +723,13 @@
    "id": null,
    "title": "Gupi und der König, der nicht lachen kann",
    "checked": "2026-10-19",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
+  "gupivegulmeyenkral": {
+   "id": null,
+   "title": "Gupi ve Gülmeyen Kral",
+   "checked": "2026-10-20",
    "attempts": 1,
    "seen": "2026-10-20"
   },
@@ -820,6 +834,13 @@
    "skip": true,
    "title": "Horror Sneak Preview",
    "seen": "2026-10-16"
+  },
+  "hoteltranssilvanien3einmonsterurlaub": {
+   "id": "tt5220122",
+   "title": "Hotel Transsilvanien 3 - Ein Monster Urlaub",
+   "seen": "2026-10-20",
+   "rating": 6.3,
+   "votes": 103074
   },
   "hotspot": {
    "id": "tt14119302",
@@ -1321,7 +1342,7 @@
   "mutiny": {
    "id": "tt32338669",
    "title": "Mutiny",
-   "seen": "2026-10-17",
+   "seen": "2026-10-20",
    "rating": 5.7,
    "votes": 24238
   },
@@ -1474,7 +1495,7 @@
   "peterchensmondfahrt": {
    "id": "tt14534992",
    "title": "Peterchens Mondfahrt",
-   "seen": "2026-10-18",
+   "seen": "2026-10-20",
    "rating": 4.9,
    "votes": 769
   },
@@ -1816,7 +1837,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview FSK 18",
-   "seen": "2026-10-18"
+   "seen": "2026-10-20"
   },
   "socialreckoning": {
    "id": "tt37510326",
@@ -2013,6 +2034,13 @@
    "seen": "2026-10-20",
    "rating": 6.9,
    "votes": 32899
+  },
+  "titans": {
+   "id": null,
+   "title": "Titans",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
   },
   "tomorrowxtogetherworldtouracttomorrow": {
    "id": null,
