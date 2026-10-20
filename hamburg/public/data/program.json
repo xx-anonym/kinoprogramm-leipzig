@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-20T07:02:26.888Z",
+  "generatedAt": "2026-10-20T08:01:03.961Z",
   "days": ["2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":124},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":123},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":68},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":2},
@@ -87,7 +87,6 @@
     "desconectados2reconectados": {"title":"Desconectados 2: Reconectados","duration":103,"imdb":{"id":"tt36164396","rating":5.3,"votes":90}},
     "diamanti": {"title":"Diamanti","duration":135,"year":2024,"imdb":{"id":"tt32810496","rating":6.7,"votes":2917}},
     "andereseite": {"title":"Die andere Seite","duration":106,"year":2026},
-    "eichemeinzuhause": {"title":"Die Eiche - Mein Zuhause","duration":80,"original":"Le chêne","year":2022,"imdb":{"id":"tt10368758","rating":7.5,"votes":918}},
     "empathierebellioneineliveshowvonmarkusmauthe": {"title":"Die Empathie-Rebellion - eine Live-Show von Markus Mauthe"},
     "odyssee": {"title":"Die Odyssee","duration":172,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":532747}},
     "schuledermagischentiere": {"title":"Die Schule der magischen Tiere","duration":93,"year":2021,"imdb":{"id":"tt11455260","rating":5.4,"votes":1233}},
@@ -229,7 +228,6 @@
     "zauberhafteschwestern2": {"title":"Zauberhafte Schwestern 2","duration":130,"original":"Practical Magic 2","year":2026,"imdb":{"id":"tt32588798","rating":6.1,"votes":15133}}
   },
   "shows": [
-    {"cinema":"abaton","film":"eichemeinzuhause","date":"2026-10-20","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588819"},
     {"cinema":"zeise","film":"shaundasschafspukimkurbisfeld","date":"2026-10-20","time":"10:15","url":"https://www.zeise.de/show/469494/booking"},
     {"cinema":"kinopolis","film":"zauberhafteschwestern2","date":"2026-10-20","time":"10:30","url":"https://www.kinopolis.de/hh/programm/vorstellung/D4360000023HXECDQG"},
     {"cinema":"zeise","film":"emilunddiedetektive","date":"2026-10-20","time":"10:30","url":"https://www.zeise.de/show/469518/booking"},
