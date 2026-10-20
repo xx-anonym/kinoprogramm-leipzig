@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T01:02:36.816Z",
+  "generatedAt": "2026-10-20T02:01:04.315Z",
   "days": ["2026-10-20","2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -38,7 +38,7 @@
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":194},
     {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":139},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":150},
-    {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":78}
+    {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":77}
   ],
   "films": {
     "aquiethouse": {"title":"A Quiet House","imdb":{"id":"tt8332922","rating":7.2,"votes":330492}},
@@ -126,7 +126,6 @@
     "hope": {"title":"Hope","duration":160,"original":"호프","year":2026,"imdb":{"id":"tt27369017","rating":6.7,"votes":19203}},
     "hotspotnowhereinthefuture": {"title":"Hot Spot: Nowhere in the Future","duration":130,"original":"The Hot Spot","imdb":{"id":"tt14119302","rating":3.8,"votes":869}},
     "hybecheeringparty": {"title":"Hybe Cheering Party"},
-    "imtaximitmadeleine": {"title":"Im Taxi mit Madeleine","duration":91,"original":"Une belle course","year":2023,"imdb":{"id":"tt14586118","rating":7.2,"votes":4337}},
     "indenfangendesteufels": {"title":"In den Fängen des Teufels","duration":95,"original":"THE UNGUARDED MOMENT","imdb":{"id":"tt0049904","rating":6.3,"votes":619}},
     "influencacontrollingcrowds": {"title":"Influenca: Controlling Crowds"},
     "insidiousoutofthefurther": {"title":"Insidious: Out of the Further","duration":106,"year":2026,"imdb":{"id":"tt32393988","rating":6,"votes":25776}},
@@ -1220,7 +1219,6 @@
     {"cinema":"passage","film":"alteliebe","date":"2026-10-22","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7282225"},
     {"cinema":"studio","film":"sternbruckeforever","date":"2026-10-22","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/395986"},
     {"cinema":"beluga","film":"sacrifice","date":"2026-10-22","time":"18:00","screen":"Kino 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3687553081&bgswitch=false&resize=false"},
-    {"cinema":"cinemotion-winsen","film":"imtaximitmadeleine","date":"2026-10-22","time":"18:00","url":"https://www.kinoheld.de/kino/winsen/kinocenter-winsen/vorstellung/76950"},
     {"cinema":"passage","film":"chopineinesonateinparis","date":"2026-10-22","time":"18:15","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7282275"},
     {"cinema":"magazin","film":"frauwinklerverlasstdashaus","date":"2026-10-22","time":"18:30","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"metropolis","film":"billundtedsverrucktereisedurchdiezeit","date":"2026-10-22","time":"18:30","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3654369953"},
