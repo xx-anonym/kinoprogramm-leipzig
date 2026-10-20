@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-20T07:00:55.128Z",
+ "ratingsUpdated": "2026-10-20T23:00:55.713Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -148,6 +148,13 @@
    "rating": 7,
    "votes": 2552
   },
+  "barbarabuserpionierindernachhaltigkeit": {
+   "id": "tt39302471",
+   "title": "Barbara Buser - Pionierin der Nachhaltigkeit",
+   "seen": "2026-10-20",
+   "rating": 6.6,
+   "votes": 9
+  },
   "barbaraforever": {
    "id": "tt39150008",
    "title": "Barbara Forever",
@@ -203,6 +210,13 @@
    "seen": "2026-10-20",
    "rating": 6.9,
    "votes": 151246
+  },
+  "billyelliotiwilldance": {
+   "id": "tt0249462",
+   "title": "Billy Elliot - I Will Dance",
+   "seen": "2026-10-20",
+   "rating": 7.7,
+   "votes": 154268
   },
   "blackdynamite": {
    "id": "tt1190536",
@@ -295,6 +309,13 @@
    "rating": 5.8,
    "votes": 479
   },
+  "cheriichkommedieerfindungderlustseniorenkino": {
+   "id": null,
+   "title": "Chéri, ich komme! – Die Erfindung der Lust – Seniorenkino",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
   "chihirosreiseinszauberland": {
    "id": "tt0245429",
    "title": "Chihiros Reise ins Zauberland",
@@ -322,6 +343,13 @@
    "seen": "2026-10-20",
    "rating": 6,
    "votes": 26
+  },
+  "cinelutt": {
+   "id": null,
+   "title": "Cinelütt",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
   },
   "cinesneakdieuberraschungspreview": {
    "id": null,
@@ -572,6 +600,13 @@
    "rating": 5.9,
    "votes": 36
   },
+  "evildeadburn": {
+   "id": "tt31170389",
+   "title": "Evil Dead Burn",
+   "seen": "2026-10-20",
+   "rating": 6.2,
+   "votes": 58556
+  },
   "fallenangelsbynoelcoward": {
    "id": "tt42921285",
    "title": "Fallen Angels by Noël Coward",
@@ -740,6 +775,13 @@
    "rating": 7.7,
    "votes": 345718
   },
+  "haubi": {
+   "id": null,
+   "title": "Haubi",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
   "heartoflightelevensongsforfiji": {
    "id": "tt39910203",
    "title": "Heart of Light – Eleven Songs for Fiji",
@@ -796,6 +838,13 @@
    "rating": 8.3,
    "votes": 7
   },
+  "hocuspocus": {
+   "id": "tt0107120",
+   "title": "Hocus Pocus",
+   "seen": "2026-10-20",
+   "rating": 6.9,
+   "votes": 176329
+  },
   "hope": {
    "id": "tt27369017",
    "title": "Hope",
@@ -816,6 +865,13 @@
    "seen": "2026-10-12",
    "rating": 7.2,
    "votes": 88733
+  },
+  "horrordoppelmitdonisbackroomsundobsession": {
+   "id": null,
+   "title": "Horror-Doppel mit Donis: Backrooms + Obsession",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
   },
   "horrorsneak": {
    "id": null,
@@ -1043,6 +1099,13 @@
    "checked": "2026-10-18",
    "attempts": 2,
    "seen": "2026-10-18"
+  },
+  "labolanegra": {
+   "id": "tt35511966",
+   "title": "La Bola Negra",
+   "seen": "2026-10-20",
+   "rating": 8.2,
+   "votes": 7074
   },
   "lacasa": {
    "id": "tt37366525",
@@ -1346,6 +1409,13 @@
    "rating": 7.4,
    "votes": 737
   },
+  "mumie": {
+   "id": "tt0023245",
+   "title": "Die Mumie",
+   "seen": "2026-10-20",
+   "rating": 6.9,
+   "votes": 33912
+  },
   "mutiny": {
    "id": "tt32338669",
    "title": "Mutiny",
@@ -1423,6 +1493,13 @@
    "rating": 5.1,
    "votes": 643
   },
+  "ohnebetaubungbezznieczulenia": {
+   "id": null,
+   "title": "Ohne Betäubung - Bez Znieczulenia",
+   "checked": "2026-10-20",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
   "ontheroad": {
    "id": "tt37660509",
    "title": "On the Road",
@@ -1448,6 +1525,13 @@
    "id": null,
    "title": "Oyoyo",
    "checked": "2026-10-18",
+   "attempts": 1,
+   "seen": "2026-10-20"
+  },
+  "ozzyundblacksabbathbacktothebeginning": {
+   "id": null,
+   "title": "Ozzy & Black Sabbath: Back To The Beginning",
+   "checked": "2026-10-20",
    "attempts": 1,
    "seen": "2026-10-20"
   },
@@ -1526,6 +1610,13 @@
    "seen": "2026-10-20",
    "rating": 8.1,
    "votes": 602
+  },
+  "powerballaddersongmeineslebens": {
+   "id": "tt32267691",
+   "title": "Power Ballad - Der Song meines Lebens",
+   "seen": "2026-10-20",
+   "rating": 6.7,
+   "votes": 9441
   },
   "practicalmagic2zauberhafteschwestern": {
    "id": "tt32588798",
@@ -1662,6 +1753,13 @@
    "checked": "2026-10-11",
    "attempts": 1,
    "seen": "2026-10-14"
+  },
+  "rockyhorrorpictureshow": {
+   "id": "tt0073629",
+   "title": "The Rocky Horror Picture Show",
+   "seen": "2026-10-20",
+   "rating": 7.4,
+   "votes": 189077
   },
   "rodychiverwandteukromeu": {
    "id": "tt40924565",
@@ -2006,6 +2104,13 @@
    "seen": "2026-10-20",
    "rating": 7.3,
    "votes": 117212
+  },
+  "tallybrownnewyork": {
+   "id": "tt0163324",
+   "title": "Tally Brown, New York",
+   "seen": "2026-10-20",
+   "rating": 7.3,
+   "votes": 60
   },
   "taxidriver": {
    "id": "tt0075314",

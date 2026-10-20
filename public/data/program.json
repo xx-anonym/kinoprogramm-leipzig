@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T22:00:58.431Z",
+  "generatedAt": "2026-10-20T23:02:18.312Z",
   "days": ["2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":276},
@@ -67,7 +67,7 @@
     "jimqueen": {"title":"Jim Queen","duration":85,"imdb":{"id":"tt36955518","rating":7.7,"votes":1460}},
     "kalterhund": {"title":"Kalter Hund","duration":125,"imdb":{"id":"tt43550573","rating":6.8,"votes":37}},
     "karlchendasgrossegeburtstagsabenteuermeinersterkinobesuch": {"title":"Karlchen - Das große Geburtstagsabenteuer - Mein erster Kinobesuch","duration":75},
-    "labolanegra": {"title":"La Bola Negra","duration":155},
+    "labolanegra": {"title":"La Bola Negra","duration":155,"imdb":{"id":"tt35511966","rating":8.2,"votes":7074}},
     "lesungwhilbigalteabdeckerei": {"title":"Lesung W. Hilbig alte Abdeckerei","duration":60},
     "llamarseolimpia": {"title":"Llamarse Olimpia","duration":75,"imdb":{"id":"tt37952926","rating":7.6,"votes":35}},
     "london": {"title":"London","duration":122,"imdb":{"id":"tt39206699","rating":6.8,"votes":42}},
@@ -85,7 +85,7 @@
     "ozzyundblacksabbathbacktothebeginning": {"title":"Ozzy & Black Sabbath: Back To The Beginning","duration":147,"original":"Back to the Beginning: Ozzy's Final Bow","year":2025},
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":88,"original":"Paw Patrol 3","year":2026,"imdb":{"id":"tt29356163","rating":6.1,"votes":2878}},
     "peterchensmondfahrt": {"title":"Peterchens Mondfahrt","duration":81,"year":2022,"imdb":{"id":"tt14534992","rating":4.9,"votes":770}},
-    "powerballaddersongmeineslebens": {"title":"Power Ballad - Der Song meines Lebens","duration":99,"original":"Power Ballad","year":2026},
+    "powerballaddersongmeineslebens": {"title":"Power Ballad - Der Song meines Lebens","duration":99,"original":"Power Ballad","year":2026,"imdb":{"id":"tt32267691","rating":6.7,"votes":9441}},
     "primetime": {"title":"Primetime","duration":110,"imdb":{"id":"tt34206385","rating":7.1,"votes":20302}},
     "quir": {"title":"Quir","duration":105,"imdb":{"id":"tt33111867","rating":8,"votes":36}},
     "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026},
