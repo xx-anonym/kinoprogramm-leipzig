@@ -410,7 +410,9 @@ main {
 
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  /* Der Titel behält immer Platz (mind. 12rem bzw. 40 %), die Uhrzeiten höchstens zwei Drittel –
+     bei vielen Vorstellungen brechen sie in eine weitere Zeile um */
+  grid-template-columns: minmax(min(12rem, 40%), 1fr) fit-content(66%);
   gap: 6px 12px;
   align-items: start;
   padding: 9px 14px;
@@ -424,7 +426,7 @@ main {
   margin: 0;
   padding-top: 3px;
   font-weight: 600;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word; /* nur zu lange Wörter umbrechen, nie Buchstabe für Buchstabe */
 }
 
 .row-title button {
