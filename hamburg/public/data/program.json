@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:00:13.971Z",
+  "generatedAt": "2026-10-21T00:02:25.767Z",
   "days": ["2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -102,7 +102,7 @@
     "doyouloveme": {"title":"Do You Love Me","duration":75,"year":2028,"imdb":{"id":"tt12484760","rating":7.5,"votes":166}},
     "doncamilloundpepponefilmnacht": {"title":"Don Camillo & Peppone Filmnacht","duration":218},
     "doncamilloundpeppone": {"title":"Don Camillo und Peppone","duration":107,"imdb":{"id":"tt0043918","rating":7.6,"votes":5319}},
-    "edmundundluziewinterabenteuer": {"title":"Edmund und Luzie - Winterabenteuer","duration":60,"original":"Winterabenteuer mit Pettersson und Findus","year":2017},
+    "edmundundluziewinterabenteuer": {"title":"Edmund und Luzie - Winterabenteuer","duration":60,"original":"Winterabenteuer mit Pettersson und Findus","year":2017,"imdb":{"id":"tt6509214","rating":6.5,"votes":159}},
     "einfastperfekterantrag": {"title":"Ein fast perfekter Antrag","duration":105,"year":2025,"imdb":{"id":"tt39291213","rating":5.8,"votes":163}},
     "einekrankheitwieeingedicht": {"title":"Eine Krankheit wie ein Gedicht","duration":81,"year":2026},
     "eisernewildnisheartofthebeast": {"title":"Eiserne Wildnis - Heart Of The Beast","duration":101,"original":"Heart of the Beast","year":2026,"imdb":{"id":"tt7526136","rating":7.2,"votes":28770}},
@@ -176,7 +176,7 @@
     "promnight": {"title":"Prom Night","duration":92,"imdb":{"id":"tt0081383","rating":5.3,"votes":24473}},
     "querelleeinpaktmitdemteufel": {"title":"Querelle - Ein Pakt mit dem Teufel","duration":108,"imdb":{"id":"tt0084565","rating":6.6,"votes":8754}},
     "quir": {"title":"Quir","duration":105,"year":2024,"imdb":{"id":"tt33111867","rating":8,"votes":36}},
-    "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026},
+    "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026,"imdb":{"id":"tt39927807","rating":9.8,"votes":1376}},
     "rbundoballettlafillemalgardee": {"title":"RB&O - Ballett La Fille mal gardée","original":"RB&O Live 2025/26: La Fille mal gardée"},
     "rbolive202627manonroyalballet": {"title":"RBO Live 2026/27: Manon (Royal Ballet)","original":"Royal Ballet & Opera 2026/27: Manon","year":2026},
     "rbomanonroyalballetlive": {"title":"Rbo: Manon (Royal Ballet) - Live","duration":190},
