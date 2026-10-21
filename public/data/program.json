@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-21T09:00:57.588Z",
+  "generatedAt": "2026-10-21T10:00:56.700Z",
   "days": ["2026-10-21","2026-10-22","2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":268},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":238},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":227},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":225},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":213},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":161},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":53},
@@ -123,8 +123,6 @@
     {"cinema":"regina","film":"emilunddiedetektive","date":"2026-10-21","time":"10:45","screen":"Kino 5","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107179"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-10-21","time":"11:00","screen":"Kino 1","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107098"},
     {"cinema":"regina","film":"spidermanbrandnewday","date":"2026-10-21","time":"11:00","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1107139"},
-    {"cinema":"cinestar","film":"coyotevsacme","date":"2026-10-21","time":"11:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184340"},
-    {"cinema":"cinestar","film":"pawpatrolderdinofilm","date":"2026-10-21","time":"11:25","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184347"},
     {"cinema":"cinestar","film":"monstermia","date":"2026-10-21","time":"11:35","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184171"},
     {"cinema":"cinestar","film":"toystory5","date":"2026-10-21","time":"11:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184374"},
     {"cinema":"cinestar","film":"odyssee","date":"2026-10-21","time":"11:45","version":"OV","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184169"},
