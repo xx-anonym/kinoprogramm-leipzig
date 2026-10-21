@@ -97,13 +97,36 @@ export function mergeByDay(primary, supplement, { today, nowTime } = {}) {
   ];
 }
 
-/** Holt die Rohdaten eines Kinos – ggf. aus Haupt- und Ergänzungsquelle (`supplement`). */
+/**
+ * Holt die Rohdaten eines Kinos. `supplement` ergänzt tageweise (siehe mergeByDay), `fallback` springt
+ * nur ein, wenn die Hauptquelle ausfällt oder nichts liefert (z. B. Wartungsarbeiten bei CineStar).
+ * Ergebnis: { raw, fallbackReason } – fallbackReason ist der Fehler der Hauptquelle, falls ersetzt.
+ */
 async function fetchRaw(config, context, sources) {
   const fetchOne = (c) => {
     const fetcher = sources[c.type];
     if (!fetcher) throw new Error(`Unbekannte Quelle "${c.type}"`);
     return fetcher(c, context);
   };
+  if (!config.fallback) return { raw: await fetchPrimary(config, context, fetchOne), fallbackReason: null };
+  let reason;
+  try {
+    const raw = await fetchPrimary(config, context, fetchOne);
+    if (raw.length) return { raw, fallbackReason: null };
+    reason = new Error('keine Vorstellungen');
+  } catch (err) {
+    reason = err;
+  }
+  try {
+    const raw = await fetchOne(config.fallback);
+    console.warn(`${config.type} ausgefallen (${errorMessage(reason)}), nutze ${config.fallback.type}`);
+    return { raw, fallbackReason: reason };
+  } catch {
+    throw reason; // beide ausgefallen: der Fehler der Hauptquelle ist der aussagekräftigere
+  }
+}
+
+async function fetchPrimary(config, context, fetchOne) {
   if (!config.supplement) return fetchOne(config);
   const [main, extra] = await Promise.allSettled([fetchOne(config), fetchOne(config.supplement)]);
   if (main.status === 'rejected' && extra.status === 'rejected') throw main.reason;
@@ -181,7 +204,8 @@ export async function collect({
       source: [cinema.source, cinema.source.supplement].filter(Boolean).map(label).join(' + '),
     };
     try {
-      const raw = await fetchRaw(cinema.source, context, sources);
+      const { raw, fallbackReason } = await fetchRaw(cinema.source, context, sources);
+      if (fallbackReason) base.source = `${label(cinema.source.fallback)} (Ersatz – ${label(cinema.source)} nicht erreichbar)`;
       const shows = normalizeShows(raw, cinema.id, days);
       // Gar nichts gefunden, obwohl beim letzten Abruf noch kommende Vorstellungen angekündigt waren?
       // Dann hat sich vermutlich die Webseite geändert – lieber die alten Daten behalten und Alarm

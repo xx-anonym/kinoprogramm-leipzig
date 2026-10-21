@@ -32,7 +32,8 @@ export const CINEMAS = [
     address: 'Petersstraße 44, 04109 Leipzig',
     location: [51.3375, 12.3748],
     website: 'https://www.cinestar.de/kino-leipzig',
-    source: { type: 'cinestar', cinemaId: 33 },
+    // Fällt die CineStar-API aus (z. B. Wartungsarbeiten), springt kinoheld ein
+    source: { type: 'cinestar', cinemaId: 33, fallback: { type: 'kinoheld', cinemaId: '341' } },
   },
   {
     id: 'regina',

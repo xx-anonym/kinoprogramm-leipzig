@@ -282,3 +282,44 @@ test('Tageweises Zusammenführen zählt heute nur kommende Vorstellungen', () =>
   const merged = mergeByDay(main, extra, { today: TODAY, nowTime: '18:30' });
   assert.deepEqual(merged, main, 'Gleichstand bei den kommenden → Hauptquelle mit Ticket-Link');
 });
+
+test('Ersatzquelle springt ein, wenn die Hauptquelle ausfällt', async () => {
+  const cinema = { ...cinemas[0], source: { type: 'main', fallback: { type: 'spare' } } };
+  let spareCalls = 0;
+  const spare = async () => {
+    spareCalls++;
+    return [{ date: TODAY, time: '20:00', title: 'Hope', url: 'https://tickets.example/9' }];
+  };
+  const now = new Date(`${TODAY}T10:00:00Z`);
+
+  // Hauptquelle in Wartung → Ersatz, Kino gilt als aktuell
+  const down = await collect({
+    today: TODAY,
+    cinemas: [cinema],
+    sources: { main: async () => { throw new Error('HTTP 404'); }, spare },
+    now,
+  });
+  assert.equal(down.cinemas[0].status, 'ok');
+  assert.match(down.cinemas[0].source, /^spare \(Ersatz – main nicht erreichbar\)$/);
+  assert.equal(down.shows.length, 1);
+
+  // Hauptquelle liefert → Ersatz wird gar nicht gefragt
+  const up = await collect({
+    today: TODAY,
+    cinemas: [cinema],
+    sources: { main: async () => [{ date: TODAY, time: '18:00', title: 'Hope' }], spare },
+    now,
+  });
+  assert.equal(up.cinemas[0].source, 'main');
+  assert.equal(spareCalls, 1);
+
+  // Beide aus → Fehler der Hauptquelle
+  const both = await collect({
+    today: TODAY,
+    cinemas: [cinema],
+    sources: { main: async () => { throw new Error('HTTP 404'); }, spare: async () => { throw new Error('HTTP 500'); } },
+    now,
+  });
+  assert.equal(both.cinemas[0].status, 'error');
+  assert.match(both.cinemas[0].message, /HTTP 404/);
+});

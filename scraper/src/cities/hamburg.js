@@ -291,7 +291,8 @@ export const CINEMAS = [
     address: 'Kommandantendeich 1-3, 21680 Stade',
     location: [53.6021, 9.4801],
     website: 'https://www.cinestar.de/kino-stade',
-    source: { type: 'cinestar', cinemaId: 47 },
+    // Fällt die CineStar-API aus (z. B. Wartungsarbeiten), springt kinoheld ein
+    source: { type: 'cinestar', cinemaId: 47, fallback: { type: 'kinoheld', cinemaId: '334' } },
   },
   {
     id: 'burgkino',

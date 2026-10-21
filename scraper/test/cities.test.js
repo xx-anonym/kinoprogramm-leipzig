@@ -19,7 +19,7 @@ test('Jede Stadt hat vollständige Kinoeinträge mit bekannten Quellen', () => {
       // Koordinaten in Deutschland
       const [lat, lon] = cinema.location ?? [];
       assert.ok(lat > 47 && lat < 55.1 && lon > 5.8 && lon < 15.1, `${where}: location fehlt oder liegt nicht in Deutschland`);
-      for (const source of [cinema.source, cinema.source.supplement].filter(Boolean)) {
+      for (const source of [cinema.source, cinema.source.supplement, cinema.source.fallback].filter(Boolean)) {
         assert.ok(SOURCES[source.type], `${where}: unbekannte Quelle ${source.type}`);
         const needs = { kinoheld: 'cinemaId', cinetixx: 'cinemaId', cinestar: 'cinemaId', kinozeit: 'url', ical: 'url', cineprog: 'url' };
         if (needs[source.type]) assert.ok(source[needs[source.type]], `${where}: ${needs[source.type]} fehlt`);

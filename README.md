@@ -206,7 +206,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 2. Nutzt das Kino ein bekanntes System (kinoheld, Cinetixx, CineStar, cineprog, iCal, kino-zeit.de),
    reicht die passende `source`-Angabe – die kinoheld-Nummer eines Kinos verrät die kinoheld-API
    (Abfrage `cinemas(search: "…")`). Mit `supplement` lässt sich eine zweite Quelle angeben, die
-   Tage ergänzt, die der ersten noch fehlen (siehe UCI). Sonst ein neues Modul in
+   Tage ergänzt, die der ersten noch fehlen (siehe UCI); `fallback` springt nur ein, wenn die erste
+   ausfällt (siehe CineStar: bei Wartungsarbeiten übernimmt kinoheld). Sonst ein neues Modul in
    `scraper/src/sources/` schreiben und in `scraper/src/index.js` unter `SOURCES` eintragen.
 
 ## Eine weitere Stadt
