@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-22T12:06:15.468Z",
+ "ratingsUpdated": "2026-10-22T23:00:56.308Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -141,6 +141,13 @@
    "attempts": 2,
    "seen": "2026-10-21"
   },
+  "backrooms": {
+   "id": "tt26657236",
+   "title": "Backrooms",
+   "seen": "2026-10-22",
+   "rating": 6.7,
+   "votes": 233533
+  },
   "badapples": {
    "id": "tt29714073",
    "title": "Bad Apples",
@@ -244,6 +251,13 @@
    "seen": "2026-10-22",
    "rating": 8.1,
    "votes": 894656
+  },
+  "blutgerichtintexas": {
+   "id": "tt0072271",
+   "title": "Blutgericht in Texas",
+   "seen": "2026-10-22",
+   "rating": 7.4,
+   "votes": 218023
   },
   "blutgrafin": {
    "id": "tt28151657",
@@ -460,6 +474,13 @@
    "rating": 7.5,
    "votes": 41250
   },
+  "dingauseineranderenwelt": {
+   "id": "tt0084787",
+   "title": "Das Ding aus einer anderen Welt",
+   "seen": "2026-10-22",
+   "rating": 8.2,
+   "votes": 539535
+  },
   "dingmitdenfedern": {
    "id": "tt27773954",
    "title": "Das Ding mit den Federn",
@@ -634,6 +655,13 @@
    "rating": 6.2,
    "votes": 59365
   },
+  "ezo1dasbloodpanzerprojekt": {
+   "id": null,
+   "title": "EZO-1 – Das Blood Panzer Projekt",
+   "checked": "2026-10-22",
+   "attempts": 1,
+   "seen": "2026-10-22"
+  },
   "fallenangelsbynoelcoward": {
    "id": "tt42921285",
    "title": "Fallen Angels by Noël Coward",
@@ -696,6 +724,13 @@
    "checked": "2026-10-19",
    "attempts": 2,
    "seen": "2026-10-20"
+  },
+  "furzfilmprogramm": {
+   "id": null,
+   "title": "Das Furz-Film-Programm",
+   "checked": "2026-10-22",
+   "attempts": 1,
+   "seen": "2026-10-22"
   },
   "gabrieletergitpreisfurmutigenlokaljournalismus": {
    "id": null,
@@ -1382,6 +1417,13 @@
    "rating": 6.5,
    "votes": 374
   },
+  "metalunaivantwortetnicht": {
+   "id": "tt0047577",
+   "title": "Metaluna IV Antwortet nicht",
+   "seen": "2026-10-22",
+   "rating": 5.9,
+   "votes": 11623
+  },
   "metopera202627macbethgiuseppeverdi": {
    "id": null,
    "skip": true,
@@ -1830,12 +1872,26 @@
    "attempts": 1,
    "seen": "2026-10-14"
   },
+  "robocop": {
+   "id": "tt0093870",
+   "title": "Robocop",
+   "seen": "2026-10-22",
+   "rating": 7.6,
+   "votes": 313690
+  },
   "rockyhorrorpictureshow": {
    "id": "tt0073629",
    "title": "The Rocky Horror Picture Show",
    "seen": "2026-10-22",
    "rating": 7.4,
    "votes": 189138
+  },
+  "rockyhorrorpictureshow1": {
+   "id": null,
+   "title": "The Rocky Horror Picture Show1",
+   "checked": "2026-10-22",
+   "attempts": 1,
+   "seen": "2026-10-22"
   },
   "rodychiverwandteukromeu": {
    "id": "tt40924565",
@@ -1983,6 +2039,13 @@
    "attempts": 1,
    "seen": "2026-10-22"
   },
+  "silasschautbeetlejuice": {
+   "id": null,
+   "title": "Silas schaut BEETLEJUICE",
+   "checked": "2026-10-22",
+   "attempts": 1,
+   "seen": "2026-10-22"
+  },
   "sinnundsinnlichkeit": {
    "id": "tt13609648",
    "title": "Sinn und Sinnlichkeit",
@@ -2003,6 +2066,13 @@
    "seen": "2026-10-18",
    "rating": 7,
    "votes": 20
+  },
+  "snakecharmer": {
+   "id": "tt9359394",
+   "title": "The Snake Charmer",
+   "seen": "2026-10-22",
+   "rating": 7.3,
+   "votes": 47
   },
   "sneak": {
    "id": null,
@@ -2258,12 +2328,26 @@
    "rating": 6.9,
    "votes": 32905
   },
+  "tierischgruselig": {
+   "id": "tt18362178",
+   "title": "Tierisch gruselig",
+   "seen": "2026-10-22",
+   "rating": 5.9,
+   "votes": 101
+  },
   "titans": {
    "id": null,
    "title": "Titans",
    "checked": "2026-10-20",
    "attempts": 1,
    "seen": "2026-10-22"
+  },
+  "todesking": {
+   "id": "tt0098486",
+   "title": "Der Todesking",
+   "seen": "2026-10-22",
+   "rating": 6.3,
+   "votes": 3256
   },
   "tomorrowxtogetherworldtouracttomorrow": {
    "id": null,
@@ -2568,6 +2652,13 @@
    "skip": true,
    "title": "Zeise Shortfilm Slam",
    "seen": "2026-10-16"
+  },
+  "zombie": {
+   "id": "tt0077402",
+   "title": "Zombie",
+   "seen": "2026-10-22",
+   "rating": 7.8,
+   "votes": 138058
   },
   "zustandundgelande": {
    "id": "tt11573800",

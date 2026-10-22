@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T22:00:57.307Z",
+  "generatedAt": "2026-10-22T23:02:23.360Z",
   "days": ["2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":202},
@@ -38,7 +38,7 @@
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":220}},
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":100,"year":2026},
     "spaziergangnachsyrakus": {"title":"Der Spaziergang nach Syrakus","duration":97,"imdb":{"id":"tt43598697","rating":6.9,"votes":147}},
-    "todesking": {"title":"Der Todesking"},
+    "todesking": {"title":"Der Todesking","imdb":{"id":"tt0098486","rating":6.3,"votes":3256}},
     "andereseite": {"title":"Die andere Seite","duration":106,"imdb":{"id":"tt42373658","rating":6.2,"votes":26}},
     "odyssee": {"title":"Die Odyssee","duration":173,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":534260}},
     "tributevonpanemmockingjayteil1": {"title":"Die Tribute von Panem - Mockingjay Teil 1","duration":245,"original":"The Hunger Games: Mockingjay - Part 1"},
@@ -98,7 +98,7 @@
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":13053}},
     "teenagesexunddeathatcampmiasma": {"title":"Teenage Sex & Death at Camp Miasma"},
     "rockyhorrorpictureshow": {"title":"The Rocky Horror Picture Show","duration":100,"year":1975,"imdb":{"id":"tt0073629","rating":7.4,"votes":189138}},
-    "snakecharmer": {"title":"The Snake Charmer","duration":81},
+    "snakecharmer": {"title":"The Snake Charmer","duration":81,"imdb":{"id":"tt9359394","rating":7.3,"votes":47}},
     "socialreckoning": {"title":"The Social Reckoning","duration":120,"year":2026,"imdb":{"id":"tt37510326","rating":6.7,"votes":8392}},
     "toystory5": {"title":"Toy Story 5","duration":102,"year":2026,"imdb":{"id":"tt29355505","rating":7.3,"votes":102379}},
     "twilightbisszummorgengrauen": {"title":"Twilight - Biss zum Morgengrauen","duration":122,"imdb":{"id":"tt1099212","rating":5.4,"votes":537287}},
