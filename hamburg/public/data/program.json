@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T04:01:04.994Z",
+  "generatedAt": "2026-10-23T05:01:03.248Z",
   "days": ["2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -8,7 +8,7 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":50},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":36},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":243},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":241},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":187},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":131},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":16},
@@ -2882,7 +2882,6 @@
     {"cinema":"uci-wandsbek","film":"whalefall","date":"2026-10-28","time":"23:10","url":"https://buchung.uci-kinowelt.de/?perf_id=644E3000023CYUQWGE&site_id=54"},
     {"cinema":"zeise","film":"shaundasschafspukimkurbisfeld","date":"2026-10-29","time":"10:00","url":"https://www.zeise.de/show/470258/booking"},
     {"cinema":"zeise","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-29","time":"10:30","url":"https://www.zeise.de/show/470234/booking"},
-    {"cinema":"cinemaxx-dammtor","film":"tomorrowxtogetherworldtouracttomorrow","date":"2026-10-29","time":"14:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001587/37445"},
     {"cinema":"uci-mundsburg","film":"perfekteurlaub","date":"2026-10-29","time":"14:00","url":"https://buchung.uci-kinowelt.de/?perf_id=88B53000023NYFRLEA&site_id=52"},
     {"cinema":"uci-wandsbek","film":"perfekteurlaub","date":"2026-10-29","time":"14:00","url":"https://buchung.uci-kinowelt.de/?perf_id=A4ED3000023CYUQWGE&site_id=54"},
     {"cinema":"burgkino","film":"seniorenkinoamrum","date":"2026-10-29","time":"15:00","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3415408684&bgswitch=false&resize=false"},
@@ -2897,7 +2896,6 @@
     {"cinema":"magazin","film":"shaundasschafspukimkurbisfeld","date":"2026-10-29","time":"18:00","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"metropolis","film":"strangejourneythestoryofrockyhorror","date":"2026-10-29","time":"19:00","version":"OV","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3654375948"},
     {"cinema":"zeise","film":"lieblingsfilmherrderringediegefahrtenextendedversion","date":"2026-10-29","time":"19:00","url":"https://www.zeise.de/show/461302/booking"},
-    {"cinema":"cinemaxx-dammtor","film":"ozzyundblacksabbathbacktothebeginning","date":"2026-10-29","time":"19:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001654/37216"},
     {"cinema":"uci-wandsbek","film":"seventeenworldtournew","date":"2026-10-29","time":"19:30","url":"https://buchung.uci-kinowelt.de/?perf_id=B11E3000023CYUQWGE&site_id=54"},
     {"cinema":"kts-geesthacht","film":"heldin","date":"2026-10-29","time":"19:30","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1351094445&showId=3681572372&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"hakelbuddelclubzauberhafteschwestern2","date":"2026-10-29","time":"19:30","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3662083533&bgswitch=false&resize=false"},
