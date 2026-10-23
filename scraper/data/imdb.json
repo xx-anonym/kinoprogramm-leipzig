@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-23T14:00:57.449Z",
+ "ratingsUpdated": "2026-10-23T23:00:53.733Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -14,6 +14,13 @@
    "seen": "2026-10-23",
    "rating": 6.9,
    "votes": 157
+  },
+  "afterlives": {
+   "id": "tt38119342",
+   "title": "Afterlives",
+   "seen": "2026-10-23",
+   "rating": 7.1,
+   "votes": 7
   },
   "aguirrederzorngottes": {
    "id": "tt0068182",
@@ -140,6 +147,13 @@
    "checked": "2026-10-20",
    "attempts": 2,
    "seen": "2026-10-21"
+  },
+  "ausverkauft13magazinkultfilmnachttherockyhorrorpictureshow": {
+   "id": "tt1267299",
+   "title": "AUSVERKAUFT – 13. MAGAZIN Kultfilmnacht: The Rocky Horror Picture Show",
+   "seen": "2026-10-23",
+   "rating": 4.2,
+   "votes": 8302
   },
   "backrooms": {
    "id": "tt26657236",
@@ -287,12 +301,33 @@
    "attempts": 1,
    "seen": "2026-10-23"
   },
+  "btstourariranginsaopauloliveviewing": {
+   "id": null,
+   "title": "BTS Tour Arirang in São Paulo: Live Viewing",
+   "checked": "2026-10-23",
+   "attempts": 1,
+   "seen": "2026-10-23"
+  },
   "btsworldtourariranginbuenosairesliveviewing": {
    "id": "tt39950835",
    "title": "Bts World Tour 'Arirang' in Buenos Aires: Live Viewing",
    "seen": "2026-10-23",
    "rating": 8.7,
    "votes": 86
+  },
+  "btsworldtourariranginsaopaulolive": {
+   "id": null,
+   "title": "Bts World Tour 'Arirang' in São Paulo: Live",
+   "checked": "2026-10-23",
+   "attempts": 1,
+   "seen": "2026-10-23"
+  },
+  "btsworldtourariranginsaopauloliveviewing": {
+   "id": null,
+   "title": "Bts World Tour 'Arirang' in São Paulo: Live Viewing",
+   "checked": "2026-10-23",
+   "attempts": 1,
+   "seen": "2026-10-23"
   },
   "callmebyyourname": {
    "id": "tt5726616",
@@ -364,6 +399,13 @@
    "attempts": 1,
    "seen": "2026-10-23"
   },
+  "christine1984": {
+   "id": "tt0085333",
+   "title": "Christine 1984",
+   "seen": "2026-10-23",
+   "rating": 6.8,
+   "votes": 104642
+  },
   "chuzalongo": {
    "id": "tt27730778",
    "title": "Chuzalongo",
@@ -415,7 +457,7 @@
   "cocolebendigeralsdasleben": {
    "id": "tt2380307",
    "title": "Coco - Lebendiger als das Leben!",
-   "seen": "2026-10-18",
+   "seen": "2026-10-23",
    "rating": 8.4,
    "votes": 731679
   },
@@ -452,6 +494,13 @@
    "seen": "2026-10-22",
    "rating": 5.3,
    "votes": 90
+  },
+  "devils": {
+   "id": "tt0066993",
+   "title": "The Devils",
+   "seen": "2026-10-23",
+   "rating": 7.7,
+   "votes": 23916
   },
   "diamanti": {
    "id": "tt32810496",
@@ -585,6 +634,13 @@
    "seen": "2026-10-21",
    "rating": 5.8,
    "votes": 163
+  },
+  "eisernerosefriedhofdertotenseelen": {
+   "id": null,
+   "title": "Die Eiserne Rose – Friedhof der Toten Seelen",
+   "checked": "2026-10-23",
+   "attempts": 1,
+   "seen": "2026-10-23"
   },
   "eisernewildnisheartofthebeast": {
    "id": "tt7526136",
@@ -854,7 +910,14 @@
   "halloweendienachtdesgrauens": {
    "id": "tt0077651",
    "title": "Halloween - Die Nacht des Grauens",
-   "seen": "2026-10-17",
+   "seen": "2026-10-23",
+   "rating": 7.7,
+   "votes": 345978
+  },
+  "halloweendienachtdesgrauens4k": {
+   "id": "tt0077651",
+   "title": "Halloween - Die Nacht des Grauens (4K)",
+   "seen": "2026-10-23",
    "rating": 7.7,
    "votes": 345978
   },
@@ -892,6 +955,13 @@
    "seen": "2026-10-23",
    "rating": 7.7,
    "votes": 11809
+  },
+  "herrderringe1": {
+   "id": "tt0120737",
+   "title": "Der Herr der Ringe 1",
+   "seen": "2026-10-23",
+   "rating": 8.9,
+   "votes": 2246908
   },
   "herrderwelt": {
    "id": "tt0025244",
@@ -1177,6 +1247,13 @@
    "rating": 6.6,
    "votes": 980
   },
+  "kultfilmnachmittagforkidsderkleinevampir": {
+   "id": "tt4729560",
+   "title": "Kultfilmnachmittag for Kids: Der kleine Vampir",
+   "seen": "2026-10-23",
+   "rating": 5.5,
+   "votes": 2191
+  },
   "kunstkinobreathingearthsusumushingustraum": {
    "id": null,
    "title": "KunstKino: BREATHING EARTH - SUSUMU SHINGUS TRAUM",
@@ -1253,6 +1330,13 @@
    "rating": 6.5,
    "votes": 175613
   },
+  "latenightzusatzvorstellungtherockyhorrorpictureshow": {
+   "id": "tt0073629",
+   "title": "Late Night Zusatzvorstellung – THE ROCKY HORROR PICTURE SHOW",
+   "seen": "2026-10-23",
+   "rating": 7.4,
+   "votes": 189182
+  },
   "lavoieroyale": {
    "id": "tt27372066",
    "title": "La Voie Royale",
@@ -1280,6 +1364,12 @@
    "seen": "2026-10-15",
    "rating": 5.2,
    "votes": 52
+  },
+  "lesungjoebauschliveimbelugakino": {
+   "id": null,
+   "skip": true,
+   "title": "LESUNG - JOE BAUSCH live im Beluga Kino",
+   "seen": "2026-10-23"
   },
   "lesungwhilbigalteabdeckerei": {
    "id": null,
@@ -1561,6 +1651,13 @@
    "seen": "2026-10-23",
    "rating": 7.8,
    "votes": 49
+  },
+  "nofx40yearsoffuckinup": {
+   "id": "tt40644918",
+   "title": "NOFX: 40 Years of Fuckin' Up",
+   "seen": "2026-10-23",
+   "rating": 7.8,
+   "votes": 130
   },
   "nostalghia": {
    "id": "tt0086022",
@@ -1948,6 +2045,13 @@
    "title": "SAVOY Sneak-Preview",
    "seen": "2026-10-23"
   },
+  "scannersihregedankenkonnentoten": {
+   "id": "tt0081455",
+   "title": "Scanners - Ihre Gedanken können Töten",
+   "seen": "2026-10-23",
+   "rating": 6.7,
+   "votes": 68775
+  },
   "schonstemadchenderwelt": {
    "id": "tt7776838",
    "title": "Das schönste Mädchen der Welt",
@@ -2180,6 +2284,13 @@
    "seen": "2026-10-23",
    "rating": 7.3,
    "votes": 480
+  },
+  "starcrash": {
+   "id": "tt0079946",
+   "title": "Star Crash",
+   "seen": "2026-10-23",
+   "rating": 4,
+   "votes": 9016
   },
   "starkefrauenfragensiedrruthenglisch": {
    "id": null,
@@ -2577,6 +2688,13 @@
    "rating": 7.1,
    "votes": 69709
   },
+  "westworld": {
+   "id": "tt0070909",
+   "title": "Westworld",
+   "seen": "2026-10-23",
+   "rating": 6.9,
+   "votes": 68389
+  },
   "whalefall": {
    "id": "tt28535715",
    "title": "Whalefall",
@@ -2604,6 +2722,13 @@
    "seen": "2026-10-23",
    "rating": 6.1,
    "votes": 12
+  },
+  "wildwood": {
+   "id": "tt2056785",
+   "title": "Wildwood",
+   "seen": "2026-10-23",
+   "rating": 8.7,
+   "votes": 763
   },
   "wirdiewolfs": {
    "id": "tt37211795",
@@ -2673,6 +2798,13 @@
    "seen": "2026-10-23",
    "rating": 7.8,
    "votes": 138075
+  },
+  "zombie2dayofthedead": {
+   "id": "tt0088993",
+   "title": "Zombie 2 - Day of the Dead",
+   "seen": "2026-10-23",
+   "rating": 7.1,
+   "votes": 80919
   },
   "zustandundgelande": {
    "id": "tt11573800",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T22:01:17.664Z",
+  "generatedAt": "2026-10-23T23:02:18.434Z",
   "days": ["2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":163},
@@ -58,7 +58,7 @@
     "forgottenisland": {"title":"Forgotten Island","duration":109,"year":2026,"imdb":{"id":"tt36583977","rating":7.7,"votes":7187}},
     "frauwinklerverlasstdashaus": {"title":"Frau Winkler verlässt das Haus","duration":108,"year":2026,"imdb":{"id":"tt39400348","rating":7,"votes":47}},
     "gamesaufderleinwand4stundenbigscreen": {"title":"Games auf der Leinwand: 4 Stunden - Big Screen","duration":240},
-    "halloweendienachtdesgrauens4k": {"title":"Halloween - Die Nacht des Grauens (4K)","duration":91},
+    "halloweendienachtdesgrauens4k": {"title":"Halloween - Die Nacht des Grauens (4K)","duration":91,"imdb":{"id":"tt0077651","rating":7.7,"votes":345978}},
     "heimsuchungeinejahrhundertgeschichte": {"title":"Heimsuchung - Eine Jahrhundertgeschichte","duration":120,"imdb":{"id":"tt38805050","rating":6.9,"votes":127}},
     "hiddensee": {"title":"Hiddensee","duration":117,"imdb":{"id":"tt43549602","rating":6.2,"votes":27}},
     "hope": {"title":"Hope","duration":160,"original":"호프","year":2026,"imdb":{"id":"tt27369017","rating":6.6,"votes":22201}},
@@ -99,7 +99,7 @@
     "staatsschutz": {"title":"Staatsschutz","duration":113,"imdb":{"id":"tt39213126","rating":7.3,"votes":480}},
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":14156}},
     "teenagesexunddeathatcampmiasma": {"title":"Teenage Sex & Death at Camp Miasma"},
-    "devils": {"title":"The Devils","duration":111},
+    "devils": {"title":"The Devils","duration":111,"imdb":{"id":"tt0066993","rating":7.7,"votes":23916}},
     "rockyhorrorpictureshow": {"title":"The Rocky Horror Picture Show","duration":100,"year":1975,"imdb":{"id":"tt0073629","rating":7.4,"votes":189182}},
     "snakecharmer": {"title":"The Snake Charmer","duration":81,"imdb":{"id":"tt9359394","rating":7.3,"votes":47}},
     "socialreckoning": {"title":"The Social Reckoning","duration":120,"year":2026,"imdb":{"id":"tt37510326","rating":6.7,"votes":8650}},
@@ -113,8 +113,8 @@
     "whalefall": {"title":"Whalefall","duration":98,"year":2026,"imdb":{"id":"tt28535715","rating":6.7,"votes":6716}},
     "wherethewavestookher": {"title":"Where the Waves Took Her"},
     "whistleblower": {"title":"Whistleblower","duration":95},
-    "wildwood": {"title":"Wildwood","duration":139,"year":2026},
-    "zombie2dayofthedead": {"title":"Zombie 2 - Day of the Dead","duration":96,"original":"Day of the Dead","year":1985}
+    "wildwood": {"title":"Wildwood","duration":139,"year":2026,"imdb":{"id":"tt2056785","rating":8.7,"votes":763}},
+    "zombie2dayofthedead": {"title":"Zombie 2 - Day of the Dead","duration":96,"original":"Day of the Dead","year":1985,"imdb":{"id":"tt0088993","rating":7.1,"votes":80919}}
   },
   "shows": [
     {"cinema":"cineplex","film":"gamesaufderleinwand4stundenbigscreen","date":"2026-10-24","time":"10:00","url":"https://tickets.cineplex.de/checkout/356/07F50C00023FWBXJYB"},
