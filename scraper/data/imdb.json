@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-23T11:50:35.510Z",
+ "ratingsUpdated": "2026-10-23T14:00:57.449Z",
  "films": {
   "absolutegiganten": {
    "id": "tt0177507",
@@ -794,6 +794,13 @@
    "seen": "2026-10-23",
    "rating": 7.2,
    "votes": 3725
+  },
+  "glaube": {
+   "id": "tt35513027",
+   "title": "Glaube",
+   "seen": "2026-10-23",
+   "rating": 7.3,
+   "votes": 5609
   },
   "grosseskinoderpateteili": {
    "id": null,
