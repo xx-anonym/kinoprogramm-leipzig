@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T07:01:04.190Z",
+  "generatedAt": "2026-10-23T08:01:04.629Z",
   "days": ["2026-10-23","2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":93},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":92},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":50},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -75,7 +75,6 @@
     "corpusdelicti": {"title":"Corpus Delicti","duration":103,"year":2026,"imdb":{"id":"tt37804242","rating":5.8,"votes":222}},
     "coyotevsacme": {"title":"Coyote vs. ACME","duration":101,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":45848}},
     "dingauseineranderenwelt": {"title":"Das Ding aus einer anderen Welt","duration":108,"original":"The Thing","year":1982,"imdb":{"id":"tt0084787","rating":8.2,"votes":539535}},
-    "fliegendeklassenzimmer": {"title":"Das fliegende Klassenzimmer","duration":88,"year":2023,"imdb":{"id":"tt26342655","rating":5.4,"votes":271}},
     "furzfilmprogramm": {"title":"Das Furz-Film-Programm"},
     "geheimnisdergestohlenenmaske": {"title":"Das Geheimnis der Gestohlenen Maske","duration":100},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":220}},
@@ -236,7 +235,6 @@
     "zombie": {"title":"Zombie","duration":118,"original":"DAWN OF THE DEAD","imdb":{"id":"tt0077402","rating":7.8,"votes":138058}}
   },
   "shows": [
-    {"cinema":"abaton","film":"fliegendeklassenzimmer","date":"2026-10-23","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589537"},
     {"cinema":"kinopolis","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-23","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/5C360000023HXECDQG"},
     {"cinema":"kinopolis","film":"emilunddiedetektive","date":"2026-10-23","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/D8360000023HXECDQG"},
     {"cinema":"kinopolis","film":"toystory5","date":"2026-10-23","time":"10:20","url":"https://www.kinopolis.de/hh/programm/vorstellung/52460000023HXECDQG"},
