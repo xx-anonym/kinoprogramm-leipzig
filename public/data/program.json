@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-24T19:01:09.262Z",
+  "generatedAt": "2026-10-24T20:01:04.021Z",
   "days": ["2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":126},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":125},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":130},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":89},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":122},
@@ -81,7 +81,7 @@
     "peterchensmondfahrt": {"title":"Peterchens Mondfahrt","duration":81,"year":2022,"imdb":{"id":"tt14534992","rating":4.9,"votes":770}},
     "powerballaddersongmeineslebens": {"title":"Power Ballad - Der Song meines Lebens","duration":99,"original":"Power Ballad","year":2026,"imdb":{"id":"tt32267691","rating":6.7,"votes":9540}},
     "primetime": {"title":"Primetime","duration":110,"year":2026,"imdb":{"id":"tt34206385","rating":7.1,"votes":21537}},
-    "queensofthedead": {"title":"Queens of the Dead","duration":99,"imdb":{"id":"tt32986431","rating":5.3,"votes":2304}},
+    "queensofthedead": {"title":"Queens of the Dead","duration":101,"imdb":{"id":"tt32986431","rating":5.3,"votes":2304}},
     "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026,"imdb":{"id":"tt39927807","rating":9.6,"votes":1669}},
     "rascaldoesnotdreamofadearfriendcineanime": {"title":"Rascal Does Not Dream of a Dear Friend - CineAnime","duration":118,"imdb":{"id":"tt39927807","rating":9.6,"votes":1669}},
     "rbo2627manonroyalballet": {"title":"RBO 26/27: Manon (Royal Ballet)","original":"Royal Ballet & Opera 2026/27: Manon","year":2026},
@@ -158,7 +158,6 @@
     {"cinema":"regina","film":"streetfighter","date":"2026-10-24","time":"20:45","screen":"Kino 2","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1108035"},
     {"cinema":"regina","film":"aquiethouse","date":"2026-10-24","time":"21:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1108096"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-10-24","time":"21:30","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3690958870&bgswitch=false&resize=false"},
-    {"cinema":"cineplex","film":"hope","date":"2026-10-24","time":"22:00","url":"https://tickets.cineplex.de/checkout/356/9DF50C00023FWBXJYB"},
     {"cinema":"cinestar","film":"hope","date":"2026-10-24","time":"22:05","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184609"},
     {"cinema":"cineplex","film":"perfekteurlaub","date":"2026-10-24","time":"22:15","url":"https://tickets.cineplex.de/checkout/356/14F50C00023FWBXJYB"},
     {"cinema":"cineplex","film":"digger","date":"2026-10-24","time":"22:15","url":"https://tickets.cineplex.de/checkout/356/0AF50C00023FWBXJYB"},
