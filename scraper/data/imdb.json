@@ -1,6 +1,13 @@
 {
- "ratingsUpdated": "2026-10-24T19:01:06.294Z",
+ "ratingsUpdated": "2026-10-24T23:00:56.539Z",
  "films": {
+  "25jahrederherrderringeextendedtriple": {
+   "id": null,
+   "title": "25 Jahre DER HERR DER RINGE – Extended Triple",
+   "checked": "2026-10-24",
+   "attempts": 1,
+   "seen": "2026-10-24"
+  },
   "absolutegiganten": {
    "id": "tt0177507",
    "title": "Absolute Giganten",
@@ -14,6 +21,13 @@
    "seen": "2026-10-24",
    "rating": 7,
    "votes": 158
+  },
+  "addamsfamily": {
+   "id": "tt0101272",
+   "title": "Addams Family",
+   "seen": "2026-10-24",
+   "rating": 7,
+   "votes": 204328
   },
   "afterlives": {
    "id": "tt38119342",
@@ -725,6 +739,20 @@
    "rating": 8.2,
    "votes": 49
   },
+  "fantastischemrfox": {
+   "id": "tt0432283",
+   "title": "Der Fantastische Mr. Fox",
+   "seen": "2026-10-24",
+   "rating": 7.9,
+   "votes": 312441
+  },
+  "flashgordon": {
+   "id": "tt0080745",
+   "title": "Flash Gordon",
+   "seen": "2026-10-24",
+   "rating": 6.5,
+   "votes": 67265
+  },
   "fliegendeklassenzimmer": {
    "id": "tt26342655",
    "title": "Das fliegende Klassenzimmer",
@@ -759,6 +787,13 @@
    "seen": "2026-10-24",
    "rating": 7,
    "votes": 48
+  },
+  "frechstetrollderwelt": {
+   "id": "tt33334564",
+   "title": "Der frechste Troll der Welt",
+   "seen": "2026-10-24",
+   "rating": 6.5,
+   "votes": 70
   },
   "freeatheart": {
    "id": "tt40204609",
@@ -963,6 +998,13 @@
    "rating": 8.9,
    "votes": 2247312
   },
+  "herrderringediegefahrtensondervorstellung": {
+   "id": null,
+   "title": "Herr der Ringe - die Gefährten Sondervorstellung",
+   "checked": "2026-10-24",
+   "attempts": 1,
+   "seen": "2026-10-24"
+  },
   "herrderwelt": {
    "id": "tt0025244",
    "title": "Der Herr der Welt",
@@ -1142,6 +1184,20 @@
    "attempts": 2,
    "seen": "2026-10-24"
   },
+  "jakzyczebyniezwariowac": {
+   "id": null,
+   "title": "Jak zyc, zeby nie zwariowac",
+   "checked": "2026-10-24",
+   "attempts": 1,
+   "seen": "2026-10-24"
+  },
+  "jeannedielman": {
+   "id": "tt0073198",
+   "title": "Jeanne Dielman",
+   "seen": "2026-10-24",
+   "rating": 7.5,
+   "votes": 17997
+  },
   "jedermannundich": {
    "id": null,
    "title": "Jedermann und Ich",
@@ -1233,12 +1289,26 @@
    "rating": 5.8,
    "votes": 79
   },
+  "klaraandthesun": {
+   "id": "tt14371256",
+   "title": "Klara and the Sun",
+   "seen": "2026-10-24",
+   "rating": 6,
+   "votes": 500
+  },
   "kleinegespenst": {
    "id": "tt2186566",
    "title": "Das kleine Gespenst",
    "seen": "2026-10-24",
    "rating": 5.6,
    "votes": 773
+  },
+  "kleineprinz": {
+   "id": "tt1754656",
+   "title": "Der kleine Prinz",
+   "seen": "2026-10-24",
+   "rating": 7.6,
+   "votes": 72611
   },
   "kuhlewampeoderwemgehortdiewelt": {
    "id": "tt0023104",
@@ -1466,6 +1536,13 @@
    "title": "Macbeth - Verdi (MET 2026/27)",
    "seen": "2026-10-17"
   },
+  "magazinfilmkunstundkulturinwinterhudealshamburgnachmehrenergiesuchtehhhistorischmitdrjoachimpaschen": {
+   "id": null,
+   "title": "MAGAZIN Filmkunst&Kultur in Winterhude – Als Hamburg nach mehr Energie suchte HH historisch mit Dr.Joachim Paschen",
+   "checked": "2026-10-24",
+   "attempts": 1,
+   "seen": "2026-10-24"
+  },
   "mannauseisen": {
    "id": null,
    "title": "Der Mann aus Eisen",
@@ -1492,6 +1569,13 @@
    "seen": "2026-10-24",
    "rating": 7.5,
    "votes": 8
+  },
+  "maternityward": {
+   "id": null,
+   "title": "The Maternity Ward",
+   "checked": "2026-10-24",
+   "attempts": 1,
+   "seen": "2026-10-24"
   },
   "matloobaelian": {
    "id": "tt43698551",
@@ -1658,6 +1742,13 @@
    "seen": "2026-10-24",
    "rating": 7.8,
    "votes": 130
+  },
+  "nosferatueinesymphoniedesgrauens": {
+   "id": "tt0013442",
+   "title": "Nosferatu - Eine Symphonie des Grauens",
+   "seen": "2026-10-24",
+   "rating": 7.8,
+   "votes": 124937
   },
   "nostalghia": {
    "id": "tt0086022",
@@ -1853,6 +1944,13 @@
    "seen": "2026-10-24",
    "rating": 7.3,
    "votes": 40560
+  },
+  "prettywoman": {
+   "id": "tt0100405",
+   "title": "Pretty Woman",
+   "seen": "2026-10-24",
+   "rating": 7.1,
+   "votes": 413664
   },
   "primetime": {
    "id": "tt34206385",
@@ -2376,6 +2474,13 @@
    "rating": 7.1,
    "votes": 1468
   },
+  "supermanivdieweltamabgrund": {
+   "id": "tt0094074",
+   "title": "Superman IV – Die Welt am Abgrund",
+   "seen": "2026-10-24",
+   "rating": 3.8,
+   "votes": 58412
+  },
   "suspiria": {
    "id": "tt0076786",
    "title": "Suspiria",
@@ -2411,6 +2516,20 @@
    "attempts": 1,
    "seen": "2026-10-24"
   },
+  "tetsuotheironman": {
+   "id": "tt0096251",
+   "title": "Tetsuo: The Iron Man",
+   "seen": "2026-10-24",
+   "rating": 6.9,
+   "votes": 29709
+  },
+  "teufel": {
+   "id": "tt0066993",
+   "title": "Die Teufel",
+   "seen": "2026-10-24",
+   "rating": 7.7,
+   "votes": 24112
+  },
   "teufeldirectorscut": {
    "id": "tt0066993",
    "title": "Die Teufel - Director's Cut",
@@ -2428,7 +2547,7 @@
   "thatswhytheladyisachamp": {
    "id": "tt32323252",
    "title": "That's Why The Lady Is A Champ",
-   "seen": "2026-10-19",
+   "seen": "2026-10-24",
    "rating": 6.6,
    "votes": 19551
   },
@@ -2502,12 +2621,26 @@
    "attempts": 2,
    "seen": "2026-10-24"
   },
+  "tributevonpanemmockingjayteil2": {
+   "id": "tt1951266",
+   "title": "Die Tribute von Panem - Mockingjay Teil 2",
+   "seen": "2026-10-24",
+   "rating": 6.6,
+   "votes": 423743
+  },
   "tributevonpanemthehungergames": {
    "id": "tt1392170",
    "title": "Tribute von Panem - The Hunger Games",
    "seen": "2026-10-14",
    "rating": 7.2,
    "votes": 1099204
+  },
+  "trilogieherrderringeteil13extendedversion": {
+   "id": "tt0120737",
+   "title": "Trilogie Herr der Ringe Teil 1-3 (Extended Version)",
+   "seen": "2026-10-24",
+   "rating": 8.9,
+   "votes": 2247312
   },
   "tschick": {
    "id": "tt4911940",

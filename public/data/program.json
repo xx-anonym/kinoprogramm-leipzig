@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T22:01:00.316Z",
+  "generatedAt": "2026-10-24T23:02:21.618Z",
   "days": ["2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":118},
@@ -16,7 +16,7 @@
   "films": {
     "25jahrederherrderringeextendedtriple": {"title":"25 Jahre DER HERR DER RINGE – Extended Triple"},
     "aquiethouse": {"title":"A Quiet House","year":2026,"imdb":{"id":"tt8332922","rating":7.2,"votes":330780}},
-    "addamsfamily": {"title":"Addams Family","duration":99},
+    "addamsfamily": {"title":"Addams Family","duration":99,"imdb":{"id":"tt0101272","rating":7,"votes":204328}},
     "afterlives": {"title":"Afterlives","duration":91},
     "aligwhoizi": {"title":"Ali G: Who Iz I?"},
     "alteliebe": {"title":"Alte Liebe","duration":110,"imdb":{"id":"tt44112686","rating":7.6,"votes":51}},
@@ -41,8 +41,8 @@
     "dingmitfedern": {"title":"Das Ding mit Federn","duration":99,"original":"The Thing with Feathers","year":2026,"imdb":{"id":"tt27773954","rating":5.6,"votes":3152}},
     "geheimnisdergestohlenenmaske": {"title":"Das Geheimnis der gestohlenen Maske","duration":100,"year":2026},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":221}},
-    "fantastischemrfox": {"title":"Der Fantastische Mr. Fox","duration":86},
-    "frechstetrollderwelt": {"title":"Der frechste Troll der Welt","duration":79,"original":"Krølle Bølle"},
+    "fantastischemrfox": {"title":"Der Fantastische Mr. Fox","duration":86,"imdb":{"id":"tt0432283","rating":7.9,"votes":312441}},
+    "frechstetrollderwelt": {"title":"Der frechste Troll der Welt","duration":79,"original":"Krølle Bølle","imdb":{"id":"tt33334564","rating":6.5,"votes":70}},
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":100,"year":2026},
     "spaziergangnachsyrakus": {"title":"Der Spaziergang nach Syrakus","duration":97,"imdb":{"id":"tt43598697","rating":6.9,"votes":149}},
     "todesking": {"title":"Der Todesking","imdb":{"id":"tt0098486","rating":6.3,"votes":3256}},
@@ -68,7 +68,7 @@
     "jimqueen": {"title":"Jim Queen","duration":85,"imdb":{"id":"tt36955518","rating":7.7,"votes":1477}},
     "kalterhund": {"title":"Kalter Hund","duration":125,"imdb":{"id":"tt43550573","rating":6.8,"votes":37}},
     "karlchendasgrossegeburtstagsabenteuermeinersterkinobesuch": {"title":"Karlchen - Das große Geburtstagsabenteuer - Mein erster Kinobesuch","duration":75},
-    "klaraandthesun": {"title":"Klara and the Sun","duration":116},
+    "klaraandthesun": {"title":"Klara and the Sun","duration":116,"imdb":{"id":"tt14371256","rating":6,"votes":500}},
     "labolanegra": {"title":"La Bola Negra","duration":155,"imdb":{"id":"tt35511966","rating":8.2,"votes":7842}},
     "london": {"title":"London","duration":122,"imdb":{"id":"tt39206699","rating":6.7,"votes":45}},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":101,"imdb":{"id":"tt36985296","rating":7.2,"votes":51}},
