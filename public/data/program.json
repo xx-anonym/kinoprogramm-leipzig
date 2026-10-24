@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-24T20:59:29.794Z",
+  "generatedAt": "2026-10-24T21:01:00.615Z",
   "days": ["2026-10-24","2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":119},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":118},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":130},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":87},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":122},
@@ -160,7 +160,6 @@
     {"cinema":"cinestar","film":"streetfighter","date":"2026-10-24","time":"22:35","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184608"},
     {"cinema":"cinestar","film":"clayface","date":"2026-10-24","time":"22:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184606"},
     {"cinema":"cinestar","film":"residentevil","date":"2026-10-24","time":"22:55","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184607"},
-    {"cinema":"cineplex","film":"aquiethouse","date":"2026-10-24","time":"23:00","url":"https://tickets.cineplex.de/checkout/356/96F50C00023FWBXJYB"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-10-24","time":"23:05","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183131"},
     {"cinema":"cinestar","film":"insidiousoutofthefurther","date":"2026-10-24","time":"23:10","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184617"},
     {"cinema":"cineplex","film":"arnieundbarneyrettendaswasser","date":"2026-10-25","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/2BF50C00023FWBXJYB"},
