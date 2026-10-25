@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:58:46.466Z",
+  "generatedAt": "2026-10-25T21:00:57.237Z",
   "days": ["2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":13},
@@ -15,7 +15,7 @@
     {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":16},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":36},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":18},
-    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":159},
+    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":157},
     {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":65},
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":22},
@@ -287,8 +287,6 @@
     {"cinema":"beluga","film":"streetfighter","date":"2026-10-25","time":"20:30","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3687546463&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"veritydunklegeheimnisse","date":"2026-10-25","time":"20:30","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3687546573&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"veritydunklegeheimnisse","date":"2026-10-25","time":"20:30","screen":"Saal 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3688527011&bgswitch=false&resize=false"},
-    {"cinema":"kinopolis","film":"clayface","date":"2026-10-25","time":"22:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/8C460000023HXECDQG"},
-    {"cinema":"kinopolis","film":"streetfighter","date":"2026-10-25","time":"22:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/AA460000023HXECDQG"},
     {"cinema":"cinemaxx-dammtor","film":"odyssee","date":"2026-10-25","time":"22:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001480/40275"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-10-25","time":"22:15","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/40312"},
     {"cinema":"kinopolis","film":"residentevil","date":"2026-10-25","time":"22:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/56460000023HXECDQG"},
