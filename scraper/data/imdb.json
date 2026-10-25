@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-24T23:00:56.539Z",
+ "ratingsUpdated": "2026-10-25T19:01:00.163Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -13,21 +13,21 @@
    "title": "Absolute Giganten",
    "seen": "2026-10-25",
    "rating": 7.5,
-   "votes": 5255
+   "votes": 5256
   },
   "adamsacht": {
    "id": "tt8758494",
    "title": "Adams Acht",
    "seen": "2026-10-25",
    "rating": 7,
-   "votes": 158
+   "votes": 159
   },
   "addamsfamily": {
    "id": "tt0101272",
    "title": "Addams Family",
    "seen": "2026-10-25",
    "rating": 7,
-   "votes": 204328
+   "votes": 204402
   },
   "afterlives": {
    "id": "tt38119342",
@@ -41,14 +41,14 @@
    "title": "Aguirre der Zorn Gottes",
    "seen": "2026-10-13",
    "rating": 7.7,
-   "votes": 69422
+   "votes": 69429
   },
   "akira": {
    "id": "tt0094625",
    "title": "Akira",
    "seen": "2026-10-25",
    "rating": 8,
-   "votes": 233380
+   "votes": 233414
   },
   "aligwhoizi": {
    "id": null,
@@ -62,21 +62,21 @@
    "title": "Alles für die Katz - Neun Leben sind nicht genug",
    "seen": "2026-10-18",
    "rating": 6,
-   "votes": 2721
+   "votes": 2724
   },
   "allesstehtkopf2": {
    "id": "tt22022452",
    "title": "Alles steht Kopf 2",
    "seen": "2026-10-16",
    "rating": 7.5,
-   "votes": 262633
+   "votes": 262696
   },
   "allyouneediskill": {
    "id": "tt36148135",
    "title": "All You Need Is Kill",
    "seen": "2026-10-21",
    "rating": 6.5,
-   "votes": 1754
+   "votes": 1757
   },
   "almamula": {
    "id": "tt11488252",
@@ -97,14 +97,14 @@
    "title": "Alte Liebe",
    "seen": "2026-10-25",
    "rating": 7.6,
-   "votes": 51
+   "votes": 53
   },
   "alwayslalisa": {
    "id": "tt37108970",
    "title": "Always Lalisa",
    "seen": "2026-10-17",
    "rating": 7.9,
-   "votes": 432
+   "votes": 434
   },
   "amadeo": {
    "id": "tt11143850",
@@ -117,29 +117,29 @@
    "id": "tt42373658",
    "title": "Die andere Seite",
    "seen": "2026-10-25",
-   "rating": 6.4,
-   "votes": 28
+   "rating": 6,
+   "votes": 32
   },
   "aquiethouse": {
    "id": "tt8332922",
    "title": "A Quiet House",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 330780
+   "votes": 330806
   },
   "arco": {
    "id": "tt14883538",
    "title": "Arco",
    "seen": "2026-10-17",
    "rating": 7.2,
-   "votes": 9612
+   "votes": 9621
   },
   "arcoeinefantastischereisedurchdiezeiten": {
    "id": "tt14883538",
    "title": "Arco - Eine Fantastische Reise durch die Zeiten",
    "seen": "2026-10-13",
    "rating": 7.2,
-   "votes": 9612
+   "votes": 9621
   },
   "arnieundbarneyrettendaswasser": {
    "id": "tt38582706",
@@ -167,21 +167,21 @@
    "title": "AUSVERKAUFT – 13. MAGAZIN Kultfilmnacht: The Rocky Horror Picture Show",
    "seen": "2026-10-25",
    "rating": 4.2,
-   "votes": 8303
+   "votes": 8304
   },
   "backrooms": {
    "id": "tt26657236",
    "title": "Backrooms",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 234960
+   "votes": 235832
   },
   "badapples": {
    "id": "tt29714073",
    "title": "Bad Apples",
    "seen": "2026-10-25",
    "rating": 6.8,
-   "votes": 4132
+   "votes": 4488
   },
   "barbarabuserpionierindernachhaltigkeit": {
    "id": "tt39302471",
@@ -202,7 +202,7 @@
    "title": "Barbarian",
    "seen": "2026-10-25",
    "rating": 7,
-   "votes": 278372
+   "votes": 278537
   },
   "beautyofballroom": {
    "id": "tt27827068",
@@ -222,15 +222,15 @@
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
    "seen": "2026-10-25",
-   "rating": 6.5,
-   "votes": 40
+   "rating": 6.4,
+   "votes": 41
   },
   "bibiblocksbergdietotalverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg - Die total verhexte Zeitreise",
    "seen": "2026-10-25",
-   "rating": 6.5,
-   "votes": 40
+   "rating": 6.4,
+   "votes": 41
   },
   "biermann": {
    "id": null,
@@ -244,14 +244,14 @@
    "title": "Bill & Teds Verrückte Reise durch die Zeit",
    "seen": "2026-10-22",
    "rating": 6.9,
-   "votes": 151284
+   "votes": 151296
   },
   "billyelliotiwilldance": {
    "id": "tt0249462",
    "title": "Billy Elliot - I Will Dance",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 154320
+   "votes": 154329
   },
   "bingosneakpreview": {
    "id": null,
@@ -264,49 +264,49 @@
    "title": "Black Dynamite",
    "seen": "2026-10-23",
    "rating": 7.4,
-   "votes": 54949
+   "votes": 54956
   },
   "bladerunner2049": {
    "id": "tt1856101",
    "title": "Blade Runner 2049",
    "seen": "2026-10-25",
    "rating": 8,
-   "votes": 773462
+   "votes": 773550
   },
   "bladerunnerfinalcut": {
    "id": "tt0083658",
    "title": "Blade Runner - Final Cut",
    "seen": "2026-10-24",
    "rating": 8.1,
-   "votes": 894828
+   "votes": 894896
   },
   "blutgerichtintexas": {
    "id": "tt0072271",
    "title": "Blutgericht in Texas",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 218174
+   "votes": 218255
   },
   "blutgrafin": {
    "id": "tt28151657",
    "title": "Die Blutgräfin",
    "seen": "2026-10-25",
    "rating": 5.4,
-   "votes": 181
+   "votes": 182
   },
   "bobtrevinolikesit": {
    "id": "tt28613536",
    "title": "Bob Trevino Likes It",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 8717
+   "votes": 8720
   },
   "brunoderjungekreisky": {
    "id": "tt36472663",
    "title": "BRUNO - Der junge Kreisky",
    "seen": "2026-10-25",
    "rating": 6.6,
-   "votes": 66
+   "votes": 69
   },
   "btstourariranginbuenosairesliveviewing": {
    "id": null,
@@ -348,7 +348,7 @@
    "title": "Call me by your Name",
    "seen": "2026-10-14",
    "rating": 7.8,
-   "votes": 365996
+   "votes": 366044
   },
   "callmequeen": {
    "id": "tt10499972",
@@ -361,7 +361,7 @@
    "id": "tt37970935",
    "title": "Camouflage",
    "seen": "2026-10-25",
-   "rating": 7.5,
+   "rating": 7.4,
    "votes": 34
   },
   "charade": {
@@ -369,21 +369,21 @@
    "title": "Charade",
    "seen": "2026-10-25",
    "rating": 7.8,
-   "votes": 95143
+   "votes": 95154
   },
   "checkertobi3dieheimlicheherrscherindererde": {
    "id": "tt39104671",
    "title": "Checker Tobi 3 – Die Heimliche Herrscherin der Erde",
    "seen": "2026-10-22",
    "rating": 6.8,
-   "votes": 215
+   "votes": 217
   },
   "cheriichkommedieerfindungderlust": {
    "id": "tt38607784",
    "title": "Chéri, ich komme! - Die Erfindung der Lust",
    "seen": "2026-10-22",
    "rating": 5.8,
-   "votes": 480
+   "votes": 481
   },
   "cheriichkommedieerfindungderlustseniorenkino": {
    "id": null,
@@ -397,14 +397,14 @@
    "title": "Chihiros Reise ins Zauberland",
    "seen": "2026-10-17",
    "rating": 8.6,
-   "votes": 990749
+   "votes": 990932
   },
   "chopineinesonateinparis": {
    "id": "tt33305572",
    "title": "Chopin - Eine Sonate in Paris",
    "seen": "2026-10-25",
    "rating": 6.3,
-   "votes": 1011
+   "votes": 1019
   },
   "chopineinesonateinparisimpolnischenfranzoriginalmitdeutschenuntertiteln": {
    "id": null,
@@ -418,7 +418,7 @@
    "title": "Christine 1984",
    "seen": "2026-10-25",
    "rating": 6.8,
-   "votes": 104665
+   "votes": 104701
   },
   "chuzalongo": {
    "id": "tt27730778",
@@ -459,35 +459,35 @@
    "title": "Climax",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 91710
+   "votes": 91717
   },
   "clubdertotendichter": {
    "id": "tt0097165",
    "title": "Der Club der toten Dichter",
    "seen": "2026-10-15",
    "rating": 8.1,
-   "votes": 673708
+   "votes": 673874
   },
   "cocolebendigeralsdasleben": {
    "id": "tt2380307",
    "title": "Coco - Lebendiger als das Leben!",
    "seen": "2026-10-25",
    "rating": 8.4,
-   "votes": 731889
+   "votes": 731962
   },
   "corpusdelicti": {
    "id": "tt37804242",
    "title": "Corpus Delicti",
    "seen": "2026-10-25",
    "rating": 5.9,
-   "votes": 232
+   "votes": 233
   },
   "coyotevsacme": {
    "id": "tt1756855",
    "title": "Coyote vs. Acme",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 46277
+   "votes": 46456
   },
   "dancingqueen": {
    "id": "tt20424066",
@@ -514,56 +514,56 @@
    "title": "The Devils",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 24112
+   "votes": 24251
   },
   "diamanti": {
    "id": "tt32810496",
    "title": "Diamanti",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 2921
+   "votes": 2922
   },
   "diesesbescheuerteherz": {
    "id": "tt6175820",
    "title": "Dieses bescheuerte Herz",
    "seen": "2026-10-13",
    "rating": 6.9,
-   "votes": 4303
+   "votes": 4304
   },
   "digger": {
    "id": "tt31450459",
    "title": "Digger",
    "seen": "2026-10-25",
    "rating": 7.5,
-   "votes": 42380
+   "votes": 42908
   },
   "dingauseineranderenwelt": {
    "id": "tt0084787",
    "title": "Das Ding aus einer anderen Welt",
    "seen": "2026-10-25",
    "rating": 8.2,
-   "votes": 539828
+   "votes": 539917
   },
   "dingmitdenfedern": {
    "id": "tt27773954",
    "title": "Das Ding mit den Federn",
    "seen": "2026-10-19",
    "rating": 5.6,
-   "votes": 3152
+   "votes": 3155
   },
   "dingmitfedern": {
    "id": "tt27773954",
    "title": "Das Ding mit Federn",
    "seen": "2026-10-25",
    "rating": 5.6,
-   "votes": 3152
+   "votes": 3155
   },
   "doncamilloundpeppone": {
    "id": "tt0043918",
    "title": "Don Camillo und Peppone",
    "seen": "2026-10-24",
    "rating": 7.6,
-   "votes": 5322
+   "votes": 5323
   },
   "doncamilloundpepponefilmnacht": {
    "id": null,
@@ -598,21 +598,21 @@
    "title": "Drishyam 3 - The Conclusion",
    "seen": "2026-10-17",
    "rating": 6.6,
-   "votes": 6222
+   "votes": 6231
   },
   "drishyamtheconclusion": {
    "id": "tt27050858",
    "title": "Drishyam: The Conclusion",
    "seen": "2026-10-17",
    "rating": 7.7,
-   "votes": 7222
+   "votes": 7270
   },
   "drive": {
    "id": "tt0780504",
    "title": "Drive",
    "seen": "2026-10-13",
    "rating": 7.8,
-   "votes": 777160
+   "votes": 777202
   },
   "edmundundluziewinterabenteuer": {
    "id": "tt6509214",
@@ -661,14 +661,14 @@
    "title": "Eiserne Wildnis - Heart of the Beast",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 30202
+   "votes": 30601
   },
   "elio": {
    "id": "tt4900148",
    "title": "Elio",
    "seen": "2026-10-20",
    "rating": 6.6,
-   "votes": 49017
+   "votes": 49034
   },
   "elojoyelmuro": {
    "id": null,
@@ -682,7 +682,7 @@
    "title": "Emil und die Detektive",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 58
+   "votes": 59
   },
   "empathierebellioneineliveshowvonmarkusmauthe": {
    "id": null,
@@ -723,7 +723,7 @@
    "title": "Evil Dead Burn",
    "seen": "2026-10-25",
    "rating": 6.2,
-   "votes": 60033
+   "votes": 60460
   },
   "ezo1dasbloodpanzerprojekt": {
    "id": null,
@@ -737,21 +737,21 @@
    "title": "Fallen Angels by Noël Coward",
    "seen": "2026-10-25",
    "rating": 8.2,
-   "votes": 49
+   "votes": 51
   },
   "fantastischemrfox": {
    "id": "tt0432283",
    "title": "Der Fantastische Mr. Fox",
    "seen": "2026-10-25",
    "rating": 7.9,
-   "votes": 312441
+   "votes": 312481
   },
   "flashgordon": {
    "id": "tt0080745",
    "title": "Flash Gordon",
    "seen": "2026-10-25",
    "rating": 6.5,
-   "votes": 67265
+   "votes": 67269
   },
   "fliegendeklassenzimmer": {
    "id": "tt26342655",
@@ -772,7 +772,7 @@
    "title": "Forgotten Island",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 7309
+   "votes": 7434
   },
   "fraueninberlin": {
    "id": null,
@@ -785,8 +785,8 @@
    "id": "tt39400348",
    "title": "Frau Winkler verlässt das Haus",
    "seen": "2026-10-25",
-   "rating": 7,
-   "votes": 48
+   "rating": 7.1,
+   "votes": 51
   },
   "frechstetrollderwelt": {
    "id": "tt33334564",
@@ -800,7 +800,7 @@
    "title": "Free at Heart",
    "seen": "2026-10-25",
    "rating": 7,
-   "votes": 249
+   "votes": 253
   },
   "fremdsprachenkinopalmerasenlanievespan": {
    "id": null,
@@ -849,7 +849,7 @@
    "title": "Gentle Monster",
    "seen": "2026-10-24",
    "rating": 6.8,
-   "votes": 629
+   "votes": 633
   },
   "geschichtenauszwolfundeinemjahr": {
    "id": null,
@@ -870,28 +870,28 @@
    "title": "Das Geträumte Abenteuer",
    "seen": "2026-10-19",
    "rating": 6.5,
-   "votes": 297
+   "votes": 301
   },
   "gewisseetwas": {
    "id": "tt37800509",
    "title": "Das gewisse Etwas",
    "seen": "2026-10-25",
    "rating": 6.8,
-   "votes": 221
+   "votes": 222
   },
   "girlfriends": {
    "id": "tt0077613",
    "title": "Girlfriends",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 3728
+   "votes": 3727
   },
   "glaube": {
    "id": "tt35513027",
    "title": "Glaube",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 5622
+   "votes": 5628
   },
   "grosseskinoderpateteili": {
    "id": null,
@@ -940,21 +940,21 @@
    "title": "Halloween 1 - Die Nacht des Grauens",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 346116
+   "votes": 346217
   },
   "halloweendienachtdesgrauens": {
    "id": "tt0077651",
    "title": "Halloween - Die Nacht des Grauens",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 346116
+   "votes": 346217
   },
   "halloweendienachtdesgrauens4k": {
    "id": "tt0077651",
    "title": "Halloween - Die Nacht des Grauens (4K)",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 346116
+   "votes": 346217
   },
   "haubi": {
    "id": null,
@@ -975,28 +975,28 @@
    "title": "Der Heimatlose",
    "seen": "2026-10-24",
    "rating": 7.5,
-   "votes": 204
+   "votes": 205
   },
   "heimsuchungeinejahrhundertgeschichte": {
    "id": "tt38805050",
    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
    "seen": "2026-10-25",
-   "rating": 6.9,
-   "votes": 132
+   "rating": 6.8,
+   "votes": 147
   },
   "heldin": {
    "id": "tt32204858",
    "title": "Heldin",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 11831
+   "votes": 11839
   },
   "herrderringe1": {
    "id": "tt0120737",
    "title": "Der Herr der Ringe 1",
    "seen": "2026-10-25",
    "rating": 8.9,
-   "votes": 2247312
+   "votes": 2247612
   },
   "herrderringediegefahrtensondervorstellung": {
    "id": null,
@@ -1038,14 +1038,14 @@
    "title": "Hocus Pocus",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 176782
+   "votes": 176921
   },
   "hope": {
    "id": "tt27369017",
    "title": "Hope",
    "seen": "2026-10-25",
    "rating": 6.6,
-   "votes": 22890
+   "votes": 23396
   },
   "hopeimax": {
    "id": null,
@@ -1059,7 +1059,7 @@
    "title": "Hoppers",
    "seen": "2026-10-12",
    "rating": 7.2,
-   "votes": 89063
+   "votes": 89173
   },
   "horrordoppelmitdonisbackroomsundobsession": {
    "id": null,
@@ -1091,21 +1091,21 @@
    "title": "Hotel Transsilvanien 3 - Ein Monster Urlaub",
    "seen": "2026-10-25",
    "rating": 6.3,
-   "votes": 103214
+   "votes": 103231
   },
   "hotspot": {
    "id": "tt14119302",
    "title": "Hot Spot",
    "seen": "2026-10-18",
    "rating": 3.8,
-   "votes": 912
+   "votes": 914
   },
   "hotspotnowhereinthefuture": {
    "id": "tt14119302",
    "title": "Hot Spot: Nowhere in the Future",
    "seen": "2026-10-21",
    "rating": 3.8,
-   "votes": 912
+   "votes": 914
   },
   "howtobenormal": {
    "id": "tt31807192",
@@ -1154,14 +1154,14 @@
    "title": "Insidious: Out of the Further",
    "seen": "2026-10-25",
    "rating": 6,
-   "votes": 27151
+   "votes": 27443
   },
   "invite": {
    "id": "tt14173636",
    "title": "The Invite",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 88749
+   "votes": 89835
   },
   "irrgartendesschreckens": {
    "id": null,
@@ -1175,7 +1175,7 @@
    "title": "Jailer 2",
    "seen": "2026-10-18",
    "rating": 8.2,
-   "votes": 14561
+   "votes": 14928
   },
   "jailer2tamil": {
    "id": null,
@@ -1196,7 +1196,7 @@
    "title": "Jeanne Dielman",
    "seen": "2026-10-25",
    "rating": 7.5,
-   "votes": 17997
+   "votes": 17998
   },
   "jedermannundich": {
    "id": null,
@@ -1224,14 +1224,14 @@
    "title": "Jim Queen",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 1477
+   "votes": 1484
   },
   "jungstetochter": {
    "id": "tt28326501",
    "title": "Die Jüngste Tochter",
    "seen": "2026-10-16",
    "rating": 6.8,
-   "votes": 2051
+   "votes": 2053
   },
   "junkiesofdreamingmahler3currentzis": {
    "id": null,
@@ -1252,7 +1252,7 @@
    "title": "Karla",
    "seen": "2026-10-20",
    "rating": 7.2,
-   "votes": 225
+   "votes": 227
   },
   "karlchendasgrossegeburtstagsabenteuermeinersterkinobesuch": {
    "id": null,
@@ -1273,14 +1273,14 @@
    "title": "The Killer",
    "seen": "2026-10-25",
    "rating": 5.7,
-   "votes": 19206
+   "votes": 19216
   },
   "kirschblutenhanami": {
    "id": "tt0910559",
    "title": "Kirschblüten - Hanami",
    "seen": "2026-10-24",
    "rating": 7.6,
-   "votes": 6377
+   "votes": 6378
   },
   "kitkatclubkinksofberlin": {
    "id": "tt40445453",
@@ -1293,22 +1293,22 @@
    "id": "tt14371256",
    "title": "Klara and the Sun",
    "seen": "2026-10-25",
-   "rating": 6,
-   "votes": 500
+   "rating": 6.2,
+   "votes": 743
   },
   "kleinegespenst": {
    "id": "tt2186566",
    "title": "Das kleine Gespenst",
    "seen": "2026-10-25",
    "rating": 5.6,
-   "votes": 773
+   "votes": 775
   },
   "kleineprinz": {
    "id": "tt1754656",
    "title": "Der kleine Prinz",
    "seen": "2026-10-25",
    "rating": 7.6,
-   "votes": 72611
+   "votes": 72624
   },
   "kuhlewampeoderwemgehortdiewelt": {
    "id": "tt0023104",
@@ -1322,7 +1322,7 @@
    "title": "Kultfilmnachmittag for Kids: Der kleine Vampir",
    "seen": "2026-10-25",
    "rating": 5.5,
-   "votes": 2191
+   "votes": 2192
   },
   "kunstkinobreathingearthsusumushingustraum": {
    "id": null,
@@ -1349,7 +1349,7 @@
    "title": "La Bola Negra",
    "seen": "2026-10-25",
    "rating": 8.2,
-   "votes": 7842
+   "votes": 8146
   },
   "lacasa": {
    "id": "tt37366525",
@@ -1363,7 +1363,7 @@
    "title": "Lady Bird",
    "seen": "2026-10-12",
    "rating": 7.4,
-   "votes": 370526
+   "votes": 370565
   },
   "lagraciosakanarischetraume": {
    "id": null,
@@ -1377,42 +1377,42 @@
    "title": "Lalka",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 1334
+   "votes": 1351
   },
   "lalkathedoll": {
    "id": "tt37082105",
    "title": "Lalka - The Doll",
    "seen": "2026-10-18",
    "rating": 7.7,
-   "votes": 1334
+   "votes": 1351
   },
   "lasmejoresfamilias": {
    "id": "tt11938888",
    "title": "Las mejores familias",
    "seen": "2026-10-25",
    "rating": 6.5,
-   "votes": 583
+   "votes": 584
   },
   "lastactionhero": {
    "id": "tt0107362",
    "title": "Last Action Hero",
    "seen": "2026-10-24",
    "rating": 6.5,
-   "votes": 175637
+   "votes": 175659
   },
   "latenightzusatzvorstellungtherockyhorrorpictureshow": {
    "id": "tt0073629",
    "title": "Late Night Zusatzvorstellung – THE ROCKY HORROR PICTURE SHOW",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 189233
+   "votes": 189290
   },
   "lavoieroyale": {
    "id": "tt27372066",
    "title": "La Voie Royale",
    "seen": "2026-10-12",
    "rating": 6.5,
-   "votes": 828
+   "votes": 829
   },
   "lebensunwertunerwunscht": {
    "id": null,
@@ -1459,21 +1459,21 @@
    "title": "Lieblingsfilm: Herr der Ringe - Die Gefährten | Extended Version",
    "seen": "2026-10-25",
    "rating": 8.9,
-   "votes": 2247312
+   "votes": 2247612
   },
   "linkinparkunshatter": {
    "id": "tt43442522",
    "title": "Linkin Park: Unshatter",
    "seen": "2026-10-22",
    "rating": 8.6,
-   "votes": 962
+   "votes": 964
   },
   "littlewomen": {
    "id": "tt3281548",
    "title": "Little Women",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 290140
+   "votes": 290162
   },
   "liveausdermetverdimacbeth": {
    "id": null,
@@ -1499,8 +1499,8 @@
    "id": "tt39206699",
    "title": "London",
    "seen": "2026-10-25",
-   "rating": 6.7,
-   "votes": 45
+   "rating": 6.8,
+   "votes": 47
   },
   "lookcharlotterampling": {
    "id": "tt0331559",
@@ -1514,14 +1514,14 @@
    "title": "Los Domingos - Glaube",
    "seen": "2026-10-23",
    "rating": 7.3,
-   "votes": 5622
+   "votes": 5628
   },
   "lugenubermeinemutter": {
    "id": "tt36985296",
    "title": "Lügen über meine Mutter",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 51
+   "votes": 53
   },
   "luruarchive35mmterrorundstranger": {
    "id": null,
@@ -1561,14 +1561,14 @@
    "title": "Marsupilami",
    "seen": "2026-10-25",
    "rating": 6.3,
-   "votes": 2255
+   "votes": 2264
   },
   "materiaprimanewenergyoldpowers": {
    "id": "tt40601764",
    "title": "Materia Prima - New Energy - Old Powers",
    "seen": "2026-10-25",
-   "rating": 7.5,
-   "votes": 8
+   "rating": 7.6,
+   "votes": 9
   },
   "maternityward": {
    "id": null,
@@ -1582,7 +1582,7 @@
    "title": "Matloob Aelian",
    "seen": "2026-10-24",
    "rating": 4.3,
-   "votes": 91
+   "votes": 93
   },
   "meetingthebuddha": {
    "id": "tt40249136",
@@ -1603,7 +1603,7 @@
    "title": "Metaluna IV Antwortet nicht",
    "seen": "2026-10-25",
    "rating": 5.9,
-   "votes": 11629
+   "votes": 11632
   },
   "metopera202627macbethgiuseppeverdi": {
    "id": null,
@@ -1622,21 +1622,21 @@
    "title": "Minions & Monster",
    "seen": "2026-10-25",
    "rating": 6.3,
-   "votes": 35518
+   "votes": 35588
   },
   "minionsundmonsters": {
    "id": "tt32890033",
    "title": "Minions & Monsters",
    "seen": "2026-10-25",
    "rating": 6.3,
-   "votes": 35518
+   "votes": 35588
   },
   "mira": {
    "id": "tt38453860",
    "title": "Mira",
    "seen": "2026-10-20",
    "rating": 7.1,
-   "votes": 45
+   "votes": 46
   },
   "misanthropenationaltheatrelive2026": {
    "id": null,
@@ -1656,22 +1656,22 @@
    "id": "tt21148858",
    "title": "Mittagsstunde",
    "seen": "2026-10-16",
-   "rating": 7,
-   "votes": 525
+   "rating": 6.9,
+   "votes": 526
   },
   "momo": {
    "id": "tt26325131",
    "title": "Momo",
    "seen": "2026-10-15",
    "rating": 5.8,
-   "votes": 1285
+   "votes": 1289
   },
   "monstermia": {
    "id": "tt38807889",
    "title": "Monster Mia",
    "seen": "2026-10-25",
-   "rating": 7.3,
-   "votes": 60
+   "rating": 7.2,
+   "votes": 65
   },
   "moonderpanda": {
    "id": "tt35705226",
@@ -1685,28 +1685,28 @@
    "title": "Moscas",
    "seen": "2026-10-22",
    "rating": 7.4,
-   "votes": 769
+   "votes": 776
   },
   "moscasfliegenundanderegaste": {
    "id": "tt35854741",
    "title": "Moscas - Fliegen und andere Gäste",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 769
+   "votes": 776
   },
   "mumie": {
    "id": "tt0023245",
    "title": "Die Mumie",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 33946
+   "votes": 33951
   },
   "mutiny": {
    "id": "tt32338669",
    "title": "Mutiny",
    "seen": "2026-10-24",
    "rating": 5.7,
-   "votes": 24564
+   "votes": 24626
   },
   "nanoplastik": {
    "id": null,
@@ -1719,8 +1719,8 @@
    "id": "tt44766123",
    "title": "Naza",
    "seen": "2026-10-25",
-   "rating": 8.2,
-   "votes": 5439
+   "rating": 8.3,
+   "votes": 5549
   },
   "ninasescarlata": {
    "id": "tt31110228",
@@ -1741,42 +1741,42 @@
    "title": "NOFX: 40 Years of Fuckin' Up",
    "seen": "2026-10-25",
    "rating": 7.8,
-   "votes": 130
+   "votes": 133
   },
   "nosferatueinesymphoniedesgrauens": {
    "id": "tt0013442",
    "title": "Nosferatu - Eine Symphonie des Grauens",
    "seen": "2026-10-25",
    "rating": 7.8,
-   "votes": 124937
+   "votes": 124956
   },
   "nostalghia": {
    "id": "tt0086022",
    "title": "Nostalghia",
    "seen": "2026-10-12",
    "rating": 7.9,
-   "votes": 33803
+   "votes": 33805
   },
   "nurfureinentag": {
    "id": "tt35453969",
    "title": "Nur für einen Tag",
    "seen": "2026-10-20",
    "rating": 6.2,
-   "votes": 1659
+   "votes": 1660
   },
   "obsessiondusollstmichlieben": {
    "id": "tt37287335",
    "title": "Obsession - Du sollst mich lieben",
    "seen": "2026-10-25",
    "rating": 7.8,
-   "votes": 409102
+   "votes": 409880
   },
   "odyssee": {
    "id": "tt33764258",
    "title": "Die Odyssee",
    "seen": "2026-10-25",
    "rating": 8.4,
-   "votes": 535521
+   "votes": 535976
   },
   "odysseeimax": {
    "id": null,
@@ -1790,7 +1790,7 @@
    "title": "Oh la la 2 - Neue Tests, neues Chaos",
    "seen": "2026-10-19",
    "rating": 5.1,
-   "votes": 663
+   "votes": 674
   },
   "ohnebetaubungbezznieczulenia": {
    "id": null,
@@ -1804,7 +1804,7 @@
    "title": "On the Road",
    "seen": "2026-10-17",
    "rating": 7.2,
-   "votes": 1595
+   "votes": 1603
   },
   "ostpreussenentschwundenewelt": {
    "id": null,
@@ -1818,14 +1818,14 @@
    "title": "Other Mommy",
    "seen": "2026-10-25",
    "rating": 5.3,
-   "votes": 12315
+   "votes": 12611
   },
   "ourgirls": {
    "id": "tt36474012",
    "title": "Our Girls",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 3793
+   "votes": 3797
   },
   "oyoyo": {
    "id": null,
@@ -1846,7 +1846,7 @@
    "title": "Pan's Labyrinth",
    "seen": "2026-10-25",
    "rating": 8.2,
-   "votes": 755760
+   "votes": 755824
   },
   "pariswasawoman": {
    "id": "tt0114093",
@@ -1860,7 +1860,7 @@
    "title": "Paw Patrol: Der Dino Film",
    "seen": "2026-10-25",
    "rating": 6.1,
-   "votes": 2899
+   "votes": 2904
   },
   "perfektegeheimniscinestrickeninstade": {
    "id": null,
@@ -1915,70 +1915,70 @@
    "title": "Possible Love",
    "seen": "2026-10-25",
    "rating": 8.1,
-   "votes": 685
+   "votes": 730
   },
   "powerballaddersongmeineslebens": {
    "id": "tt32267691",
    "title": "Power Ballad - Der Song meines Lebens",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 9540
+   "votes": 9560
   },
   "practicalmagic2zauberhafteschwestern": {
    "id": "tt32588798",
    "title": "Practical Magic 2 - Zauberhafte Schwestern",
    "seen": "2026-10-14",
    "rating": 6.1,
-   "votes": 16035
+   "votes": 16302
   },
   "premadaoorali": {
    "id": "tt33381528",
    "title": "Premada Oorali",
    "seen": "2026-10-18",
    "rating": 8.1,
-   "votes": 1797
+   "votes": 1802
   },
   "pressure": {
    "id": "tt32547691",
    "title": "Pressure",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 40560
+   "votes": 40684
   },
   "prettywoman": {
    "id": "tt0100405",
    "title": "Pretty Woman",
    "seen": "2026-10-25",
    "rating": 7.1,
-   "votes": 413664
+   "votes": 413688
   },
   "primetime": {
    "id": "tt34206385",
    "title": "Primetime",
    "seen": "2026-10-25",
    "rating": 7.1,
-   "votes": 21537
+   "votes": 21913
   },
   "promnight": {
    "id": "tt0081383",
    "title": "Prom Night",
    "seen": "2026-10-24",
    "rating": 5.3,
-   "votes": 24499
+   "votes": 24511
   },
   "queenbudapest": {
    "id": "tt0093427",
    "title": "Queen: Budapest",
    "seen": "2026-10-18",
    "rating": 8.6,
-   "votes": 1519
+   "votes": 1520
   },
   "queensofthedead": {
    "id": "tt32986431",
    "title": "Queens of the Dead",
    "seen": "2026-10-25",
    "rating": 5.3,
-   "votes": 2304
+   "votes": 2309
   },
   "querelleeinpaktmitdemteufel": {
    "id": "tt0084565",
@@ -2013,14 +2013,14 @@
    "title": "Rascal Does Not Dream of a Dear Friend",
    "seen": "2026-10-25",
    "rating": 9.6,
-   "votes": 1669
+   "votes": 1681
   },
   "rascaldoesnotdreamofadearfriendcineanime": {
    "id": "tt39927807",
    "title": "Rascal Does Not Dream of a Dear Friend - CineAnime",
    "seen": "2026-10-25",
    "rating": 9.6,
-   "votes": 1669
+   "votes": 1681
   },
   "rbo2627manonroyalballet": {
    "id": null,
@@ -2051,14 +2051,14 @@
    "title": "Der Regenmeister",
    "seen": "2026-10-19",
    "rating": 4.9,
-   "votes": 637
+   "votes": 640
   },
   "residentevil": {
    "id": "tt35538033",
    "title": "Resident Evil",
    "seen": "2026-10-25",
    "rating": 7.6,
-   "votes": 113638
+   "votes": 114673
   },
   "residentevilimax": {
    "id": null,
@@ -2079,14 +2079,14 @@
    "title": "Robocop",
    "seen": "2026-10-25",
    "rating": 7.6,
-   "votes": 313753
+   "votes": 313780
   },
   "rockyhorrorpictureshow": {
    "id": "tt0073629",
    "title": "The Rocky Horror Picture Show",
    "seen": "2026-10-25",
    "rating": 7.4,
-   "votes": 189233
+   "votes": 189290
   },
   "rockyhorrorpictureshow1": {
    "id": null,
@@ -2100,7 +2100,7 @@
    "title": "Rodychi - Verwandte (ukr. OmeU)",
    "seen": "2026-10-14",
    "rating": 6.6,
-   "votes": 34
+   "votes": 35
   },
   "roheunddasgekochte": {
    "id": "tt2199315",
@@ -2114,21 +2114,21 @@
    "title": "Runner",
    "seen": "2026-10-23",
    "rating": 6.2,
-   "votes": 16249
+   "votes": 16601
   },
   "sacrifice": {
    "id": "tt32268992",
    "title": "Sacrifice",
    "seen": "2026-10-25",
    "rating": 5,
-   "votes": 4764
+   "votes": 4966
   },
   "sanshothebailiff": {
    "id": "tt0047445",
    "title": "Sansho the Bailiff",
    "seen": "2026-10-18",
    "rating": 8.3,
-   "votes": 20258
+   "votes": 20260
   },
   "sarahsschlussel": {
    "id": "tt1668200",
@@ -2148,7 +2148,7 @@
    "title": "Scanners - Ihre Gedanken können Töten",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 68783
+   "votes": 68792
   },
   "schonstemadchenderwelt": {
    "id": "tt7776838",
@@ -2162,14 +2162,14 @@
    "title": "Die Schule der magischen Tiere",
    "seen": "2026-10-22",
    "rating": 5.4,
-   "votes": 1238
+   "votes": 1239
   },
   "schuledermagischentiere4": {
    "id": "tt35286242",
    "title": "Die Schule der magischen Tiere 4",
    "seen": "2026-10-21",
    "rating": 5.7,
-   "votes": 386
+   "votes": 387
   },
   "schwarzehauser": {
    "id": null,
@@ -2210,8 +2210,8 @@
    "id": "tt13609648",
    "title": "Sense and Sensibility",
    "seen": "2026-10-23",
-   "rating": 7.3,
-   "votes": 4833
+   "rating": 7.4,
+   "votes": 5055
   },
   "seventeenworldtournew": {
    "id": null,
@@ -2225,14 +2225,14 @@
    "title": "Shaun das Schaf 3 - Spuk im Kürbisfeld",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 1760
+   "votes": 1866
   },
   "shaundasschafspukimkurbisfeld": {
    "id": "tt36841161",
    "title": "Shaun das Schaf - Spuk im Kürbisfeld",
    "seen": "2026-10-25",
    "rating": 7.2,
-   "votes": 1760
+   "votes": 1866
   },
   "shortsattackdkeineangabe": {
    "id": null,
@@ -2259,8 +2259,8 @@
    "id": "tt13609648",
    "title": "Sinn und Sinnlichkeit",
    "seen": "2026-10-25",
-   "rating": 7.3,
-   "votes": 4833
+   "rating": 7.4,
+   "votes": 5055
   },
   "sinnundsinnlichkeitstrickkino": {
    "id": null,
@@ -2318,7 +2318,7 @@
    "title": "The Social Reckoning",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 8883
+   "votes": 9069
   },
   "songsofhopeanddespair": {
    "id": null,
@@ -2345,43 +2345,43 @@
    "id": "tt42886802",
    "title": "Soy",
    "seen": "2026-10-16",
-   "rating": 7.9,
-   "votes": 542
+   "rating": 7.7,
+   "votes": 550
   },
   "spacejam": {
    "id": "tt0117705",
    "title": "Space Jam",
    "seen": "2026-10-24",
    "rating": 6.5,
-   "votes": 232870
+   "votes": 232883
   },
   "spaweekend": {
    "id": "tt33305867",
    "title": "Spa Weekend",
    "seen": "2026-10-21",
    "rating": 5.1,
-   "votes": 3017
+   "votes": 3025
   },
   "spaziergangnachsyrakus": {
    "id": "tt43598697",
    "title": "Spaziergang nach Syrakus",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 149
+   "votes": 150
   },
   "spidermanbrandnewday": {
    "id": "tt22084616",
    "title": "Spider-Man: Brand New Day",
    "seen": "2026-10-25",
    "rating": 7.9,
-   "votes": 362953
+   "votes": 364384
   },
   "staatsschutz": {
    "id": "tt39213126",
    "title": "Staatsschutz",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 484
+   "votes": 487
   },
   "starcrash": {
    "id": "tt0079946",
@@ -2402,7 +2402,7 @@
    "title": "Steckerlfischfiasko",
    "seen": "2026-10-21",
    "rating": 6.5,
-   "votes": 425
+   "votes": 426
   },
   "sternbruckeforever": {
    "id": "tt44777568",
@@ -2423,28 +2423,28 @@
    "title": "Strange Harvest",
    "seen": "2026-10-16",
    "rating": 6.2,
-   "votes": 8220
+   "votes": 8234
   },
   "strangejourneythestoryofrockyhorror": {
    "id": "tt35521365",
    "title": "Strange Journey – The Story of Rocky Horror",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 624
+   "votes": 628
   },
   "strangeriver": {
    "id": "tt33023305",
    "title": "Strange River",
    "seen": "2026-10-17",
    "rating": 6,
-   "votes": 693
+   "votes": 695
   },
   "streetfighter": {
    "id": "tt27419420",
    "title": "Street Fighter",
    "seen": "2026-10-25",
    "rating": 6.2,
-   "votes": 15056
+   "votes": 15990
   },
   "streetfighterimax": {
    "id": null,
@@ -2465,28 +2465,28 @@
    "title": "The Substance",
    "seen": "2026-10-13",
    "rating": 7.2,
-   "votes": 471289
+   "votes": 471544
   },
   "sunnydancer": {
    "id": "tt32212403",
    "title": "Sunny Dancer",
    "seen": "2026-10-11",
    "rating": 7.1,
-   "votes": 1468
+   "votes": 1482
   },
   "supermanivdieweltamabgrund": {
    "id": "tt0094074",
    "title": "Superman IV – Die Welt am Abgrund",
    "seen": "2026-10-25",
    "rating": 3.8,
-   "votes": 58412
+   "votes": 58414
   },
   "suspiria": {
    "id": "tt0076786",
    "title": "Suspiria",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 117285
+   "votes": 117304
   },
   "tallybrownnewyork": {
    "id": "tt0163324",
@@ -2500,14 +2500,14 @@
    "title": "Taxi Driver",
    "seen": "2026-10-23",
    "rating": 8.2,
-   "votes": 1046419
+   "votes": 1046537
   },
   "teenagesexanddeathatcampmiasma": {
    "id": "tt35298123",
    "title": "Teenage Sex and Death at Camp Miasma",
    "seen": "2026-10-20",
    "rating": 6.5,
-   "votes": 23669
+   "votes": 23888
   },
   "teenagesexunddeathatcampmiasma": {
    "id": null,
@@ -2521,49 +2521,49 @@
    "title": "Tetsuo: The Iron Man",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 29709
+   "votes": 29717
   },
   "teufel": {
    "id": "tt0066993",
    "title": "Die Teufel",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 24112
+   "votes": 24251
   },
   "teufeldirectorscut": {
    "id": "tt0066993",
    "title": "Die Teufel - Director's Cut",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 24112
+   "votes": 24251
   },
   "teufeltragtprada2": {
    "id": "tt33612209",
    "title": "Der Teufel trägt Prada 2",
    "seen": "2026-10-14",
    "rating": 6.3,
-   "votes": 121333
+   "votes": 121480
   },
   "thatswhytheladyisachamp": {
    "id": "tt32323252",
    "title": "That's Why The Lady Is A Champ",
    "seen": "2026-10-25",
    "rating": 6.6,
-   "votes": 19551
+   "votes": 19562
   },
   "therapiefurwikinger": {
    "id": "tt27817389",
    "title": "Therapie für Wikinger",
    "seen": "2026-10-14",
    "rating": 7.1,
-   "votes": 18128
+   "votes": 18146
   },
   "thomascrownistnichtzufassen": {
    "id": "tt0063688",
    "title": "Thomas Crown ist nicht zu fassen",
    "seen": "2026-10-23",
    "rating": 6.9,
-   "votes": 32909
+   "votes": 32914
   },
   "tierischgruselig": {
    "id": "tt18362178",
@@ -2598,21 +2598,21 @@
    "title": "Toy Story 5",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 102806
+   "votes": 103027
   },
   "tracesofjustice": {
    "id": "tt38188218",
    "title": "Traces of Justice",
    "seen": "2026-10-18",
    "rating": 6.3,
-   "votes": 75
+   "votes": 76
   },
   "tributevonpanemcatchingfire": {
    "id": "tt1951264",
    "title": "Die Tribute von Panem - Catching Fire",
    "seen": "2026-10-20",
    "rating": 7.5,
-   "votes": 786002
+   "votes": 786075
   },
   "tributevonpanemmockingjayteil1": {
    "id": null,
@@ -2626,35 +2626,35 @@
    "title": "Die Tribute von Panem - Mockingjay Teil 2",
    "seen": "2026-10-25",
    "rating": 6.6,
-   "votes": 423743
+   "votes": 423810
   },
   "tributevonpanemthehungergames": {
    "id": "tt1392170",
    "title": "Tribute von Panem - The Hunger Games",
    "seen": "2026-10-14",
    "rating": 7.2,
-   "votes": 1099204
+   "votes": 1099342
   },
   "trilogieherrderringeteil13extendedversion": {
    "id": "tt0120737",
    "title": "Trilogie Herr der Ringe Teil 1-3 (Extended Version)",
    "seen": "2026-10-25",
    "rating": 8.9,
-   "votes": 2247312
+   "votes": 2247612
   },
   "tschick": {
    "id": "tt4911940",
    "title": "Tschick",
    "seen": "2026-10-15",
    "rating": 6.9,
-   "votes": 12265
+   "votes": 12266
   },
   "twilightbisszummorgengrauen": {
    "id": "tt1099212",
    "title": "Twilight - Biss zum Morgengrauen",
    "seen": "2026-10-25",
    "rating": 5.4,
-   "votes": 537466
+   "votes": 537543
   },
   "uberraschungspremiere": {
    "id": null,
@@ -2702,21 +2702,21 @@
    "title": "Vaiana",
    "seen": "2026-10-25",
    "rating": 5.8,
-   "votes": 20427
+   "votes": 20857
   },
   "vaianaliveaction": {
    "id": "tt27419466",
    "title": "Vaiana - Live Action",
    "seen": "2026-10-22",
    "rating": 5.8,
-   "votes": 20427
+   "votes": 20857
   },
   "vaterland": {
    "id": "tt37304295",
    "title": "Vaterland",
    "seen": "2026-10-25",
    "rating": 7.3,
-   "votes": 3138
+   "votes": 3244
   },
   "vengeanceismine": {
    "id": "tt11650226",
@@ -2743,14 +2743,14 @@
    "title": "Die vergessene Insel",
    "seen": "2026-10-25",
    "rating": 7.7,
-   "votes": 7309
+   "votes": 7434
   },
   "veritydunklegeheimnisse": {
    "id": "tt32261958",
    "title": "Verity - Dunkle Geheimnisse",
    "seen": "2026-10-25",
    "rating": 6.1,
-   "votes": 21012
+   "votes": 21290
   },
   "veritydunklegeheimnissemxp2ddeutschmxp2d": {
    "id": null,
@@ -2764,14 +2764,14 @@
    "title": "Das Verschwinden des Josef Mengele",
    "seen": "2026-10-20",
    "rating": 6.9,
-   "votes": 2133
+   "votes": 2135
   },
   "verwandten": {
    "id": "tt40924565",
    "title": "Die Verwandten",
    "seen": "2026-10-18",
    "rating": 6.6,
-   "votes": 34
+   "votes": 35
   },
   "vhsuberraschungsfilm": {
    "id": null,
@@ -2812,28 +2812,28 @@
    "title": "Watching People Watching Birds",
    "seen": "2026-10-25",
    "rating": 8.2,
-   "votes": 14
+   "votes": 15
   },
   "wenndiegondelntrauertragen": {
    "id": "tt0069995",
    "title": "Wenn die Gondeln Trauer tragen",
    "seen": "2026-10-14",
    "rating": 7.1,
-   "votes": 69720
+   "votes": 69729
   },
   "westworld": {
    "id": "tt0070909",
    "title": "Westworld",
    "seen": "2026-10-25",
    "rating": 6.9,
-   "votes": 68405
+   "votes": 68412
   },
   "whalefall": {
    "id": "tt28535715",
    "title": "Whalefall",
    "seen": "2026-10-25",
    "rating": 6.7,
-   "votes": 7182
+   "votes": 7489
   },
   "whalefallmxp2ddeutschmxp2d": {
    "id": null,
@@ -2853,15 +2853,15 @@
    "id": "tt41691705",
    "title": "Whistleblower",
    "seen": "2026-10-25",
-   "rating": 6.1,
-   "votes": 12
+   "rating": 6,
+   "votes": 13
   },
   "wildwood": {
    "id": "tt2056785",
    "title": "Wildwood",
    "seen": "2026-10-25",
    "rating": 8.8,
-   "votes": 1518
+   "votes": 3103
   },
   "wirdiewolfs": {
    "id": "tt37211795",
@@ -2882,7 +2882,7 @@
    "title": "The Witches",
    "seen": "2026-10-25",
    "rating": 6.8,
-   "votes": 60422
+   "votes": 60451
   },
   "woistcoletti": {
    "id": "tt0003565",
@@ -2896,7 +2896,7 @@
    "title": "Der Wunderweltenbaum",
    "seen": "2026-10-25",
    "rating": 6.2,
-   "votes": 6415
+   "votes": 6430
   },
   "yukuunddieblumedeshimalaya": {
    "id": "tt19713112",
@@ -2910,14 +2910,14 @@
    "title": "Zauberhafte Schwestern",
    "seen": "2026-10-19",
    "rating": 6.4,
-   "votes": 127933
+   "votes": 128064
   },
   "zauberhafteschwestern2": {
    "id": "tt32588798",
    "title": "Zauberhafte Schwestern 2",
    "seen": "2026-10-21",
    "rating": 6.1,
-   "votes": 16035
+   "votes": 16302
   },
   "zeiseshortfilmslam": {
    "id": null,
@@ -2930,14 +2930,14 @@
    "title": "Zombie",
    "seen": "2026-10-25",
    "rating": 7.8,
-   "votes": 138106
+   "votes": 138114
   },
   "zombie2dayofthedead": {
    "id": "tt0088993",
    "title": "Zombie 2 - Day of the Dead",
    "seen": "2026-10-25",
    "rating": 7.1,
-   "votes": 80939
+   "votes": 80957
   },
   "zustandundgelande": {
    "id": "tt11573800",
