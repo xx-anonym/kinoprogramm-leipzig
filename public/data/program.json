@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T23:00:57.448Z",
+  "generatedAt": "2026-10-25T23:22:22.401Z",
   "days": ["2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":82},
@@ -57,7 +57,7 @@
     "heimsuchungeinejahrhundertgeschichte": {"title":"Heimsuchung - Eine Jahrhundertgeschichte","duration":120,"imdb":{"id":"tt38805050","rating":6.8,"votes":147}},
     "hope": {"title":"Hope","duration":160,"imdb":{"id":"tt27369017","rating":6.6,"votes":23396}},
     "horrordoppelmitdonisbackroomsundobsession": {"title":"Horror-Doppel mit Donis: Backrooms + Obsession","duration":220},
-    "insidegaza": {"title":"Inside Gaza","duration":70},
+    "insidegaza": {"title":"Inside Gaza","duration":70,"imdb":{"id":"tt32209577","rating":7.7,"votes":36}},
     "jimqueen": {"title":"Jim Queen","duration":85,"imdb":{"id":"tt36955518","rating":7.7,"votes":1484}},
     "kalterhund": {"title":"Kalter Hund","duration":125,"imdb":{"id":"tt43550573","rating":6.8,"votes":37}},
     "klaraandthesun": {"title":"Klara and the Sun","duration":116,"imdb":{"id":"tt14371256","rating":6.2,"votes":743}},

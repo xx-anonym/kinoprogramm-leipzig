@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-25T19:01:00.163Z",
+ "ratingsUpdated": "2026-10-25T23:21:17.844Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -71,6 +71,13 @@
    "rating": 7.5,
    "votes": 262696
   },
+  "alleuregesichterjeverraitoujoursvosvisagesmiteinfuhrung": {
+   "id": "tt24070754",
+   "title": "ALL EURE GESICHTER - JE VERRAI TOUJOURS VOS VISAGES Mit Einführung",
+   "seen": "2026-10-25",
+   "rating": 7.5,
+   "votes": 5581
+  },
   "allyouneediskill": {
    "id": "tt36148135",
    "title": "All You Need Is Kill",
@@ -98,6 +105,13 @@
    "seen": "2026-10-25",
    "rating": 7.6,
    "votes": 53
+  },
+  "altern": {
+   "id": "tt38875798",
+   "title": "Die Ältern",
+   "seen": "2026-10-25",
+   "rating": 6.2,
+   "votes": 197
   },
   "alwayslalisa": {
    "id": "tt37108970",
@@ -970,6 +984,13 @@
    "rating": 8,
    "votes": 7
   },
+  "heavenlycreatures": {
+   "id": "tt0110005",
+   "title": "Heavenly Creatures",
+   "seen": "2026-10-25",
+   "rating": 7.2,
+   "votes": 70477
+  },
   "heimatlose": {
    "id": "tt33522697",
    "title": "Der Heimatlose",
@@ -1004,6 +1025,13 @@
    "checked": "2026-10-24",
    "attempts": 1,
    "seen": "2026-10-25"
+  },
+  "herrderringequiz2einquizsiezuknechtenbymonkeyquizimsavoy": {
+   "id": "tt0120737",
+   "title": "Herr der Ringe Quiz #2: Ein Quiz, sie zu knechten by Monkey-Quiz im Savoy",
+   "seen": "2026-10-25",
+   "rating": 8.9,
+   "votes": 2247612
   },
   "herrderwelt": {
    "id": "tt0025244",
@@ -1121,6 +1149,13 @@
    "attempts": 2,
    "seen": "2026-10-25"
   },
+  "icecreamman": {
+   "id": "tt36893729",
+   "title": "Ice Cream man",
+   "seen": "2026-10-25",
+   "rating": 4,
+   "votes": 8554
+  },
   "ichsterbekommstdu": {
    "id": "tt35148176",
    "title": "Ich Sterbe, Kommst du?",
@@ -1148,6 +1183,13 @@
    "checked": "2026-10-20",
    "attempts": 1,
    "seen": "2026-10-25"
+  },
+  "insidegaza": {
+   "id": "tt32209577",
+   "title": "Inside Gaza",
+   "seen": "2026-10-25",
+   "rating": 7.7,
+   "votes": 36
   },
   "insidiousoutofthefurther": {
    "id": "tt32393988",
@@ -1799,6 +1841,13 @@
    "attempts": 1,
    "seen": "2026-10-25"
   },
+  "ohnewahrheit": {
+   "id": "tt12464300",
+   "title": "Ohne Wahrheit",
+   "seen": "2026-10-25",
+   "rating": 9.1,
+   "votes": 75
+  },
   "ontheroad": {
    "id": "tt37660509",
    "title": "On the Road",
@@ -2293,7 +2342,7 @@
    "id": null,
    "skip": true,
    "title": "SNEAK Extreme",
-   "seen": "2026-10-12"
+   "seen": "2026-10-25"
   },
   "sneakpreview": {
    "id": null,
@@ -2668,6 +2717,13 @@
    "checked": "2026-10-21",
    "attempts": 1,
    "seen": "2026-10-24"
+  },
+  "underpressureeintieferrissdurchdieusa": {
+   "id": null,
+   "title": "Under Pressure - Ein tiefer Riss durch die USA",
+   "checked": "2026-10-25",
+   "attempts": 1,
+   "seen": "2026-10-25"
   },
   "undeswarsommerdieterthomaskuhnundband": {
    "id": "tt43661040",
