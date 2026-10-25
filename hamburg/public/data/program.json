@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T05:01:10.090Z",
+  "generatedAt": "2026-10-25T06:01:02.248Z",
   "days": ["2026-10-25","2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
@@ -186,7 +186,7 @@
     "querelleeinpaktmitdemteufel": {"title":"Querelle - Ein Pakt mit dem Teufel","duration":108,"imdb":{"id":"tt0084565","rating":6.6,"votes":8762}},
     "quir": {"title":"Quir","duration":105,"imdb":{"id":"tt33111867","rating":8,"votes":36}},
     "rascaldoesnotdreamofadearfriend": {"title":"Rascal Does Not Dream of a Dear Friend","duration":118,"original":"青春ブタ野郎はディアフレンドの夢を見ない","year":2026,"imdb":{"id":"tt39927807","rating":9.6,"votes":1669}},
-    "rbundoballettlafillemalgardee": {"title":"RB&O - Ballett La Fille mal gardée","original":"RB&O Live 2025/26: La Fille mal gardée"},
+    "rbundoballettlafillemalgardee": {"title":"RB&O - Ballett La Fille mal gardée","duration":210,"original":"Royal Ballet & Opera 2025/26: La Fille mal gardée"},
     "rbolive202627manonroyalballet": {"title":"RBO Live 2026/27: Manon (Royal Ballet)","original":"Royal Ballet & Opera 2026/27: Manon","year":2026},
     "rbomanonroyalballetlive": {"title":"Rbo: Manon (Royal Ballet) - Live","duration":190},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.6,"votes":113638}},
