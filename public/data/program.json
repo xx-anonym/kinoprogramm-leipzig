@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-26T06:00:56.164Z",
+  "generatedAt": "2026-10-26T07:02:10.170Z",
   "days": ["2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":86},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":109},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":53},
-    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":65},
+    {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"stale","message":"fetch failed (UND_ERR_CONNECT_TIMEOUT)","shows":65,"since":"2026-10-26T07:02:10.170Z"},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":43},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":12},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":23},
@@ -64,7 +64,7 @@
     "karaokemurder": {"title":"Karaoke Murder"},
     "klaraandthesun": {"title":"Klara and the Sun","duration":116,"imdb":{"id":"tt14371256","rating":6.2,"votes":743}},
     "labolanegra": {"title":"La Bola Negra","duration":155,"imdb":{"id":"tt35511966","rating":8.2,"votes":8146}},
-    "laurassternunddergeheimnisvolledrachenian": {"title":"Lauras Stern und der geheimnisvolle Drache Nian","duration":86,"original":"The Star","year":2017},
+    "laurassternunddergeheimnisvolledrachenian": {"title":"Lauras Stern und der geheimnisvolle Drache Nian","duration":86,"original":"The Star","year":2017,"imdb":{"id":"tt4587656","rating":6.3,"votes":11048}},
     "london": {"title":"London","duration":122,"imdb":{"id":"tt39206699","rating":6.8,"votes":47}},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":101,"imdb":{"id":"tt36985296","rating":7.2,"votes":53}},
     "luruarchive35mmterrorundstranger": {"title":"Luru Archive 35mm Terror + Stranger","duration":181},

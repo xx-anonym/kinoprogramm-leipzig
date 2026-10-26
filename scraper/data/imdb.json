@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-25T23:21:17.844Z",
+ "ratingsUpdated": "2026-10-26T07:01:00.624Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -1226,6 +1226,13 @@
    "attempts": 2,
    "seen": "2026-10-25"
   },
+  "jakzycniezwariowac": {
+   "id": null,
+   "title": "Jak zyc nie zwariowac",
+   "checked": "2026-10-26",
+   "attempts": 1,
+   "seen": "2026-10-26"
+  },
   "jakzyczebyniezwariowac": {
    "id": null,
    "title": "Jak zyc, zeby nie zwariowac",
@@ -1455,6 +1462,13 @@
    "seen": "2026-10-26",
    "rating": 7.4,
    "votes": 189290
+  },
+  "laurassternunddergeheimnisvolledrachenian": {
+   "id": "tt4587656",
+   "title": "Lauras Stern und der geheimnisvolle Drache Nian",
+   "seen": "2026-10-26",
+   "rating": 6.3,
+   "votes": 11048
   },
   "lavoieroyale": {
    "id": "tt27372066",
@@ -2367,7 +2381,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview FSK 18",
-   "seen": "2026-10-25"
+   "seen": "2026-10-26"
   },
   "socialreckoning": {
    "id": "tt37510326",
