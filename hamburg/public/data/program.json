@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T08:01:01.563Z",
+  "generatedAt": "2026-10-26T09:01:31.845Z",
   "days": ["2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":13},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":47},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":46},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":24},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -228,7 +228,6 @@
     "zombie2dayofthedead": {"title":"Zombie 2 - Day of the Dead","duration":101,"original":"Day of the Dead","imdb":{"id":"tt0088993","rating":7.1,"votes":80957}}
   },
   "shows": [
-    {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-26","time":"09:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589544"},
     {"cinema":"kinopolis","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-26","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/8C360000023HXECDQG"},
     {"cinema":"kinopolis","film":"emilunddiedetektive","date":"2026-10-26","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/19360000023HXECDQG"},
     {"cinema":"kinopolis","film":"toystory5","date":"2026-10-26","time":"10:20","url":"https://www.kinopolis.de/hh/programm/vorstellung/82460000023HXECDQG"},
