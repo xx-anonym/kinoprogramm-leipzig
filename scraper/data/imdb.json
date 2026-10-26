@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-26T14:01:03.119Z",
+ "ratingsUpdated": "2026-10-26T16:00:58.638Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -1784,6 +1784,13 @@
    "seen": "2026-10-26",
    "rating": 7.4,
    "votes": 789
+  },
+  "mumbojumbo": {
+   "id": "tt28942997",
+   "title": "Mumbo Jumbo",
+   "seen": "2026-10-26",
+   "rating": 6.4,
+   "votes": 119
   },
   "mumie": {
    "id": "tt0023245",
