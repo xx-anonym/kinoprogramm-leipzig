@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-26T16:00:58.638Z",
+ "ratingsUpdated": "2026-10-26T18:00:59.303Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -385,6 +385,13 @@
    "rating": 7.3,
    "votes": 35
   },
+  "catli2": {
+   "id": null,
+   "title": "Çatli 2",
+   "checked": "2026-10-26",
+   "attempts": 1,
+   "seen": "2026-10-26"
+  },
   "charade": {
    "id": "tt0056923",
    "title": "Charade",
@@ -398,6 +405,13 @@
    "seen": "2026-10-22",
    "rating": 6.8,
    "votes": 217
+  },
+  "checkertobiunddiereisezudenfliegendenfluss": {
+   "id": "tt28531433",
+   "title": "Checker Tobi und die Reise zu den fliegenden Flüss",
+   "seen": "2026-10-26",
+   "rating": 7.3,
+   "votes": 418
   },
   "cheriichkommedieerfindungderlust": {
    "id": "tt38607784",
@@ -865,6 +879,13 @@
    "attempts": 1,
    "seen": "2026-10-24"
   },
+  "geheimestockwerk": {
+   "id": "tt27764052",
+   "title": "Das geheime Stockwerk",
+   "seen": "2026-10-26",
+   "rating": 6.4,
+   "votes": 117
+  },
   "geheimnisdergestohlenenmaske": {
    "id": null,
    "title": "Das Geheimnis der gestohlenen Maske",
@@ -1301,7 +1322,7 @@
    "title": "Junkies of Dreaming - Mahler 3 Currentzis",
    "checked": "2026-10-25",
    "attempts": 3,
-   "seen": "2026-10-25"
+   "seen": "2026-10-26"
   },
   "kalterhund": {
    "id": "tt43550573",
@@ -1603,7 +1624,7 @@
   "losdomingosglaube": {
    "id": "tt35513027",
    "title": "Los Domingos - Glaube",
-   "seen": "2026-10-23",
+   "seen": "2026-10-26",
    "rating": 7.3,
    "votes": 5642
   },
@@ -1746,7 +1767,7 @@
   "mittagsstunde": {
    "id": "tt21148858",
    "title": "Mittagsstunde",
-   "seen": "2026-10-16",
+   "seen": "2026-10-26",
    "rating": 6.9,
    "votes": 526
   },
@@ -1879,9 +1900,9 @@
   "odysseeimax": {
    "id": null,
    "title": "Die Odyssee (Imax)",
-   "checked": "2026-10-14",
-   "attempts": 1,
-   "seen": "2026-10-18"
+   "checked": "2026-10-26",
+   "attempts": 2,
+   "seen": "2026-10-26"
   },
   "ohlala2neuetestsneueschaos": {
    "id": "tt36933402",
@@ -2168,9 +2189,9 @@
   "residentevilimax": {
    "id": null,
    "title": "Resident Evil (Imax)",
-   "checked": "2026-10-11",
-   "attempts": 1,
-   "seen": "2026-10-11"
+   "checked": "2026-10-26",
+   "attempts": 2,
+   "seen": "2026-10-26"
   },
   "riesengebirge": {
    "id": null,
