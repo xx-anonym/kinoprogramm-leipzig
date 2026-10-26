@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-26T13:19:21.132Z",
+ "ratingsUpdated": "2026-10-26T14:01:03.119Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -509,6 +509,13 @@
    "seen": "2026-10-26",
    "rating": 7.3,
    "votes": 46897
+  },
+  "crazyoldlady": {
+   "id": "tt31613162",
+   "title": "Crazy old Lady",
+   "seen": "2026-10-26",
+   "rating": 5.5,
+   "votes": 1288
   },
   "dancingqueen": {
    "id": "tt20424066",
@@ -1976,9 +1983,9 @@
   "perfekteurlaubimax": {
    "id": null,
    "title": "Der perfekte Urlaub (Imax)",
-   "checked": "2026-10-18",
-   "attempts": 1,
-   "seen": "2026-10-20"
+   "checked": "2026-10-26",
+   "attempts": 2,
+   "seen": "2026-10-26"
   },
   "perfekteurlaubproseccovorpremierecateringab1930uhr": {
    "id": null,
