@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T02:01:10.933Z",
+  "generatedAt": "2026-10-26T03:01:04.313Z",
   "days": ["2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":13},
@@ -1548,6 +1548,7 @@
     {"cinema":"zeise","film":"naza","date":"2026-10-31","time":"11:15","url":"https://www.zeise.de/show/470320/booking"},
     {"cinema":"cinemaxx-dammtor","film":"hybecheeringparty","date":"2026-10-31","time":"12:30","extras":["3D"],"url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001589/37442"},
     {"cinema":"koralle","film":"spaziergangnachsyrakus","date":"2026-10-31","time":"13:15","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/396251"},
+    {"cinema":"filmraum","film":"geheimnisdergestohlenenmaske","date":"2026-10-31","time":"13:45","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3676982097"},
     {"cinema":"koralle","film":"barbarabuserpionierindernachhaltigkeit","date":"2026-10-31","time":"13:45","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/396286"},
     {"cinema":"zeise","film":"shaundasschafspukimkurbisfeld","date":"2026-10-31","time":"13:45","url":"https://www.zeise.de/show/470260/booking"},
     {"cinema":"uci-mundsburg","film":"perfekteurlaub","date":"2026-10-31","time":"14:00","url":"https://buchung.uci-kinowelt.de/?perf_id=A8B53000023NYFRLEA&site_id=52"},
@@ -1565,7 +1566,6 @@
     {"cinema":"magazin","film":"kultfilmnachmittagforkidsderkleinevampir","date":"2026-10-31","time":"15:00","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"spectrum","film":"monstermia","date":"2026-10-31","time":"15:00","url":"https://www.kinoheld.de/kino/norderstedt/spectrum-kino-center-norderstedt/vorstellung/82873"},
     {"cinema":"cinemotion-winsen","film":"monstermia","date":"2026-10-31","time":"15:00","url":"https://www.kinoheld.de/kino/winsen/kinocenter-winsen/vorstellung/76882"},
-    {"cinema":"filmraum","film":"geheimnisdergestohlenenmaske","date":"2026-10-31","time":"15:30","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3676982097"},
     {"cinema":"koralle","film":"shaundasschafspukimkurbisfeld","date":"2026-10-31","time":"15:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/396249"},
     {"cinema":"savoy","film":"wildwood","date":"2026-10-31","time":"16:00","url":"https://savoy.premiumkino.de/vorstellung/wildwood/20261031/1600/KONEAg6q5QUfnCwPEuahAlcCwT6eJlzM5bHkrjMtHP4~"},
     {"cinema":"cineplex-elmshorn","film":"wildwood","date":"2026-10-31","time":"16:30","url":"https://tickets.cineplex.de/checkout/396/BD54FB00023FWBXJYB"},
