@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-26T13:01:00.018Z",
+ "ratingsUpdated": "2026-10-26T13:19:21.132Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -1334,6 +1334,13 @@
   "killer": {
    "id": "tt1121948",
    "title": "The Killer",
+   "seen": "2026-10-26",
+   "rating": 5.7,
+   "votes": 19220
+  },
+  "killerthe": {
+   "id": "tt1121948",
+   "title": "Killer, The",
    "seen": "2026-10-26",
    "rating": 5.7,
    "votes": 19220
