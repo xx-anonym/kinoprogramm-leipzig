@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-27T00:00:57.593Z",
+ "ratingsUpdated": "2026-10-27T00:35:33.083Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -2296,6 +2296,13 @@
    "rating": 8.1,
    "votes": 705359
   },
+  "rockybalboa": {
+   "id": "tt0479143",
+   "title": "Rocky Balboa",
+   "seen": "2026-10-27",
+   "rating": 7.1,
+   "votes": 246555
+  },
   "rockyhorrorpictureshow": {
    "id": "tt0073629",
    "title": "The Rocky Horror Picture Show",
@@ -2889,7 +2896,7 @@
    "id": null,
    "skip": true,
    "title": "Überraschungspremiere",
-   "seen": "2026-10-26"
+   "seen": "2026-10-27"
   },
   "udtateer": {
    "id": null,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T00:02:20.677Z",
+  "generatedAt": "2026-10-27T00:36:57.767Z",
   "days": ["2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":64},
@@ -89,7 +89,7 @@
     "rbo2627manonroyalballet": {"title":"RBO 26/27: Manon (Royal Ballet)","original":"Royal Ballet & Opera 2026/27: Manon","year":2026},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.6,"votes":115818}},
     "rocky": {"title":"Rocky","duration":119,"year":1976,"imdb":{"id":"tt0075148","rating":8.1,"votes":705359}},
-    "rockybalboa": {"title":"Rocky Balboa","duration":114},
+    "rockybalboa": {"title":"Rocky Balboa","duration":114,"imdb":{"id":"tt0479143","rating":7.1,"votes":246555}},
     "sacrifice": {"title":"Sacrifice","duration":101,"imdb":{"id":"tt32268992","rating":5,"votes":5298}},
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80,"original":"Shaun The Sheep: The Beast Of Mossy Bottom","year":2026,"imdb":{"id":"tt36841161","rating":7.1,"votes":2151}},
     "sinnundsinnlichkeit": {"title":"Sinn und Sinnlichkeit","duration":132,"imdb":{"id":"tt13609648","rating":7.4,"votes":5520}},
