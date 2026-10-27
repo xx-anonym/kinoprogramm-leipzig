@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-27T08:01:03.489Z",
+  "generatedAt": "2026-10-27T09:01:01.387Z",
   "days": ["2026-10-27","2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":28},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":125},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":124},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":17},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":2},
@@ -26,7 +26,7 @@
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":17},
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":44},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":196},
-    {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":244},
+    {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":243},
     {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":50},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":5},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":16},
@@ -252,8 +252,6 @@
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":111}}
   },
   "shows": [
-    {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-27","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589550"},
-    {"cinema":"uci-wandsbek","film":"shaundasschafspukimkurbisfeld","date":"2026-10-27","time":"10:00","url":"https://buchung.uci-kinowelt.de/?perf_id=934E3000023CYUQWGE&site_id=54"},
     {"cinema":"kinopolis","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-27","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/9C360000023HXECDQG"},
     {"cinema":"kinopolis","film":"emilunddiedetektive","date":"2026-10-27","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/29360000023HXECDQG"},
     {"cinema":"kinopolis","film":"toystory5","date":"2026-10-27","time":"10:20","url":"https://www.kinopolis.de/hh/programm/vorstellung/92460000023HXECDQG"},
