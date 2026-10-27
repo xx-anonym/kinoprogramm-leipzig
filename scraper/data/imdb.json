@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-27T00:35:33.083Z",
+ "ratingsUpdated": "2026-10-27T03:01:01.351Z",
  "films": {
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -2006,6 +2006,13 @@
    "seen": "2026-10-17",
    "rating": 7.2,
    "votes": 1618
+  },
+  "oppenheimer": {
+   "id": "tt15398776",
+   "title": "Oppenheimer",
+   "seen": "2026-10-27",
+   "rating": 8.2,
+   "votes": 1108241
   },
   "ostpreussenentschwundenewelt": {
    "id": null,
