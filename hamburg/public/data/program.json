@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T08:01:11.864Z",
+  "generatedAt": "2026-10-28T09:01:08.252Z",
   "days": ["2026-10-28","2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":28},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":123},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":122},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":8},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -85,7 +85,6 @@
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":100,"year":2026,"imdb":{"id":"tt37801321","rating":5.9,"votes":198}},
     "perfekteurlaubimax": {"title":"Der perfekte Urlaub (Imax)"},
     "spaziergangnachsyrakus": {"title":"Der Spaziergang nach Syrakus","duration":98,"year":2026,"imdb":{"id":"tt43598697","rating":6.8,"votes":151}},
-    "wunderweltenbaum": {"title":"Der Wunderweltenbaum","duration":110,"original":"The Magic Faraway Tree","year":2026,"imdb":{"id":"tt7734244","rating":6.2,"votes":6520}},
     "altern": {"title":"Die Ältern","duration":103,"year":2025,"imdb":{"id":"tt38875798","rating":6.2,"votes":197}},
     "andereseite": {"title":"Die andere Seite","duration":106,"year":2026,"imdb":{"id":"tt42373658","rating":6.3,"votes":37}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"year":2026,"imdb":{"id":"tt28151657","rating":5.3,"votes":188}},
@@ -246,7 +245,6 @@
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":111}}
   },
   "shows": [
-    {"cinema":"abaton","film":"wunderweltenbaum","date":"2026-10-28","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589561"},
     {"cinema":"kinopolis","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-28","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/AC360000023HXECDQG"},
     {"cinema":"kinopolis","film":"emilunddiedetektive","date":"2026-10-28","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/39360000023HXECDQG"},
     {"cinema":"kinopolis","film":"toystory5","date":"2026-10-28","time":"10:20","url":"https://www.kinopolis.de/hh/programm/vorstellung/A2460000023HXECDQG"},
