@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T01:05:32.216Z",
+  "generatedAt": "2026-10-29T02:01:08.793Z",
   "days": ["2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -116,7 +116,7 @@
     "fraueninberlin": {"title":"Frauen in Berlin","duration":142},
     "geister": {"title":"Geister","duration":106,"year":2026,"imdb":{"id":"tt36501204","rating":6.9,"votes":55}},
     "geschlossenegesellschaft": {"title":"Geschlossene Gesellschaft","duration":90,"imdb":{"id":"tt0077606","rating":7.3,"votes":101}},
-    "glaube": {"title":"Glaube","duration":118,"original":"Los domingos","imdb":{"id":"tt35513027","rating":7.3,"votes":5662}},
+    "glaube": {"title":"Glaube","duration":118,"original":"Los domingos","year":2026,"imdb":{"id":"tt35513027","rating":7.3,"votes":5662}},
     "godzillaminuszero": {"title":"Godzilla Minus Zero","duration":135,"original":"ゴジラ-0.0","imdb":{"id":"tt34384661","rating":8,"votes":911}},
     "hakelbuddelclubzauberhafteschwestern2": {"title":"Häkelbüddel - Club: ZAUBERHAFTE SCHWESTERN 2","duration":130},
     "halloweendienachtdesgrauens": {"title":"Halloween - Die Nacht des Grauens","duration":91,"original":"Halloween","year":1978,"imdb":{"id":"tt0077651","rating":7.7,"votes":346718}},
