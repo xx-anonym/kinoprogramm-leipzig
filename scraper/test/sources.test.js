@@ -120,6 +120,26 @@ test('cineprog (Regina Palast): eingebettetes JSON, Einzel- und Mehrfachtermine,
   assert.equal(shows.find((s) => s.title === 'Sneak Preview').date, '2026-10-06');
 });
 
+test('cineprog (Regina Palast): Premium-Design mit Tabelle je Film, OmU, 3D und Ticketlink', () => {
+  const shows = parseCineprog(fixture('cineprog-premium.html'), 'https://www.kinoleipzig.com/programm?filter=all');
+  assert.equal(shows.length, 12);
+  const klara = shows.filter((s) => s.title === 'Klara und die Sonne');
+  assert.deepEqual(klara.slice(0, 2).map((s) => `${s.date} ${s.time}`), ['2026-10-29 20:00', '2026-10-30 17:15']);
+  assert.equal(klara.length, 7);
+  assert.equal(klara[0].duration, 116);
+  assert.equal(klara[0].version, null);
+  assert.match(klara[0].description, /^In einer Zukunft, in der KI zum Alltag gehört/);
+  assert.match(klara[0].url, /^https:\/\/www\.kinoleipzig\.com\/ticket\?l=.*showId/);
+  const ozzy = shows.find((s) => s.title.startsWith('Ozzy & Black Sabbath'));
+  assert.equal(ozzy.version, 'OmU');
+  assert.deepEqual(shows.find((s) => s.title === 'Avengers: Doomsday').extras, ['3D']);
+  assert.equal(shows.find((s) => s.title === 'Sneak Preview').duration, null, 'Sneak: Länge unbekannt');
+});
+
+test('cineprog: weder JSON noch Programmliste → Fehler statt leerem Programm', () => {
+  assert.throws(() => parseCineprog('<html><body>Wartungsarbeiten</body></html>'), /var programm =/);
+});
+
 test('iCal (Cineding): gefaltete Zeilen, Escapes und UTC-Zeiten', () => {
   const shows = parseIcal(fixture('cineding.ics'));
   assert.equal(shows[0].description, 'Das letzte Foto, das Jessie gemacht hat, zeigt die Sonne über Berlin.');

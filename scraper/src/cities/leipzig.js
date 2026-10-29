@@ -41,7 +41,13 @@ export const CINEMAS = [
     address: 'Dresdner Straße 56, 04317 Leipzig',
     location: [51.3392, 12.4014],
     website: 'https://www.kinoleipzig.com/',
-    source: { type: 'cineprog', url: 'https://www.kinoleipzig.com/programm?filter=all' },
+    // Die Tickets laufen über kinoheld – dort steht das Programm auch, falls kinoleipzig.com ausfällt
+    // oder wieder umgebaut wird
+    source: {
+      type: 'cineprog',
+      url: 'https://www.kinoleipzig.com/programm?filter=all',
+      fallback: { type: 'kinoheld', cinemaId: '1083' },
+    },
   },
   {
     id: 'passage',

@@ -41,8 +41,8 @@ ihren Ticketsystemen – kinoprogramm-leipzig.de wird nicht benötigt:
 | --- | --- |
 | Cineplex Leipzig | Ticketportal kinoheld ¹ ² |
 | UCI Nova Eventis | Ticketportal kinoheld ¹ ², ergänzt um kino-zeit.de ³ |
-| CineStar Petersbogen | JSON-API von cinestar.de |
-| Regina Palast | Programmdaten auf kinoleipzig.com |
+| CineStar Petersbogen | JSON-API von cinestar.de, bei Ausfall kinoheld |
+| Regina Palast | Programm auf kinoleipzig.com, bei Ausfall kinoheld |
 | Passage Kinos | Terminliste auf passage-kinos.de |
 | Schauburg | Wochenprogramm auf schauburg-leipzig.de |
 | Kinobar Prager Frühling | Ticketsystem Cinetixx |

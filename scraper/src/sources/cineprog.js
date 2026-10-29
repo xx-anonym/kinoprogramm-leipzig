@@ -1,6 +1,9 @@
-// cineprog.net: Webseiten-System des Regina Palast (kinoleipzig.com).
-// Das komplette Programm steckt als JSON in "var programm = {...};".
+// cineprog.net: Webseiten-System des Regina Palast (kinoleipzig.com) und des City Kinos Buxtehude.
+// Klassische Seiten haben das komplette Programm als JSON in "var programm = {...};".
+// Das neue "Premium"-Design (Regina Palast seit 29.10.2026) zeigt es nur noch als Tabelle je Film.
+import * as cheerio from 'cheerio';
 import { fetchText } from '../lib/http.js';
+import { versionFromText } from '../lib/normalize.js';
 
 /** Liest das JSON-Objekt, das direkt nach `marker` im Text beginnt. */
 export function extractJsonObject(text, marker) {
@@ -23,7 +26,8 @@ export function extractJsonObject(text, marker) {
 // Leere Felder kommen als {} – gesetzte Merkmale als "1" o. ä.
 const isSet = (v) => v !== undefined && v !== null && v !== '' && !(typeof v === 'object' && Object.keys(v).length === 0);
 
-export function parseCineprog(html) {
+export function parseCineprog(html, pageUrl) {
+  if (!html.includes('var programm =') && html.includes('data-program-list')) return parsePremium(html, pageUrl);
   const programm = extractJsonObject(html, 'var programm =');
   const shows = [];
   for (const film of Object.values(programm.filme ?? {})) {
@@ -57,8 +61,47 @@ export function parseCineprog(html) {
   return shows;
 }
 
+/** Premium-Design: je Film eine Karte, je Fassung eine Tabellenzeile ("2D · OV"), je Termin ein Zeit-Knopf. */
+function parsePremium(html, pageUrl) {
+  const $ = cheerio.load(html);
+  const text = (el) => $(el).text().replace(/\s+/g, ' ').trim();
+  const shows = [];
+  $('[data-program-list] article[data-movie-id]').each((_, card) => {
+    const $card = $(card);
+    const title = text($card.find('h3').first());
+    if (!title) return;
+    const pills = $card.find('.pill').map((_, el) => text(el)).get();
+    const duration = Number(pills.map((p) => /^(\d+)\s*Min/.exec(p)?.[1]).find(Boolean)) || null;
+    const description = text($card.find('h3').first().next('p')) || null;
+    $card.find('tbody tr').each((_, row) => {
+      const label = text($(row).find('th').first()); // z. B. "Spielzeiten 2D · OmU"
+      const version = versionFromText(label);
+      const extras = /\b3D\b/.test(label) ? ['3D'] : [];
+      $(row)
+        .find('a.btn-time')
+        .each((_, link) => {
+          const date = $(link).attr('data-date') ?? '';
+          const time = $(link).attr('data-time') ?? '';
+          if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !/^\d{1,2}:\d{2}$/.test(time)) return;
+          const href = $(link).attr('href');
+          shows.push({
+            date,
+            time: time.padStart(5, '0'),
+            title,
+            version,
+            extras,
+            duration,
+            description,
+            url: href && pageUrl ? new URL(href, pageUrl).href : null,
+          });
+        });
+    });
+  });
+  return shows;
+}
+
 export async function cineprog({ url }) {
   // kinoleipzig.com nimmt Verbindungen von GitHubs Servern ab und zu nicht an (Connect-Timeout) –
   // deshalb mehr Geduld: bis zu 3 Wiederholungen nach 10, 20 und 40 Sekunden.
-  return parseCineprog(await fetchText(url, { retries: 3, retryDelayMs: 10_000 }));
+  return parseCineprog(await fetchText(url, { retries: 3, retryDelayMs: 10_000 }), url);
 }
