@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-29T10:00:58.151Z",
+  "generatedAt": "2026-10-29T10:12:09.504Z",
   "days": ["2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":211},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":192},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":150},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":149},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":154},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":103},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":43},
@@ -123,7 +123,6 @@
     "zombie2dayofthedead": {"title":"Zombie 2 - Day of the Dead","duration":96,"original":"Day of the Dead","year":1985,"imdb":{"id":"tt0088993","rating":7.1,"votes":80993}}
   },
   "shows": [
-    {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-10-29","time":"10:40","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184684"},
     {"cinema":"cinestar","film":"minionsundmonster","date":"2026-10-29","time":"11:30","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184835"},
     {"cinema":"cinestar","film":"shaundasschafspukimkurbisfeld","date":"2026-10-29","time":"12:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184828"},
     {"cinema":"passage","film":"geheimnisdergestohlenenmaske","date":"2026-10-29","time":"13:30","screen":"Casino","url":"https://www.passage-kinos.de/das-geheimnis-der-gestohlenen-maske"},
@@ -1041,7 +1040,7 @@
     {"cinema":"uci","film":"unsafe","date":"2026-11-05","time":"20:00","url":"https://buchung.uci-kinowelt.de/?perf_id=9B043000023TRMZCFD&site_id=57"},
     {"cinema":"cinestar","film":"ramayanariseofalegendhindiomuomeu","date":"2026-11-05","time":"20:00","version":"OmU","extras":["3D","IMAX"],"label":"CineSpecial","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184433"},
     {"cinema":"passage","film":"treciotoledreiabschiede","date":"2026-11-05","time":"20:30","version":"OmU","label":"Eröffnungsfilm der Cinema! Italia!","screen":"Filmeck","url":"https://www.passage-kinos.de/tre-ciotole-drei-abschiede"},
-    {"cinema":"schaubuehne","film":"dreikameradinnen","date":"2026-11-05","time":"20:45","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3675916164&bgswitch=false&resize=false"},
+    {"cinema":"schaubuehne","film":"dreikameradinnen","date":"2026-11-05","time":"20:45","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3675916164&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"queensofthedead","date":"2026-11-05","time":"21:00","version":"OmU","url":"https://www.cineding-leipzig.de/veranstaltungen/queens-of-the-dead-omu/"}
   ]
 }

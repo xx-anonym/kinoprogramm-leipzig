@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T10:01:04.173Z",
+  "generatedAt": "2026-10-29T10:12:14.808Z",
   "days": ["2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -10,7 +10,7 @@
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":38},
     {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":256},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":189},
-    {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":138},
+    {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":137},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":16},
     {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":24},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":74},
@@ -243,7 +243,6 @@
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":111}}
   },
   "shows": [
-    {"cinema":"cinemaxx-wandsbek","film":"spidermanbrandnewday","date":"2026-10-29","time":"11:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001488/19319"},
     {"cinema":"cinemaxx-dammtor","film":"forgottenisland","date":"2026-10-29","time":"11:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001643/41354"},
     {"cinema":"cinemaxx-wandsbek","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-10-29","time":"11:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001606/19343"},
     {"cinema":"cinemaxx-harburg","film":"perfekteurlaub","date":"2026-10-29","time":"11:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1207/HO00001467/27032"},
