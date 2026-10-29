@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T09:01:04.202Z",
+  "generatedAt": "2026-10-29T10:00:58.151Z",
   "days": ["2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":211},
@@ -10,7 +10,7 @@
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":43},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":20},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":17},
-    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":21},
+    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":22},
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
   ],
   "films": {
@@ -514,6 +514,7 @@
     {"cinema":"regina","film":"othermommy","date":"2026-10-31","time":"21:00","screen":"Kino 6","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1109433"},
     {"cinema":"regina","film":"wildwood","date":"2026-10-31","time":"21:00","screen":"Kino 4","url":"https://www.kinoheld.de/kino-leipzig/regina-palast?mode=widget&change=0&rb=1&showId=1106724"},
     {"cinema":"passage","film":"devils","date":"2026-10-31","time":"21:00","version":"OmU","label":"Halloween-Special","screen":"Universum","url":"https://www.passage-kinos.de/the-devils-(1971)"},
+    {"cinema":"schaubuehne","film":"rockyhorrorpictureshow","date":"2026-10-31","time":"21:00","version":"OV","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3647957155&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"teenagesexunddeathatcampmiasma","date":"2026-10-31","time":"21:00","version":"OmU","url":"https://www.cineding-leipzig.de/veranstaltungen/teenage-sex-death-at-camp-miasma-omu-2-2026-10-29-2026-10-30-2026-10-31/"},
     {"cinema":"luru","film":"obsessiondusollstmichlieben","date":"2026-10-31","time":"21:15","version":"OmU","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3699413456&bgswitch=false&resize=false"},
     {"cinema":"schauburg","film":"queensofthedead","date":"2026-10-31","time":"21:30","version":"OmU","label":"Halloween Preview","url":"https://www.schauburg-leipzig.de/filmdetails/halloween-preview-queens-of-the-dead-omu"},
