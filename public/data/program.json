@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T05:00:59.232Z",
+  "generatedAt": "2026-10-29T06:01:02.008Z",
   "days": ["2026-10-29","2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":211},
@@ -14,8 +14,9 @@
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
   ],
   "films": {
+    "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
     "25jahrederherrderringeextendedtriple": {"title":"25 Jahre DER HERR DER RINGE – Extended Triple"},
-    "aquiethouse": {"title":"A Quiet House","duration":94,"original":"Quiet","year":2025,"imdb":{"id":"tt8332922","rating":7.2,"votes":331024}},
+    "aquiethouse": {"title":"A Quiet House","duration":93,"original":"Please Don't Feed the Children","year":2024,"imdb":{"id":"tt8332922","rating":7.2,"votes":331024}},
     "addamsfamily": {"title":"Addams Family","duration":99,"imdb":{"id":"tt0101272","rating":7,"votes":204552}},
     "afterlives": {"title":"Afterlives","duration":91},
     "alteliebe": {"title":"Alte Liebe","duration":110,"imdb":{"id":"tt44112686","rating":7.6,"votes":64}},
@@ -86,7 +87,7 @@
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":88,"original":"Paw Patrol 3","year":2026,"imdb":{"id":"tt29356163","rating":6,"votes":2937}},
     "primetime": {"title":"Primetime","duration":110,"year":2026,"imdb":{"id":"tt34206385","rating":7.1,"votes":22856}},
     "queensofthedead": {"title":"Queens of the Dead","duration":101,"imdb":{"id":"tt32986431","rating":5.3,"votes":2319}},
-    "ramayanariseofalegend": {"title":"Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
+    "ramayanariseofalegend": {"title":"Ramayana: Rise Of A Legend","duration":195,"original":"Ramayana: Part I","year":2026},
     "ramayanariseofalegendhindiomuomeu": {"title":"Ramayana: Rise of a Legend (Hindi OmU/OmeU)","duration":210},
     "rammsteinliveinmexicocity": {"title":"Rammstein - Live in Mexico City","duration":110,"year":2026},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.5,"votes":117433}},
@@ -1032,7 +1033,7 @@
     {"cinema":"kinobar","film":"salomea","date":"2026-11-05","time":"17:00","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3698466003&bgswitch=false&resize=false"},
     {"cinema":"kinobar","film":"nurnberg","date":"2026-11-05","time":"18:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3698466397&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"ivanundhadoum","date":"2026-11-05","time":"18:45","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3668904691&bgswitch=false&resize=false"},
-    {"cinema":"cineplex","film":"ramayanariseofalegend","date":"2026-11-05","time":"19:00","url":"https://tickets.cineplex.de/checkout/356/A7150C00023FWBXJYB"},
+    {"cinema":"cineplex","film":"hiramayanariseofalegend","date":"2026-11-05","time":"19:00","url":"https://tickets.cineplex.de/checkout/356/A7150C00023FWBXJYB"},
     {"cinema":"cineding","film":"washabenwirgelacht","date":"2026-11-05","time":"19:00","url":"https://www.cineding-leipzig.de/veranstaltungen/was-haben-wir-gelacht/"},
     {"cinema":"uci","film":"ramayanariseofalegend","date":"2026-11-05","time":"19:30","url":"https://buchung.uci-kinowelt.de/?perf_id=CE143000023TRMZCFD&site_id=57"},
     {"cinema":"uci","film":"rammsteinliveinmexicocity","date":"2026-11-05","time":"20:00","url":"https://buchung.uci-kinowelt.de/?perf_id=1FF33000023TRMZCFD&site_id=57"},
