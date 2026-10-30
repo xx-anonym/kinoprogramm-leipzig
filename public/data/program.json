@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-30T17:00:58.328Z",
+  "generatedAt": "2026-10-30T18:00:57.695Z",
   "days": ["2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":172},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":142},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":123},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":135},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":87},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":86},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":35},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":22},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":15},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":23},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
   ],
   "films": {
     "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
@@ -46,7 +46,6 @@
     "fantastischemrfox": {"title":"Der Fantastische Mr. Fox","duration":86,"imdb":{"id":"tt0432283","rating":7.9,"votes":312746}},
     "frechstetrollderwelt": {"title":"Der frechste Troll der Welt","imdb":{"id":"tt33334564","rating":6.5,"votes":74}},
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":125,"year":2026,"imdb":{"id":"tt37801321","rating":5.7,"votes":280}},
-    "todesking": {"title":"Der Todesking","imdb":{"id":"tt0098486","rating":6.3,"votes":3259}},
     "andereseite": {"title":"Die andere Seite","duration":106,"imdb":{"id":"tt42373658","rating":6.4,"votes":52}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"imdb":{"id":"tt28151657","rating":5.3,"votes":197}},
     "eisernerosefriedhofdertotenseelen": {"title":"Die Eiserne Rose – Friedhof der Toten Seelen"},
@@ -149,12 +148,10 @@
     {"cinema":"regina","film":"sinnundsinnlichkeit","date":"2026-10-30","time":"17:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109380%26apos%3B"},
     {"cinema":"regina","film":"streetfighter","date":"2026-10-30","time":"17:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109413%26apos%3B"},
     {"cinema":"regina","film":"whalefall","date":"2026-10-30","time":"17:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109320%26apos%3B"},
-    {"cinema":"passage","film":"klaraunddiesonne","date":"2026-10-30","time":"18:15","screen":"Casino","url":"https://www.passage-kinos.de/klara-und-die-sonne"},
     {"cinema":"kinobar","film":"moscasfliegenundanderegaste","date":"2026-10-30","time":"18:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3698355013&bgswitch=false&resize=false"},
     {"cinema":"regina","film":"residentevil","date":"2026-10-30","time":"19:00","version":"OV","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109446%26apos%3B"},
     {"cinema":"schauburg","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-10-30","time":"19:00","url":"https://www.schauburg-leipzig.de/filmdetails/heimsuchung-eine-jahrhundertgeschichte"},
     {"cinema":"luru","film":"blutgrafin","date":"2026-10-30","time":"19:00","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3699412827&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"todesking","date":"2026-10-30","time":"19:00","label":"Reihe Grenzgänger - Halloween Spezial","url":"https://www.cineding-leipzig.de/veranstaltungen/reihe-grenzgaenger-halloween-spezial-der-todesking/"},
     {"cinema":"cinestar","film":"veritydunklegeheimnisse","date":"2026-10-30","time":"19:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184710"},
     {"cinema":"uci","film":"byanymeans","date":"2026-10-30","time":"19:20"},
     {"cinema":"cineplex","film":"eisernewildnisheartofthebeast","date":"2026-10-30","time":"19:30","url":"https://tickets.cineplex.de/checkout/356/70990C00023FWBXJYB"},
