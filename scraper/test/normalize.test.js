@@ -21,7 +21,7 @@ test('parseTitle trennt Fassung und 3D vom Titel', () => {
     ['25 Jahre DER HERR DER RINGE – Extended Triple (OmU) (OV)', '25 Jahre DER HERR DER RINGE – Extended Triple', 'OmU', []],
     ['ANSTATT BÄUMEN (OmU) + Filmgespräch', 'ANSTATT BÄUMEN + Filmgespräch', 'OmU', []],
     ['Vaterland (dt.)', 'Vaterland', null, []],
-    ['Emil und die Detektive (2026)', 'Emil und die Detektive', null, []],
+    ['Emil und die Detektive (2026)', 'Emil und die Detektive', null, [], 2026],
     ['Avatar 3D', 'Avatar', null, ['3D']],
     ['Ivanov', 'Ivanov', null, []],
     // Hamburger Quellen
@@ -30,10 +30,11 @@ test('parseTitle trennt Fassung und 3D vom Titel', () => {
     ['Die Tribute von Panem - Catching Fire (Wa: 2026)', 'Die Tribute von Panem - Catching Fire', null, []],
     ['SNEAK PREVIEW am 12.10.26', 'SNEAK PREVIEW', null, []],
     ['Spaziergang nach Syrakus, Der', 'Der Spaziergang nach Syrakus', null, []],
+    ['Killer, The (1989) (WA: 2026)', 'The Killer', null, [], 1989],
     ['Minions &amp; Monster', 'Minions & Monster', null, []],
   ];
-  for (const [raw, title, version, extras] of cases) {
-    assert.deepEqual(parseTitle(raw), { title, version, extras }, raw);
+  for (const [raw, title, version, extras, year = null] of cases) {
+    assert.deepEqual(parseTitle(raw), { title, version, extras, year }, raw);
   }
 });
 

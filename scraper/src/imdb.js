@@ -115,6 +115,8 @@ export async function refreshImdb({ films, cache, now = new Date(), loadRatings,
   const todo = films.filter((film) => {
     const entry = entries[film.key];
     if (!entry) return true;
+    // Das Jahr hat sich seit der Zuordnung geändert (z. B. "(1989)" im Titel statt 2024 von kinoheld)
+    if (entry.id && entry.year && film.year && entry.year !== film.year) return true;
     return !entry.id && !entry.skip && (entry.attempts ?? 1) < MAX_ATTEMPTS && age(entry.checked) > RETRY_AFTER;
   });
   for (const film of todo.filter((f) => isEvent(f.title))) {
@@ -129,8 +131,9 @@ export async function refreshImdb({ films, cache, now = new Date(), loadRatings,
     for (const film of lookup) {
       const hit = pickCandidate(film, candidates.get(film.key) ?? [], { currentYear });
       const attempts = (entries[film.key]?.attempts ?? 0) + 1;
+      // Das Jahr merken, um bei einem anderen Jahr neu zuzuordnen
       entries[film.key] = hit
-        ? { id: hit.id, title: film.title, seen: today }
+        ? { id: hit.id, title: film.title, ...(film.year ? { year: film.year } : {}), seen: today }
         : { id: null, title: film.title, checked: today, attempts, seen: today };
       if (hit) matched++;
     }
@@ -239,7 +242,15 @@ async function currentFilms() {
   for (const city of Object.values(CITIES)) {
     const program = await readCache(join(city.siteDir, 'data', 'program.json'));
     for (const [key, f] of Object.entries(program?.films ?? {})) {
-      if (!films.has(key)) films.set(key, { key, title: f.title, original: f.original, year: f.year, duration: f.duration });
+      // Läuft ein Film in beiden Städten, ergänzen sich die Hinweise (Leipzig kennt z. B. kein Jahr)
+      const known = films.get(key);
+      films.set(key, {
+        key,
+        title: known?.title ?? f.title,
+        original: known?.original ?? f.original,
+        year: known?.year ?? f.year,
+        duration: known?.duration ?? f.duration,
+      });
     }
   }
   return [...films.values()];

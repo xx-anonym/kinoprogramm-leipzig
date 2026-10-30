@@ -98,6 +98,22 @@ test('Filmlänge gilt kinoübergreifend – die häufigste Angabe gewinnt', asyn
   assert.equal(data.films.kurz.duration, undefined);
 });
 
+test('Jahr im Titel schlägt das Jahr aus der Datenbank (Wiederaufführung)', async () => {
+  const data = await collect({
+    today: TODAY,
+    cinemas: [cinemas[0], cinemas[2]],
+    sources: {
+      // kinoheld: falsches Jahr der Neuverfilmung, häufiger im Programm
+      direct: async () =>
+        ['17:00', '19:00', '21:00'].map((time) => ({ date: TODAY, time, title: 'The Killer (WA)', originalTitle: 'The Killer', year: 2024 })),
+      other: async () => [{ date: TODAY, time: '22:00', title: 'Killer, The (1989) (WA: 2026)', year: 2024 }],
+    },
+  });
+  assert.deepEqual(Object.keys(data.films), ['killer']);
+  assert.equal(data.films.killer.title, 'The Killer');
+  assert.equal(data.films.killer.year, 1989);
+});
+
 test('findet eine Quelle plötzlich nichts mehr, gilt das als Fehler und die alten Daten bleiben', async () => {
   const previous = {
     films: { alteliebe: { title: 'Alte Liebe', duration: 112 } },

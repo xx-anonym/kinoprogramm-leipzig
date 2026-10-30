@@ -44,15 +44,21 @@ const decodeEntities = (text) =>
 
 /**
  * Zerlegt einen Titel wie "GENTLE MONSTER (OmeU)" oder "Digger in OmdU"
- * in Titel, Fassung und Zusatzmerkmale (3D).
+ * in Titel, Fassung, Zusatzmerkmale (3D) und ein angehängtes Jahr ("Killer, The (1989)").
  */
 export function parseTitle(raw) {
+  let year = null;
+  const takeYear = (match) => {
+    year = Number(/\d{4}/.exec(match)[0]);
+    return '';
+  };
   let title = decodeEntities(String(raw ?? ''))
     .replace(/\s+/g, ' ')
     .trim()
     .replace(TRAILING_RATING, '')
     .replace(TRAILING_REISSUE, '')
     .replace(TRAILING_DATE, '')
+    .replace(TRAILING_YEAR, takeYear) // vor dem Artikel: "Killer, The (1989) (WA: 2026)"
     .replace(TRAILING_ARTICLE, '$2 $1');
   const versions = [];
   const extras = new Set();
@@ -71,7 +77,7 @@ export function parseTitle(raw) {
     take(tag.trim());
     return ' ';
   });
-  title = title.replace(TRAILING_YEAR, '');
+  title = title.replace(TRAILING_YEAR, takeYear);
   let m;
   while ((m = TRAILING_TAG.exec(title))) {
     take(m[1]);
@@ -83,7 +89,7 @@ export function parseTitle(raw) {
     .replace(/[\s\-–:,]+$/, '')
     .trim();
 
-  return { title, version: pickVersion(...versions), extras: [...extras] };
+  return { title, version: pickVersion(...versions), extras: [...extras], year };
 }
 
 // Veranstaltungs-Vorsätze vor dem Doppelpunkt, z. B. "Premiere: ALTE LIEBE" oder "Reihe Zeitlos: HARD BOILED".

@@ -75,6 +75,8 @@ function normalizeShows(rawShows, cinemaId, days) {
       // Hinweise für die Zuordnung zu IMDb (bisher nur von kinoheld)
       originalTitle: typeof raw.originalTitle === 'string' && raw.originalTitle.trim() ? raw.originalTitle.trim().slice(0, 200) : null,
       year: raw.year >= 1900 && raw.year <= 2100 ? raw.year : null,
+      // Jahr im Titel ("Killer, The (1989)") – das Kino selbst weiß es meist besser als die Datenbank
+      titleYear: parsed.year,
     });
   }
   return result;
@@ -232,6 +234,7 @@ export async function collect({
   const durations = mostCommon(allShows, 'duration');
   const originals = mostCommon(allShows, 'originalTitle');
   const years = mostCommon(allShows, 'year');
+  const titleYears = mostCommon(allShows, 'titleYear');
   // Wörterbuch aus Beschreibungen und Titeln, um Titel in VERSALIEN normal zu schreiben
   const caseDictionary = buildCaseDictionary(new Set([...allShows.map((s) => s.description), ...allShows.map((s) => s.title)]));
   const films = {};
@@ -248,7 +251,8 @@ export async function collect({
       if (durations.has(film)) films[film].duration = durations.get(film);
       // Originaltitel und Jahr helfen bei der Zuordnung zu IMDb (src/imdb.js)
       if (originals.has(film) && filmKey(originals.get(film)) !== film) films[film].original = originals.get(film);
-      if (years.has(film)) films[film].year = years.get(film);
+      const year = titleYears.get(film) ?? years.get(film);
+      if (year) films[film].year = year;
       if (ratings.has(film)) films[film].imdb = ratings.get(film);
     }
     const show = { cinema: s.cinema, film, date: s.date, time: s.time };

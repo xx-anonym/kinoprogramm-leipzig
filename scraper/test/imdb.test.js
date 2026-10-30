@@ -52,6 +52,40 @@ test('Gleicher Titel, verschiedene Filme: Jahr und Laufzeit entscheiden', () => 
   assert.equal(pickCandidate({ title: 'Drive', duration: 100 }, drive, opts).id, 'tt0780504');
 });
 
+test('Wiederaufführung mit Jahr im Titel: der Klassiker, nicht die Neuverfilmung', () => {
+  const killer = [
+    { id: 'tt0097202', year: 1989, runtime: 111, votes: 80000, via: 'title' }, // John Woo
+    { id: 'tt1136617', year: 2023, runtime: 118, votes: 250000, via: 'title' }, // David Fincher
+    { id: 'tt1121948', year: 2024, runtime: 126, votes: 19000, via: 'title' }, // Neuverfilmung
+  ];
+  // kinoheld nennt fälschlich 2024, das Studio-Kino "Killer, The (1989) (WA: 2026)"
+  assert.equal(pickCandidate({ title: 'The Killer', year: 2024, duration: 110 }, killer, opts).id, 'tt1121948');
+  assert.equal(pickCandidate({ title: 'The Killer', year: 1989, duration: 110 }, killer, opts).id, 'tt0097202');
+});
+
+test('Zwischenspeicher: ändert sich das Jahr eines Films, wird neu zugeordnet', async () => {
+  const candidates = [
+    { id: 'tt0097202', year: 1989, runtime: 111, votes: 80000, via: 'title' },
+    { id: 'tt1121948', year: 2024, runtime: 126, votes: 19000, via: 'title' },
+  ];
+  let calls = 0;
+  const findCandidates = async (films) => (calls++, new Map(films.map((f) => [f.key, candidates])));
+  const loadRatings = async () => new Map([['tt0097202', { rating: 7.7, votes: 80000 }], ['tt1121948', { rating: 5.7, votes: 19000 }]]);
+  const now = new Date('2026-10-30T10:00:00Z');
+  const first = await refreshImdb({ films: [{ key: 'killer', title: 'The Killer', year: 2024, duration: 110 }], cache: null, now, loadRatings, findCandidates });
+  assert.equal(first.films.killer.id, 'tt1121948');
+  const same = await refreshImdb({ films: [{ key: 'killer', title: 'The Killer', year: 2024, duration: 110 }], cache: first, now, loadRatings, findCandidates });
+  assert.equal(calls, 1, 'gleiches Jahr: nichts zu tun');
+  assert.equal(same.films.killer.id, 'tt1121948');
+  const fixed = await refreshImdb({ films: [{ key: 'killer', title: 'The Killer', year: 1989, duration: 110 }], cache: first, now, loadRatings, findCandidates });
+  assert.equal(calls, 2);
+  assert.deepEqual(fixed.films.killer, { id: 'tt0097202', title: 'The Killer', year: 1989, seen: '2026-10-30', rating: 7.7, votes: 80000 });
+  // ältere Einträge ohne gemerktes Jahr werden nicht alle neu zugeordnet
+  const old = { films: { killer: { id: 'tt1121948', title: 'The Killer', seen: '2026-10-29', rating: 5.7, votes: 19000 } } };
+  await refreshImdb({ films: [{ key: 'killer', title: 'The Killer', year: 1989 }], cache: old, now, loadRatings, findCandidates });
+  assert.equal(calls, 2);
+});
+
 test('Im Zweifel keine Bewertung', () => {
   // Laufzeit passt überhaupt nicht
   assert.equal(pickCandidate({ title: 'Hope', duration: 95 }, [{ id: 'tt1', year: 2026, runtime: 160, votes: 500, via: 'title' }], opts), null);
@@ -84,7 +118,7 @@ test('Zwischenspeicher: neue Filme zuordnen, Bewertungen auffrischen, Erfolglose
   ];
 
   const first = await refreshImdb({ films, cache: null, now, loadRatings, findCandidates });
-  assert.deepEqual(first.films.odyssee, { id: 'tt0002', title: 'Die Odyssee', seen: '2026-10-11', rating: 7.4, votes: 52000 });
+  assert.deepEqual(first.films.odyssee, { id: 'tt0002', title: 'Die Odyssee', year: 2026, seen: '2026-10-11', rating: 7.4, votes: 52000 });
   assert.equal(first.films.sneakpreview.skip, true);
   assert.equal(first.films.unbekannt.id, null);
   assert.equal(candidateCalls, 1);
