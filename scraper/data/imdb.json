@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-10-30T00:01:01.943Z",
+ "ratingsUpdated": "2026-10-30T07:40:55.751Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -1571,6 +1571,14 @@
    "seen": "2026-10-17",
    "rating": 2.5,
    "votes": 192
+  },
+  "killer": {
+   "id": "tt0097202",
+   "title": "The Killer",
+   "year": 1989,
+   "seen": "2026-10-30",
+   "rating": 7.7,
+   "votes": 56453
   },
   "kinofurfrauenteresaeinlebenzwischenlichtundschatten": {
    "id": null,

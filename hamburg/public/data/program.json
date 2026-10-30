@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:39:57.134Z",
+  "generatedAt": "2026-10-30T07:42:25.345Z",
   "days": ["2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -214,7 +214,7 @@
     "tetsuotheironman": {"title":"Tetsuo: The Iron Man","imdb":{"id":"tt0096251","rating":6.9,"votes":29753}},
     "cowboy": {"title":"The Cowboy","duration":89,"year":2026,"imdb":{"id":"tt37539106","rating":8.5,"votes":29}},
     "fisherman": {"title":"The Fisherman"},
-    "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt1121948","rating":5.7,"votes":19236}},
+    "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56453}},
     "rockyhorrorpictureshow": {"title":"The Rocky Horror Picture Show","duration":100,"year":1975,"imdb":{"id":"tt0073629","rating":7.4,"votes":189464}},
     "rockyhorrorpictureshow1": {"title":"The Rocky Horror Picture Show1","duration":100},
     "socialreckoning": {"title":"The Social Reckoning","duration":120,"year":2026,"imdb":{"id":"tt37510326","rating":6.7,"votes":9759}},

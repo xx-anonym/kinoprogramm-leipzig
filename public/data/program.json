@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:39:51.562Z",
+  "generatedAt": "2026-10-30T07:42:20.107Z",
   "days": ["2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":188},
@@ -110,7 +110,7 @@
     "teenagesexunddeathatcampmiasma": {"title":"Teenage Sex & Death at Camp Miasma"},
     "thatswhytheladyisachamp": {"title":"That´s Why The Lady Is A Champ","duration":135,"imdb":{"id":"tt32323252","rating":6.6,"votes":19596}},
     "devils": {"title":"The Devils","duration":114,"imdb":{"id":"tt0066993","rating":7.8,"votes":24720}},
-    "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt1121948","rating":5.7,"votes":19236}},
+    "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56453}},
     "maternityward": {"title":"The Maternity Ward","duration":106},
     "rockyhorrorpictureshow": {"title":"The Rocky Horror Picture Show","duration":100,"year":1975,"imdb":{"id":"tt0073629","rating":7.4,"votes":189464}},
     "snakecharmer": {"title":"The Snake Charmer","duration":81,"imdb":{"id":"tt9359394","rating":7.3,"votes":47}},
