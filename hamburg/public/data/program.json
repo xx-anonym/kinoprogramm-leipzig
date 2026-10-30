@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T02:01:10.464Z",
+  "generatedAt": "2026-10-30T03:01:07.105Z",
   "days": ["2026-10-30","2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -143,7 +143,7 @@
     "korczak": {"title":"Korczak","duration":115,"imdb":{"id":"tt0099949","rating":7.4,"votes":1884}},
     "kultfilmnachmittagforkidsderkleinevampir": {"title":"Kultfilmnachmittag for Kids: Der kleine Vampir","duration":80,"original":"The Little Vampire","year":2017,"imdb":{"id":"tt4729560","rating":5.5,"votes":2193}},
     "kusslangsamtheaterveranstaltung": {"title":"Küss Langsam - Theaterveranstaltung"},
-    "lagraciosakanarischetraume": {"title":"La Graciosa - Kanarische Träume","duration":115},
+    "lagraciosakanarischetraume": {"title":"La Graciosa - Kanarische Träume","duration":115,"year":2025},
     "lalka": {"title":"Lalka","duration":162,"year":2026,"imdb":{"id":"tt37082105","rating":7.7,"votes":1475}},
     "latenightzusatzvorstellungtherockyhorrorpictureshow": {"title":"Late Night Zusatzvorstellung – THE ROCKY HORROR PICTURE SHOW","duration":100,"original":"The Rocky Horror Picture Show","year":1975,"imdb":{"id":"tt0073629","rating":7.4,"votes":189464}},
     "lesungjoebauschliveimbelugakino": {"title":"LESUNG - JOE BAUSCH live im Beluga Kino","duration":90},
