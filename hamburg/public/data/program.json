@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T05:57:50.614Z",
+  "generatedAt": "2026-10-31T06:02:26.046Z",
   "days": ["2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
@@ -129,7 +129,7 @@
     "halloweendienachtdesgrauens4k": {"title":"Halloween - Die Nacht des Grauens (4K)","duration":91,"imdb":{"id":"tt0077651","rating":7.7,"votes":346959}},
     "halloween1dienachtdesgrauens": {"title":"Halloween 1 - Die Nacht des Grauens","duration":91,"original":"Halloween","year":1978,"imdb":{"id":"tt0077651","rating":7.7,"votes":346959}},
     "hamburganimationclub": {"title":"Hamburg Animation Club","duration":120},
-    "hasipilenasip": {"title":"Hasip ile Nasip"},
+    "hasipilenasip": {"title":"Hasip ile Nasip","imdb":{"id":"tt43690684","rating":6,"votes":55}},
     "heavenlycreatures": {"title":"Heavenly Creatures","duration":99,"imdb":{"id":"tt0110005","rating":7.2,"votes":70507}},
     "heimsuchungeinejahrhundertgeschichte": {"title":"Heimsuchung - Eine Jahrhundertgeschichte","duration":121,"year":2026,"imdb":{"id":"tt38805050","rating":6.8,"votes":209}},
     "herrderringediegefahrtensondervorstellung": {"title":"Herr der Ringe - die Gefährten Sondervorstellung","duration":221},
