@@ -297,7 +297,7 @@
   "bibiblocksberg2dieverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
-   "seen": "2026-10-30",
+   "seen": "2026-10-31",
    "rating": 6.4,
    "votes": 45
   },
@@ -2571,6 +2571,13 @@
    "id": null,
    "title": "Ramayana: Rise of a Legend",
    "checked": "2026-10-29",
+   "attempts": 1,
+   "seen": "2026-10-31"
+  },
+  "ramayanariseofalegendhindihindiomu": {
+   "id": null,
+   "title": "Ramayana: Rise Of A Legend (Hindi) (Hindi OmU)",
+   "checked": "2026-10-31",
    "attempts": 1,
    "seen": "2026-10-31"
   },
