@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-31T01:01:58.774Z",
+  "generatedAt": "2026-10-31T02:01:07.600Z",
   "days": ["2026-10-31","2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":81},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":80},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -171,7 +171,6 @@
     "nofx40yearsoffuckinup": {"title":"NOFX: 40 Years of Fuckin' Up","original":"40 Years of Fuckin' Up","imdb":{"id":"tt40644918","rating":7.8,"votes":139}},
     "nosferatueinesymphoniedesgrauens": {"title":"Nosferatu - Eine Symphonie des Grauens","duration":94,"imdb":{"id":"tt0013442","rating":7.8,"votes":125050}},
     "ohnewahrheit": {"title":"Ohne Wahrheit","duration":138,"imdb":{"id":"tt12464300","rating":9.1,"votes":75}},
-    "oppenheimer": {"title":"Oppenheimer","duration":180,"year":2023,"imdb":{"id":"tt15398776","rating":8.2,"votes":1109038}},
     "othermommy": {"title":"Other Mommy","duration":93,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":13786}},
     "oyoyo": {"title":"Oyoyo","duration":47},
     "panslabyrinth": {"title":"Pans Labyrinth","duration":119,"original":"EL LABERINTO DEL FAUNO","year":2006,"imdb":{"id":"tt0457430","rating":8.2,"votes":756156}},
@@ -1373,7 +1372,6 @@
     {"cinema":"cinemaxx-dammtor","film":"whalefall","date":"2026-11-02","time":"23:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001620/41349"},
     {"cinema":"cinemaxx-dammtor","film":"othermommy","date":"2026-11-02","time":"23:05","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001660/41156"},
     {"cinema":"abaton","film":"sonneundbeton","date":"2026-11-03","time":"09:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590745"},
-    {"cinema":"abaton","film":"oppenheimer","date":"2026-11-03","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591274"},
     {"cinema":"zeise","film":"mittagsstunde","date":"2026-11-03","time":"10:00","url":"https://www.zeise.de/show/465057/booking"},
     {"cinema":"abaton","film":"tschick","date":"2026-11-03","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590764"},
     {"cinema":"nestkino","film":"dryleaf","date":"2026-11-03","time":"11:00","url":"https://www.kinoheld.de/kino/hamburg/schanzenkino-73/vorstellung/3696142797"},
