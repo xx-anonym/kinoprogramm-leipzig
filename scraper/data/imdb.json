@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-01T13:00:55.505Z",
+ "ratingsUpdated": "2026-11-01T16:00:56.780Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -2547,6 +2547,13 @@
    "checked": "2026-10-27",
    "attempts": 2,
    "seen": "2026-10-29"
+  },
+  "paddington": {
+   "id": "tt1109624",
+   "title": "Paddington",
+   "seen": "2026-11-01",
+   "rating": 7.3,
+   "votes": 159939
   },
   "panslabyrinth": {
    "id": "tt0457430",
