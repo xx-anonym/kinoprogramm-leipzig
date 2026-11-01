@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T16:01:57.916Z",
+  "generatedAt": "2026-11-01T16:08:36.853Z",
   "days": ["2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":14},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":4},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":34},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":97},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":52},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":50},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":71},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":33}
   ],
@@ -279,10 +279,8 @@
     {"cinema":"burgkino","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-01","time":"15:15","screen":"Saal 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3695851736&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"monstermia","date":"2026-11-01","time":"15:15","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3695847697&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"shaundasschafspukimkurbisfeld","date":"2026-11-01","time":"15:15","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3695822560&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"veritydunklegeheimnisse","date":"2026-11-01","time":"16:45","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117168"},
     {"cinema":"metropolis","film":"jeannedielman","date":"2026-11-01","time":"17:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3682815817"},
     {"cinema":"city-buxtehude","film":"perfekteurlaub","date":"2026-11-01","time":"17:00","screen":"City 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3693506339&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"perfekteurlaub","date":"2026-11-01","time":"17:00","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117157"},
     {"cinema":"cinemaxx-harburg","film":"veritydunklegeheimnisse","date":"2026-11-01","time":"17:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1207/HO00001430/26915"},
     {"cinema":"cinemaxx-wandsbek","film":"spidermanbrandnewday","date":"2026-11-01","time":"17:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001488/19315"},
     {"cinema":"uci-mundsburg","film":"streetfighter","date":"2026-11-01","time":"17:10"},
