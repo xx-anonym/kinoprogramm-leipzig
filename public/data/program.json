@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-01T20:00:55.646Z",
+  "generatedAt": "2026-11-01T21:00:55.825Z",
   "days": ["2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":94},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":79},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":81},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":80},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":89},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":63},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":19},
@@ -166,7 +166,6 @@
     {"cinema":"regina","film":"othermommy","date":"2026-11-01","time":"19:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109434%26apos%3B"},
     {"cinema":"regina","film":"biermann","date":"2026-11-01","time":"20:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109367%26apos%3B"},
     {"cinema":"regina","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-01","time":"20:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109422%26apos%3B"},
-    {"cinema":"cinestar","film":"clayface","date":"2026-11-01","time":"20:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184768"},
     {"cinema":"regina","film":"clayface","date":"2026-11-01","time":"20:15","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109329%26apos%3B"},
     {"cinema":"schauburg","film":"perfekteurlaub","date":"2026-11-01","time":"20:15","url":"https://www.schauburg-leipzig.de/filmdetails/der-perfekte-urlaub"},
     {"cinema":"schaubuehne","film":"queensofthedead","date":"2026-11-01","time":"21:30","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3648903623&bgswitch=false&resize=false"},
