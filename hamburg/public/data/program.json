@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T05:02:50.802Z",
+  "generatedAt": "2026-11-01T06:01:00.563Z",
   "days": ["2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
@@ -8,7 +8,7 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":20},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":147},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":148},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":94},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":69},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":9},
@@ -158,6 +158,7 @@
     "leicaeinjahrhundertinbildern": {"title":"Leica - Ein Jahrhundert in Bildern","duration":60,"original":"Strawalde - Ein Leben in Bildern","year":2021},
     "lesinvertueuses": {"title":"Les Invertueuses"},
     "london": {"title":"London","duration":122,"year":2026,"imdb":{"id":"tt39206699","rating":6.8,"votes":52}},
+    "lordoftheringstripleextendedversionenglish": {"title":"Lord Of The Rings Triple (Extended Version - English)","original":"The Lord of the Kings"},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":115,"year":2026,"imdb":{"id":"tt36985296","rating":7.1,"votes":58}},
     "magazinfilmkunstundkulturinwinterhudealshamburgnachmehrenergiesuchtehhhistorischmitdrjoachimpaschen": {"title":"MAGAZIN Filmkunst&Kultur in Winterhude – Als Hamburg nach mehr Energie suchte HH historisch mit Dr.Joachim Paschen"},
     "materiaprimanewenergyoldpowers": {"title":"Materia Prima - New Energy - Old Powers","duration":89,"original":"Materia Prima"},
@@ -1673,6 +1674,7 @@
     {"cinema":"zeise","film":"chasingtrane","date":"2026-11-08","time":"11:00","url":"https://www.zeise.de/show/435940/booking"},
     {"cinema":"zeise","film":"leicaeinjahrhundertinbildern","date":"2026-11-08","time":"11:00","url":"https://www.zeise.de/show/453303/booking"},
     {"cinema":"zeise","film":"wirwarendasdunkleherzderstadtderuntergangderhamburgergangeviertel","date":"2026-11-08","time":"11:00","url":"https://www.zeise.de/show/449843/booking"},
+    {"cinema":"cinemaxx-dammtor","film":"lordoftheringstripleextendedversionenglish","date":"2026-11-08","time":"11:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001039/35414"},
     {"cinema":"astor","film":"wieangeltmansicheinenmillionar","date":"2026-11-08","time":"11:30","url":"https://hamburg.premiumkino.de/vorstellung/wie-angelt-man-sich-einen-millionaer/20261108/1130/Db7OfgNgXhbq-rSrkiHYXSEYtGB1BdFkjjHTn3hCr_0~"},
     {"cinema":"cinemaxx-dammtor","film":"ramayanariseofalegend","date":"2026-11-08","time":"11:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001711/39791"},
     {"cinema":"spectrum","film":"tributevonpanemtheballadofsongbirdsundsnakes","date":"2026-11-08","time":"11:30","url":"https://www.kinoheld.de/kino/norderstedt/spectrum-kino-center-norderstedt/vorstellung/82508"},
