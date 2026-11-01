@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T22:01:09.181Z",
+  "generatedAt": "2026-11-01T22:11:56.664Z",
   "days": ["2026-11-01","2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":13},
@@ -26,7 +26,7 @@
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":13},
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":29},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":80},
-    {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":83},
+    {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":82},
     {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":22},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":5},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":5},
@@ -300,7 +300,6 @@
     {"cinema":"beluga","film":"chopineinesonateinparis","date":"2026-11-01","time":"20:30","screen":"Kino 6 - Arthouse","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3695040773&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"klaraunddiesonne","date":"2026-11-01","time":"20:30","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3695014809&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"streetfighter","date":"2026-11-01","time":"20:30","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3695750865&bgswitch=false&resize=false"},
-    {"cinema":"uci-wandsbek","film":"othermommy","date":"2026-11-01","time":"23:10"},
     {"cinema":"cinemaxx-dammtor","film":"whalefall","date":"2026-11-01","time":"23:15","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001620/41357"},
     {"cinema":"abaton","film":"mittagsstunde","date":"2026-11-02","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590690"},
     {"cinema":"movieplexx","film":"frauwinklerverlasstdashaus","date":"2026-11-02","time":"10:30","url":"https://kinotickets.express/movieplex-buchholz/booking/34763"},
