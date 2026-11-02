@@ -1872,6 +1872,13 @@
    "attempts": 1,
    "seen": "2026-11-02"
   },
+  "kommissarjennerweinhochsaison": {
+   "id": null,
+   "title": "Kommissar Jennerwein - Hochsaison",
+   "checked": "2026-11-02",
+   "attempts": 1,
+   "seen": "2026-11-02"
+  },
   "kommunist": {
    "id": "tt0051827",
    "title": "Kommunist",
@@ -3100,7 +3107,7 @@
   "schuledermagischentiere4": {
    "id": "tt35286242",
    "title": "Die Schule der magischen Tiere 4",
-   "seen": "2026-10-21",
+   "seen": "2026-11-02",
    "rating": 5.7,
    "votes": 392
   },
