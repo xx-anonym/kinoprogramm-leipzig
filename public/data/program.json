@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T08:00:56.556Z",
+  "generatedAt": "2026-11-02T09:00:57.866Z",
   "days": ["2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":96},
@@ -33,7 +33,7 @@
     "getraumteabenteuer": {"title":"Das Geträumte Abenteuer","duration":164,"imdb":{"id":"tt21188986","rating":6.5,"votes":323}},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":228}},
     "neueevangelium": {"title":"Das neue Evangelium","duration":107,"imdb":{"id":"tt12788962","rating":6.4,"votes":134}},
-    "frechstetrollderwelt": {"title":"Der frechste Troll der Welt","duration":79,"original":"Krølle Bølle","imdb":{"id":"tt33334564","rating":6.5,"votes":74}},
+    "frechstetrollderwelt": {"title":"Der frechste Troll der Welt","duration":79,"original":"Krølle Bølle","year":2026,"imdb":{"id":"tt33334564","rating":6.5,"votes":74}},
     "herrderringediegefahrtenextended": {"title":"Der Herr der Ringe - Die Gefährten (Extended)","duration":227},
     "mitdemwolftanzt35jahrigesjubilaum": {"title":"Der mit dem Wolf tanzt - 35-jähriges Jubiläum","duration":234},
     "perfekteurlaub": {"title":"Der perfekte Urlaub","duration":125,"year":2026,"imdb":{"id":"tt37801321","rating":5.7,"votes":339}},
