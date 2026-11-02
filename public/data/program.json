@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T23:01:00.565Z",
+  "generatedAt": "2026-11-02T00:02:21.246Z",
   "days": ["2026-11-02","2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":97},
@@ -82,7 +82,7 @@
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":101,"imdb":{"id":"tt35854741","rating":7.3,"votes":823}},
     "naza": {"title":"Naza","duration":80,"imdb":{"id":"tt44766123","rating":8.3,"votes":6255}},
     "nemtalanguagewithoutapeopleforapeoplewithoutalanguage": {"title":"Nemt - A Language Without a People for a People Without a Language","duration":91},
-    "nureinkleinesbisschengluck": {"title":"Nur ein Kleines Bisschen Glück","duration":104},
+    "nureinkleinesbisschengluck": {"title":"Nur ein Kleines Bisschen Glück","duration":104,"imdb":{"id":"tt32553661","rating":5.5,"votes":288}},
     "nurnberg": {"title":"Nürnberg","duration":148,"imdb":{"id":"tt29567915","rating":7.3,"votes":123394}},
     "ostpreussenentschwundenewelt": {"title":"OSTPREUßEN – ENTSCHWUNDENE WELT","duration":99},
     "othermommy": {"title":"Other Mommy","duration":93,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":14254}},
@@ -111,7 +111,7 @@
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":19956}},
     "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56484}},
     "maddogofeurope": {"title":"The Mad Dog of Europe","duration":83},
-    "worstones": {"title":"The Worst Ones","duration":99},
+    "worstones": {"title":"The Worst Ones","duration":99,"imdb":{"id":"tt19719862","rating":6.7,"votes":1551}},
     "treciotoledreiabschiede": {"title":"TRE CIOTOLE - Drei Abschiede","duration":122,"imdb":{"id":"tt35705184","rating":7.1,"votes":1502}},
     "tributevonpanemmockingjayteil1": {"title":"Tribute von Panem - Mockingjay: Teil 1","duration":123,"imdb":{"id":"tt1951265","rating":6.6,"votes":556909}},
     "uberraschungspremiere": {"title":"Überraschungspremiere"},
