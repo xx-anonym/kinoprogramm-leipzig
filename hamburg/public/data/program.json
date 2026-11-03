@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T10:01:14.264Z",
+  "generatedAt": "2026-11-03T11:01:08.574Z",
   "days": ["2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":28},
@@ -21,7 +21,7 @@
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":21},
     {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":21},
     {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":1},
-    {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":10},
+    {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":9},
     {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":79},
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":12},
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":49},
@@ -252,7 +252,6 @@
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":112}}
   },
   "shows": [
-    {"cinema":"nestkino","film":"mithasaningaza","date":"2026-11-03","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/schanzenkino-73/vorstellung/3696143211"},
     {"cinema":"cinemaxx-dammtor","film":"shaundasschafspukimkurbisfeld","date":"2026-11-03","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001431/41208"},
     {"cinema":"cinemaxx-dammtor","film":"spidermanbrandnewday","date":"2026-11-03","time":"13:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001488/41392"},
     {"cinema":"cinemaxx-dammtor","film":"veritydunklegeheimnisse","date":"2026-11-03","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001430/41330"},
