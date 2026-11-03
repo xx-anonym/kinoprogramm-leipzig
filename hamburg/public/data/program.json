@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T11:04:06.957Z",
+  "generatedAt": "2026-11-03T12:02:53.756Z",
   "days": ["2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":28},
@@ -8,7 +8,7 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":40},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":248},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":247},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":188},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":136},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
@@ -252,7 +252,6 @@
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":112}}
   },
   "shows": [
-    {"cinema":"cinemaxx-dammtor","film":"shaundasschafspukimkurbisfeld","date":"2026-11-03","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001431/41208"},
     {"cinema":"cinemaxx-dammtor","film":"spidermanbrandnewday","date":"2026-11-03","time":"13:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001488/41392"},
     {"cinema":"cinemaxx-dammtor","film":"veritydunklegeheimnisse","date":"2026-11-03","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001430/41330"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-03","time":"14:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41170"},
