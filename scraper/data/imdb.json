@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-03T00:00:59.094Z",
+ "ratingsUpdated": "2026-11-03T02:57:38.738Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -634,6 +634,14 @@
    "skip": true,
    "title": "CineSneak OV: The original surprise preview",
    "seen": "2026-11-02"
+  },
+  "circle": {
+   "id": "tt4287320",
+   "title": "The Circle",
+   "year": 2017,
+   "seen": "2026-11-03",
+   "rating": 5.4,
+   "votes": 106404
   },
   "clayface": {
    "id": "tt34890576",
@@ -2621,6 +2629,13 @@
    "rating": 9.1,
    "votes": 75
   },
+  "olchiswillkommeninschmuddelfing": {
+   "id": "tt11992904",
+   "title": "Die Olchis - Willkommen in Schmuddelfing!",
+   "seen": "2026-11-03",
+   "rating": 5.1,
+   "votes": 541
+  },
   "ontheroad": {
    "id": "tt37660509",
    "title": "On the Road",
@@ -4088,6 +4103,14 @@
    "rating": 6.8,
    "votes": 60656
   },
+  "woistannefrank": {
+   "id": "tt3454424",
+   "title": "Wo ist Anne Frank",
+   "year": 2021,
+   "seen": "2026-11-03",
+   "rating": 6.4,
+   "votes": 2089
+  },
   "woistcoletti": {
    "id": "tt0003565",
    "title": "Wo ist Coletti?",
@@ -4108,6 +4131,14 @@
    "seen": "2026-11-03",
    "rating": 6.7,
    "votes": 1552
+  },
+  "wownachrichtausdemall": {
+   "id": "tt21622000",
+   "title": "Wow! Nachricht aus dem All",
+   "year": 2023,
+   "seen": "2026-11-03",
+   "rating": 5.3,
+   "votes": 164
   },
   "wunderweltenbaum": {
    "id": "tt7734244",

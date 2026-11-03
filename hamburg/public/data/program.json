@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T02:01:11.267Z",
+  "generatedAt": "2026-11-03T02:58:37.253Z",
   "days": ["2026-11-03","2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":28},
@@ -97,7 +97,7 @@
     "mutterdeskillers": {"title":"Die Mutter des Killers","duration":77,"imdb":{"id":"tt0119736","rating":7.2,"votes":45}},
     "odyssee": {"title":"Die Odyssee","duration":172,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":541647}},
     "odysseeimax": {"title":"Die Odyssee (Imax)"},
-    "olchiswillkommeninschmuddelfing": {"title":"Die Olchis - Willkommen in Schmuddelfing!","duration":85,"original":"Smelliville"},
+    "olchiswillkommeninschmuddelfing": {"title":"Die Olchis - Willkommen in Schmuddelfing!","duration":85,"original":"Smelliville","imdb":{"id":"tt11992904","rating":5.1,"votes":541}},
     "schuledermagischentiere4": {"title":"Die Schule der magischen Tiere 4","duration":102,"year":2025,"imdb":{"id":"tt35286242","rating":5.7,"votes":392}},
     "teufel": {"title":"Die Teufel","duration":114,"imdb":{"id":"tt0066993","rating":7.8,"votes":25420}},
     "teufeldirectorscut": {"title":"Die Teufel - Directors Cut","duration":111,"original":"The Devils","imdb":{"id":"tt0066993","rating":7.8,"votes":25420}},
@@ -217,7 +217,7 @@
     "straykidsworldtourrunitliveviewingencorelive": {"title":"STRAY KIDS WORLD TOUR <RUN IT> LIVE VIEWING (encore live)","duration":195},
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":20346}},
     "teresaeinlebenzwischenlichtundschatten": {"title":"Teresa - Ein Leben zwischen Licht und Schatten","duration":104,"imdb":{"id":"tt18246200","rating":5.4,"votes":465}},
-    "circle": {"title":"The Circle","duration":109,"year":2017},
+    "circle": {"title":"The Circle","duration":109,"year":2017,"imdb":{"id":"tt4287320","rating":5.4,"votes":106404}},
     "cowboy": {"title":"The Cowboy","duration":89,"year":2026,"imdb":{"id":"tt37539106","rating":8.5,"votes":30}},
     "fisherman": {"title":"The Fisherman"},
     "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56490}},
@@ -242,9 +242,9 @@
     "wildesargentiniendiekraftdeswassers": {"title":"Wildes Argentinien - Die Kraft des Wassers","duration":86,"original":"Le vent tourne"},
     "wildwood": {"title":"Wildwood","duration":139,"year":2026,"imdb":{"id":"tt2056785","rating":8.7,"votes":14830}},
     "wirwarendasdunkleherzderstadtderuntergangderhamburgergangeviertel": {"title":"Wir waren das dunkle Herz der Stadt - der Untergang der Hamburger Gängeviertel"},
-    "woistannefrank": {"title":"Wo ist Anne Frank","duration":99,"original":"Where Is Anne Frank","year":2021},
+    "woistannefrank": {"title":"Wo ist Anne Frank","duration":99,"original":"Where Is Anne Frank","year":2021,"imdb":{"id":"tt3454424","rating":6.4,"votes":2089}},
     "wolobougou": {"title":"Wolobougou"},
-    "wownachrichtausdemall": {"title":"Wow! Nachricht aus dem All","duration":100,"year":2023},
+    "wownachrichtausdemall": {"title":"Wow! Nachricht aus dem All","duration":100,"year":2023,"imdb":{"id":"tt21622000","rating":5.3,"votes":164}},
     "zombie2dayofthedeaduncut": {"title":"Zombie 2 - Day of the Dead (Uncut)","duration":96,"original":"Day of the Dead","year":1985,"imdb":{"id":"tt0088993","rating":7.1,"votes":81083}},
     "zweitland": {"title":"Zweitland","duration":112,"year":2025,"imdb":{"id":"tt35668693","rating":6.6,"votes":112}}
   },
