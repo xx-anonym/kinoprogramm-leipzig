@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:01:12.175Z",
+  "generatedAt": "2026-11-04T10:02:53.388Z",
   "days": ["2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -21,9 +21,9 @@
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":22},
     {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":21},
     {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":1},
-    {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":6},
+    {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":5},
     {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":77},
-    {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":11},
+    {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":10},
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":50},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":192},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":198},
@@ -46,7 +46,7 @@
     "adamsacht": {"title":"Adams Acht","duration":120,"year":2026,"imdb":{"id":"tt8758494","rating":7,"votes":164}},
     "albrechtweinbergesistimmerinmeinemkopf": {"title":"Albrecht Weinberg - Es ist immer in meinem Kopf","duration":90,"year":2026},
     "allahisnotobliged": {"title":"Allah is not obliged","duration":80,"original":"Allah n'est pas obligé","imdb":{"id":"tt8110620","rating":6.5,"votes":65}},
-    "alteliebe": {"title":"Alte Liebe","duration":111,"year":2026,"imdb":{"id":"tt44112686","rating":7.6,"votes":70}},
+    "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.6,"votes":70}},
     "amadeus": {"title":"Amadeus","duration":160,"year":1984,"imdb":{"id":"tt0086879","rating":8.4,"votes":475412}},
     "amadouetmariamtheblindcouplefrommali": {"title":"Amadou Et Mariam - The Blind Couple From Mali","original":"Amadou et Mariam : Sons du Mali"},
     "aufstandderjugend": {"title":"Aufstand der Jugend","duration":111,"year":2026},
@@ -105,7 +105,6 @@
     "digger": {"title":"Digger","duration":129,"year":2026,"imdb":{"id":"tt31450459","rating":7.5,"votes":45981}},
     "dreikameradinnen": {"title":"Drei Kameradinnen","duration":93,"year":2026},
     "dreikameradinnendfskfolgt": {"title":"DREI KAMERADINNEN D, FSK folgt","duration":93,"original":"Drei Kameradinnen","year":2026},
-    "dryleaf": {"title":"Dry Leaf","duration":186,"original":"ხმელი ფოთოლი","year":2026,"imdb":{"id":"tt37537636","rating":6.6,"votes":397}},
     "duundichundalleredenmit": {"title":"Du & ich und alle reden mit","duration":97,"original":"FolleMente","year":2025,"imdb":{"id":"tt34621892","rating":6.9,"votes":6076}},
     "edmundundluziewinterabenteuer": {"title":"Edmund und Luzie - Winterabenteuer","duration":60,"original":"Winterabenteuer mit Pettersson und Findus","imdb":{"id":"tt6509214","rating":6.5,"votes":159}},
     "einortdenichverlassenmusste": {"title":"Ein Ort, den ich verlassen mußte"},
@@ -241,8 +240,6 @@
     "zombie2dayofthedeaduncut": {"title":"Zombie 2 - Day of the Dead (Uncut)","duration":96,"original":"Day of the Dead","year":1985,"imdb":{"id":"tt0088993","rating":7.1,"votes":81099}}
   },
   "shows": [
-    {"cinema":"nestkino","film":"dryleaf","date":"2026-11-04","time":"11:00","url":"https://www.kinoheld.de/kino/hamburg/schanzenkino-73/vorstellung/3696142871"},
-    {"cinema":"savoy","film":"alteliebe","date":"2026-11-04","time":"11:00","url":"https://savoy.premiumkino.de/vorstellung/alte-liebe/20261104/1100/EdT7UDEup7HFjosmIltUNXcnnhFgLQJf-PkTSwFUcEQ~"},
     {"cinema":"nestkino","film":"mithasaningaza","date":"2026-11-04","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/schanzenkino-73/vorstellung/3696143272"},
     {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-04","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590798"},
     {"cinema":"abaton","film":"cowboy","date":"2026-11-04","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590789"},
