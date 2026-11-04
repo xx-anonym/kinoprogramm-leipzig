@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-04T12:00:59.568Z",
+  "generatedAt": "2026-11-04T13:00:57.543Z",
   "days": ["2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":225},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":189},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":215},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":214},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":181},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":153},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":150},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":55},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":22},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":20},
@@ -85,7 +85,7 @@
     "minionsundmonster": {"title":"Minions & Monster","duration":90,"original":"Minions & Monsters","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":36597}},
     "minotaurus": {"title":"Minotaurus","duration":142,"imdb":{"id":"tt37118301","rating":7.7,"votes":1593}},
     "monstermia": {"title":"Monster Mia","duration":82,"year":2026,"imdb":{"id":"tt38807889","rating":7,"votes":101}},
-    "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":101,"imdb":{"id":"tt35854741","rating":7.3,"votes":837}},
+    "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":102,"imdb":{"id":"tt35854741","rating":7.3,"votes":837}},
     "mumbojumbo": {"title":"Mumbo Jumbo","duration":60,"imdb":{"id":"tt28942997","rating":6.4,"votes":123}},
     "naza": {"title":"Naza","duration":80,"imdb":{"id":"tt44766123","rating":8.3,"votes":6433}},
     "nemtalanguagewithoutapeopleforapeoplewithoutalanguage": {"title":"Nemt - A Language Without a People for a People Without a Language","duration":91},
@@ -134,10 +134,7 @@
     "wildwood": {"title":"Wildwood","duration":131,"year":2026,"imdb":{"id":"tt2056785","rating":8.7,"votes":16595}}
   },
   "shows": [
-    {"cinema":"passage","film":"geheimnisdergestohlenenmaske","date":"2026-11-04","time":"13:30","screen":"Casino","url":"https://www.passage-kinos.de/das-geheimnis-der-gestohlenen-maske"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-04","time":"13:40","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184818"},
-    {"cinema":"passage","film":"andereseite","date":"2026-11-04","time":"13:45","screen":"Wintergarten","url":"https://www.passage-kinos.de/die-andere-seite"},
-    {"cinema":"passage","film":"moscasfliegenundanderegaste","date":"2026-11-04","time":"13:45","screen":"Astoria","url":"https://www.passage-kinos.de/moscas-fliegen-und-andere-gaeste"},
     {"cinema":"cinestar","film":"forgottenisland","date":"2026-11-04","time":"14:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184816"},
     {"cinema":"cinestar","film":"monstermia","date":"2026-11-04","time":"14:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184814"},
     {"cinema":"cinestar","film":"shaundasschafspukimkurbisfeld","date":"2026-11-04","time":"14:10","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184811"},
@@ -248,7 +245,6 @@
     {"cinema":"schaubuehne","film":"getraumteabenteuer","date":"2026-11-04","time":"21:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3680641050&bgswitch=false&resize=false"},
     {"cinema":"passage","film":"geheimnisdergestohlenenmaske","date":"2026-11-05","time":"13:15","screen":"Wintergarten","url":"https://www.passage-kinos.de/das-geheimnis-der-gestohlenen-maske"},
     {"cinema":"passage","film":"andereseite","date":"2026-11-05","time":"13:30","screen":"Casino","url":"https://www.passage-kinos.de/die-andere-seite"},
-    {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-05","time":"13:40","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184863"},
     {"cinema":"cinestar","film":"monstermia","date":"2026-11-05","time":"13:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185014"},
     {"cinema":"passage","film":"shaundasschafspukimkurbisfeld","date":"2026-11-05","time":"13:45","screen":"Universum","url":"https://www.passage-kinos.de/shaun-das-schaf-spuk-im-kuerbisfeld"},
     {"cinema":"cinestar","film":"coyotevsacme","date":"2026-11-05","time":"13:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185039"},
