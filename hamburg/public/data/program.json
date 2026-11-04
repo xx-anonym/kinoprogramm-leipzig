@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-04T11:13:28.080Z",
+  "generatedAt": "2026-11-04T12:01:11.365Z",
   "days": ["2026-11-04","2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":126},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":124},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":40},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":245},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":244},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":188},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":136},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
@@ -210,7 +210,6 @@
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":20692}},
     "teresaeinlebenzwischenlichtundschatten": {"title":"Teresa - Ein Leben zwischen Licht und Schatten","duration":104,"imdb":{"id":"tt18246200","rating":5.4,"votes":465}},
     "circle": {"title":"The Circle","duration":109,"year":2017,"imdb":{"id":"tt4287320","rating":5.4,"votes":106413}},
-    "cowboy": {"title":"The Cowboy","duration":89,"year":2026,"imdb":{"id":"tt37539106","rating":8.5,"votes":30}},
     "fisherman": {"title":"The Fisherman"},
     "killer": {"title":"The Killer","duration":110,"year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56499}},
     "neondemon": {"title":"The Neon Demon","duration":117,"year":2016,"imdb":{"id":"tt1974419","rating":6.1,"votes":112853}},
@@ -239,9 +238,6 @@
     "zombie2dayofthedeaduncut": {"title":"Zombie 2 - Day of the Dead (Uncut)","duration":96,"original":"Day of the Dead","year":1985,"imdb":{"id":"tt0088993","rating":7.1,"votes":81099}}
   },
   "shows": [
-    {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-04","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590798"},
-    {"cinema":"abaton","film":"cowboy","date":"2026-11-04","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/590789"},
-    {"cinema":"cinemaxx-dammtor","film":"spidermanbrandnewday","date":"2026-11-04","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001488/41398"},
     {"cinema":"cinemaxx-dammtor","film":"veritydunklegeheimnisse","date":"2026-11-04","time":"13:15","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001430/41239"},
     {"cinema":"cinemaxx-dammtor","film":"forgottenisland","date":"2026-11-04","time":"13:45","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001643/41365"},
     {"cinema":"cinemaxx-harburg","film":"perfekteurlaub","date":"2026-11-04","time":"14:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1207/HO00001467/27039"},
