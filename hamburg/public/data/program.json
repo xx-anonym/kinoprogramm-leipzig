@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T05:00:57.156Z",
+  "generatedAt": "2026-11-05T06:00:56.586Z",
   "days": ["2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -8,7 +8,7 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":36},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":216},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":217},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":167},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":121},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":16},
@@ -145,7 +145,7 @@
     "leicaeinjahrhundertinbildern": {"title":"Leica - Ein Jahrhundert in Bildern","duration":60,"original":"Strawalde - Ein Leben in Bildern","year":2021},
     "lesinvertueuses": {"title":"Les Invertueuses"},
     "lightmemories": {"title":"Light Memories","duration":80,"original":"ECO DE LUZ","imdb":{"id":"tt34551254","rating":8.8,"votes":33}},
-    "lordoftheringstripleextendedversionenglish": {"title":"Lord Of The Rings Triple (Extended Version - English)","original":"The Lord of the Kings"},
+    "lordoftheringstripleextendedversionenglish": {"title":"Lord Of The Rings Triple (Extended Version - English)","duration":178,"original":"The Lord of the Rings: The Fellowship of the Ring","year":2001},
     "lotteundtotte": {"title":"Lotte & Totte","duration":62,"original":"Lotte & Totte: Min første ven","year":2025,"imdb":{"id":"tt29010189","rating":7.4,"votes":63}},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":102,"year":2026,"imdb":{"id":"tt36985296","rating":7.1,"votes":62}},
     "meetingthebuddha": {"title":"Meeting the Buddha","duration":144,"year":2026,"imdb":{"id":"tt40249136","rating":9.3,"votes":72}},
@@ -2506,6 +2506,7 @@
     {"cinema":"metropolis","film":"revision","date":"2026-11-12","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3682818132"},
     {"cinema":"studio","film":"kurzfilmreihewurzelnidentitatundfamilie","date":"2026-11-12","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396138"},
     {"cinema":"kinopolis","film":"georgemichaelthefaithtour","date":"2026-11-12","time":"19:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/ACF50000023HXECDQG"},
+    {"cinema":"cinemaxx-dammtor","film":"georgemichaelthefaithtour","date":"2026-11-12","time":"19:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001739/42018"},
     {"cinema":"abaton","film":"heleneweigelrevolutionarinimrampenlicht","date":"2026-11-12","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/588508"},
     {"cinema":"koralle","film":"perfekteurlaub","date":"2026-11-12","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/397473"},
     {"cinema":"cinema-paradiso","film":"digger","date":"2026-11-12","time":"19:30","url":"http://www.kino-bargteheide.de/"},
