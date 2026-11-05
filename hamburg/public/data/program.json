@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-05T11:12:34.318Z",
+  "generatedAt": "2026-11-05T12:00:57.183Z",
   "days": ["2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":113},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":112},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -88,7 +88,7 @@
     "regenbogenfisch": {"title":"Der Regenbogenfisch","duration":70,"original":"De Rägebogefisch","year":2026},
     "regenbogenfischx": {"title":"DER REGENBOGENFISCH x","duration":68},
     "abenteuerdesprinzenachmedstummfilmkonzertundlesung": {"title":"DIE ABENTEUER DES PRINZEN ACHMED - Stummfilmkonzert & Lesung","duration":125},
-    "andereseite": {"title":"Die andere Seite","duration":106,"year":2026,"imdb":{"id":"tt42373658","rating":6.5,"votes":59}},
+    "andereseite": {"title":"Die Andere Seite","duration":106,"year":2026,"imdb":{"id":"tt42373658","rating":6.5,"votes":59}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"year":2026,"imdb":{"id":"tt28151657","rating":5.3,"votes":238}},
     "herrinvomsolderhof": {"title":"Die Herrin vom Sölderhof","duration":95},
     "jungstetochter": {"title":"Die jüngste Tochter","duration":108,"original":"La Petite Dernière","year":2025,"imdb":{"id":"tt28326501","rating":6.8,"votes":2078}},
@@ -235,7 +235,6 @@
     "wownachrichtausdemall": {"title":"Wow! Nachricht aus dem All","duration":100,"year":2023,"imdb":{"id":"tt21622000","rating":5.3,"votes":164}}
   },
   "shows": [
-    {"cinema":"abaton","film":"andereseite","date":"2026-11-05","time":"12:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591720"},
     {"cinema":"abaton","film":"moscasfliegenundanderegaste","date":"2026-11-05","time":"13:10","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591732"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-05","time":"13:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41914"},
     {"cinema":"cinemaxx-dammtor","film":"frechstetrollderwelt","date":"2026-11-05","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001724/41753"},
