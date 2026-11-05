@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:02:49.631Z",
+  "generatedAt": "2026-11-05T20:07:03.776Z",
   "days": ["2026-11-05","2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":21},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":10},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":60},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":148},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":102},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":101},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":111},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":60}
   ],
@@ -268,7 +268,6 @@
     {"cinema":"beluga","film":"perfekteurlaub","date":"2026-11-05","time":"20:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704217225&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"godzillaminuszero","date":"2026-11-05","time":"20:15","screen":"Kino 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704224728&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-05","time":"20:15","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704217251&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"othermommy","date":"2026-11-05","time":"20:15","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117375"},
     {"cinema":"burgkino","film":"perfekteurlaub","date":"2026-11-05","time":"20:15","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704384344&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-05","time":"20:15","screen":"Saal 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704384291&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"rocky","date":"2026-11-05","time":"20:15","label":"Best of Cinema","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3555066674&bgswitch=false&resize=false"},
