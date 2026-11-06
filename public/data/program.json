@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T10:00:48.932Z",
+  "generatedAt": "2026-11-06T11:00:50.835Z",
   "days": ["2026-11-06","2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":179},
@@ -315,7 +315,7 @@
     {"cinema":"cineplex","film":"geheimnisdergestohlenenmaske","date":"2026-11-07","time":"12:45","url":"https://tickets.cineplex.de/checkout/356/7AED0C00023FWBXJYB"},
     {"cinema":"cineplex","film":"shaundasschafspukimkurbisfeld","date":"2026-11-07","time":"12:45","url":"https://tickets.cineplex.de/checkout/356/5BED0C00023FWBXJYB"},
     {"cinema":"regina","film":"pawpatrolderdinofilm","date":"2026-11-07","time":"12:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110527%26apos%3B"},
-    {"cinema":"uci","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"13:00"},
+    {"cinema":"uci","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"13:00","version":"OV"},
     {"cinema":"cinestar","film":"straykidsworldtourrunitliveviewingcinespecial","date":"2026-11-07","time":"13:00","version":"OmU","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184140"},
     {"cinema":"regina","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-07","time":"13:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110441%26apos%3B"},
     {"cinema":"regina","film":"geheimnisdergestohlenenmaske","date":"2026-11-07","time":"13:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110488%26apos%3B"},
@@ -383,7 +383,7 @@
     {"cinema":"uci","film":"wildwood","date":"2026-11-07","time":"17:10"},
     {"cinema":"cineplex","film":"wildwood","date":"2026-11-07","time":"17:15","url":"https://tickets.cineplex.de/checkout/356/55ED0C00023FWBXJYB"},
     {"cinema":"uci","film":"gewisseetwas","date":"2026-11-07","time":"17:15"},
-    {"cinema":"uci","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15"},
+    {"cinema":"uci","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15","version":"OV"},
     {"cinema":"cinestar","film":"othermommy","date":"2026-11-07","time":"17:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184953"},
     {"cinema":"cinestar","film":"straykidsworldtourrunitliveviewingcinespecial","date":"2026-11-07","time":"17:15","version":"OmU","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184141"},
     {"cinema":"uci","film":"geister","date":"2026-11-07","time":"17:20"},
