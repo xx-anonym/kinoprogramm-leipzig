@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T07:00:59.445Z",
+  "generatedAt": "2026-11-07T08:01:02.071Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
@@ -289,7 +289,7 @@
     {"cinema":"passage","film":"vaterland","date":"2026-11-07","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7299783"},
     {"cinema":"savoy","film":"rocky","date":"2026-11-07","time":"13:00","label":"Best of Cinema","url":"https://savoy.premiumkino.de/vorstellung/rocky-best-of-cinema/20261107/1300/gqCyXu0zfB_HFWJrlfNaZNc2BLCMQaNdBZs7ta9QqSo~"},
     {"cinema":"studio","film":"koutevwa","date":"2026-11-07","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/395642"},
-    {"cinema":"uci-mundsburg","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"13:00"},
+    {"cinema":"uci-mundsburg","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"13:00","version":"OV"},
     {"cinema":"uci-wandsbek","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"13:00"},
     {"cinema":"city-buxtehude","film":"monstermia","date":"2026-11-07","time":"13:00","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3703175410&bgswitch=false&resize=false"},
     {"cinema":"city-buxtehude","film":"peterchensmondfahrt","date":"2026-11-07","time":"13:00","screen":"City 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3642861024&bgswitch=false&resize=false"},
@@ -436,8 +436,8 @@
     {"cinema":"hansa","film":"perfekteurlaub","date":"2026-11-07","time":"17:15","url":"https://kinotickets.express/hamburg-bergdorf-hansa/booking/45410"},
     {"cinema":"kinopolis","film":"straykidsworldtourrunitdelayedlive","date":"2026-11-07","time":"17:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/05360000023HXECDQG"},
     {"cinema":"koralle","film":"eintalentfursmorden","date":"2026-11-07","time":"17:15","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/397101"},
-    {"cinema":"uci-mundsburg","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15"},
-    {"cinema":"uci-wandsbek","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15"},
+    {"cinema":"uci-mundsburg","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15","version":"OV"},
+    {"cinema":"uci-wandsbek","film":"straykidsworldtourrunitliveviewing","date":"2026-11-07","time":"17:15","version":"OV"},
     {"cinema":"cineplex-elmshorn","film":"gewisseetwas","date":"2026-11-07","time":"17:15","url":"https://tickets.cineplex.de/checkout/396/B09C0C00023FWBXJYB"},
     {"cinema":"cineplex-elmshorn","film":"godzillaminuszero","date":"2026-11-07","time":"17:15","url":"https://tickets.cineplex.de/checkout/396/629C0C00023FWBXJYB"},
     {"cinema":"beluga","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-07","time":"17:15","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704227799&bgswitch=false&resize=false"},
