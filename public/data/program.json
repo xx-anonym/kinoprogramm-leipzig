@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T22:00:51.084Z",
+  "generatedAt": "2026-11-07T22:01:38.300Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":116},
@@ -95,7 +95,7 @@
     "quizlaborleipzig": {"title":"Quizlabor Leipzig","original":"DOK Leipzig"},
     "rammsteinliveinmexicocity": {"title":"Rammstein: Live in Mexico City","duration":114},
     "rbo2627carmenroyalopera": {"title":"RBO 26/27: Carmen (Royal Opera)","duration":215,"original":"Royal Ballet & Opera 2026/27: Carmen","year":2026},
-    "residentevil": {"title":"Resident Evil","duration":94,"imdb":{"id":"tt35538033","rating":7.5,"votes":139465}},
+    "residentevil": {"title":"Resident Evil","imdb":{"id":"tt35538033","rating":7.5,"votes":139465}},
     "samesunmitdemfahrraddurchafrika": {"title":"Same Sun - Mit dem Fahrrad durch Afrika","duration":82,"year":2025,"imdb":{"id":"tt42574015","rating":6.9,"votes":33}},
     "scherbenland": {"title":"Scherbenland","duration":104},
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80,"original":"Shaun The Sheep: The Beast Of Mossy Bottom","year":2026,"imdb":{"id":"tt36841161","rating":7.1,"votes":3452}},
