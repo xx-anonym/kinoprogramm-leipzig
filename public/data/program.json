@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-07T09:00:50.483Z",
+  "generatedAt": "2026-11-07T10:00:50.561Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":152},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":146},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":132},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":134},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":124},
@@ -14,7 +14,6 @@
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
   ],
   "films": {
-    "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
     "atalentformurder": {"title":"A Talent for Murder","duration":105,"imdb":{"id":"tt14129116","rating":6.8,"votes":795}},
     "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":72}},
     "barbarabuserpionierindernachhaltigkeit": {"title":"Barbara Buser - Pionierin der Nachhaltigkeit","duration":118},
@@ -85,7 +84,7 @@
     "laurassternunddergeheimnisvolledrachenian": {"title":"Lauras Stern und der geheimnisvolle Drache Nian","duration":86,"original":"The Star","year":2017,"imdb":{"id":"tt4587656","rating":6.3,"votes":11055}},
     "leagueoflegendsworlds26finalsincinema": {"title":"League of Legends Worlds 26 | Finals in Cinema"},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":101,"year":2026,"imdb":{"id":"tt36985296","rating":7.1,"votes":64}},
-    "minionsundmonster": {"title":"Minions & Monster","duration":90,"original":"Minions & Monsters","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":36911}},
+    "minionsundmonster": {"title":"Minions & Monster","imdb":{"id":"tt32890033","rating":6.3,"votes":36911}},
     "minotaurus": {"title":"Minotaurus","duration":142,"imdb":{"id":"tt37118301","rating":7.7,"votes":1693}},
     "monstermia": {"title":"Monster Mia","duration":82,"year":2026,"imdb":{"id":"tt38807889","rating":7,"votes":104}},
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":102,"imdb":{"id":"tt35854741","rating":7.3,"votes":850}},
@@ -132,15 +131,9 @@
     "wildwood": {"title":"Wildwood","duration":130,"year":2026,"imdb":{"id":"tt2056785","rating":8.6,"votes":20175}}
   },
   "shows": [
-    {"cinema":"cineplex","film":"laurassternunddergeheimnisvolledrachenian","date":"2026-11-07","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/DA780C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"minionsundmonster","date":"2026-11-07","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/07ED0C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"shaundasschafspukimkurbisfeld","date":"2026-11-07","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/B9ED0C00023FWBXJYB"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-11-07","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110410%26apos%3B"},
-    {"cinema":"cineplex","film":"hiramayanariseofalegend","date":"2026-11-07","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/D0ED0C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"frechstetrollderwelt","date":"2026-11-07","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/9AED0C00023FWBXJYB"},
     {"cinema":"regina","film":"emilunddiedetektive","date":"2026-11-07","time":"10:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110467%26apos%3B"},
     {"cinema":"regina","film":"monstermia","date":"2026-11-07","time":"10:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110520%26apos%3B"},
-    {"cinema":"cineplex","film":"alteliebe","date":"2026-11-07","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/39150C00023FWBXJYB"},
     {"cinema":"cinestar","film":"emilunddiedetektive","date":"2026-11-07","time":"11:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185050"},
     {"cinema":"regina","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-07","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110440%26apos%3B"},
     {"cinema":"regina","film":"frechstetrollderwelt","date":"2026-11-07","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110402%26apos%3B"},
