@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-07T01:01:33.510Z",
+  "generatedAt": "2026-11-07T02:01:04.448Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":84},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":83},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":4},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -48,7 +48,6 @@
     "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":72}},
     "amadeus": {"title":"Amadeus","duration":160,"year":1984,"imdb":{"id":"tt0086879","rating":8.4,"votes":475516}},
     "amadouetmariamtheblindcouplefrommali": {"title":"Amadou Et Mariam - The Blind Couple From Mali","original":"Amadou et Mariam : Sons du Mali"},
-    "ascheunddiamant": {"title":"Asche und Diamant","duration":105,"original":"Popiół i diament"},
     "aufdersuchenachderweihnachtswerkstatt": {"title":"Auf der Suche nach der Weihnachtswerkstatt","duration":75,"original":"Julenissens verksted","year":2026},
     "barbarabuserpionierindernachhaltigkeit": {"title":"Barbara Buser - Pionierin der Nachhaltigkeit","duration":118,"year":2026},
     "benimana": {"title":"BenImana","imdb":{"id":"tt38820979","rating":7.4,"votes":162}},
@@ -1947,7 +1946,6 @@
     {"cinema":"metropolis-harburg","film":"eyeswideshut","date":"2026-11-14","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-im-planet-harburg/vorstellung/3686532047"},
     {"cinema":"studio","film":"dao","date":"2026-11-14","time":"18:45","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396146"},
     {"cinema":"cinema-paradiso","film":"ohnewahrheit","date":"2026-11-14","time":"19:30","url":"http://www.kino-bargteheide.de/"},
-    {"cinema":"abaton","film":"ascheunddiamant","date":"2026-11-14","time":"20:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591487"},
     {"cinema":"cinemaxx-dammtor","film":"leagueoflegendsworlds26finalsincinema","date":"2026-11-14","time":"20:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001561/39781"},
     {"cinema":"kinopolis","film":"leagueoflegendsworlds2026finalsincinema","date":"2026-11-14","time":"20:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/EF160000023HXECDQG"},
     {"cinema":"koralle","film":"perfekteurlaub","date":"2026-11-14","time":"20:00","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/397476"},
