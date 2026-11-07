@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T17:47:20.509Z",
+  "generatedAt": "2026-11-07T18:00:53.692Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
@@ -8,9 +8,9 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":4},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":22},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":143},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":142},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":101},
-    {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":74},
+    {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":73},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":10},
     {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":15},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":41},
@@ -264,8 +264,6 @@
     {"cinema":"beluga","film":"klaraunddiesonne","date":"2026-11-07","time":"17:30","screen":"Kino 6 - Arthouse","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704324946&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"frauwinklerverlasstdashaus","date":"2026-11-07","time":"17:30","screen":"Stübchen","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704402719&bgswitch=false&resize=false"},
     {"cinema":"city-buxtehude","film":"streetfighter","date":"2026-11-07","time":"18:00","screen":"City 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3703643806&bgswitch=false&resize=false"},
-    {"cinema":"cinemaxx-dammtor","film":"godzillaminuszero","date":"2026-11-07","time":"19:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001743/41814"},
-    {"cinema":"cinemaxx-wandsbek","film":"veritydunklegeheimnisse","date":"2026-11-07","time":"19:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001430/19678"},
     {"cinema":"abaton","film":"minotaurus","date":"2026-11-07","time":"19:10","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592133"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-07","time":"19:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41872"},
     {"cinema":"abaton","film":"geister","date":"2026-11-07","time":"19:20","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591784"},

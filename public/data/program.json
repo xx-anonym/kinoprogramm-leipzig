@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T17:47:13.421Z",
+  "generatedAt": "2026-11-07T18:00:48.494Z",
   "days": ["2026-11-07","2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":128},
@@ -11,7 +11,7 @@
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":26},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":13},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":24},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "atalentformurder": {"title":"A Talent for Murder","duration":105,"imdb":{"id":"tt14129116","rating":6.8,"votes":795}},
@@ -118,7 +118,6 @@
     "vaterland": {"title":"Vaterland","duration":82,"imdb":{"id":"tt37304295","rating":7.3,"votes":4301}},
     "venuswars": {"title":"Venus Wars","imdb":{"id":"tt0135037","rating":6.6,"votes":2364}},
     "veritydunklegeheimnisse": {"title":"Verity - Dunkle Geheimnisse","duration":118,"original":"Verity","year":2026,"imdb":{"id":"tt32261958","rating":6,"votes":32366}},
-    "washabenwirgelacht": {"title":"Was haben wir gelacht","imdb":{"id":"tt43509005","rating":7,"votes":206}},
     "whalefall": {"title":"Whalefall","duration":98,"year":2026,"imdb":{"id":"tt28535715","rating":6.6,"votes":10273}},
     "widerklangeineorgeluberderbraunkohle": {"title":"Widerklang - Eine Orgel über der Braunkohle","duration":70},
     "wiederbegegnungenmiteinemfilmnuitetbrouillard": {"title":"Wiederbegegnungen mit einem Film: Nuit Et Brouillard","duration":32},
@@ -163,7 +162,6 @@
     {"cinema":"regina","film":"biermann","date":"2026-11-07","time":"18:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110428%26apos%3B"},
     {"cinema":"regina","film":"kommissarjennerweinhochsaison","date":"2026-11-07","time":"19:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1110530%26apos%3B"},
     {"cinema":"schaubuehne","film":"ivanundhadoum","date":"2026-11-07","time":"19:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3677256766&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"washabenwirgelacht","date":"2026-11-07","time":"19:00","url":"https://www.cineding-leipzig.de/veranstaltungen/was-haben-wir-gelacht-2/"},
     {"cinema":"uci","film":"wildwood","date":"2026-11-07","time":"19:15"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-07","time":"19:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184884"},
     {"cinema":"cinestar","film":"godzillaminuszero","date":"2026-11-07","time":"19:20","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184877"},
