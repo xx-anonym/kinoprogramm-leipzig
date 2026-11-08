@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T06:01:03.967Z",
+  "generatedAt": "2026-11-08T06:21:50.647Z",
   "days": ["2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
@@ -152,7 +152,7 @@
     "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {"title":"Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes und Amir","duration":108,"imdb":{"id":"tt43598591","rating":7.9,"votes":65}},
     "lightmemories": {"title":"Light Memories","duration":80,"original":"ECO DE LUZ","imdb":{"id":"tt34551254","rating":8.8,"votes":33}},
     "lolamontez": {"title":"Lola Montez","duration":113,"imdb":{"id":"tt0048308","rating":7.2,"votes":6777}},
-    "lordoftheringstripleextendedversionenglish": {"title":"Lord Of The Rings Triple (Extended Version - English)","original":"The Lord of the Kings","year":2026,"imdb":{"id":"tt0120737","rating":8.9,"votes":2250547}},
+    "lordoftheringstripleextendedversionenglish": {"title":"Lord Of The Rings Triple (Extended Version - English)","original":"The Lord of the Kings","year":2026},
     "lottagucktmatrix": {"title":"Lotta guckt MATRIX","duration":136},
     "lotteundtotte": {"title":"Lotte & Totte","duration":62,"original":"Lotte & Totte: Min første ven","year":2025,"imdb":{"id":"tt29010189","rating":7.4,"votes":63}},
     "lugenubermeinemutter": {"title":"Lügen über meine Mutter","duration":102,"year":2026,"imdb":{"id":"tt36985296","rating":7.1,"votes":64}},
