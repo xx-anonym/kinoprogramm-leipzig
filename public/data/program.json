@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T23:00:52.385Z",
+  "generatedAt": "2026-11-08T00:02:01.614Z",
   "days": ["2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":118},
@@ -48,7 +48,7 @@
     "digger": {"title":"Digger","duration":129,"imdb":{"id":"tt31450459","rating":7.5,"votes":46708}},
     "dogofgod": {"title":"Dog of God","duration":95,"imdb":{"id":"tt33738802","rating":6.5,"votes":290}},
     "dreikameradinnen": {"title":"Drei Kameradinnen","duration":93},
-    "ebenezer": {"title":"Ebenezer","duration":115},
+    "ebenezer": {"title":"Ebenezer","duration":115,"imdb":{"id":"tt0133727","rating":5.6,"votes":348}},
     "ebenezereineweihnachtsgeschichte": {"title":"Ebenezer - Eine Weihnachtsgeschichte","duration":100,"original":"Ebenezer: A Christmas Carol","year":2026},
     "eintalentfursmorden": {"title":"Ein Talent fürs Morden","duration":105,"imdb":{"id":"tt14129116","rating":6.8,"votes":816}},
     "einarschleefichhabekeindeutschlandgefunden": {"title":"Einar Schleef - Ich habe kein Deutschland gefunden","duration":97},
