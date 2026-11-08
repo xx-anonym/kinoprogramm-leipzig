@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:01:04.508Z",
+  "generatedAt": "2026-11-08T02:00:58.794Z",
   "days": ["2026-11-08","2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
@@ -12,7 +12,7 @@
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":93},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":67},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":9},
-    {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":14},
+    {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":16},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":39},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":26},
     {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":16},
@@ -1521,6 +1521,7 @@
     {"cinema":"metropolis","film":"kindererzahlenfilmwerkschauzukinderrechten","date":"2026-11-13","time":"15:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3676858407"},
     {"cinema":"zeise","film":"geheimestockwerk","date":"2026-11-13","time":"15:00","url":"https://www.zeise.de/show/470393/booking"},
     {"cinema":"3001","film":"tierischhungrig","date":"2026-11-13","time":"15:30","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/13039"},
+    {"cinema":"filmraum","film":"frechstetrollderwelt","date":"2026-11-13","time":"15:30","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3711502810"},
     {"cinema":"3001","film":"flugversuche","date":"2026-11-13","time":"16:30","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/13040"},
     {"cinema":"metropolis","film":"kindererzahlenfilmwerkschauzukinderrechten","date":"2026-11-13","time":"16:30","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3676858437"},
     {"cinema":"studio","film":"kingongolokiniata","date":"2026-11-13","time":"17:00","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396140"},
@@ -1601,6 +1602,7 @@
     {"cinema":"cinemaxx-wandsbek","film":"festtagsspassmitpeppadaskinoerlebnis","date":"2026-11-15","time":"14:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001699/18169"},
     {"cinema":"metropolis","film":"einenachtaufkarlstein","date":"2026-11-15","time":"14:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3682816006"},
     {"cinema":"zeise","film":"aufdersuchenachderweihnachtswerkstatt","date":"2026-11-15","time":"14:00","url":"https://www.zeise.de/show/470395/booking"},
+    {"cinema":"filmraum","film":"frechstetrollderwelt","date":"2026-11-15","time":"14:15","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3711502824"},
     {"cinema":"studio","film":"laundry","date":"2026-11-15","time":"14:30","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396178"},
     {"cinema":"cinemaxx-dammtor","film":"dziendzieckaksiedzajanakaczkowskiego","date":"2026-11-15","time":"15:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001785/41958"},
     {"cinema":"cinemaxx-harburg","film":"dziendzieckaksiedzajanakaczkowskiego","date":"2026-11-15","time":"15:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1207/HO00001785/27654"},
