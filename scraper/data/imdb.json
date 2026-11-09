@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-09T11:00:59.053Z",
+ "ratingsUpdated": "2026-11-09T15:00:55.387Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -1352,6 +1352,14 @@
    "checked": "2026-10-19",
    "attempts": 2,
    "seen": "2026-10-20"
+  },
+  "fruhstuckbeiaudrey": {
+   "id": "tt36749000",
+   "title": "Frühstück bei Audrey",
+   "year": 2025,
+   "seen": "2026-11-09",
+   "rating": 5.7,
+   "votes": 432
   },
   "furzfilmprogramm": {
    "id": null,
