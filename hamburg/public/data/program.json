@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T11:50:21.596Z",
+  "generatedAt": "2026-11-09T12:02:46.197Z",
   "days": ["2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -8,7 +8,7 @@
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":14},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":97},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":96},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":65},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":47},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":6},
@@ -198,7 +198,7 @@
     "superbuhei": {"title":"Superbuhei","duration":107},
     "teresaeinlebenzwischenlichtundschatten": {"title":"Teresa - Ein Leben zwischen Licht und Schatten","duration":104,"imdb":{"id":"tt18246200","rating":5.5,"votes":466}},
     "eyesofghana": {"title":"The Eyes of Ghana","imdb":{"id":"tt37815334","rating":7.2,"votes":116}},
-    "killer": {"title":"The Killer","duration":110,"year":2024,"imdb":{"id":"tt1121948","rating":5.7,"votes":19281}},
+    "killer": {"title":"The Killer","duration":110,"original":"喋血雙雄","year":2024,"imdb":{"id":"tt1121948","rating":5.7,"votes":19281}},
     "legendofthevagabondqueenoflagos": {"title":"The Legend of the Vagabond Queen of Lagos","duration":100,"year":2024,"imdb":{"id":"tt11405134","rating":7.3,"votes":73}},
     "neondemon": {"title":"The Neon Demon","duration":117,"year":2016,"imdb":{"id":"tt1974419","rating":6.1,"votes":112918}},
     "socialreckoning": {"title":"The Social Reckoning","duration":120,"year":2026,"imdb":{"id":"tt37510326","rating":6.7,"votes":10524}},
@@ -217,7 +217,6 @@
     "wirsindsofrei": {"title":"Wir sind so frei","duration":97}
   },
   "shows": [
-    {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-09","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41731"},
     {"cinema":"cinemaxx-dammtor","film":"shaundasschafspukimkurbisfeld","date":"2026-11-09","time":"13:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001431/41900"},
     {"cinema":"cinemaxx-dammtor","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-09","time":"13:20","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001606/41920"},
     {"cinema":"cinemaxx-dammtor","film":"emilunddiedetektive","date":"2026-11-09","time":"13:40","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001605/41838"},
