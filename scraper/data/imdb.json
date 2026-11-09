@@ -360,7 +360,7 @@
   "bibiblocksberg2dieverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
-   "seen": "2026-11-08",
+   "seen": "2026-11-09",
    "rating": 6,
    "votes": 52
   },
@@ -1036,6 +1036,13 @@
   "ebenezerachristmascarol": {
    "id": null,
    "title": "Ebenezer: A Christmas Carol",
+   "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-09"
+  },
+  "ebenezereineweihnachtsge": {
+   "id": null,
+   "title": "Ebenezer - Eine Weihnachtsge",
    "checked": "2026-11-09",
    "attempts": 1,
    "seen": "2026-11-09"
