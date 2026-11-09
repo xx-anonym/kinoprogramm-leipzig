@@ -1033,6 +1033,13 @@
    "rating": 5.6,
    "votes": 348
   },
+  "ebenezerachristmascarol": {
+   "id": null,
+   "title": "Ebenezer: A Christmas Carol",
+   "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-09"
+  },
   "ebenezereineweihnachtsgeschichte": {
    "id": null,
    "title": "Ebenezer - Eine Weihnachtsgeschichte",
@@ -2908,7 +2915,7 @@
   "mumbojumbo": {
    "id": "tt28942997",
    "title": "Mumbo Jumbo",
-   "seen": "2026-11-08",
+   "seen": "2026-11-09",
    "rating": 6.4,
    "votes": 127
   },
@@ -3422,7 +3429,7 @@
    "title": "Ramayana: Rise of a Legend (Hindi OmU/OmeU)",
    "checked": "2026-11-05",
    "attempts": 2,
-   "seen": "2026-11-05"
+   "seen": "2026-11-09"
   },
   "ramayanariseofalegendhollywoodversion": {
    "id": null,
@@ -3443,7 +3450,7 @@
    "title": "Rammstein - Live in Mexico City",
    "checked": "2026-11-04",
    "attempts": 2,
-   "seen": "2026-11-08"
+   "seen": "2026-11-09"
   },
   "rammsteinliveinmexikocity": {
    "id": null,
@@ -4437,7 +4444,7 @@
   "undeswarsommerdieterthomaskuhnundband": {
    "id": "tt43661040",
    "title": "Und es war Sommer - Dieter Thomas Kuhn & Band",
-   "seen": "2026-10-26",
+   "seen": "2026-11-09",
    "rating": 8.2,
    "votes": 9
   },
