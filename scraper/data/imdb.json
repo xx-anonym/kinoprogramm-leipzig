@@ -1432,6 +1432,13 @@
    "attempts": 1,
    "seen": "2026-11-09"
   },
+  "georgemichaelthefaithtourimax": {
+   "id": null,
+   "title": "George Michael - The Faith Tour (Imax)",
+   "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-09"
+  },
   "germaineacognydieessenzdestanzes": {
    "id": "tt15069888",
    "title": "Germaine Acogny - Die Essenz des Tanzes",
@@ -1753,6 +1760,13 @@
    "attempts": 1,
    "seen": "2026-11-09"
   },
+  "herrderringediegefahrtenextendedversionimax": {
+   "id": null,
+   "title": "Der Herr der Ringe - die Gefährten (Extended Version) (Imax)",
+   "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-09"
+  },
   "herrderringediegefahrtensondervorstellung": {
    "id": null,
    "title": "Herr der Ringe - die Gefährten Sondervorstellung",
@@ -2021,7 +2035,7 @@
   "insidiousoutofthefurther": {
    "id": "tt32393988",
    "title": "Insidious: Out of the Further",
-   "seen": "2026-11-07",
+   "seen": "2026-11-09",
    "rating": 6,
    "votes": 30716
   },
@@ -3092,7 +3106,7 @@
   "obsessiondusollstmichlieben": {
    "id": "tt37287335",
    "title": "Obsession - Du sollst mich lieben",
-   "seen": "2026-11-06",
+   "seen": "2026-11-09",
    "rating": 7.8,
    "votes": 426821
   },
@@ -3106,9 +3120,9 @@
   "odysseeimax": {
    "id": null,
    "title": "Die Odyssee (Imax)",
-   "checked": "2026-11-02",
-   "attempts": 3,
-   "seen": "2026-11-07"
+   "checked": "2026-11-09",
+   "attempts": 4,
+   "seen": "2026-11-09"
   },
   "ohlala2neuetestsneueschaos": {
    "id": "tt36933402",
@@ -3422,7 +3436,7 @@
    "title": "Ramayana: Rise Of A Legend (Hindi) (Hindi OmU)",
    "checked": "2026-11-07",
    "attempts": 2,
-   "seen": "2026-11-08"
+   "seen": "2026-11-09"
   },
   "ramayanariseofalegendhindiomuomeu": {
    "id": null,
@@ -3443,7 +3457,7 @@
    "title": "Ramayana: Rise Of A Legend (Imax 3D) (Deutsch/Imax 3D)",
    "checked": "2026-11-06",
    "attempts": 2,
-   "seen": "2026-11-08"
+   "seen": "2026-11-09"
   },
   "rammsteinliveinmexicocity": {
    "id": null,
@@ -3738,6 +3752,13 @@
    "checked": "2026-11-03",
    "attempts": 1,
    "seen": "2026-11-08"
+  },
+  "scenetamiltamilomu": {
+   "id": null,
+   "title": "Scene (Tamil) (Tamil OmU)",
+   "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-09"
   },
   "scherbenland": {
    "id": "tt42340559",
@@ -4485,7 +4506,7 @@
   "vaiana": {
    "id": "tt27419466",
    "title": "Vaiana",
-   "seen": "2026-11-08",
+   "seen": "2026-11-09",
    "rating": 5.8,
    "votes": 23779
   },
