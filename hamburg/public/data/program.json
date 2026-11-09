@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-09T08:02:44.150Z",
+  "generatedAt": "2026-11-09T09:01:07.427Z",
   "days": ["2026-11-09","2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":12},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":55},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":54},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -212,7 +212,6 @@
     "wirsindsofrei": {"title":"Wir sind so frei","duration":97}
   },
   "shows": [
-    {"cinema":"abaton","film":"mittagsstunde","date":"2026-11-09","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591865"},
     {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-09","time":"10:10","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592364"},
     {"cinema":"abaton","film":"watchingpeoplewatchingbirds","date":"2026-11-09","time":"12:40","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591859"},
     {"cinema":"abaton","film":"moscasfliegenundanderegaste","date":"2026-11-09","time":"12:50","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591866"},
