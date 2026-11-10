@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-10T03:00:55.607Z",
+ "ratingsUpdated": "2026-11-10T07:00:53.378Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -623,7 +623,7 @@
   "catli2": {
    "id": "tt49514466",
    "title": "Catli 2",
-   "seen": "2026-11-07",
+   "seen": "2026-11-10",
    "rating": 5.4,
    "votes": 55
   },
@@ -1953,7 +1953,7 @@
    "title": "(Hi) Ramayana: Rise of a Legend",
    "checked": "2026-11-05",
    "attempts": 2,
-   "seen": "2026-11-07"
+   "seen": "2026-11-10"
   },
   "hirschfeldunbekannterbekannter": {
    "id": "tt39302964",
@@ -2106,6 +2106,13 @@
    "seen": "2026-11-09",
    "rating": 6.2,
    "votes": 229
+  },
+  "imrozdabahar": {
+   "id": null,
+   "title": "İmroz´da Bahar",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "imtaximitmadeleine": {
    "id": "tt14586118",
@@ -2534,6 +2541,13 @@
    "checked": "2026-11-02",
    "attempts": 3,
    "seen": "2026-11-03"
+  },
+  "lahaine30thanniversary": {
+   "id": null,
+   "title": "La Haine (30Th Anniversary)",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "lalka": {
    "id": "tt37082105",
@@ -2971,6 +2985,14 @@
    "attempts": 2,
    "seen": "2026-10-19"
   },
+  "missionmausejagdchaosuntermweihnachtsbaum": {
+   "id": "tt35727399",
+   "title": "Mission: Mäusejagd - Chaos unterm Weihnachtsbaum",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 6,
+   "votes": 706
+  },
   "mitdemwolftanzt35jahrigesjubilaum": {
    "id": null,
    "title": "Der mit dem Wolf tanzt - 35-jähriges Jubiläum",
@@ -3288,6 +3310,13 @@
    "seen": "2026-10-17",
    "rating": 7.1,
    "votes": 1738
+  },
+  "onthesea": {
+   "id": "tt31936369",
+   "title": "On the Sea",
+   "seen": "2026-11-10",
+   "rating": 7,
+   "votes": 1458
   },
   "operadeparisromeoetjuliette202627": {
    "id": null,
@@ -4072,7 +4101,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "sneakextreme": {
    "id": null,
@@ -4102,7 +4131,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview FSK 18",
-   "seen": "2026-11-08"
+   "seen": "2026-11-10"
   },
   "socialreckoning": {
    "id": "tt37510326",
@@ -4369,6 +4398,14 @@
    "seen": "2026-10-31",
    "rating": 7.3,
    "votes": 117657
+  },
+  "tabalugaderfilm": {
+   "id": "tt5817548",
+   "title": "Tabaluga - Der Film",
+   "year": 2018,
+   "seen": "2026-11-10",
+   "rating": 5.3,
+   "votes": 348
   },
   "tallybrownnewyork": {
    "id": "tt0163324",

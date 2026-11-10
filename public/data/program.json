@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T06:00:57.788Z",
+  "generatedAt": "2026-11-10T07:02:19.013Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":230},
@@ -84,7 +84,7 @@
     "mumbojumbo": {"title":"Mumbo Jumbo","duration":60,"imdb":{"id":"tt28942997","rating":6.4,"votes":127}},
     "naza": {"title":"Naza","duration":80,"imdb":{"id":"tt44766123","rating":8.4,"votes":6816}},
     "nurnberg": {"title":"Nürnberg","duration":148,"imdb":{"id":"tt29567915","rating":7.3,"votes":124264}},
-    "onthesea": {"title":"On the Sea","duration":111},
+    "onthesea": {"title":"On the Sea","duration":111,"imdb":{"id":"tt31936369","rating":7,"votes":1458}},
     "othermommy": {"title":"Other Mommy","duration":93,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":15718}},
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":83,"imdb":{"id":"tt29356163","rating":6,"votes":3018}},
     "primetime": {"title":"Primetime","duration":110,"imdb":{"id":"tt34206385","rating":6.9,"votes":36443}},

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T06:01:09.905Z",
+  "generatedAt": "2026-11-10T07:02:26.531Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -167,7 +167,7 @@
     "minionsundmonster": {"title":"Minions & Monster","duration":90,"original":"Minions & Monsters","year":2026,"imdb":{"id":"tt32890033","rating":6.3,"votes":37308}},
     "minionsundmonsters": {"title":"Minions & Monsters","duration":90,"imdb":{"id":"tt32890033","rating":6.3,"votes":37308}},
     "minotaurus": {"title":"Minotaurus","duration":141,"original":"Minotaure","year":2026,"imdb":{"id":"tt37118301","rating":7.6,"votes":1846}},
-    "missionmausejagdchaosuntermweihnachtsbaum": {"title":"Mission: Mäusejagd - Chaos unterm Weihnachtsbaum","duration":80,"original":"Hvis Ingen Går I Fella","year":2025},
+    "missionmausejagdchaosuntermweihnachtsbaum": {"title":"Mission: Mäusejagd - Chaos unterm Weihnachtsbaum","duration":80,"original":"Hvis Ingen Går I Fella","year":2025,"imdb":{"id":"tt35727399","rating":6,"votes":706}},
     "mitleiserstimme": {"title":"Mit leiser Stimme","duration":112,"original":"À voix basse","year":2026,"imdb":{"id":"tt33515714","rating":6.8,"votes":343}},
     "mittagsstunde": {"title":"Mittagsstunde","duration":97,"imdb":{"id":"tt21148858","rating":6.9,"votes":527}},
     "monstermia": {"title":"Monster Mia","duration":81,"year":2026,"imdb":{"id":"tt38807889","rating":7,"votes":108}},
@@ -220,7 +220,7 @@
     "sternbruckeforeverfskfolgt": {"title":"STERNBRÜCKE FOREVER, FSK folgt","duration":98,"year":2026},
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":21914}},
     "superbuhei": {"title":"Superbuhei","duration":107},
-    "tabalugaderfilm": {"title":"Tabaluga - Der Film","duration":90,"original":"Tabaluga","year":2018},
+    "tabalugaderfilm": {"title":"Tabaluga - Der Film","duration":90,"original":"Tabaluga","year":2018,"imdb":{"id":"tt5817548","rating":5.3,"votes":348}},
     "teresaeinlebenzwischenlichtundschatten": {"title":"Teresa - Ein Leben zwischen Licht und Schatten","duration":104,"imdb":{"id":"tt18246200","rating":5.5,"votes":466}},
     "eyesofghana": {"title":"The Eyes of Ghana","imdb":{"id":"tt37815334","rating":7.2,"votes":116}},
     "killer": {"title":"The Killer","duration":110,"original":"喋血雙雄","year":2024,"imdb":{"id":"tt1121948","rating":5.7,"votes":19281}},
