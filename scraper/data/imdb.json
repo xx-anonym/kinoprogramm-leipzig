@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-09T15:00:55.387Z",
+ "ratingsUpdated": "2026-11-10T00:00:57.486Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -14,6 +14,13 @@
    "checked": "2026-10-31",
    "attempts": 2,
    "seen": "2026-11-01"
+  },
+  "25jahregartenderfrauen": {
+   "id": null,
+   "title": "25 Jahre Garten der Frauen",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "70wochenantarktisuberwinterungimewigeneis": {
    "id": null,
@@ -44,7 +51,7 @@
   "adamsacht": {
    "id": "tt8758494",
    "title": "Adams Acht",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 168
   },
@@ -81,7 +88,7 @@
    "title": "Akte Vuskovic - Doping. Skandal. Zweifel.",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "albrechtweinbergesistimmerinmeinemkopf": {
    "id": "tt45369856",
@@ -150,7 +157,7 @@
   "alteliebe": {
    "id": "tt44112686",
    "title": "Alte Liebe",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 73
   },
@@ -185,14 +192,14 @@
   "amadouetmariamtheblindcouplefrommali": {
    "id": "tt37751200",
    "title": "Amadou Et Mariam - The Blind Couple From Mali",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.2,
    "votes": 21
   },
   "andereseite": {
    "id": "tt42373658",
    "title": "Die andere Seite",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 67
   },
@@ -229,7 +236,7 @@
    "title": "Asche und Diamant",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "atalentformurder": {
    "id": "tt14129116",
@@ -250,7 +257,7 @@
    "title": "Auf der Suche nach der Weihnachtswerkstatt",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "aufstandderjugend": {
    "id": null,
@@ -297,7 +304,7 @@
   "barbarabuserpionierindernachhaltigkeit": {
    "id": "tt39302471",
    "title": "Barbara Buser - Pionierin der Nachhaltigkeit",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 10
   },
@@ -348,12 +355,12 @@
    "title": "Between Times",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "bewareboiuna": {
    "id": "tt10377864",
    "title": "Beware Boiúna",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.7,
    "votes": 2576
   },
@@ -367,14 +374,14 @@
   "bibiblocksbergdietotalverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg - Die total verhexte Zeitreise",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 52
   },
   "biermann": {
    "id": "tt40205719",
    "title": "Biermann",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 26
   },
@@ -444,7 +451,7 @@
   "block10": {
    "id": "tt38640121",
    "title": "Block 10",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.7,
    "votes": 40
   },
@@ -452,7 +459,7 @@
    "id": "tt34735922",
    "title": "Bloody Tennis",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 4.6,
    "votes": 606
   },
@@ -466,7 +473,7 @@
   "blutgrafin": {
    "id": "tt28151657",
    "title": "Die Blutgräfin",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.3,
    "votes": 272
   },
@@ -494,7 +501,7 @@
   "breakingaway": {
    "id": "tt0078902",
    "title": "Breaking Away",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.7,
    "votes": 28005
   },
@@ -502,7 +509,7 @@
    "id": "tt35451785",
    "title": "Briefe aus der Wilcza (Listy Z Wilczej)",
    "year": 2025,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 197
   },
@@ -551,7 +558,7 @@
   "byanymeans": {
    "id": "tt34379051",
    "title": "By Any Means",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 8449
   },
@@ -580,7 +587,7 @@
    "id": null,
    "skip": true,
    "title": "Carmen - Bizet (Royal Ballet & Opera 2026/27 live)",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "catli2": {
    "id": "tt49514466",
@@ -592,7 +599,7 @@
   "cesarundrosalie": {
    "id": "tt0068441",
    "title": "César und Rosalie",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 4326
   },
@@ -608,19 +615,19 @@
    "title": "Chasing Hope - Der andere Blick",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "chasingtrane": {
    "id": "tt4283892",
    "title": "Chasing Trane",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 2671
   },
   "checkertobi3dieheimlicheherrscherindererde": {
    "id": "tt39104671",
    "title": "Checker Tobi 3 – Die Heimliche Herrscherin der Erde",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 218
   },
@@ -655,7 +662,7 @@
   "chopineinesonateinparis": {
    "id": "tt33305572",
    "title": "Chopin - Eine Sonate in Paris",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 1070
   },
@@ -692,14 +699,14 @@
    "title": "Cinema! Italia! 2026 Publikumsliebling",
    "checked": "2026-11-04",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "cinemaparadiso": {
    "id": null,
    "title": "Cinema Paradiso",
    "checked": "2026-11-04",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "cineozzyundblacksabbathbacktothebeginning": {
    "id": null,
@@ -712,7 +719,7 @@
    "id": null,
    "skip": true,
    "title": "CineSneak - Die Überraschungspreview",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "cinesneakovtheoriginalsurprisepreview": {
    "id": null,
@@ -731,7 +738,7 @@
   "clayface": {
    "id": "tt34890576",
    "title": "Clayface",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 47351
   },
@@ -767,14 +774,14 @@
    "id": "tt41592086",
    "title": "Congo Boy",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 112
   },
   "corpusdelicti": {
    "id": "tt37804242",
    "title": "Corpus Delicti",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.8,
    "votes": 268
   },
@@ -796,7 +803,7 @@
   "coyotevsacme": {
    "id": "tt1756855",
    "title": "Coyote vs. Acme",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 50578
   },
@@ -814,11 +821,18 @@
    "rating": 6.2,
    "votes": 298
   },
+  "dannpassiertdasleben": {
+   "id": "tt37150957",
+   "title": "Dann passiert das Leben",
+   "seen": "2026-11-10",
+   "rating": 6.7,
+   "votes": 266
+  },
   "dao": {
    "id": "tt32358921",
    "title": "Dao",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.1,
    "votes": 177
   },
@@ -860,7 +874,7 @@
    "id": "tt15239678",
    "title": "DF: Dune Part I + II - Vision",
    "year": 2023,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.4,
    "votes": 805010
   },
@@ -868,7 +882,7 @@
    "id": "tt15239678",
    "title": "DF: Dune: Teil 1 + 2 - Vision",
    "year": 2023,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.4,
    "votes": 805010
   },
@@ -889,7 +903,7 @@
   "digger": {
    "id": "tt31450459",
    "title": "Digger",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 47097
   },
@@ -917,7 +931,7 @@
   "dogofgod": {
    "id": "tt33738802",
    "title": "Dog of God",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 290
   },
@@ -966,7 +980,7 @@
   "dreikameradinnen": {
    "id": "tt43548654",
    "title": "Drei Kameradinnen",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.2,
    "votes": 15
   },
@@ -1022,14 +1036,14 @@
   "dziendzieckaksiedzajanakaczkowskiego": {
    "id": "tt45921180",
    "title": "Dzien dziecka ksiedza Jana Kaczkowskiego",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 24
   },
   "ebenezer": {
    "id": "tt0133727",
    "title": "Ebenezer",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.6,
    "votes": 348
   },
@@ -1038,7 +1052,7 @@
    "title": "Ebenezer: A Christmas Carol",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ebenezereineweihnachtsge": {
    "id": null,
@@ -1052,7 +1066,7 @@
    "title": "Ebenezer - Eine Weihnachtsgeschichte",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "edmundundluziewinterabenteuer": {
    "id": "tt6509214",
@@ -1073,7 +1087,7 @@
    "title": "Einar Schleef - Ich habe kein Deutschland gefunden",
    "checked": "2026-11-09",
    "attempts": 4,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "einekrankheitwieeingedicht": {
    "id": "tt39295633",
@@ -1087,14 +1101,14 @@
    "title": "Eine Nacht auf Karlstein",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "einetanztdieanderenicht": {
    "id": null,
    "title": "Die eine tanzt, die andere nicht",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "einfastperfekterantrag": {
    "id": "tt39291213",
@@ -1107,7 +1121,7 @@
    "id": "tt35300281",
    "title": "Ein Mädchen namens Willow",
    "year": 2025,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 520
   },
@@ -1121,7 +1135,7 @@
   "eintalentfursmorden": {
    "id": "tt14129116",
    "title": "Ein Talent Fürs Morden",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 873
   },
@@ -1135,7 +1149,7 @@
   "eisernewildnisheartofthebeast": {
    "id": "tt7526136",
    "title": "Eiserne Wildnis - Heart of the Beast",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 41732
   },
@@ -1170,7 +1184,7 @@
   "emilunddiedetektive": {
    "id": "tt39381622",
    "title": "Emil und die Detektive",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 78
   },
@@ -1217,7 +1231,7 @@
   "everytime": {
    "id": "tt41592057",
    "title": "Everytime",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 775
   },
@@ -1231,14 +1245,14 @@
   "eyesofghana": {
    "id": "tt37815334",
    "title": "The Eyes of Ghana",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 116
   },
   "eyeswideshut": {
    "id": "tt0120663",
    "title": "Eyes Wide Shut",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 444669
   },
@@ -1275,7 +1289,7 @@
    "title": "Festtagsspaß mit Peppa - Das Kinoerlebnis",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "finalgirlsberlinbestof2026kurzfilmprogramm": {
    "id": null,
@@ -1316,12 +1330,12 @@
    "title": "Flugversuche",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "forgottenisland": {
    "id": "tt36583977",
    "title": "Forgotten Island",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 10885
   },
@@ -1335,14 +1349,14 @@
   "frauwinklerverlasstdashaus": {
    "id": "tt39400348",
    "title": "Frau Winkler verlässt das Haus",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 65
   },
   "frechstetrollderwelt": {
    "id": "tt33334564",
    "title": "Der frechste Troll der Welt",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 84
   },
@@ -1352,6 +1366,13 @@
    "seen": "2026-11-04",
    "rating": 7.1,
    "votes": 281
+  },
+  "freeridefilmfestival2026": {
+   "id": null,
+   "title": "Freeride Filmfestival 2026",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "fremdsprachenkinopalmerasenlanievespan": {
    "id": null,
@@ -1371,7 +1392,7 @@
    "id": "tt36749000",
    "title": "Frühstück bei Audrey",
    "year": 2025,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.7,
    "votes": 432
   },
@@ -1381,6 +1402,14 @@
    "checked": "2026-10-29",
    "attempts": 2,
    "seen": "2026-10-30"
+  },
+  "futurecouncilkommanbord": {
+   "id": "tt32757385",
+   "title": "Future Council - Komm an Bord",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 7.4,
+   "votes": 52
   },
   "gabrieletergitpreisfurmutigenlokaljournalismus": {
    "id": null,
@@ -1406,7 +1435,7 @@
   "geheimestockwerk": {
    "id": "tt27764052",
    "title": "Das geheime Stockwerk",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 120
   },
@@ -1414,14 +1443,14 @@
    "id": "tt42677406",
    "title": "Das Geheimnis der gestohlenen Maske",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.2,
    "votes": 7
   },
   "geister": {
    "id": "tt36501204",
    "title": "Geister",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 108
   },
@@ -1437,20 +1466,20 @@
    "title": "George Michael - The Faith Tour",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "georgemichaelthefaithtourimax": {
    "id": null,
    "title": "George Michael - The Faith Tour (Imax)",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "germaineacognydieessenzdestanzes": {
    "id": "tt15069888",
    "title": "Germaine Acogny - Die Essenz des Tanzes",
    "year": 2031,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.6,
    "votes": 11
   },
@@ -1466,7 +1495,7 @@
    "title": "Die Geschichte von Ottensen",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "geschlossenegesellschaft": {
    "id": "tt0077606",
@@ -1489,10 +1518,16 @@
    "rating": 6.5,
    "votes": 339
   },
+  "gewinnerrolledeutscherkurzfilmpreis2026": {
+   "id": null,
+   "skip": true,
+   "title": "Gewinnerrolle: Deutscher Kurzfilmpreis 2026",
+   "seen": "2026-11-10"
+  },
   "gewisseetwas": {
    "id": "tt37800509",
    "title": "Das gewisse Etwas",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 235
   },
@@ -1513,14 +1548,21 @@
   "glaube": {
    "id": "tt35513027",
    "title": "Glaube",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 5786
+  },
+  "gleichungihreslebens": {
+   "id": "tt26699529",
+   "title": "Die Gleichung ihres Lebens",
+   "seen": "2026-11-10",
+   "rating": 6.8,
+   "votes": 3350
   },
   "godzillaminuszero": {
    "id": "tt34384661",
    "title": "Godzilla Minus Zero",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8,
    "votes": 12263
   },
@@ -1529,12 +1571,12 @@
    "title": "Godzilla Minus Zero (Imax)",
    "checked": "2026-11-09",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "godzillaminuszerojapanisch": {
    "id": "tt34384661",
    "title": "GODZILLA MINUS ZERO - japanisch",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8,
    "votes": 12263
   },
@@ -1551,6 +1593,14 @@
    "checked": "2026-10-26",
    "attempts": 2,
    "seen": "2026-10-27"
+  },
+  "grosseskinouhrwerkorange": {
+   "id": "tt0066921",
+   "title": "Grosses Kino: Uhrwerk Orange",
+   "year": 1971,
+   "seen": "2026-11-10",
+   "rating": 8.2,
+   "votes": 949387
   },
   "grunau50gebautfurviele": {
    "id": null,
@@ -1585,14 +1635,14 @@
    "title": "Hadoota",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "hadootaarabomeu": {
    "id": null,
    "title": "Hadoota (arab. OmeU)",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "hakelbuddelclubzauberhafteschwestern2": {
    "id": null,
@@ -1633,7 +1683,7 @@
    "id": "tt29344907",
    "title": "Hanami",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 232
   },
@@ -1683,7 +1733,7 @@
   "heaviestendres": {
    "id": "tt28349825",
    "title": "Heavies Tendres",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 29
   },
@@ -1697,7 +1747,7 @@
   "heimsuchungeinejahrhundertgeschichte": {
    "id": "tt38805050",
    "title": "Heimsuchung - Eine Jahrhundertgeschichte",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.7,
    "votes": 290
   },
@@ -1713,12 +1763,12 @@
    "title": "Helene Weigel: Revolutionärin im Rampenlicht",
    "checked": "2026-11-08",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "herprivatehell": {
    "id": "tt36629665",
    "title": "Her Private hell",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 4.5,
    "votes": 5017
   },
@@ -1741,7 +1791,7 @@
    "id": "tt0120737",
    "title": "Der Herr der Ringe 3",
    "year": 2001,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.9,
    "votes": 2251066
   },
@@ -1765,14 +1815,14 @@
    "title": "Der Herr der Ringe - die Gefährten (Extended Version)",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "herrderringediegefahrtenextendedversionimax": {
    "id": null,
    "title": "Der Herr der Ringe - die Gefährten (Extended Version) (Imax)",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "herrderringediegefahrtensondervorstellung": {
    "id": null,
@@ -1785,7 +1835,7 @@
    "id": "tt0167261",
    "title": "Der Herr der Ringe - Die zwei Türme",
    "year": 2002,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.8,
    "votes": 1995968
   },
@@ -1794,7 +1844,7 @@
    "title": "Der Herr der Ringe - Die zwei Türme (Extended)",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "herrderringeexttrilogie": {
    "id": null,
@@ -1827,7 +1877,7 @@
   "herrinvomsolderhof": {
    "id": "tt0131422",
    "title": "Die Herrin vom Sölderhof",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.7,
    "votes": 13
   },
@@ -1848,7 +1898,7 @@
   "hiddensee": {
    "id": "tt43549602",
    "title": "Hiddensee",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 28
   },
@@ -1869,7 +1919,7 @@
   "hockeydeutschlanddurchliebezumtitel": {
    "id": "tt0083722",
    "title": "#HockeyDeutschland. Durch Liebe zum Titel",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.2,
    "votes": 27231
   },
@@ -1890,7 +1940,7 @@
   "hope": {
    "id": "tt27369017",
    "title": "Hope",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 31957
   },
@@ -1966,7 +2016,7 @@
    "title": "How to Rob a Bank",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "hybecheeringparty": {
    "id": null,
@@ -1974,6 +2024,13 @@
    "checked": "2026-10-31",
    "attempts": 3,
    "seen": "2026-10-31"
+  },
+  "iaimatthestarsthewernhervonbraunstory": {
+   "id": null,
+   "title": "I Aim at the Stars. the Wernher Von Braun Story",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "icecreamman": {
    "id": "tt36893729",
@@ -1993,7 +2050,7 @@
    "id": "tt36290176",
    "title": "Identitti",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.9,
    "votes": 16
   },
@@ -2028,7 +2085,7 @@
   "inliebeeurehilde": {
    "id": "tt20420646",
    "title": "In Liebe, Eure Hilde",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 1718
   },
@@ -2037,7 +2094,7 @@
    "title": "In Search of Ladino + Fragments",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "insidegaza": {
    "id": "tt32209577",
@@ -2049,7 +2106,7 @@
   "insidiousoutofthefurther": {
    "id": "tt32393988",
    "title": "Insidious: Out of the Further",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 30716
   },
@@ -2070,7 +2127,7 @@
   "ivanundhadoum": {
    "id": "tt27219371",
    "title": "Iván & Hadoum",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 206
   },
@@ -2154,7 +2211,7 @@
   "jungstetochter": {
    "id": "tt28326501",
    "title": "Die Jüngste Tochter",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 2087
   },
@@ -2163,7 +2220,7 @@
    "title": "Junkies of Dreaming - Mahler 3 Currentzis",
    "checked": "2026-11-04",
    "attempts": 4,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kalterhund": {
    "id": "tt43550573",
@@ -2196,7 +2253,7 @@
   "kathekollwitzbildereineslebens": {
    "id": "tt0091367",
    "title": "Käthe Kollwitz . Bilder eines Lebens",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 28
   },
@@ -2211,7 +2268,7 @@
    "id": "tt1121948",
    "title": "The Killer",
    "year": 2024,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.7,
    "votes": 19281
   },
@@ -2220,14 +2277,14 @@
    "title": "Kinder (er)Zählen! Film-Werkschau zu Kinderrechten",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kingongolokiniata": {
    "id": null,
    "title": "KinGongolo Kiniata",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kinofurfrauenteresaeinlebenzwischenlichtundschatten": {
    "id": null,
@@ -2260,7 +2317,7 @@
   "klaraunddiesonne": {
    "id": "tt14371256",
    "title": "Klara und die Sonne",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 2668
   },
@@ -2290,14 +2347,14 @@
    "title": "Knalltheater in der Kinobar",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kommissarjennerweinhochsaison": {
    "id": null,
    "title": "Kommissar Jennerwein - Hochsaison",
    "checked": "2026-11-09",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kommunist": {
    "id": "tt0051827",
@@ -2325,7 +2382,7 @@
    "title": "Krimizeit",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ktssneakpreview": {
    "id": null,
@@ -2351,7 +2408,7 @@
    "id": null,
    "skip": true,
    "title": "Kult-Sneak",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kunstkinobreathingearthsusumushingustraum": {
    "id": null,
@@ -2363,9 +2420,9 @@
   "kunstkinogerhardrichterpainting": {
    "id": null,
    "title": "KunstKino: GERHARD RICHTER PAINTING",
-   "checked": "2026-11-03",
-   "attempts": 1,
-   "seen": "2026-11-09"
+   "checked": "2026-11-10",
+   "attempts": 2,
+   "seen": "2026-11-10"
   },
   "kurzfilmprogrammfilmegegendasvergessen": {
    "id": null,
@@ -2383,13 +2440,13 @@
    "id": null,
    "skip": true,
    "title": "Kurzfilmreihe: Gesellschaft im Wandel, Hoffnung, Widerstand und Neuanfang",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kurzfilmreihewurzelnidentitatundfamilie": {
    "id": null,
    "skip": true,
    "title": "Kurzfilmreihe: Wurzeln, Identität und Familie",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "kusslangsamtheaterveranstaltung": {
    "id": null,
@@ -2407,7 +2464,7 @@
   "labolanegra": {
    "id": "tt35511966",
    "title": "La Bola Negra",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 12119
   },
@@ -2470,21 +2527,21 @@
   "laundry": {
    "id": "tt34734557",
    "title": "Laundry",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.8,
    "votes": 59
   },
   "laurassternunddergeheimnisvolledrachenian": {
    "id": "tt4587656",
    "title": "Lauras Stern und der geheimnisvolle Drache Nian",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.3,
    "votes": 11058
   },
   "lavitadagrandidaslebenalserwachsene": {
    "id": "tt30064085",
    "title": "La Vita da Grandi - Das Leben als Erwachsene",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 697
   },
@@ -2500,14 +2557,14 @@
    "title": "League of Legends Worlds 2026 - Finals in Cinema",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "leagueoflegendsworlds26finalsincinema": {
    "id": null,
    "title": "League of Legends Worlds 26 | Finals in Cinema",
    "checked": "2026-11-07",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "lebensunwertunerwunscht": {
    "id": null,
@@ -2527,7 +2584,7 @@
    "id": "tt11405134",
    "title": "The Legend of the Vagabond Queen of Lagos",
    "year": 2024,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 73
   },
@@ -2536,7 +2593,7 @@
    "title": "Leica - Ein Jahrhundert in Bildern",
    "checked": "2026-11-08",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "lelac": {
    "id": "tt28696867",
@@ -2558,6 +2615,12 @@
    "seen": "2026-11-04",
    "rating": 7.1,
    "votes": 111
+  },
+  "lesunggisapaulyliveimbelugakino": {
+   "id": null,
+   "skip": true,
+   "title": "LESUNG: GISA PAULY live im Beluga Kino",
+   "seen": "2026-11-10"
   },
   "lesungjoebauschliveimbelugakino": {
    "id": null,
@@ -2588,7 +2651,7 @@
   "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {
    "id": "tt43598591",
    "title": "Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes und Amir",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.9,
    "votes": 66
   },
@@ -2636,7 +2699,7 @@
   "lolamontez": {
    "id": "tt0048308",
    "title": "Lola Montez",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 6781
   },
@@ -2673,7 +2736,7 @@
    "title": "Lotta guckt MATRIX",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "lotteundtotte": {
    "id": "tt29010189",
@@ -2686,14 +2749,14 @@
   "ludwigiiglanzundelendeineskonigs": {
    "id": "tt0047195",
    "title": "Ludwig II. - Glanz und Elend eines Königs",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 370
   },
   "lugenubermeinemutter": {
    "id": "tt36985296",
    "title": "Lügen über meine Mutter",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 66
   },
@@ -2720,7 +2783,7 @@
   "maddogofeurope": {
    "id": "tt38236278",
    "title": "The Mad Dog of Europe",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.1,
    "votes": 19
   },
@@ -2734,7 +2797,7 @@
   "mahler": {
    "id": "tt0071797",
    "title": "Mahler",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 3406
   },
@@ -2829,14 +2892,14 @@
   "minionsundmonster": {
    "id": "tt32890033",
    "title": "Minions & Monster",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.3,
    "votes": 37308
   },
   "minionsundmonsters": {
    "id": "tt32890033",
    "title": "Minions & Monsters",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.3,
    "votes": 37308
   },
@@ -2844,7 +2907,7 @@
    "id": "tt37118301",
    "title": "Minotaurus",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.6,
    "votes": 1846
   },
@@ -2887,14 +2950,14 @@
    "id": "tt33515714",
    "title": "Mit leiser Stimme",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 343
   },
   "mittagsstunde": {
    "id": "tt21148858",
    "title": "Mittagsstunde",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 527
   },
@@ -2908,7 +2971,7 @@
   "monstermia": {
    "id": "tt38807889",
    "title": "Monster Mia",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7,
    "votes": 108
   },
@@ -2929,21 +2992,21 @@
   "moscasfliegenundanderegaste": {
    "id": "tt35854741",
    "title": "Moscas - Fliegen und andere Gäste",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 867
   },
   "mullewapp": {
    "id": "tt1395050",
    "title": "Mullewapp",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.6,
    "votes": 244
   },
   "mumbojumbo": {
    "id": "tt28942997",
    "title": "Mumbo Jumbo",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 127
   },
@@ -2971,14 +3034,14 @@
   "myfatherandqaddafi": {
    "id": "tt37660540",
    "title": "My Father and Qaddafi",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.2,
    "votes": 63
   },
   "myfathersshadow": {
    "id": "tt35695538",
    "title": "My Father's Shadow",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 2865
   },
@@ -2994,7 +3057,7 @@
    "title": "Napoleon auf St. Helena",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "nawidearfutureme": {
    "id": "tt33318721",
@@ -3007,7 +3070,7 @@
   "naza": {
    "id": "tt44766123",
    "title": "Naza",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.4,
    "votes": 6816
   },
@@ -3066,12 +3129,12 @@
    "title": "No Nite",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "nosferatueinesymphoniedesgrauens": {
    "id": "tt0013442",
    "title": "Nosferatu - Eine Symphonie des Grauens",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.8,
    "votes": 125263
   },
@@ -3085,14 +3148,14 @@
   "nottinghillcinestrickeninstade": {
    "id": "tt0125439",
    "title": "Notting Hill - CineStricken in Stade",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 392793
   },
   "nureinefrau": {
    "id": "tt9248340",
    "title": "Nur eine Frau",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.6,
    "votes": 3090
   },
@@ -3113,21 +3176,21 @@
   "nurnberg": {
    "id": "tt29567915",
    "title": "Nürnberg",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 124264
   },
   "obsessiondusollstmichlieben": {
    "id": "tt37287335",
    "title": "Obsession - Du sollst mich lieben",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.8,
    "votes": 426821
   },
   "odyssee": {
    "id": "tt33764258",
    "title": "Die Odyssee",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.4,
    "votes": 549646
   },
@@ -3136,7 +3199,7 @@
    "title": "Die Odyssee (Imax)",
    "checked": "2026-11-09",
    "attempts": 4,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ohlala2neuetestsneueschaos": {
    "id": "tt36933402",
@@ -3155,14 +3218,14 @@
   "ohnewahrheit": {
    "id": "tt12464300",
    "title": "Ohne Wahrheit",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 9,
    "votes": 82
   },
   "olchiswillkommeninschmuddelfing": {
    "id": "tt11992904",
    "title": "Die Olchis - Willkommen in Schmuddelfing!",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.1,
    "votes": 542
   },
@@ -3196,7 +3259,7 @@
   "othermommy": {
    "id": "tt36586020",
    "title": "Other Mommy",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.3,
    "votes": 15718
   },
@@ -3231,7 +3294,7 @@
   "panslabyrinth": {
    "id": "tt0457430",
    "title": "Pan's Labyrinth",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.2,
    "votes": 756949
   },
@@ -3239,7 +3302,7 @@
    "id": "tt0087884",
    "title": "Paris, Texas",
    "year": 1985,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 146364
   },
@@ -3253,7 +3316,7 @@
   "pawpatrolderdinofilm": {
    "id": "tt29356163",
    "title": "Paw Patrol: Der Dino Film",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 3018
   },
@@ -3267,7 +3330,7 @@
   "perfekteurlaub": {
    "id": "tt37801321",
    "title": "Der perfekte Urlaub",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.6,
    "votes": 486
   },
@@ -3343,9 +3406,9 @@
   "preisdeswiderstands": {
    "id": null,
    "title": "Der Preis des Widerstands",
-   "checked": "2026-11-03",
-   "attempts": 1,
-   "seen": "2026-11-09"
+   "checked": "2026-11-10",
+   "attempts": 2,
+   "seen": "2026-11-10"
   },
   "premadaoorali": {
    "id": "tt33381528",
@@ -3361,6 +3424,14 @@
    "rating": 7.3,
    "votes": 42907
   },
+  "prestigediemeisterdermagie": {
+   "id": "tt0482571",
+   "title": "Prestige - Die Meister der Magie",
+   "year": 2006,
+   "seen": "2026-11-10",
+   "rating": 8.5,
+   "votes": 1640114
+  },
   "prettywoman": {
    "id": "tt0100405",
    "title": "Pretty Woman",
@@ -3371,7 +3442,7 @@
   "primetime": {
    "id": "tt34206385",
    "title": "Primetime",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 36443
   },
@@ -3380,7 +3451,7 @@
    "title": "Primetime (So-Fi)",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "promisedsky": {
    "id": "tt33311007",
@@ -3443,42 +3514,42 @@
    "title": "Ramayana: Rise of a Legend",
    "checked": "2026-11-05",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ramayanariseofalegendhindihindiomu": {
    "id": null,
    "title": "Ramayana: Rise Of A Legend (Hindi) (Hindi OmU)",
    "checked": "2026-11-07",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ramayanariseofalegendhindiomuomeu": {
    "id": null,
    "title": "Ramayana: Rise of a Legend (Hindi OmU/OmeU)",
    "checked": "2026-11-05",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ramayanariseofalegendhollywoodversion": {
    "id": null,
    "title": "RAMAYANA: RISE OF A LEGEND (Hollywood Version)",
    "checked": "2026-11-09",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ramayanariseofalegendimax3ddeutschimax3d": {
    "id": null,
    "title": "Ramayana: Rise Of A Legend (Imax 3D) (Deutsch/Imax 3D)",
    "checked": "2026-11-06",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "rammsteinliveinmexicocity": {
    "id": null,
    "title": "Rammstein - Live in Mexico City",
    "checked": "2026-11-04",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "rammsteinliveinmexikocity": {
    "id": null,
@@ -3512,7 +3583,7 @@
    "id": null,
    "skip": true,
    "title": "RBO 26/27: Carmen (Royal Opera)",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "rbo2627manonroyalballet": {
    "id": null,
@@ -3524,13 +3595,13 @@
    "id": null,
    "skip": true,
    "title": "Rbo: Carmen (Royal Opera) - Live",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "rbolive202627carmenroyalopera": {
    "id": null,
    "skip": true,
    "title": "RBO Live 2026/27: Carmen (Royal Opera)",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "rbolive202627manonroyalballet": {
    "id": null,
@@ -3554,7 +3625,7 @@
    "id": "tt43632661",
    "title": "Der Regenbogenfisch",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.9,
    "votes": 9
   },
@@ -3572,10 +3643,18 @@
    "rating": 4.9,
    "votes": 650
   },
+  "rentalfamily": {
+   "id": "tt14142060",
+   "title": "Rental Family",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 7.5,
+   "votes": 69300
+  },
   "residentevil": {
    "id": "tt35538033",
    "title": "Resident Evil",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.5,
    "votes": 149443
   },
@@ -3596,14 +3675,14 @@
   "revision": {
    "id": "tt2203881",
    "title": "Revision",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 67
   },
   "rhino": {
    "id": "tt3781118",
    "title": "Rhino",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 2770
   },
@@ -3631,7 +3710,7 @@
   "rocky": {
    "id": "tt0075148",
    "title": "Rocky",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 706949
   },
@@ -3659,7 +3738,7 @@
   "rodychidieverwandschaft": {
    "id": "tt40924565",
    "title": "RODYCHI - Die Verwandschaft | РОДИЧІ",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.7,
    "votes": 56
   },
@@ -3680,7 +3759,7 @@
   "rosaluxemburg": {
    "id": "tt0091869",
    "title": "Rosa Luxemburg",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 2163
   },
@@ -3729,7 +3808,7 @@
   "samesunmitdemfahrraddurchafrika": {
    "id": "tt42574015",
    "title": "Same Sun - Mit dem Fahrrad durch Afrika",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 33
   },
@@ -3772,7 +3851,7 @@
    "title": "Scene (Tamil) (Tamil OmU)",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "scherbenland": {
    "id": "tt42340559",
@@ -3785,7 +3864,7 @@
    "id": "tt43558553",
    "title": "Schöne Seelen",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.4,
    "votes": 19
   },
@@ -3806,7 +3885,7 @@
   "schuledermagischentiere4": {
    "id": "tt35286242",
    "title": "Die Schule der magischen Tiere 4",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.7,
    "votes": 393
   },
@@ -3869,7 +3948,7 @@
   "shaundasschafspukimkurbisfeld": {
    "id": "tt36841161",
    "title": "Shaun das Schaf - Spuk im Kürbisfeld",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.1,
    "votes": 3649
   },
@@ -3878,14 +3957,14 @@
    "title": "Shorts Attack",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "shortsattackdkeineangabe": {
    "id": null,
    "title": "SHORTS ATTACK D, keine Angabe",
    "checked": "2026-11-08",
    "attempts": 3,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "shortsattackthekidsarealright": {
    "id": null,
@@ -3904,7 +3983,7 @@
   "sinnundsinnlichkeit": {
    "id": "tt13609648",
    "title": "Sinn und Sinnlichkeit",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 10839
   },
@@ -3952,7 +4031,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "sneakpreview1026": {
    "id": null,
@@ -3964,7 +4043,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview 11/26",
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "sneakpreviewfsk18": {
    "id": null,
@@ -3999,6 +4078,13 @@
    "checked": "2026-11-06",
    "attempts": 2,
    "seen": "2026-11-06"
+  },
+  "sovdkinoextrawurst": {
+   "id": null,
+   "title": "SoVD Kino: EXTRAWURST",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "sovdkinohamnet": {
    "id": null,
@@ -4038,21 +4124,21 @@
   "spaziergangnachsyrakus": {
    "id": "tt43598697",
    "title": "Spaziergang nach Syrakus",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.8,
    "votes": 153
   },
   "spidermanbrandnewday": {
    "id": "tt22084616",
    "title": "Spider-Man: Brand New Day",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.9,
    "votes": 380776
   },
   "spioneunteruns": {
    "id": "tt35520262",
    "title": "Spione unter uns",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.5,
    "votes": 34
   },
@@ -4066,7 +4152,7 @@
   "staatsschutz": {
    "id": "tt39213126",
    "title": "Staatsschutz",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 516
   },
@@ -4075,7 +4161,7 @@
    "title": "Stalingrad",
    "checked": "2026-11-05",
    "attempts": 2,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "starcrash": {
    "id": "tt0079946",
@@ -4096,7 +4182,7 @@
    "title": "Starke Frauen: QUEEN OF KATWE",
    "checked": "2026-11-04",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "steckerlfischfiasko": {
    "id": "tt38884015",
@@ -4108,7 +4194,7 @@
   "sternbruckeforever": {
    "id": "tt44777568",
    "title": "Sternbrücke Forever",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 15
   },
@@ -4117,7 +4203,7 @@
    "title": "STERNBRÜCKE FOREVER, FSK folgt",
    "checked": "2026-11-08",
    "attempts": 4,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "strangeharvest": {
    "id": "tt33400719",
@@ -4178,7 +4264,7 @@
   "streetfighter": {
    "id": "tt27419420",
    "title": "Street Fighter",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.2,
    "votes": 21914
   },
@@ -4215,7 +4301,7 @@
    "title": "Superbuhei",
    "checked": "2026-11-05",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "supermanivdieweltamabgrund": {
    "id": "tt0094074",
@@ -4262,7 +4348,7 @@
   "teresaeinlebenzwischenlichtundschatten": {
    "id": "tt18246200",
    "title": "Teresa - Ein Leben zwischen Licht und Schatten",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.5,
    "votes": 466
   },
@@ -4276,7 +4362,7 @@
   "teufel": {
    "id": "tt0066993",
    "title": "Die Teufel",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.8,
    "votes": 26325
   },
@@ -4318,7 +4404,7 @@
   "thomasmuntzereinfilmdeutschergeschichte": {
    "id": "tt0230875",
    "title": "Thomas Müntzer – Ein Film deutscher Geschichte",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 72
   },
@@ -4341,7 +4427,7 @@
    "title": "Tierisch hungrig",
    "checked": "2026-11-06",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "titans": {
    "id": null,
@@ -4402,7 +4488,7 @@
   "tributevonpanemmockingjayteil2": {
    "id": "tt1951266",
    "title": "Die Tribute von Panem - Mockingjay Teil 2",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 425049
   },
@@ -4417,7 +4503,7 @@
    "id": "tt10545296",
    "title": "Die Tribute von Panem - The Ballad of Songbirds & Snakes",
    "year": 2023,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 193522
   },
@@ -4479,7 +4565,7 @@
   "undeswarsommerdieterthomaskuhnundband": {
    "id": "tt43661040",
    "title": "Und es war Sommer - Dieter Thomas Kuhn & Band",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.2,
    "votes": 9
   },
@@ -4493,7 +4579,7 @@
   "unsafe": {
    "id": "tt1656190",
    "title": "Unsafe",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 126388
   },
@@ -4520,7 +4606,7 @@
   "vaiana": {
    "id": "tt27419466",
    "title": "Vaiana",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 5.8,
    "votes": 23779
   },
@@ -4534,7 +4620,7 @@
   "vaterland": {
    "id": "tt37304295",
    "title": "Vaterland",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 7.3,
    "votes": 4488
   },
@@ -4568,7 +4654,7 @@
   "veritydunklegeheimnisse": {
    "id": "tt32261958",
    "title": "Verity - Dunkle Geheimnisse",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 34713
   },
@@ -4658,7 +4744,7 @@
   "watchingpeoplewatchingbirds": {
    "id": "tt14031106",
    "title": "Watching People Watching Birds",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 20
   },
@@ -4679,7 +4765,7 @@
   "whalefall": {
    "id": "tt28535715",
    "title": "Whalefall",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 10496
   },
@@ -4736,21 +4822,21 @@
    "id": "tt15799564",
    "title": "Wild Horse Nine",
    "year": 2026,
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 7844
   },
   "wildhorsenineoriginalmitdeutschenuntertiteln": {
    "id": "tt15799564",
    "title": "WILD HORSE NINE - original mit deutschen Untertiteln",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 7844
   },
   "wildwood": {
    "id": "tt2056785",
    "title": "Wildwood",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 8.6,
    "votes": 23687
   },
@@ -4766,7 +4852,7 @@
    "title": "Wir sind so frei",
    "checked": "2026-11-08",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "wirwarendasdunkleherzderstadtderuntergangderhamburgergangeviertel": {
    "id": null,
@@ -4803,6 +4889,13 @@
    "checked": "2026-11-07",
    "attempts": 2,
    "seen": "2026-11-07"
+  },
+  "wolzlebenundverklarungeinesdeutschenanarchisten": {
+   "id": "tt0072416",
+   "title": "Wolz - Leben und Verklärung eines deutschen Anarchisten",
+   "seen": "2026-11-10",
+   "rating": 7,
+   "votes": 44
   },
   "worstones": {
    "id": "tt19719862",

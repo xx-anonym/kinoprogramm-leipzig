@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T23:02:08.216Z",
+  "generatedAt": "2026-11-10T00:04:01.644Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -68,7 +68,7 @@
     "clayface": {"title":"Clayface","duration":108,"year":2026,"imdb":{"id":"tt34890576","rating":7.5,"votes":47351}},
     "congoboy": {"title":"Congo Boy","duration":95,"year":2026,"imdb":{"id":"tt41592086","rating":6.8,"votes":112}},
     "corpusdelicti": {"title":"Corpus Delicti","duration":103,"year":2026,"imdb":{"id":"tt37804242","rating":5.8,"votes":268}},
-    "dannpassiertdasleben": {"title":"Dann passiert das Leben","duration":123},
+    "dannpassiertdasleben": {"title":"Dann passiert das Leben","duration":123,"imdb":{"id":"tt37150957","rating":6.7,"votes":266}},
     "dao": {"title":"Dao","duration":185,"year":2026,"imdb":{"id":"tt32358921","rating":6.1,"votes":177}},
     "geheimestockwerk": {"title":"Das geheime Stockwerk","duration":95,"year":2025,"imdb":{"id":"tt27764052","rating":6.4,"votes":120}},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":235}},
@@ -111,7 +111,7 @@
     "frauwinklerverlasstdashaus": {"title":"Frau Winkler verlässt das Haus","duration":108,"year":2026,"imdb":{"id":"tt39400348","rating":6.9,"votes":65}},
     "freeridefilmfestival2026": {"title":"Freeride Filmfestival 2026","original":"Freeride Filmfestival 2024","year":2025},
     "fruhstuckbeiaudrey": {"title":"Frühstück bei Audrey","duration":80,"original":"La Poupée","year":2025,"imdb":{"id":"tt36749000","rating":5.7,"votes":432}},
-    "futurecouncilkommanbord": {"title":"Future Council - Komm an Bord","duration":81,"original":"Future Council","year":2025},
+    "futurecouncilkommanbord": {"title":"Future Council - Komm an Bord","duration":81,"original":"Future Council","year":2025,"imdb":{"id":"tt32757385","rating":7.4,"votes":52}},
     "geister": {"title":"Geister","duration":106,"year":2026,"imdb":{"id":"tt36501204","rating":6.9,"votes":108}},
     "georgemichaelthefaithtour": {"title":"George Michael - The Faith Tour","duration":113,"year":2026},
     "georgemichaelthefaithtourimax": {"title":"George Michael - The Faith Tour (Imax)"},
@@ -121,7 +121,7 @@
     "godzillaminuszero": {"title":"Godzilla Minus Zero","duration":135,"original":"ゴジラ-0.0","year":2026,"imdb":{"id":"tt34384661","rating":8,"votes":12263}},
     "godzillaminuszerojapanisch": {"title":"GODZILLA MINUS ZERO - japanisch","duration":135,"imdb":{"id":"tt34384661","rating":8,"votes":12263}},
     "godzillaminuszeroimax": {"title":"Godzilla Minus Zero (Imax)"},
-    "grosseskinouhrwerkorange": {"title":"Grosses Kino: Uhrwerk Orange","duration":136,"original":"A Clockwork Orange","year":1971},
+    "grosseskinouhrwerkorange": {"title":"Grosses Kino: Uhrwerk Orange","duration":136,"original":"A Clockwork Orange","year":1971,"imdb":{"id":"tt0066921","rating":8.2,"votes":949387}},
     "hadoota": {"title":"Hadoota","duration":120,"original":"حدوتة"},
     "hanami": {"title":"Hanami","duration":96,"year":2026,"imdb":{"id":"tt29344907","rating":6.5,"votes":232}},
     "heaviestendres": {"title":"Heavies Tendres","duration":81,"imdb":{"id":"tt28349825","rating":7,"votes":29}},
@@ -176,7 +176,7 @@
     "panslabyrinth": {"title":"Pans Labyrinth","duration":119,"original":"EL LABERINTO DEL FAUNO","year":2006,"imdb":{"id":"tt0457430","rating":8.2,"votes":756949}},
     "paristexas": {"title":"Paris, Texas","duration":148,"year":1985,"imdb":{"id":"tt0087884","rating":8.1,"votes":146364}},
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":88,"original":"Paw Patrol 3","year":2026,"imdb":{"id":"tt29356163","rating":6,"votes":3018}},
-    "prestigediemeisterdermagie": {"title":"Prestige - Die Meister der Magie","duration":130,"original":"The Prestige","year":2006},
+    "prestigediemeisterdermagie": {"title":"Prestige - Die Meister der Magie","duration":130,"original":"The Prestige","year":2006,"imdb":{"id":"tt0482571","rating":8.5,"votes":1640114}},
     "primetime": {"title":"Primetime","duration":111,"year":2026,"imdb":{"id":"tt34206385","rating":6.9,"votes":36443}},
     "ramayanariseofalegend": {"title":"Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
     "ramayanariseofalegendhindihindiomu": {"title":"Ramayana: Rise Of A Legend (Hindi) (Hindi OmU)"},
@@ -184,7 +184,7 @@
     "ramayanariseofalegendimax3ddeutschimax3d": {"title":"Ramayana: Rise Of A Legend (Imax 3D) (Deutsch/Imax 3D)"},
     "rbolive202627carmenroyalopera": {"title":"RBO Live 2026/27: Carmen (Royal Opera)"},
     "rbocarmenroyaloperalive": {"title":"Rbo: Carmen (Royal Opera) - Live","duration":215},
-    "rentalfamily": {"title":"Rental Family","duration":110,"year":2025},
+    "rentalfamily": {"title":"Rental Family","duration":110,"year":2025,"imdb":{"id":"tt14142060","rating":7.5,"votes":69300}},
     "residentevil": {"title":"Resident Evil","duration":99,"year":2026,"imdb":{"id":"tt35538033","rating":7.5,"votes":149443}},
     "revision": {"title":"Revision","duration":106,"imdb":{"id":"tt2203881","rating":6.9,"votes":67}},
     "rhino": {"title":"Rhino","duration":101,"original":"Носоріг","imdb":{"id":"tt3781118","rating":6.6,"votes":2770}},
@@ -224,7 +224,7 @@
     "wildhorsenineoriginalmitdeutschenuntertiteln": {"title":"WILD HORSE NINE - original mit deutschen Untertiteln","duration":117,"imdb":{"id":"tt15799564","rating":8.1,"votes":7844}},
     "wildwood": {"title":"Wildwood","duration":131,"year":2026,"imdb":{"id":"tt2056785","rating":8.6,"votes":23687}},
     "wirsindsofrei": {"title":"Wir sind so frei","duration":97},
-    "wolzlebenundverklarungeinesdeutschenanarchisten": {"title":"Wolz - Leben und Verklärung eines deutschen Anarchisten","duration":110}
+    "wolzlebenundverklarungeinesdeutschenanarchisten": {"title":"Wolz - Leben und Verklärung eines deutschen Anarchisten","duration":110,"imdb":{"id":"tt0072416","rating":7,"votes":44}}
   },
   "shows": [
     {"cinema":"abaton","film":"olchiswillkommeninschmuddelfing","date":"2026-11-10","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591886"},
