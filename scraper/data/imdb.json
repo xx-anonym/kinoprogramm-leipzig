@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-10T00:00:57.486Z",
+ "ratingsUpdated": "2026-11-10T03:00:55.607Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -133,6 +133,13 @@
    "rating": 7.5,
    "votes": 5627
   },
+  "allmysisters": {
+   "id": "tt38693208",
+   "title": "All My Sisters",
+   "seen": "2026-11-10",
+   "rating": 6.3,
+   "votes": 27
+  },
   "allyouneediskill": {
    "id": "tt36148135",
    "title": "All You Need Is Kill",
@@ -214,6 +221,14 @@
    "id": "tt14883538",
    "title": "Arco",
    "seen": "2026-10-17",
+   "rating": 7.2,
+   "votes": 9754
+  },
+  "arcoeinefantastischereise": {
+   "id": "tt14883538",
+   "title": "Arco - Eine fantastische Reise ...",
+   "year": 2025,
+   "seen": "2026-11-10",
    "rating": 7.2,
    "votes": 9754
   },
@@ -367,7 +382,7 @@
   "bibiblocksberg2dieverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6,
    "votes": 52
   },
@@ -447,6 +462,22 @@
    "seen": "2026-10-24",
    "rating": 8.1,
    "votes": 896508
+  },
+  "blame": {
+   "id": "tt36399781",
+   "title": "Blame",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 7,
+   "votes": 45
+  },
+  "bleibamballegalwaskommt": {
+   "id": "tt15787114",
+   "title": "Bleib am Ball - egal was kommt!",
+   "year": 2022,
+   "seen": "2026-11-10",
+   "rating": 6.2,
+   "votes": 211
   },
   "block10": {
    "id": "tt38640121",
@@ -928,6 +959,14 @@
    "rating": 5.6,
    "votes": 3185
   },
+  "djahmet": {
+   "id": "tt34964187",
+   "title": "DJ Ahmet",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 7.2,
+   "votes": 2668
+  },
   "dogofgod": {
    "id": "tt33738802",
    "title": "Dog of God",
@@ -1059,7 +1098,7 @@
    "title": "Ebenezer - Eine Weihnachtsge",
    "checked": "2026-11-09",
    "attempts": 1,
-   "seen": "2026-11-09"
+   "seen": "2026-11-10"
   },
   "ebenezereineweihnachtsgeschichte": {
    "id": null,
@@ -1095,6 +1134,13 @@
    "seen": "2026-11-08",
    "rating": 8.1,
    "votes": 17
+  },
+  "eineletzterunde": {
+   "id": "tt36491632",
+   "title": "Eine letzte Runde",
+   "seen": "2026-11-10",
+   "rating": 7.1,
+   "votes": 3718
   },
   "einenachtaufkarlstein": {
    "id": null,
@@ -2982,6 +3028,13 @@
    "rating": 5.2,
    "votes": 481
   },
+  "moritzinderlitfasssaule": {
+   "id": "tt0085962",
+   "title": "Moritz in der Litfaßsäule",
+   "seen": "2026-11-10",
+   "rating": 7.1,
+   "votes": 106
+  },
   "moscas": {
    "id": "tt35854741",
    "title": "Moscas",
@@ -4524,7 +4577,7 @@
   "tschick": {
    "id": "tt4911940",
    "title": "Tschick",
-   "seen": "2026-11-03",
+   "seen": "2026-11-10",
    "rating": 6.9,
    "votes": 12279
   },
@@ -4664,6 +4717,13 @@
    "checked": "2026-10-12",
    "attempts": 1,
    "seen": "2026-10-13"
+  },
+  "vermessenemensch": {
+   "id": "tt15420964",
+   "title": "Der vermessene Mensch",
+   "seen": "2026-11-10",
+   "rating": 6.8,
+   "votes": 791
   },
   "verschwindendesjosefmengele": {
    "id": "tt22852560",
