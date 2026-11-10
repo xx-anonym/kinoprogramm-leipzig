@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T08:02:44.975Z",
+  "generatedAt": "2026-11-10T09:02:16.955Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -160,7 +160,7 @@
     "leagueoflegendsworlds26finalsincinema": {"title":"League of Legends Worlds 26 - Finals in Cinema"},
     "leicaeinjahrhundertinbildern": {"title":"Leica - Ein Jahrhundert in Bildern","duration":60,"original":"Strawalde - Ein Leben in Bildern","year":2021},
     "lesunggisapaulyliveimbelugakino": {"title":"LESUNG: GISA PAULY live im Beluga Kino","duration":90},
-    "lieblingsmenschen": {"title":"Lieblingsmenschen"},
+    "lieblingsmenschen": {"title":"Lieblingsmenschen","imdb":{"id":"tt43598591","rating":7.9,"votes":66}},
     "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {"title":"Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes und Amir","duration":108,"imdb":{"id":"tt43598591","rating":7.9,"votes":66}},
     "lolamontez": {"title":"Lola Montez","duration":113,"imdb":{"id":"tt0048308","rating":7.2,"votes":6781}},
     "lottagucktmatrix": {"title":"Lotta guckt MATRIX","duration":136},

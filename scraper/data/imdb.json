@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-10T07:00:53.378Z",
+ "ratingsUpdated": "2026-11-10T09:00:53.699Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -1110,7 +1110,7 @@
   "edmundundluziewinterabenteuer": {
    "id": "tt6509214",
    "title": "Edmund und Luzie - Winterabenteuer",
-   "seen": "2026-11-07",
+   "seen": "2026-11-10",
    "rating": 6.5,
    "votes": 159
   },
@@ -2707,6 +2707,13 @@
    "seen": "2026-10-29",
    "rating": 8.9,
    "votes": 2251066
+  },
+  "lieblingsmenschen": {
+   "id": "tt43598591",
+   "title": "Lieblingsmenschen",
+   "seen": "2026-11-10",
+   "rating": 7.9,
+   "votes": 66
   },
   "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {
    "id": "tt43598591",
@@ -4724,7 +4731,7 @@
   "venuswars": {
    "id": "tt0135037",
    "title": "Venus Wars",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 2365
   },
