@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-10T09:02:16.955Z",
+  "generatedAt": "2026-11-10T10:01:00.318Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":125},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":123},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -97,7 +97,6 @@
     "jungstetochter": {"title":"Die jüngste Tochter","duration":108,"original":"La Petite Dernière","year":2025,"imdb":{"id":"tt28326501","rating":6.8,"votes":2087}},
     "odyssee": {"title":"Die Odyssee","duration":172,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":549646}},
     "odysseeimax": {"title":"Die Odyssee (Imax)"},
-    "olchiswillkommeninschmuddelfing": {"title":"Die Olchis - Willkommen in Schmuddelfing!","duration":85,"original":"Smelliville","imdb":{"id":"tt11992904","rating":5.1,"votes":542}},
     "schuledermagischentiere4": {"title":"Die Schule der magischen Tiere 4","duration":102,"imdb":{"id":"tt35286242","rating":5.7,"votes":393}},
     "teufel": {"title":"Die Teufel","duration":114,"imdb":{"id":"tt0066993","rating":7.8,"votes":26325}},
     "tributevonpanemmockingjayteil2": {"title":"Die Tribute von Panem - Mockingjay Teil 2","duration":137,"imdb":{"id":"tt1951266","rating":6.6,"votes":425049}},
@@ -248,8 +247,6 @@
     "wolzlebenundverklarungeinesdeutschenanarchisten": {"title":"Wolz - Leben und Verklärung eines deutschen Anarchisten","duration":110,"imdb":{"id":"tt0072416","rating":7,"votes":44}}
   },
   "shows": [
-    {"cinema":"abaton","film":"olchiswillkommeninschmuddelfing","date":"2026-11-10","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591886"},
-    {"cinema":"abaton","film":"mittagsstunde","date":"2026-11-10","time":"11:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591901"},
     {"cinema":"abaton","film":"einarschleefichhabekeindeutschlandgefunden","date":"2026-11-10","time":"12:20","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591890"},
     {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-10","time":"12:50","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592360"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-10","time":"13:10","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41721"},
