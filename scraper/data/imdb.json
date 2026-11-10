@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-10T21:00:53.551Z",
+ "ratingsUpdated": "2026-11-10T23:33:15.576Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -547,7 +547,7 @@
   "brunoderjungekreisky": {
    "id": "tt36472663",
    "title": "BRUNO - Der junge Kreisky",
-   "seen": "2026-11-01",
+   "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 86
   },
@@ -1131,7 +1131,7 @@
   "einekrankheitwieeingedicht": {
    "id": "tt39295633",
    "title": "Eine Krankheit wie ein Gedicht",
-   "seen": "2026-11-08",
+   "seen": "2026-11-10",
    "rating": 8.1,
    "votes": 17
   },
@@ -1260,6 +1260,13 @@
    "checked": "2026-10-19",
    "attempts": 2,
    "seen": "2026-10-25"
+  },
+  "ericwredeundfeevogeljedermenschkanntrauern": {
+   "id": null,
+   "title": "Eric Wrede und Fee Vogel: Jeder Mensch kann trauern",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "eroffnungsprogrammoperaundanimation": {
    "id": null,
@@ -1676,6 +1683,13 @@
    "attempts": 1,
    "seen": "2026-10-25"
   },
+  "gutenfeindemeinvaterdierotekapelleundich": {
+   "id": "tt6469412",
+   "title": "Die guten Feinde – Mein Vater, die Rote Kapelle und ich",
+   "seen": "2026-11-10",
+   "rating": 7.3,
+   "votes": 16
+  },
   "hadoota": {
    "id": null,
    "title": "Hadoota",
@@ -2036,6 +2050,13 @@
    "title": "Horror Sneak Preview",
    "seen": "2026-10-16"
   },
+  "hotcunt": {
+   "id": null,
+   "title": "Hot Cunt",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
+  },
   "hoteltranssilvanien3einmonsterurlaub": {
    "id": "tt5220122",
    "title": "Hotel Transsilvanien 3 - Ein Monster Urlaub",
@@ -2068,6 +2089,13 @@
    "id": null,
    "title": "How to Rob a Bank",
    "checked": "2026-11-09",
+   "attempts": 1,
+   "seen": "2026-11-10"
+  },
+  "hungergamessunriseonthereaping": {
+   "id": null,
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "checked": "2026-11-10",
    "attempts": 1,
    "seen": "2026-11-10"
   },
@@ -2183,6 +2211,13 @@
    "checked": "2026-10-28",
    "attempts": 2,
    "seen": "2026-10-29"
+  },
+  "islasantamariaundisladeltrueno": {
+   "id": null,
+   "title": "Isla Santa María & Isla del Trueno",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "ivanundhadoum": {
    "id": "tt27219371",
@@ -2484,6 +2519,13 @@
    "attempts": 2,
    "seen": "2026-11-10"
   },
+  "kunstollidittrichzusein": {
+   "id": null,
+   "title": "Die Kunst, Olli Dittrich zu sein",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
+  },
   "kurzfilmprogrammfilmegegendasvergessen": {
    "id": null,
    "skip": true,
@@ -2527,6 +2569,13 @@
    "seen": "2026-11-10",
    "rating": 8.2,
    "votes": 12588
+  },
+  "labolanegrafskfolgt": {
+   "id": null,
+   "title": "LA BOLA NEGRA, FSK folgt",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "lacasa": {
    "id": "tt37366525",
@@ -3325,6 +3374,13 @@
    "rating": 9,
    "votes": 83
   },
+  "ohwieschonistpanama": {
+   "id": "tt0806139",
+   "title": "Oh, wie schön ist Panama",
+   "seen": "2026-11-10",
+   "rating": 6.6,
+   "votes": 293
+  },
   "olchiswillkommeninschmuddelfing": {
    "id": "tt11992904",
    "title": "Die Olchis - Willkommen in Schmuddelfing!",
@@ -3688,6 +3744,13 @@
    "seen": "2026-10-27",
    "rating": 9.5,
    "votes": 1858
+  },
+  "rasputinderdamonderfrauen": {
+   "id": "tt0023373",
+   "title": "Rasputin. der Dämon der Frauen",
+   "seen": "2026-11-10",
+   "rating": 6.3,
+   "votes": 64
   },
   "rbo2627carmenroyalopera": {
    "id": null,
@@ -4568,6 +4631,14 @@
    "rating": 6.3,
    "votes": 3263
   },
+  "todisteinarschloch": {
+   "id": "tt36471014",
+   "title": "Der Tod ist ein Arschloch",
+   "year": 2025,
+   "seen": "2026-11-10",
+   "rating": 7.2,
+   "votes": 18
+  },
   "tomorrowxtogetherworldtouracttomorrow": {
    "id": null,
    "title": "Tomorrow X Together World Tour 'Act: Tomorrow'",
@@ -4616,6 +4687,20 @@
    "seen": "2026-11-10",
    "rating": 6.6,
    "votes": 425188
+  },
+  "tributevonpanemsunriseonthereaping": {
+   "id": null,
+   "title": "Tribute von Panem - Sunrise on the Reaping",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
+  },
+  "tributevonpanemsunriseonthereapingvorpremiere": {
+   "id": null,
+   "title": "DIE TRIBUTE VON PANEM - SUNRISE ON THE REAPING - Vorpremiere",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "tributevonpanemtheballadofsongbirdsandsnakes": {
    "id": "tt10545296",
@@ -4666,6 +4751,13 @@
    "seen": "2026-10-25",
    "rating": 5.4,
    "votes": 538736
+  },
+  "uberdendachernvonnizza": {
+   "id": "tt0048728",
+   "title": "Über den Dächern von Nizza",
+   "seen": "2026-11-10",
+   "rating": 7.4,
+   "votes": 88075
   },
   "uberraschungspremiere": {
    "id": null,
@@ -5084,6 +5176,13 @@
    "skip": true,
    "title": "Zeise Shortfilm Slam",
    "seen": "2026-10-16"
+  },
+  "zeitderrotennelken": {
+   "id": null,
+   "title": "Zeit der roten Nelken",
+   "checked": "2026-11-10",
+   "attempts": 1,
+   "seen": "2026-11-10"
   },
   "zombie": {
    "id": "tt0077402",

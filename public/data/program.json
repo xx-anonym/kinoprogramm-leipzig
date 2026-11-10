@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T23:00:55.501Z",
+  "generatedAt": "2026-11-10T23:34:15.149Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":243},
@@ -85,7 +85,7 @@
     "nausicaaausdemtalderwinde": {"title":"Nausicaä aus dem Tal der Winde","duration":116,"imdb":{"id":"tt0087544","rating":8,"votes":200270}},
     "naza": {"title":"Naza","duration":80,"imdb":{"id":"tt44766123","rating":8.4,"votes":6946}},
     "nurnberg": {"title":"Nürnberg","duration":148,"imdb":{"id":"tt29567915","rating":7.3,"votes":124386}},
-    "ohwieschonistpanama": {"title":"Oh, wie schön ist Panama","duration":70},
+    "ohwieschonistpanama": {"title":"Oh, wie schön ist Panama","duration":70,"imdb":{"id":"tt0806139","rating":6.6,"votes":293}},
     "onthesea": {"title":"On the Sea","duration":111,"imdb":{"id":"tt31936369","rating":7,"votes":1474}},
     "othermommy": {"title":"Other Mommy","duration":93,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":15857}},
     "pawpatrolderdinofilm": {"title":"Paw Patrol: Der Dino Film","duration":83,"imdb":{"id":"tt29356163","rating":6,"votes":3021}},
