@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T07:02:26.531Z",
+  "generatedAt": "2026-11-10T07:32:08.419Z",
   "days": ["2026-11-10","2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -109,7 +109,7 @@
     "einmadchennamenswillow": {"title":"Ein Mädchen namens Willow","duration":99,"year":2025,"imdb":{"id":"tt35300281","rating":6,"votes":520}},
     "eintalentfursmorden": {"title":"Ein Talent fürs Morden","duration":105,"original":"A Talent for Murder","year":2026,"imdb":{"id":"tt14129116","rating":6.8,"votes":873}},
     "einarschleefichhabekeindeutschlandgefunden": {"title":"Einar Schleef - Ich habe kein Deutschland gefunden","duration":92,"original":"Einar Schleef – No Germany Did I Find","year":2026},
-    "eineletzterunde": {"title":"Eine letzte Runde","duration":99,"original":"Once Were Warriors","imdb":{"id":"tt36491632","rating":7.1,"votes":3718}},
+    "eineletzterunde": {"title":"Eine letzte Runde","duration":98,"original":"Le città di pianura","imdb":{"id":"tt36491632","rating":7.1,"votes":3718}},
     "einenachtaufkarlstein": {"title":"Eine Nacht auf Karlstein","duration":89,"original":"NOC NA KARLŠTEJNE"},
     "eisernewildnisheartofthebeast": {"title":"Eiserne Wildnis - Heart of the Beast","duration":101,"original":"Heart of the Beast","year":2026,"imdb":{"id":"tt7526136","rating":7.2,"votes":41732}},
     "emilunddiedetektive": {"title":"Emil und die Detektive","duration":100,"year":2026,"imdb":{"id":"tt39381622","rating":7.3,"votes":78}},
