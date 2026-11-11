@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:01:00.653Z",
+  "generatedAt": "2026-11-11T17:18:53.643Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":26},
@@ -22,7 +22,7 @@
     {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":18},
     {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":0},
-    {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":74},
+    {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":72},
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":6},
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":50},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":185},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":12},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":74},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":160},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":124},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":123},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":120},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":72}
   ],
@@ -273,11 +273,8 @@
     {"cinema":"burgkino","film":"lugenubermeinemutter","date":"2026-11-11","time":"17:30","screen":"Stübchen","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704402641&bgswitch=false&resize=false"},
     {"cinema":"city-buxtehude","film":"streetfighter","date":"2026-11-11","time":"17:45","screen":"City 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3705315595&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"lugenubermeinemutter","date":"2026-11-11","time":"17:45","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3704363217&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"othermommy","date":"2026-11-11","time":"17:45","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117415"},
     {"cinema":"burgkino","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-11","time":"17:45","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704402635&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"chopineinesonateinparis","date":"2026-11-11","time":"17:45","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3704402671&bgswitch=false&resize=false"},
-    {"cinema":"passage","film":"adamsacht","date":"2026-11-11","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7299808"},
-    {"cinema":"passage","film":"chopineinesonateinparis","date":"2026-11-11","time":"18:00","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7299826"},
     {"cinema":"studio","film":"sternbruckeforever","date":"2026-11-11","time":"18:30","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/397450"},
     {"cinema":"uci-mundsburg","film":"herrderringediegefahrtenextendedversion","date":"2026-11-11","time":"18:30"},
     {"cinema":"uci-wandsbek","film":"herrderringediegefahrtenextendedversion","date":"2026-11-11","time":"18:30"},
