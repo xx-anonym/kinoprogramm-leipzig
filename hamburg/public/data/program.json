@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-11T09:01:01.535Z",
+  "generatedAt": "2026-11-11T10:00:54.302Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":123},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":122},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -19,7 +19,7 @@
     {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":75},
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":2},
-    {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":18},
+    {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":19},
     {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":0},
     {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":78},
@@ -153,6 +153,7 @@
     "kindererzahlenfilmwerkschauzukinderrechten": {"title":"Kinder (er)Zählen! Film-Werkschau zu Kinderrechten","duration":60},
     "kingongolokiniata": {"title":"KinGongolo Kiniata"},
     "klaraunddiesonne": {"title":"Klara und die Sonne","duration":117,"original":"Klara and the Sun","year":2026,"imdb":{"id":"tt14371256","rating":6.4,"votes":2741}},
+    "klassikersneakreviewmiteinfuhrungundtrailervorprogramm": {"title":"KLASSIKER SNEAK REVIEW (mit Einführung und Trailervorprogramm)","duration":120,"original":"KLASSIKER SNEAK REVIEW"},
     "krimizeit": {"title":"Krimizeit"},
     "kurzfilmreihegesellschaftimwandelhoffnungwiderstandundneuanfang": {"title":"Kurzfilmreihe: Gesellschaft im Wandel, Hoffnung, Widerstand und Neuanfang"},
     "kurzfilmreihewurzelnidentitatundfamilie": {"title":"Kurzfilmreihe: Wurzeln, Identität und Familie"},
@@ -251,7 +252,6 @@
     "zeitderrotennelken": {"title":"Zeit der roten Nelken","duration":76,"original":"Dear Panther"}
   },
   "shows": [
-    {"cinema":"abaton","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-11","time":"10:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592362"},
     {"cinema":"abaton","film":"junkiesofdreamingmahler3currentzis","date":"2026-11-11","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591934"},
     {"cinema":"abaton","film":"naza","date":"2026-11-11","time":"13:10","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591945"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-11","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41717"},
@@ -786,6 +786,7 @@
     {"cinema":"elbe","film":"perfekteurlaub","date":"2026-11-12","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/elbe-filmtheater-hamburg/vorstellung/397979"},
     {"cinema":"holi","film":"wildhorsenine","date":"2026-11-12","time":"20:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1203/HO00001708/4690"},
     {"cinema":"koralle","film":"wildhorsenine","date":"2026-11-12","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/397766"},
+    {"cinema":"metropolis","film":"klassikersneakreviewmiteinfuhrungundtrailervorprogramm","date":"2026-11-12","time":"20:30","version":"OV","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3715661357"},
     {"cinema":"passage","film":"geister","date":"2026-11-12","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7308263"},
     {"cinema":"passage","film":"wildhorsenine","date":"2026-11-12","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7308239"},
     {"cinema":"savoy","film":"georgemichaelthefaithtour","date":"2026-11-12","time":"20:30","url":"https://savoy.premiumkino.de/vorstellung/george-michael-the-faith-tour/20261112/2030/O6iQbZVAjraNtvCubolptVNUAOxXLiE5R0mLrN0OXmw~"},
