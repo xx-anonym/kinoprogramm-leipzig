@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-11T11:01:11.163Z",
+  "generatedAt": "2026-11-11T12:01:07.012Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":122},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":121},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -141,7 +141,6 @@
     "imrozdabahar": {"title":"İmroz'da Bahar"},
     "insidiousoutofthefurther": {"title":"Insidious: Out of the Further","duration":106,"imdb":{"id":"tt32393988","rating":6,"votes":30944}},
     "islasantamariaundisladeltrueno": {"title":"Isla Santa María & Isla del Trueno"},
-    "junkiesofdreamingmahler3currentzis": {"title":"Junkies of Dreaming - Mahler 3 Currentzis","duration":95,"original":"Junkies of Dreaming"},
     "kathekollwitzbildereineslebens": {"title":"Käthe Kollwitz . Bilder eines Lebens","duration":95,"imdb":{"id":"tt0091367","rating":6.6,"votes":28}},
     "kindererzahlenfilmwerkschauzukinderrechten": {"title":"Kinder (er)Zählen! Film-Werkschau zu Kinderrechten","duration":60},
     "kingongolokiniata": {"title":"KinGongolo Kiniata"},
@@ -215,7 +214,7 @@
     "sternbruckeforever": {"title":"Sternbrücke FOREVER","duration":98,"year":2026},
     "sternbruckeforeverfskfolgt": {"title":"STERNBRÜCKE FOREVER, FSK folgt","duration":98,"year":2026},
     "streetfighter": {"title":"Street Fighter","duration":120,"year":2026,"imdb":{"id":"tt27419420","rating":6.2,"votes":22152}},
-    "superbuhei": {"title":"Superbuhei","duration":107},
+    "superbuhei": {"title":"Superbuhei","duration":107,"year":2026},
     "tabalugaderfilm": {"title":"Tabaluga - Der Film","duration":90,"original":"Tabaluga","year":2018,"imdb":{"id":"tt5817548","rating":5.3,"votes":348}},
     "eyesofghana": {"title":"The Eyes of Ghana","imdb":{"id":"tt37815334","rating":7.2,"votes":117}},
     "killer": {"title":"The Killer","duration":110,"original":"喋血雙雄","year":2024,"imdb":{"id":"tt1121948","rating":5.7,"votes":19284}},
@@ -239,7 +238,6 @@
     "zeitderrotennelken": {"title":"Zeit der roten Nelken","duration":76,"original":"Dear Panther"}
   },
   "shows": [
-    {"cinema":"abaton","film":"junkiesofdreamingmahler3currentzis","date":"2026-11-11","time":"13:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591934"},
     {"cinema":"abaton","film":"naza","date":"2026-11-11","time":"13:10","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/591945"},
     {"cinema":"cinemaxx-dammtor","film":"perfekteurlaub","date":"2026-11-11","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001467/41717"},
     {"cinema":"cinemaxx-wandsbek","film":"perfekteurlaub","date":"2026-11-11","time":"13:45","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001467/19636"},
