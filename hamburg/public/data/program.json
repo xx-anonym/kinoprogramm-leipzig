@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:01:01.441Z",
+  "generatedAt": "2026-11-11T02:01:06.929Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -699,7 +699,7 @@
     {"cinema":"cinemaxx-harburg","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-12","time":"19:40","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1207/HO00001583/27988"},
     {"cinema":"cinemaxx-wandsbek","film":"clayface","date":"2026-11-12","time":"19:40","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001668/19984"},
     {"cinema":"abaton","film":"wildhorsenine","date":"2026-11-12","time":"19:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/589603"},
-    {"cinema":"blankenese","film":"eintalentfursmorden","date":"2026-11-12","time":"19:45","url":"https://www.kinoheld.de/kino/hamburg/blankeneser-kino-hamburg/vorstellung/398041"},
+    {"cinema":"blankenese","film":"eintalentfursmorden","date":"2026-11-12","time":"19:45","url":"https://www.kinoheld.de/kino/hamburg/blankeneser-kino-hamburg/vorstellung/398360"},
     {"cinema":"holi","film":"geister","date":"2026-11-12","time":"19:45","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1203/HO00001670/4688"},
     {"cinema":"uci-mundsburg","film":"godzillaminuszero","date":"2026-11-12","time":"19:45"},
     {"cinema":"city-buxtehude","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-12","time":"19:45","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3710526253&bgswitch=false&resize=false"},
