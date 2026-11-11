@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T05:00:51.813Z",
+  "generatedAt": "2026-11-11T06:00:59.693Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":243},
@@ -71,7 +71,7 @@
     "klaraunddiesonne": {"title":"Klara und die Sonne","duration":116,"original":"Klara and the Sun","year":2026,"imdb":{"id":"tt14371256","rating":6.4,"votes":2720}},
     "knalltheaterinderkinobar": {"title":"Knalltheater in der Kinobar","duration":70},
     "kommissarjennerweinhochsaison": {"title":"Kommissar Jennerwein – Hochsaison","duration":91,"year":2026},
-    "kultsneak": {"title":"Kult-Sneak","duration":99,"original":"倚天屠龍記之魔教教主"},
+    "kultsneak": {"title":"Kult-Sneak","original":"Sneak Preview","year":2038},
     "labolanegra": {"title":"La Bola Negra","duration":160,"imdb":{"id":"tt35511966","rating":8.2,"votes":12588}},
     "lahaine30thanniversary": {"title":"La Haine (30Th Anniversary)","duration":98},
     "laurassternunddergeheimnisvolledrachenian": {"title":"Lauras Stern und der geheimnisvolle Drache Nian","duration":86,"original":"The Star","year":2017,"imdb":{"id":"tt4587656","rating":6.3,"votes":11060}},
