@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T10:00:49.378Z",
+  "generatedAt": "2026-11-11T11:00:59.468Z",
   "days": ["2026-11-11","2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":243},
@@ -17,7 +17,7 @@
     "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026},
     "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":75}},
     "barbarabuserpionierindernachhaltigkeit": {"title":"Barbara Buser - Pionierin der Nachhaltigkeit","duration":118},
-    "bewareboiuna": {"title":"Beware Boiuna","duration":104,"imdb":{"id":"tt10377864","rating":5.7,"votes":2805}},
+    "bewareboiuna": {"title":"Beware Boiuna","duration":104,"year":2026,"imdb":{"id":"tt10377864","rating":5.7,"votes":2805}},
     "bibiblocksbergdietotalverhextezeitreise": {"title":"Bibi Blocksberg - Die total verhexte Zeitreise","duration":90,"year":2026,"imdb":{"id":"tt42205677","rating":6,"votes":53}},
     "biermann": {"title":"Biermann","duration":120,"imdb":{"id":"tt40205719","rating":7,"votes":26}},
     "block10": {"title":"Block 10","duration":108,"imdb":{"id":"tt38640121","rating":6.8,"votes":42}},
