@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T21:00:51.087Z",
+  "generatedAt": "2026-11-12T22:00:54.144Z",
   "days": ["2026-11-12","2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":198},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":161},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":195},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":192},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":151},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":126},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":50},
@@ -132,9 +132,6 @@
     {"cinema":"schauburg","film":"block10","date":"2026-11-12","time":"20:00","url":"https://www.schauburg-leipzig.de/filmdetails/block-10"},
     {"cinema":"schaubuehne","film":"digger","date":"2026-11-12","time":"21:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3668906602&bgswitch=false&resize=false"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-11-12","time":"21:15","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3714748010&bgswitch=false&resize=false"},
-    {"cinema":"cinestar","film":"howtorobabank","date":"2026-11-12","time":"22:00","version":"OV","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185313"},
-    {"cinema":"cinestar","film":"clayface","date":"2026-11-12","time":"22:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185101"},
-    {"cinema":"cinestar","film":"wildwood","date":"2026-11-12","time":"22:20","version":"OV","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185112"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-12","time":"22:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185092"},
     {"cinema":"cinestar","film":"bewareboiuna","date":"2026-11-12","time":"22:55","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185301"},
     {"cinema":"cinestar","film":"godzillaminuszero","date":"2026-11-12","time":"22:55","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185113"},
