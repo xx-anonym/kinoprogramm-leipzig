@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-13T00:00:54.494Z",
+ "ratingsUpdated": "2026-11-13T01:00:54.578Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -5221,6 +5221,13 @@
    "seen": "2026-11-13",
    "rating": 8.1,
    "votes": 20
+  },
+  "weightimgoldrausch": {
+   "id": "tt10794054",
+   "title": "The Weight - Im Goldrausch",
+   "seen": "2026-11-13",
+   "rating": 6.7,
+   "votes": 8983
   },
   "wenndiegondelntrauertragen": {
    "id": "tt0069995",

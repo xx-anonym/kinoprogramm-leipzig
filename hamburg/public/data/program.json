@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T00:02:28.384Z",
+  "generatedAt": "2026-11-13T01:03:37.493Z",
   "days": ["2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -233,7 +233,7 @@
     "killer": {"title":"The Killer","duration":110,"original":"喋血雙雄","year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56542}},
     "legendofthevagabondqueenoflagos": {"title":"The Legend of the Vagabond Queen of Lagos","duration":100,"year":2024,"imdb":{"id":"tt11405134","rating":7.3,"votes":73}},
     "maddogofeurope": {"title":"The Mad Dog of Europe","duration":83,"year":2026},
-    "weightimgoldrausch": {"title":"The Weight - Im Goldrausch"},
+    "weightimgoldrausch": {"title":"The Weight - Im Goldrausch","imdb":{"id":"tt10794054","rating":6.7,"votes":8983}},
     "thomasmuntzereinfilmdeutschergeschichte": {"title":"Thomas Müntzer – Ein Film deutscher Geschichte","duration":134,"imdb":{"id":"tt0230875","rating":6.9,"votes":72}},
     "tierischhungrig": {"title":"Tierisch hungrig"},
     "tschick": {"title":"Tschick","duration":93,"imdb":{"id":"tt4911940","rating":6.9,"votes":12282}},
