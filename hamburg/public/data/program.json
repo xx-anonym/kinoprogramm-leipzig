@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-13T08:01:14.833Z",
+  "generatedAt": "2026-11-13T09:01:13.976Z",
   "days": ["2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":92},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":91},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -181,7 +181,6 @@
     "minotaurus": {"title":"Minotaurus","duration":141,"original":"Minotaure","year":2026,"imdb":{"id":"tt37118301","rating":7.6,"votes":2009}},
     "missionmausejagdchaosuntermweihnachtsbaum": {"title":"Mission: Mäusejagd - Chaos unterm Weihnachtsbaum","duration":80,"original":"Hvis Ingen Går I Fella","year":2025,"imdb":{"id":"tt35727399","rating":6,"votes":710}},
     "mitleiserstimme": {"title":"Mit leiser Stimme","duration":112,"original":"À voix basse","year":2026,"imdb":{"id":"tt33515714","rating":6.8,"votes":350}},
-    "mittagsstunde": {"title":"Mittagsstunde","duration":97,"imdb":{"id":"tt21148858","rating":6.9,"votes":527}},
     "monstermia": {"title":"Monster Mia","duration":81,"year":2026,"imdb":{"id":"tt38807889","rating":7,"votes":108}},
     "moritzinderlitfasssaule": {"title":"Moritz in der Litfaßsäule","duration":86,"imdb":{"id":"tt0085962","rating":7.1,"votes":106}},
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":99,"original":"Moscas","year":2026,"imdb":{"id":"tt35854741","rating":7.3,"votes":879}},
@@ -259,7 +258,6 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7584}}
   },
   "shows": [
-    {"cinema":"abaton","film":"mittagsstunde","date":"2026-11-13","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592463"},
     {"cinema":"abaton","film":"glaube","date":"2026-11-13","time":"12:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592479"},
     {"cinema":"cinemaxx-dammtor","film":"wildwood","date":"2026-11-13","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001671/42029"},
     {"cinema":"abaton","film":"einarschleefichhabekeindeutschlandgefunden","date":"2026-11-13","time":"13:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592471"},
