@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-13T11:15:17.755Z",
+  "generatedAt": "2026-11-13T12:01:15.279Z",
   "days": ["2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":91},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":90},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
     {"id":"blankenese","name":"Blankeneser Kino","address":"Blankeneser Bahnhofstraße 4, 22587 Hamburg-Blankenese","location":[53.5591,9.8109],"website":"https://www.blankeneserkino.de/","source":"kinoheld.de","status":"ok","shows":30},
-    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":204},
+    {"id":"cinemaxx-dammtor","name":"CinemaxX Dammtor","address":"Dammtordamm 1, 20354 Hamburg","location":[53.5596,9.9903],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-dammtor/","source":"kinoheld.de","status":"ok","shows":203},
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":160},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":116},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":14},
@@ -41,7 +41,7 @@
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":62}
   ],
   "films": {
-    "25jahregartenderfrauen": {"title":"25 Jahre Garten der Frauen","duration":90,"original":"25 Jahre radioeins in der Waldbühne"},
+    "25jahregartenderfrauen": {"title":"25 Jahre Garten der Frauen","duration":97},
     "2m2woistdeinplatzfurdieewigkeit": {"title":"2m² - Wo ist dein Platz für die Ewigkeit","duration":86,"original":"2m²","year":2026,"imdb":{"id":"tt30135006","rating":6.9,"votes":49}},
     "adamsacht": {"title":"Adams Acht","duration":120,"year":2026,"imdb":{"id":"tt8758494","rating":7,"votes":170}},
     "aktevuskovicdopingskandalzweifel": {"title":"Akte Vuskovic - Doping. Skandal. Zweifel."},
@@ -132,7 +132,7 @@
     "georgemichaelthefaithtourimax": {"title":"George Michael - The Faith Tour (Imax)"},
     "germaineacognydieessenzdestanzes": {"title":"Germaine Acogny - Die Essenz des Tanzes","duration":89,"year":2031},
     "gewinnerrolledeutscherkurzfilmpreis2026": {"title":"Gewinnerrolle: Deutscher Kurzfilmpreis 2026","duration":106,"original":"Deutscher Kurzfilmpreis"},
-    "glaube": {"title":"Glaube","duration":118,"original":"Domingos, Los","year":2026,"imdb":{"id":"tt35513027","rating":7.3,"votes":5803}},
+    "glaube": {"title":"Glaube","duration":118,"original":"Domingos, Los","imdb":{"id":"tt35513027","rating":7.3,"votes":5803}},
     "godzillaminuszero": {"title":"Godzilla Minus Zero","duration":135,"original":"ゴジラ-0.0","year":2026,"imdb":{"id":"tt34384661","rating":8,"votes":19208}},
     "godzillaminuszerojapanisch": {"title":"GODZILLA MINUS ZERO - japanisch","duration":135,"imdb":{"id":"tt34384661","rating":8,"votes":19208}},
     "godzillaminuszeroimax": {"title":"Godzilla Minus Zero (Imax)"},
@@ -258,8 +258,6 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7584}}
   },
   "shows": [
-    {"cinema":"abaton","film":"glaube","date":"2026-11-13","time":"12:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592479"},
-    {"cinema":"cinemaxx-dammtor","film":"wildwood","date":"2026-11-13","time":"13:00","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001671/42029"},
     {"cinema":"abaton","film":"einarschleefichhabekeindeutschlandgefunden","date":"2026-11-13","time":"13:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592471"},
     {"cinema":"cinemaxx-dammtor","film":"gewisseetwas","date":"2026-11-13","time":"13:15","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001523/42028"},
     {"cinema":"cinemaxx-dammtor","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-13","time":"13:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001583/42241"},
