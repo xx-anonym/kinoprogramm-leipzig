@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-13T17:00:55.078Z",
+  "generatedAt": "2026-11-13T18:00:56.496Z",
   "days": ["2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":185},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":145},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":178},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":151},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":119},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":117},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":44},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":31},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":15},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":25},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026,"imdb":{"id":"tt27988879","rating":8.3,"votes":31561}},
@@ -37,7 +37,6 @@
     "regenbogenfisch": {"title":"Der Regenbogenfisch","duration":70,"original":"De Rägebogefisch","year":2026},
     "detruireditelle": {"title":"Détruire, Dit-Elle","duration":90,"imdb":{"id":"tt0064272","rating":6.8,"votes":329}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"imdb":{"id":"tt28151657","rating":5.4,"votes":291}},
-    "einetanztdieanderenicht": {"title":"Die eine Tanzt, die andere nicht"},
     "gleichungihreslebens": {"title":"Die Gleichung ihres Lebens","duration":114,"imdb":{"id":"tt26699529","rating":6.8,"votes":3359}},
     "odyssee": {"title":"Die Odyssee","duration":173,"imdb":{"id":"tt33764258","rating":8.4,"votes":558811}},
     "tributevonpanemsunriseonthereaping": {"title":"Die Tribute von Panem - Sunrise on the Reaping","duration":159,"original":"The Hunger Games: Sunrise on the Reaping","year":2026},
@@ -149,12 +148,9 @@
     {"cinema":"regina","film":"eintalentfursmorden","date":"2026-11-13","time":"17:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111140%26apos%3B"},
     {"cinema":"kinobar","film":"wildhorsenine","date":"2026-11-13","time":"18:00","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3700332819&bgswitch=false&resize=false"},
     {"cinema":"regina","film":"blutgrafin","date":"2026-11-13","time":"18:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111435%26apos%3B"},
-    {"cinema":"passage","film":"heleneweigelrevolutionarinimrampenlicht","date":"2026-11-13","time":"18:30","screen":"Wintergarten","url":"https://www.passage-kinos.de/helene-weigel-revolutionaerin-im-rampenlicht"},
-    {"cinema":"passage","film":"wildhorsenine","date":"2026-11-13","time":"18:30","screen":"Universum","url":"https://www.passage-kinos.de/wild-horse-nine"},
     {"cinema":"cinestar","film":"odyssee","date":"2026-11-13","time":"19:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185144"},
     {"cinema":"regina","film":"othermommy","date":"2026-11-13","time":"19:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111213%26apos%3B"},
     {"cinema":"luru","film":"staatsschutz","date":"2026-11-13","time":"19:00","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3714748032&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"einetanztdieanderenicht","date":"2026-11-13","time":"19:00","label":"+ Filmgespräch mit Regisseurin Emilie Girardin","url":"https://www.cineding-leipzig.de/veranstaltungen/die-eine-tanzt-die-andere-nicht-filmgespraech-mit-regisseurin-emilie-girardin/"},
     {"cinema":"cineplex","film":"wildwood","date":"2026-11-13","time":"19:15","url":"https://tickets.cineplex.de/checkout/356/36E01C00023FWBXJYB"},
     {"cinema":"schaubuehne","film":"moscasfliegenundanderegaste","date":"2026-11-13","time":"19:15","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3668910380&bgswitch=false&resize=false"},
     {"cinema":"cinestar","film":"othermommy","date":"2026-11-13","time":"19:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185119"},
