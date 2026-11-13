@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-13T19:52:56.262Z",
+  "generatedAt": "2026-11-13T20:01:09.044Z",
   "days": ["2026-11-13","2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20"],
   "cinemas": [
-    {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":23},
+    {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
     {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":80},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":11},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":54},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":122},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":96},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":95},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":92},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":53}
   ],
@@ -218,7 +218,6 @@
     "tabalugaderfilm": {"title":"Tabaluga - Der Film","duration":90,"original":"Tabaluga","year":2018,"imdb":{"id":"tt5817548","rating":5.3,"votes":349}},
     "eyesofghana": {"title":"The Eyes of Ghana","imdb":{"id":"tt37815334","rating":7.2,"votes":117}},
     "hungergamessunriseonthereapingenglischesoriginal": {"title":"THE HUNGER GAMES - SUNRISE ON THE REAPING - englisches Original","duration":158},
-    "killer": {"title":"The Killer","duration":110,"original":"喋血雙雄","year":1989,"imdb":{"id":"tt0097202","rating":7.7,"votes":56542}},
     "legendofthevagabondqueenoflagos": {"title":"The Legend of the Vagabond Queen of Lagos","duration":100,"year":2024,"imdb":{"id":"tt11405134","rating":7.3,"votes":73}},
     "maddogofeurope": {"title":"The Mad Dog of Europe","duration":83,"year":2026},
     "weightimgoldrausch": {"title":"The Weight - Im Goldrausch","imdb":{"id":"tt10794054","rating":6.7,"votes":8983}},
@@ -278,7 +277,6 @@
     {"cinema":"beluga","film":"perfekteurlaub","date":"2026-11-13","time":"20:15","screen":"Kino 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3711375644&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-13","time":"20:15","screen":"Kino 7","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3711375651&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"godzillaminuszero","date":"2026-11-13","time":"20:15","screen":"Kino 6 - Arthouse","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3711375722&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"veritydunklegeheimnisse","date":"2026-11-13","time":"20:15","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117431"},
     {"cinema":"burgkino","film":"perfekteurlaub","date":"2026-11-13","time":"20:15","screen":"Saal 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3710150670&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"wildwood","date":"2026-11-13","time":"20:15","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3712679509&bgswitch=false&resize=false"},
     {"cinema":"city-buxtehude","film":"bewareboiuna","date":"2026-11-13","time":"20:30","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3712542228&bgswitch=false&resize=false"},
@@ -288,7 +286,6 @@
     {"cinema":"burgkino","film":"howtorobabank","date":"2026-11-13","time":"20:30","screen":"Saal 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3710150682&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"superbuhei","date":"2026-11-13","time":"20:30","screen":"Stübchen","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3710156666&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"byanymeans","date":"2026-11-13","time":"20:45","screen":"Kino 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3711375665&bgswitch=false&resize=false"},
-    {"cinema":"3001","film":"killer","date":"2026-11-13","time":"21:00","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/13130"},
     {"cinema":"abaton","film":"herprivatehell","date":"2026-11-13","time":"21:20","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592484"},
     {"cinema":"studio","film":"mitleiserstimme","date":"2026-11-13","time":"21:30","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396142"},
     {"cinema":"cinemaxx-dammtor","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-13","time":"21:45","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001583/42054"},
