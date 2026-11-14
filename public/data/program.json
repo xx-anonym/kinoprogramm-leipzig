@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-14T17:01:05.816Z",
+  "generatedAt": "2026-11-14T18:00:51.043Z",
   "days": ["2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":148},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":119},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":148},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":131},
-    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":103},
+    {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":101},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":36},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":33},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":12},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":30},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
   ],
   "films": {
     "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026,"imdb":{"id":"tt27988879","rating":8.3,"votes":34196}},
@@ -68,7 +68,6 @@
     "herprivatehell": {"title":"Her Private Hell","duration":109,"imdb":{"id":"tt36629665","rating":4.5,"votes":5077}},
     "hiroshimamonamour": {"title":"Hiroshima Mon Amour","duration":90,"imdb":{"id":"tt0052893","rating":7.8,"votes":40125}},
     "histoiresparalleles": {"title":"Histoires Parallèles","duration":141,"imdb":{"id":"tt36646880","rating":5.9,"votes":1706}},
-    "hope": {"title":"Hope","imdb":{"id":"tt27369017","rating":6.6,"votes":33524}},
     "howtorobabank": {"title":"How to Rob a Bank","duration":122,"year":2026},
     "identitti": {"title":"Identitti","duration":103},
     "insearchofladinoundfragments": {"title":"In Search of Ladino + Fragments","duration":99},
@@ -174,10 +173,7 @@
     {"cinema":"schaubuehne","film":"ivanundhadoum","date":"2026-11-14","time":"18:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3712756414&bgswitch=false&resize=false"},
     {"cinema":"kinobar","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-14","time":"18:15","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3700334584&bgswitch=false&resize=false"},
     {"cinema":"regina","film":"bewareboiuna","date":"2026-11-14","time":"18:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111437%26apos%3B"},
-    {"cinema":"passage","film":"heleneweigelrevolutionarinimrampenlicht","date":"2026-11-14","time":"18:30","screen":"Wintergarten","url":"https://www.passage-kinos.de/helene-weigel-revolutionaerin-im-rampenlicht"},
-    {"cinema":"passage","film":"wildhorsenine","date":"2026-11-14","time":"18:30","screen":"Universum","url":"https://www.passage-kinos.de/wild-horse-nine"},
     {"cinema":"regina","film":"othermommy","date":"2026-11-14","time":"19:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111214%26apos%3B"},
-    {"cinema":"cineding","film":"hope","date":"2026-11-14","time":"19:00","version":"OmU","url":"https://www.cineding-leipzig.de/veranstaltungen/hope-omu-2/"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-14","time":"19:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185153"},
     {"cinema":"cineplex","film":"veritydunklegeheimnisse","date":"2026-11-14","time":"19:30","url":"https://tickets.cineplex.de/checkout/356/FFD01C00023FWBXJYB"},
     {"cinema":"uci","film":"wildwood","date":"2026-11-14","time":"19:30"},
