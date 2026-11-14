@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T09:00:54.832Z",
+  "generatedAt": "2026-11-14T10:00:49.946Z",
   "days": ["2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":176},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":169},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":139},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":172},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":131},
@@ -135,16 +135,9 @@
     "youcanseeeverything": {"title":"You Can See Everything","duration":174,"year":2026,"imdb":{"id":"tt45368240","rating":9,"votes":32251}}
   },
   "shows": [
-    {"cinema":"cineplex","film":"coyotevsacme","date":"2026-11-14","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/B5E01C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"laurassternunddergeheimnisvolledrachenian","date":"2026-11-14","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/08780C00023FWBXJYB"},
     {"cinema":"regina","film":"emilunddiedetektive","date":"2026-11-14","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111167%26apos%3B"},
     {"cinema":"regina","film":"monstermia","date":"2026-11-14","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111119%26apos%3B"},
-    {"cinema":"cineplex","film":"monstermia","date":"2026-11-14","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/62E01C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"shaundasschafspukimkurbisfeld","date":"2026-11-14","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/12D01C00023FWBXJYB"},
     {"cinema":"regina","film":"frechstetrollderwelt","date":"2026-11-14","time":"10:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1111447%26apos%3B"},
-    {"cinema":"cineplex","film":"hiramayanariseofalegend","date":"2026-11-14","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/5ED01C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"lugenubermeinemutter","date":"2026-11-14","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/F7780C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"spidermanbrandnewday","date":"2026-11-14","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/37D01C00023FWBXJYB"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-14","time":"11:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185303"},
     {"cinema":"cinestar","film":"forgottenisland","date":"2026-11-14","time":"11:00","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185178"},
     {"cinema":"cinestar","film":"georgemichaelthefaithtour","date":"2026-11-14","time":"11:00","version":"OmU","extras":["IMAX"],"label":"CineSpecial","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183860"},
