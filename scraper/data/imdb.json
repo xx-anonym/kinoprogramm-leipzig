@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-14T21:00:49.988Z",
+ "ratingsUpdated": "2026-11-14T22:01:02.735Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -3399,7 +3399,7 @@
   "mittagsstunde": {
    "id": "tt21148858",
    "title": "Mittagsstunde",
-   "seen": "2026-11-13",
+   "seen": "2026-11-14",
    "rating": 6.9,
    "votes": 528
   },
@@ -5095,6 +5095,13 @@
    "rating": 5.4,
    "votes": 538946
   },
+  "ubenubenubenavefskfolgt": {
+   "id": "tt28450427",
+   "title": "ÜBEN ÜBEN ÜBEN- Å ØVE, FSK folgt",
+   "seen": "2026-11-14",
+   "rating": 6.1,
+   "votes": 47
+  },
   "uberdendachernvonnizza": {
    "id": "tt0048728",
    "title": "Über den Dächern von Nizza",
@@ -5579,6 +5586,13 @@
    "checked": "2026-11-10",
    "attempts": 1,
    "seen": "2026-11-14"
+  },
+  "zirkuskind": {
+   "id": "tt35449402",
+   "title": "Zirkuskind",
+   "seen": "2026-11-14",
+   "rating": 7.9,
+   "votes": 63
   },
   "zombie": {
    "id": "tt0077402",
