@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T05:00:52.379Z",
+  "generatedAt": "2026-11-14T06:00:50.119Z",
   "days": ["2026-11-14","2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":177},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":176},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":4},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":172},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":131},
@@ -57,7 +57,6 @@
     "felicite": {"title":"Félicité","duration":123,"imdb":{"id":"tt5980798","rating":6.5,"votes":1246}},
     "festtagsspassmitpeppadaskinoerlebnis": {"title":"Festtagsspaß mit Peppa - Das Kinoerlebnis","duration":58,"original":"Festive Fun with Peppa","year":2026},
     "forgottenisland": {"title":"Forgotten Island","duration":109,"year":2026,"imdb":{"id":"tt36583977","rating":7.5,"votes":11426}},
-    "gamingimkino3stunden": {"title":"Gaming im Kino - 3 Stunden","duration":145,"original":"3","year":2012},
     "garance": {"title":"Garance","duration":120,"imdb":{"id":"tt38584405","rating":7,"votes":652}},
     "geister": {"title":"Geister","duration":106,"year":2026,"imdb":{"id":"tt36501204","rating":7.1,"votes":174}},
     "georgemichaelthefaithtour": {"title":"George Michael - The Faith Tour","duration":113,"year":2026,"imdb":{"id":"tt40564737","rating":8.7,"votes":297}},
@@ -814,7 +813,6 @@
     {"cinema":"schaubuehne","film":"garance","date":"2026-11-20","time":"21:00","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3657443465&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"london","date":"2026-11-20","time":"21:00","url":"https://www.cineding-leipzig.de/veranstaltungen/london-2026-11-20/"},
     {"cinema":"cinestar","film":"tributevonpanemsunriseonthereaping","date":"2026-11-20","time":"23:00","extras":["IMAX"],"url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=184850"},
-    {"cinema":"cineplex","film":"gamingimkino3stunden","date":"2026-11-21","time":"10:00","url":"https://tickets.cineplex.de/checkout/356/F8CC3000023GNEIPFB"},
     {"cinema":"cineplex","film":"laurassternunddergeheimnisvolledrachenian","date":"2026-11-21","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/7E780C00023FWBXJYB"},
     {"cinema":"cineplex","film":"chopineinesonateinparis","date":"2026-11-21","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/4E780C00023FWBXJYB"},
     {"cinema":"cinestar","film":"festtagsspassmitpeppadaskinoerlebnis","date":"2026-11-21","time":"11:30","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=183561"},
