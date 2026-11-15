@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-15T08:01:03.445Z",
+  "generatedAt": "2026-11-15T09:01:09.921Z",
   "days": ["2026-11-15","2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21","2026-11-22"],
   "cinemas": [
-    {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":20},
+    {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":19},
     {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":67},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -15,7 +15,7 @@
     {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":18},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":40},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":8},
+    {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":7},
     {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":74},
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":2},
@@ -89,7 +89,6 @@
     "regenbogenfisch": {"title":"Der Regenbogenfisch","duration":70,"original":"De Rägebogefisch","year":2026},
     "spaziergangnachsyrakus": {"title":"Der Spaziergang nach Syrakus","duration":100,"original":"Spaziergang nach Syrakus, Der","imdb":{"id":"tt43598697","rating":6.9,"votes":157}},
     "todisteinarschloch": {"title":"Der Tod ist ein Arschloch","duration":79,"year":2025},
-    "dfduneteil1und2vision": {"title":"DF: Dune: Teil 1 + 2 - Vision","duration":166,"original":"Dune: Part Two","year":2023,"imdb":{"id":"tt15239678","rating":8.4,"votes":806137}},
     "andereseite": {"title":"Die Andere Seite","duration":106,"year":2026,"imdb":{"id":"tt42373658","rating":6.6,"votes":68}},
     "bienemajaderkinofilm": {"title":"Die Biene Maja – Der Kinofilm","duration":88,"original":"Maya the Bee Movie","year":2014,"imdb":{"id":"tt3336368","rating":5.9,"votes":2579}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"year":2026,"imdb":{"id":"tt28151657","rating":5.4,"votes":310}},
@@ -253,8 +252,6 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7585}}
   },
   "shows": [
-    {"cinema":"3001","film":"moscasfliegenundanderegaste","date":"2026-11-15","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/13116"},
-    {"cinema":"kinopolis","film":"dfduneteil1und2vision","date":"2026-11-15","time":"10:00","url":"https://www.kinopolis.de/hh/programm/vorstellung/50260000023HXECDQG"},
     {"cinema":"kinopolis","film":"herrderringe3","date":"2026-11-15","time":"10:15","url":"https://www.kinopolis.de/hh/programm/vorstellung/2E250000023HXECDQG"},
     {"cinema":"kinopolis","film":"festtagsspassmitpeppadaskinoerlebnis","date":"2026-11-15","time":"10:20","url":"https://www.kinopolis.de/hh/programm/vorstellung/35360000023HXECDQG"},
     {"cinema":"abaton","film":"betweentimes","date":"2026-11-15","time":"11:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592400"},
