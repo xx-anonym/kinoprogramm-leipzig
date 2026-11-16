@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-16T14:00:51.559Z",
+ "ratingsUpdated": "2026-11-16T16:00:52.624Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -1789,7 +1789,7 @@
    "id": "tt15069888",
    "title": "Germaine Acogny - Die Essenz des Tanzes",
    "year": 2031,
-   "seen": "2026-11-14",
+   "seen": "2026-11-16",
    "rating": 7.6,
    "votes": 11
   },
@@ -3762,7 +3762,7 @@
    "id": "tt33318721",
    "title": "Nawi - Dear Future Me",
    "year": 2025,
-   "seen": "2026-11-08",
+   "seen": "2026-11-16",
    "rating": 7.7,
    "votes": 272
   },
@@ -3882,7 +3882,7 @@
   "nureinkleinesbisschengluck": {
    "id": "tt32553661",
    "title": "Nur ein Kleines Bisschen Glück",
-   "seen": "2026-11-09",
+   "seen": "2026-11-16",
    "rating": 5.4,
    "votes": 296
   },
@@ -4807,6 +4807,14 @@
    "attempts": 1,
    "seen": "2026-11-03"
   },
+  "skwderfrechstetrollderwelt": {
+   "id": "tt33334564",
+   "title": "SKW Der frechste Troll der Welt",
+   "year": 2026,
+   "seen": "2026-11-16",
+   "rating": 6.4,
+   "votes": 84
+  },
   "snakecharmer": {
    "id": "tt9359394",
    "title": "The Snake Charmer",
@@ -5432,7 +5440,7 @@
    "id": null,
    "skip": true,
    "title": "Überraschungspremiere",
-   "seen": "2026-11-15"
+   "seen": "2026-11-16"
   },
   "udtateer": {
    "id": null,
