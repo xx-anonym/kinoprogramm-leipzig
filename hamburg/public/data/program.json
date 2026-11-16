@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-16T08:01:06.366Z",
+  "generatedAt": "2026-11-16T09:01:10.558Z",
   "days": ["2026-11-16","2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":15},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":50},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":49},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -158,7 +158,6 @@
     "missionmausejagdchaosuntermweihnachtsbaum": {"title":"Mission: Mäusejagd - Chaos unterm Weihnachtsbaum","duration":80,"original":"Hvis Ingen Går I Fella","year":2025,"imdb":{"id":"tt35727399","rating":6,"votes":713}},
     "mittagsstunde": {"title":"Mittagsstunde","duration":97,"imdb":{"id":"tt21148858","rating":6.9,"votes":529}},
     "monstermia": {"title":"Monster Mia","duration":81,"year":2026,"imdb":{"id":"tt38807889","rating":6.4,"votes":110}},
-    "moritzinderlitfasssaule": {"title":"Moritz in der Litfaßsäule","duration":86,"imdb":{"id":"tt0085962","rating":7.1,"votes":106}},
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und andere Gäste","duration":99,"original":"Moscas","year":2026,"imdb":{"id":"tt35854741","rating":7.3,"votes":886}},
     "moulin": {"title":"Moulin","duration":130,"imdb":{"id":"tt36899180","rating":6.8,"votes":499}},
     "mumbojumbo": {"title":"Mumbo Jumbo","duration":82,"year":2026,"imdb":{"id":"tt28942997","rating":6.4,"votes":128}},
@@ -221,7 +220,6 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7585}}
   },
   "shows": [
-    {"cinema":"abaton","film":"moritzinderlitfasssaule","date":"2026-11-16","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592582"},
     {"cinema":"abaton","film":"tschick","date":"2026-11-16","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592600"},
     {"cinema":"abaton","film":"allmysisters","date":"2026-11-16","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592583"},
     {"cinema":"filmraum","film":"tschick","date":"2026-11-16","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3718417240"},
