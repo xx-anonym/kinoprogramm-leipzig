@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-16T16:00:52.624Z",
+ "ratingsUpdated": "2026-11-16T18:10:13.678Z",
  "films": {
   "1malimkino": {
    "id": null,
@@ -564,7 +564,7 @@
   "block10": {
    "id": "tt38640121",
    "title": "Block 10",
-   "seen": "2026-11-15",
+   "seen": "2026-11-16",
    "rating": 7,
    "votes": 53
   },
@@ -688,6 +688,13 @@
    "checked": "2026-11-14",
    "attempts": 1,
    "seen": "2026-11-16"
+  },
+  "butterflyruckkehrnachgrancanaria": {
+   "id": "tt37496603",
+   "title": "Butterfly - Rückkehr nach Gran Canaria",
+   "seen": "2026-11-16",
+   "rating": 5.9,
+   "votes": 172
   },
   "byanymeans": {
    "id": "tt34379051",
@@ -955,6 +962,13 @@
    "seen": "2026-11-07",
    "rating": 7.2,
    "votes": 109
+  },
+  "couscousundgeheimnisse": {
+   "id": "tt34487826",
+   "title": "Couscous und Geheimnisse",
+   "seen": "2026-11-16",
+   "rating": 6,
+   "votes": 200
   },
   "coward": {
    "id": "tt39328391",
@@ -2533,7 +2547,7 @@
   "insidiousoutofthefurther": {
    "id": "tt32393988",
    "title": "Insidious: Out of the Further",
-   "seen": "2026-11-14",
+   "seen": "2026-11-16",
    "rating": 6,
    "votes": 31641
   },
@@ -2572,6 +2586,13 @@
    "seen": "2026-11-16",
    "rating": 6.6,
    "votes": 215
+  },
+  "jagdnachdermumievonparis": {
+   "id": "tt34482468",
+   "title": "Die Jagd nach der Mumie von Paris",
+   "seen": "2026-11-16",
+   "rating": 5.3,
+   "votes": 1118
   },
   "jailer2": {
    "id": "tt33318732",
@@ -3128,6 +3149,13 @@
    "attempts": 2,
    "seen": "2026-10-18"
   },
+  "legendedeswustenkindes": {
+   "id": "tt37495239",
+   "title": "Die Legende des Wüstenkindes",
+   "seen": "2026-11-16",
+   "rating": 6.4,
+   "votes": 424
+  },
   "legendofthevagabondqueenoflagos": {
    "id": "tt11405134",
    "title": "The Legend of the Vagabond Queen of Lagos",
@@ -3236,6 +3264,13 @@
   "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {
    "id": "tt43598591",
    "title": "Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes und Amir",
+   "seen": "2026-11-16",
+   "rating": 7.7,
+   "votes": 95
+  },
+  "lieblingsmenschendiebesonderefreundschaftvonagnesundamir": {
+   "id": "tt43598591",
+   "title": "Lieblingsmenschen - Die besondere Freundschaft von Agnes und Amir",
    "seen": "2026-11-16",
    "rating": 7.7,
    "votes": 95
@@ -3406,6 +3441,13 @@
    "seen": "2026-11-16",
    "rating": 6.1,
    "votes": 21
+  },
+  "mafrere": {
+   "id": "tt36856791",
+   "title": "Ma Frère",
+   "seen": "2026-11-16",
+   "rating": 6.8,
+   "votes": 477
   },
   "magazinfilmkunstundkulturinwinterhudealshamburgnachmehrenergiesuchtehhhistorischmitdrjoachimpaschen": {
    "id": null,
@@ -3903,7 +3945,7 @@
   "obsessiondusollstmichlieben": {
    "id": "tt37287335",
    "title": "Obsession - Du sollst mich lieben",
-   "seen": "2026-11-14",
+   "seen": "2026-11-16",
    "rating": 7.8,
    "votes": 432762
   },
@@ -5770,6 +5812,13 @@
    "checked": "2026-11-06",
    "attempts": 2,
    "seen": "2026-11-08"
+  },
+  "wildfoxes": {
+   "id": "tt33362861",
+   "title": "Wild Foxes",
+   "seen": "2026-11-16",
+   "rating": 6.7,
+   "votes": 443
   },
   "wildhorsenine": {
    "id": "tt15799564",
