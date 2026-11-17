@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T03:00:55.880Z",
+  "generatedAt": "2026-11-17T03:59:35.019Z",
   "days": ["2026-11-17","2026-11-18","2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":84},
@@ -7,7 +7,7 @@
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":228},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":191},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":166},
-    {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":58},
+    {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"stale","message":"The operation was aborted due to timeout","shows":58,"since":"2026-11-17T03:59:35.019Z"},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":31},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":6},
     {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":44},
