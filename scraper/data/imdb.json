@@ -725,6 +725,13 @@
    "rating": 6.5,
    "votes": 9250
   },
+  "cakallarladans8sututgartcikarmasi": {
+   "id": null,
+   "title": "Çakallarla Dans 8: Sututgart Çikarmasi",
+   "checked": "2026-11-17",
+   "attempts": 1,
+   "seen": "2026-11-17"
+  },
   "callmebyyourname": {
    "id": "tt5726616",
    "title": "Call me by your Name",
@@ -4434,7 +4441,7 @@
    "title": "Ramayana: Rise Of A Legend (Hindi) (Hindi OmU)",
    "checked": "2026-11-14",
    "attempts": 3,
-   "seen": "2026-11-14"
+   "seen": "2026-11-17"
   },
   "ramayanariseofalegendhindiomuomeu": {
    "id": "tt27988879",
@@ -5608,6 +5615,13 @@
    "seen": "2026-11-17",
    "rating": 8.2,
    "votes": 9
+  },
+  "ubergangtamiltamilomu": {
+   "id": null,
+   "title": "Übergang (Tamil) (Tamil OmU)",
+   "checked": "2026-11-17",
+   "attempts": 1,
+   "seen": "2026-11-17"
   },
   "uberraschungspremiere": {
    "id": null,
