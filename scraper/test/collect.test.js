@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import { collect, formatProgram, mergeByDay, shouldAlert } from '../src/index.js';
+import { berlinDate, berlinTime } from '../src/lib/dates.js';
 
 const TODAY = '2026-10-05';
 
@@ -238,13 +239,48 @@ test('Mail erst, wenn ein Problem drei Läufe in Folge besteht – und nicht jed
   const fourth = await run(third, t3);
   assert.equal(shouldAlert(problems(fourth), third.generatedAt, t3), false, 'keine Mail jede Stunde');
 
-  const evening = new Date(`${TODAY}T16:00:30Z`); // 18:00 Uhr: tägliche Erinnerung
-  assert.equal(shouldAlert(problems(await run(fourth, evening)), fourth.generatedAt, evening), true);
+  // 18:00 Uhr: tägliche Erinnerung – aber nicht am selben Tag wie die erste Mail
+  const evening = new Date(`${TODAY}T16:00:30Z`);
+  const fifth = await run(fourth, evening);
+  assert.equal(shouldAlert(problems(fifth), fourth.generatedAt, evening), false, 'heute schon gemailt');
+  const nextEvening = new Date(evening.getTime() + 24 * hour);
+  assert.equal(shouldAlert(problems(await run(fifth, nextEvening)), fifth.generatedAt, nextEvening), true);
 
   // Wieder in Ordnung → kein "seit"
   const fixed = await collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: { broken: async () => [{ date: TODAY, time: '20:00', title: 'Alte Liebe' }] }, previous: third, now: t2 });
   assert.equal(fixed.cinemas[0].status, 'ok');
   assert.equal(fixed.cinemas[0].since, undefined);
+});
+
+test('Kino fällt ständig aus und kommt wieder: höchstens eine Mail am Tag', async () => {
+  let up = false;
+  const flaky = {
+    broken: async () => {
+      if (up) return [{ date: TODAY, time: '20:00', title: 'Alte Liebe' }];
+      throw new Error('The operation was aborted due to timeout');
+    },
+  };
+  const hour = 36e5;
+  const run = (previous, now) => collect({ today: TODAY, cinemas: cinemas.slice(1, 2), sources: flaky, previous, now });
+  const problems = (data) => data.cinemas.filter((c) => c.status !== 'ok');
+  const mails = [];
+  let data = {
+    generatedAt: new Date(`${TODAY}T00:00:00Z`).toISOString(),
+    cinemas: [{ id: 'b', status: 'ok' }],
+    films: { alteliebe: { title: 'Alte Liebe' } },
+    shows: [{ cinema: 'b', film: 'alteliebe', date: TODAY, time: '20:00' }],
+  };
+  // Muster wie bei der Schauburg am 17.11.: 5 Stunden weg, 1 Stunde da, wieder 5 Stunden weg …
+  for (let h = 1; h <= 30; h++) {
+    up = h % 6 === 0;
+    const now = new Date(new Date(`${TODAY}T00:00:00Z`).getTime() + h * hour + 60_000);
+    const next = await run(data, now);
+    if (shouldAlert(problems(next), data.generatedAt, now)) mails.push(`${berlinDate(now)} ${berlinTime(now)}`);
+    data = next;
+  }
+  // Ausfall ab 3 Uhr → Mail nach zwei Stunden, dann erst wieder einen Tag später – nicht alle 6 Stunden
+  // (und keine 18-Uhr-Erinnerung am selben Tag)
+  assert.deepEqual(mails, ['2026-10-05 05:01', '2026-10-06 05:01']);
 });
 
 test('Ergänzungsquelle füllt Tage, die der Hauptquelle noch fehlen', async () => {

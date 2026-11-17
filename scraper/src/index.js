@@ -48,6 +48,8 @@ const errorMessage = (err) => {
  * Kurze Aussetzer einer Kino-Webseite kommen öfter vor; die alten Daten bleiben ja so lange stehen.
  */
 export const ALERT_AFTER_MS = 110 * 60 * 1000;
+// Zu einem Kino höchstens eine Mail pro Tag – auch wenn seine Seite ständig ausfällt und wiederkommt
+export const ALERT_REPEAT_MS = 20 * 60 * 60 * 1000;
 
 /** Bereinigt die Rohdaten einer Quelle: Titel/Fassung trennen, Zeitraum filtern. */
 function normalizeShows(rawShows, cinemaId, days) {
@@ -277,11 +279,13 @@ export async function collect({
   const previousCinemas = new Map((previous?.cinemas ?? []).map((c) => [c.id, c]));
   const cinemaList = results.map((r) => {
     const cinema = { ...r.cinema, shows: counts[r.cinema.id] ?? 0 };
+    const before = previousCinemas.get(cinema.id);
     if (cinema.status !== 'ok') {
-      const before = previousCinemas.get(cinema.id);
       cinema.since =
         before && before.status !== 'ok' ? (before.since ?? previous.generatedAt ?? now.toISOString()) : now.toISOString();
     }
+    // Wann zuletzt eine Mail zu diesem Kino ging – bleibt auch über kurze Erholungen hinweg erhalten
+    if (before?.alerted && now - new Date(before.alerted) < ALERT_REPEAT_MS) cinema.alerted = before.alerted;
     return cinema;
   });
 
@@ -315,14 +319,19 @@ export function formatProgram(data) {
 /**
  * Soll der Lauf rot werden (und GitHub eine Mail schicken)? Der Workflow läuft stündlich, deshalb nicht
  * bei jedem Problem: erst wenn eines seit ALERT_AFTER_MS besteht – und danach, solange es anhält,
- * einmal am Tag beim Lauf zwischen 18 und 19 Uhr.
+ * einmal am Tag beim Lauf zwischen 18 und 19 Uhr. Zu jedem Kino höchstens eine Mail in ALERT_REPEAT_MS,
+ * auch wenn es zwischendurch kurz wieder ging. Merkt sich die Mail an den Kinos (`alerted`).
  */
 export function shouldAlert(problems, previousAt, now) {
   const lasting = (c, at) => at - new Date(c.since ?? now) >= ALERT_AFTER_MS;
+  const due = (c) => !c.alerted || now - new Date(c.alerted) >= ALERT_REPEAT_MS;
   const before = previousAt ? new Date(previousAt) : null;
   const persistent = problems.filter((c) => lasting(c, now));
-  const newlyPersistent = persistent.filter((c) => !(before && lasting(c, before)));
-  return newlyPersistent.length > 0 || (persistent.length > 0 && berlinTime(now).startsWith('18:'));
+  const newlyPersistent = persistent.filter((c) => !(before && lasting(c, before)) && due(c));
+  const reminder = berlinTime(now).startsWith('18:') && persistent.some(due);
+  const alert = newlyPersistent.length > 0 || reminder;
+  if (alert) for (const c of persistent) c.alerted = now.toISOString();
+  return alert;
 }
 
 async function readPrevious(file) {

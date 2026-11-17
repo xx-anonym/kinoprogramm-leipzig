@@ -179,7 +179,8 @@ möchte (z. B. in `main`), macht das am besten vor dem Verbinden mit Vercel unte
 
 - Bei Problemen wird der Workflow-Lauf rot markiert und GitHub schickt eine E-Mail – sobald ein
   Problem rund zwei Stunden (drei Läufe in Folge) besteht und danach einmal täglich gegen 18 Uhr,
-  solange es anhält. Kurze Aussetzer einer Kino-Webseite lösen also keine Mail aus. Die Seite wird
+  solange es anhält. Kurze Aussetzer einer Kino-Webseite lösen also keine Mail aus, und zu jedem Kino
+  kommt höchstens eine Mail am Tag – auch wenn seine Webseite ständig ausfällt und wiederkommt. Die Seite wird
   trotzdem aktualisiert; das betroffene Kino behält seine Daten vom letzten erfolgreichen Abruf. In
   der Zusammenfassung des Laufs steht, welches Kino betroffen ist und warum.
 - Meist hat das Kino seine Webseite umgebaut. Dann muss das passende Modul in `scraper/src/sources/`
