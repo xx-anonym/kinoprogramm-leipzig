@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-17T14:00:55.506Z",
+ "ratingsUpdated": "2026-11-17T16:00:56.955Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -3173,6 +3173,13 @@
    "seen": "2026-11-17",
    "rating": 6.3,
    "votes": 11078
+  },
+  "laviedechateaumonenfanceaversailles": {
+   "id": "tt37436610",
+   "title": "La Vie de Château, Mon Enfance À Versailles",
+   "seen": "2026-11-17",
+   "rating": 7.1,
+   "votes": 136
   },
   "laviedunefemme": {
    "id": "tt39299437",
