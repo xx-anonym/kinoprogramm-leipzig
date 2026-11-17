@@ -2215,9 +2215,9 @@
   "herrderringediegefahrtenimax": {
    "id": null,
    "title": "Der Herr der Ringe - die Gefährten (Imax)",
-   "checked": "2026-11-10",
-   "attempts": 1,
-   "seen": "2026-11-16"
+   "checked": "2026-11-17",
+   "attempts": 2,
+   "seen": "2026-11-17"
   },
   "herrderringediegefahrtensondervorstellung": {
    "id": null,
@@ -2365,7 +2365,7 @@
   "hokum": {
    "id": "tt35672862",
    "title": "Hokum",
-   "seen": "2026-11-07",
+   "seen": "2026-11-17",
    "rating": 6.6,
    "votes": 80048
   },
@@ -5242,7 +5242,7 @@
   "streetfighter": {
    "id": "tt27419420",
    "title": "Street Fighter",
-   "seen": "2026-11-16",
+   "seen": "2026-11-17",
    "rating": 6.1,
    "votes": 23358
   },
@@ -5514,7 +5514,7 @@
    "title": "Die Tribute von Panem - Sunrise on the Reaping (Imax)",
    "checked": "2026-11-12",
    "attempts": 1,
-   "seen": "2026-11-16"
+   "seen": "2026-11-17"
   },
   "tributevonpanemsunriseonthereapingmegasound": {
    "id": null,
