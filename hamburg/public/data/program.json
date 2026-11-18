@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-18T07:02:12.390Z",
+  "generatedAt": "2026-11-18T08:01:03.486Z",
   "days": ["2026-11-18","2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":26},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":126},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":125},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -186,7 +186,6 @@
     "momo": {"title":"Momo","duration":92,"year":2024,"imdb":{"id":"tt26325131","rating":5.8,"votes":1367}},
     "monstermia": {"title":"Monster Mia","duration":81,"year":2026,"imdb":{"id":"tt38807889","rating":6.4,"votes":114}},
     "moulin": {"title":"Moulin","duration":130,"imdb":{"id":"tt36899180","rating":6.9,"votes":547}},
-    "mumbojumbo": {"title":"Mumbo Jumbo","duration":82,"year":2026,"imdb":{"id":"tt28942997","rating":6.4,"votes":130}},
     "naszarewolucja": {"title":"Nasza rewolucja","duration":125,"imdb":{"id":"tt35571123","rating":6.4,"votes":49}},
     "nawidearfutureme": {"title":"Nawi - Dear Future Me","duration":99,"original":"Nawi","year":2025,"imdb":{"id":"tt33318721","rating":7.7,"votes":272}},
     "naza": {"title":"Naza","duration":80,"year":2026,"imdb":{"id":"tt44766123","rating":8.4,"votes":7642}},
@@ -260,7 +259,6 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7587}}
   },
   "shows": [
-    {"cinema":"abaton","film":"mumbojumbo","date":"2026-11-18","time":"09:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592688"},
     {"cinema":"abaton","film":"emilunddiedetektive","date":"2026-11-18","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/592690"},
     {"cinema":"savoy","film":"brunoderjungekreisky","date":"2026-11-18","time":"11:00","url":"https://savoy.premiumkino.de/vorstellung/bruno-der-junge-kreisky/20261118/1100/ryEN4p9U1DQ2TRo90vfO1hGcyg5-Ns-8LmUehL7bYdA~"},
     {"cinema":"filmraum","film":"ubenubenubenavefskfolgt","date":"2026-11-18","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3718337394"},
