@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T01:02:31.496Z",
+  "generatedAt": "2026-11-19T02:00:59.496Z",
   "days": ["2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
@@ -145,7 +145,7 @@
     "hokum": {"title":"Hokum","imdb":{"id":"tt35672862","rating":6.6,"votes":80373}},
     "howtorobabank": {"title":"How to Rob a Bank","duration":122,"year":2026,"imdb":{"id":"tt35866986","rating":6.4,"votes":3192}},
     "iplayrocky": {"title":"I Play Rocky","duration":128,"year":2026,"imdb":{"id":"tt11995650","rating":8.1,"votes":5126}},
-    "irobot": {"title":"I, Robot","duration":115,"year":2004,"imdb":{"id":"tt0343818","rating":7.1,"votes":625592}},
+    "irobot": {"title":"I, Robot","imdb":{"id":"tt0343818","rating":7.1,"votes":625592}},
     "iconicmovie": {"title":"Iconic Movie","original":"ICONIC","imdb":{"id":"tt31565932","rating":4,"votes":586}},
     "identitti": {"title":"Identitti","duration":103,"year":2026,"imdb":{"id":"tt36290176","rating":5.6,"votes":30}},
     "identittidkeineangabe": {"title":"IDENTITTI D, keine Angabe","duration":103,"original":"Identitti","year":2026,"imdb":{"id":"tt36290176","rating":5.6,"votes":30}},
@@ -447,7 +447,7 @@
     {"cinema":"cinemaxx-wandsbek","film":"tributevonpanemsunriseonthereaping","date":"2026-11-19","time":"19:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1208/HO00001675/19438"},
     {"cinema":"koralle","film":"eintalentfursmorden","date":"2026-11-19","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/398382"},
     {"cinema":"magazin","film":"zuruckausdersommerpausepitchyourfriend","date":"2026-11-19","time":"19:30","url":"http://www.magazinfilmkunst.de/"},
-    {"cinema":"passage","film":"youcanseeeverything","date":"2026-11-19","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7298398"},
+    {"cinema":"passage","film":"youcanseeeverything","date":"2026-11-19","time":"19:30","version":"OmU","url":"https://www.kinoheld.de/kino/hamburg/passage-kino-hamburg/vorstellung/7298398"},
     {"cinema":"studio","film":"beyondtheordinary","date":"2026-11-19","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396942"},
     {"cinema":"uci-wandsbek","film":"othermommy","date":"2026-11-19","time":"19:30"},
     {"cinema":"city-buxtehude","film":"tributevonpanemsunriseonthereaping","date":"2026-11-19","time":"19:30","screen":"City 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3719672636&bgswitch=false&resize=false"},
