@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-19T07:01:05.179Z",
+  "generatedAt": "2026-11-19T08:00:55.529Z",
   "days": ["2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":24},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":112},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":111},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -12,7 +12,7 @@
     {"id":"cinemaxx-harburg","name":"CinemaxX Harburg","address":"Moorstraße 1, 21073 Hamburg-Harburg","location":[53.457,9.985],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-harburg/","source":"kinoheld.de","status":"ok","shows":164},
     {"id":"cinemaxx-wandsbek","name":"CinemaxX Wandsbek","address":"Quarree 8, 22041 Hamburg-Wandsbek","location":[53.5722,10.067],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-wandsbek/","source":"kinoheld.de","status":"ok","shows":114},
     {"id":"elbe","name":"Elbe Filmtheater","address":"Osdorfer Landstraße 198, 22549 Hamburg-Osdorf","location":[53.5726,9.8508],"website":"https://www.elbe-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
-    {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":25},
+    {"id":"filmraum","name":"Filmraum","address":"Müggenkampstraße 45, 20257 Hamburg-Eimsbüttel","location":[53.5799,9.9426],"website":"https://www.filmraum.net/","source":"kinoheld.de","status":"ok","shows":24},
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":69},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":46},
     {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":6},
@@ -257,9 +257,7 @@
     "zuruckausdersommerpausepitchyourfriend": {"title":"Zurück aus der Sommerpause – PITCH YOUR FRIEND","duration":96,"original":"Seed","imdb":{"id":"tt0758781","rating":3.1,"votes":7587}}
   },
   "shows": [
-    {"cinema":"abaton","film":"kleinehexe","date":"2026-11-19","time":"09:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593358"},
     {"cinema":"abaton","film":"younghearts","date":"2026-11-19","time":"09:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593359"},
-    {"cinema":"filmraum","film":"tafitiabdurchdiewuste","date":"2026-11-19","time":"09:30","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3718350731"},
     {"cinema":"abaton","film":"staatsschutz","date":"2026-11-19","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593361"},
     {"cinema":"abaton","film":"chihirosreiseinszauberland","date":"2026-11-19","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593360"},
     {"cinema":"filmraum","film":"geheimestockwerk","date":"2026-11-19","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3718350740"},
