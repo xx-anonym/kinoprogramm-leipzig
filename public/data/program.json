@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-19T21:00:52.042Z",
+  "generatedAt": "2026-11-19T22:00:53.332Z",
   "days": ["2026-11-19","2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":176},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":158},
-    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":171},
+    {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":169},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":141},
     {"id":"passage","name":"Passage Kinos","address":"Hainstraße 19a, 04109 Leipzig","location":[51.3422,12.3728],"website":"https://www.passage-kinos.de/","source":"passage-kinos.de","status":"ok","shows":126},
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":46},
@@ -176,8 +176,6 @@
     {"cinema":"schauburg","film":"wildhorsenine","date":"2026-11-19","time":"19:45","url":"https://www.schauburg-leipzig.de/filmdetails/wild-horse-nine"},
     {"cinema":"schaubuehne","film":"histoiresparalleles","date":"2026-11-19","time":"20:15","version":"OmU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3657487114&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"felicite","date":"2026-11-19","time":"20:45","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3658552504&bgswitch=false&resize=false"},
-    {"cinema":"cinestar","film":"rammsteinliveinmexicocity","date":"2026-11-19","time":"22:15","label":"CineSpecial","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185552"},
-    {"cinema":"cinestar","film":"godzillaminuszero","date":"2026-11-19","time":"22:25","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185587"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-19","time":"22:40","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185574"},
     {"cinema":"cinestar","film":"clayface","date":"2026-11-19","time":"22:50","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185382"},
     {"cinema":"cinestar","film":"residentevil","date":"2026-11-19","time":"22:55","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185370"},
