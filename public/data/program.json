@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T05:00:53.598Z",
+  "generatedAt": "2026-11-20T06:00:47.840Z",
   "days": ["2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":178},
@@ -136,7 +136,7 @@
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80,"original":"Shaun The Sheep: The Beast Of Mossy Bottom","year":2026,"imdb":{"id":"tt36841161","rating":7.1,"votes":4049}},
     "sinnundsinnlichkeit": {"title":"Sinn und Sinnlichkeit","duration":132,"imdb":{"id":"tt13609648","rating":7.2,"votes":12824}},
     "sneakpreview": {"title":"Sneak Preview"},
-    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":90,"original":"Sneak Preview Ansbach"},
+    "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":100,"original":"¿Es el enemigo? La película de Gila","year":2024},
     "soudain": {"title":"Soudain","duration":196,"imdb":{"id":"tt36834996","rating":7.9,"votes":2093}},
     "soundtracktoacoupdetat": {"title":"Soundtrack to a Coup D'etat","duration":156,"imdb":{"id":"tt14452174","rating":7.8,"votes":4296}},
     "spaziergangnachsyrakusseniorenkino": {"title":"Spaziergang nach Syrakus – Seniorenkino","duration":97,"imdb":{"id":"tt43598697","rating":6.9,"votes":157}},
