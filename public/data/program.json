@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T09:00:49.417Z",
+  "generatedAt": "2026-11-20T10:00:54.672Z",
   "days": ["2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":178},
@@ -618,7 +618,7 @@
     {"cinema":"schauburg","film":"leicaeinjahrhundertinbildern","date":"2026-11-22","time":"17:45","version":"OmU","url":"https://www.schauburg-leipzig.de/filmdetails/leica-ein-jahrhundert-in-bildern-in-omdu"},
     {"cinema":"cineplex","film":"hadoota","date":"2026-11-22","time":"18:00","url":"https://tickets.cineplex.de/checkout/356/C0E31C00023FWBXJYB"},
     {"cinema":"regina","film":"perfekteurlaub","date":"2026-11-22","time":"18:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112302%26apos%3B"},
-    {"cinema":"passage","film":"nogoodmen","date":"2026-11-22","time":"18:00","version":"OmU","screen":"Wintergarten","url":"https://www.passage-kinos.de/no-good-men"},
+    {"cinema":"passage","film":"nogoodmen","date":"2026-11-22","time":"18:00","version":"OmU","label":"Premiere","screen":"Wintergarten","url":"https://www.passage-kinos.de/no-good-men"},
     {"cinema":"passage","film":"wildhorsenine","date":"2026-11-22","time":"18:00","screen":"Universum","url":"https://www.passage-kinos.de/wild-horse-nine"},
     {"cinema":"luru","film":"vaterland","date":"2026-11-22","time":"18:00","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3721669152&bgswitch=false&resize=false"},
     {"cinema":"passage","film":"delacomediefrancaise","date":"2026-11-22","time":"18:15","version":"OmU","label":"31. Französische Filmtage","screen":"Astoria","url":"https://www.passage-kinos.de/de-la-comedie-francaise"},
