@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-20T08:00:58.590Z",
+  "generatedAt": "2026-11-20T09:01:06.653Z",
   "days": ["2026-11-20","2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":23},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":97},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":96},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -27,7 +27,7 @@
     {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":36},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":166},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":212},
-    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":26},
+    {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":25},
     {"id":"cinema-paradiso","name":"Cinema Paradiso Bargteheide","address":"Hamburger Straße 3, 22941 Bargteheide","location":[53.7277,10.2587],"website":"https://www.kino-bargteheide.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"movieplexx","name":"Movieplexx Buchholz","address":"Bremer Straße 5, 21244 Buchholz in der Nordheide","location":[53.3273,9.8741],"website":"https://www.movieplexx.de/","source":"kinoheld.de","status":"ok","shows":3},
     {"id":"city-buxtehude","name":"City Kino Buxtehude","address":"Bahnhofstraße 11, 21614 Buxtehude","location":[53.4736,9.6953],"website":"https://www.citykino-buxtehude.de/","source":"citykino-buxtehude.de","status":"ok","shows":57},
@@ -244,13 +244,10 @@
     "wildwood": {"title":"Wildwood","duration":139,"year":2026,"imdb":{"id":"tt2056785","rating":8.6,"votes":31550}},
     "wirdasorchester": {"title":"Wir, das Orchester","duration":79,"original":"That Orchestra with the Broken Instruments","year":2025,"imdb":{"id":"tt39183481","rating":7.2,"votes":91}},
     "youcanseeeverything": {"title":"You Can See Everything","duration":174,"year":2026,"imdb":{"id":"tt45368240","rating":9,"votes":37037}},
-    "younghearts": {"title":"Young Hearts","duration":97,"year":2024,"imdb":{"id":"tt15245268","rating":7.8,"votes":9896}},
     "zeiseshortfilmslam": {"title":"Zeise Shortfilm Slam","original":"Shortfilm Slam"},
     "zurunsicherheitvongefluchteten": {"title":"Zur (Un-)Sicherheit von Geflüchteten"}
   },
   "shows": [
-    {"cinema":"abaton","film":"younghearts","date":"2026-11-20","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593372"},
-    {"cinema":"zeise","film":"ironboy","date":"2026-11-20","time":"10:00","url":"https://www.zeise.de/show/465353/booking"},
     {"cinema":"abaton","film":"tschick","date":"2026-11-20","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593329"},
     {"cinema":"cinemotion-winsen","film":"staatsschutz","date":"2026-11-20","time":"11:30","url":"https://www.kinoheld.de/kino/winsen/kinocenter-winsen/vorstellung/77186"},
     {"cinema":"abaton","film":"ninxsdaslebenglitzert","date":"2026-11-20","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593371"},
