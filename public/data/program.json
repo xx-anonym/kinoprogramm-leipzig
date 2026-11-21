@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-21T09:00:51.883Z",
+  "generatedAt": "2026-11-21T10:00:49.094Z",
   "days": ["2026-11-21","2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27","2026-11-28"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":154},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":147},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":134},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":134},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":122},
@@ -14,7 +14,6 @@
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":8}
   ],
   "films": {
-    "hiramayanariseofalegend": {"title":"(Hi) Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026,"imdb":{"id":"tt27988879","rating":8.2,"votes":42153}},
     "alarmnotes": {"title":"Alarm Notes","duration":123},
     "alteliebe": {"title":"Alte Liebe","duration":110,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":80}},
     "barbarabuserpionierindernachhaltigkeit": {"title":"Barbara Buser - Pionierin der Nachhaltigkeit","duration":118},
@@ -28,14 +27,14 @@
     "btsworldtourariranginkaohsiungliveviewing": {"title":"Bts World Tour 'Arirang' in Kaohsiung: Live Viewing","duration":180},
     "btsworldtourarirangkaohsiungliveviewing": {"title":"BTS World Tour Arirang Kaohsiung: Live Viewing","duration":180,"original":"BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING","year":2026},
     "butterflyruckkehrnachgrancanaria": {"title":"Butterfly - Rückkehr nach Gran Canaria","duration":120,"imdb":{"id":"tt37496603","rating":5.9,"votes":173}},
-    "chopineinesonateinparis": {"title":"Chopin - Eine Sonate in Paris","duration":114,"original":"Chopin, Chopin!","year":2025,"imdb":{"id":"tt33305572","rating":6.4,"votes":1094}},
+    "chopineinesonateinparis": {"title":"Chopin - Eine Sonate in Paris","duration":115,"original":"Chopin, Chopin!","year":2025,"imdb":{"id":"tt33305572","rating":6.4,"votes":1094}},
     "cinesneakdieuberraschungspreview": {"title":"CineSneak - Die Überraschungspreview"},
     "clayface": {"title":"Clayface","duration":109,"year":2026,"imdb":{"id":"tt34890576","rating":7.5,"votes":54533}},
     "close": {"title":"Close","duration":105,"imdb":{"id":"tt9660502","rating":7.8,"votes":49849}},
     "comediefrancaise": {"title":"Comédie Francaise","duration":75,"imdb":{"id":"tt37846373","rating":6.9,"votes":1045}},
     "congoboy": {"title":"Congo Boy","duration":91,"imdb":{"id":"tt41592086","rating":6.8,"votes":132}},
     "coward": {"title":"Coward","duration":127,"imdb":{"id":"tt39328391","rating":7.4,"votes":1624}},
-    "coyotevsacme": {"title":"Coyote vs. Acme","duration":101,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":52864}},
+    "coyotevsacme": {"title":"Coyote vs. Acme","duration":103,"year":2026,"imdb":{"id":"tt1756855","rating":7.3,"votes":52864}},
     "geheimnisdergestohlenenmaske": {"title":"Das Geheimnis der gestohlenen Maske","duration":99,"year":2026},
     "gewisseetwas": {"title":"Das gewisse Etwas","duration":105,"year":2026,"imdb":{"id":"tt37800509","rating":6.8,"votes":239}},
     "delacomediefrancaise": {"title":"De La Comédie Française","duration":80,"imdb":{"id":"tt37846373","rating":6.9,"votes":1045}},
@@ -163,15 +162,8 @@
     "zwischenkontrolleundhingabe": {"title":"Zwischen Kontrolle und Hingabe","duration":100}
   },
   "shows": [
-    {"cinema":"cineplex","film":"laurassternunddergeheimnisvolledrachenian","date":"2026-11-21","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/7E780C00023FWBXJYB"},
     {"cinema":"regina","film":"frechstetrollderwelt","date":"2026-11-21","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112326%26apos%3B"},
-    {"cinema":"cineplex","film":"frechstetrollderwelt","date":"2026-11-21","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/B3E31C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"regenbogenfisch","date":"2026-11-21","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/73E31C00023FWBXJYB"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-11-21","time":"10:45","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112306%26apos%3B"},
-    {"cinema":"cineplex","film":"hiramayanariseofalegend","date":"2026-11-21","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/AED31C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"chopineinesonateinparis","date":"2026-11-21","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/4E780C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"coyotevsacme","date":"2026-11-21","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/B5E31C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"tributevonpanemsunriseonthereaping","date":"2026-11-21","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/FDD31C00023FWBXJYB"},
     {"cinema":"regina","film":"regenbogenfisch","date":"2026-11-21","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112396%26apos%3B"},
     {"cinema":"regina","film":"emilunddiedetektive","date":"2026-11-21","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112409%26apos%3B"},
     {"cinema":"regina","film":"festtagsspassmitpeppadaskinoerlebnis","date":"2026-11-21","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1112428%26apos%3B"},
