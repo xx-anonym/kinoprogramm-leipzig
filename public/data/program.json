@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T08:00:47.314Z",
+  "generatedAt": "2026-11-22T09:00:57.336Z",
   "days": ["2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":116},
