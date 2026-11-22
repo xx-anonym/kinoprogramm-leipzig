@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T20:01:06.133Z",
+  "generatedAt": "2026-11-22T21:00:58.918Z",
   "days": ["2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":11},
@@ -24,7 +24,7 @@
     {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":28},
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":4},
-    {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":18},
+    {"id":"studio","name":"Studio-Kino","address":"Bernstorffstraße 93-95, 22767 Hamburg","location":[53.5574,9.9584],"website":"https://www.studio-kino.de/","source":"kinoheld.de","status":"ok","shows":17},
     {"id":"uci-mundsburg","name":"UCI Mundsburg","address":"Hamburger Straße 1-15, 22083 Hamburg-Barmbek","location":[53.5705,10.0272],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":86},
     {"id":"uci-wandsbek","name":"UCI Smart City Wandsbek","address":"Friedrich-Ebert-Damm 134, 22047 Hamburg-Wandsbek","location":[53.5883,10.0967],"website":"https://www.uci-kinowelt.de/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":123},
     {"id":"zeise","name":"Zeise Kinos","address":"Friedensallee 7-9, 22765 Hamburg-Ottensen","location":[53.5543,9.9278],"website":"https://www.zeise.de/","source":"kinoheld.de","status":"ok","shows":15},
@@ -184,7 +184,7 @@
     "spaziergangnachsyrakusseniorenkino": {"title":"Spaziergang nach Syrakus – Seniorenkino","duration":97,"imdb":{"id":"tt43598697","rating":6.9,"votes":157}},
     "staatsschutz": {"title":"Staatsschutz","duration":113,"year":2026,"imdb":{"id":"tt39213126","rating":7.3,"votes":538}},
     "startrekivzuruckindiegegenwart": {"title":"Star Trek IV - Zurück in die Gegenwart","duration":119,"imdb":{"id":"tt0092007","rating":7.3,"votes":98203}},
-    "sternbruckeforever": {"title":"Sternbrücke FOREVER","duration":98,"year":2026},
+    "sternbruckeforever": {"title":"Sternbrücke Forever","duration":98,"year":2026},
     "streetfighter": {"title":"Street Fighter","imdb":{"id":"tt27419420","rating":6.1,"votes":24412}},
     "superbuhei": {"title":"Superbuhei","duration":107},
     "tafitiabdurchdiewuste": {"title":"Tafiti - Ab durch die Wüste","duration":90,"original":"Tafiti - Across the Desert","year":2025,"imdb":{"id":"tt9612976","rating":6.1,"votes":426}},
@@ -268,7 +268,6 @@
     {"cinema":"beluga","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-22","time":"20:30","screen":"Kino 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3718010215&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"wildhorsenine","date":"2026-11-22","time":"20:30","screen":"Kino 6 - Arthouse","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3718010317&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"howtorobabank","date":"2026-11-22","time":"20:30","screen":"Stübchen","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3717977411&bgswitch=false&resize=false"},
-    {"cinema":"studio","film":"sternbruckeforever","date":"2026-11-22","time":"21:15","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/399023"},
     {"cinema":"cinemaxx-dammtor","film":"howtorobabank","date":"2026-11-22","time":"22:15","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001673/42411"},
     {"cinema":"abaton","film":"teufel","date":"2026-11-22","time":"22:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593556"},
     {"cinema":"cinemaxx-dammtor","film":"tributevonpanemsunriseonthereaping","date":"2026-11-22","time":"22:30","url":"https://www.cinemaxx.de/buchtickets/zusammenfassung/1206/HO00001675/41499"},
