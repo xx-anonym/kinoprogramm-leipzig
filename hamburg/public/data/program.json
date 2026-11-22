@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T01:01:13.734Z",
+  "generatedAt": "2026-11-22T01:26:06.808Z",
   "days": ["2026-11-22","2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":16},
@@ -106,7 +106,7 @@
     "tributevonpanemsunriseonthereaping": {"title":"Die Tribute von Panem - Sunrise on the Reaping","duration":159,"original":"The Hunger Games: Sunrise on the Reaping","year":2026},
     "tributevonpanemsunriseonthereapingenglmitut": {"title":"Die Tribute von Panem - Sunrise on the Reaping - engl. mit UT","duration":159,"original":"The Hunger Games: Sunrise on the Reaping","year":2026},
     "tributevonpanemsunriseonthereapingimax": {"title":"Die Tribute von Panem - Sunrise on the Reaping (Imax)"},
-    "diyablutgeld": {"title":"Diya - Blutgeld","duration":96,"original":"DIYA","imdb":{"id":"tt36154131","rating":7.3,"votes":36}},
+    "diyablutgeld": {"title":"Diya - Blutgeld","duration":96,"imdb":{"id":"tt36154131","rating":7.3,"votes":36}},
     "downandoutinparis": {"title":"Down and Out in Paris","duration":91,"original":"A PIED D'OEUVRE","imdb":{"id":"tt37660587","rating":6.6,"votes":811}},
     "dreikameradinnen": {"title":"Drei Kameradinnen","duration":93,"year":2026},
     "dryleaf": {"title":"Dry Leaf","duration":186,"original":"ხმელი ფოთოლი","year":2026,"imdb":{"id":"tt37537636","rating":6.6,"votes":403}},
@@ -172,7 +172,7 @@
     "mistytheerrollgarnerstory": {"title":"Misty - The Erroll Garner Story","duration":104,"imdb":{"id":"tt32421579","rating":7.2,"votes":65}},
     "mittagsstunde": {"title":"Mittagsstunde","duration":97,"imdb":{"id":"tt21148858","rating":6.9,"votes":530}},
     "moulin": {"title":"Moulin","duration":130,"imdb":{"id":"tt36899180","rating":6.9,"votes":573}},
-    "musicisaframemanostsangaris": {"title":"Music Is a Frame - Manos Tsangaris","duration":76},
+    "musicisaframemanostsangaris": {"title":"Music Is a Frame - Manos Tsangaris","duration":72,"original":"MUSIC IS A FRAME"},
     "naszarewolucja": {"title":"Nasza rewolucja","duration":125,"imdb":{"id":"tt35571123","rating":6.5,"votes":57}},
     "nawidearfutureme": {"title":"Nawi - Dear Future Me","duration":99,"original":"Nawi","year":2025,"imdb":{"id":"tt33318721","rating":7.7,"votes":272}},
     "naza": {"title":"Naza","duration":80,"year":2026,"imdb":{"id":"tt44766123","rating":8.4,"votes":7807}},
