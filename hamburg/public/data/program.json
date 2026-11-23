@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-23T07:02:46.651Z",
+  "generatedAt": "2026-11-23T08:02:46.921Z",
   "days": ["2026-11-23","2026-11-24","2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":11},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":52},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":51},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":0},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":1},
@@ -90,7 +90,6 @@
     "verlorenesohn": {"title":"Der verlorene Sohn","duration":115,"original":"Boy Erased","year":2019,"imdb":{"id":"tt7008872","rating":6.9,"votes":46780}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"year":2026,"imdb":{"id":"tt28151657","rating":5.4,"votes":349}},
     "buchsederpandora": {"title":"Die Büchse der Pandora","duration":134,"imdb":{"id":"tt0018737","rating":7.7,"votes":13158}},
-    "kleinehexe": {"title":"Die kleine Hexe","duration":102,"year":2018,"imdb":{"id":"tt6153538","rating":6.3,"votes":1796}},
     "odyssee": {"title":"Die Odyssee","duration":172,"original":"The Odyssey","year":2026,"imdb":{"id":"tt33764258","rating":8.4,"votes":585220}},
     "passionderjungfrauvonorleans": {"title":"Die Passion der Jungfrau von Orléans","duration":110,"original":"LA PASSION DE JEANNE D'ARC","imdb":{"id":"tt0019254","rating":8.1,"votes":69866}},
     "tributevonpanemsunriseonthereaping": {"title":"Die Tribute von Panem - Sunrise on the Reaping","duration":159,"original":"The Hunger Games: Sunrise on the Reaping","year":2026},
@@ -212,7 +211,6 @@
     "zusammenistmanwenigergetrennt": {"title":"zusammen ist man weniger getrennt.","duration":95,"year":2026}
   },
   "shows": [
-    {"cinema":"abaton","film":"kleinehexe","date":"2026-11-23","time":"09:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593388"},
     {"cinema":"abaton","film":"emilunddiedetektive","date":"2026-11-23","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593390"},
     {"cinema":"abaton","film":"geheimestockwerk","date":"2026-11-23","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593391"},
     {"cinema":"abaton","film":"cowboy","date":"2026-11-23","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593389"},
