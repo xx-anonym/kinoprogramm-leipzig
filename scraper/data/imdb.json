@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-23T12:00:55.043Z",
+ "ratingsUpdated": "2026-11-23T16:00:58.209Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -983,7 +983,7 @@
   "chihirosreiseinszauberland": {
    "id": "tt0245429",
    "title": "Chihiros Reise ins Zauberland",
-   "seen": "2026-11-19",
+   "seen": "2026-11-23",
    "rating": 8.6,
    "votes": 994602
   },
@@ -1375,7 +1375,7 @@
    "id": "tt34964187",
    "title": "DJ Ahmet",
    "year": 2025,
-   "seen": "2026-11-17",
+   "seen": "2026-11-23",
    "rating": 7.2,
    "votes": 2708
   },
@@ -1597,7 +1597,7 @@
   "eineletzterunde": {
    "id": "tt36491632",
    "title": "Eine letzte Runde",
-   "seen": "2026-11-18",
+   "seen": "2026-11-23",
    "rating": 7,
    "votes": 3791
   },
@@ -1915,7 +1915,7 @@
   "fliegendeklassenzimmer": {
    "id": "tt26342655",
    "title": "Das fliegende Klassenzimmer",
-   "seen": "2026-10-23",
+   "seen": "2026-11-23",
    "rating": 5.4,
    "votes": 280
   },
@@ -2190,6 +2190,14 @@
    "rating": 6.8,
    "votes": 240
   },
+  "ghostschool": {
+   "id": "tt37547768",
+   "title": "Ghost School",
+   "year": 2025,
+   "seen": "2026-11-23",
+   "rating": 6.8,
+   "votes": 99
+  },
   "gianttheplay": {
    "id": "tt42870035",
    "title": "Giant - The Play",
@@ -2323,7 +2331,7 @@
    "title": "Hadoota (arab. OmeU)",
    "checked": "2026-11-22",
    "attempts": 3,
-   "seen": "2026-11-22"
+   "seen": "2026-11-23"
   },
   "hakelbuddelclubzauberhafteschwestern2": {
    "id": null,
@@ -2802,6 +2810,14 @@
    "attempts": 2,
    "seen": "2026-11-17"
   },
+  "iammartinparr": {
+   "id": "tt33985496",
+   "title": "I Am Martin Parr",
+   "year": 2024,
+   "seen": "2026-11-23",
+   "rating": 7.2,
+   "votes": 324
+  },
   "icecreamman": {
    "id": "tt36893729",
    "title": "Ice Cream man",
@@ -2938,6 +2954,13 @@
    "seen": "2026-11-23",
    "rating": 8.2,
    "votes": 8795
+  },
+  "iransfrauen": {
+   "id": null,
+   "title": "Irans Frauen",
+   "checked": "2026-11-23",
+   "attempts": 1,
+   "seen": "2026-11-23"
   },
   "irobot": {
    "id": "tt0343818",
@@ -4276,6 +4299,14 @@
    "rating": 6.9,
    "votes": 599
   },
+  "mrturnermeisterdeslichts": {
+   "id": "tt2473794",
+   "title": "Mr. Turner - Meister des Lichts",
+   "year": 2014,
+   "seen": "2026-11-23",
+   "rating": 6.8,
+   "votes": 28966
+  },
   "mullewapp": {
    "id": "tt1395050",
    "title": "Mullewapp",
@@ -4853,6 +4884,14 @@
    "rating": 5.9,
    "votes": 20472
   },
+  "prankaprilapril": {
+   "id": "tt33041522",
+   "title": "Der Prank - April, April",
+   "year": 2025,
+   "seen": "2026-11-23",
+   "rating": 6.1,
+   "votes": 77
+  },
   "preisdeswiderstands": {
    "id": null,
    "title": "Der Preis des Widerstands",
@@ -5180,7 +5219,7 @@
   "residentevil": {
    "id": "tt35538033",
    "title": "Resident Evil",
-   "seen": "2026-11-21",
+   "seen": "2026-11-23",
    "rating": 7.4,
    "votes": 176333
   },
@@ -6025,7 +6064,7 @@
   "teufel": {
    "id": "tt0066993",
    "title": "Die Teufel",
-   "seen": "2026-11-22",
+   "seen": "2026-11-23",
    "rating": 7.8,
    "votes": 27263
   },
@@ -6539,7 +6578,7 @@
   "washabenwirgelacht": {
    "id": "tt43509005",
    "title": "Was haben wir gelacht",
-   "seen": "2026-11-07",
+   "seen": "2026-11-23",
    "rating": 7.1,
    "votes": 209
   },
@@ -6553,7 +6592,7 @@
   "watchingpeoplewatchingbirds": {
    "id": "tt14031106",
    "title": "Watching People Watching Birds",
-   "seen": "2026-11-21",
+   "seen": "2026-11-23",
    "rating": 8.2,
    "votes": 23
   },
@@ -6678,6 +6717,13 @@
    "attempts": 1,
    "seen": "2026-11-23"
   },
+  "wieverhextoriginalversionmitdtuntertiteln": {
+   "id": null,
+   "title": "Wie verhext - Originalversion mit dt. Untertiteln",
+   "checked": "2026-11-23",
+   "attempts": 1,
+   "seen": "2026-11-23"
+  },
   "wildesargentiniendiekraftdeswassers": {
    "id": null,
    "title": "Wildes Argentinien - Die Kraft des Wassers",
@@ -6725,7 +6771,7 @@
   "wirdiewolfs": {
    "id": "tt37211795",
    "title": "Wir, die Wolfs",
-   "seen": "2026-10-17",
+   "seen": "2026-11-23",
    "rating": 7.9,
    "votes": 9
   },
@@ -6861,7 +6907,7 @@
   "zirkuskind": {
    "id": "tt35449402",
    "title": "Zirkuskind",
-   "seen": "2026-11-17",
+   "seen": "2026-11-23",
    "rating": 7.9,
    "votes": 64
   },
