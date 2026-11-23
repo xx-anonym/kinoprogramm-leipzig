@@ -534,7 +534,7 @@
   "bewareboiuna": {
    "id": "tt10377864",
    "title": "Beware Boiúna",
-   "seen": "2026-11-22",
+   "seen": "2026-11-23",
    "rating": 5.6,
    "votes": 3755
   },
@@ -5925,7 +5925,7 @@
    "id": "tt38754957",
    "title": "Superbuhei",
    "year": 2026,
-   "seen": "2026-11-22",
+   "seen": "2026-11-23",
    "rating": 7,
    "votes": 9
   },
@@ -6640,6 +6640,13 @@
    "id": null,
    "title": "Wie verhext",
    "checked": "2026-11-19",
+   "attempts": 1,
+   "seen": "2026-11-23"
+  },
+  "wieverhextenglischefassung": {
+   "id": null,
+   "title": "WIE VERHEXT - englische Fassung",
+   "checked": "2026-11-23",
    "attempts": 1,
    "seen": "2026-11-23"
   },
