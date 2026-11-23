@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-23T17:00:53.229Z",
+ "ratingsUpdated": "2026-11-23T18:01:00.827Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -570,7 +570,7 @@
    "id": "tt3336368",
    "title": "Die Biene Maja – Der Kinofilm",
    "year": 2014,
-   "seen": "2026-11-22",
+   "seen": "2026-11-23",
    "rating": 5.9,
    "votes": 2581
   },
@@ -3083,6 +3083,13 @@
    "attempts": 2,
    "seen": "2026-11-06"
   },
+  "julenissensverksted": {
+   "id": "tt41475646",
+   "title": "Julenissens verksted",
+   "seen": "2026-11-23",
+   "rating": 6.7,
+   "votes": 37
+  },
   "julieundjulia": {
    "id": "tt1135503",
    "title": "Julie & Julia",
@@ -3799,7 +3806,7 @@
   "lightmemories": {
    "id": "tt34551254",
    "title": "Light Memories",
-   "seen": "2026-11-19",
+   "seen": "2026-11-23",
    "rating": 8.8,
    "votes": 33
   },
@@ -6356,7 +6363,7 @@
    "id": null,
    "skip": true,
    "title": "Überraschungspremiere",
-   "seen": "2026-11-17"
+   "seen": "2026-11-23"
   },
   "udtateer": {
    "id": null,
