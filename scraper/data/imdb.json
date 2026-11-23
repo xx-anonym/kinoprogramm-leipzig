@@ -555,7 +555,7 @@
   "bibiblocksberg2dieverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
-   "seen": "2026-11-22",
+   "seen": "2026-11-23",
    "rating": 6,
    "votes": 58
   },
@@ -6241,6 +6241,13 @@
    "seen": "2026-11-20",
    "rating": 6.9,
    "votes": 12299
+  },
+  "tunundlassen": {
+   "id": null,
+   "title": "Tun und Lassen",
+   "checked": "2026-11-23",
+   "attempts": 1,
+   "seen": "2026-11-23"
   },
   "turnamisali": {
    "id": "tt15511174",
