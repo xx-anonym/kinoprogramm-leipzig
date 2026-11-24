@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T23:01:04.589Z",
+  "generatedAt": "2026-11-24T23:58:48.564Z",
   "days": ["2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -41,7 +41,7 @@
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":78}
   ],
   "films": {
-    "20jahreliebebrauchtkeineferien": {"title":"20 Jahre Liebe braucht keine Ferien","duration":138,"original":"The Holiday"},
+    "20jahreliebebrauchtkeineferien": {"title":"20 Jahre Liebe braucht keine Ferien","duration":138,"original":"The Holiday","imdb":{"id":"tt0457939","rating":7,"votes":373674}},
     "abatonfilmquiz": {"title":"Abaton-Filmquiz"},
     "alteliebe": {"title":"Alte Liebe","duration":111,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":80}},
     "amadouundmariamtheblindcouplefrommali": {"title":"Amadou & Mariam – The Blind Couple From Mali","duration":82},
@@ -92,7 +92,7 @@
     "bienemajaderkinofilm": {"title":"Die Biene Maja - Der Kinofilm","imdb":{"id":"tt3336368","rating":5.9,"votes":2582}},
     "blutgrafin": {"title":"Die Blutgräfin","duration":119,"year":2026,"imdb":{"id":"tt28151657","rating":5.4,"votes":356}},
     "buchsederpandora": {"title":"Die Büchse der Pandora","duration":134,"imdb":{"id":"tt0018737","rating":7.7,"votes":13160}},
-    "chronikenvonnarnia": {"title":"Die Chroniken von Narnia...","duration":138,"original":"THE CHRONICLES OF NARNIA:..."},
+    "chronikenvonnarnia": {"title":"Die Chroniken von Narnia...","duration":138,"original":"THE CHRONICLES OF NARNIA:...","imdb":{"id":"tt0363771","rating":6.9,"votes":465412}},
     "passionderjungfrauvonorleans": {"title":"Die Passion der Jungfrau von Orléans","duration":110,"original":"LA PASSION DE JEANNE D'ARC","imdb":{"id":"tt0019254","rating":8.1,"votes":69880}},
     "progressivennostalgiker": {"title":"Die Progressiven Nostalgiker","duration":103,"original":"C'était mieux demain","year":2025,"imdb":{"id":"tt33323667","rating":5.8,"votes":1068}},
     "teufel": {"title":"Die Teufel","duration":114,"imdb":{"id":"tt0066993","rating":7.8,"votes":27309}},
@@ -152,10 +152,10 @@
     "missiontomarsh": {"title":"Mission to Marsh"},
     "missionmausejagdchaosuntermweihnachtsbaum": {"title":"Mission: Mäusejagd - Chaos unterm Weihnachtsbaum","duration":80,"original":"Hvis Ingen Går I Fella","year":2025,"imdb":{"id":"tt35727399","rating":6,"votes":744}},
     "mistytheerrollgarnerstory": {"title":"Misty - The Erroll Garner Story","duration":104,"imdb":{"id":"tt32421579","rating":7.2,"votes":65}},
-    "monsieurrobertkenntkeinpardon": {"title":"Monsieur Robert kennt kein Pardon","duration":90,"original":"LES VENGEANCES DE MAÎTRE POUTIFARD","year":2026},
+    "monsieurrobertkenntkeinpardon": {"title":"Monsieur Robert kennt kein Pardon","duration":90,"original":"LES VENGEANCES DE MAÎTRE POUTIFARD","year":2026,"imdb":{"id":"tt21331016","rating":4.7,"votes":681}},
     "mrturnermeisterdeslichts": {"title":"Mr. Turner - Meister des Lichts","duration":149,"original":"Mr. Turner","year":2014,"imdb":{"id":"tt2473794","rating":6.8,"votes":28966}},
     "musicisaframemanostsangaris": {"title":"Music Is a Frame - Manos Tsangaris","duration":72,"original":"MUSIC IS A FRAME"},
-    "nightwatchnachtwache": {"title":"Nightwatch - Nachtwache","duration":107,"original":"NIGHTWATCH"},
+    "nightwatchnachtwache": {"title":"Nightwatch - Nachtwache","duration":107,"original":"NIGHTWATCH","imdb":{"id":"tt0110631","rating":7.1,"votes":20991}},
     "niko2kleinesrentiergrosserheld": {"title":"Niko 2 - Kleines Rentier, großer Held","duration":76,"original":"Niko 2 - lentäjäveljekset","year":2012,"imdb":{"id":"tt1856053","rating":5.7,"votes":1581}},
     "ninxsdaslebenglitzert": {"title":"Niñxs - Das Leben glitzert","duration":93,"original":"Niñxs","year":2026,"imdb":{"id":"tt28727524","rating":7.8,"votes":49}},
     "nogoodmen": {"title":"No Good Men","duration":104,"year":2026,"imdb":{"id":"tt13868840","rating":7.4,"votes":729}},

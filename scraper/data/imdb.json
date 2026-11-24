@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-24T09:00:54.918Z",
+ "ratingsUpdated": "2026-11-24T23:57:11.917Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -14,6 +14,13 @@
    "checked": "2026-11-06",
    "attempts": 2,
    "seen": "2026-11-06"
+  },
+  "20jahreliebebrauchtkeineferien": {
+   "id": "tt0457939",
+   "title": "20 Jahre Liebe braucht keine Ferien",
+   "seen": "2026-11-24",
+   "rating": 7,
+   "votes": 373674
   },
   "25jahrederherrderringeextendedtriple": {
    "id": null,
@@ -43,6 +50,13 @@
    "checked": "2026-11-07",
    "attempts": 2,
    "seen": "2026-11-07"
+  },
+  "abatonfilmquiz": {
+   "id": null,
+   "title": "Abaton-Filmquiz",
+   "checked": "2026-11-24",
+   "attempts": 1,
+   "seen": "2026-11-24"
   },
   "abenteuerdesprinzenachmedstummfilmkonzertundlesung": {
    "id": null,
@@ -946,6 +960,13 @@
    "rating": 7.3,
    "votes": 4332
   },
+  "chajaundmimiundderklangderworte": {
+   "id": null,
+   "title": "Chaja und Mimi + der Klang der Worte",
+   "checked": "2026-11-24",
+   "attempts": 1,
+   "seen": "2026-11-24"
+  },
   "charade": {
    "id": "tt0056923",
    "title": "Charade",
@@ -1028,6 +1049,13 @@
    "skip": true,
    "title": "Christmas Sneak Preview",
    "seen": "2026-11-23"
+  },
+  "chronikenvonnarnia": {
+   "id": "tt0363771",
+   "title": "Die Chroniken von Narnia...",
+   "seen": "2026-11-24",
+   "rating": 6.9,
+   "votes": 465412
   },
   "chuzalongo": {
    "id": "tt27730778",
@@ -1651,6 +1679,13 @@
    "seen": "2026-11-15",
    "rating": 6,
    "votes": 525
+  },
+  "einnobodygegenputin": {
+   "id": "tt34965515",
+   "title": "Ein Nobody gegen Putin",
+   "seen": "2026-11-24",
+   "rating": 7.3,
+   "votes": 13816
   },
   "einortdenichverlassenmusste": {
    "id": null,
@@ -4331,6 +4366,14 @@
    "rating": 5.8,
    "votes": 1384
   },
+  "monsieurrobertkenntkeinpardon": {
+   "id": "tt21331016",
+   "title": "Monsieur Robert kennt kein Pardon",
+   "year": 2026,
+   "seen": "2026-11-24",
+   "rating": 4.7,
+   "votes": 681
+  },
   "monstermia": {
    "id": "tt38807889",
    "title": "Monster Mia",
@@ -4529,6 +4572,13 @@
    "seen": "2026-11-06",
    "rating": 6.4,
    "votes": 134
+  },
+  "nightwatchnachtwache": {
+   "id": "tt0110631",
+   "title": "Nightwatch - Nachtwache",
+   "seen": "2026-11-24",
+   "rating": 7.1,
+   "votes": 20991
   },
   "niko2kleinesrentiergrosserheld": {
    "id": "tt1856053",
