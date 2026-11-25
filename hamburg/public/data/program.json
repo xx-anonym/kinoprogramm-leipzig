@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T07:02:00.505Z",
+  "generatedAt": "2026-11-25T08:01:06.525Z",
   "days": ["2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -203,7 +203,6 @@
     "royalballet202627dernussknacker": {"title":"The Royal Ballet 2026/27: Der Nussknacker","duration":140},
     "theyshotthepianoplayer": {"title":"They Shot the Piano Player","duration":103,"imdb":{"id":"tt11242654","rating":6.7,"votes":1131}},
     "ubergang": {"title":"Übergang","duration":120,"year":2026},
-    "uberraschungspremiere": {"title":"Überraschungspremiere"},
     "unterdenbrucken": {"title":"Unter den Brücken","duration":99,"imdb":{"id":"tt0038206","rating":7.4,"votes":956}},
     "vaterland": {"title":"Vaterland","duration":82,"original":"Fatherland","year":2026,"imdb":{"id":"tt37304295","rating":7.4,"votes":5289}},
     "verfluchtnormal": {"title":"Verflucht Normal","duration":121,"original":"I Swear","year":2026,"imdb":{"id":"tt31514146","rating":8.3,"votes":75802}},
@@ -2093,7 +2092,7 @@
     {"cinema":"filmraum","film":"labolanegra","date":"2026-11-30","time":"20:15","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3723299093"},
     {"cinema":"koralle","film":"iplayrocky","date":"2026-11-30","time":"20:15","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/399326"},
     {"cinema":"uci-mundsburg","film":"gewisseetwas","date":"2026-11-30","time":"20:15"},
-    {"cinema":"uci-mundsburg","film":"uberraschungspremiere","date":"2026-11-30","time":"20:15"},
+    {"cinema":"uci-mundsburg","film":"sneakpreview","date":"2026-11-30","time":"20:15"},
     {"cinema":"city-buxtehude","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-30","time":"20:15","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3707027359&bgswitch=false&resize=false"},
     {"cinema":"cineplex-elmshorn","film":"perfekteurlaub","date":"2026-11-30","time":"20:15","url":"https://tickets.cineplex.de/checkout/396/26D81C00023FWBXJYB"},
     {"cinema":"cineplex-elmshorn","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-30","time":"20:15","url":"https://tickets.cineplex.de/checkout/396/47D81C00023FWBXJYB"},
