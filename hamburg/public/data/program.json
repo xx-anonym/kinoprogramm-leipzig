@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-25T08:01:06.525Z",
+  "generatedAt": "2026-11-25T08:52:14.978Z",
   "days": ["2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":117},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":116},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -173,7 +173,6 @@
     "poetryslam": {"title":"Poetry Slam","duration":120,"original":"Poetry Slammed"},
     "pressure": {"title":"Pressure","duration":99,"year":2025,"imdb":{"id":"tt32547691","rating":7.3,"votes":44762}},
     "primetime": {"title":"Primetime","duration":111,"year":2026,"imdb":{"id":"tt34206385","rating":6.8,"votes":50740}},
-    "pumucklunddasgrossemissverstandnis": {"title":"Pumuckl und das große Missverständnis","duration":100,"year":2025,"imdb":{"id":"tt32538158","rating":6.9,"votes":408}},
     "quizkinolive": {"title":"QuizKino Live","original":"Oni žive"},
     "ramayanariseofalegend": {"title":"Ramayana: Rise of a Legend","duration":195,"original":"Ramayana: Part I","year":2026,"imdb":{"id":"tt27988879","rating":8.2,"votes":44336}},
     "rbundolondontheroyalballetmanon": {"title":"RB&O London - The Royal Ballet Manon","duration":195,"original":"Royal Opera House 2023/24: Manon"},
@@ -225,7 +224,6 @@
     "zusammenistmanwenigergetrennt": {"title":"zusammen ist man weniger getrennt.","duration":95,"year":2026}
   },
   "shows": [
-    {"cinema":"abaton","film":"pumucklunddasgrossemissverstandnis","date":"2026-11-25","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593618"},
     {"cinema":"abaton","film":"verfluchtnormal","date":"2026-11-25","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593619"},
     {"cinema":"abaton","film":"ninxsdaslebenglitzert","date":"2026-11-25","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594315"},
     {"cinema":"uci-wandsbek","film":"furthermisadventuresofcliffboothimax","date":"2026-11-25","time":"13:00"},
