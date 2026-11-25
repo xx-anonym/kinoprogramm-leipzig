@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-24T23:57:11.917Z",
+ "ratingsUpdated": "2026-11-25T07:00:51.450Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -131,7 +131,7 @@
    "title": "Akte Vuskovic - Doping. Skandal. Zweifel.",
    "checked": "2026-11-23",
    "attempts": 3,
-   "seen": "2026-11-24"
+   "seen": "2026-11-25"
   },
   "alarmnotes": {
    "id": null,
@@ -210,6 +210,14 @@
    "seen": "2026-10-14",
    "rating": 7.1,
    "votes": 7530
+  },
+  "alsderweihnachtsmannvomhimmelfielaugsburgerpuppenkiste": {
+   "id": "tt1794725",
+   "title": "Als der Weihnachtsmann vom Himmel fiel (Augsburger Puppenkiste)",
+   "year": 2011,
+   "seen": "2026-11-25",
+   "rating": 5.6,
+   "votes": 318
   },
   "alteliebe": {
    "id": "tt44112686",
@@ -2395,7 +2403,7 @@
   "hadoota": {
    "id": "tt43638234",
    "title": "Hadoota",
-   "seen": "2026-11-24",
+   "seen": "2026-11-25",
    "rating": 8,
    "votes": 933
   },
@@ -2405,6 +2413,13 @@
    "checked": "2026-11-22",
    "attempts": 3,
    "seen": "2026-11-25"
+  },
+  "hailmary": {
+   "id": "tt6788512",
+   "title": "Hail Mary",
+   "seen": "2026-11-25",
+   "rating": 6.7,
+   "votes": 171
   },
   "hakelbuddelclubzauberhafteschwestern2": {
    "id": null,
@@ -3113,6 +3128,14 @@
    "checked": "2026-11-07",
    "attempts": 3,
    "seen": "2026-11-08"
+  },
+  "janoschskommwirfindeneinenschatz": {
+   "id": "tt1863298",
+   "title": "Janoschs' Komm, wir finden einen Schatz",
+   "year": 2012,
+   "seen": "2026-11-25",
+   "rating": 6.2,
+   "votes": 73
   },
   "jeannedielman": {
    "id": "tt0073198",
@@ -4261,7 +4284,7 @@
   "minionsundmonster": {
    "id": "tt32890033",
    "title": "Minions & Monster",
-   "seen": "2026-11-22",
+   "seen": "2026-11-25",
    "rating": 6.3,
    "votes": 38659
   },
@@ -5191,7 +5214,7 @@
    "id": "tt27988879",
    "title": "Ramayana: Rise of a Legend",
    "year": 2026,
-   "seen": "2026-11-22",
+   "seen": "2026-11-25",
    "rating": 8.2,
    "votes": 44336
   },
@@ -5808,7 +5831,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak",
-   "seen": "2026-11-23"
+   "seen": "2026-11-25"
   },
   "sneakextreme": {
    "id": null,
@@ -5838,7 +5861,7 @@
    "id": null,
    "skip": true,
    "title": "Sneak Preview FSK 18",
-   "seen": "2026-11-22"
+   "seen": "2026-11-25"
   },
   "socialreckoning": {
    "id": "tt37510326",
@@ -7000,6 +7023,13 @@
    "seen": "2026-10-28",
    "rating": 6.2,
    "votes": 7274
+  },
+  "yehpremmolliya": {
+   "id": null,
+   "title": "Yeh Prem Mol Liya",
+   "checked": "2026-11-25",
+   "attempts": 1,
+   "seen": "2026-11-25"
   },
   "youcanseeeverything": {
    "id": "tt45368240",

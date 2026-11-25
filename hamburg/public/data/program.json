@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T06:00:58.085Z",
+  "generatedAt": "2026-11-25T07:02:00.505Z",
   "days": ["2026-11-25","2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":27},
@@ -122,7 +122,7 @@
     "godzillaminuszero": {"title":"Godzilla Minus Zero","duration":135,"original":"ゴジラ-0.0","year":2026,"imdb":{"id":"tt34384661","rating":7.8,"votes":32117}},
     "gremlinskleinemonster": {"title":"Gremlins - Kleine Monster","duration":100,"original":"Gremlins","year":1984,"imdb":{"id":"tt0087363","rating":7.3,"votes":280155}},
     "hadoota": {"title":"Hadoota","duration":120,"original":"حدوتة","imdb":{"id":"tt43638234","rating":8,"votes":933}},
-    "hailmary": {"title":"Hail Mary","original":"ഹൈൽ മേരി"},
+    "hailmary": {"title":"Hail Mary","original":"ഹൈൽ മേരി","imdb":{"id":"tt6788512","rating":6.7,"votes":171}},
     "harryundsally": {"title":"Harry und Sally","duration":96,"original":"When Harry Met Sally...","year":1988,"imdb":{"id":"tt0098635","rating":7.7,"votes":278753}},
     "heimsuchungeinejahrhundertgeschichte": {"title":"Heimsuchung - Eine Jahrhundertgeschichte","duration":121,"year":2026,"imdb":{"id":"tt38805050","rating":6.6,"votes":373}},
     "heleneweigelrevolutionarinimrampenlicht": {"title":"Helene Weigel - Revolutionärin im Rampenlicht","duration":102,"year":2026},
@@ -135,7 +135,7 @@
     "irobot": {"title":"I, Robot","duration":115,"imdb":{"id":"tt0343818","rating":7.1,"votes":625905}},
     "identitti": {"title":"Identitti","duration":103,"year":2026,"imdb":{"id":"tt36290176","rating":5.6,"votes":36}},
     "iransfrauen": {"title":"Irans Frauen"},
-    "janoschskommwirfindeneinenschatz": {"title":"Janoschs' Komm, wir finden einen Schatz","duration":73,"original":"Janosch – Komm, wir finden einen Schatz","year":2012},
+    "janoschskommwirfindeneinenschatz": {"title":"Janoschs' Komm, wir finden einen Schatz","duration":73,"original":"Janosch – Komm, wir finden einen Schatz","year":2012,"imdb":{"id":"tt1863298","rating":6.2,"votes":73}},
     "kevinalleinzuhaus": {"title":"Kevin allein zu Haus","duration":103,"original":"Home Alone","year":1991,"imdb":{"id":"tt0099785","rating":7.8,"votes":760690}},
     "kinofurfrauennohitwonder": {"title":"Kino für Frauen: NO HIT WONDER","duration":118},
     "klaraunddiesonne": {"title":"Klara und die Sonne","duration":116,"original":"Klara and the Sun","year":2026,"imdb":{"id":"tt14371256","rating":6.4,"votes":2985}},
