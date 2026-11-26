@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-26T03:00:57.717Z",
+ "ratingsUpdated": "2026-11-26T03:39:17.836Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -4429,7 +4429,7 @@
   "momo": {
    "id": "tt26325131",
    "title": "Momo",
-   "seen": "2026-11-20",
+   "seen": "2026-11-26",
    "rating": 5.8,
    "votes": 1386
   },
@@ -5706,6 +5706,13 @@
    "seen": "2026-11-22",
    "rating": 5.7,
    "votes": 397
+  },
+  "schulkinotschick": {
+   "id": "tt4911940",
+   "title": "Schulkino TSCHICK",
+   "seen": "2026-11-26",
+   "rating": 6.9,
+   "votes": 12302
   },
   "schwarzehauser": {
    "id": null,

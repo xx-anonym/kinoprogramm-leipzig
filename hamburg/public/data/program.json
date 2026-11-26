@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T03:02:17.514Z",
+  "generatedAt": "2026-11-26T03:40:25.894Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -180,7 +180,7 @@
     "rockbottom": {"title":"Rock Bottom","duration":86,"imdb":{"id":"tt39399214","rating":5.9,"votes":43}},
     "schneewittchentheaterveranstaltung": {"title":"Schneewittchen - Theaterveranstaltung","duration":90,"original":"Blanche Neige"},
     "schoneseelen": {"title":"Schöne Seelen","duration":117,"year":2026},
-    "schulkinotschick": {"title":"Schulkino TSCHICK","duration":98,"original":"TSCHICK"},
+    "schulkinotschick": {"title":"Schulkino TSCHICK","duration":98,"original":"TSCHICK","imdb":{"id":"tt4911940","rating":6.9,"votes":12302}},
     "searchingforsoul": {"title":"Searching For Soul","duration":180},
     "seniorenkinosolomio": {"title":"Seniorenkino: SOLO MIO","duration":97},
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80,"original":"Shaun The Sheep: The Beast Of Mossy Bottom","year":2026,"imdb":{"id":"tt36841161","rating":7.1,"votes":4247}},
