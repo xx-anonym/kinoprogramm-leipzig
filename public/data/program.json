@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:01:01.134Z",
+  "generatedAt": "2026-11-26T09:01:03.451Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":200},
@@ -225,7 +225,7 @@
     {"cinema":"regina","film":"wieverhext","date":"2026-11-26","time":"20:00","extras":["3D"],"url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113556%26apos%3B"},
     {"cinema":"passage","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-26","time":"20:00","label":"Special","screen":"Astoria","url":"https://www.passage-kinos.de/lieblingsmenschen-die-aussergewoehnliche-freundschaft-von-agnes-und-amir"},
     {"cinema":"schauburg","film":"schoneseelen","date":"2026-11-26","time":"20:00","url":"https://www.schauburg-leipzig.de/filmdetails/schoene-seelen"},
-    {"cinema":"schaubuehne","film":"stummfilmmitlivemusiknosferatu","date":"2026-11-26","time":"20:00","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3698286976&bgswitch=false&resize=false"},
+    {"cinema":"schaubuehne","film":"stummfilmmitlivemusiknosferatu","date":"2026-11-26","time":"20:00","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731321454&bgswitch=false&resize=false"},
     {"cinema":"uci","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-26","time":"20:10"},
     {"cinema":"uci","film":"meinefrauunsereschwiegertochterundich","date":"2026-11-26","time":"20:10"},
     {"cinema":"cinestar","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-26","time":"20:10","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185871"},
