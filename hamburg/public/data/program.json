@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:01:10.328Z",
+  "generatedAt": "2026-11-26T02:00:57.269Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -16,7 +16,7 @@
     {"id":"hansa","name":"Hansa-Filmstudio","address":"Alte Holstenstraße 17-19, 21031 Hamburg-Bergedorf","location":[53.4934,10.2074],"website":"https://kino-bergedorf.de/","source":"kinoheld.de","status":"ok","shows":69},
     {"id":"holi","name":"Holi-Kino","address":"Schlankreye 69, 20144 Hamburg","location":[53.5772,9.9769],"website":"https://www.cinemaxx.de/kinoprogramm/hamburg-holi/","source":"kinoheld.de","status":"ok","shows":46},
     {"id":"kinopolis","name":"Kinopolis HafenCity","address":"Überseeboulevard 11, 20457 Hamburg-HafenCity","location":[53.5424,9.9977],"website":"https://www.kinopolis.de/hh/","source":"kinoheld.de","status":"ok","shows":5},
-    {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":62},
+    {"id":"koralle","name":"Koralle","address":"Kattjahren 1, 22359 Hamburg-Volksdorf","location":[53.6516,10.1633],"website":"https://www.korallekino.de/","source":"kinoheld.de","status":"ok","shows":65},
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":22},
     {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":20},
@@ -104,6 +104,7 @@
     "ebenezereineweihnachtsgeschichte": {"title":"Ebenezer - Eine Weihnachtsgeschichte","duration":116,"original":"Ebenezer","year":2026,"imdb":{"id":"tt38773219","rating":7.2,"votes":14320}},
     "ebenezereineweihnachtsgeschichteenglisch": {"title":"EBENEZER - EINE WEIHNACHTSGESCHICHTE - englisch","duration":116,"imdb":{"id":"tt38773219","rating":7.2,"votes":14320}},
     "edwardmitdenscherenhanden": {"title":"Edward mit den Scherenhänden","duration":105,"original":"Edward Scissorhands","year":1990,"imdb":{"id":"tt0099487","rating":7.8,"votes":574703}},
+    "einbusvollerleben": {"title":"Ein Bus voller Leben","duration":98,"original":"Bus de la vida, El"},
     "einkafigvollernarren": {"title":"Ein Käfig voller Narren","duration":103},
     "eintalentfursmorden": {"title":"Ein Talent fürs Morden","duration":105,"original":"A Talent for Murder","year":2026,"imdb":{"id":"tt14129116","rating":6.3,"votes":2542}},
     "einticketfurzwei": {"title":"Ein Ticket für zwei","duration":93,"original":"Planes, Trains and Automobiles","imdb":{"id":"tt0093748","rating":7.6,"votes":183802}},
@@ -2438,12 +2439,14 @@
     {"cinema":"uci-wandsbek","film":"hokum","date":"2026-12-02","time":"23:15"},
     {"cinema":"zeise","film":"ghostschool","date":"2026-12-03","time":"09:30","url":"https://www.zeise.de/show/465080/booking"},
     {"cinema":"magazin","film":"ebenezereineweihnachtsgeschichte","date":"2026-12-03","time":"16:00","label":"Kaffeeklatsch","url":"http://www.magazinfilmkunst.de/"},
+    {"cinema":"koralle","film":"lieblingsmenschen","date":"2026-12-03","time":"17:00","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/399699"},
     {"cinema":"metropolis","film":"willywonkaandthechocolatefactory","date":"2026-12-03","time":"17:00","version":"OV","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3716355014"},
     {"cinema":"movieplexx","film":"wovonsollenwirtraumen","date":"2026-12-03","time":"17:30","url":"https://kinotickets.express/movieplex-buchholz/booking/34769"},
     {"cinema":"filmraum","film":"frominsideoutdiearchitekturvonpeterzumthorfskfolgt","date":"2026-12-03","time":"17:45","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3694163810"},
     {"cinema":"magazin","film":"geister","date":"2026-12-03","time":"18:15","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"metropolis","film":"einkafigvollernarren","date":"2026-12-03","time":"19:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3716358606"},
     {"cinema":"abaton","film":"imumkreisdesparadieses","date":"2026-12-03","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593343"},
+    {"cinema":"koralle","film":"lieblingsmenschen","date":"2026-12-03","time":"19:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/399700"},
     {"cinema":"abaton","film":"youcanseeeverything","date":"2026-12-03","time":"20:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/593184"},
     {"cinema":"lichtmess","film":"wisewomen","date":"2026-12-03","time":"20:00","url":"http://www.lichtmess-kino.de/"},
     {"cinema":"studio","film":"youcanseeeverything","date":"2026-12-03","time":"20:00","url":"https://www.kinoheld.de/kino/hamburg/studio-kino-hamburg/vorstellung/396975"},
@@ -2452,6 +2455,7 @@
     {"cinema":"filmraum","film":"wildhorsenine","date":"2026-12-03","time":"20:15","url":"https://www.kinoheld.de/kino/hamburg/filmraum-hamburg/vorstellung/3715451625"},
     {"cinema":"burgkino","film":"liebebrauchtkeineferien","date":"2026-12-03","time":"20:15","label":"Best of Cinema","screen":"Saal 4","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3555067032&bgswitch=false&resize=false"},
     {"cinema":"3001","film":"bingosneakpreview","date":"2026-12-03","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/3001-kino-hamburg/vorstellung/13069"},
+    {"cinema":"koralle","film":"einbusvollerleben","date":"2026-12-03","time":"20:30","url":"https://www.kinoheld.de/kino/hamburg/koralle-lichtspielhaus/vorstellung/399721"},
     {"cinema":"magazin","film":"labolanegra","date":"2026-12-03","time":"20:30","url":"http://www.magazinfilmkunst.de/"},
     {"cinema":"metropolis","film":"krampus","date":"2026-12-03","time":"21:30","version":"OV","url":"https://www.kinoheld.de/kino/hamburg/metropolis-kino/vorstellung/3716357371"}
   ]
