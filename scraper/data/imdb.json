@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-26T00:00:52.711Z",
+ "ratingsUpdated": "2026-11-26T03:00:57.717Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -1644,6 +1644,13 @@
    "checked": "2026-11-09",
    "attempts": 4,
    "seen": "2026-11-13"
+  },
+  "einbusvollerleben": {
+   "id": "tt27110882",
+   "title": "Ein Bus voller Leben",
+   "seen": "2026-11-26",
+   "rating": 5.9,
+   "votes": 283
   },
   "einekoniglicheaffaredasriskantelebendesleibarztesjohannfriedrichstruensee": {
    "id": "tt4433110",
