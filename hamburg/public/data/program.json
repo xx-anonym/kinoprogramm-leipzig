@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:01:07.695Z",
+  "generatedAt": "2026-11-26T17:06:22.544Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":23},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":11},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":64},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":145},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":112},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":111},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":109},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":63}
   ],
@@ -229,7 +229,6 @@
     {"cinema":"beluga","film":"wieverhext","date":"2026-11-26","time":"16:00","extras":["3D"],"screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3726311211&bgswitch=false&resize=false"},
     {"cinema":"burgkino","film":"tributevonpanemsunriseonthereaping","date":"2026-11-26","time":"16:00","screen":"Saal 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=210767353&showId=3726379374&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"iplayrocky","date":"2026-11-26","time":"17:00","screen":"Kino 7","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3724017891&bgswitch=false&resize=false"},
-    {"cinema":"cinestar-stade","film":"perfekteurlaub","date":"2026-11-26","time":"17:05","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=117947"},
     {"cinema":"city-buxtehude","film":"ebenezereineweihnachtsgeschichte","date":"2026-11-26","time":"17:30","screen":"Kino 3","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=478350805&showId=3706822776&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-26","time":"17:30","screen":"Kino 5 - Lounge","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3724017821&bgswitch=false&resize=false"},
     {"cinema":"beluga","film":"wieverhext","date":"2026-11-26","time":"17:30","screen":"Kino 2","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=301802645&showId=3724017813&bgswitch=false&resize=false"},
