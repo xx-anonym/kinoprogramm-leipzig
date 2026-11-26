@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T20:00:54.893Z",
+  "generatedAt": "2026-11-26T21:00:51.969Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":177},
@@ -10,8 +10,8 @@
     {"id":"schauburg","name":"Schauburg","address":"Antonienstraße 21, 04229 Leipzig","location":[51.3202,12.3285],"website":"https://www.schauburg-leipzig.de/","source":"schauburg-leipzig.de","status":"ok","shows":46},
     {"id":"kinobar","name":"Kinobar Prager Frühling","address":"Bernhard-Göring-Str. 152, 04277 Leipzig","location":[51.311,12.3763],"website":"https://www.kinobar-leipzig.de/","source":"cinetixx.de","status":"ok","shows":23},
     {"id":"luru","name":"Luru Kino in der Spinnerei","address":"Spinnereistr. 7, 04179 Leipzig","location":[51.3275,12.3195],"website":"https://www.luru-kino.de/","source":"cinetixx.de","status":"ok","shows":16},
-    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":28},
-    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":6}
+    {"id":"schaubuehne","name":"Schaubühne Lindenfels","address":"Karl-Heine-Str. 50, 04229 Leipzig","location":[51.3318,12.3346],"website":"https://www.schaubuehne.com/","source":"cinetixx.de","status":"ok","shows":30},
+    {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":5}
   ],
   "films": {
     "alarmnotes": {"title":"Alarm Notes","duration":123},
@@ -78,7 +78,7 @@
     "monstermia": {"title":"Monster Mia","duration":82,"imdb":{"id":"tt38807889","rating":6.4,"votes":119}},
     "morgenvorlangerzeit": {"title":"Morgen vor langer Zeit","duration":91},
     "moscasfliegenundanderegaste": {"title":"Moscas - Fliegen und Andere Gäste","duration":102,"imdb":{"id":"tt35854741","rating":7.3,"votes":924}},
-    "naza": {"title":"Naza","duration":80,"imdb":{"id":"tt44766123","rating":8.4,"votes":8022}},
+    "naza": {"title":"Naza","duration":78,"imdb":{"id":"tt44766123","rating":8.4,"votes":8022}},
     "nmixx1stworldtourepisode1zerofrontierfinaleinincheonliveviewing": {"title":"NMIXX 1st World Tour <Episode 1: Zero Frontier> Finale in Incheon: Live Viewing"},
     "othermommy": {"title":"Other Mommy","duration":94,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":27899}},
     "parkwaydrivehome": {"title":"Parkway Drive - Home","duration":88,"original":"Parkway Drive: HOME - Live At The Sydney Opera","year":2026},
@@ -141,7 +141,6 @@
     {"cinema":"regina","film":"wildhorsenine","date":"2026-11-26","time":"21:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113526%26apos%3B"},
     {"cinema":"luru","film":"barriotriste","date":"2026-11-26","time":"21:15","version":"OmU","screen":"Luru Kino","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=2348716262&showId=3728494930&bgswitch=false&resize=false"},
     {"cinema":"schaubuehne","film":"minotaurus","date":"2026-11-26","time":"21:15","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731322867&bgswitch=false&resize=false"},
-    {"cinema":"cineding","film":"beautyofballroom","date":"2026-11-26","time":"21:15","version":"OmU","url":"https://www.cineding-leipzig.de/veranstaltungen/the-beauty-of-ballroom-omu/"},
     {"cinema":"cinestar","film":"godzillaminuszero","date":"2026-11-26","time":"22:10","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185885"},
     {"cinema":"cinestar","film":"howtorobabank","date":"2026-11-26","time":"22:30","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185642"},
     {"cinema":"cinestar","film":"hadootaarabomeu","date":"2026-11-26","time":"22:40","version":"OmU","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185853"},
@@ -373,6 +372,7 @@
     {"cinema":"regina","film":"iplayrocky","date":"2026-11-28","time":"16:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113481%26apos%3B"},
     {"cinema":"passage","film":"heleneweigelrevolutionarinimrampenlicht","date":"2026-11-28","time":"16:00","screen":"Filmeck","url":"https://www.passage-kinos.de/helene-weigel-revolutionaerin-im-rampenlicht"},
     {"cinema":"passage","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-28","time":"16:00","screen":"Astoria","url":"https://www.passage-kinos.de/lieblingsmenschen-die-aussergewoehnliche-freundschaft-von-agnes-und-amir"},
+    {"cinema":"schaubuehne","film":"naza","date":"2026-11-28","time":"16:00","version":"OmeU","screen":"Ballsaal","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731906928&bgswitch=false&resize=false"},
     {"cinema":"cinestar","film":"perfekteurlaub","date":"2026-11-28","time":"16:15","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185816"},
     {"cinema":"uci","film":"tributevonpanemsunriseonthereaping","date":"2026-11-28","time":"16:20"},
     {"cinema":"cinestar","film":"wildwood","date":"2026-11-28","time":"16:20","url":"https://webticketing3.cinestar.de/?cinemaId=43337&movieSessionId=185859"},
@@ -602,6 +602,7 @@
     {"cinema":"passage","film":"wieverhext","date":"2026-11-29","time":"17:45","screen":"Casino","url":"https://www.passage-kinos.de/wie-verhext"},
     {"cinema":"passage","film":"frominsideoutdiearchitekturvonpeterzumthor","date":"2026-11-29","time":"18:00","screen":"Universum","url":"https://www.passage-kinos.de/from-inside-out-die-architektur-von-peter-zumthor"},
     {"cinema":"passage","film":"wildhorsenine","date":"2026-11-29","time":"18:00","screen":"Filmeck","url":"https://www.passage-kinos.de/wild-horse-nine"},
+    {"cinema":"schaubuehne","film":"naza","date":"2026-11-29","time":"18:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731904466&bgswitch=false&resize=false"},
     {"cinema":"passage","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir","date":"2026-11-29","time":"18:15","screen":"Astoria","url":"https://www.passage-kinos.de/lieblingsmenschen-die-aussergewoehnliche-freundschaft-von-agnes-und-amir"},
     {"cinema":"passage","film":"schoneseelen","date":"2026-11-29","time":"18:15","screen":"Wintergarten","url":"https://www.passage-kinos.de/schoene-seelen"},
     {"cinema":"regina","film":"youcanseeeverything","date":"2026-11-29","time":"18:30","version":"OmU","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113525%26apos%3B"},
@@ -1012,9 +1013,9 @@
     {"cinema":"schaubuehne","film":"fassaden","date":"2026-12-03","time":"17:00","version":"OmeU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731568047&bgswitch=false&resize=false"},
     {"cinema":"kinobar","film":"staatsschutz","date":"2026-12-03","time":"17:30","screen":"Kino 1","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1627481494&showId=3721912730&bgswitch=false&resize=false"},
     {"cinema":"passage","film":"alswareesleicht","date":"2026-12-03","time":"18:00","label":"Special zum Tag der Menschen mit Behinderung","screen":"Filmeck","url":"https://www.passage-kinos.de/als-waere-es-leicht"},
-    {"cinema":"schaubuehne","film":"downandoutinparis","date":"2026-12-03","time":"19:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3714773200&bgswitch=false&resize=false"},
+    {"cinema":"schaubuehne","film":"downandoutinparis","date":"2026-12-03","time":"19:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731908111&bgswitch=false&resize=false"},
     {"cinema":"cineding","film":"staatsschutz","date":"2026-12-03","time":"19:00","version":"OmeU","label":"+ Q&A","url":"https://www.cineding-leipzig.de/veranstaltungen/staatsschutz-omeu-qa/"},
     {"cinema":"cineplex","film":"youcanseeeverything","date":"2026-12-03","time":"19:30","url":"https://tickets.cineplex.de/checkout/356/2AF51C00023FWBXJYB"},
-    {"cinema":"schaubuehne","film":"labolanegra","date":"2026-12-03","time":"21:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3701790198&bgswitch=false&resize=false"}
+    {"cinema":"schaubuehne","film":"labolanegra","date":"2026-12-03","time":"21:00","version":"OmU","screen":"Grüner Salon","url":"https://booking.cinetixx.de/frontend/index.html?cinemaId=1898834974&showId=3731908313&bgswitch=false&resize=false"}
   ]
 }
