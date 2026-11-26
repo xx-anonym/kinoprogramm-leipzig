@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:01:10.536Z",
+  "generatedAt": "2026-11-26T10:00:57.542Z",
   "days": ["2026-11-26","2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":25},
@@ -20,7 +20,7 @@
     {"id":"lichtmess","name":"Lichtmeß","address":"Gaußstraße 25, Hamburg-Ottensen","location":[53.5562,9.9329],"website":"https://www.lichtmess-kino.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"magazin","name":"Magazin Filmkunsttheater","address":"Fiefstücken 8a, 22299 Hamburg-Winterhude","location":[53.5997,10.0037],"website":"https://www.magazinfilmkunst.de/","source":"kinoheld.de","status":"ok","shows":22},
     {"id":"metropolis","name":"Metropolis","address":"Kleine Theaterstraße 10, 20354 Hamburg-Neustadt","location":[53.5564,9.9885],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":20},
-    {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":3},
+    {"id":"metropolis-harburg","name":"Metropolis im Planet Harburg","address":"Herbert-und-Greta-Wehner-Platz, 21073 Hamburg-Harburg","location":[53.4436,9.9842],"website":"https://www.metropoliskino.de/","source":"kinoheld.de","status":"ok","shows":2},
     {"id":"nestkino","name":"Nestkino","address":"Schulterblatt 73, 20357 Hamburg-Sternschanze","location":[53.5626,9.9608],"website":"https://nestkino.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"passage","name":"Passage Kino","address":"Mönckebergstraße 17, 20095 Hamburg","location":[53.5507,9.9983],"website":"https://www.das-passage.de/","source":"kinoheld.de","status":"ok","shows":69},
     {"id":"savoy","name":"Savoy Filmtheater","address":"Steindamm 54, 20099 Hamburg-St. Georg","location":[53.5543,10.0143],"website":"https://www.savoy-filmtheater.de/","source":"kinoheld.de","status":"ok","shows":5},
@@ -179,7 +179,6 @@
     "rockbottom": {"title":"Rock Bottom","duration":86,"imdb":{"id":"tt39399214","rating":5.9,"votes":43}},
     "schneewittchentheaterveranstaltung": {"title":"Schneewittchen - Theaterveranstaltung","duration":90,"original":"Blanche Neige"},
     "schoneseelen": {"title":"Schöne Seelen","duration":117,"year":2026},
-    "schulkinotschick": {"title":"Schulkino TSCHICK","duration":98,"original":"TSCHICK","imdb":{"id":"tt4911940","rating":6.9,"votes":12302}},
     "searchingforsoul": {"title":"Searching For Soul","duration":180},
     "seniorenkinosolomio": {"title":"Seniorenkino: SOLO MIO","duration":97},
     "shaundasschafspukimkurbisfeld": {"title":"Shaun das Schaf - Spuk im Kürbisfeld","duration":80,"original":"Shaun The Sheep: The Beast Of Mossy Bottom","year":2026,"imdb":{"id":"tt36841161","rating":7.1,"votes":4247}},
@@ -216,12 +215,11 @@
     "wirdiewolfs": {"title":"Wir, die Wolfs","duration":98,"original":"Nosotros, los Wolf","year":2025},
     "wisewomen": {"title":"Wise Women","duration":88,"year":2026},
     "wovonsollenwirtraumen": {"title":"Wovon sollen wir träumen","duration":90,"original":"Vor dem Anfang","year":2025},
-    "yehpremmolliya": {"title":"Yeh Prem Mol Liya","original":"ये प्रेम मोल लिया"},
+    "yehpremmolliya": {"title":"Yeh Prem Mol Liya","duration":173,"original":"ये प्रेम मोल लिया","year":2026},
     "youcanseeeverything": {"title":"You Can See Everything","duration":174,"year":2026,"imdb":{"id":"tt45368240","rating":9,"votes":45126}},
     "zusammenistmanwenigergetrennt": {"title":"zusammen ist man weniger getrennt.","duration":95,"year":2026}
   },
   "shows": [
-    {"cinema":"metropolis-harburg","film":"schulkinotschick","date":"2026-11-26","time":"10:00","url":"https://www.kinoheld.de/kino/hamburg/metropolis-im-planet-harburg/vorstellung/3730375156"},
     {"cinema":"abaton","film":"wirdiewolfs","date":"2026-11-26","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594340"},
     {"cinema":"abaton","film":"djahmet","date":"2026-11-26","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594343"},
     {"cinema":"metropolis-harburg","film":"momo","date":"2026-11-26","time":"12:15","url":"https://www.kinoheld.de/kino/hamburg/metropolis-im-planet-harburg/vorstellung/3730375596"},
