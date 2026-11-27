@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-27T07:02:42.156Z",
+  "generatedAt": "2026-11-27T08:01:20.020Z",
   "days": ["2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03","2026-12-04"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
-    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":91},
+    {"id":"abaton","name":"Abaton","address":"Allende-Platz 3, 20146 Hamburg-Rotherbaum","location":[53.5677,9.9818],"website":"https://www.abaton.de/","source":"kinoheld.de","status":"ok","shows":90},
     {"id":"alabama","name":"Alabama Kino","address":"Jarrestraße 20, 22303 Hamburg-Winterhude","location":[53.5832,10.021],"website":"https://alabama-kino.com/","source":"alabama-kino.com","status":"ok","shows":0},
     {"id":"astor","name":"Astor Film Lounge HafenCity","address":"Am Sandtorkai 46a, 20457 Hamburg-HafenCity","location":[53.5433,9.9955],"website":"https://hamburg.astor-filmlounge.de/","source":"kinoheld.de","status":"ok","shows":1},
     {"id":"bmovie","name":"B-Movie","address":"Brigittenstraße 5, 20359 Hamburg-St. Pauli","location":[53.5543,9.9613],"website":"https://www.b-movie.de/","source":"kinoheld.de","status":"ok","shows":0},
@@ -118,7 +118,7 @@
     "frominsideoutdiearchitekturvonpeterzumthor": {"title":"From Inside Out - Die Architektur von Peter Zumthor","duration":114,"year":2026,"imdb":{"id":"tt43704808","rating":7.5,"votes":89}},
     "frominsideoutdiearchitekturvonpeterzumthorfskfolgt": {"title":"FROM INSIDE OUT – DIE ARCHITEKTUR VON PETER ZUMTHOR, FSK folgt","duration":114,"original":"From Inside Out - Die Architektur von Peter Zumthor","year":2026,"imdb":{"id":"tt43704808","rating":7.5,"votes":89}},
     "geister": {"title":"Geister","duration":106,"year":2026,"imdb":{"id":"tt36501204","rating":7,"votes":223}},
-    "ghostschool": {"title":"Ghost School","duration":88,"original":"گوسٹ اسکول","year":2025,"imdb":{"id":"tt37547768","rating":6.8,"votes":100}},
+    "ghostschool": {"title":"Ghost School","imdb":{"id":"tt37547768","rating":6.8,"votes":100}},
     "godzillaminuszero": {"title":"Godzilla Minus Zero","duration":135,"original":"ゴジラ-0.0","year":2026,"imdb":{"id":"tt34384661","rating":7.8,"votes":33318}},
     "gremlinskleinemonster": {"title":"Gremlins - Kleine Monster","duration":100,"original":"Gremlins","year":1984,"imdb":{"id":"tt0087363","rating":7.3,"votes":280241}},
     "hadoota": {"title":"Hadoota","duration":120,"original":"حدوتة","imdb":{"id":"tt43638234","rating":8,"votes":1085}},
@@ -212,7 +212,6 @@
     "zusammenistmanwenigergetrennt": {"title":"zusammen ist man weniger getrennt.","duration":95,"year":2026}
   },
   "shows": [
-    {"cinema":"abaton","film":"ghostschool","date":"2026-11-27","time":"09:00","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594387"},
     {"cinema":"abaton","film":"ninxsdaslebenglitzert","date":"2026-11-27","time":"09:15","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594388"},
     {"cinema":"abaton","film":"chihirosreiseinszauberland","date":"2026-11-27","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594393"},
     {"cinema":"abaton","film":"staatsschutz","date":"2026-11-27","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594394"},
