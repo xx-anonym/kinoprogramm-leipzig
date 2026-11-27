@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T23:01:01.618Z",
+  "generatedAt": "2026-11-27T23:35:34.624Z",
   "days": ["2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03","2026-12-04","2026-12-05"],
   "cinemas": [
     {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":155},
@@ -14,7 +14,7 @@
     {"id":"cineding","name":"Cineding","address":"Karl-Heine-Str. 83, 04229 Leipzig","location":[51.3309,12.3322],"website":"https://www.cineding-leipzig.de/","source":"cineding-leipzig.de","status":"ok","shows":7}
   ],
   "films": {
-    "amarbletravelogue": {"title":"A Marble Travelogue"},
+    "amarbletravelogue": {"title":"A Marble Travelogue","imdb":{"id":"tt15734278","rating":7.4,"votes":63}},
     "alsderweihnachtsmannvomhimmelfielaugsburgerpuppenkiste": {"title":"Als der Weihnachtsmann vom Himmel fiel (Augsburger Puppenkiste)","duration":64,"original":"Augsburger Puppenkiste: Als der Weihnachtsmann vom Himmel fiel","year":2017},
     "alswareesleichthorfilmfassung": {"title":"ALS WÄRE ES LEICHT (Hörfilmfassung)","duration":94},
     "alteliebe": {"title":"Alte Liebe","duration":111,"year":2026,"imdb":{"id":"tt44112686","rating":7.5,"votes":82}},
@@ -85,7 +85,7 @@
     "nmixx1stworldtourepisode1zerofrontierfinaleinincheonliveviewing": {"title":"NMIXX 1st World Tour <Episode 1: Zero Frontier> Finale in Incheon: Live Viewing"},
     "othermommy": {"title":"Other Mommy","duration":94,"year":2026,"imdb":{"id":"tt36586020","rating":5.3,"votes":28485}},
     "parkwaydrivehome": {"title":"Parkway Drive - Home","duration":88,"original":"Parkway Drive: HOME - Live At The Sydney Opera","year":2026},
-    "przepisnaswietatheperfectholidayrecipe": {"title":"Przepis na swieta (The Perfect Holiday Recipe)","duration":100,"original":"Przepis na Święta"},
+    "przepisnaswietatheperfectholidayrecipe": {"title":"Przepis na swieta (The Perfect Holiday Recipe)","duration":100,"original":"Przepis na Święta","imdb":{"id":"tt35840784","rating":5.3,"votes":110}},
     "pulpfiction": {"title":"Pulp Fiction","duration":154,"imdb":{"id":"tt0110912","rating":8.8,"votes":2485835}},
     "sacrifice": {"title":"Sacrifice","duration":101,"imdb":{"id":"tt32268992","rating":5,"votes":7889}},
     "saintnicholasandthelostletterukromeu": {"title":"Saint Nicholas and the Lost Letter (ukr. OmeU)","duration":91},
@@ -97,7 +97,7 @@
     "sneakpreviewfsk18": {"title":"Sneak Preview FSK 18","duration":90,"original":"Sneak Preview Ansbach"},
     "spidermanbrandnewday": {"title":"Spider-Man: Brand New Day","duration":146,"imdb":{"id":"tt22084616","rating":7.9,"votes":395927}},
     "staatsschutz": {"title":"Staatsschutz","duration":113,"imdb":{"id":"tt39213126","rating":7.3,"votes":541}},
-    "tabalugaundleoderweihnachtsfilm": {"title":"Tabaluga & Leo - Der Weihnachtsfilm","duration":70,"original":"Tabaluga - Der Weihnachtsfilm","year":2003},
+    "tabalugaundleoderweihnachtsfilm": {"title":"Tabaluga & Leo - Der Weihnachtsfilm","duration":70,"original":"Tabaluga - Der Weihnachtsfilm","year":2003,"imdb":{"id":"tt10105358","rating":6.9,"votes":28}},
     "beautyofballroom": {"title":"The Beauty of Ballroom","imdb":{"id":"tt27827068","rating":6.8,"votes":46}},
     "holiday": {"title":"The Holiday","duration":131,"imdb":{"id":"tt0457939","rating":7,"votes":373836}},
     "hungergamessunriseonthereaping": {"title":"The Hunger Games: Sunrise on the Reaping","duration":159,"imdb":{"id":"tt32558705","rating":7.5,"votes":35410}},

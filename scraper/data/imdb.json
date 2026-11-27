@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-27T07:00:57.377Z",
+ "ratingsUpdated": "2026-11-27T23:34:27.030Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -94,7 +94,7 @@
   "adamsacht": {
    "id": "tt8758494",
    "title": "Adams Acht",
-   "seen": "2026-11-24",
+   "seen": "2026-11-27",
    "rating": 7,
    "votes": 175
   },
@@ -282,6 +282,13 @@
    "attempts": 2,
    "seen": "2026-11-26"
   },
+  "amarbletravelogue": {
+   "id": "tt15734278",
+   "title": "A Marble Travelogue",
+   "seen": "2026-11-27",
+   "rating": 7.4,
+   "votes": 63
+  },
   "amelierennt": {
    "id": "tt5712474",
    "title": "Amelie rennt",
@@ -296,6 +303,12 @@
    "seen": "2026-11-18",
    "rating": 6.6,
    "votes": 73
+  },
+  "andrerieusweihnachtskonzert2026letitsnow": {
+   "id": null,
+   "skip": true,
+   "title": "André Rieus Weihnachtskonzert 2026: Let it Snow",
+   "seen": "2026-11-27"
   },
   "andrewlloydwebbersstarlightexpressliveonstage": {
    "id": null,
@@ -748,6 +761,13 @@
    "seen": "2026-11-27",
    "rating": 7,
    "votes": 59
+  },
+  "bloodberries": {
+   "id": null,
+   "title": "Blood Berries",
+   "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-27"
   },
   "bloodytennis": {
    "id": "tt34735922",
@@ -1390,7 +1410,7 @@
    "id": "tt15239678",
    "title": "DF: Dune: Teil 1 + 2 - Vision",
    "year": 2023,
-   "seen": "2026-11-15",
+   "seen": "2026-11-27",
    "rating": 8.4,
    "votes": 809368
   },
@@ -1545,6 +1565,13 @@
    "rating": 5.6,
    "votes": 1126
   },
+  "dreihaselnussefuraschenbrodel": {
+   "id": "tt0070832",
+   "title": "Drei Haselnüsse für Aschenbrödel",
+   "seen": "2026-11-27",
+   "rating": 7.6,
+   "votes": 13867
+  },
   "dreikameradinnen": {
    "id": "tt43548654",
    "title": "Drei Kameradinnen",
@@ -1593,6 +1620,14 @@
    "seen": "2026-11-23",
    "rating": 6.6,
    "votes": 418
+  },
+  "dune1und2de": {
+   "id": "tt1160419",
+   "title": "Dune 1 & 2 (DE)",
+   "year": 2021,
+   "seen": "2026-11-27",
+   "rating": 8,
+   "votes": 1105764
   },
   "dune1und2englisch": {
    "id": null,
@@ -2335,6 +2370,13 @@
    "rating": 6.8,
    "votes": 241
   },
+  "ghostbustersdiegeisterjager": {
+   "id": "tt0087332",
+   "title": "Ghostbusters – Die Geisterjäger",
+   "seen": "2026-11-27",
+   "rating": 7.8,
+   "votes": 494915
+  },
   "ghostschool": {
    "id": "tt37547768",
    "title": "Ghost School",
@@ -2788,6 +2830,20 @@
    "seen": "2026-11-10",
    "rating": 6,
    "votes": 28
+  },
+  "hilfeesweihnachtetsehrdeluxecateringab1930uhr": {
+   "id": null,
+   "title": "HILFE, ES WEIHNACHTET SEHR - DELUXE (Catering ab 19:30 Uhr)",
+   "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-27"
+  },
+  "hilfeesweihnachtetsehrgluhweinetcab30minutenvorher": {
+   "id": null,
+   "title": "HILFE, ES WEIHNACHTET SEHR (Gluhwein etc. ab 30 Minuten vorher)",
+   "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-27"
   },
   "hiramayanariseofalegend": {
    "id": "tt27988879",
@@ -4050,6 +4106,12 @@
    "rating": 7.7,
    "votes": 291395
   },
+  "liveausdermetsaintsaenssamsonetdalila": {
+   "id": null,
+   "skip": true,
+   "title": "Live aus der MET: Saint-Saëns: Samson et Dalila",
+   "seen": "2026-11-27"
+  },
   "liveausdermetverdimacbeth": {
    "id": null,
    "skip": true,
@@ -4328,6 +4390,13 @@
    "attempts": 2,
    "seen": "2026-11-27"
   },
+  "meinersterkinobesuchedmundundluziewinterabenteuer": {
+   "id": null,
+   "title": "Mein erster Kinobesuch: Edmund und Luzie - Winterabenteuer",
+   "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-27"
+  },
   "meinfreunddiegiraffe": {
    "id": "tt5992202",
    "title": "Mein Freund, die Giraffe",
@@ -4362,11 +4431,23 @@
    "title": "Met Opera 2026-27: Macbeth - Giuseppe Verdi",
    "seen": "2026-10-17"
   },
+  "metopera202627samsonetdalilacamillesaintsaens": {
+   "id": null,
+   "skip": true,
+   "title": "Met Opera 2026-27: Samson et Dalila - Camille Saint-Saëns",
+   "seen": "2026-11-27"
+  },
   "metoperamacbeth": {
    "id": null,
    "skip": true,
    "title": "MET Opera: Macbeth",
    "seen": "2026-10-17"
+  },
+  "metoperasamsonetdalila": {
+   "id": null,
+   "skip": true,
+   "title": "MET Opera: Samson et Dalila",
+   "seen": "2026-11-27"
   },
   "miaundderweisselowe": {
    "id": "tt4844148",
@@ -4511,6 +4592,13 @@
    "seen": "2026-10-23",
    "rating": 5.2,
    "votes": 484
+  },
+  "morgenfinduswirdswasgeben": {
+   "id": "tt0493440",
+   "title": "Morgen Findus wird´s was geben",
+   "seen": "2026-11-27",
+   "rating": 6.4,
+   "votes": 475
   },
   "morgenvorlangerzeit": {
    "id": "tt43666042",
@@ -4837,6 +4925,13 @@
    "seen": "2026-11-21",
    "rating": 7.8,
    "votes": 441827
+  },
+  "odetomyfather": {
+   "id": "tt3812366",
+   "title": "Ode to My Father",
+   "seen": "2026-11-27",
+   "rating": 7.8,
+   "votes": 7017
   },
   "odyssee": {
    "id": "tt33764258",
@@ -5232,6 +5327,13 @@
    "seen": "2026-10-24",
    "rating": 5.3,
    "votes": 24677
+  },
+  "przepisnaswietatheperfectholidayrecipe": {
+   "id": "tt35840784",
+   "title": "Przepis na swieta (The Perfect Holiday Recipe)",
+   "seen": "2026-11-27",
+   "rating": 5.3,
+   "votes": 110
   },
   "puellamagimadokamagicaderfilmwalpurgisnachtjapmitdtut": {
    "id": null,
@@ -5659,6 +5761,13 @@
    "attempts": 1,
    "seen": "2026-11-27"
   },
+  "saintsaenssamsonetdalila": {
+   "id": null,
+   "title": "Saint-Saens: Samson et Dalila",
+   "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-27"
+  },
   "salomea": {
    "id": null,
    "title": "Salomea",
@@ -5693,6 +5802,12 @@
    "seen": "2026-11-11",
    "rating": 6.9,
    "votes": 34
+  },
+  "samsonetdalilasaintsaensmet202627": {
+   "id": null,
+   "skip": true,
+   "title": "Samson et Dalila - Saint-Saens (MET 2026/27)",
+   "seen": "2026-11-27"
   },
   "sanshothebailiff": {
    "id": "tt0047445",
@@ -5748,6 +5863,14 @@
    "skip": true,
    "title": "Schneewittchen - Theaterveranstaltung",
    "seen": "2026-11-27"
+  },
+  "schonebescherung": {
+   "id": "tt0097958",
+   "title": "Schöne Bescherung",
+   "year": 1990,
+   "seen": "2026-11-27",
+   "rating": 7.5,
+   "votes": 250566
   },
   "schoneseelen": {
    "id": "tt43558553",
@@ -5909,6 +6032,14 @@
    "checked": "2026-10-29",
    "attempts": 2,
    "seen": "2026-10-30"
+  },
+  "silentnightdeadlynight": {
+   "id": "tt34508974",
+   "title": "Silent Night, Deadly Night",
+   "year": 2025,
+   "seen": "2026-11-27",
+   "rating": 6.1,
+   "votes": 8625
   },
   "sinnundsinnlichkeit": {
    "id": "tt13609648",
@@ -6186,6 +6317,12 @@
    "attempts": 4,
    "seen": "2026-11-20"
   },
+  "stillenachtimamtsgerichttheaterveranstaltung": {
+   "id": null,
+   "skip": true,
+   "title": "Stille Nacht im Amtsgericht - Theaterveranstaltung",
+   "seen": "2026-11-27"
+  },
   "stirblangsam": {
    "id": "tt0095016",
    "title": "Stirb Langsam",
@@ -6320,6 +6457,14 @@
    "seen": "2026-11-15",
    "rating": 5.3,
    "votes": 349
+  },
+  "tabalugaundleoderweihnachtsfilm": {
+   "id": "tt10105358",
+   "title": "Tabaluga & Leo - Der Weihnachtsfilm",
+   "year": 2003,
+   "seen": "2026-11-27",
+   "rating": 6.9,
+   "votes": 28
   },
   "tafitiabdurchdiewuste": {
    "id": "tt9612976",
@@ -7096,6 +7241,13 @@
   "willywonkaandthechocolatefactory": {
    "id": "tt0067992",
    "title": "Willy Wonka and the Chocolate Factory",
+   "seen": "2026-11-27",
+   "rating": 7.8,
+   "votes": 248669
+  },
+  "willywonkaunddieschokoladenfabrik": {
+   "id": "tt0067992",
+   "title": "Willy Wonka und die Schokoladenfabrik",
    "seen": "2026-11-27",
    "rating": 7.8,
    "votes": 248669
