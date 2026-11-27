@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T09:01:13.730Z",
+  "generatedAt": "2026-11-27T10:01:04.645Z",
   "days": ["2026-11-27","2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03","2026-12-04"],
   "cinemas": [
     {"id":"3001","name":"3001 Kino","address":"Schanzenstraße 75, 20357 Hamburg-Sternschanze","location":[53.5622,9.9653],"website":"https://www.3001-kino.de/","source":"kinoheld.de","status":"ok","shows":22},
@@ -36,7 +36,7 @@
     {"id":"daskino","name":"Das Kino Neu Wulmstorf","address":"Hauptstraße 32, 21629 Neu Wulmstorf","location":[53.4643,9.7997],"website":"https://www.service-kino.de/","source":"kinoheld.de","status":"ok","shows":10},
     {"id":"spectrum","name":"Spectrum Norderstedt","address":"Rathausallee 72, 22846 Norderstedt","location":[53.7076,9.9904],"website":"https://norderstedt.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":61},
     {"id":"beluga","name":"Beluga Kino","address":"Güttloh 1-5, 25451 Quickborn","location":[53.7214,9.9013],"website":"https://www.beluga-kino.de/","source":"cinetixx.de","status":"ok","shows":128},
-    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":105},
+    {"id":"cinestar-stade","name":"CineStar Stade","address":"Kommandantendeich 1-3, 21680 Stade","location":[53.6021,9.4801],"website":"https://www.cinestar.de/kino-stade","source":"cinestar.de","status":"ok","shows":106},
     {"id":"burgkino","name":"Burg Kino Uetersen","address":"Marktstraße 24, 25436 Uetersen","location":[53.6833,9.6579],"website":"https://www.burgkino.de/","source":"cinetixx.de","status":"ok","shows":96},
     {"id":"cinemotion-winsen","name":"Cinemotion Winsen","address":"Nordertorstraße 6, 21423 Winsen (Luhe)","location":[53.3644,10.2085],"website":"https://winsen.cinemotion-kino.de/","source":"kinoheld.de","status":"ok","shows":60}
   ],
@@ -211,6 +211,7 @@
     "zusammenistmanwenigergetrennt": {"title":"zusammen ist man weniger getrennt.","duration":95,"year":2026}
   },
   "shows": [
+    {"cinema":"cinestar-stade","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-27","time":"11:00","url":"https://webticketing3.cinestar.de/?cinemaId=38678&movieSessionId=118061"},
     {"cinema":"abaton","film":"chihirosreiseinszauberland","date":"2026-11-27","time":"11:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594393"},
     {"cinema":"abaton","film":"staatsschutz","date":"2026-11-27","time":"11:45","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594394"},
     {"cinema":"abaton","film":"verfluchtnormal","date":"2026-11-27","time":"12:30","url":"https://www.kinoheld.de/kino/hamburg/abaton-kino-hamburg/vorstellung/594325"},
