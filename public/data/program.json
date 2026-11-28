@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-28T09:00:53.372Z",
+  "generatedAt": "2026-11-28T10:00:51.486Z",
   "days": ["2026-11-28","2026-11-29","2026-11-30","2026-12-01","2026-12-02","2026-12-03","2026-12-04","2026-12-05"],
   "cinemas": [
-    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":153},
+    {"id":"cineplex","name":"Cineplex Leipzig","address":"Ludwigsburger Str. 13, 04209 Leipzig-Grünau","location":[51.3206,12.2893],"website":"https://www.cineplex.de/leipzig/","source":"kinoheld.de","status":"ok","shows":147},
     {"id":"uci","name":"UCI Nova Eventis","address":"Merseburger Str. 17a, Günthersdorf (Nova Eventis)","location":[51.3461,12.1755],"website":"https://www.uci-kinowelt.de/programm/leipzig/","source":"kinoheld.de + kino-zeit.de","status":"ok","shows":133},
     {"id":"cinestar","name":"CineStar Petersbogen","address":"Petersstraße 44, 04109 Leipzig","location":[51.3375,12.3748],"website":"https://www.cinestar.de/kino-leipzig","source":"cinestar.de","status":"ok","shows":144},
     {"id":"regina","name":"Regina Palast","address":"Dresdner Straße 56, 04317 Leipzig","location":[51.3392,12.4014],"website":"https://www.kinoleipzig.com/","source":"kinoleipzig.com","status":"ok","shows":116},
@@ -111,21 +111,15 @@
     "vaterland": {"title":"Vaterland","duration":82,"imdb":{"id":"tt37304295","rating":7.4,"votes":5466}},
     "veritydunklegeheimnisse": {"title":"Verity - Dunkle Geheimnisse","duration":118,"imdb":{"id":"tt32261958","rating":6,"votes":41766}},
     "weihnachteninderpassageaufdersuchenachderweihnachtswerkstatt": {"title":"Weihnachten in der Passage: AUF DER SUCHE NACH DER WEIHNACHTSWERKSTATT","duration":75},
-    "wieverhext": {"title":"Wie verhext","duration":109,"original":"Hexed","year":2026},
+    "wieverhext": {"title":"Wie verhext","duration":103,"original":"Hexed","year":2026},
     "wienerbluestheloneliestmanintown": {"title":"Wiener Blues - The Loneliest Man in Town","duration":86,"imdb":{"id":"tt39382808","rating":7.3,"votes":244}},
     "wildhorsenine": {"title":"Wild Horse Nine","duration":118,"imdb":{"id":"tt15799564","rating":8.1,"votes":29071}},
     "wildwood": {"title":"Wildwood","duration":131,"year":2026,"imdb":{"id":"tt2056785","rating":8.6,"votes":34758}},
     "youcanseeeverything": {"title":"You Can See Everything","duration":174,"year":2026,"imdb":{"id":"tt45368240","rating":8.9,"votes":53059}}
   },
   "shows": [
-    {"cinema":"cineplex","film":"alsderweihnachtsmannvomhimmelfielaugsburgerpuppenkiste","date":"2026-11-28","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/57071C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"aufdersuchenachderweihnachtswerkstatt","date":"2026-11-28","time":"10:30","url":"https://tickets.cineplex.de/checkout/356/6F071C00023FWBXJYB"},
     {"cinema":"regina","film":"shaundasschafspukimkurbisfeld","date":"2026-11-28","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113507%26apos%3B"},
     {"cinema":"regina","film":"wieverhext","date":"2026-11-28","time":"10:30","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113579%26apos%3B"},
-    {"cinema":"cineplex","film":"bibiblocksbergdietotalverhextezeitreise","date":"2026-11-28","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/49071C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"wieverhext","date":"2026-11-28","time":"10:45","url":"https://tickets.cineplex.de/checkout/356/7E071C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"tributevonpanemsunriseonthereaping","date":"2026-11-28","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/A6071C00023FWBXJYB"},
-    {"cinema":"cineplex","film":"heimsuchungeinejahrhundertgeschichte","date":"2026-11-28","time":"11:00","url":"https://tickets.cineplex.de/checkout/356/22880C00023FWBXJYB"},
     {"cinema":"regina","film":"tributevonpanemsunriseonthereaping","date":"2026-11-28","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113517%26apos%3B"},
     {"cinema":"regina","film":"festtagsspassmitpeppadaskinoerlebnis","date":"2026-11-28","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1113470%26apos%3B"},
     {"cinema":"regina","film":"lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamirstrickkino","date":"2026-11-28","time":"11:00","url":"https://www.kinoleipzig.com/ticket?l=*kinoheld*cinemaPath%3A%20%26apos%3Bkino-leipzig%2Fregina-palast%26apos%3B%2C%0Atarget%3A%20%26apos%3Bself%26apos%3B%2C%0AnoChange%3A%20true%2C%0Arb%3A%20%26apos%3B1%26apos%3B%2C%0Alang%3A%20%26apos%3Bde%26apos%3B%2C%0Amode%3A%20%26apos%3Bwidget%26apos%3B%2C%0AshowId%3A%20%26apos%3B1109148%26apos%3B"},
