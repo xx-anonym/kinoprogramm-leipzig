@@ -1,5 +1,5 @@
 {
- "ratingsUpdated": "2026-11-27T23:34:27.030Z",
+ "ratingsUpdated": "2026-11-28T01:00:57.339Z",
  "films": {
   "1hamburgerfilmquiz": {
    "id": null,
@@ -619,7 +619,7 @@
   "bibiblocksberg2dieverhextezeitreise": {
    "id": "tt42205677",
    "title": "Bibi Blocksberg 2 - Die verhexte Zeitreise",
-   "seen": "2026-11-27",
+   "seen": "2026-11-28",
    "rating": 6,
    "votes": 58
   },
@@ -1621,6 +1621,13 @@
    "rating": 6.6,
    "votes": 418
   },
+  "dune": {
+   "id": "tt1160419",
+   "title": "Dune",
+   "seen": "2026-11-28",
+   "rating": 8,
+   "votes": 1105764
+  },
   "dune1und2de": {
    "id": "tt1160419",
    "title": "Dune 1 & 2 (DE)",
@@ -1633,6 +1640,27 @@
    "id": null,
    "title": "Dune 1 & 2 (Englisch)",
    "checked": "2026-11-27",
+   "attempts": 1,
+   "seen": "2026-11-28"
+  },
+  "duneimax": {
+   "id": null,
+   "title": "Dune (Imax)",
+   "checked": "2026-11-28",
+   "attempts": 1,
+   "seen": "2026-11-28"
+  },
+  "duneparttwo": {
+   "id": "tt15239678",
+   "title": "Dune: Part Two",
+   "seen": "2026-11-28",
+   "rating": 8.4,
+   "votes": 809368
+  },
+  "duneparttwoimax": {
+   "id": null,
+   "title": "Dune: Part Two (Imax)",
+   "checked": "2026-11-28",
    "attempts": 1,
    "seen": "2026-11-28"
   },
@@ -1675,7 +1703,7 @@
    "id": "tt38773219",
    "title": "Ebenezer - Eine Weihnachtsge",
    "year": 2026,
-   "seen": "2026-11-27",
+   "seen": "2026-11-28",
    "rating": 7.2,
    "votes": 15516
   },
@@ -4053,9 +4081,9 @@
   "lieblingsmenschendieaussergewohnlichefreundschaftstrickkino": {
    "id": null,
    "title": "Lieblingsmenschen – Die außergewöhnliche Freundschaft STRICKKINO",
-   "checked": "2026-11-21",
-   "attempts": 1,
-   "seen": "2026-11-27"
+   "checked": "2026-11-28",
+   "attempts": 2,
+   "seen": "2026-11-28"
   },
   "lieblingsmenschendieaussergewohnlichefreundschaftvonagnesundamir": {
    "id": "tt43598591",
